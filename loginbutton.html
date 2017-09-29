@@ -10,18 +10,18 @@
     <script charset="utf-8"></script>
     <button type="button" name="loginbutton" onclick="document.getElementById('loginbox').style.display='flex'">Login</button>
     <div id="loginbox" class="modal">
-      <form class="modal-content" action=accesslevel()>  <!--("studentpage.html") action="/action_page.php" (accesslevel) -->
-      <!-- <form class="modal-content" action="studentpage.html"> -->
+      <form name="login" class="modal-content">
         <span onclick="document.getElementById('loginbox').style.display='none'"></span>
         <div class="inputcontainer">
           <label><b>Användarnamn</b></label>
           <input id="unameinput" type="text" placeholder="Användarnamn" required>
           <label><b>Lösenord</b></label>
           <input id="pswinput" type="password" placeholder="Lösenord" required>
-          <!--button type="button" onclick="document.getElementById('loginbox').style.display='none'" class="cancelbtn">Cancel</button-->
+          <!--button type="button" onclick="document.getElementById('loginbox').style.display='none'" class="cancelbtn">X</button-->
         </div>
         <div class="lgcontainer">
-          <button id="loginbutton" type="submit">Login</button>
+          <button id="loginbutton" type="submit" onclick="accesslevel(this.form)">Login</button>
+          <p id="errortxt">Fel lösenord eller användarnamn.</p>
         </div>
       </form>
     </div>

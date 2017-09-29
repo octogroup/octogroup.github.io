@@ -61,3 +61,11 @@ input[type=text], input[type=password] {
   margin: 8px;
   background-color: #D3D3D3;
 }
+
+#errortxt {
+  display: none; /* Hide by default */
+  color: red;
+  font-family: 'Open Sans', sans-serif;
+  margin: 8px auto 12px auto;
+  font-size: 12px;
+}
