@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
   </head>
   <body>
-    <button type="button" name="dfbbutton" onclick="document.getElementById('dfbbox').style.display='flex'">Dagens feedback</button>
+    <button type="button" class="dfbbutton" onclick="document.getElementById('dfbbox').style.display='flex'">Dagens feedback</button>
     <div id="dfbbox">
       <form class="dfbform" action="?" method="post">
         <span onclick="document.getElementById('dfbbox').style.display='none'"></span>
@@ -19,7 +19,7 @@
           <textarea name="name" rows="8" cols="30" placeholder="Vi uppskattar din feedback!"></textarea>
         </div>
         <div class="bottomsection">
-          <button type="submit" name="submitdfb">Klar</button>
+          <button type="button" class="submitdfb">Klar</button>
         </div>
       </form>
     </div>
