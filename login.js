@@ -8,32 +8,16 @@ window.onclick = function(event) {
 }
 
 function accesslevel(form) {
-  if (form.unameinput.value === "student" && form.pswinput.value === "pw") {
-    window.open('./testpages/studentpage.html');
-  } else if (form.unameinput.value === "teacher" && form.pswinput.value === "pw") {
-    window.open('./testpages/teacherpage.html');
-  } else if (form.unameinput.value == "admin" && form.pswinput.value == "pw") {
-    window.open('./testpages/adminpage.html');
-  } else {
-    document.getElementById('errortxt').style.display='flex';
-    return;
+  console.log(form.unameinput.value);
+  switch (true) {
+    case form.unameinput.value === "student" && form.pswinput.value === "pw":
+      return window.open('./testpages/studentpage.html');
+    case form.unameinput.value === "teacher" && form.pswinput.value === "pw":
+      return window.open('./testpages/teacherpage.html');
+    case form.unameinput.value == "admin" && form.pswinput.value == "pw":
+      return window.open('./testpages/adminpage.html');
+    default:
+    console.warn('default')
+      document.getElementById('errortxt').style.display='flex';
   }
 }
-
-//--------------------------SWITCH-----------------------
-// switch (form) {
-//   case:
-//     form.unameinput.value == "student" && form.pswinput.value == "pw";
-//     window.open('./testpages/studentpage.html');
-//     break;
-//   case:
-//     form.unameinput.value == "teacher" && form.pswinput.value == "pw";
-//     window.open('./testpages/teacherpage.html')
-//     break;
-//   case:
-//     form.unameinput.value == "admin" && form.pswinput.value == "pw"
-//     window.open('./testpages/adminpage.html')
-//     break;
-//   default:
-//     document.getElementById('errortxt').style.display='flex'
-// }

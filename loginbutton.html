@@ -20,7 +20,7 @@
           <!--button type="button" onclick="document.getElementById('loginbox').style.display='none'" class="cancelbtn">X</button-->
         </div>
         <div class="lgcontainer">
-          <button id="loginbutton" type="submit" onclick="accesslevel(this.form)">Login</button>
+          <button id="loginbutton" type="button" onclick="accesslevel(this.form); return false;">Logga in</button>
           <p id="errortxt">Fel lösenord eller användarnamn.</p>
         </div>
       </form>
