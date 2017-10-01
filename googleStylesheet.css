@@ -1,0 +1,46 @@
+html, body {
+  height: 100%;
+}
+
+header {
+  display: flex;
+  height: 100px;
+  width: 100%;
+  background-color: black;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main > .googleforms {
+  display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  margin: 20px;
+  padding-bottom: 20px;
+}
+
+.studentform {
+  width: 90%;
+  height: 550px;
+  max-width: 800px;
+}
+
+.response {
+  width: 90%;
+  height: 100%;
+  max-width: 800px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100px;
+  background-color: black;
+}
