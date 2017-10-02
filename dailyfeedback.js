@@ -1,3 +1,4 @@
+
 let closebox = document.getElementById('dfbbox');
 // Stäng rutan om användaren klickar utanför
 window.onclick = function(event) {
