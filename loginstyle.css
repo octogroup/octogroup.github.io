@@ -63,7 +63,7 @@ input[type=text], input[type=password] {
 }
 
 #errortxt {
-  display: none; /* Hide by default */
+  display: none; /* Hide */
   color: red;
   font-family: 'Open Sans', sans-serif;
   margin: 8px auto 12px auto;
