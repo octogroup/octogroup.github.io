@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<link href="educationstyle.css" rel="stylesheet">
+<body>
+
+  <div class="pictures">
+    <h2 class="header">Våra utbildningar</h2>
+<div class="wrapper">
+    <img class="img" src="affarsutvecklare.jpg">
+    <div class="text"><span>Massa text om detta</span></div>
+</div>
+<div class="wrapper"
+    <img class="img" src="energispecialist.jpg">
+    <div class="text"><span>Masssa dålig text om utbildningen</span></div>
+</div>
+<div class="wrapper"
+    <img class="img" src="frontenddeveloper.jpg">
+    <div class="text"><span>Masssa konstig text om utbildningen</span></div>
+</div>
+
+    <button class="button-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="button-right" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+
+  <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("wrapper");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+  }
+  </script>
+
+</body>
+</html>
