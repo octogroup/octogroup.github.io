@@ -1,50 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-        <link rel="stylesheet" href="style/mainstyle.css">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Document</title>
+    <link rel="stylesheet" href="style/loginstyle.css">
+    <link rel="stylesheet" href="style/mainstyle.css">
+    <meta charset="UTF-8">
+    <title>Document</title>
 </head>
 <body>
-                <div class="content">
-                <header><h1>KYH</h1></header>
-                <nav>
-                    <ul id="nav">
-                       <li class="nav" id="firstlink"><a href="http://">Varför KYH?</a></li>
-                       <li class="nav"><a href="http://">Utbildningar</a></li>
-                       <li class="nav"><a href="http://">Om oss</a></li>
-                       <li class="nav"><button>logga in</button></li>
-                    </ul>
-                    
-                </nav>
+    <div class="content">
+        <header>
+            <h1>KYH</h1>
+        </header>
+        <nav>
+            <ul id="nav">
+                <li class="nav" id="firstlink"><a href="http://">Varför KYH?</a></li>
+                <li class="nav"><a href="http://">Utbildningar</a></li>
+                <li class="nav"><a href="http://">Om oss</a></li>
+                <li class="nav"><button type="button" name="loginbutton" onclick="document.getElementById('loginbox').style.display='flex'">Login</button>
+                <div id="loginbox" class="modal">
+                  <form name="login" class="modal-content">
+                    <span onclick="document.getElementById('loginbox').style.display='none'"></span>
+                    <div class="inputcontainer">
+                      <label><b>Användarnamn</b></label>
+                      <input id="unameinput" type="text" placeholder="Användarnamn" required>
+                      <label><b>Lösenord</b></label>
+                      <input id="pswinput" type="password" placeholder="Lösenord" required>
+                      <!--button type="button" onclick="document.getElementById('loginbox').style.display='none'" class="cancelbtn">X</button-->
+                    </div>
+                    <div class="lgcontainer">
+                      <button id="loginbutton" type="button" onclick="accesslevel(this.form); return false;">Logga in</button>
+                      <p id="errortxt">Fel lösenord eller användarnamn.</p>
+                    </div>
+                  </form>
+                </div></li>
+            </ul>
 
-                                <div id="container"></div>
-                                <main>
-                                    
-                                            
-                                                <p>content</p>
-                                                <p>content</p>
-                                                <p>content</p><p>content</p>
-                                                <p>content</p>
-                                                <p>content</p>
-                                                <p>content</p>
-                                                <p>content</p>
-                                                <p>content</p>
-                                                <p>content</p>
-                                                <p>content</p>
-                                                <p>content</p>
-                                                <p>content</p>
-                                                <p>content</p>
-                                                <p>content</p>
-                                                <p>content</p>
-                                                <p>content</p>
-                                                <p>content</p>
+        </nav>
 
-                                </main>
-                                </div>
-                </div>
-                <footer class="footer"><p>&copy;2017</p></footer>
-              </body>
+        <div id="container"></div>
+        <main>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+        </main>
+    </div>
+    <footer class="footer">
+        <p>&copy;2017</p>
+    </footer>
+    <script type="text/javascript" src="login.js"></script>
+</body>
+
 </html>
