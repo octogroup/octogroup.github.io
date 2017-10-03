@@ -52,6 +52,10 @@ html, body {
     height: 100%;
   }
 
+  h1 {
+      font-size: 30px;
+      font-weight: bold;
+  }
   body {
     display: flex;
     flex-direction: column;
