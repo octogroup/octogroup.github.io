@@ -79,8 +79,8 @@
 
 <div class="card">
  <div class="container">
-   <h2><b>Rubrik</b></h2>
-   <button type="button" class="dfbbutton" onclick="document.getElementById('dfbbox').style.display='flex'">Dagens feedback</button>
+   <h2><b>Dagens feedback</b></h2>
+   <button type="button" id="dfbbutton" onclick="document.getElementById('dfbbox').style.display='flex'">Dagens feedback</button>
    <div id="dfbbox">
      <form class="dfbform" action="?" method="post">
        <span onclick="document.getElementById('dfbbox').style.display='none'"></span>
@@ -88,14 +88,13 @@
          <label><b>Dagens feedback</b></label>
          <p>Vad har varit bra/dåligt under dagen?</p>
          <!-- <input type="text" name="dfbinput" value="" placeholder="Vi uppskattar din feedback!"> -->
-         <textarea name="name" rows="8" cols="30" placeholder="Vi uppskattar din feedback!"></textarea>
+         <textarea name="name" rows="8" cols="30" autofocus maxlength="500" placeholder="Vi uppskattar din feedback!"></textarea>
        </div>
        <div class="bottomsection">
          <button type="button" class="submitdfb" onclick="document.getElementById('dfbbox').style.display='none'">Skicka in</button>
        </div>
      </form>
    </div>
-   <script type="text/javascript" src="dailyfeedback.js"></script>
  </div>
 </div>
 <div class="card">
@@ -118,5 +117,6 @@
     </div>
     <footer class="footer"><p>&copy;2017</p></footer>
     <script src="../javascript/attendance.js"></script>
+    <script type="text/javascript" src="../javascript/dailyfeedback.js"></script>
   </body>
 </html>
