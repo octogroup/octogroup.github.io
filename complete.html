@@ -7,20 +7,21 @@
     <title>Document</title>
     <style>
         main {
-            border: none;
-        }
-        th{
-            text-align:right;
-        }
-        #container {
-            width: 100%;
-        }
-        th {
-            text-align: right;
 
+            border:none;
         }
         table{
-            width: 100%;
+            width: 50%;
+        }
+        td,th{
+            text-align: left;
+            border:1px solid black;
+        }
+        .uppgift{
+            margin-left: 10px;
+        }
+        .kurs{
+            background-color: #d3d3d3;
         }
     </style>
 </head>
@@ -44,17 +45,20 @@
             <div id="container">
             <table>
                 <tr>
-                   <th>Kurs/uppgift</th>
-                   <th class="betyg">Betyg</th> 
+                    <th>Kurs/Uppgift</th>
+                    <th>Betyg</th>
                 </tr>
-                <tr>
-
-                    <td style="font-weight: bold;">Javascript</td>
+                <tr class="kurs">
+                    <td>Javascript</td>
                     <td>VG</td>
                 </tr>
                 <tr>
-                    <td class="uppgift">Tenta</td>
+                    <td >Tenta</td>
                     <td>MVG</td>
+                </tr>
+                <tr>
+                    <td >Inlämning 1</td>
+                    <td>VG</td>
                 </tr>
             </table>
         </div>
