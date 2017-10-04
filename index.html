@@ -26,7 +26,7 @@
       <main>
         <!--Loginbox-starts-->
           <div id="loginbox">
-            <form name="login" class="modal-content">
+            <form name="login" action="#" class="modal-content">
               <span onclick="document.getElementById('loginbox').style.display='none'"></span>
               <div class="inputcontainer">
                 <label><b>Användarnamn</b></label>
@@ -36,7 +36,7 @@
                 <!--button type="button" onclick="document.getElementById('loginbox').style.display='none'" class="cancelbtn">X</button-->
               </div>
               <div class="lgcontainer">
-                <button id="loginbutton" type="button" onclick="accesslevel(this.form); return false;">Logga in</button>
+                <button id="loginbutton" type="submit" onclick="accesslevel(this.form); return false;">Logga in</button>
                 <p id="errortxt">Fel lösenord eller <br>
                   användarnamn.</p>
               </div>
