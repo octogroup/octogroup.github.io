@@ -37,12 +37,12 @@
                                         <p>Hur upplever du stämningen i klassen?</p>
                                         <input class="range" type="range" min="1" max="7" step="1" list="tickmarks" name="answer4">
                                         <p>Är det något specifikt moment i utbildningen du upplever att du behöver mer stöd i?</p>
-                                        <input type="text" placeholder="Ditt svar" name="answer5">
+                                        <input type="text" placeholder="Ditt svar" name="answer5" required>
                                         <p>Vad har varit bra?</p>
-                                        <input type="text" placeholder="Ditt svar" name="answer6">
+                                        <input type="text" placeholder="Ditt svar" name="answer6" required>
                                         <p>Förslag på förbättringar</p>
-                                        <input type="text" placeholder="Ditt svar" name="answer7">
-                                        <div><input type="submit" /></div>
+                                        <input type="text" placeholder="Ditt svar" name="answer7" required>
+                                        <div><input type="submit" onclick="sent()"/></div>
                                         <datalist id="tickmarks">
                                                 <option value="1">
                                                 <option value="2">
@@ -58,5 +58,6 @@
                                 </div>
                 </div>
                 <footer class="footer"><p>&copy;2017</p></footer>
+                <script src="../javascript/sent.js"></script>
               </body>
 </html>

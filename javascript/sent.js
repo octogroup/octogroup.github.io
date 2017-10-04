@@ -1,0 +1,3 @@
+function sent() {
+    alert("Inskickat!");
+}
