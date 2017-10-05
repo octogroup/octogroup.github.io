@@ -69,17 +69,22 @@ html, body {
     width: 100%;
 }
 
-header > h1 {
+header > a > h1 {
     color: white;
     position: absolute;
     top: 15px;
     left: 15px;
+    transition: color 0.3s ease;
+}
+
+header > a > h1:hover {
+    color: #ff6348;
 }
 
 [role="navigation"] {
     visibility: hidden;
     position: absolute;
-    right: 60px;
+    right: 0px;
     top: -25px;
 }
 
@@ -92,7 +97,7 @@ header > h1 {
 }
 
 #nav {
-    padding-top: 10px;
+    padding-top: 25px;
 }
 
 .nav > button {
@@ -121,6 +126,11 @@ header > h1 {
 .nav > a {
     text-decoration: none;
     color: #FFFFFF;
+    transition: color 0.3s ease;
+}
+
+.nav > a:hover {
+    color: #ff6348;
 }
 
 #container {
