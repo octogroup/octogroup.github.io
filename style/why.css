@@ -1,0 +1,17 @@
+.about {
+  text-align: center;
+  margin: inherit;
+}
+
+.description {
+  margin: 10px;
+}
+
+.flex {
+  display: flex;
+}
+
+#testbild1 {
+  max-width: 800px;
+  margin: 10px;
+}
