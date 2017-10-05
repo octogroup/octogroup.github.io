@@ -16,22 +16,24 @@
 </head>
 
 <body>
-    <div class="content">
-      <header><h1>KYH</h1></header>
-      <nav>
-        <ul id="nav">
-         <li class="nav" id="firstlink"><a href="http://">Varför KYH?</a></li>
-         <li class="nav"><a href="http://">Utbildningar</a></li>
-         <li class="nav"><a href="http://">Om oss</a></li>
-         <li class="nav"><button type="button" name="logoutbutton" onclick="window.open('../index.html', '_self')">logga ut</button></li>
-        </ul>
-      </nav>
-        <div id="container"></div>
-        <main>
-  <div id="attbox">
-      <p id="attmessage">Anmäl din närvaro här!</p>
-      <button id="attendance" onclick="attendance()">&#10005;</button>
-  </div>
+  <div class="content">
+    <header>
+      <h1>KYH</h1>
+    </header>
+    <nav>
+      <ul id="nav">
+        <li class="nav" id="firstlink"><a href="http://">Varför KYH?</a></li>
+        <li class="nav"><a href="http://">Utbildningar</a></li>
+        <li class="nav"><a href="http://">Om oss</a></li>
+        <li class="nav"><button type="button" name="logoutbutton" onclick="window.open('../index.html', '_self')">logga ut</button></li>
+      </ul>
+    </nav>
+    <div id="container"></div>
+    <main>
+      <div id="attbox">
+        <p id="attmessage">Anmäl din närvaro här!</p>
+        <button id="attendance" onclick="attendance()">&#10005;</button>
+      </div>
 
       <div class="box">
         <h1>Min profil</h1>
@@ -65,32 +67,32 @@
           </div>
         </div>
 
-<div class="card">
- <div class="container">
-   <h2><b>Dagens feedback</b></h2>
-   <button type="button" id="dfbbutton" onclick="document.getElementById('dfbbox').style.display='flex'">Dagens feedback</button>
-   <div id="dfbbox">
-     <form class="dfbform" action="?" method="post">
-       <span onclick="document.getElementById('dfbbox').style.display='none'"></span>
-       <div class="inputcontainer">
-         <label><b>Dagens feedback</b></label>
-         <p>Vad har varit bra/dåligt under dagen?</p>
-         <!-- <input type="text" name="dfbinput" value="" placeholder="Vi uppskattar din feedback!"> -->
-         <textarea name="name" rows="8" cols="30" autofocus maxlength="500" placeholder="Vi uppskattar din feedback!"></textarea>
-       </div>
-       <div class="bottomsection">
-         <button type="button" class="submitdfb" onclick="document.getElementById('dfbbox').style.display='none'">Skicka in</button>
-       </div>
-     </form>
-   </div>
- </div>
-</div>
-<div class="card">
- <div class="container">
-   <h2><b>weekeval</b></h2>
-    <a href="weekeval.html">LÄNK</a>
- </div>
-</div>
+        <div class="card">
+          <div class="container">
+            <h2><b>Dagens feedback</b></h2>
+            <button type="button" id="dfbbutton" onclick="document.getElementById('dfbbox').style.display='flex'">Dagens feedback</button>
+            <div id="dfbbox">
+              <form class="dfbform" action="?" method="post">
+                <span onclick="document.getElementById('dfbbox').style.display='none'"></span>
+                <div class="inputcontainer">
+                  <label><b>Dagens feedback</b></label>
+                  <p>Vad har varit bra/dåligt under dagen?</p>
+                  <!-- <input type="text" name="dfbinput" value="" placeholder="Vi uppskattar din feedback!"> -->
+                  <textarea name="name" rows="8" cols="30" autofocus maxlength="500" placeholder="Vi uppskattar din feedback!"></textarea>
+                </div>
+                <div class="bottomsection">
+                  <button type="button" class="submitdfb" onclick="document.getElementById('dfbbox').style.display='none'">Skicka in</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="container">
+            <h2><b>weekeval</b></h2>
+            <a href="weekeval.html">LÄNK</a>
+          </div>
+        </div>
 
         <div class="card">
           <div class="container">
@@ -102,7 +104,8 @@
           <div class="cardcontainer">
             <h2><b>Student nyheter</b></h2>
             <h3>VÄLKOMMEN TILL NYA WEBBPLATSEN</h3>
-            <p>Nu är den äntligen här. Vår nya webb där du mycket enklare kan se vilka utbildningar vi har och hitta rätt utbildning för dig! Du vet väl att vi har ansökningen till utbildningarna öppen ändra fram till 5 juni i år?</p>
+            <p>Nu är den äntligen här. Vår nya webb där du mycket enklare kan se vilka utbildningar vi har och hitta rätt utbildning
+              för dig! Du vet väl att vi har ansökningen till utbildningarna öppen ändra fram till 5 juni i år?</p>
           </div>
         </div>
     </main>
