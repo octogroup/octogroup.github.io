@@ -1,3 +1,7 @@
+	#feedback_main{
+		border:none;
+	}
+
 	#feedback_form {
 			display: flex;
 			flex-direction: row;
