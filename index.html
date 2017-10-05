@@ -2,53 +2,58 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="style/loginstyle.css">
-    <link rel="stylesheet" href="style/mainstyle.css">
-    <meta charset="UTF-8">
-    <title>Document</title>
+  <link rel="stylesheet" href="style/loginstyle.css">
+  <link rel="stylesheet" href="style/mainstyle.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="octo.png">
+  <title>Document</title>
 </head>
-<body>
+  <body>
     <div class="content">
-        <header>
-            <h1>KYH</h1>
-        </header>
-        <nav>
+      <header>
+        <h1>KYH</h1>
+      </header>
+          <nav>
             <ul id="nav">
-                <li class="nav" id="firstlink"><a href="http://">Varför KYH?</a></li>
-                <li class="nav"><a href="http://">Utbildningar</a></li>
-                <li class="nav"><a href="http://">Om oss</a></li>
-                <li class="nav"><button type="button" name="loginbutton" onclick="document.getElementById('loginbox').style.display='flex'">Login</button>
-                <div id="loginbox" class="modal">
-                  <form name="login" class="modal-content">
-                    <span onclick="document.getElementById('loginbox').style.display='none'"></span>
-                    <div class="inputcontainer">
-                      <label><b>Användarnamn</b></label>
-                      <input id="unameinput" type="text" placeholder="Användarnamn" required>
-                      <label><b>Lösenord</b></label>
-                      <input id="pswinput" type="password" placeholder="Lösenord" required>
-                      <!--button type="button" onclick="document.getElementById('loginbox').style.display='none'" class="cancelbtn">X</button-->
-                    </div>
-                    <div class="lgcontainer">
-                      <button id="loginbutton" type="button" onclick="accesslevel(this.form); return false;">Logga in</button>
-                      <p id="errortxt">Fel lösenord eller användarnamn.</p>
-                    </div>
-                  </form>
-                </div></li>
+              <li class="nav" id="firstlink"><a href="http://">Varför KYH?</a></li>
+              <li class="nav"><a href="http://">Utbildningar</a></li>
+              <li class="nav"><a href="http://">Om oss</a></li>
+              <li class="nav"><button type="button" name="loginbutton" onclick="document.getElementById('loginbox').style.display='flex'">Login</button></li>
             </ul>
-
-        </nav>
-
+          </nav>
         <div id="container"></div>
-        <main>
+      <main>
+        <!--Loginbox-starts-->
+          <div id="loginbox">
+            <form name="login" action="#" class="modal-content">
+              <span onclick="document.getElementById('loginbox').style.display='none'"></span>
+              <div class="inputcontainer">
+                <label><b>Användarnamn</b></label>
+                <img id="userimg" src="octo.png" alt="">
+                <input id="unameinput" type="text" placeholder="Användarnamn" required>
+                <label><b>Lösenord</b></label>
+                <img id="userimg" src="lock.png" alt="">
+                <input id="pswinput" type="password" placeholder="Lösenord" required>
+                <!--button type="button" onclick="document.getElementById('loginbox').style.display='none'" class="cancelbtn">X</button-->
+              </div>
+              <div class="lgcontainer">
+                <button id="loginbutton" type="submit" onclick="accesslevel(this.form); return false;">Logga in</button>
+                <p id="errortxt">Fel lösenord eller <br>
+                  användarnamn.</p>
+              </div>
+            </form>
+          </div>
+        <!--Loginbox-ends-->
        <h2>Om portalen</h2>
        <p>Välkommen till KYHs LMS portal.</p>
        <p>Här kan du se nyheter, information om kurser och betyg.</p>
-        </main>
+      </main>
     </div>
-    <footer class="footer">
+      <footer class="footer">
         <p>&copy;2017</p>
-    </footer>
-    <script type="text/javascript" src="login.js"></script>
-</body>
-
+      </footer>
+    <script type="text/javascript" src="javascript/login.js"></script>
+  </body>
 </html>

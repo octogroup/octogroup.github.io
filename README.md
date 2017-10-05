@@ -1,2 +1,0 @@
-# octogroup.github.io
-LMS

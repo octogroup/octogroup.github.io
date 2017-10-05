@@ -11,11 +11,11 @@ function accesslevel(form) {
   console.log(form.unameinput.value);
   switch (true) {
     case form.unameinput.value === "student" && form.pswinput.value === "pw":
-      return window.open('./testpages/studentpage.html');
+      return window.open('pages/studentpage.html', '_self');
     case form.unameinput.value === "teacher" && form.pswinput.value === "pw":
-      return window.open('./testpages/teacherpage.html');
+      return window.open('pages/teacherpage.html', '_self');
     case form.unameinput.value == "admin" && form.pswinput.value == "pw":
-      return window.open('./testpages/adminpage.html');
+      return window.open('pages/adminpage.html', '_self');
     default:
     console.warn('default')
       document.getElementById('errortxt').style.display='flex';
