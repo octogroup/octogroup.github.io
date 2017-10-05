@@ -23,35 +23,21 @@
                           <li class="nav"><button>logga in</button></li>
                         </ul>
                       </nav>
-                <nav role="navigation">
-                        <div id="menuToggle">
-                          <!--
-                          A fake / hidden checkbox is used as click reciever,
-                          so you can use the :checked selector on it.
-                          -->
-                          <input type="checkbox" />
-                          
-                          <!--
-                          Some spans to act as a hamburger.
-                          
-                          They are acting like a real hamburger,
-                          not that McDonalds stuff.
-                          -->
-                          <span class="burger"></span>
-                          <span class="burger"></span>
-                          <span class="burger"></span>
-                          
-                          <!--
-                          Too bad the menu has to be inside of the button
-                          but hey, it's pure CSS magic.
-                          -->
-                          <ul id="menu">
-                                <li class="menuli"><a href="http://">Varför KYH?</a></li>
-                                <li class="menuli"><a href="http://">Utbildningar</a></li>
-                                <li class="menuli"><a href="http://">Om oss</a></li>
-                                <li class="menuli"><a onclick="">Logga in</a></li>
+                <nav id="hamburger">
+                    <div id="burgerclick">
+                        <div id="burgerline1" class="burgericon"></div>
+                        <div id="burgerline2" class="burgericon"></div>
+                        <div id="burgerline3" class="burgericon"></div>
+                        <div id="hamburgerbackground"></div>
+                    </div>
+                    <div id="hamburgermenu">
+                    <ul id="nav2">
+                            <li class="nav2"><a href="http://">Varför KYH?</a></li>
+                            <li class="nav2"><a href="http://">Utbildningar</a></li>
+                            <li class="nav2"><a href="http://">Om oss</a></li>
+                            <li class="nav2"><button>logga in</button></li>
                           </ul>
-                        </div>
+                    </div>
                       </nav>
                       <a href="index.html"><h1>Octo Group</h1></a> 
 
@@ -80,7 +66,8 @@
     <footer class="footer">
         <p>&copy;2017</p>
     </footer>
-    <script type="text/javascript" src="login.js"></script>
+    <script type="text/javascript" src="javascript/openmenu.js"></script>
+    <script type="text/javascript" src="javascript/login.js"></script>
 </body>
 
 </html>
