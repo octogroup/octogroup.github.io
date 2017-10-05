@@ -5,27 +5,27 @@
   <link rel="stylesheet" href="../style/attendance.css">
   <link rel="stylesheet" href="../style/cardstyle.css">
   <link rel="stylesheet" href="../style/mainstyle.css">
+  <link rel="shortcut icon" href="octo.png">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
 </head>
 <body>
-                <div class="content">
-                <header><h1>KYH</h1></header>
-                <nav>
-                    <ul id="nav">
-                       <li class="nav" id="firstlink"><a href="http://">Varför KYH?</a></li>
-                       <li class="nav"><a href="http://">Utbildningar</a></li>
-                       <li class="nav"><a href="http://">Om oss</a></li>
-                       <li class="nav"><button>logga in</button></li>
-                    </ul>
-                </nav>
-                  <div id="container"></div>
-                  <main>
+    <div class="content">
+      <header><h1>KYH</h1></header>
+      <nav>
+        <ul id="nav">
+         <li class="nav" id="firstlink"><a href="http://">Varför KYH?</a></li>
+         <li class="nav"><a href="http://">Utbildningar</a></li>
+         <li class="nav"><a href="http://">Om oss</a></li>
+         <li class="nav"><button type="button" name="logoutbutton" onclick="window.open('../index.html', '_self')">logga ut</button></li>
+        </ul>
+      </nav>
+        <div id="container"></div>
+        <main>
   <div id="attbox">
       <p id="attmessage">Anmäl din närvaro här!</p>
       <button id="attendance" onclick="attendance()">&#10005;</button>
@@ -114,7 +114,6 @@
 </div>
         </main>
       </div>
-    </div>
     <footer class="footer"><p>&copy;2017</p></footer>
     <script src="../javascript/attendance.js"></script>
     <script type="text/javascript" src="../javascript/dailyfeedback.js"></script>
