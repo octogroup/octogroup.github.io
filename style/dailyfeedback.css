@@ -17,18 +17,18 @@ textarea {
   width: 90%;
 }
 
-#dfbbox {
-  display: none; /* Hide */
+/*#dfbbox {
+  display: none;
   z-index: 1;
   left: 0;
   top: 0;
   flex-direction: column;
   width: 100%;
   height: 100%;
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* opacity */
-  padding-top: 60px; /* Ändra beroende på skelett*/
-}
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 60px;
+}*/
 
 .dfbform {
   display: flex;

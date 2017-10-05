@@ -1,0 +1,23 @@
+#completed_main {
+
+            border:none;
+        }
+        #completed_table{
+            width: 50%;
+            border-collapse: collapse;
+            margin: auto auto;
+        }
+        #completed_table > td,th{
+            text-align: left;
+            border:1px solid black;
+        }
+        .uppgift{
+            margin-left: 10px;
+        }
+        .kurs{
+            background-color: #d3d3d3;
+        }
+        .text-center {
+            text-align: center;
+            margin-bottom :10px;
+        }
