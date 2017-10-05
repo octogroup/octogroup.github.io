@@ -1,4 +1,4 @@
-.pictures{
+.pictures {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -8,14 +8,14 @@
   margin: 0 auto;
 }
 
-.text{
+.text {
 position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
 }
 
-.text > span{
+.text > span {
 color: white;
 font: bold 24px/45px Helvetica, Sans-Serif;
 letter-spacing: -1px;
@@ -24,7 +24,7 @@ background: rgba(0, 0, 0, 0.7);
 padding: 10px;
 }
 
-.wrapper{
+.wrapper {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -35,12 +35,13 @@ padding: 10px;
   border-radius: 8px;
   box-shadow: 0 6px 8px 0 rgba(0,0,0,0.2);
 }
-.img{
+
+.img {
   width: 800px;
   height: 500px;
 }
 
-.button-left{
+.button-left {
 position: absolute;
 background: rgba(0,0,0,0.75);
 color: #d42828;
@@ -48,7 +49,7 @@ padding: 10px 20px;
 margin-left: -368px;
 }
 
-.button-right{
+.button-right {
   position: absolute;
   background: rgba(0,0,0,0.75);
   color: #d42828;
