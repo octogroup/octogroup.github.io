@@ -2,69 +2,110 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="../style/mainstyle.css">
-    <link rel="stylesheet" href="../style/weekform.css">
-    <link rel="shortcut icon" href="octo.png">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link rel="shortcut icon" href="octo.png">
+  <link rel="stylesheet" href="../style/loginstyle.css">
+  <link rel="stylesheet" href="../style/hamburger.css">
+  <link rel="stylesheet" href="../style/weekform.css">
+  <link rel="stylesheet" href="../style/mainstyle.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Document</title>
 </head>
 
 <body>
-    <div class="content">
-        <header>
-            <h1>KYH</h1>
-        </header>
-        <nav>
-            <ul id="nav">
-                <li class="nav" id="firstlink"><a href="http://">Varför KYH?</a></li>
-                <li class="nav"><a href="http://">Utbildningar</a></li>
-                <li class="nav"><a href="http://">Om oss</a></li>
-                <li class="nav"><button>logga in</button></li>
-            </ul>
+  <div class="content">
+    <header>
+      <nav class="longnav">
+        <ul id="nav">
+          <li class="nav"><a href="../pages/why.html">Varför KYH?</a></li>
+          <li class="nav"><a href="../pages/utbildningar.html">Utbildningar</a></li>
+          <li class="nav"><a href="../pages/about.html">Om oss</a></li>
+          <li class="nav"><button type="button" name="loginbutton" onclick="document.getElementById('loginbox').style.display='flex'">logga in</button></li>
+        </ul>
+      </nav>
+      <nav id="hamburger">
+        <div id="burgerclick">
+          <div id="burgerline1" class="burgericon"></div>
+          <div id="burgerline2" class="burgericon"></div>
+          <div id="burgerline3" class="burgericon"></div>
+          <div id="hamburgerbackground"></div>
+        </div>
+        <div id="hamburgermenu">
+          <ul id="nav2">
+            <li class="nav2"><a href="../pages/why.html">Varför KYH?</a></li>
+            <li class="nav2"><a href="../pages/utbildningar.html">Utbildningar</a></li>
+            <li class="nav2"><a href="../pages/about.html">Om oss</a></li>
+            <li class="nav2"><button type="button" name="loginbutton" onclick="document.getElementById('loginbox').style.display='flex'">logga in</button></li>
+          </ul>
+        </div>
+      </nav>
+      <a href="../index.html">
+        <h1>Octo Group</h1>
+      </a>
+    </header>
+    <div id="container"></div>
+    <main>
+      <!--Loginbox-starts-->
+      <div id="loginbox">
+        <form name="login" action="#" class="modal-content">
+          <span onclick="document.getElementById('loginbox').style.display='none'"></span>
+          <div class="inputcontainer">
+            <label><b>Användarnamn</b></label>
+            <img id="userimg" src="octo.png" alt="">
+            <input id="unameinput" type="text" placeholder="Användarnamn" required>
+            <label><b>Lösenord</b></label>
+            <img id="userimg" src="lock.png" alt="">
+            <input id="pswinput" type="password" placeholder="Lösenord" required>
+            <!--button type="button" onclick="document.getElementById('loginbox').style.display='none'" class="cancelbtn">X</button-->
+          </div>
+          <div class="lgcontainer">
+            <button id="loginbutton" type="submit" onclick="accesslevel(this.form); return false;">Logga in</button>
+            <p id="errortxt">Fel lösenord eller <br> användarnamn.
+            </p>
+          </div>
+        </form>
+      </div>
+      <!--Loginbox-ends-->
 
-        </nav>
 
-        <div id="container"></div>
-        <main>
+      <form id="weekeval" name="weekeval">
+        <p>Ditt namn (frivilligt)</p>
+        <input type="text" name="yourname">
+        <p>Hur upplever du just nu tempot i utbildningen?</p>
+        <input class="range" type="range" min="1" max="7" step="1" list="tickmarks" name="answer1">
+        <p>Hur upplever du just nu tempot i utbildningen?</p>
+        <input class="range" type="range" min="1" max="7" step="1" list="tickmarks" name="answer2">
+        <p>Hur engagerad anser du själv att du är i dina studier?</p>
+        <input class="range" type="range" min="1" max="7" step="1" list="tickmarks" name="answer3">
+        <p>Hur upplever du stämningen i klassen?</p>
+        <input class="range" type="range" min="1" max="7" step="1" list="tickmarks" name="answer4">
+        <p>Är det något specifikt moment i utbildningen du upplever att du behöver mer stöd i?</p>
+        <input type="text" placeholder="Ditt svar" name="answer5">
+        <p>Vad har varit bra?</p>
+        <input type="text" placeholder="Ditt svar" name="answer6">
+        <p>Förslag på förbättringar</p>
+        <input type="text" placeholder="Ditt svar" name="answer7">
+        <div><input type="submit" /></div>
+        <datalist id="tickmarks">
+          <option value="1">
+            <option value="2">
+              <option value="3">
+                <option value="4">
+                  <option value="5">
+                    <option value="6">
+                      <option value="7">
+        </datalist>
+      </form>
 
-
-            <form id="weekeval" name="weekeval">
-                <p>Ditt namn (frivilligt)</p>
-                <input type="text" name="yourname">
-                <p>Hur upplever du just nu tempot i utbildningen?</p>
-                <input class="range" type="range" min="1" max="7" step="1" list="tickmarks" name="answer1">
-                <p>Hur upplever du just nu tempot i utbildningen?</p>
-                <input class="range" type="range" min="1" max="7" step="1" list="tickmarks" name="answer2">
-                <p>Hur engagerad anser du själv att du är i dina studier?</p>
-                <input class="range" type="range" min="1" max="7" step="1" list="tickmarks" name="answer3">
-                <p>Hur upplever du stämningen i klassen?</p>
-                <input class="range" type="range" min="1" max="7" step="1" list="tickmarks" name="answer4">
-                <p>Är det något specifikt moment i utbildningen du upplever att du behöver mer stöd i?</p>
-                <input type="text" placeholder="Ditt svar" name="answer5">
-                <p>Vad har varit bra?</p>
-                <input type="text" placeholder="Ditt svar" name="answer6">
-                <p>Förslag på förbättringar</p>
-                <input type="text" placeholder="Ditt svar" name="answer7">
-                <div><input type="submit" /></div>
-                <datalist id="tickmarks">
-                    <option value="1">
-                        <option value="2">
-                            <option value="3">
-                                <option value="4">
-                                    <option value="5">
-                                        <option value="6">
-                                            <option value="7">
-                </datalist>
-            </form>
-
-        </main>
-    </div>
-    </div>
-    <footer class="footer">
-        <p>&copy;2017</p>
-    </footer>
+    </main>
+  </div>
+  <footer class="footer">
+    <p>&copy;2017</p>
+  </footer>
+  <script type="text/javascript" src="../javascript/openmenu.js"></script>
+  <script type="text/javascript" src="../javascript/login.js"></script>
 </body>
 
 </html>
