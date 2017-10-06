@@ -6,6 +6,8 @@
 }
 
 .box {
+  display: flex;
+  flex-direction: column;
   width: 30%;
     padding: 10px;
 }
@@ -14,7 +16,3 @@
   list-style-type: none;
 }
 
-.border-900 {
-  width: 900px;
-  height:auto;
-}
