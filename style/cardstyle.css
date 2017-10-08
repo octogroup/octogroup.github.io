@@ -1,11 +1,7 @@
-
 main > .box {
   display: flex;
-  /* flex-direction: row; */
   flex-wrap: wrap;
   justify-content: space-around;
-  /* align-items: center; */
-  /* align-content: space-between; */
   max-width: 880px;
   margin: 0 auto;
 }
@@ -31,6 +27,12 @@ main > .box > h1 {
 }
 
 .cardcontainer > h2 {
+  text-align: center;
+  text-decoration: underline #777A68;
+  margin: 10px;
+}
+
+.container > h2 {
   text-align: center;
   text-decoration: underline #777A68;
   margin: 10px;
