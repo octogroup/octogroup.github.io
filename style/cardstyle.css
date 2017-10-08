@@ -32,14 +32,12 @@ main > .box > h1 {
   margin: 10px;
 }
 
-.container > h2 {
-  text-align: center;
-  text-decoration: underline #777A68;
-  margin: 10px;
-}
-
 .cardcontainer > ul {
   text-align: center;
   margin: 10px;
   list-style-position:inside;
+}
+
+#dfbbutton {
+  margin: 50px;
 }
