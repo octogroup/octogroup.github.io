@@ -2,62 +2,107 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="style/mainstyle.css">
-    <link rel="stylesheet" type="text/css" href="style/completedcourse.css">
-    <meta charset="UTF-8">
-    <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link rel="shortcut icon" href="octo.png">
+  <link rel="stylesheet" href="style/loginstyle.css">
+  <link rel="stylesheet" href="style/hamburger.css">
+  <link rel="stylesheet" href="style/mainstyle.css">
+  <link rel="stylesheet" type="text/css" href="style/completedcourse.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Document</title>
 </head>
+
 <body>
-    <div class="content">
-        <header>
-            <h1>KYH</h1>
-        </header>
-        <nav>
-            <ul id="nav">
-                <li class="nav" id="firstlink"><a href="http://">Varför KYH?</a></li>
-                <li class="nav"><a href="http://">Utbildningar</a></li>
-                <li class="nav"><a href="http://">Om oss</a></li>
-                <li class="nav"><button>logga in</button></li>
-            </ul>
-
-        </nav>
-
-        <div id="container"></div>
-        <main id="completed_main">
-            <div id="container">
-            <table id="completed_table">
-                <h1 class="text-center">Avslutade kurser</h1>
-                <tr>
-                    <th>Kurs/Uppgift</th>
-                    <th>Betyg</th>
-                </tr>
-                <tr class="kurs">
-                    <td>Javascript</td>
-                    <td>VG</td>
-                </tr>
-                <tr>
-                    <td >Tenta</td>
-                    <td>MVG</td>
-                </tr>
-                <tr>
-                    <td >Inlämning 1</td>
-                    <td>VG</td>
-                </tr>
-                <tr class="kurs">
-                    <td>HTML</td>
-                    <td>MVG</td>
-                </tr>
-                <tr>
-                    <td >Inlämning 1</td>
-                    <td>VG</td>
-                </tr>
-            </table>
+  <div class="content">
+    <header>
+      <nav class="longnav">
+        <ul id="nav">
+          <li class="nav"><a href="http://">Varför KYH?</a></li>
+          <li class="nav"><a href="http://">Utbildningar</a></li>
+          <li class="nav"><a href="http://">Om oss</a></li>
+          <li class="nav"><button type="button" name="loginbutton" onclick=showLogin()>logga in</button></li>
+        </ul>
+      </nav>
+      <nav id="hamburger">
+        <div id="burgerclick">
+          <div id="burgerline1" class="burgericon"></div>
+          <div id="burgerline2" class="burgericon"></div>
+          <div id="burgerline3" class="burgericon"></div>
+          <div id="hamburgerbackground"></div>
         </div>
-        </main>
-    </div>
-    <footer class="footer">
-        <p>&copy;2017</p>
-    </footer>
+        <div id="hamburgermenu">
+          <ul id="nav2">
+            <li class="nav2"><a href="http://">Varför KYH?</a></li>
+            <li class="nav2"><a href="http://">Utbildningar</a></li>
+            <li class="nav2"><a href="http://">Om oss</a></li>
+            <li class="nav2"><button type="button" name="loginbutton" onclick=showLogin()>logga in</button></li>
+          </ul>
+        </div>
+      </nav>
+      <a href="index.html">
+        <h1>Octo Group</h1>
+      </a>
+    </header>
+    <div id="container"></div>
+    <main>
+      <!--Loginbox-starts-->
+      <div id="loginbox">
+        <form name="login" action="#" class="modal-content">
+          <div class="inputcontainer">
+            <label><b>Användarnamn</b></label>
+            <img id="userimg" src="img/octoedu.png" alt="">
+            <input id="unameinput" type="text" placeholder="Användarnamn" required>
+            <label><b>Lösenord</b></label>
+            <img id="userimg" src="img/lock.png" alt="">
+            <input id="pswinput" type="password" placeholder="Lösenord" required>
+            <!--button type="button" onclick="document.getElementById('loginbox').style.display='none'" class="cancelbtn">X</button-->
+          </div>
+          <div class="lgcontainer">
+            <button id="loginbutton" type="submit" onclick="accesslevel(this.form); return false;">Logga in</button>
+            <p id="errortxt">Fel lösenord eller <br> användarnamn.
+            </p>
+          </div>
+        </form>
+      </div>
+      <!--Loginbox-ends-->
+      <div id="container">
+        <table id="completed_table">
+          <h1 class="text-center">Avslutade kurser</h1>
+          <tr>
+            <th>Kurs/Uppgift</th>
+            <th>Betyg</th>
+          </tr>
+          <tr class="kurs">
+            <td>Javascript</td>
+            <td>VG</td>
+          </tr>
+          <tr>
+            <td>Tenta</td>
+            <td>MVG</td>
+          </tr>
+          <tr>
+            <td>Inlämning 1</td>
+            <td>VG</td>
+          </tr>
+          <tr class="kurs">
+            <td>HTML</td>
+            <td>MVG</td>
+          </tr>
+          <tr>
+            <td>Inlämning 1</td>
+            <td>VG</td>
+          </tr>
+        </table>
+      </div>
+    </main>
+  </div>
+  <footer class="footer">
+    <p>&copy;2017</p>
+  </footer>
+  <script type="text/javascript" src="javascript/openmenu.js"></script>
+  <script type="text/javascript" src="javascript/login.js"></script>
 </body>
 
 </html>
