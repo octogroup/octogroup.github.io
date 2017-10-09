@@ -1,11 +1,7 @@
-
 main > .box {
   display: flex;
-  /* flex-direction: row; */
   flex-wrap: wrap;
   justify-content: space-around;
-  /* align-items: center; */
-  /* align-content: space-between; */
   max-width: 880px;
   margin: 0 auto;
 }
@@ -40,4 +36,8 @@ main > .box > h1 {
   text-align: center;
   margin: 10px;
   list-style-position:inside;
+}
+
+#dfbbutton {
+  margin: 50px;
 }

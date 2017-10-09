@@ -1,149 +1,138 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
 /* CSS Reset ends here */
 
 html, body {
-    height: 100%;
-  }
-
-  h1 {
-       
-    font-size: 2em;
-  }
-
-  h2 { 
-      font-size: 1.5em; 
-  }
-
-  h3 { 
-      font-size: 1.17em; 
-  }
-
-  h4 { 
-      font-size: 1.12em; 
-  }
-
-  h5 { 
-      font-size: .83em; 
-  }
-  
-  h6 { 
-      font-size: .75em; 
-  }
-
-  body {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .content {
-    flex: 1 0 auto;
-  }
-
-  header {
-    background-color: #111;
-    height: 70px;
-    width: 100%;
+  height: 100%;
 }
 
-header > a > h1 {
-    color: white;
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    transition: color 0.3s ease;
+h1 {
+  font-size: 2em;
 }
 
-header > a > h1:hover {
-    color: #ff6348;
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.17em;
+}
+
+h4 {
+  font-size: 1.12em;
+}
+
+h5 {
+  font-size: .83em;
+}
+
+h6 {
+  font-size: .75em;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+header {
+  background-color: #111;
+  height: 70px;
+  width: 100%;
+}
+
+header>a>h1 {
+  color: white;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  transition: color 0.3s ease;
+}
+
+header>a>h1:hover {
+  color: #ff6348;
 }
 
 .longnav {
-    height: 40px;
-    list-style-type: none;
-    background-color: #111;
-    margin-right: 30px;
-    text-align: right;
+  height: 40px;
+  list-style-type: none;
+  background-color: #111;
+  margin-right: 30px;
+  text-align: right;
 }
 
 #nav {
-    padding-top: 25px;
+  padding-top: 25px;
 }
 
-.nav > button {
-    background-color: #ff6348;
-    border-radius: 20px;
-    border-color: #ff6348;
-    width: 85px;
-    height: 20px;
-    color: #fff;
-    padding-bottom: 3px;
+.nav>button {
+  background-color: #ff6348;
+  border-radius: 20px;
+  border-color: #ff6348;
+  width: 85px;
+  height: 20px;
+  color: #fff;
+  padding-bottom: 3px;
 }
+
 @media (max-width: 800px) {
-    .longnav {
-        visibility: hidden;
-    }
-    }
+  .longnav {
+    visibility: hidden;
+  }
+}
 
 .nav {
-    display: inline;
-    padding: 0 20px 0 20px;
+  display: inline;
+  padding: 0 20px 0 20px;
 }
 
-.nav > a {
-    text-decoration: none;
-    color: #FFFFFF;
-    transition: color 0.3s ease;
+.nav>a {
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: color 0.3s ease;
 }
 
-.nav > a:hover {
-    color: #ff6348;
+.nav>a:hover {
+  color: #ff6348;
 }
 
 #container {
-    height:100%;
-    display: flex;
-    flex-direction: column;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 main {
-    max-width: 900px;
-    margin: 40px auto 40px auto;
-    flex-grow: 1;
+  max-width: 900px;
+  margin: 40px auto 40px auto;
+  flex-grow: 1;
 }
 
 .footer {
-    background-color: #111;
-    padding-top: 60px;
-    position: relative;
+  background-color: #111;
+  padding-top: 60px;
+  position: relative;
 }
 
-.footer > p {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    color: #fff;
+.footer>p {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #fff;
 }

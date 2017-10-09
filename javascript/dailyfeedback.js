@@ -6,3 +6,11 @@ window.onclick = function(event) {
         dfbbox.style.display = "none";
     }
 }
+
+function showDailyFeedBack() {
+	dokument.getElementById('dfbbox').style.display='flex'
+}
+
+function hideDailyFeedBack() {
+	dokument.getElementById('dfbbox').style.display='none'
+}
