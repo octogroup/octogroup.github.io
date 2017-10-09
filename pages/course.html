@@ -4,7 +4,7 @@
 <head>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-  <link rel="shortcut icon" href="octo.png">
+  <link rel="shortcut icon" href="../img/octo.png">
   <link rel="stylesheet" href="../style/loginstyle.css">
   <link rel="stylesheet" href="../style/hamburger.css">
   <link rel="stylesheet" href="../style/mainstyle.css">
@@ -20,10 +20,10 @@
     <header>
       <nav class="longnav">
         <ul id="nav">
-          <li class="nav"><a href="http://">Varför KYH?</a></li>
-          <li class="nav"><a href="http://">Utbildningar</a></li>
-          <li class="nav"><a href="http://">Om oss</a></li>
-          <li class="nav"><button type="button" name="loginbutton" onclick="document.getElementById('loginbox').style.display='flex'">logga in</button></li>
+          <li class="nav"><a href="why.html">Varför KYH?</a></li>
+          <li class="nav"><a href="utbildningar.html">Utbildningar</a></li>
+          <li class="nav"><a href="about.html">Om oss</a></li>
+          <li class="nav"><button type="button" name="loginbutton" onclick="logOut()">logga ut</button></li>
         </ul>
       </nav>
       <nav id="hamburger">
@@ -35,10 +35,10 @@
         </div>
         <div id="hamburgermenu">
           <ul id="nav2">
-            <li class="nav2"><a href="http://">Varför KYH?</a></li>
-            <li class="nav2"><a href="http://">Utbildningar</a></li>
-            <li class="nav2"><a href="http://">Om oss</a></li>
-            <li class="nav2"><button type="button" name="loginbutton" onclick="document.getElementById('loginbox').style.display='flex'">logga in</button></li>
+            <li class="nav2"><a href="why.html">Varför KYH?</a></li>
+            <li class="nav2"><a href="utbildningar.html">Utbildningar</a></li>
+            <li class="nav2"><a href="about.html">Om oss</a></li>
+            <li class="nav2"><button type="button" name="logout" onclick="logOut()">logga ut</button></li>
           </ul>
         </div>
       </nav>
@@ -48,28 +48,7 @@
     </header>
     <div id="container"></div>
     <main>
-      <!--Loginbox-starts-->
-      <div id="loginbox">
-        <form name="login" action="#" class="modal-content">
-          <span onclick="document.getElementById('loginbox').style.display='none'"></span>
-          <div class="inputcontainer">
-            <label><b>Användarnamn</b></label>
-            <img id="userimg" src="octo.png" alt="">
-            <input id="unameinput" type="text" placeholder="Användarnamn" required>
-            <label><b>Lösenord</b></label>
-            <img id="userimg" src="lock.png" alt="">
-            <input id="pswinput" type="password" placeholder="Lösenord" required>
-            <!--button type="button" onclick="document.getElementById('loginbox').style.display='none'" class="cancelbtn">X</button-->
-          </div>
-          <div class="lgcontainer">
-            <button id="loginbutton" type="submit" onclick="accesslevel(this.form); return false;">Logga in</button>
-            <p id="errortxt">Fel lösenord eller <br> användarnamn.
-            </p>
-          </div>
-        </form>
-      </div>
-      <!--Loginbox-ends-->
-      <main>
+
         <div id="containercourse">
           <div class="box">
             <h1>Kursplan</h1>
@@ -121,9 +100,6 @@
             </ul>
           </div>
         </div>
-  </div>
-  </main>
-  </div>
   </main>
   </div>
   <footer class="footer">

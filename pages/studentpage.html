@@ -24,7 +24,7 @@
           <li class="nav"><a href="why.html">Varför KYH?</a></li>
           <li class="nav"><a href="utbildningar.html">Utbildningar</a></li>
           <li class="nav"><a href="about.html">Om oss</a></li>
-          <li class="nav"><button type="button" name="loginbutton" onclick="document.getElementById('loginbox').style.display='flex'">logga in</button></li>
+          <li class="nav"><button type="button" name="logout" onclick="logOut()">logga out</button></li>
         </ul>
       </nav>
       <nav id="hamburger">
@@ -39,7 +39,7 @@
             <li class="nav2"><a href="why.html">Varför KYH?</a></li>
             <li class="nav2"><a href="utbildningar.html">Utbildningar</a></li>
             <li class="nav2"><a href="about.html">Om oss</a></li>
-            <li class="nav2"><button type="button" name="loginbutton" onclick="document.getElementById('loginbox').style.display='flex'">logga in</button></li>
+            <li class="nav2"><button type="button" name="logout" onclick="logOut()">logga out</button></li>
           </ul>
         </div>
       </nav>
@@ -49,27 +49,6 @@
     </header>
     <div id="container"></div>
     <main>
-      <!--Loginbox-starts-->
-      <div id="loginbox">
-        <form name="login" action="#" class="modal-content">
-          <span onclick="document.getElementById('loginbox').style.display='none'"></span>
-          <div class="inputcontainer">
-            <label><b>Användarnamn</b></label>
-            <img id="userimg" src="../img/octo.png" alt="">
-            <input id="unameinput" type="text" placeholder="Användarnamn" required>
-            <label><b>Lösenord</b></label>
-            <img id="userimg" src="../img/lock.png" alt="">
-            <input id="pswinput" type="password" placeholder="Lösenord" required>
-            <!--button type="button" onclick="document.getElementById('loginbox').style.display='none'" class="cancelbtn">X</button-->
-          </div>
-          <div class="lgcontainer">
-            <button id="loginbutton" type="submit" onclick="accesslevel(this.form); return false;">Logga in</button>
-            <p id="errortxt">Fel lösenord eller <br> användarnamn.
-            </p>
-          </div>
-        </form>
-      </div>
-      <!--Loginbox-ends-->
       <div id="attbox">
         <p id="attmessage">Anmäl din närvaro här!</p>
         <button id="attendance" onclick="attendance()">&#10005;</button>
@@ -110,18 +89,15 @@
         <div class="card">
           <div class="cardcontainer">
             <h2><b>Dagens feedback</b></h2>
-            <button type="button" id="dfbbutton" onclick="document.getElementById('dfbbox').style.display='flex'">Dagens feedback</button>
-            <div id="dfbbox">
-              <form class="dfbform" action="?" method="post">
-                <span onclick="document.getElementById('dfbbox').style.display='none'"></span>
-                <div class="inputcontainer">
+            <button type="button" id="dfbbutton" onclick="showDailyFeedBack()">Dagens feedback</button>
+            <div id="dfbbox" onclick="hideDailyFeedBack()">
+              <form class="dfbform" action="#" method="post">                <div class="inputcontainer">
                   <label><b>Dagens feedback</b></label>
                   <p>Vad har varit bra/dåligt under dagen?</p>
-                  <!-- <input type="text" name="dfbinput" value="" placeholder="Vi uppskattar din feedback!"> -->
                   <textarea name="name" rows="8" cols="30" autofocus maxlength="500" placeholder="Vi uppskattar din feedback!"></textarea>
                 </div>
                 <div class="bottomsection">
-                  <button type="button" class="submitdfb" onclick="document.getElementById('dfbbox').style.display='none'">Skicka in</button>
+                  <button type="button" class="submitdfb" onclick="hideDailyFeedBack()">Skicka in</button>
                 </div>
               </form>
             </div>

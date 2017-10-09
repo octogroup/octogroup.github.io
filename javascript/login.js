@@ -31,6 +31,21 @@ function accesslevel(form) {
   }
 }
 
+function accesslevelroot(form) {
+  console.log(form.unameinput.value);
+  switch (true) {
+    case form.unameinput.value === "student" && form.pswinput.value === "pw":
+      return window.open('studentpage.html', '_self');
+    case form.unameinput.value === "teacher" && form.pswinput.value === "pw":
+      return window.open('teacherpage.html', '_self');
+    case form.unameinput.value == "admin" && form.pswinput.value == "pw":
+      return window.open('adminpage.html', '_self');
+    default:
+      console.warn('default')
+      document.getElementById('errortxt').style.display = 'flex';
+  }
+}
+
 function logOut() {
 	window.open('../index.html', '_self')
 }
