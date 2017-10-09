@@ -1,4 +1,4 @@
-#containercourse {
+containercourse {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,11 +8,21 @@
 .box {
   display: flex;
   flex-direction: column;
-  width: 30%;
-    padding: 10px;
+  width: 100%;
+  padding: 30px;
+  border: 1px solid #000;
 }
 
 .btg {
   list-style-type: none;
+} 
+
+.left > li {
+  margin-left: 35px;
 }
 
+@media screen and (max-width: 900px){
+ .box {
+      width: 290px;
+  } 
+}
