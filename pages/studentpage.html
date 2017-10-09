@@ -24,7 +24,7 @@
           <li class="nav"><a href="why.html">Varför KYH?</a></li>
           <li class="nav"><a href="utbildningar.html">Utbildningar</a></li>
           <li class="nav"><a href="about.html">Om oss</a></li>
-          <li class="nav"><button type="button" name="logout" onclick="logOut()">logga out</button></li>
+          <li class="nav"><button type="button" name="logout" onclick="logOut()">logga ut</button></li>
         </ul>
       </nav>
       <nav id="hamburger">
@@ -39,7 +39,7 @@
             <li class="nav2"><a href="why.html">Varför KYH?</a></li>
             <li class="nav2"><a href="utbildningar.html">Utbildningar</a></li>
             <li class="nav2"><a href="about.html">Om oss</a></li>
-            <li class="nav2"><button type="button" name="logout" onclick="logOut()">logga out</button></li>
+            <li class="nav2"><button type="button" name="logout" onclick="logOut()">logga ut</button></li>
           </ul>
         </div>
       </nav>
@@ -90,8 +90,9 @@
           <div class="cardcontainer">
             <h2><b>Dagens feedback</b></h2>
             <button type="button" id="dfbbutton" onclick="showDailyFeedBack()">Dagens feedback</button>
-            <div id="dfbbox" onclick="hideDailyFeedBack()">
-              <form class="dfbform" action="#" method="post">                <div class="inputcontainer">
+            <div id="dfbbox">
+              <form class="dfbform" action="#" method="post">
+								<div class="inputcontainer">
                   <label><b>Dagens feedback</b></label>
                   <p>Vad har varit bra/dåligt under dagen?</p>
                   <textarea name="name" rows="8" cols="30" autofocus maxlength="500" placeholder="Vi uppskattar din feedback!"></textarea>
@@ -134,6 +135,7 @@
   <script type="text/javascript" src="../javascript/dailyfeedback.js"></script>
   <script type="text/javascript" src="../javascript/openmenu.js"></script>
   <script type="text/javascript" src="../javascript/login.js"></script>
+	<script type="text/javascript" src="../javascript/sent.js"></script>
 </body>
 
 </html>

@@ -22,7 +22,7 @@
           <li class="nav"><a href="why.html">Varför KYH?</a></li>
           <li class="nav"><a href="utbildningar.html">Utbildningar</a></li>
           <li class="nav"><a href="about.html">Om oss</a></li>
-          <li class="nav"><button type="button" name="loginbutton" onclick="document.getElementById('loginbox').style.display='flex'">logga in</button></li>
+          <li class="nav"><button type="button" name="loginbutton" onclick="showLogin()">logga in</button></li>
         </ul>
       </nav>
       <nav id="hamburger">
@@ -37,7 +37,7 @@
             <li class="nav2"><a href="why.html">Varför KYH?</a></li>
             <li class="nav2"><a href="utbildningar.html">Utbildningar</a></li>
             <li class="nav2"><a href="about.html">Om oss</a></li>
-            <li class="nav2"><button type="button" name="loginbutton" onclick="document.getElementById('loginbox').style.display='flex'">logga in</button></li>
+            <li class="nav2"><button type="button" name="loginbutton" onclick="showLogin">logga in</button></li>
           </ul>
         </div>
       </nav>
@@ -61,7 +61,7 @@
             <!--button type="button" onclick="document.getElementById('loginbox').style.display='none'" class="cancelbtn">X</button-->
           </div>
           <div class="lgcontainer">
-            <button id="loginbutton" type="submit" onclick="accesslevel(this.form); return false;">Logga in</button>
+            <button id="loginbutton" type="submit" onclick="accesslevelroot(this.form); return false;">Logga in</button>
             <p id="errortxt">Fel lösenord eller <br> användarnamn.
             </p>
           </div>
