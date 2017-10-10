@@ -1,20 +1,13 @@
-#weekeval>.range::before {
-  content: "-";
-}
-
-#weekeval>.range::after {
-  content: "+";
-}
-
 #weekeval {
   max-width: 400px;
+  width: 97%;
 }
 
 .textinput, .range {
   margin-top: 5px;
   margin-bottom: 5px;
   margin-left: 1px;
-  width: 98%;
+  width: 100%;
 }
 
 .aroundrange {
