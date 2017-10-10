@@ -1,13 +1,27 @@
-#weekeval > .range::before {
-    content: "dåligt";
-    }
-#weekeval > .range::after {
-    content: "bra";
+#weekeval>.range::before {
+  content: "-";
 }
-#weekeval > input {
-    max-width: 400px;
-    width: 98%;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 1px;
+
+#weekeval>.range::after {
+  content: "+";
+}
+
+#weekeval {
+  max-width: 400px;
+}
+
+.textinput, .range {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 1px;
+  width: 100%;
+}
+
+.aroundrange {
+  display: flex;
+}
+
+.aroundrange > p {
+  font-size: 10px;
+  padding-top: 6px;
 }
