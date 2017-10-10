@@ -5,13 +5,15 @@
 #feedback_form {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin-top: 50px;
+/*   justify-content: space-between; */
+  margin-top: 25px;
 }
 
 h1 {
-  margin-top: 10px;
+  margin-top: 25px;
 }
+
+
 
 textarea {
   margin-top: 10px;
