@@ -13,5 +13,12 @@ function showDailyFeedBack() {
 
 function hideDailyFeedBack() {
 	document.getElementById('dfbbox').style.display='none';
-	sent();
+}
+
+function showAnswerOnSend() {
+	document.getElementById('answerOnSend').style.display='flex';
+}
+
+function hideAnswerOnSend() {
+	document.getElementById('answerOnSend').style.display='none';
 }

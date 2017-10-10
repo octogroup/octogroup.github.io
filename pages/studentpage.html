@@ -90,17 +90,27 @@
           <div class="cardcontainer">
             <h2><b>Dagens feedback</b></h2>
             <button type="button" id="dfbbutton" onclick="showDailyFeedBack()">Dagens feedback</button>
-            <div id="dfbbox">
+            <div id="dfbbox" class="boxstyle">
               <form class="dfbform" action="#" method="post">
 								<div class="inputcontainer">
-                  <label><b>Dagens feedback</b></label>
+                	<p id="feedbacktext">Dagens feedback</p>
                   <p>Vad har varit bra/dåligt under dagen?</p>
                   <textarea name="name" rows="8" cols="30" autofocus maxlength="500" placeholder="Vi uppskattar din feedback!"></textarea>
                 </div>
                 <div class="bottomsection">
-                  <button type="button" class="submitdfb" onclick="hideDailyFeedBack()">Skicka in</button>
+                  <button type="button" class="submitdfb" onclick="hideDailyFeedBack(); showAnswerOnSend()">Skicka in</button>
                 </div>
               </form>
+            </div>
+						<div id="answerOnSend" class="boxstyle">
+              <div class="dfbform">
+								<div class="inputcontainer">
+                  <p id="feedbacktext">Tack för din feedback!</p>
+                </div>
+                <div class="bottomsection">
+                  <button type="button" class="submitdfb" onclick="hideAnswerOnSend()">Stäng</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>

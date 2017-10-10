@@ -23,6 +23,19 @@ textarea {
 
 #dfbbox {
   display: none;
+}
+
+#answerOnSend {
+	display: none;
+}
+
+#feedbacktext {
+	font-size: 20px;
+	vertical-align: middle;
+	font-family: 'Pacifico', 'Open Sans', sans-serif;
+}
+
+.boxstyle {
 	position: fixed;
   left: 50%;
   top: 50%;
@@ -31,7 +44,6 @@ textarea {
   transform: translate(-50%, -50%);
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
-
 }
 
 .dfbform {
@@ -40,7 +52,6 @@ textarea {
   background-color: #fefefe;
   margin: auto;
   border: 1px solid #888;
-  width: 40%;
 }
 
 .inputcontainer {
