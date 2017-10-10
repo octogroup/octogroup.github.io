@@ -5,32 +5,36 @@
 #feedback_form {
   display: flex;
   flex-direction: row;
-/*   justify-content: space-between; */
+  /*   justify-content: space-between; */
   margin-top: 25px;
 }
 
 #feedback_form>label {
-	padding-left: 10px;
-	padding-right: 10px;
-	font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
 }
 
-h1 {
+.title {
   margin-top: 25px;
 }
 
-
-
 textarea {
-	display: flex;
+  display: flex;
   margin-top: 10px;
   border: 1px solid black;
-	resize: none;
-	width: auto;
-	width: 90%;
-	min-height: 20px;
+  resize: none;
+  width: auto;
+  width: 90%;
+  min-height: 20px;
 }
 
 .flytta {
   display: flex;
+}
+
+.question>label {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
 }

@@ -19,9 +19,9 @@
 		<header>
 			<nav class="longnav">
 				<ul id="nav">
-					<li class="nav"><a href="/pages/why.html">Varför KYH?</a></li>
-					<li class="nav"><a href="/pages/utbildningar.html">Utbildningar</a></li>
-					<li class="nav"><a href="/pages/about.html">Om oss</a></li>
+					<li class="nav"><a href="why.html">Varför KYH?</a></li>
+					<li class="nav"><a href="utbildningar.html">Utbildningar</a></li>
+					<li class="nav"><a href="about.html">Om oss</a></li>
 					<li class="nav"><button type="button" name="logoutbutton" onclick="logOut()">logga ut</button></li>
 				</ul>
 			</nav>
@@ -48,50 +48,43 @@
 		<div id="container"></div>
 
 		<main>
-			<div class="question-1">
-				<h1>I vilken mått har du tyckt att utbildningen har varit</h1>
-				<form id="feedback_form" action="">
+			<div class="question">
+				<h1 class="title">I vilken mått har du tyckt att utbildningen har varit</h1>
+				<form id="feedback_form" action="" onsubmit="return sent()">
 					<label>
-				<input type="radio" name="radiobutton">
+				<input type="radio" name="radiobutton1" required>
 				Bra
 				</label>
 					<label>
-				<input type="radio" name="radiobutton">
+				<input type="radio" name="radiobutton1" required>
 				Mycket Bra!
 				</label>
 					<label>
-				<input type="radio" name="radiobutton">
+				<input type="radio" name="radiobutton1" required>
 				Dåligt!
 				</label>
-
-				</form>
 			</div>
-			<div class="question-1">
-				<h1>Vad tycker du om lokalerna?</h1>
-				<form id="feedback_form" action="">
-					<label>
-				<input type="radio" name="radiobutton" required>
-				Bra
+			<div class="question">
+				<h1 class="title">Vad tycker du om lokalerna?</h1>
+				<br <label>
+				<input type="radio" name="radiobutton2" required> Bra
 				</label>
-					<label>
-				<input type="radio" name="radiobutton" required>
-				Mycket Bra!
-				</label>
-					<label>
-				<input type="radio" name="radiobutton" required>
-				Dåligt!
-				</label>
-
-				</form>
+				<label>
+			<input type="radio" name="radiobutton2" required>
+			Mycket Bra!
+			</label>
+				<label>
+			<input type="radio" name="radiobutton2" required>
+			Dåligt!
+			</label>
 			</div>
 
 			<!-- Kommentarsfält -->
-			<h1>Finns det något mer som du vill framföra?</h1>
-			<textarea placeholder="Tack för din feedback!" rows="10" required>
-
-			</textarea>
+			<h1 class="title">Finns det något mer som du vill framföra?</h1>
+			<textarea rows="10" required></textarea>
 			<div class="flytta">
-				<button type="button" onclick="sent()">Sicka feedbacken</button>
+				<button type="submit">Sicka feedbacken</button>
+				</form>
 			</div>
 		</main>
 	</div>
