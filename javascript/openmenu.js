@@ -5,7 +5,7 @@ document.getElementById("hamburgermenu").style.visibility = "hidden"
 
 burgermenu.onclick = function() {
 
-    
+
 if(document.getElementById("hamburgermenu").style.visibility == "hidden") {
 
     document.getElementById("hamburgermenu").style.visibility = "visible";
