@@ -47,9 +47,9 @@
     </header>
     <div id="container"></div>
     <main>
-      <form id="weekeval" name="weekeval">
+      <form id="weekeval" name="weekeval" onsubmit="return sent()">
         <p>Ditt namn (frivilligt)</p>
-        <input type="text" name="yourname">
+        <input class="textinput" type="text" placeholder="Namn" name="yourname">
         <p>Hur upplever du just nu tempot i utbildningen?</p>
         <input class="range" type="range" min="1" max="7" step="1" list="tickmarks" name="answer1">
         <p>Hur upplever du just nu tempot i utbildningen?</p>
@@ -59,12 +59,12 @@
         <p>Hur upplever du stämningen i klassen?</p>
         <input class="range" type="range" min="1" max="7" step="1" list="tickmarks" name="answer4">
         <p>Är det något specifikt moment i utbildningen du upplever att du behöver mer stöd i?</p>
-        <input type="text" placeholder="Ditt svar" name="answer5" required>
+        <input class="textinput" type="text" placeholder="Ditt svar" name="answer5" required>
         <p>Vad har varit bra?</p>
-        <input type="text" placeholder="Ditt svar" name="answer6" required>
+        <input class="textinput" type="text" placeholder="Ditt svar" name="answer6" required>
         <p>Förslag på förbättringar</p>
-        <input type="text" placeholder="Ditt svar" name="answer7" required>
-        <div><input type="submit" onclick="sent()" /></div>
+        <input class="textinput" type="text" placeholder="Ditt svar" name="answer7" required>
+        <div><input type="submit" /></div>
         <datalist id="tickmarks">
           <option value="1">
             <option value="2">
