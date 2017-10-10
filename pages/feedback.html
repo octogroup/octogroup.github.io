@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<link rel="shortcut icon" href="../octo.png">
+	<link rel="stylesheet" href="../style/loginstyle.css">
+	<link rel="stylesheet" href="../style/hamburger.css">
+	<link rel="stylesheet" href="../style/mainstyle.css">
+	<link rel="stylesheet" href="../style/feedback.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="content">
+		<header>
+			<nav class="longnav">
+				<ul id="nav">
+					<li class="nav"><a href="why.html">Varför KYH?</a></li>
+					<li class="nav"><a href="utbildningar.html">Utbildningar</a></li>
+					<li class="nav"><a href="about.html">Om oss</a></li>
+					<li class="nav"><button type="button" name="logoutbutton" onclick="logOut()">logga ut</button></li>
+				</ul>
+			</nav>
+			<nav id="hamburger">
+				<div id="burgerclick">
+					<div id="burgerline1" class="burgericon"></div>
+					<div id="burgerline2" class="burgericon"></div>
+					<div id="burgerline3" class="burgericon"></div>
+					<div id="hamburgerbackground"></div>
+				</div>
+				<div id="hamburgermenu">
+					<ul id="nav2">
+						<li class="nav2"><a href="why.html">Varför KYH?</a></li>
+						<li class="nav2"><a href="utbildningar.html">Utbildningar</a></li>
+						<li class="nav2"><a href="about.html">Om oss</a></li>
+						<li class="nav2"><button type="button" name="logoutbutton" onclick="logOut()">logga ut</button></li>
+					</ul>
+				</div>
+			</nav>
+			<a href="../index.html">
+				<h1>Octo Group</h1>
+			</a>
+		</header>
+		<div id="container"></div>
+
+		<main>
+			<div class="question">
+				<h1 class="title">I vilken mått har du tyckt att utbildningen har varit</h1>
+				<form id="feedback_form" action="" onsubmit="return sent()">
+					<label>
+				<input type="radio" name="radiobutton1" required>
+				Bra
+				</label>
+					<label>
+				<input type="radio" name="radiobutton1" required>
+				Mycket Bra!
+				</label>
+					<label>
+				<input type="radio" name="radiobutton1" required>
+				Dåligt!
+				</label>
+			</div>
+			<div class="question">
+				<h1 class="title">Vad tycker du om lokalerna?</h1>
+				<br <label>
+				<input type="radio" name="radiobutton2" required> Bra
+				</label>
+				<label>
+			<input type="radio" name="radiobutton2" required>
+			Mycket Bra!
+			</label>
+				<label>
+			<input type="radio" name="radiobutton2" required>
+			Dåligt!
+			</label>
+			</div>
+
+			<!-- Kommentarsfält -->
+			<h1 class="title">Finns det något mer som du vill framföra?</h1>
+			<textarea rows="10" required></textarea>
+			<div class="flytta">
+				<button type="submit">Sicka feedbacken</button>
+				</form>
+			</div>
+		</main>
+	</div>
+	<footer class="footer">
+		<p>&copy;2017</p>
+	</footer>
+	<script type="text/javascript" src="../javascript/openmenu.js"></script>
+	<script type="text/javascript" src="../javascript/login.js"></script>
+	<script type="text/javascript" src="../javascript/sent.js"></script>
+</body>
+
+</html>

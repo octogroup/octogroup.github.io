@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link rel="shortcut icon" href="../img/octo.png">
+  <link rel="stylesheet" href="../style/loginstyle.css">
+  <link rel="stylesheet" href="../style/hamburger.css">
+  <link rel="stylesheet" href="../style/mainstyle.css">
+  <link rel="stylesheet" href="../style/utbildningar.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Utbildningar</title>
+</head>
+
+<body>
+  <div class="content">
+    <header>
+      <nav class="longnav">
+        <ul id="nav">
+          <li class="nav"><a href="why.html">Varför KYH?</a></li>
+          <li class="nav"><a href="utbildningar.html">Utbildningar</a></li>
+          <li class="nav"><a href="about.html">Om oss</a></li>
+          <li class="nav"><button type="button" name="loginbutton" onclick="showLogin()">logga in</button></li>
+        </ul>
+      </nav>
+      <nav id="hamburger">
+        <div id="burgerclick">
+          <div id="burgerline1" class="burgericon"></div>
+          <div id="burgerline2" class="burgericon"></div>
+          <div id="burgerline3" class="burgericon"></div>
+          <div id="hamburgerbackground"></div>
+        </div>
+        <div id="hamburgermenu">
+          <ul id="nav2">
+            <li class="nav2"><a href="why.html">Varför KYH?</a></li>
+            <li class="nav2"><a href="utbildningar.html">Utbildningar</a></li>
+            <li class="nav2"><a href="about.html">Om oss</a></li>
+            <li class="nav2"><button type="button" name="loginbutton" onclick="showLogin()">logga in</button></li>
+          </ul>
+        </div>
+      </nav>
+      <a href="../index.html">
+        <h1>Octo Group</h1>
+      </a>
+    </header>
+    <div id="container"></div>
+    <main>
+      <!--Loginbox-starts-->
+      <div id="loginbox">
+        <form name="login" action="#" class="modal-content">
+          <div class="inputcontainer">
+            <label><b>Användarnamn</b></label>
+            <img id="userimg" src="../img/octoedu.png" alt="">
+            <input id="unameinput" type="text" placeholder="Användarnamn" required>
+            <label><b>Lösenord</b></label>
+            <img id="userimg" src="../img/lock.png" alt="">
+            <input id="pswinput" type="password" placeholder="Lösenord" required>
+            <!--button type="button" onclick="document.getElementById('loginbox').style.display='none'" class="cancelbtn">X</button-->
+          </div>
+          <div class="lgcontainer">
+            <button id="loginbutton" type="submit" onclick="accesslevelroot(this.form); return false;">Logga in</button>
+            <p id="errortxt">Fel lösenord eller <br> användarnamn.
+            </p>
+          </div>
+        </form>
+      </div>
+      <!--Loginbox-ends-->
+      <h1 class="about">Våra utbildningar</h1>
+      <div class="flex">
+        <img id="testbild2" src="bild.jpg">
+        <img id="testbild2" src="bild.jpg">
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dignissim accumsan purus. Curabitur tempor nec
+          magna ut accumsan. Mauris molestie feugiat vehicula. Vestibulum at justo tempus, scelerisque dolor sed, laoreet
+          mi. Mauris libero mi, commodo non ullamcorper sit amet, euismod at libero. Vivamus faucibus tempus risus et egestas.
+          Sed elementum augue at tellus bibendum, vitae congue velit congue. Praesent lectus neque, facilisis non eleifend
+          vitae, cursus quis eros. Sed tempus egestas scelerisque. Suspendisse bibendum malesuada nisl, sed faucibus ex elementum
+          eleifend. Aenean libero risus, pellentesque vel varius et, aliquam et odio.Suspendisse potenti. Sed vestibulum
+          justo vel convallis euismod. Pellentesque purus ipsum, commodo sit amet suscipit ut, dignissim condimentum metus.
+          Nullam rhoncus elit ut gravida aliquam. Sed ac dui convallis enim tempor tincidunt sit amet sed dui. Maecenas scelerisque
+          risus ex. Maecenas egestas pulvinar turpis lacinia hendrerit. Sed feugiat odio in magna rutrum posuere. Suspendisse
+          odio metus, sodales non ultrices finibus, vehicula vel urna. Nulla nec congue metus. Pellentesque finibus imperdiet
+          leo sed ultricies. In ut velit eleifend, feugiat eros sed, porta massa. Nullam vitae enim a risus scelerisque faucibus
+          ac eget quam.</p>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dignissim accumsan purus. Curabitur tempor nec
+          magna ut accumsan. Mauris molestie feugiat vehicula. Vestibulum at justo tempus, scelerisque dolor sed, laoreet
+          mi. Mauris libero mi, commodo non ullamcorper sit amet, euismod at libero. Vivamus faucibus tempus risus et egestas.
+          Sed elementum augue at tellus bibendum, vitae congue velit congue. Praesent lectus neque, facilisis non eleifend
+          vitae, cursus quis eros. Sed tempus egestas scelerisque. Suspendisse bibendum malesuada nisl, sed faucibus ex elementum
+          eleifend. Aenean libero risus, pellentesque vel varius et, aliquam et odio.Suspendisse potenti. Sed vestibulum
+          justo vel convallis euismod. Pellentesque purus ipsum, commodo sit amet suscipit ut, dignissim condimentum metus.
+          Nullam rhoncus elit ut gravida aliquam. Sed ac dui convallis enim tempor tincidunt sit amet sed dui. Maecenas scelerisque
+          risus ex. Maecenas egestas pulvinar turpis lacinia hendrerit. Sed feugiat odio in magna rutrum posuere. Suspendisse
+          odio metus, sodales non ultrices finibus, vehicula vel urna. Nulla nec congue metus. Pellentesque finibus imperdiet
+          leo sed ultricies. In ut velit eleifend, feugiat eros sed, porta massa. Nullam vitae enim a risus scelerisque faucibus
+          ac eget quam.</p>
+        <img id="testbild2" src="../img/bild.jpg">
+        <img id="testbild2" src="../img/bild.jpg">
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dignissim accumsan purus. Curabitur tempor nec
+          magna ut accumsan. Mauris molestie feugiat vehicula. Vestibulum at justo tempus, scelerisque dolor sed, laoreet
+          mi. Mauris libero mi, commodo non ullamcorper sit amet, euismod at libero. Vivamus faucibus tempus risus et egestas.
+          Sed elementum augue at tellus bibendum, vitae congue velit congue. Praesent lectus neque, facilisis non eleifend
+          vitae, cursus quis eros. Sed tempus egestas scelerisque. Suspendisse bibendum malesuada nisl, sed faucibus ex elementum
+          eleifend. Aenean libero risus, pellentesque vel varius et, aliquam et odio.Suspendisse potenti. Sed vestibulum
+          justo vel convallis euismod. Pellentesque purus ipsum, commodo sit amet suscipit ut, dignissim condimentum metus.
+          Nullam rhoncus elit ut gravida aliquam. Sed ac dui convallis enim tempor tincidunt sit amet sed dui. Maecenas scelerisque
+          risus ex. Maecenas egestas pulvinar turpis lacinia hendrerit. Sed feugiat odio in magna rutrum posuere. Suspendisse
+          odio metus, sodales non ultrices finibus, vehicula vel urna. Nulla nec congue metus. Pellentesque finibus imperdiet
+          leo sed ultricies. In ut velit eleifend, feugiat eros sed, porta massa. Nullam vitae enim a risus scelerisque faucibus
+          ac eget quam.</p>
+      </div>
+    </main>
+
+  </div>
+  <footer class="footer">
+    <p>&copy;2017</p>
+  </footer>
+  <script type="text/javascript" src="../javascript/openmenu.js"></script>
+  <script type="text/javascript" src="../javascript/login.js"></script>
+</body>
+
+</html>

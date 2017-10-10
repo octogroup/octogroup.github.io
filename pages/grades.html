@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link rel="shortcut icon" href="../img/octo.png">
+  <link rel="stylesheet" href="../style/loginstyle.css">
+  <link rel="stylesheet" href="../style/hamburger.css">
+  <link rel="stylesheet" href="../style/mainstyle.css">
+  <link rel="stylesheet" type="text/css" href="../style/completedcourse.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Betyg</title>
+</head>
+
+<body>
+  <div class="content">
+    <header>
+      <nav class="longnav">
+        <ul id="nav">
+          <li class="nav"><a href="why.html">Varför KYH?</a></li>
+          <li class="nav"><a href="utbildningar.html">Utbildningar</a></li>
+          <li class="nav"><a href="about.html">Om oss</a></li>
+          <li class="nav"><button type="button" name="loginbutton" onclick="logOut()">logga ut</button></li>
+        </ul>
+      </nav>
+      <nav id="hamburger">
+        <div id="burgerclick">
+          <div id="burgerline1" class="burgericon"></div>
+          <div id="burgerline2" class="burgericon"></div>
+          <div id="burgerline3" class="burgericon"></div>
+          <div id="hamburgerbackground"></div>
+        </div>
+        <div id="hamburgermenu">
+          <ul id="nav2">
+            <li class="nav2"><a href="why.html">Varför KYH?</a></li>
+            <li class="nav2"><a href="utbildningar.html">Utbildningar</a></li>
+            <li class="nav2"><a href="about.html">Om oss</a></li>
+            <li class="nav2"><button type="button" name="loginbutton" onclick="logOut()">logga ut</button></li>
+          </ul>
+        </div>
+      </nav>
+      <a href="index.html">
+        <h1>Octo Group</h1>
+      </a>
+    </header>
+    <div id="container"></div>
+    <main>
+      <div id="container">
+        <table id="completed_table">
+          <h1 class="text-center">Avslutade kurser</h1>
+          <tr>
+            <th>Kurs/Uppgift</th>
+            <th>Betyg</th>
+          </tr>
+          <tr class="kurs">
+            <td>Javascript</td>
+            <td>VG</td>
+          </tr>
+          <tr>
+            <td>Tenta</td>
+            <td>MVG</td>
+          </tr>
+          <tr>
+            <td>Inlämning 1</td>
+            <td>VG</td>
+          </tr>
+          <tr class="kurs">
+            <td>HTML</td>
+            <td>MVG</td>
+          </tr>
+          <tr>
+            <td>Inlämning 1</td>
+            <td>VG</td>
+          </tr>
+        </table>
+      </div>
+    </main>
+  </div>
+  <footer class="footer">
+    <p>&copy;2017</p>
+  </footer>
+  <script type="text/javascript" src="../javascript/openmenu.js"></script>
+  <script type="text/javascript" src="../javascript/login.js"></script>
+</body>
+
+</html>

@@ -6,15 +6,23 @@
 }
 
 .box {
-  width: 30%;
-    padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 30px;
+  border: 1px solid #000;
 }
 
 .btg {
   list-style-type: none;
+} 
+
+.left > li {
+  margin-left: 35px;
 }
 
-.border-900 {
-  width: 900px;
-  height:auto;
+@media screen and (max-width: 900px){
+ .box {
+      width: 290px;
+  } 
 }

@@ -1,80 +1,112 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<link rel="stylesheet" href="../style/coursestyle.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link rel="shortcut icon" href="../img/octo.png">
+  <link rel="stylesheet" href="../style/loginstyle.css">
+  <link rel="stylesheet" href="../style/hamburger.css">
   <link rel="stylesheet" href="../style/mainstyle.css">
+  <link rel="stylesheet" href="../style/coursestyle.css">
+  <link rel="stylesheet" href="../style/mainstyle.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>Document</title>
 </head>
+
 <body>
   <div class="content">
     <header>
-      <h1>KYH</h1>
-        </header>
-        	<nav>
-            <ul id="nav">
-                <li class="nav" id="firstlink"><a href="http://">Varför KYH?</a></li>
-                <li class="nav"><a href="http://">Utbildningar</a></li>
-                <li class="nav"><a href="http://">Om oss</a></li>
-                <li class="nav"><button>logga in</button></li>
-            </ul>
-        </nav>
-        <div id="container"></div>
-        	<main>
-	<div class="border-900">
-	<div id="containercourse">
-		<div class="box">
-			<h1>Kursplan</h1>
-			<h2>Innehåll</h2>
-			<p class="paragraph">Kursen ger kunskap i modern lättrörlig projektmetodik och praktiska färdigheter inom detta. Andra systemutvecklingsmetoder som ex. testdriven utveckling ingår i kursen. Kursen ger exempel på relevanta verktyg och arbetsmetoder för en utvecklare. Under kursen lär sig de studerande versionshantering och verktyg relevanta för utvecklarrollen.Kursen går igenom effektiva arbetsflöden för utveckling av system samt hur man delar sitt arbete inom ett team och hitta gemensamma arbetsflöden för hela teamet.</p>
+      <nav class="longnav">
+        <ul id="nav">
+          <li class="nav"><a href="why.html">Varför KYH?</a></li>
+          <li class="nav"><a href="utbildningar.html">Utbildningar</a></li>
+          <li class="nav"><a href="about.html">Om oss</a></li>
+          <li class="nav"><button type="button" name="loginbutton" onclick="logOut()">logga ut</button></li>
+        </ul>
+      </nav>
+      <nav id="hamburger">
+        <div id="burgerclick">
+          <div id="burgerline1" class="burgericon"></div>
+          <div id="burgerline2" class="burgericon"></div>
+          <div id="burgerline3" class="burgericon"></div>
+          <div id="hamburgerbackground"></div>
+        </div>
+        <div id="hamburgermenu">
+          <ul id="nav2">
+            <li class="nav2"><a href="why.html">Varför KYH?</a></li>
+            <li class="nav2"><a href="utbildningar.html">Utbildningar</a></li>
+            <li class="nav2"><a href="about.html">Om oss</a></li>
+            <li class="nav2"><button type="button" name="logout" onclick="logOut()">logga ut</button></li>
+          </ul>
+        </div>
+      </nav>
+      <a href="index.html">
+        <h1>Octo Group</h1>
+      </a>
+    </header>
+    <div id="container"></div>
+    <main>
 
-			<h2>Mål</h2>
-			Efter avslutad kurs ska den studerande ha...
-			<br>
-			<br>
-			<b>Kunskaper om:</b>
-			<ol>
-				<li>Arbete i projektteam, agila metoder och övrig arbetsmetodik</li>
-				<li>
-Utvecklingsverktyg</li>
-				<li>
-Versionshantering</li>
-				<li>Kravhantering</li>
-				<li>Icke-agila projektmodeller och hur de skiljer sig från det agila tankesättet</li>
-				<li>Testdriven utveckling</li>
-			</ol>
-			<b>Färdigheter i att:</b>
-			<ol>
-				<li>Använda olika projektmetoder inom webbutveckling</li>
-				<li>Hantera krav och genomföra samt följa upp uppgifter inom webbutveckling</li>
-				<li>Söka och använda information inom webbutveckling</li>
-				<li>
-Sätta upp sin egen utvecklingsmiljö/-verktyg och arbeta i dessa</li>
-				<li>Arbeta med versionshantering både individuellt och i grupp</li>
-			</ol>
-			<h2>Examinationsform</h2>
-			<ul>
-				<li>Individuellt projekt</li>
-				<li>Tentamen/Hemtenta</li>
-				<li>Projekt i grupp</li>
-			</ul>
-			<h2>Betygsättning</h2>
-			<b>Betygsgrader</b>
-			<ul class="btg">
-				<li>IG, G och VG</li>
-			</ul>
-			<b>Icke godkänt (IG)</b>
-			<ul class="btg">
-				<li>Den studerande har fullföljt kursen men inte nått alla mål för kursen</li>
-			</ul>
-		</div>
-	</div>
-	</div>
-</main>
-</div>
-<footer class="footer">
-<p>&copy;2017</p>
-</footer>
+        <div id="containercourse">
+          <div class="box">
+            <h1>Kursplan</h1>
+            <h2>Innehåll</h2>
+            <p class="paragraph">Kursen ger kunskap i modern lättrörlig projektmetodik och praktiska färdigheter inom detta. Andra systemutvecklingsmetoder
+              som ex. testdriven utveckling ingår i kursen. Kursen ger exempel på relevanta verktyg och arbetsmetoder för
+              en utvecklare. Under kursen lär sig de studerande versionshantering och verktyg relevanta för utvecklarrollen.Kursen
+              går igenom effektiva arbetsflöden för utveckling av system samt hur man delar sitt arbete inom ett team
+              och hitta gemensamma arbetsflöden för hela teamet.</p>
+
+            <h2>Mål</h2>
+            Efter avslutad kurs ska den studerande ha...
+            <br>
+            <br>
+            <b>Kunskaper om:</b>
+            <ol class="left">
+              <li>Arbete i projektteam, agila metoder och övrig arbetsmetodik</li>
+              <li>
+                Utvecklingsverktyg</li>
+              <li>
+                Versionshantering</li>
+              <li>Kravhantering</li>
+              <li>Icke-agila projektmodeller och hur de skiljer sig från det agila tankesättet</li>
+              <li>Testdriven utveckling</li>
+            </ol>
+            <b>Färdigheter i att:</b>
+            <ol class="left">
+              <li>Använda olika projektmetoder inom webbutveckling</li>
+              <li>Hantera krav och genomföra samt följa upp uppgifter inom webbutveckling</li>
+              <li>Söka och använda information inom webbutveckling</li>
+              <li>
+                Sätta upp sin egen utvecklingsmiljö/-verktyg och arbeta i dessa</li>
+              <li>Arbeta med versionshantering både individuellt och i grupp</li>
+            </ol>
+            <h2>Examinationsform</h2>
+            <ul>
+              <li>Individuellt projekt</li>
+              <li>Tentamen/Hemtenta</li>
+              <li>Projekt i grupp</li>
+            </ul>
+            <h2>Betygsättning</h2>
+            <b>Betygsgrader</b>
+            <ul class="btg">
+              <li>IG, G och VG</li>
+            </ul>
+            <b>Icke godkänt (IG)</b>
+            <ul class="btg">
+              <li>Den studerande har fullföljt kursen men inte nått alla mål för kursen</li>
+            </ul>
+          </div>
+        </div>
+  </main>
+  </div>
+  <footer class="footer">
+    <p>&copy;2017</p>
+  </footer>
+  <script type="text/javascript" src="../javascript/openmenu.js"></script>
+  <script type="text/javascript" src="../javascript/login.js"></script>
 </body>
+
 </html>
