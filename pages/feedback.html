@@ -52,15 +52,15 @@
 				<h1>I vilken mått har du tyckt att utbildningen har varit</h1>
 				<form id="feedback_form" action="">
 					<label>
-				<input type="radio">
+				<input type="radio" name="radiobutton">
 				Bra
 				</label>
 					<label>
-				<input type="radio">
+				<input type="radio" name="radiobutton">
 				Mycket Bra!
 				</label>
 					<label>
-				<input type="radio">
+				<input type="radio" name="radiobutton">
 				Dåligt!
 				</label>
 
@@ -70,15 +70,15 @@
 				<h1>Vad tycker du om lokalerna?</h1>
 				<form id="feedback_form" action="">
 					<label>
-				<input type="radio">
+				<input type="radio" name="radiobutton" required>
 				Bra
 				</label>
 					<label>
-				<input type="radio">
+				<input type="radio" name="radiobutton" required>
 				Mycket Bra!
 				</label>
 					<label>
-				<input type="radio">
+				<input type="radio" name="radiobutton" required>
 				Dåligt!
 				</label>
 
@@ -87,11 +87,11 @@
 
 			<!-- Kommentarsfält -->
 			<h1>Finns det något mer som du vill framföra?</h1>
-			<textarea placeholder="heej" rows="10" cols="120">
+			<textarea placeholder="Tack för din feedback!" rows="10" required>
 
 			</textarea>
 			<div class="flytta">
-				<button type="button">Sicka feedbacken</button>
+				<button type="button" onclick="sent()">Sicka feedbacken</button>
 			</div>
 		</main>
 	</div>
@@ -100,6 +100,7 @@
 	</footer>
 	<script type="text/javascript" src="../javascript/openmenu.js"></script>
 	<script type="text/javascript" src="../javascript/login.js"></script>
+	<script type="text/javascript" src="../javascript/sent.js"></script>
 </body>
 
 </html>

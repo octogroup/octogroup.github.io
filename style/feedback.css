@@ -9,6 +9,12 @@
   margin-top: 25px;
 }
 
+#feedback_form>label {
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 20px;
+}
+
 h1 {
   margin-top: 25px;
 }
@@ -16,11 +22,15 @@ h1 {
 
 
 textarea {
+	display: flex;
   margin-top: 10px;
   border: 1px solid black;
+	resize: none;
+	width: auto;
+	width: 90%;
+	min-height: 20px;
 }
 
 .flytta {
   display: flex;
-  justify-content: flex-end;
 }
