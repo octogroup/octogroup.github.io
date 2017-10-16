@@ -1,25 +1,44 @@
-main > .box {
+
+.box {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  max-width: 880px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
-main > .box > h1 {
+.box > h1 {
   display: flex;
   justify-content: center;
   flex: 100%;
 }
 
-.box > .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+.card {
+	display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
   transition: 0.3s;
-  width: 200px;
-  height: 250px;
+  width: auto;
+  height: auto;
   margin: 20px;
-  border-radius: 25px;
-  border: solid 1px grey;
+  border-radius: 2px;
+	flex-wrap: wrap;
+  /*border: solid 0.5px grey;*/
+}
+
+.cardcontainer {
+	display: flex;
+	width: auto;
+	height: auto;
+	flex-direction: column;
+	min-width: 250px;
+	min-height: 180px;
+	/*align-items: center;*/
+}
+
+.card-img-top {
+	width: 50px;
+	height: 50px;
+	right: auto;
 }
 
 .box > .card:hover {
@@ -32,12 +51,36 @@ main > .box > h1 {
   margin: 10px;
 }
 
-.cardcontainer > ul {
+.card-list {
+	text-align: center;
+  margin: 10px;
+  list-style-position: inside;
+	list-style: none;
+}
+/*.cardcontainer > ul {
   text-align: center;
   margin: 10px;
-  list-style-position:inside;
-}
+  list-style-position: inside;
+	list-style: none;
+}*/
 
 #dfbbutton {
   margin: 50px;
+}
+
+.cardbutton {
+}
+
+.card-body {
+	width: auto;
+	height: auto;
+	margin: 10px;
+	border: 1px solid red;
+}
+
+.card-bottom {
+	height: auto;
+	margin: 10px;
+	border: 1px solid pink;
+	bottom: 0;
 }
