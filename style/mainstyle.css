@@ -18,28 +18,20 @@ html, body {
   height: 100%;
 }
 
-/*h1 {
-  font-size: 112px;
-}*/
+h1 {
+  font-size: 7em;
+}
 
 h2 {
-  font-size: 1.5em;
+  font-size: 5.3em;
 }
 
 h3 {
-  font-size: 1.17em;
+  font-size: 4em;
 }
 
 h4 {
-  font-size: 1.12em;
-}
-
-h5 {
-  font-size: .83em;
-}
-
-h6 {
-  font-size: .75em;
+  font-size: 3.1em;
 }
 
 body {
@@ -93,19 +85,46 @@ header>a>h1:hover {
 
 @media (max-width: 1920px) {
   h1 {
-    font-size: 56px;
+    font-size: 3.5em;
+  }
+  h2 {
+    font-size: 2.8em;
+  }
+  h3 {
+    font-size: 2em;
+  }
+  h4 {
+    font-size: 1.5em;
   }
 }
 
 @media (max-width: 1280px) {
   h1 {
-    font-size: 45px;
+    font-size: 2.8em;
+  }
+  h2 {
+    font-size: 2.1em;
+  }
+  h3 {
+    font-size: 1.6em;
+  }
+  h4 {
+    font-size: 1.2em;
   }
 }
 
 @media (max-width: 600px) {
   h1 {
-    font-size: 34px;
+    font-size: 2.1em;
+  }
+  h2 {
+    font-size: 1.6em;
+  }
+  h3 {
+    font-size: 1.2em;
+  }
+  h4 {
+    font-size: 0.9em;
   }
 }
 
