@@ -14,12 +14,17 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 /* CSS Reset ends here */
 
+html, body, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans";
+}
+
 html, body {
   height: 100%;
 }
 
 h1 {
   font-size: 2em;
+  font-family: "Roboto";
 }
 
 h2 {
