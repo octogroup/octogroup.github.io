@@ -16,34 +16,27 @@
 <body>
 	<div class="content">
 		<header>
-			<nav class="longnav">
-				<ul id="nav">
-					<li class="nav"><a href="pages/why.html">Varför KYH?</a></li>
-					<li class="nav"><a href="pages/utbildningar.html">Utbildningar</a></li>
-					<li class="nav"><a href="pages/about.html">Om oss</a></li>
-					<li class="nav"><button type="button" name="loginbutton" onclick=showLogin()>logga in</button></li>
+			<nav id="navigation">
+          <div id="navbutton"><button type="button" name="loginbutton" onclick=showLogin()>LOGGA IN</button></div>
+          <div id="header"><a href="index.html">
+              <h1>Octo Group</h1>
+            </a></div>
+          <ul id="navlist">
+					<li class="navitem"><a href="pages/why.html">Varför Octo?</a></li>
+					<li class="navitem"><a href="pages/utbildningar.html">Priser</a></li>
 				</ul>
-			</nav>
-			<nav id="hamburger">
-				<div id="burgerclick">
-					<div id="burgerline1" class="burgericon"></div>
-					<div id="burgerline2" class="burgericon"></div>
-					<div id="burgerline3" class="burgericon"></div>
-					<div id="hamburgerbackground"></div>
-				</div>
-				<div id="hamburgermenu">
-					<ul id="nav2">
-						<li class="nav2"><a href="pages/why.html">Varför KYH?</a></li>
-						<li class="nav2"><a href="pages/utbildningar.html">Utbildningar</a></li>
-						<li class="nav2"><a href="pages/about.html">Om oss</a></li>
-						<li class="nav2"><button type="button" name="loginbutton" onclick=showLogin()>logga in</button></li>
-					</ul>
-				</div>
-			</nav>
-			<a href="index.html">
-				<h1>Octo Group</h1>
-			</a>
-		</header>
+      </nav>
+      <nav id="navmobile">
+          <div id="navbutton"><button type="button" name="loginbutton" onclick=showLogin()>LOGGA IN</button></div>
+          <div id="header"><a href="index.html">
+              <h1>Octo Group</h1>
+            </a></div>
+          <ul id="navlist">
+					<li class="navitem"><a href="pages/why.html">Varför Octo?</a></li>
+					<li class="navitem"><a href="pages/utbildningar.html">Priser</a></li>
+				</ul>
+      </nav>
+			</header>
 		<div id="container"></div>
 		<main>
 			<!--Loginbox-starts-->

@@ -51,13 +51,7 @@ body {
   flex: 1 0 auto;
 }
 
-header {
-  background-color: #111;
-  height: 70px;
-  width: 100%;
-}
-
-header>a>h1 {
+#header>a>h1 {
   color: white;
   position: absolute;
   top: 15px;
@@ -65,23 +59,27 @@ header>a>h1 {
   transition: color 0.3s ease;
 }
 
-header>a>h1:hover {
+#header>a>h1:hover {
   color: #ff6348;
 }
 
-.longnav {
-  height: 40px;
+#navigation {
+  height: 100px;
+  width: 100%;
   list-style-type: none;
   background-color: #111;
   margin-right: 30px;
   text-align: right;
+  position: relative;
 }
 
-#nav {
-  padding-top: 25px;
+#navlist {
+  padding-top: 40px;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.nav>button {
+#navbutton>button {
   background-color: #ff6348;
   border-radius: 20px;
   border-color: #ff6348;
@@ -89,6 +87,9 @@ header>a>h1:hover {
   height: 20px;
   color: #fff;
   padding-bottom: 3px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }
 
 @media (max-width: 1920px) {
@@ -110,23 +111,23 @@ header>a>h1:hover {
 }
 
 @media (max-width: 800px) {
-  .longnav {
-    visibility: hidden;
+  #navigation {
+    
   }
 }
 
-.nav {
+.navitem {
   display: inline;
   padding: 0 20px 0 20px;
 }
 
-.nav>a {
+.navitem>a {
   text-decoration: none;
   color: #FFFFFF;
   transition: color 0.3s ease;
 }
 
-.nav>a:hover {
+.navitem>a:hover {
   color: #ff6348;
 }
 
@@ -137,7 +138,7 @@ header>a>h1:hover {
 }
 
 main {
-  max-width: 900px;
+  max-width: 1280px;
   margin: 40px auto 40px auto;
   flex-grow: 1;
 }
