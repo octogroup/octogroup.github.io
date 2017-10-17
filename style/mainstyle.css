@@ -97,8 +97,11 @@ header>a>h1:hover {
 
 #loginbutton {
   width: 100px;
-  height: 30px;
+  height: 36px;
   font-size: 10px;
+  background-color: #00701a;
+  border-radius: 2px;
+  border: 0;
 }
 
 #container {
