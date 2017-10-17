@@ -14,6 +14,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>Min profil</title>
+
 </head>
 
 <body>
@@ -83,7 +84,7 @@
 			            </ul>
 								</div>
 								<div class="card-bottom">
-									<button type="button" name="button" class="cardbutton">Läs Mer</button>
+									<button type="button" name="button" class="cardbutton" onclick="showOne(expand1)">Läs Mer</button>
 								</div>
 		          </div>
 		        </div>
@@ -112,7 +113,7 @@
 			            </ul>
 								</div>
 								<div class="card-bottom">
-									<button type="button" name="button" class="cardbutton">Läs Mer</button>
+									<button type="button" name="button" class="cardbutton" onclick="showOne(expand2)">Läs Mer</button>
 								</div>
 		          </div>
 		        </div>
@@ -141,14 +142,36 @@
 			            </ul>
 								</div>
 								<div class="card-bottom">
-									<button type="button" name="button" class="cardbutton">Läs Mer</button>
+									<button type="button" name="button" class="cardbutton" onclick="showOne(expand3)">Läs Mer</button>
 								</div>
 		          </div>
 		        </div>
 						</td>
 					</tr>
+
 					<script>
-					function showonlyone(thechosenone) {
+					function toggleSpan(card) {
+						console.log(card.toString);
+						for (var i = 0; i < expand.length; i++) {
+							if (card.style != style.display="flex"){
+							}
+						}
+					}
+
+
+					</script>
+
+
+
+					<!-- <script>
+					$('.cardbutton').on('click', function() {
+						$parent_box = $(this).closest('.box');
+						$parent_box.siblings().find('.bottom').hide();
+						$parent_box.find('.bottom').toggle();
+					});
+					</script> -->
+					 <!-- <script>
+					function toggleSpan(thechosenone) {
      $('.expand').each(function(index) {
           if ($(this).attr("id") == thechosenone) {
                $(this).show(200);
@@ -158,8 +181,8 @@
           }
      });
 }
-
-					</script>
+>>>>>>>>>>>>>>>>>>>>>>>>
+					</script> -->
 					<!-- <script type="text/javascript">
 					function toggle2(showHideDiv, switchTextDiv) {
 						var ele = document.getElementById(showHideDiv);
@@ -174,14 +197,14 @@
 						}
 					}
 
+
 					</script> -->
-					<!-- <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-					<script>
+					<!-- <script src="http://code.jquery.com/jquery-latest.min.js"></script> -->
+					<!-- <script>
 					$( ".cardbutton" ).click(function() {
 					  $( ".expand" ).toggle( "slow" );
 					});
 
-					</script> -->
 	<!--------------------------------------------------------------------->
 	        <div class="card">
 	          <div class="cardcontainer">
@@ -267,6 +290,8 @@
   <script type="text/javascript" src="../javascript/openmenu.js"></script>
   <script type="text/javascript" src="../javascript/login.js"></script>
   <script type="text/javascript" src="../javascript/sent.js"></script>
+	<script type="text/javascript" src="../javascript/togglediv.js"></script>
+
 </body>
 
 </html>
