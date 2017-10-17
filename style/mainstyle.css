@@ -63,7 +63,7 @@ body {
   color: #ff6348;
 }
 
-#navigation {
+.navigation {
   height: 100px;
   width: 100%;
   list-style-type: none;
