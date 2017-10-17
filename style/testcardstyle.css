@@ -85,13 +85,32 @@
 	justify-content: center;
 }
 
+.expand {
+	-webkit-transition: height 300ms linear;
+	 -moz-transition: height 300ms linear;
+	 -o-transition: height 300ms linear;
+	 transition: height 300ms linear;
+}
+
 #dfbbutton {
   margin: 50px;
 }
 
-.expand {
-	display: none;
-	z-index: 100;
+.cardtable {
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+/*.cardtablerow {
+	display: flex;
+	flex-wrap: wrap;
+}*/
+
+.tabledata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 /*----------------------------BUTTON---------------------------------------*/

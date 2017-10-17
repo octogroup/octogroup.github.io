@@ -58,9 +58,9 @@
       <div class="box">
         <h1>Min profil</h1>
 <!------------------------------------------------------------------>
-				<table>
-					<tr>
-						<td>
+				<table class="cardtable">
+					<tr class="cardtablerow">
+						<td class="tabledata">
 		        <div class="card">
 		          <div class="cardcontainer">
 								<div class="card-header">
@@ -72,7 +72,7 @@
 			              <li><a href="course.html">Arbetsmetodik</a></li>
 										<li><a href="course.html">Arbetsmetodik</a></li>
 										<li><a href="course.html">Arbetsmetodik</a></li>
-										<span class="expand" id="expand1">
+										<span class="expand" id="expand1" style="display: none;">
 										<li><a href="course.html">FLER KURSER</a></li>
 										<li><a href="course.html">FLER KURSER</a></li>
 										<li><a href="course.html">FLER KURSER</a></li>
@@ -84,12 +84,12 @@
 			            </ul>
 								</div>
 								<div class="card-bottom">
-									<button type="button" name="button" class="cardbutton" onclick="showOne(expand1)">Läs Mer</button>
+									<button type="button" name="button" class="cardbutton" onclick="toggleVisibility('expand1')">Läs Mer</button>
 								</div>
 		          </div>
 		        </div>
 						</td>
-						<td>
+						<td class="tabledata">
 		        <div class="card">
 		          <div class="cardcontainer">
 								<div class="card-header">
@@ -101,7 +101,7 @@
 			              <li><a href="course.html">Arbetsmetodik</a></li>
 										<li><a href="course.html">Arbetsmetodik</a></li>
 										<li><a href="course.html">Arbetsmetodik</a></li>
-										<span class="expand" id="expand2">
+										<span class="expand" id="expand2" style="display: none;">
 										<li><a href="course.html">FLER KURSER</a></li>
 										<li><a href="course.html">FLER KURSER</a></li>
 										<li><a href="course.html">FLER KURSER</a></li>
@@ -113,12 +113,12 @@
 			            </ul>
 								</div>
 								<div class="card-bottom">
-									<button type="button" name="button" class="cardbutton" onclick="showOne(expand2)">Läs Mer</button>
+									<button type="button" name="button" class="cardbutton" onclick="toggleVisibility('expand2')">Läs Mer</button>
 								</div>
 		          </div>
 		        </div>
 						</td>
-						<td>
+						<td class="tabledata">
 		        <div class="card">
 		          <div class="cardcontainer">
 								<div class="card-header">
@@ -130,7 +130,7 @@
 			              <li><a href="course.html">Arbetsmetodik</a></li>
 										<li><a href="course.html">Arbetsmetodik</a></li>
 										<li><a href="course.html">Arbetsmetodik</a></li>
-										<span class="expand" id="expand3">
+										<span class="expand" id="expand3" style="display: none;">
 										<li><a href="course.html">FLER KURSER</a></li>
 										<li><a href="course.html">FLER KURSER</a></li>
 										<li><a href="course.html">FLER KURSER</a></li>
@@ -142,68 +142,41 @@
 			            </ul>
 								</div>
 								<div class="card-bottom">
-									<button type="button" name="button" class="cardbutton" onclick="showOne(expand3)">Läs Mer</button>
+									<button type="button" name="button" class="cardbutton" onclick="toggleVisibility('expand3')">Läs Mer</button>
+								</div>
+		          </div>
+		        </div>
+						</td>
+						<td class="tabledata">
+		        <div class="card">
+		          <div class="cardcontainer">
+								<div class="card-header">
+								<img src="../img/octo.png" alt="" class="card-img-top">
+								</div>
+								<div class="card-body">
+			            <h2>Pågående kurser</h2>
+			            <ul class="card-list">
+			              <li><a href="course.html">Arbetsmetodik</a></li>
+										<li><a href="course.html">Arbetsmetodik</a></li>
+										<li><a href="course.html">Arbetsmetodik</a></li>
+										<span class="expand" id="expand4" style="display: none;">
+										<li><a href="course.html">FLER KURSER</a></li>
+										<li><a href="course.html">FLER KURSER</a></li>
+										<li><a href="course.html">FLER KURSER</a></li>
+										<li><a href="course.html">FLER KURSER</a></li>
+										<li><a href="course.html">FLER KURSER</a></li>
+										<li><a href="course.html">FLER KURSER</a></li>
+									</span>
+
+			            </ul>
+								</div>
+								<div class="card-bottom">
+									<button type="button" name="button" class="cardbutton" onclick="toggleVisibility('expand4')">Läs Mer</button>
 								</div>
 		          </div>
 		        </div>
 						</td>
 					</tr>
-
-					<script>
-					function toggleSpan(card) {
-						console.log(card.toString);
-						for (var i = 0; i < expand.length; i++) {
-							if (card.style != style.display="flex"){
-							}
-						}
-					}
-
-
-					</script>
-
-
-
-					<!-- <script>
-					$('.cardbutton').on('click', function() {
-						$parent_box = $(this).closest('.box');
-						$parent_box.siblings().find('.bottom').hide();
-						$parent_box.find('.bottom').toggle();
-					});
-					</script> -->
-					 <!-- <script>
-					function toggleSpan(thechosenone) {
-     $('.expand').each(function(index) {
-          if ($(this).attr("id") == thechosenone) {
-               $(this).show(200);
-          }
-          else {
-               $(this).hide(600);
-          }
-     });
-}
->>>>>>>>>>>>>>>>>>>>>>>>
-					</script> -->
-					<!-- <script type="text/javascript">
-					function toggle2(showHideDiv, switchTextDiv) {
-						var ele = document.getElementById(showHideDiv);
-						var text = document.getElementById(switchTextDiv);
-						if(ele.style.display == "block") {
-					    		ele.style.display = "none";
-							text.innerHTML = "Show";
-					  	}
-						else {
-							ele.style.display = "block";
-							text.innerHTML = "Hide";
-						}
-					}
-
-
-					</script> -->
-					<!-- <script src="http://code.jquery.com/jquery-latest.min.js"></script> -->
-					<!-- <script>
-					$( ".cardbutton" ).click(function() {
-					  $( ".expand" ).toggle( "slow" );
-					});
 
 	<!--------------------------------------------------------------------->
 	        <div class="card">
