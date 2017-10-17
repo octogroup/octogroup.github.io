@@ -4,7 +4,7 @@
 <head>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-  <link rel="shortcut icon" href="octo.png">
+  <link rel="shortcut icon" href="img/octo.png">
   <link rel="stylesheet" href="style/loginstyle.css">
   <link rel="stylesheet" href="style/hamburger.css">
   <link rel="stylesheet" href="style/mainstyle.css">
@@ -14,65 +14,67 @@
 </head>
 
 <body>
-	<div class="content">
-		<header>
-			<nav class="navigation">
-          <div id="navbutton"><button type="button" name="loginbutton" onclick=showLogin()>LOGGA IN</button></div>
-          <div id="header"><a href="index.html">
-              <h1>Octo Group</h1>
-            </a></div>
-          <ul id="navlist">
-					<li class="navitem"><a href="pages/why.html">Varför Octo?</a></li>
-					<li class="navitem"><a href="pages/utbildningar.html">Priser</a></li>
-				</ul>
+  <div class="content">
+    <header>
+        <a href="index.html">
+          <img src="img/octoedu.png" alt="">
+            <h1>Octo</h1>
+          </a>
+      <nav id="navigation">
+        <div id="loginalign">
+          <button id="loginbutton" type="button" name="loginbutton" onclick=showLogin()>LOGGA IN</button>
+        </div>
+        <ul id="navlist">
+          <li>
+            <a href="pages/why.html">Varför Octo?</a>
+          </li>
+          <li>
+            <a href="pages/utbildningar.html">Priser</a>
+          </li>
+        </ul>
       </nav>
-      <nav class="navmobile">
-          <div id="navbutton"><button type="button" name="loginbutton" onclick=showLogin()>LOGGA IN</button></div>
-          <div id="header"><a href="index.html">
-              <h1>Octo Group</h1>
-            </a></div>
-          <ul id="navlist">
-					<li class="navitem"><a href="pages/why.html">Varför Octo?</a></li>
-					<li class="navitem"><a href="pages/utbildningar.html">Priser</a></li>
-				</ul>
-      </nav>
-			</header>
-		<div id="container"></div>
-		<main>
-			<!--Loginbox-starts-->
-			<div id="loginbox">
-				<form name="login" action="#" class="modal-content">
-					<div class="inputcontainer">
-						<label><b>Användarnamn</b></label>
-						<img id="userimg" src="img/octoedu.png" alt="">
-						<input id="unameinput" type="text" placeholder="Användarnamn" required>
-						<label><b>Lösenord</b></label>
-						<img id="userimg" src="img/lock.png" alt="">
-						<input id="pswinput" type="password" placeholder="Lösenord" required>
-						<!--button type="button" onclick="document.getElementById('loginbox').style.display='none'" class="cancelbtn">X</button-->
-					</div>
-					<div class="lgcontainer">
-						<button id="loginbutton" type="submit" onclick="accesslevel(this.form); return false;">Logga in</button>
-						<p id="errortxt">Fel lösenord eller <br> användarnamn.
-						</p>
-					</div>
-				</form>
-			</div>
-			<!--Loginbox-ends-->
-			<h2>Om portalen</h2>
-			<p>Välkommen till KYHs LMS portal.</p>
-			<p>Här kan du se nyheter, information om kurser och betyg.</p>
+    </header>
+    <div id="container"></div>
+    <main>
+      <!--Loginbox-starts-->
+      <div id="loginbox">
+        <form name="login" action="#" class="modal-content">
+          <div class="inputcontainer">
+            <label>
+              <b>Användarnamn</b>
+            </label>
+            <img id="userimg" src="img/octoedu.png" alt="">
+            <input id="unameinput" type="text" placeholder="Användarnamn" required>
+            <label>
+              <b>Lösenord</b>
+            </label>
+            <img id="userimg" src="img/lock.png" alt="">
+            <input id="pswinput" type="password" placeholder="Lösenord" required>
+            <!--button type="button" onclick="document.getElementById('loginbox').style.display='none'" class="cancelbtn">X</button-->
+          </div>
+          <div class="lgcontainer">
+            <button id="loginbutton" type="submit" onclick="accesslevel(this.form); return false;">Logga in</button>
+            <p id="errortxt">Fel lösenord eller
+              <br> användarnamn.
+            </p>
+          </div>
+        </form>
+      </div>
+      <!--Loginbox-ends-->
+      <h2>Om portalen</h2>
+      <p>Välkommen till KYHs LMS portal.</p>
+      <p>Här kan du se nyheter, information om kurser och betyg.</p>
       <h1>H1</h1>
       <h2>H2</h2>
       <h3>H3</h3>
       <h4>H4</h4>
-		</main>
-	</div>
-	<footer class="footer">
-		<p>&copy;2017</p>
-	</footer>
-	<script type="text/javascript" src="javascript/openmenu.js"></script>
-	<script type="text/javascript" src="javascript/login.js"></script>
+    </main>
+  </div>
+  <footer class="footer">
+    <p>&copy;2017</p>
+  </footer>
+  <script type="text/javascript" src="javascript/openmenu.js"></script>
+  <script type="text/javascript" src="javascript/login.js"></script>
 </body>
 
 </html>
