@@ -52,7 +52,7 @@ body {
 header {
   width: 100%;
   list-style-type: none;
-  background-color: #111;
+  background-color: #43a047;
   display: flex;
   justify-content: space-between;
 }
@@ -68,13 +68,9 @@ header>a>img {
 }
 
 header>a>h1 {
-  color: white;
-  transition: color 0.3s ease;
+  color:#000;
 }
 
-header>a>h1:hover {
-  color: #fafafa;
-}
 #navigation {
   display: flex;
   justify-content: space-between;
@@ -88,12 +84,7 @@ header>a>h1:hover {
 
 #navlist>li>a {
   text-decoration: none;
-  color: black;
-  transition: color 0.3s ease;
-}
-
-#navlist>li>a:hover {
-  color: #ff6348;
+  color: #000;
 }
 
 #loginalign {
@@ -101,10 +92,13 @@ header>a>h1:hover {
   justify-content: flex-end;
 }
 
-#loginbutton {
-  width: 100px;
+.loginbutton {
+  min-width: 64px;
   height: 36px;
-  font-size: 10px;
+  font-size: 14px;
+  font-family: 'roboto';
+  color: #fff;
+  padding: 0 16px;
   background-color: #00701a;
   border-radius: 2px;
   border: 0;
