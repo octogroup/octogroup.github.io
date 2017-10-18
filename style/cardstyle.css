@@ -25,17 +25,6 @@
 	  justify-content: flex-end;
 	  flex-direction: column;
 	}
-
-	.card-body {
-		background-color: yellow;
-	}
-}
-
-
-.box>h1 {
-  display: flex;
-  justify-content: center;
-  flex: 100%;
 }
 
 .card {
@@ -68,12 +57,6 @@
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.cardcontainer>h2 {
-  text-align: center;
-  text-decoration: underline #777A68;
-  margin: 10px;
-}
-
 .card-list {
   text-align: left;
   margin: 10px;
@@ -102,7 +85,7 @@
   height: auto;
   margin: 10px;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
 }
@@ -147,6 +130,40 @@
 #expand1 #expand2 #expand3 {
   display: none;
 }
+
+#att-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#att-bottom {
+  display: flex;
+  height: auto;
+  margin: 10px;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+}
+
+#codeInput {
+  margin-bottom: 10px;
+}
+
+#attOnSend {
+	display: none;
+}
+
+/* #attendance {
+  background-color: #FF4D32;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  border: 0;
+  color: #F5F5F5
+} the red cross button */
 
 /*----------------------------BUTTON---------------------------------------*/
 
