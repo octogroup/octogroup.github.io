@@ -131,7 +131,7 @@ header>a>h1 {
 
 #dropdownmenu {
   height: 0px;
-  transition: height 1s;
+  transition: height 0.5s;
 }
 
 #dropbutton {
