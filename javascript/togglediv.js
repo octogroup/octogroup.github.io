@@ -1,7 +1,7 @@
 
-var divs = ["expand1", "expand2", "expand3"];
-var visibleDivId = null;
-function toggleVisibility(divId) {
+var divs = ["expand1", "expand2", "expand3", "expand4"];
+var visibleDivId = false;
+function toggleExpand(divId) {
   if(visibleDivId === divId) {
     visibleDivId = null;
   } else {
@@ -15,7 +15,7 @@ function hideNonVisibleDivs() {
     divId = divs[i];
     div = document.getElementById(divId);
     if(visibleDivId === divId) {
-      div.style.display = "block";
+      div.style.display = "flex";
     } else {
       div.style.display = "none";
     }

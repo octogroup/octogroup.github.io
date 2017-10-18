@@ -30,15 +30,15 @@
 	width: auto;
 	height: auto;
 	flex-direction: column;
-	min-width: 250px;
-	min-height: 180px;
+	min-width: 200px;
+	min-height: 200px;
+	max-width: 400px;
 	/*align-items: center;*/
 }
 
 .card-img-top {
 	width: 50px;
 	height: 50px;
-	right: auto;
 }
 
 .box > .card:hover {
@@ -52,35 +52,123 @@
 }
 
 .card-list {
-	text-align: center;
+	text-align: left;
   margin: 10px;
   list-style-position: inside;
 	list-style: none;
 }
-/*.cardcontainer > ul {
-  text-align: center;
-  margin: 10px;
-  list-style-position: inside;
-	list-style: none;
-}*/
 
-#dfbbutton {
-  margin: 50px;
+.card-body > p {
+	margin: 5px;
 }
 
-.cardbutton {
+.card-header {
+	display: flex;
+	justify-content: center;
+	background-color: #c62828;
+	margin: 0 0 10px 0;
+
 }
 
 .card-body {
 	width: auto;
 	height: auto;
 	margin: 10px;
-	border: 1px solid red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.card-body-text {
+	text-align: left;
 }
 
 .card-bottom {
+	display: flex;
 	height: auto;
 	margin: 10px;
-	border: 1px solid pink;
-	bottom: 0;
+	justify-content: flex-end;
+	flex-direction: column;
+	flex-grow: 1;
+  align-items: flex-start;
 }
+
+/*.expand {
+	-webkit-transition: height 300ms linear;
+	 -moz-transition: height 300ms linear;
+	 -o-transition: height 300ms linear;
+	 transition: height 300ms linear;
+}
+
+
+.cardtable {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	vertical-align: middle;
+
+}
+
+.tabledata {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	flex-direction: row;
+}*/
+
+#expand1 #expand2 #expand3 {
+	display: none;
+}
+
+/*----------------------------BUTTON---------------------------------------*/
+.cardbutton {
+  border: none;
+  cursor: pointer;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 2px;
+  font-size: 14px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+  background: #ff5f52;
+	text-transform: uppercase;
+}
+
+/*button{
+  position: relative;
+  overflow: hidden;
+}*/
+
+button:after {
+  content: '';
+  /*position: sticky;*/
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: rgba(255, 255, 255, .5);
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(1, 1) translate(-50%);
+  transform-origin: 50% 50%;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 1;
+  }
+  20% {
+    transform: scale(25, 25);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(40, 40);
+  }
+}
+
+button:focus:not(:active)::after {
+  animation: ripple 1s ease-out;
+}
+/*-----------------------Button-ends-----------------------------------*/

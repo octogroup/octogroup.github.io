@@ -3,10 +3,6 @@ html {
 
 }
 
-#dfbbutton {
-  justify-content: center;
-}
-
 textarea {
   resize: none;
   flex: 1;
@@ -80,10 +76,10 @@ textarea {
   align-items: center;
 }
 
-.submitdfb {
+/*.submitdfb {
   justify-content: center;
   font-size: 15px;
   margin: 8px;
   background-color: #D3D3D3;
   padding: 5px 20px 5px 20px;
-}
+}*/
