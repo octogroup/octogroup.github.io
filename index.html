@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Open Sans' rel="stylesheet">
   <link rel="shortcut icon" href="img/octo.png">
   <link rel="stylesheet" href="style/loginstyle.css">
@@ -16,10 +16,10 @@
 <body>
   <div class="content">
     <header>
-        <a href="index.html">
-          <img src="img/octoedu.png" alt="">
-            <h1>Octo</h1>
-          </a>
+      <a href="index.html">
+        <img src="img/octoedu.png" alt="">
+        <h1>Octo</h1>
+      </a>
       <nav id="navigation">
         <div id="loginalign">
           <button class="loginbutton" type="button" name="loginbutton" onclick=showLogin()>logga in</button>
@@ -28,11 +28,22 @@
           <li>
             <a href="index.html">Hem</a>
           </li>
-          <li><a href="pages/why.html">Varför Octo?</a>
+          <li>
+            <a href="pages/why.html">Varför Octo?</a>
           </li>
           <li>
             <a href="pages/utbildningar.html">Priser</a>
           </li>
+        </ul>
+        <ul id="dropdowncontent">
+            <li>
+                <a href="#">Menu &#x25BE</a>
+                <ul id="dropdownmenu">
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="pages/why.html">Varför Octo?</a></li>
+                    <li><a href="pages/utbildningar.html">Priser</a></li>
+                </ul>
+            </li>
         </ul>
       </nav>
     </header>
