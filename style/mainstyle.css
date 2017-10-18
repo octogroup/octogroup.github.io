@@ -49,10 +49,14 @@ body {
   flex: 1 0 auto;
 }
 
-header {
+.mainheader {
   background-color: #43a047;
   height: 70px;
   width: 100%;
+}
+
+#studentheader {
+	background-color: #c62928;
 }
 
 header>a>h1 {
@@ -73,6 +77,10 @@ header>a>h1:hover {
   background-color: #43a047;
   margin-right: 30px;
   text-align: right;
+}
+
+#studentnav {
+	background-color: #c62928;
 }
 
 #nav {
@@ -168,7 +176,7 @@ main {
 }
 
 .footer {
-  background-color: #76d275;
+  background-color: #ff5f52;
   padding-top: 60px;
   position: relative;
 }
