@@ -1,6 +1,5 @@
 html {
   height: 100%
-
 }
 
 #dfbbutton {
@@ -16,9 +15,9 @@ textarea {
 }
 
 ::-webkit-input-placeholder {
-   text-align: center;
-   vertical-align: middle;
-   padding-top: 30px;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 30px;
 }
 
 #dfbbox {
@@ -26,17 +25,22 @@ textarea {
 }
 
 #answerOnSend {
-	display: none;
+  display: none;
 }
 
 #feedbacktext {
-	font-size: 20px;
-	vertical-align: middle;
-	font-family: 'Pacifico', 'Open Sans', sans-serif;
+  font-size: 20px;
+  vertical-align: middle;
+  font-family: 'Pacifico', 'Open Sans', sans-serif;
+}
+
+#smileyfaces {
+  word-spacing: 60px;
+  width: 270px;
 }
 
 .boxstyle {
-	position: fixed;
+  position: fixed;
   left: 50%;
   top: 50%;
   width: 100%;
@@ -62,22 +66,36 @@ textarea {
   padding-bottom: 10px;
 }
 
-.inputcontainer > label {
+.inputcontainer>label {
   font-family: 'Pacifico', 'Open Sans', sans-serif;
 }
 
-.inputcontainer > p {
+.inputcontainer>p {
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
   margin: 15px;
 }
 
+.inputcontainer img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.dailyfeedbacbradio {
+  margin-left: -36px;
+}
 
 .bottomsection {
   display: flex;
   flex-direction: column;
   margin: 8px;
   align-items: center;
+}
+
+.bottomsection>button {
+  background-color: #ff5f52;
+  border: 0;
 }
 
 .submitdfb {

@@ -15,6 +15,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>Min profil</title>
+
 </head>
 
 <body>
@@ -95,8 +96,11 @@
               <form class="dfbform" action="#" method="post">
                 <div class="inputcontainer">
                   <p id="feedbacktext">Dagens feedback</p>
-                  <p>Vad har varit bra/dåligt under dagen?</p>
-                  <textarea name="name" rows="8" cols="30" autofocus maxlength="500" placeholder="Vi uppskattar din feedback!"></textarea>
+                  <p id="smileyfaces">
+                    <label for="glad"><img src="../img/happyy.png"><input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="glad" value="glad"></label>
+                    <label for="neutral"><img src="../img/confused.png"><input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="neutral" value="neutral"></label>
+                    <label for="ledsen"><img src="../img/sad.png"><input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="ledsen" value="ledsen"></label>
+                  </p>
                 </div>
                 <div class="bottomsection">
                   <button type="button" class="submitdfb" onclick="hideDailyFeedBack(); showAnswerOnSend()">Skicka in</button>
