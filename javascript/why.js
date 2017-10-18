@@ -1,15 +1,43 @@
-var timer;
 
-function startCount() {
-  timer = setInterval(count, 100);
+// let timer;
+//
+// function startCount() {
+//   timer = setInterval(count, 300);
+// }
+// function count() {
+//   let el = document.getElementById('counter');
+//   let currentNumber = parseFloat(el.innerHTML);
+//   el.innerHTML = currentNumber + 1;
+//
+// }
+
+
+
+function startLightBox(lightBoxBg, lightBox)
+{
+ let lbBg = document.getElementById(lightBoxBg);
+ let lb = document.getElementById(lightBox);
+
+ lbBg.style.display = "flex";
+ lb.style.display = "flex";
 }
 
-function count() {
-  var el = document.getElementById('counter');
-  var currentNumber = parseFloat(el.innerHTML);
-  el.innerHTML = currentNumber + 1;
-
+function dismiss(lightBoxBg, lightBox){
+ let lbBg = document.getElementById(lightBoxBg);
+ let lb = document.getElementById(lightBox);
+ lbBg.style.display = "none";
+ lb.style.display = " none";
 }
+
+
+
+
+
+
+
+
+
+
 
 
 var myIndex = 0;

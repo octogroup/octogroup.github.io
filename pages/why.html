@@ -82,23 +82,38 @@
       </div>
       <hr>
       <div class="flex2">
-        <figure>
+        <!-- <figure>
           <img id="bild" src="../img/octo.png" alt="bild">
           <figcaption>Så många använder Octo:
 
             <body onload="startCount();">
               <div id="counter">0</div>
           </figcaption>
-        </figure>
-        <figure>
-          <img id="bild" src="../img/octo.png" alt="bild">
-          <figcaption>Olika teman vi erbjuder:
-          </figcaption>
+        </figure> -->
+        <div class="texten">
+          <h3>Olika färgteman vi erbjuder</h3>
+        </div>
+
+        <div id="lightBoxBg" class="lightBoxBg" onclick="dismiss('lightBoxBg', 'lightBox')">
+        </div>
+        <div id="lightBox" class="lightBox">
+          <img src="../img/rosa.png" />
+        </div>
+        <button class="knapp" onclick="startLightBox('lightBoxBg', 'lightBox')">Se rosa förgschema</button>
+        <div id="lightBoxBg1" class="lightBoxBg" onclick="dismiss('lightBoxBg1', 'lightBox1')">
+        </div>
+        <div id="lightBox1" class="lightBox">
+          <img src="../img/grå.png" />
+        </div>
+        <button class="knapp "onclick="startLightBox('lightBoxBg1', 'lightBox1')">Se grått färgschema</button>
       </div>
+
+
+
       <hr>
       <div class="flex3">
         <div class="text1">
-          <h2>Sneakpeak</h2></div>
+          <h2>Sneak peek</h2></div>
         <img class="bildspel" src="../img/gul.jpg">
         <img class="bildspel" src="../img/svart.jpg">
         <img class="bildspel" src="../img/röd.jpg">
