@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Open Sans' rel="stylesheet">
+  <link rel="shortcut icon" href="img/octo.png">
+  <link rel="stylesheet" href="style/loginstyle.css">
+  <link rel="stylesheet" href="style/hamburger.css">
+  <link rel="stylesheet" href="style/mainstyle.1.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="content">
+    <header onclick="dropclose()">
+      <a href="index.html">
+        <img src="img/octoedu.png" alt="">
+        <h1>Octo</h1>
+      </a>
+      <nav id="navigation">
+        <div id="loginalign">
+          <button class="loginbutton" type="button" name="loginbutton" onclick=showLogin()>logga in</button>
+        </div>
+        <ul id="navlist">
+          <li>
+            <a href="index.html">Hem</a>
+          </li>
+          <li>
+            <a href="pages/why.html">Varför Octo?</a>
+          </li>
+          <li>
+            <a href="pages/utbildningar.html">Priser</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="container">
+     <div onclick="dropopen()" id="dropbutton">Meny &#x25BE</div>
+      <div id="dropdown">
+        <ul id="dropdownmenu">
+          <li>
+            <a href="index.html">Hem</a>
+          </li>
+          <li>
+            <a href="pages/why.html">Varför Octo?</a>
+          </li>
+          <li>
+            <a href="pages/utbildningar.html">Priser</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+    <main onclick="dropclose()">
+
+      <!--Loginbox-starts-->
+      <div id="loginbox">
+        <form name="login" action="#" class="modal-content">
+          <div class="inputcontainer">
+            <label>
+              <b>Användarnamn</b>
+            </label>
+            <img id="userimg" src="img/octoedu.png" alt="">
+            <input id="unameinput" type="text" placeholder="Användarnamn" required>
+            <label>
+              <b>Lösenord</b>
+            </label>
+            <img id="userimg" src="img/lock.png" alt="">
+            <input id="pswinput" type="password" placeholder="Lösenord" required>
+            <!--button type="button" onclick="document.getElementById('loginbox').style.display='none'" class="cancelbtn">X</button-->
+          </div>
+          <div class="lgcontainer">
+            <button class="loginbutton" type="submit" onclick="accesslevel(this.form); return false;">Logga in</button>
+            <p id="errortxt">Fel lösenord eller
+              <br> användarnamn.
+            </p>
+          </div>
+        </form>
+      </div>
+      <!--Loginbox-ends-->
+      <h2>Om portalen</h2>
+      <p>Välkommen till KYHs LMS portal.</p>
+      <p>Här kan du se nyheter, information om kurser och betyg.</p>
+      <h1>H1</h1>
+      <h2>H2</h2>
+      <h3>H3</h3>
+      <h4>H4</h4>
+    </main>
+  </div>
+  <footer class="footer">
+    <p>&copy;2017</p>
+  </footer>
+  <script type="text/javascript" src="javascript/openmenu.js"></script>
+  <script type="text/javascript" src="javascript/login.js"></script>
+  <script type="text/javascript" src="javascript/dropmenu.js"></script>
+</body>
+
+</html>
