@@ -40,6 +40,7 @@ textarea {
   transform: translate(-50%, -50%);
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
+	z-index: 2;
 }
 
 .dfbform {

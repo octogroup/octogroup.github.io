@@ -176,9 +176,13 @@ main {
 }
 
 .footer {
-  background-color: #ff5f52;
+  background-color: #76d275;
   padding-top: 60px;
   position: relative;
+}
+
+#studentfooter {
+	background-color: #ff5f52;
 }
 
 .footer>p {
