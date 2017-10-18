@@ -14,12 +14,17 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 /* CSS Reset ends here */
 
+html, body, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans";
+}
+
 html, body {
   height: 100%;
 }
 
 h1 {
   font-size: 7em;
+  font-family: "Roboto";
 }
 
 h2 {
@@ -45,13 +50,13 @@ body {
 }
 
 header {
-  background-color: #111;
+  background-color: #43a047;
   height: 70px;
   width: 100%;
 }
 
 header>a>h1 {
-  color: white;
+  color: black;
   position: absolute;
   top: 15px;
   left: 15px;
@@ -59,13 +64,13 @@ header>a>h1 {
 }
 
 header>a>h1:hover {
-  color: #ff6348;
+  color: #fafafa;
 }
 
 .longnav {
   height: 40px;
   list-style-type: none;
-  background-color: #111;
+  background-color: #43a047;
   margin-right: 30px;
   text-align: right;
 }
@@ -75,12 +80,12 @@ header>a>h1:hover {
 }
 
 .nav>button {
-  background-color: #ff6348;
+  background-color: #00701a;
   border-radius: 20px;
-  border-color: #ff6348;
+  border-color: #00701a;
   width: 85px;
   height: 20px;
-  color: #fff;
+  color: #fafafa;
   padding-bottom: 3px;
 }
 
@@ -142,12 +147,12 @@ header>a>h1:hover {
 
 .nav>a {
   text-decoration: none;
-  color: #FFFFFF;
+  color: black;
   transition: color 0.3s ease;
 }
 
 .nav>a:hover {
-  color: #ff6348;
+  color: #fafafa;
 }
 
 #container {
@@ -163,7 +168,7 @@ main {
 }
 
 .footer {
-  background-color: #111;
+  background-color: #76d275;
   padding-top: 60px;
   position: relative;
 }
@@ -172,5 +177,5 @@ main {
   position: absolute;
   bottom: 0;
   right: 0;
-  color: #fff;
+  color: black;
 }
