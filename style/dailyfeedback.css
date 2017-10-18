@@ -6,14 +6,6 @@ html {
   justify-content: center;
 }
 
-textarea {
-  resize: none;
-  flex: 1;
-  width: 90%;
-  min-height: 20px;
-  margin: 5px;
-}
-
 ::-webkit-input-placeholder {
   text-align: center;
   vertical-align: middle;
