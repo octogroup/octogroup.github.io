@@ -259,9 +259,6 @@ main {
   header>a>img {
     height: 2.1em;
   }
-  #dropdown {
-    display: block;
-  }
   #dropbutton {
     display: block;
   }
