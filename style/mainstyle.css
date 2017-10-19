@@ -23,12 +23,8 @@ html, body {
 }
 
 h1 {
-<<<<<<< HEAD
-  font-size: 112px;
-=======
   font-size: 7em;
   font-family: "Roboto";
->>>>>>> navlogin
 }
 
 h2 {
@@ -107,7 +103,7 @@ header>a>h1 {
 }
 
 #navlist li:hover {
-  border-bottom: solid 4px #43a047; 
+  border-bottom: solid 4px #43a047;
   color: #fff;
 }
 
@@ -150,7 +146,7 @@ header>a>h1 {
   font-weight: 500;
   font-family: 'Roboto';
 }
-  
+
 #dropdown:hover #dropbutton {
   visibility: hidden;
 }

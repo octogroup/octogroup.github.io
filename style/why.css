@@ -12,11 +12,6 @@
   margin: inherit;
 }
 
-#hand {
-  height: 45px;
-  width: 45px;
-}
-
 .flex1 {
   display: flex;
   flex-direction: row;
@@ -35,7 +30,7 @@
   font-weight: bold;
 }
 
-.column>h4 {
+.column>h3 {
   color: #43a047;
 }
 
@@ -45,6 +40,7 @@
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+  background-image: url(../img/bok.png);
 }
 
 .texten {
@@ -97,8 +93,8 @@
   justify-content: space-around;
   align-items: center;
   align-content: flex-start;
-  /*Alternativ en border? *Annan färg*
-  border-style: solid;
+  /*Alternativ en border? *Annan färg**/
+  /*border-style: solid;
   border-width: 5px;*/
 }
 
