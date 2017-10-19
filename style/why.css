@@ -42,9 +42,15 @@
 .flex2 {
   display: flex;
   height: 350px;
-  /*flex-direction: row;*/
+  flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
+}
 
+.texten {
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
 }
 
 .knapp {
@@ -53,38 +59,35 @@
   height: 30px;
 }
 
-/*#bild {
-  height: 200px;
-  width: 200px;
-}*/
-
-.lightBoxBg{
- position: fixed;
- top: 0px;
- left: 0px;
- opacity: 0.5;
- display: none;
- background-color: #000000;
- height: 100%;
- width: 100%;
- flex-direction: column;
+.lightBoxBg {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  opacity: 0.5;
+  display: none;
+  background-color: #000000;
+  /*background-color: #43a047;*/
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
 }
 
-
-.lightBox{
- /*z-index: 10;*/
- position: static;
- top: 50%;
- left: 50%;
- height: 50%;
- width: 50%;
- display: none;
- flex-direction: column;
- transform: translate(-50%, -50%);
+.lightBox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 50%;
+  /*width: 50%;*/
+  display: none;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 10000;
+  box-shadow: 0 0 3.125em rgba( 0, 0, 0, .75);
 }
 
-.lightBox img{
- width: 600px;
+.lightBox img {
+  width: 500px;
 }
 
 .flex3 {
@@ -117,3 +120,8 @@
   border-radius: 2px;
   height: 300px;
 }
+
+/*#bild {
+  height: 200px;
+  width: 200px;
+}*/

@@ -1,18 +1,4 @@
 
-// let timer;
-//
-// function startCount() {
-//   timer = setInterval(count, 300);
-// }
-// function count() {
-//   let el = document.getElementById('counter');
-//   let currentNumber = parseFloat(el.innerHTML);
-//   el.innerHTML = currentNumber + 1;
-//
-// }
-
-
-
 function startLightBox(lightBoxBg, lightBox)
 {
  let lbBg = document.getElementById(lightBoxBg);
@@ -31,15 +17,6 @@ function dismiss(lightBoxBg, lightBox){
 
 
 
-
-
-
-
-
-
-
-
-
 var myIndex = 0;
 carousel();
 
@@ -54,3 +31,15 @@ function carousel() {
     x[myIndex-1].style.display = "block";
     setTimeout(carousel, 2000); // Change image every 2 seconds
 }
+
+// let timer;
+//
+// function startCount() {
+//   timer = setInterval(count, 300);
+// }
+// function count() {
+//   let el = document.getElementById('counter');
+//   let currentNumber = parseFloat(el.innerHTML);
+//   el.innerHTML = currentNumber + 1;
+//
+// }
