@@ -23,8 +23,7 @@ html, body {
 }
 
 h1 {
-  font-size: 2em;
-  font-family: "Roboto";
+  font-size: 112px;
 }
 
 h2 {
@@ -95,6 +94,24 @@ header>a>h1:hover {
   height: 20px;
   color: #fafafa;
   padding-bottom: 3px;
+}
+
+@media (max-width: 1920px) {
+  h1 {
+    font-size: 56px;
+  }
+}
+
+@media (max-width: 1280px) {
+  h1 {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 34px;
+  }
 }
 
 @media (max-width: 800px) {
