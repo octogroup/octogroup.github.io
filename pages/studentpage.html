@@ -2,14 +2,13 @@
 <html lang="en">
 
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Open Sans' rel="stylesheet">
-  <link rel="shortcut icon" href="../img/octo.png">
+  <link rel="shortcut icon" href="..img/octo.png">
   <link rel="stylesheet" href="../style/dailyfeedback.css">
   <link rel="stylesheet" href="../style/attendance.css">
   <link rel="stylesheet" href="../style/loginstyle.css">
-  <link rel="stylesheet" href="../style/hamburger.css">
-  <link rel="stylesheet" href="../style/mainstyle.css">
+  <link rel="stylesheet" href="../style/studentstyle.css">
   <link rel="stylesheet" href="../style/cardstyle.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
@@ -18,53 +17,21 @@
 
 <body>
   <div class="content">
-    <header class="mainheader" id="studentheader">
-      <nav class="longnav" id="studentnav">
-        <ul id="nav">
-          <li class="nav">
-            <a href="why.html">Varför KYH?</a>
-          </li>
-          <li class="nav">
-            <a href="utbildningar.html">Utbildningar</a>
-          </li>
-          <li class="nav">
-            <a href="about.html">Om oss</a>
-          </li>
-          <li class="nav">
-            <button type="button" name="logout" onclick="logOut()">logga ut</button>
-          </li>
-        </ul>
-      </nav>
-      <nav id="hamburger">
-        <div id="burgerclick">
-          <div id="burgerline1" class="burgericon"></div>
-          <div id="burgerline2" class="burgericon"></div>
-          <div id="burgerline3" class="burgericon"></div>
-          <div id="hamburgerbackground"></div>
-        </div>
-        <div id="hamburgermenu">
-          <ul id="nav2">
-            <li class="nav2">
-              <a href="why.html">Varför KYH?</a>
-            </li>
-            <li class="nav2">
-              <a href="utbildningar.html">Utbildningar</a>
-            </li>
-            <li class="nav2">
-              <a href="about.html">Om oss</a>
-            </li>
-            <li class="nav2">
-              <button type="button" name="logout" onclick="logOut()">logga ut</button>
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <header onclick="dropclose()">
       <a href="../index.html">
-        <h1>Octo Group</h1>
+        <img src="../img/octoedu.png" alt="">
+        <h1>Octo : KYH</h1>
       </a>
+      <nav id="navigation">
+        <div id="loginalign">
+          <button class="loginbutton" type="button" name="logout" onclick=logOut()>logga ut</button>
+        </div>
+      </nav>
     </header>
-    <!-- <div id="container"></div> doesn't seem to do anything -->
-    <main>
+    <div id="container">
+    </div>
+    <main onclick="dropclose()">
+
       <div id="att-box">
         <div class="card" id="attcard">
           <div class="cardcontainer">
@@ -80,25 +47,21 @@
               <button type="button" name="button" class="cardbutton" onclick="codePromp()">Skicka</button>
             </div>
             <div id="attOnSend" class="boxstyle">
-                <div class="dfbform">
-                  <div class="inputcontainer">
-                    <p id="feedbacktext">Din närvaro har blivit registrerad!</p>
-                  </div>
-                  <div class="bottomsection">
-                    <button type="button" class="submitdfb cardbutton" onclick="hideAttOnSend();  hideAttBox()">Stäng</button>
-                  </div>
+              <div class="dfbform">
+                <div class="inputcontainer">
+                  <p id="feedbacktext">Din närvaro har blivit registrerad!</p>
+                </div>
+                <div class="bottomsection">
+                  <button type="button" class="submitdfb cardbutton" onclick="hideAttOnSend();  hideAttBox()">Stäng</button>
                 </div>
               </div>
+            </div>
           </div>
         </div>
       </div>
 
       <!--Cardlayout-->
       <div class="box">
-        <!-- <table class="cardtable">
-					<tbody class="cardtable">
-					<tr class="cardtablerow">
-						<td class="tabledata"> -->
         <div class="card">
           <div class="cardcontainer">
             <div class="card-header">
@@ -129,8 +92,6 @@
             </div>
           </div>
         </div>
-        <!-- </td> -->
-        <!-- <td class="tabledata"> -->
         <div class="card">
           <div class="cardcontainer">
             <div class="card-header">
@@ -160,8 +121,6 @@
             </div>
           </div>
         </div>
-        <!-- </td> -->
-        <!-- <td class="tabledata"> -->
         <div class="card">
           <div class="cardcontainer">
             <div class="card-header">
@@ -181,9 +140,6 @@
             </div>
           </div>
         </div>
-        <!-- </td> -->
-        <!--Dagens feedback--->
-        <!-- <td class="tabledata"> -->
         <div class="card">
           <div class="cardcontainer">
             <div class="card-header">
@@ -221,9 +177,6 @@
             <!--Modulus Dailyfeedback end-->
           </div>
         </div>
-        <!-- </td> -->
-        <!--Dagens feedback end--->
-        <!-- <td class="tabledata"> -->
         <div class="card">
           <div class="cardcontainer">
             <div class="card-header">
@@ -239,8 +192,6 @@
             </div>
           </div>
         </div>
-        <!-- </td> -->
-        <!-- <td class="tabledata"> -->
         <div class="card">
           <div class="cardcontainer">
             <div class="card-header">
@@ -259,10 +210,6 @@
             </div>
           </div>
         </div>
-        <!-- </td>
-						</tr>
-					</tbody>
-					</table> -->
       </div>
     </main>
   </div>

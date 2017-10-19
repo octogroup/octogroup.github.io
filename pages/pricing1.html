@@ -2,22 +2,23 @@
 <html lang="en">
 
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Open Sans' rel="stylesheet">
-  <link rel="shortcut icon" href="img/octo.png">
-  <link rel="stylesheet" href="style/loginstyle.css">
-  <link rel="stylesheet" href="style/currentpageindex.css">
-  <link rel="stylesheet" href="style/mainstyle.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="UTF-8">
-  <title>Octo</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel="stylesheet">
+    <link rel="shortcut icon" href="../img/octo.png">
+    <link rel="stylesheet" href="../style/loginstyle.css">
+    <link rel="stylesheet" href="../style/currentpagepricing.css">
+    <link rel="stylesheet" href="../style/mainstyle.css">
+    <link rel="stylesheet" href="../style/why.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Octo</title>
 </head>
 
 <body>
   <div class="content">
     <header onclick="dropclose()">
-      <a href="index.html">
-        <img src="img/octoedu.png" alt="">
+      <a href="../index.html">
+        <img src="../img/octoedu.png" alt="">
         <h1>Octo</h1>
       </a>
       <nav id="navigation">
@@ -26,13 +27,13 @@
         </div>
         <ul id="navlist">
           <li>
-            <a href="index.html">Hem</a>
+            <a href="../index.html">Hem</a>
           </li>
           <li>
-            <a href="pages/why.html">Varför Octo?</a>
+            <a href="why.html">Varför Octo?</a>
           </li>
           <li>
-            <a href="pages/pricing.html">Priser</a>
+            <a href="pricing.html">Priser</a>
           </li>
         </ul>
 
@@ -43,13 +44,13 @@
       <div id="dropdown">
         <ul id="dropdownmenu">
           <li>
-            <a href="index.html">Hem</a>
+            <a href="../index.html">Hem</a>
           </li>
           <li>
-            <a href="pages/why.html">Varför Octo?</a>
+            <a href="why.html">Varför Octo?</a>
           </li>
           <li>
-            <a href="pages/pricing.html">Priser</a>
+            <a href="pricing.html">Priser</a>
           </li>
         </ul>
       </div>
@@ -70,6 +71,7 @@
             </label>
             <img id="userimg" src="img/lock.png" alt="">
             <input id="pswinput" type="password" placeholder="Lösenord" required>
+            <!--button type="button" onclick="document.getElementById('loginbox').style.display='none'" class="cancelbtn">X</button-->
           </div>
           <div class="lgcontainer">
             <button class="loginbutton" type="submit" onclick="accesslevel(this.form); return false;">Logga in</button>
@@ -92,8 +94,8 @@
   <footer class="footer">
     <p>&copy;2017</p>
   </footer>
-  <script type="text/javascript" src="javascript/login.js"></script>
-  <script type="text/javascript" src="javascript/dropmenu.js"></script>
+  <script type="text/javascript" src="../javascript/login.js"></script>
+  <script type="text/javascript" src="../javascript/dropmenu.js"></script>
 </body>
 
 </html>

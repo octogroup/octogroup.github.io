@@ -70,10 +70,6 @@ header>a>img {
   height: 7em;
 }
 
-#studentheader {
-	background-color: #c62928;
-}
-
 header>a>h1 {
   color:#fff;
 }
@@ -115,43 +111,6 @@ header>a>h1 {
   color: #fff;
 }
 
-#dropdown {
-  width: 150px;
-  overflow: hidden;
-  position: absolute;
-  top: -24px;
-  right: 5px;
-  background: #fafafa;
-  box-shadow: 0 2px 2px #888888;
-}
-
-#dropdownmenu {
-  height: 0px;
-  transition: height 0.5s;
-}
-
-#dropbutton {
-  color: #fff;
-  text-align: right;
-  padding-right: 10px;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-family: 'Roboto';
-  display: none;
-  position: absolute;
-  top: -22px;
-  right: 5px;
-}
-
-#dropdownmenu>li {
-  padding: 16px;
-}
-  
- #dropdownmenu>li>a {
-  text-decoration: none;
-  color: #000;
-}
-
 #loginalign {
   display: flex;
   justify-content: flex-end;
@@ -166,15 +125,15 @@ header>a>h1 {
   text-transform: uppercase;
   color: #fff;
   padding: 0 16px;
-  background-color: #43a047;
+  background-color: #c62828;
   border-radius: 2px;
-  border: solid 1px #00701a;
+  border: solid 1px #8e0000;
   margin-top: 5px;
   margin-right: 5px;
 }
 
 .loginbutton:hover {
-  background-color: #00701a;
+  background-color: #8e0000;
 }
 
 #container {
@@ -194,10 +153,6 @@ main {
   background-color: #111;
   padding-top: 60px;
   position: relative;
-}
-
-#studentfooter {
-	background-color: #ff5f52;
 }
 
 .footer>p {
@@ -258,11 +213,5 @@ main {
   }
   header>a>img {
     height: 2.1em;
-  }
-  #dropbutton {
-    display: block;
-  }
-  #navlist {
-    display: none;
   }
 }

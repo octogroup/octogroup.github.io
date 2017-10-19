@@ -2,51 +2,60 @@
 <html lang="en">
 
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Open Sans' rel="stylesheet">
-  <link rel="shortcut icon" href="../octo.png">
+  <link rel="shortcut icon" href="../img/octo.png">
   <link rel="stylesheet" href="../style/loginstyle.css">
-  <link rel="stylesheet" href="../style/hamburger.css">
+  <link rel="stylesheet" href="../style/currentpagewhy.css">
   <link rel="stylesheet" href="../style/mainstyle.css">
   <link rel="stylesheet" href="../style/why.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Octo</title>
 </head>
 
 <body>
   <div class="content">
-    <header>
-      <nav class="longnav">
-        <ul id="nav">
-          <li class="nav"><a href="why.html">Varför KYH?</a></li>
-          <li class="nav"><a href="utbildningar.html">Utbildningar</a></li>
-          <li class="nav"><a href="about.html">Om oss</a></li>
-          <li class="nav"><button type="button" name="loginbutton" onclick="showLogin()">logga in</button></li>
-        </ul>
-      </nav>
-      <nav id="hamburger">
-        <div id="burgerclick">
-          <div id="burgerline1" class="burgericon"></div>
-          <div id="burgerline2" class="burgericon"></div>
-          <div id="burgerline3" class="burgericon"></div>
-          <div id="hamburgerbackground"></div>
+      <header onclick="dropclose()">
+          <a href="../index.html">
+            <img src="img/octoedu.png" alt="">
+            <h1>Octo</h1>
+          </a>
+          <nav id="navigation">
+            <div id="loginalign">
+              <button class="loginbutton" type="button" name="loginbutton" onclick=showLogin()>logga in</button>
+            </div>
+            <ul id="navlist">
+              <li>
+                <a href="../index.html">Hem</a>
+              </li>
+              <li>
+                <a href="why.html">Varför Octo?</a>
+              </li>
+              <li>
+                <a href="pricing.html">Priser</a>
+              </li>
+            </ul>
+    
+          </nav>
+        </header>
+        <div id="container">
+          <div onclick="dropopen()" id="dropbutton">Meny &#x25BE</div>
+          <div id="dropdown">
+            <ul id="dropdownmenu">
+              <li>
+                <a href="../index.html">Hem</a>
+              </li>
+              <li>
+                <a href="why.html">Varför Octo?</a>
+              </li>
+              <li>
+                <a href="pricing.html">Priser</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div id="hamburgermenu">
-          <ul id="nav2">
-            <li class="nav2"><a href="why.html">Varför KYH?</a></li>
-            <li class="nav2"><a href="utbildningar.html">Utbildningar</a></li>
-            <li class="nav2"><a href="about.html">Om oss</a></li>
-            <li class="nav2"><button type="button" name="loginbutton" onclick="showLogin()">logga in</button></li>
-          </ul>
-        </div>
-      </nav>
-      <a href="../index.html">
-        <h1>Octo Group</h1>
-      </a>
-    </header>
-    <div id="container"></div>
-    <main>
+        <main onclick="dropclose()">
       <!--Loginbox-starts-->
       <div id="loginbox">
         <form name="login" action="#" class="modal-content">
@@ -67,8 +76,8 @@
         </form>
       </div>
       <!--Loginbox-ends-->
-      <div id="container"></div>
-      <main>
+<!--       <div id="container"></div>
+      <main> -->
         <h1 class="about">Varför välja KYH</h1>
         <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dignissim accumsan purus. Curabitur tempor nec magna ut accumsan. Mauris molestie feugiat vehicula. Vestibulum at justo tempus, scelerisque dolor sed, laoreet mi. Mauris libero
           mi, commodo non ullamcorper sit amet, euismod at libero. Vivamus faucibus tempus risus et egestas. Sed elementum augue at tellus bibendum, vitae congue velit congue. Praesent lectus neque, facilisis non eleifend vitae, cursus quis eros. Sed
@@ -96,8 +105,8 @@
   <footer class="footer">
     <p>&copy;2017</p>
   </footer>
-  <script type="text/javascript" src="../javascript/openmenu.js"></script>
   <script type="text/javascript" src="../javascript/login.js"></script>
+  <script type="text/javascript" src="../javascript/dropmenu.js"></script>
 </body>
 
 </html>
