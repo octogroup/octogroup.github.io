@@ -14,32 +14,29 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 /* CSS Reset ends here */
 
+html, body, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans";
+}
+
 html, body {
   height: 100%;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 7em;
+  font-family: "Roboto";
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 5.3em;
 }
 
 h3 {
-  font-size: 1.17em;
+  font-size: 4em;
 }
 
 h4 {
-  font-size: 1.12em;
-}
-
-h5 {
-  font-size: .83em;
-}
-
-h6 {
-  font-size: .75em;
+  font-size: 3.1em;
 }
 
 body {
@@ -52,14 +49,18 @@ body {
   flex: 1 0 auto;
 }
 
-header {
-  background-color: #111;
+.mainheader {
+  background-color: #43a047;
   height: 70px;
   width: 100%;
 }
 
+#studentheader {
+	background-color: #c62928;
+}
+
 header>a>h1 {
-  color: white;
+  color: black;
   position: absolute;
   top: 15px;
   left: 15px;
@@ -67,15 +68,19 @@ header>a>h1 {
 }
 
 header>a>h1:hover {
-  color: #ff6348;
+  color: #fafafa;
 }
 
 .longnav {
   height: 40px;
   list-style-type: none;
-  background-color: #111;
+  background-color: #43a047;
   margin-right: 30px;
   text-align: right;
+}
+
+#studentnav {
+	background-color: #c62928;
 }
 
 #nav {
@@ -83,13 +88,58 @@ header>a>h1:hover {
 }
 
 .nav>button {
-  background-color: #ff6348;
+  background-color: #00701a;
   border-radius: 20px;
-  border-color: #ff6348;
+  border-color: #00701a;
   width: 85px;
   height: 20px;
-  color: #fff;
+  color: #fafafa;
   padding-bottom: 3px;
+}
+
+@media (max-width: 1920px) {
+  h1 {
+    font-size: 3.5em;
+  }
+  h2 {
+    font-size: 2.8em;
+  }
+  h3 {
+    font-size: 2em;
+  }
+  h4 {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 1280px) {
+  h1 {
+    font-size: 2.8em;
+  }
+  h2 {
+    font-size: 2.1em;
+  }
+  h3 {
+    font-size: 1.6em;
+  }
+  h4 {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.1em;
+  }
+  h2 {
+    font-size: 1.6em;
+  }
+  h3 {
+    font-size: 1.2em;
+  }
+  h4 {
+    font-size: 0.9em;
+  }
 }
 
 @media (max-width: 800px) {
@@ -105,12 +155,12 @@ header>a>h1:hover {
 
 .nav>a {
   text-decoration: none;
-  color: #FFFFFF;
+  color: black;
   transition: color 0.3s ease;
 }
 
 .nav>a:hover {
-  color: #ff6348;
+  color: #fafafa;
 }
 
 #container {
@@ -126,14 +176,18 @@ main {
 }
 
 .footer {
-  background-color: #111;
+  background-color: #76d275;
   padding-top: 60px;
   position: relative;
+}
+
+#studentfooter {
+	background-color: #ff5f52;
 }
 
 .footer>p {
   position: absolute;
   bottom: 0;
   right: 0;
-  color: #fff;
+  color: black;
 }
