@@ -97,7 +97,7 @@
                 <div class="inputcontainer">
                   <p id="feedbacktext">Dagens feedback</p>
                   <p id="smileyfaces">
-                    <label for="ledsen" id="test" onmouseover="test()" onmouseout="resetSmileys()"><img src="../img/sadDis.png" id="ledsenSmiley"><input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="ledsen" value="ledsen"></label>
+                    <label for="ledsen" onmouseover="sad()" onmouseout="resetSmileys()"><img src="../img/sadDis.png" id="ledsenSmiley"><input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="ledsen" value="ledsen"></label>
                     <label for="neutral" onmouseover="neutral()" onmouseout="resetSmileys()"><img src="../img/confusedDIs.png" id="neutralSmiley"><input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="neutral" value="neutral"></label>
                     <label for="glad" onmouseover="happy()" onmouseout="resetSmileys()"><img src="../img/happyyDis.png" id="happySmiley"><input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="glad" value="glad"></label>
                   </p>
@@ -162,7 +162,7 @@
   <script type="text/javascript" src="../javascript/sent.js"></script>
 
   <script>
-    function test() {
+    function sad() {
       document.getElementById("ledsenSmiley").src = "../img/sad.png";
     }
 
