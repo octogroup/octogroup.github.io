@@ -107,7 +107,7 @@ header>a>h1 {
 }
 
 #navlist li:hover {
-  border-bottom: solid 4px #43a047; 
+  border-bottom: solid 4px #43a047;
   color: #fff;
 }
 
@@ -146,7 +146,7 @@ header>a>h1 {
 #dropdownmenu>li {
   padding: 16px;
 }
-  
+
  #dropdownmenu>li>a {
   text-decoration: none;
   color: #000;
