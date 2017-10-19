@@ -97,9 +97,9 @@
                 <div class="inputcontainer">
                   <p id="feedbacktext">Dagens feedback</p>
                   <p id="smileyfaces">
-                    <label for="glad"><img src="../img/happyy.png"><input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="glad" value="glad"></label>
-                    <label for="neutral"><img src="../img/confused.png"><input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="neutral" value="neutral"></label>
-                    <label for="ledsen"><img src="../img/sad.png"><input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="ledsen" value="ledsen"></label>
+                    <label for="ledsen" id="test" onmouseover="test()" onmouseout="resetSmileys()"><img src="../img/sadDis.png" id="ledsenSmiley"><input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="ledsen" value="ledsen"></label>
+                    <label for="neutral" onmouseover="neutral()" onmouseout="resetSmileys()"><img src="../img/confusedDIs.png" id="neutralSmiley"><input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="neutral" value="neutral"></label>
+                    <label for="glad" onmouseover="happy()" onmouseout="resetSmileys()"><img src="../img/happyyDis.png" id="happySmiley"><input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="glad" value="glad"></label>
                   </p>
                 </div>
                 <div class="bottomsection">
@@ -160,6 +160,26 @@
   <script type="text/javascript" src="../javascript/openmenu.js"></script>
   <script type="text/javascript" src="../javascript/login.js"></script>
   <script type="text/javascript" src="../javascript/sent.js"></script>
+
+  <script>
+    function test() {
+      document.getElementById("ledsenSmiley").src = "../img/sad.png";
+    }
+
+    function neutral() {
+      document.getElementById("neutralSmiley").src = "../img/confused.png";
+    }
+
+    function happy() {
+      document.getElementById("happySmiley").src = "../img/happyy.png";
+    }
+
+    function resetSmileys() {
+      document.getElementById("ledsenSmiley").src = "../img/sadDIs.png";
+      document.getElementById("neutralSmiley").src = "../img/confusedDis.png";
+      document.getElementById("happySmiley").src = "../img/happyyDis.png";
+    }
+  </script>
 </body>
 
 </html>
