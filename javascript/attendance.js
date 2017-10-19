@@ -8,10 +8,12 @@
 
 function codePromp() {
   var myTextField = document.getElementById("codeInput");
-  if(myTextField.value === "asdf")
-   showAttOnSend()
-  else
+  if(myTextField.value === "asdf") {
+  showAttOnSend()
+  }
+  else {
    document.getElementById('errortxt').style.display = 'flex';
+  }
 }
 
 function showAttOnSend() {
@@ -21,3 +23,9 @@ function showAttOnSend() {
 function hideAttOnSend() {
 	document.getElementById('attOnSend').style.display='none';
 }
+
+function hideAttBox() {
+	document.getElementById('att-box').style.display='none';
+}
+
+// document.getElementById("att-box").style.display = "none";
