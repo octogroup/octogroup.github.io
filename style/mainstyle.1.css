@@ -23,12 +23,8 @@ html, body {
 }
 
 h1 {
-<<<<<<< HEAD
-  font-size: 112px;
-=======
   font-size: 7em;
   font-family: "Roboto";
->>>>>>> navlogin
 }
 
 h2 {
@@ -125,34 +121,30 @@ header>a>h1 {
 
 #dropdown {
   width: 150px;
-  height: 20px;
-  transition: box-shadow 1s, height 1s;
   overflow: hidden;
   position: absolute;
   top: -24px;
   right: 5px;
-  background: linear-gradient(#111 24px, #fafafa 0%);
-  display: none;
+  background: #fafafa;
+  box-shadow: 0 2px 2px #888888;
 }
 
-#dropdown:hover {
-  height: 200px;
-  box-shadow: 0 2px 4px #888888;
-  background: #fafafa;
-  color: black;
+#dropdownmenu {
+  height: 0px;
+  transition: height 0.5s;
 }
 
 #dropbutton {
-  color: white;
+  color: #fff;
   text-align: right;
   padding-right: 10px;
   text-transform: uppercase;
   font-weight: 500;
   font-family: 'Roboto';
-}
-  
-#dropdown:hover #dropbutton {
-  visibility: hidden;
+  display: none;
+  position: absolute;
+  top: -22px;
+  right: 5px;
 }
 
 #dropdownmenu>li {
@@ -267,7 +259,7 @@ main {
   header>a>img {
     height: 2.1em;
   }
-  #dropdown {
+  #dropbutton {
     display: block;
   }
   #navlist {
