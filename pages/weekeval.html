@@ -2,71 +2,72 @@
 <html lang="en">
 
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Open Sans' rel="stylesheet">
-  <link rel="shortcut icon" href="..img/octo.png">
-  <link rel="stylesheet" href="../style/dailyfeedback.css">
-  <link rel="stylesheet" href="../style/attendance.css">
-  <link rel="stylesheet" href="../style/loginstyle.css">
-  <link rel="stylesheet" href="../style/studentstyle.css">
-  <link rel="stylesheet" href="../style/weekform.css">
-  <link rel="stylesheet" href="../style/colorThemeStudentpage.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="UTF-8">
-  <title>Min profil - Veckoutvärdering</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Open Sans' rel="stylesheet">
+	<link rel="shortcut icon" href="../img/octo.png">
+	<link rel="stylesheet" href="../style/dailyfeedback.css">
+	<link rel="stylesheet" href="../style/loginstyle.css">
+	<link rel="stylesheet" href="../style/studentstyle.css">
+	<link rel="stylesheet" href="../style/weekform.css">
+	<link rel="stylesheet" href="../style/colorThemeStudentpage.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Min profil - Veckoutvärdering</title>
 </head>
 
 <body>
-  <div class="content">
-    <header onclick="dropclose()">
-      <a href="../index.html">
-          <img src="../img/octoedu.png" alt="">
+	<div class="content">
+		<header onclick="dropclose()">
+			<a href="studentpage.html">
+          <img src="../img/octoedu.png" alt="none">
           <h1>Octo : KYH</h1>
         </a>
-      <nav id="navigation">
-        <div id="loginalign">
-          <button class="loginbutton" type="button" name="logout" onclick=logOut()>logga ut</button>
-        </div>
-      </nav>
-    </header>
-    <div id="container">
-    </div>
-    <main onclick="dropclose()">
-      <form id="weekeval" name="weekeval" onsubmit="return sent()">
-        <p>Ditt namn (frivilligt)</p>
-        <input class="textinput" type="text" placeholder="Namn" name="yourname">
-        <p>Hur upplever du arbetsmiljön?</p>
-        <div class="aroundrange">
-          <p>Dåligt</p>
-          <input class="range" type="range" min="1" max="7" step="1" list="tickmarks" name="answer1">
-          <p>Bra</p>
-        </div>
-        <p>Hur upplever du just nu tempot i utbildningen?</p>
-        <div class="aroundrange">
-          <p>Dåligt</p>
-          <input class="range" type="range" min="1" max="7" step="1" list="tickmarks" name="answer2">
-          <p>Bra</p>
-        </div>
-        <p>Hur engagerad anser du själv att du är i dina studier?</p>
-        <div class="aroundrange">
-          <p>Dåligt</p>
-          <input class="range" type="range" min="1" max="7" step="1" list="tickmarks" name="answer3">
-          <p>Bra</p>
-        </div>
-        <p>Hur upplever du stämningen i klassen?</p>
-        <div class="aroundrange">
-          <p>Dåligt</p>
-          <input class="range" type="range" min="1" max="7" step="1" list="tickmarks" name="answer4">
-          <p>Bra</p>
-        </div>
-        <p>Är det något specifikt moment i utbildningen du upplever att du behöver mer stöd i?</p>
-        <input class="textinput" type="text" placeholder="Ditt svar" name="answer5" required>
-        <p>Vad har varit bra?</p>
-        <input class="textinput" type="text" placeholder="Ditt svar" name="answer6" required>
-        <p>Förslag på förbättringar</p>
-        <input class="textinput" type="text" placeholder="Ditt svar" name="answer7" required>
-        <div><input type="submit" /></div>
-        <datalist id="tickmarks">
+			<nav id="navigation">
+				<div id="loginalign">
+					<button class="loginbutton" type="button" name="logout" onclick=logOut()>logga ut</button>
+				</div>
+			</nav>
+		</header>
+		<div id="container"></div>
+
+		<main onclick="dropclose()">
+			<div class="formholder">
+				<form id="weekeval" name="weekeval" onsubmit="return sent()">
+					<h2 class="formheadline">Veckorapport</h2>
+					<p>Ditt namn (frivilligt)</p>
+					<input class="textinput" type="text" placeholder="Namn" name="yourname">
+					<p>Hur upplever du arbetsmiljön?</p>
+					<div class="aroundrange">
+						<p>Dåligt</p>
+						<input class="range" type="range" min="1" max="7" step="1" list="tickmarks" name="answer1">
+						<p>Bra</p>
+					</div>
+					<p>Hur upplever du just nu tempot i utbildningen?</p>
+					<div class="aroundrange">
+						<p>Dåligt</p>
+						<input class="range" type="range" min="1" max="7" step="1" list="tickmarks" name="answer2">
+						<p>Bra</p>
+					</div>
+					<p>Hur engagerad anser du själv att du är i dina studier?</p>
+					<div class="aroundrange">
+						<p>Dåligt</p>
+						<input class="range" type="range" min="1" max="7" step="1" list="tickmarks" name="answer3">
+						<p>Bra</p>
+					</div>
+					<p>Hur upplever du stämningen i klassen?</p>
+					<div class="aroundrange">
+						<p>Dåligt</p>
+						<input class="range" type="range" min="1" max="7" step="1" list="tickmarks" name="answer4">
+						<p>Bra</p>
+					</div>
+					<p>Är det något specifikt moment i utbildningen du upplever att du behöver mer stöd i?</p>
+					<input class="textinput" type="text" placeholder="Ditt svar" name="answer5" required>
+					<p>Vad har varit bra?</p>
+					<input class="textinput" type="text" placeholder="Ditt svar" name="answer6" required>
+					<p>Förslag på förbättringar</p>
+					<input class="textinput" type="text" placeholder="Ditt svar" name="answer7" required>
+					<button type="submit" name="button" class="cardbutton">Submit</button>
+					<datalist id="tickmarks">
           <option value="1">
             <option value="2">
               <option value="3">
@@ -75,16 +76,16 @@
                     <option value="6">
                       <option value="7">
         </datalist>
-      </form>
-
-    </main>
-  </div>
-  <footer class="footer">
-    <p>&copy;2017</p>
-  </footer>
-  <script type="text/javascript" src="../javascript/openmenu.js"></script>
-  <script type="text/javascript" src="../javascript/login.js"></script>
-  <script type="text/javascript" src="../javascript/sent.js"></script>
+				</form>
+			</div>
+		</main>
+	</div>
+	<footer class="footer">
+		<p>&copy;2017</p>
+	</footer>
+	<script type="text/javascript" src="../javascript/dropmenu.js"></script>
+	<script type="text/javascript" src="../javascript/login.js"></script>
+	<script type="text/javascript" src="../javascript/sent.js"></script>
 </body>
 
 </html>

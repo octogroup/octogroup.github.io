@@ -1,6 +1,14 @@
+.formholder {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 25px 0 25px;
+}
+
 #weekeval {
-  max-width: 400px;
-  width: 97%;
+  max-width: 600px;
+  width: 100%;
+	margin: 20px;
 }
 
 .textinput, .range {
@@ -17,4 +25,8 @@
 .aroundrange > p {
   font-size: 10px;
   padding-top: 6px;
+}
+
+.formheadline {
+	padding-bottom: 30px;
 }
