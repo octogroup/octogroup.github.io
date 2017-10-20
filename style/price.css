@@ -1,7 +1,8 @@
-#pricecontent {
+#content {
   display: flex;
+  flex-direction: row;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
-  max-width: 1280px;
+  max-width: 1200px;
 	align-items: center;
   flex-wrap: nowrap;
 }
@@ -11,7 +12,6 @@
   margin: 0 auto;
   padding: 16px;
   border-radius: 2px;
-  flex-direction: row;
   text-align: center;
   justify-content: space-around;
   flex-grow: 1;
@@ -80,6 +80,7 @@
   font-family: 'Roboto';
   font-size: 24px;
   color: #111;
+  margin: 0 auto;
 }
 
 .pricecontent {
@@ -87,9 +88,17 @@
   margin-top: 20px;
 }
 
+#pricecontentalign {
+  display: flex;
+  flex-direction: column;
+}
+
 @media (max-width: 600px) {
   #pricebox {
-    flex-wrap: wrap;
-    flex-grow: 1;
+    flex-direction: column;
+  }
+
+  #pricebanner {
+    display: none;
   }
 }
