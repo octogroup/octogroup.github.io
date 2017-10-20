@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="../style/dailyfeedback.css">
   <link rel="stylesheet" href="../style/attendance.css">
   <link rel="stylesheet" href="../style/loginstyle.css">
-  <link rel="stylesheet" href="../style/studentstyle.css">
+  <link rel="stylesheet" href="../style/mainstyle.css">
   <link rel="stylesheet" href="../style/cardstyle.css">
   <link rel="stylesheet" href="../style/colorThemeStudentpage.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,8 +18,11 @@
 </head>
 
 <body>
+
+
+    
   <div class="content">
-    <header onclick="dropclose()">
+    <header>
       <a href="../index.html">
         <img src="../img/octoedu.png" alt="">
         <h1>Octo : KYH</h1>
@@ -32,7 +35,37 @@
     </header>
     <div id="container">
     </div>
-    <main onclick="dropclose()">
+    <main>
+
+        <div id="shadowbg" onclick="closePopup()"></div>
+        <div id="popupwindow">
+            <p>hejhej</p>
+            <p>hejhej</p>
+            <p>hejhej</p>
+            <p>hejhej</p>
+            <p>hejhej</p>
+            <p>hejhej</p>
+            <p>hejhej</p>
+            <p>hejhej</p>
+            <p>hejhej</p>
+            <p>hejhej</p>
+            <p>hejhej</p>
+            <p>hejhej</p>
+            <p>hejhej</p>
+            <p>hejhej</p>
+            <p>hejhej</p>
+            <p>hejhej</p>
+            <p>hejhej</p>
+            <p>hejhej</p>
+            <p>hejhej</p>
+            <p>hejhej</p>
+            <p>hejhej</p>
+            <p>hejhej</p>
+            <p>hejhej</p>
+            <p>hejhej</p>
+          <button onclick="closePopup()"></button>
+        </div>
+    
 
       <div id="att-box">
         <div class="card" id="attcard">
@@ -209,7 +242,7 @@
               </p>
             </div>
             <div class="card-bottom">
-              <button type="button" name="button" class="cardbutton">Öppna</button>
+              <button type="button" name="button" onclick="openPopup()" class="cardbutton">Öppna</button>
             </div>
           </div>
         </div>
@@ -225,6 +258,7 @@
   <script type="text/javascript" src="../javascript/login.js"></script>
   <script type="text/javascript" src="../javascript/sent.js"></script>
   <script type="text/javascript" src="../javascript/togglediv.js"></script>
+  <script type="text/javascript" src="../javascript/popup.js"></script>
 </body>
 
 </html>

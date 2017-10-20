@@ -70,10 +70,6 @@ header>a>img {
   height: 7em;
 }
 
-#studentheader {
-	background-color: #c62928;
-}
-
 header>a>h1 {
   color:#fff;
 }
@@ -265,4 +261,32 @@ main {
   #navlist {
     display: none;
   }
+}
+
+#shadowbg, #popupwindow {
+  display: none;
+}
+
+#shadowbg {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+
+#popupwindow {
+  background: #7c3939;
+  max-height: 600px;
+  height: 50%;
+  max-width: 1000px;
+  width: 80%;
+  position: fixed;
+  z-index: 11;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow: auto;
 }
