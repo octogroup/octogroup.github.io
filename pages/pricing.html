@@ -2,94 +2,115 @@
 <html lang="en">
 
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Open Sans' rel="stylesheet">
   <link rel="shortcut icon" href="../img/octo.png">
   <link rel="stylesheet" href="../style/loginstyle.css">
-  <link rel="stylesheet" href="../style/hamburger.css">
+  <link rel="stylesheet" href="../style/currentpagepricing.css">
+  <link rel="stylesheet" href="../style/price.css">
+  <link rel="stylesheet" href="../style/why.css">
+  <link rel="stylesheet" href="../style/cardstyle.css">
   <link rel="stylesheet" href="../style/mainstyle.css">
-  <link rel="stylesheet" href="../style/about.css">
-	<link rel="stylesheet" href="../style/price.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
-  <title>Pricing</title>
+  <title>Octo</title>
 </head>
 
 <body>
   <div class="content">
-    <header>
-      <nav class="longnav">
-        <ul id="nav">
-          <li class="nav"><a href="why.html">Varför KYH?</a></li>
-          <li class="nav"><a href="utbildningar.html">Utbildningar</a></li>
-          <li class="nav"><a href="about.html">Om oss</a></li>
-          <li class="nav"><button type="button" name="loginbutton" onclick="showLogin()">logga in</button></li>
-        </ul>
-      </nav>
-      <nav id="hamburger">
-        <div id="burgerclick">
-          <div id="burgerline1" class="burgericon"></div>
-          <div id="burgerline2" class="burgericon"></div>
-          <div id="burgerline3" class="burgericon"></div>
-          <div id="hamburgerbackground"></div>
-        </div>
-        <div id="hamburgermenu">
-          <ul id="nav2">
-            <li class="nav2"><a href="why.html">Varför KYH?</a></li>
-            <li class="nav2"><a href="utbildningar.html">Utbildningar</a></li>
-            <li class="nav2"><a href="about.html">Om oss</a></li>
-            <li class="nav2"><button type="button" name="loginbutton" onclick="showLogin()">logga in</button></li>
-          </ul>
-        </div>
-      </nav>
+    <header onclick="dropclose()">
       <a href="../index.html">
-        <h1>Octo Group</h1>
+        <img src="../img/octoedu.png" alt="">
+        <h1>Octo</h1>
       </a>
+      <nav id="navigation">
+        <div id="loginalign">
+          <button class="loginbutton" type="button" name="loginbutton" onclick=showLogin()>logga in</button>
+        </div>
+        <ul id="navlist">
+          <li>
+            <a href="../index.html">Hem</a>
+          </li>
+          <li>
+            <a href="why.html">Varför Octo?</a>
+          </li>
+          <li>
+            <a href="pricing.html">Priser</a>
+          </li>
+        </ul>
+
+      </nav>
     </header>
-    <div id="container"></div>
-    <main>
+    <div id="container">
+      <div onclick="dropopen()" id="dropbutton">Meny &#x25BE</div>
+      <div id="dropdown">
+        <ul id="dropdownmenu">
+          <li>
+            <a href="../index.html">Hem</a>
+          </li>
+          <li>
+            <a href="why.html">Varför Octo?</a>
+          </li>
+          <li>
+            <a href="pricing.html">Priser</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <main onclick="dropclose()">
       <!--Loginbox-starts-->
       <div id="loginbox">
         <form name="login" action="#" class="modal-content">
           <span onclick="showLogin()"></span>
           <div class="inputcontainer">
-            <label><b>Användarnamn</b></label>
+            <label>
+              <b>Användarnamn</b>
+            </label>
             <img id="userimg" src="../img/octoedu.png" alt="">
             <input id="unameinput" type="text" placeholder="Användarnamn" required>
-            <label><b>Lösenord</b></label>
+            <label>
+              <b>Lösenord</b>
+            </label>
             <img id="userimg" src="../img/lock.png" alt="">
             <input id="pswinput" type="password" placeholder="Lösenord" required>
             <!--button type="button" onclick="document.getElementById('loginbox').style.display='none'" class="cancelbtn">X</button-->
           </div>
           <div class="lgcontainer">
             <button id="loginbutton" type="submit" onclick="accesslevelroot(this.form); return false;">Logga in</button>
-            <p id="errortxt">Fel lösenord eller <br> användarnamn.
+            <p id="errortxt">Fel lösenord eller
+              <br> användarnamn.
             </p>
           </div>
         </form>
       </div>
       <!--Loginbox-ends-->
-			<h1 class="about">Priser</h1>
-			<div id="pricebox">
-				<div id="price1">
-					<h2 class="priceheader" style="color: silver">Silver</h2>
-					<p>Feature</p>
-					<p>Feature</p>
-					<p>Feature</p>
-				</div>
-				<div id="price2">
-					<h2 class="priceheader" style="color: gold">Guld</h2>
-					<p>Feature</p>
-					<p>Feature</p>
-					<p>Feature</p>
-				</div>
-				<div id="price3">
-					<h2 class="priceheader" style="color: gray">Platina</h2>
-					<p>Feature</p>
-					<p>Feature</p>
-					<p>Feature</p>
-				</div>
-			</div>
+      <h1 class="about">Prisguide</h1>
+      <div id="pricecontent">
+        <div id="pricebox">
+          <div id="planlist">
+              <div id="pricebanner">
+                <p id="priceplan">Våra planer</p>
+              </div>
+           </div>
+              <div class="pricecontent">
+                  <p class="pricetitle">Gratis</p>
+                <h2>0kr</h2>
+                <button id="pricebutton">Nuvarande prisplan</button>
+              </div>
+            <div class="pricecontent">
+                <p class="pricetitle">Standard</p>
+              <h2>49kr</h2>
+              <p class="priceinfo">per månad</p>
+              <button class="loginbutton">Uppgradera nu</button>
+            </div>
+            <div class="pricecontent">
+                <p class="pricetitle">Plus</p>
+              <h2>99kr</h2>
+              <p class="priceinfo">per månad</p>
+              <button class="loginbutton">Uppgradera nu</button>
+            </div>
+        </div>
+      </div>
     </main>
   </div>
   <footer class="footer">

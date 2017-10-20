@@ -1,39 +1,95 @@
+#pricecontent {
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  max-width: 1280px;
+	align-items: center;
+  flex-wrap: nowrap;
+}
 
 #pricebox {
-	display: flex;
-	align-items: center;
-	flex-direction: row;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	flex-grow: 1
+  display: flex;
+  margin: 0 auto;
+  padding: 16px;
+  border-radius: 2px;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-around;
+  flex-grow: 1;
 }
 
-#price1 {
-	display: flex;
-	flex-direction: column;
-	border: 1px solid black;
-	width: 270px;
-	text-align: center;
+#planlist {
+  position: relative;
 }
 
-#price2 {
-	display: flex;
-	flex-direction: column;
-	border: 1px solid black;
-	width: 270px;
-	text-align: center;
+#pricebanner {
+  background-color: #43a047;
+  width: 220px;
+  height: 40px;
+  position: absolute;
+  top: 50px;
+  right: -87px;
+  box-shadow: 0 2px 4px #888888;
+  margin-top: 25px;
 }
 
-#price3 {
-	display: flex;
-	flex-direction: column;
-	border: 1px solid black;
-	width: 270px;
-	text-align: center;
+#pricebanner::before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+  border-left: 16px solid #00701a;
+  position: absolute;
+  transform: scaleY(.8) rotate(45deg);
+  top: -20px;
+  left: 9px;
+  z-index: -1;
 }
 
-.priceheader {
-	border-bottom: 2px solid black;
-	font-size: 30px;
-	margin: 10px;
+#priceplan {
+  font-weight: 500;
+  text-transform: uppercase;  
+  font-family: 'Roboto';
+  font-size: 24px;
+  color: #fff;
+  margin: 5px auto;
+}
+
+#pricebutton {
+  min-width: 64px;
+  height: 36px;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #999;
+  padding: 0 16px;
+  border-radius: 2px;
+  background-color: #ececec;
+  border: solid 1px #999;
+  margin-top: 25px;
+  margin-right: 5px;
+}
+
+.pricetitle {
+  max-width: 300px;
+  margin-bottom: 5px;
+  font-weight: 500;
+  text-transform: uppercase;  
+  font-family: 'Roboto';
+  font-size: 24px;
+  color: #111;
+}
+
+.pricecontent {
+  height: 150px;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  #pricebox {
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
 }
