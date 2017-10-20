@@ -70,23 +70,21 @@
   background: rgb(61, 169, 203);
 }
 
-
-/*#shadowbg {
+#shadowbg {
   display: none;
-}*/
+}
 
 #shadowbg {
-	display: flex;
   position: fixed;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.0);
   z-index: 5;
   top: 0;
   left: 0;
 	overflow: hidden;
 }
 
-/*#courseFeedback {
+#courseFeedback {
 	cursor: pointer;
-}*/
+}

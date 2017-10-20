@@ -38,12 +38,12 @@
     <div id="container">
     </div>
     <main>
-			<div id="shadowbg">
+			<div onclick="closeShadow()" id="shadowbg">
 			</div>
 			<div class="formcontent">
 				<div class="forms">
 					<button id="close">&#10005;</button>
-					<form id="form" onsubmit="sent()">
+					<form id="form" onsubmit="sent(), closeShadow()">
 						<p id="p1"></p>
 						<input id="i1" type="text" min="1" max="7" step="1" list="tickmarks">
 						<textarea id="t1" type="text"></textarea>
@@ -231,7 +231,7 @@
             </div>
             <div class="card-body">
               <h3>
-                <a href="weekeval.html">Weekeval</a>
+                <a href="https://svahnen.github.io/">Weekeval</a>
               </h3>
             </div>
             <div class="card-bottom">

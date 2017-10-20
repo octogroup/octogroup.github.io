@@ -43,8 +43,19 @@ let sent = function() {
 
 // Close button
 document.getElementById('close').onclick = function() {
-  reset();
+  closeShadow();
 };
+
+// ShadowBg close function
+function closeShadow() {
+  document.getElementById('shadowbg').style.display = "none";
+  reset();
+}
+
+// ShadowBg open function
+function openShadow() {
+  document.getElementById('shadowbg').style.display = "inherit";
+}
 
 // After this line comes all the form functions
 
@@ -71,6 +82,7 @@ function news() {
 
 courseFeedback.onclick = function() {
   reset();
+  openShadow();
   cB.style.display = "inherit";
   p1.innerHTML = "Hur tycker du att kursen har varit?";
 	i1.style.display = "inherit";
@@ -89,6 +101,7 @@ courseFeedback.onclick = function() {
 
 weekeval.onclick = function() {
   reset();
+  openShadow();
   cB.style.display = "inherit";
   p1.innerHTML = "Ditt namn (frivilligt):";
   t1.style.display = "inherit";
