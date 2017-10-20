@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="../style/mainstyle.css">
   <link rel="stylesheet" href="../style/cardstyle.css">
   <link rel="stylesheet" href="../style/colorThemeStudentpage.css">
+	<link rel="stylesheet" href="../style/forms.css">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>Min profil</title>
@@ -20,7 +22,7 @@
 <body>
 
 
-    
+
   <div class="content">
     <header>
       <a href="../index.html">
@@ -36,36 +38,42 @@
     <div id="container">
     </div>
     <main>
+			<div id="shadowbg">
+			</div>
+			<div class="formcontent">
+				<div class="forms">
+					<button id="close">&#10005;</button>
+					<form id="form" onsubmit="sent()">
+						<p id="p1"></p>
+						<input id="i1" type="text" min="1" max="7" step="1" list="tickmarks">
+						<textarea id="t1" type="text"></textarea>
+						<p id="p2"></p>
+						<input id="i2" type="text" min="1" max="7" step="1" list="tickmarks">
+						<textarea id="t2" type="text"></textarea>
+						<p id="p3"></p>
+						<input id="i3" type="text" min="1" max="7" step="1" list="tickmarks">
+						<textarea id="t3" type="text"></textarea>
+						<p id="p4"></p>
+						<input id="i4" type="text" min="1" max="7" step="1" list="tickmarks">
+						<textarea id="t4" type="text"></textarea>
+						<p id="p5"></p>
+						<input id="i5" type="text" min="1" max="7" step="1" list="tickmarks">
+						<textarea id="t5" type="text"></textarea>
+						<input id="submit" type="submit">
+						<datalist id="tickmarks">
+							<option value="1">
+							<option value="2">
+							<option value="3">
+							<option value="4">
+							<option value="5">
+							<option value="6">
+							<option value="7">
+						</datalist>
+					</form>
+				</div>
+			</div>
+			<!-- <script src="../javascript/forms.js"></script> -->
 
-        <div id="shadowbg" onclick="closePopup()"></div>
-        <div id="popupwindow">
-            <p>hejhej</p>
-            <p>hejhej</p>
-            <p>hejhej</p>
-            <p>hejhej</p>
-            <p>hejhej</p>
-            <p>hejhej</p>
-            <p>hejhej</p>
-            <p>hejhej</p>
-            <p>hejhej</p>
-            <p>hejhej</p>
-            <p>hejhej</p>
-            <p>hejhej</p>
-            <p>hejhej</p>
-            <p>hejhej</p>
-            <p>hejhej</p>
-            <p>hejhej</p>
-            <p>hejhej</p>
-            <p>hejhej</p>
-            <p>hejhej</p>
-            <p>hejhej</p>
-            <p>hejhej</p>
-            <p>hejhej</p>
-            <p>hejhej</p>
-            <p>hejhej</p>
-          <button onclick="closePopup()"></button>
-        </div>
-    
 
       <div id="att-box">
         <div class="card" id="attcard">
@@ -166,7 +174,8 @@
               </h3>
               <ul class="card-list">
                 <li>
-                  <a href="feedback.html">Feedback länk(?)</a>
+									<p id="courseFeedback">CSS/HTML</p>
+                  <!-- <a href="feedback.html">Feedback länk(?)</a> -->
                 </li>
                 <li>
                   <a href="grades.html">Du har inga avslutade kurser</a>
@@ -226,7 +235,7 @@
               </h3>
             </div>
             <div class="card-bottom">
-              <button type="button" name="button" class="cardbutton">Öppna</button>
+              <button type="button" name="button" class="cardbutton" id="weekeval">Öppna</button>
             </div>
           </div>
         </div>
@@ -252,6 +261,7 @@
   <footer class="footer" id="studentfooter">
     <p>&copy;2017</p>
   </footer>
+	<script src="../javascript/forms.js"></script>
   <script type="text/javascript" src="../javascript/attendance.js"></script>
   <script type="text/javascript" src="../javascript/dailyfeedback.js"></script>
   <script type="text/javascript" src="../javascript/openmenu.js"></script>

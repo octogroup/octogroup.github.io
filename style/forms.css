@@ -1,12 +1,16 @@
 .formcontent {
-  display: flex;
+	max-width: 350px;
+	position: fixed;
   font-family: 'Kalam';
   font-size: 18px;
+	z-index: 10;
 }
 
 .forms {
-  margin: 0 auto;
+  margin: auto;
   position: relative;
+	background: #fafafa;
+	z-index: 11;
 }
 
 #close {
@@ -65,3 +69,24 @@
   box-shadow: 2px 2px 2px #888888;
   background: rgb(61, 169, 203);
 }
+
+
+/*#shadowbg {
+  display: none;
+}*/
+
+#shadowbg {
+	display: flex;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 5;
+  top: 0;
+  left: 0;
+	overflow: hidden;
+}
+
+/*#courseFeedback {
+	cursor: pointer;
+}*/
