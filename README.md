@@ -35,3 +35,10 @@ Tips!
 3.  To get Atom to work as explained above, open Atoms preferences then go to install and search for atom-beautify.
     Press the install button and then when its done press the Settings button on the plugin, scroll down to the css part,
     open the css part up and change "indent size" to 2.
+    
+    
+Example Linters:
+    htmlhint
+    csslint
+    jslint
+    jshint
