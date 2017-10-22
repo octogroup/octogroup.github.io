@@ -40,5 +40,4 @@ Tips!
 Example Linters:
     htmlhint
     csslint
-    jslint
-    jshint
+    js-standard
