@@ -68,6 +68,12 @@
   color: black;
   text-decoration: none;
 }
+/* hover effect on the li elements */
+.card-list>li>a:hover{
+  padding: 4px;
+  border: 2px solid #fff;
+  border-radius: 7px;
+}
 
 .card-body>p {
   margin: 5px;
