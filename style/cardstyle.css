@@ -1,3 +1,4 @@
+/* A note from the teacher remove unnecessary margins */
 .box {
   display: flex;
   flex-wrap: wrap;
@@ -48,6 +49,79 @@
   max-width: 350px;
 }
 
+/*---------- manipulate card 1---------------------- */
+#card-top-1 {
+  background: #6A1B9A;
+}
+#card-body-1 {
+  background: #8E24AA;
+}
+/* used for padding and margin the text element   */
+#card-container-1 {
+  padding: 15px;
+}
+
+#card-img-1 {
+  width: 100px; 
+  height: 100px; 
+  padding: 10px;
+}
+
+#card-heading-1 {
+  color: #fff;
+}
+
+#nav-link-1 {
+  color:#fff;
+}
+#nav-link-1:hover {
+  color:#2ecc71;
+  padding: 4px;
+  border: 2px solid #2ecc71;
+  border-radius: 7px;
+  transition-duration: 0.8s;
+}
+
+/*  ----------------card -1 ---------------------*/
+
+/*  ---------------- card 2 ------------------------ */
+
+#card-top-2 {
+  background: #C51162;
+}
+#card-body-2 {
+  background: #880E4F;
+}
+/* used for padding and margin the text element   */
+#card-container-2 {
+  padding: 15px;
+}
+
+#card-img-2 {
+  width: 100px; 
+  height: 100px; 
+  padding: 10px;
+}
+
+#card-heading-2 {
+  color: #fff;
+}
+
+#nav-link-2 {
+  color:#fff;
+}
+#nav-link-2:hover {
+  color:#f1c40f;
+  padding: 4px;
+  border: 2px solid #f1c40f;
+  border-radius: 7px;
+  transition-duration: 0.8s;
+}
+
+/*  ------------------- card 2 -----------------------------  */
+
+
+/* warning icon on närvaro */
 .card-img-top {
   width: 50px;
   height: 50px;
@@ -67,12 +141,6 @@
 .card-list>li>a, h3>a, .expand>li>a {
   color: black;
   text-decoration: none;
-}
-/* hover effect on the li elements */
-.card-list>li>a:hover{
-  padding: 4px;
-  border: 2px solid #fff;
-  border-radius: 7px;
 }
 
 .card-body>p {
