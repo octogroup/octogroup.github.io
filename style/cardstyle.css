@@ -322,7 +322,9 @@ h2 small {
   position:relative; 
   margin-bottom:45px; 
 }
-input 				{
+
+/* Input styling related to närvaro add [type=text] avoid conflicts */
+input[type=text] 				{
   font-size:18px;
   padding:10px 10px 10px 5px;
   display:block;
@@ -331,15 +333,15 @@ input 				{
   background: none;
 /*   border-bottom:1px solid #757575; */
 }
-input::-webkit-input-placeholder {
+input[type=text]::-webkit-input-placeholder {
   text-align: left;
 }
-input:focus { 
+input[type=text]:focus { 
     outline:none;
 }
 
 /* LABEL ======================================= */
-label 				 {
+/* label 				 {
   color:#999; 
   font-size:18px;
   font-weight:normal;
@@ -350,10 +352,10 @@ label 				 {
   transition:0.2s ease all; 
   -moz-transition:0.2s ease all; 
   -webkit-transition:0.2s ease all;
-}
+} */
 
 /* active state */
-input:focus ~ label, input:valid ~ label 		{
+input[type=text]:focus ~ label, input:valid ~ label 		{
   top:-20px;
   font-size:14px;
   color:#5264AE;
@@ -379,8 +381,8 @@ input:focus ~ label, input:valid ~ label 		{
   right:50%; 
 }
 
-/* active state */
-input:focus ~ .bar:before, input:focus ~ .bar:after {
+/* active state adding [type=text] so that it doesnt collide with Elink work */
+input[type=text]:focus ~ .bar:before, input[type=text]:focus ~ .bar:after {
   width:50%;
 }
 
