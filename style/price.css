@@ -1,34 +1,27 @@
 #pricecontent {
   display: flex;
-  max-width: 1280px;
-  flex-direction: row;
-	align-items: center;
-  flex-wrap: nowrap;
-}
-
-#pricebox {
-  display: flex;
   margin: 0 auto;
-  padding: 16px;
-  border-radius: 2px;
   text-align: center;
   justify-content: space-around;
   width: 100%;
   flex-grow: 1;
 }
-
-#planlist {
-  position: relative;
+#featurebox {
+  width: 250px;
+  height: 500px;
+  padding: 16px;
+  box-shadow: 0 2px 2px #888888;
+  /* margin-top: 20px; */
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
 
 #pricebanner {
-  background-color: #00701a;
-  width: 220px;
+  background-color: #43a047;
   height: 40px;
   align-content: center;
-  margin-top: 130px;
-  border-radius: 2px;
-  box-shadow: 0 2px 2px #888888;
 }
 
 #priceplan {
@@ -38,6 +31,46 @@
   font-size: 24px;
   color: #fff;
   padding: 5px 0;
+}
+
+#featurelist {
+  flex-grow: 1;
+  padding-top: 120px;
+}
+
+.offers {
+  font-weight: 400;
+  text-transform: uppercase;  
+  font-family: 'Roboto';
+  font-size: 18px;
+  list-style-type: none;
+  margin: 16px;
+  text-align: left;
+  padding: 5px;
+}
+
+.pricebox {
+  width: 400px;
+  box-shadow: 0 2px 2px #888888;
+  /* margin-top: 20px; */
+  background-color: #f9f9f9;
+  transition: 1s;
+}
+
+.pricebox:hover {
+  background-color: #e4e4e4;
+}
+
+.pricetitle {
+  padding-top: 10px;
+  border-top: solid 7px #43a047;
+  margin-bottom: 5px;
+  font-weight: 500;
+  text-transform: uppercase;  
+  font-family: 'Roboto';
+  font-size: 24px;
+  color: #111;
+  margin: 0 auto;
 }
 
 #pricebutton {
@@ -56,43 +89,33 @@
   margin-right: 5px;
 }
 
-.pricetitle {
-  max-width: 300px;
-  margin-bottom: 5px;
-  font-weight: 500;
+.priceitem {
+  font-weight: 400;
   text-transform: uppercase;  
   font-family: 'Roboto';
-  font-size: 24px;
-  color: #111;
-  margin: 0 auto;
-}
-
-.pricebox {
-  height: 150px;
-  margin-top: 20px;
-}
-
-.priceitem {
+  font-size: 18px;
   list-style-type: none;
   margin: 16px;
+  text-align: center;
+  padding: 5px;
 }
 
-.check {
-  background-color: #76d275;
+.priceitem::before {
+  content: '✔';
+  float: left;
+  border: solid 2px #43a047;
   border-radius: 50%;
-  width: 20px;
+  width: 14px;
+  height: 14px;
   padding: 5px;
-  margin: 10px auto; 
+  font-size: 14px;
   list-style-type: none;
-  color: #fafafa;
+  color: #43a047;
 }
 
 @media (max-width: 600px) {
-  #pricebox {
-    flex-direction: column;
-  }
-
-  #pricebanner {
-    display: none;
+ /*  .pricebox {
+    display: flex;
+    flex-direction: row; */
   }
 }
