@@ -14,7 +14,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>Min profil</title>
-
 </head>
 
 <body>
@@ -149,37 +148,16 @@
             </div>
             <div class="card-body">
               <h3>Dagens feedback</h3>
-            </div>
-            <div class="card-bottom">
-              <button type="button" id="dfbbutton" class="cardbutton" onclick="showDailyFeedBack()">Dagens feedback</button>
-            </div>
-            <!--Modulus Dailyfeedback-->
-            <div id="dfbbox" class="boxstyle">
-              <form class="dfbform" action="#" method="post">
-                <div class="inputcontainer">
-                  <p id="feedbacktext">Dagens feedback</p>
-                  <p id="smileyfaces">
-                    <label for="ledsen" onmouseover="checkSadSmiley()" onmouseout="resetSmileys()" onclick="checkSadSmiley()"><img src="../img/sadDis.png" id="ledsenSmiley"><input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="ledsen" value="ledsen" ></label>
-                    <label for="neutral" onmouseover="checkNeutralSmiley()" onmouseout="resetSmileys()" onclick="checkNeutralSmiley()"><img src="../img/confusedDIs.png" id="neutralSmiley"><input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="neutral" value="neutral"></label>
-                    <label for="glad" onmouseover="checkHappySmiley()" onmouseout="resetSmileys()" onclick="checkHappySmiley()"><img src="../img/happyyDis.png" id="happySmiley"><input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="glad" value="glad"></label>
-                  </p>
-                </div>
-                <div class="bottomsection">
-                  <button type="button" class="submitdfb cardbutton" onclick="hideDailyFeedBack(); showAnswerOnSend()">Skicka in</button>
-                </div>
+              <form name="dailyFeedback" id="dailyFeedback_form" action="" method="POST">
+                <p id="smileyfaces">
+
+                  <label for="ledsen" onmouseover="hoverSadSmiley()" onmouseout="resetSmileys()" onclick="resetSmileys()"><img src="../img/sadDis.png" id="ledsenSmiley"><input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="ledsen" value="ledsen" ></label>
+                  <label for="neutral" onmouseover="hoverNeutralSmiley()" onmouseout="resetSmileys()" onclick="resetSmileys()"><img src="../img/confusedDIs.png" id="neutralSmiley"><input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="neutral" value="neutral"></label>
+                  <label for="glad" onmouseover="hoverkHappySmiley()" onmouseout="resetSmileys()" onclick="resetSmileys()"><img src="../img/happyyDis.png" id="happySmiley"><input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="glad" value="glad"></label>
+
+                </p>
               </form>
             </div>
-            <div id="answerOnSend" class="boxstyle">
-              <div class="dfbform">
-                <div class="inputcontainer">
-                  <p id="feedbacktext">Tack för din feedback!</p>
-                </div>
-                <div class="bottomsection">
-                  <button type="button" class="submitdfb cardbutton" onclick="hideAnswerOnSend()">Stäng</button>
-                </div>
-              </div>
-            </div>
-            <!--Modulus Dailyfeedback end-->
           </div>
         </div>
         <div class="card">
