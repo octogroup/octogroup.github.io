@@ -404,3 +404,44 @@ input:focus ~ .highlight {
   animation:inputHighlighter 0.3s ease;
 }
 
+
+
+input[type=radio] {
+  position: relative;
+}
+
+input[type=radio]:before {
+  border: 3px solid #ccc;
+  border-radius: 100%;
+  content: "";
+  cursor: pointer;
+  display: block;
+  height: 15px;
+  position: absolute;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 15px;
+  z-index: 1;
+}
+
+input[type="radio"]:checked:before{
+  -moz-transform: scale(.75);
+  -ms-transform: scale(.75);
+  -o-transform: scale(.75);
+  -webkit-transform: scale(.75);
+  transform: scale(.75);
+  background: #9c27b0;
+}
+
+input[type="radio"]:after {
+  background: #fff;
+  content: "";
+  display: block;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  width: 15px;
+  z-index: 0;
+}
