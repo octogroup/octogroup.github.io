@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="../style/cardstyle.css">
   <link rel="stylesheet" href="../style/colorThemeStudentpage.css">
 	<link rel="stylesheet" href="../style/forms.css">
+  <link rel="stylesheet" href="../style/teacher.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>Min profil</title>
@@ -21,7 +22,7 @@
 
 <body>
   <div class="content">
-    <header onclick="dropclose()">
+    <header>
       <a href="studentpage.html">
         <img src="../img/octoedu.png" alt="">
         <h1>Octo : KYH</h1>
@@ -31,18 +32,19 @@
           <button class="loginbutton" type="button" name="logout" onclick=logOut()>logga ut</button>
         </div>
       </nav>
+
     </header>
+    <aside class="editnav">
+      <div class="asidebarbox">
+        <button class="editbuttons" id="news">Nyheter</button>
+        <button class="editbuttons" id="feedback">Dagens feedback</button>
+        <button class="editbuttons" id="weekeval">Veckoutvärdering</button>
+      </div>
+    </aside>
     <div id="container">
     </div>
-    <main onclick="dropclose()">
-			<aside class="teachernav">
-				<div class="sidebarbox">
-					<button class="buttons" id="news">Nyheter</button>
-				  <button class="buttons" id="feedback">Dagens feedback</button>
-				  <button class="buttons" id="weekeval">Veckoutvärdering</button>
-				</div>
-			</aside>
-			<div class="editorbox">
+    <main>
+
 			  <div class="formcontent">
 			    <div class="forms">
 			      <button id="close">&#10005;</button>
@@ -75,7 +77,6 @@
 			      </form>
 			    </div>
 			  </div>
-			</div>
 
 			<!--Cardlayout-->
 			<div class="box">
