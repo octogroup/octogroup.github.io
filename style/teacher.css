@@ -2,14 +2,14 @@
 
 }
 
-.asidebarbox {
+.teachercard {
 
 }
 
-.editorbox {
+.editnav {
 	display: flex;
 }
 
-.teachercard {
-
+.asidebarbox {
+	margin: 0 auto;
 }
