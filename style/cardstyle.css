@@ -201,6 +201,11 @@
   transform-origin: 50% 50%;
 }
 
+/* remove blue outline on the button after you clicked */
+.cardbutton:focus {
+  outline: none;
+}
+
 @keyframes ripple {
   0% {
     transform: scale(0, 0);
