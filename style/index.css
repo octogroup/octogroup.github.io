@@ -1,0 +1,16 @@
+#indcont {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+  max-width: 1280px;
+}
+
+#indcont>h2 {
+  text-align: center;
+}
+
+.indbox {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}

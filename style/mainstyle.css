@@ -203,7 +203,14 @@ main {
 .footer>p {
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: 10px;
+  color: #fff;
+}
+
+.footer>p2 {
+  position: absolute;
+  bottom: 25px;
+  right: 10px;
   color: #fff;
 }
 
