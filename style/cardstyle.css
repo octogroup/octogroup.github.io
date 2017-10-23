@@ -404,7 +404,7 @@ input:focus ~ .highlight {
   animation:inputHighlighter 0.3s ease;
 }
 
-
+/* ---------- styling for the radio buttons dagens feedback modal */
 
 input[type=radio] {
   position: relative;
