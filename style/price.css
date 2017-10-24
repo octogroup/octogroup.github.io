@@ -32,20 +32,13 @@
   margin: 0 auto;
 }
 
-#pricebutton {
-  min-width: 64px;
-  height: 36px;
-  font-family: 'Roboto';
+.priceinfo {
+  font-family: "Open Sans";
   font-size: 14px;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: #999;
-  padding: 0 16px;
-  border-radius: 2px;
-  background-color: #ececec;
-  border: solid 1px #999;
-  margin-top: 25px;
-  margin-right: 5px;
+}
+
+#pricecontent > div:nth-child(1) button {
+  margin-top: 24px;
 }
 
 .priceitem {
