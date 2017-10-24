@@ -23,8 +23,7 @@
 }
 
 .aroundrange > p {
-  font-size: 10px;
-  padding-top: 6px;
+  padding: 20px;
 }
 
 .formheadline {
@@ -161,21 +160,21 @@ input[type=text] 				{
 input[type=text]::-webkit-input-placeholder {
   text-align: left;
 }
-input[type=text]:focus { 
+input[type=text]:focus {
     outline:none;
 }
 
 /* LABEL ======================================= */
 /* label 				 {
-  color:#999; 
+  color:#999;
   font-size:18px;
   font-weight:normal;
   position:absolute;
   pointer-events:none;
   left:5px;
   top:10px;
-  transition:0.2s ease all; 
-  -moz-transition:0.2s ease all; 
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
   -webkit-transition:0.2s ease all;
 } */
 
@@ -190,20 +189,20 @@ input[type=text]:focus ~ label, input:valid ~ label 		{
 .bar 	{ position:relative; display:block; width:100%; }
 .bar:before, .bar:after 	{
   content:'';
-  height:2px; 
+  height:2px;
   width:0;
-  bottom:1px; 
+  bottom:1px;
   position:absolute;
-  background:#5264AE; 
-  transition:0.2s ease all; 
-  -moz-transition:0.2s ease all; 
+  background:#5264AE;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
   -webkit-transition:0.2s ease all;
 }
 .bar:before {
   left:50%;
 }
 .bar:after {
-  right:50%; 
+  right:50%;
 }
 
 /* active state adding [type=text] so that it doesnt collide with Elink work */
