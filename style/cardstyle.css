@@ -230,6 +230,42 @@
 
 /*  ------------------- card 5 -----------------------------  */
 
+/*  ---------------- card 6 ------------------------ */
+
+#card-top-6 {
+  background: #90A4AE;
+}
+#card-body-6 {
+  background: #455A64;
+}
+/* used for padding and margin the text element   */
+#card-container-6 {
+  padding: 15px;
+}
+
+#card-img-6 {
+  width: 100px; 
+  height: 100px; 
+  padding: 10px;
+}
+
+#card-heading-6 {
+  color: #fff;
+}
+
+/* #nav-link-5 {
+  color:#fff;
+}
+#nav-link-5:hover {
+  color:#f1c40f;
+  padding: 4px;
+  border: 2px solid #f1c40f;
+  border-radius: 7px;
+  transition-duration: 0.8s;
+} */
+
+/*  ------------------- card 6 -----------------------------  */
+
 
 /* warning icon on närvaro */
 .card-img-top {
