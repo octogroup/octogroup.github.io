@@ -1,39 +1,86 @@
-
-#pricebox {
-	display: flex;
-	align-items: center;
-	flex-direction: row;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	flex-grow: 1
+#pricecontent {
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: space-around;
+  width: 100%;
 }
 
-#price1 {
-	display: flex;
-	flex-direction: column;
-	border: 1px solid black;
-	width: 270px;
-	text-align: center;
+.pricebox {
+  width: 400px;
+  max-height: 500px;
+  box-shadow: 0 2px 2px #888888;
+  background-color: #f9f9f9;
+  transition: 1s;
 }
 
-#price2 {
-	display: flex;
-	flex-direction: column;
-	border: 1px solid black;
-	width: 270px;
-	text-align: center;
+.pricebox:hover {
+  background-color: #e4e4e4;
+  /* border-top: solid 10px #43a047; */
+  /* height: 500px; */
 }
 
-#price3 {
-	display: flex;
-	flex-direction: column;
-	border: 1px solid black;
-	width: 270px;
-	text-align: center;
+.pricetitle {
+  border-top: solid 5px #43a047;
+  padding-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 500;
+  text-transform: uppercase;  
+  font-family: 'Roboto';
+  font-size: 24px;
+  color: #111;
+  margin: 0 auto;
 }
 
-.priceheader {
-	border-bottom: 2px solid black;
-	font-size: 30px;
-	margin: 10px;
+#pricebutton {
+  min-width: 64px;
+  height: 36px;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #999;
+  padding: 0 16px;
+  border-radius: 2px;
+  background-color: #ececec;
+  border: solid 1px #999;
+  margin-top: 25px;
+  margin-right: 5px;
+}
+
+.priceitem {
+  font-weight: 400;  
+  font-family: 'Roboto';
+  font-size: 18px;
+  list-style-type: none;
+  margin: 16px;
+  text-align: center;
+  padding: 5px;
+}
+
+.priceitem::before {
+  content: '✔';
+  float: left;
+  border: solid 2px #43a047;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  padding: 7px;
+  font-size: 12px;
+  text-align: center;
+  list-style-type: none;
+  color: #43a047;
+}
+
+@media (max-width: 600px) {
+.priceitem {
+  font-size:14px;
+  }
+.priceitem::before {
+  width: 10px;
+  height: 10px;
+  font-size: 10px;
+  border: none;
+  padding: 2px;
+  }
 }
