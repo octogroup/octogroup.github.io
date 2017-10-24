@@ -36,6 +36,8 @@
 					<h2 class="formheadline">Veckorapport</h2>
 					<p>Ditt namn (frivilligt)</p>
 					<input class="textinput" type="text" placeholder="Namn" name="yourname">
+					<span class="highlight"></span>
+					<span class="bar"></span>
 					<p>Hur upplever du arbetsmiljön?</p>
 					<div class="aroundrange">
 						<p>Dåligt</p>
@@ -60,13 +62,30 @@
 						<input class="range" type="range" min="1" max="7" step="1" list="tickmarks" name="answer4">
 						<p>Bra</p>
 					</div>
+					<div class="group">
 					<p>Är det något specifikt moment i utbildningen du upplever att du behöver mer stöd i?</p>
 					<input class="textinput" type="text" placeholder="Ditt svar" name="answer5" required>
+					<span class="highlight"></span>
+					<span class="bar"></span>
+					</div>
+
+					<div class="group">
 					<p>Vad har varit bra?</p>
 					<input class="textinput" type="text" placeholder="Ditt svar" name="answer6" required>
+					<span class="highlight"></span>
+					<span class="bar"></span>
+					</div>
+
+					<div class="group">
 					<p>Förslag på förbättringar</p>
 					<input class="textinput" type="text" placeholder="Ditt svar" name="answer7" required>
-					<button type="submit" name="button" class="cardbutton">Submit</button>
+					<span class="highlight"></span>
+					<span class="bar"></span>
+					</div>
+					<br>
+					<div>
+						<button type="submit" name="button" class="cardbutton">Submit</button>
+					</div>
 					<datalist id="tickmarks">
           <option value="1">
             <option value="2">

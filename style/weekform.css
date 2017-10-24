@@ -32,7 +32,7 @@
 }
 
 
-/* styling the input range slider */
+/*----------------------- styling the input range slider-------------------------------- */
 
  input[type=range] {
   position: relative;
@@ -80,3 +80,128 @@
   outline: none;
 }
 
+/* ---------------------------- slider end */
+
+/*----------------------------BUTTON---------------------------------------*/
+
+.cardbutton {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 2px;
+  font-size: 14px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+  background: #ff5f52;
+  text-transform: uppercase;
+}
+
+.cardbutton:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: rgba(255, 255, 255, .5);
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(1, 1) translate(-50%);
+  transform-origin: 50% 50%;
+}
+
+/* remove blue outline on the button after you clicked */
+.cardbutton:focus {
+  outline: none;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 1;
+  }
+  20% {
+    transform: scale(25, 25);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(40, 40);
+  }
+}
+
+.cardbutton:focus:not(:active)::after {
+  animation: ripple 1s ease-out;
+}
+
+/*-----------------------Button-ends-----------------------------------*/
+
+
+/* ------------------ input-field ------------------------------*/
+
+/* Input styling related to närvaro add [type=text] avoid conflicts */
+input[type=text] 				{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  background: none;
+/*   border-bottom:1px solid #757575; */
+}
+input[type=text]::-webkit-input-placeholder {
+  text-align: left;
+}
+input[type=text]:focus { 
+    outline:none;
+}
+
+/* LABEL ======================================= */
+/* label 				 {
+  color:#999; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+} */
+
+/* active state */
+input[type=text]:focus ~ label, input:valid ~ label 		{
+  top:-20px;
+  font-size:14px;
+  color:#5264AE;
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:100%; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#5264AE; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state adding [type=text] so that it doesnt collide with Elink work */
+input[type=text]:focus ~ .bar:before, input[type=text]:focus ~ .bar:after {
+  width:50%;
+}
+
+/*  ---------------------- input-field end------------------------------------------------ */
