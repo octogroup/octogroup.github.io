@@ -16,7 +16,7 @@
 
 .pricebox:hover {
   background-color: #e4e4e4;
-  border-top: solid 10px #43a047;
+  /* border-top: solid 10px #43a047; */
   /* height: 500px; */
 }
 
