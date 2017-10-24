@@ -121,6 +121,43 @@
 /*  ------------------- card 2 -----------------------------  */
 
 
+/*  ---------------- card 2 ------------------------ */
+
+#card-top-3 {
+  background: #1B5E20;
+}
+#card-body-3 {
+  background: #8BC34A;
+}
+/* used for padding and margin the text element   */
+#card-container-3 {
+  padding: 15px;
+}
+
+#card-img-3 {
+  width: 100px; 
+  height: 100px; 
+  padding: 10px;
+}
+
+#card-heading-3 {
+  color: #fff;
+}
+
+#nav-link-3 {
+  color:#fff;
+}
+#nav-link-3:hover {
+  color:#f1c40f;
+  padding: 4px;
+  border: 2px solid #f1c40f;
+  border-radius: 7px;
+  transition-duration: 0.8s;
+}
+
+/*  ------------------- card 3 -----------------------------  */
+
+
 /* warning icon on närvaro */
 .card-img-top {
   width: 50px;
