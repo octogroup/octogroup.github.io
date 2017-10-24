@@ -1,31 +1,30 @@
 /* A note from the teacher remove unnecessary margins */
+
 .box {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 100%;
   margin: 0 auto;
-	align-items: baseline;
+  align-items: baseline;
 }
 
-@media (max-width: 1920px) {
+@media (max-width: 1920px) {}
 
-  }
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1280px) {}
 
-  }
 }
 
 @media screen and (max-width: 450px) {
-	.card-bottom {
-		display: flex;
-	  height: auto;
-	  margin: 10px;
-	  justify-content: flex-end;
-	  flex-direction: column;
-	}
+  .card-bottom {
+    display: flex;
+    height: auto;
+    margin: 10px;
+    justify-content: flex-end;
+    flex-direction: column;
+  }
 }
 
 .card {
@@ -49,13 +48,17 @@
 }
 
 /*---------- manipulate card 1---------------------- */
+
 #card-top-1 {
   background: #6A1B9A;
 }
+
 #card-body-1 {
   background: #8E24AA;
 }
+
 /* used for padding and margin the text element   */
+
 #card-container-1 {
   padding: 15px;
 }
@@ -71,10 +74,11 @@
 }
 
 #nav-link-1 {
-  color:#fff;
+  color: #fff;
 }
+
 #nav-link-1:hover {
-  color:#2ecc71;
+  color: #2ecc71;
   padding: 4px;
   border: 2px solid #2ecc71;
   border-radius: 7px;
@@ -88,10 +92,13 @@
 #card-top-2 {
   background: #C51162;
 }
+
 #card-body-2 {
   background: #880E4F;
 }
+
 /* used for padding and margin the text element   */
+
 #card-container-2 {
   padding: 15px;
 }
@@ -107,10 +114,11 @@
 }
 
 #nav-link-2 {
-  color:#fff;
+  color: #fff;
 }
+
 #nav-link-2:hover {
-  color:#f1c40f;
+  color: #f1c40f;
   padding: 4px;
   border: 2px solid #f1c40f;
   border-radius: 7px;
@@ -119,16 +127,18 @@
 
 /*  ------------------- card 2 -----------------------------  */
 
-
 /*  ---------------- card 3 ------------------------ */
 
 #card-top-3 {
   background: #1B5E20;
 }
+
 #card-body-3 {
   background: #8BC34A;
 }
+
 /* used for padding and margin the text element   */
+
 #card-container-3 {
   padding: 15px;
 }
@@ -161,10 +171,13 @@
 #card-top-4 {
   background: #FF8A65;
 }
+
 #card-body-4 {
   background: #FF5722;
 }
+
 /* used for padding and margin the text element   */
+
 #card-container-4 {
   padding: 15px;
 }
@@ -192,16 +205,18 @@
 
 /*  ------------------- card 4 -----------------------------  */
 
-
 /*  ---------------- card 5 ------------------------ */
 
 #card-top-5 {
   background: #9FA8DA;
 }
+
 #card-body-5 {
   background: #3F51B5;
 }
+
 /* used for padding and margin the text element   */
+
 #card-container-5 {
   padding: 15px;
 }
@@ -234,10 +249,13 @@
 #card-top-6 {
   background: #90A4AE;
 }
+
 #card-body-6 {
   background: #455A64;
 }
+
 /* used for padding and margin the text element   */
+
 #card-container-6 {
   padding: 15px;
 }
@@ -265,8 +283,8 @@
 
 /*  ------------------- card 6 -----------------------------  */
 
-
 /* warning icon on närvaro */
+
 .card-img-top {
   width: 50px;
   height: 50px;
@@ -305,7 +323,7 @@
   margin: 10px;
   display: flex;
   /* justify-content: center; */
-/*   align-items: center; */
+  /*   align-items: center; */
   flex-direction: column;
 }
 
@@ -370,7 +388,7 @@
 }
 
 #attOnSend {
-	display: none;
+  display: none;
 }
 
 #dfbbutton {
@@ -482,6 +500,7 @@
 }
 
 /* remove blue outline on the button after you clicked */
+
 .cardbutton:focus {
   outline: none;
 }
@@ -506,53 +525,70 @@
 }
 
 /*-----------------------Button-ends-----------------------------------*/
-* { box-sizing:border-box; }
+
+* {
+  box-sizing: border-box;
+}
 
 /* basic stylings ------------------------------------------ */
-.container 		{
-  font-family:'Roboto';
-  width:600px;
-  margin:30px auto 0;
-  display:block;
-  background:#FFF;
-  padding:10px 50px 50px;
+
+.container {
+  font-family: 'Roboto';
+  width: 600px;
+  margin: 30px auto 0;
+  display: block;
+  background: #FFF;
+  padding: 10px 50px 50px;
 }
-h2 		 {
-  text-align:center;
-  margin-bottom:50px;
+
+h2 {
+  text-align: center;
+  margin-bottom: 50px;
 }
+
 h2 small {
-  font-weight:normal;
-  color:#888;
-  display:block;
+  font-weight: normal;
+  color: #888;
+  display: block;
 }
-.footer 	{ text-align:center; }
-.footer a  { color:#53B2C8; }
+
+.footer {
+  text-align: center;
+}
+
+.footer a {
+  color: #53B2C8;
+}
 
 /* form starting stylings ------------------------------- */
-.group 			  {
-  position:relative;
-  margin-bottom:45px;
+
+.group {
+  position: relative;
+  margin-bottom: 45px;
 }
 
 /* Input styling related to närvaro add [type=text] avoid conflicts */
-input[type=text] 				{
-  font-size:18px;
-  padding:10px 10px 10px 5px;
-  display:block;
-  width:300px;
-  border:none;
+
+input[type=text] {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 300px;
+  border: none;
   background: none;
-/*   border-bottom:1px solid #757575; */
+  /*   border-bottom:1px solid #757575; */
 }
+
 input[type=text]::-webkit-input-placeholder {
   text-align: left;
 }
+
 input[type=text]:focus {
-    outline:none;
+  outline: none;
 }
 
 /* LABEL ======================================= */
+
 /* label 				 {
   color:#999;
   font-size:18px;
@@ -567,53 +603,65 @@ input[type=text]:focus {
 } */
 
 /* active state */
-input[type=text]:focus ~ label, input:valid ~ label 		{
-  top:-20px;
-  font-size:14px;
-  color:#5264AE;
+
+input[type=text]:focus~label, input:valid~label {
+  top: -20px;
+  font-size: 14px;
+  color: #5264AE;
 }
 
 /* BOTTOM BARS ================================= */
-.bar 	{ position:relative; display:block; width:300px; }
-.bar:before, .bar:after 	{
-  content:'';
-  height:2px;
-  width:0;
-  bottom:1px;
-  position:absolute;
-  background:#5264AE;
-  transition:0.2s ease all;
-  -moz-transition:0.2s ease all;
-  -webkit-transition:0.2s ease all;
+
+.bar {
+  position: relative;
+  display: block;
+  width: 300px;
 }
+
+.bar:before, .bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #5264AE;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
 .bar:before {
-  left:50%;
+  left: 50%;
 }
+
 .bar:after {
-  right:50%;
+  right: 50%;
 }
 
 /* active state adding [type=text] so that it doesnt collide with Elink work */
-input[type=text]:focus ~ .bar:before, input[type=text]:focus ~ .bar:after {
-  width:50%;
+
+input[type=text]:focus~.bar:before, input[type=text]:focus~.bar:after {
+  width: 50%;
 }
 
 /* HIGHLIGHTER ================================== */
+
 .highlight {
-  position:absolute;
-  height:60%;
-  width:100px;
-  top:25%;
-  left:0;
-  pointer-events:none;
-  opacity:0.5;
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
 }
 
 /* active state */
-input:focus ~ .highlight {
-  -webkit-animation:inputHighlighter 0.3s ease;
-  -moz-animation:inputHighlighter 0.3s ease;
-  animation:inputHighlighter 0.3s ease;
+
+input:focus~.highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
 }
 
 /* ---------- styling for the radio buttons dagens feedback modal */
@@ -638,7 +686,7 @@ input[type=radio]:before {
   z-index: 1;
 }
 
-input[type="radio"]:checked:before{
+input[type="radio"]:checked:before {
   -moz-transform: scale(.75);
   -ms-transform: scale(.75);
   -o-transform: scale(.75);

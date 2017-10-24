@@ -275,4 +275,10 @@ main {
   div.flex1>div:nth-child(1) {
     display: none;
   }
+  div.flex1>div:nth-child(1) {
+    display: none;
+  }
+  .box {
+    justify-content: center;
+  }
 }
