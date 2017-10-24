@@ -31,6 +31,13 @@
 	padding-bottom: 30px;
 }
 
+/* To move button to the left side of screen */
+.move-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
 
 /*----------------------- styling the input range slider-------------------------------- */
 
