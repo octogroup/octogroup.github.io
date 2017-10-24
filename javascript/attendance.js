@@ -28,4 +28,10 @@ function hideAttBox() {
 	document.getElementById('att-box').style.display='none';
 }
 
-// document.getElementById("att-box").style.display = "none";
+document.getElementById("codeInput")
+.addEventListener("keyup", function(event) {
+event.preventDefault();
+if (event.keyCode == 13) {
+    document.getElementById("attsbutton").click();
+}
+});

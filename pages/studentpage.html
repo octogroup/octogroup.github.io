@@ -46,7 +46,7 @@
             <div id="att-bottom">
               <input id="codeInput" type="text" placeholder="Skriv in koden">
               <p id="errortxt">Koden är fel. Vänligen försök igen.</p>
-              <button type="button" name="button" class="cardbutton" onclick="codePromp()">Skicka</button>
+              <button type="button" name="button" class="cardbutton" id="attsbutton" onclick="codePromp()">Skicka</button>
             </div>
             <div id="attOnSend" class="boxstyle">
               <div class="dfbform">
@@ -54,7 +54,7 @@
                   <p id="feedbacktext">Din närvaro har blivit registrerad!</p>
                 </div>
                 <div class="bottomsection">
-                  <button type="button" class="submitdfb cardbutton" onclick="hideAttOnSend();  hideAttBox()">Stäng</button>
+                  <button type="button" class="submitdfb cardbutton" id="attcbutton" onclick="hideAttOnSend();  hideAttBox()">Stäng</button>
                 </div>
               </div>
             </div>
@@ -159,9 +159,18 @@
                 <div class="inputcontainer">
                   <p id="feedbacktext">Dagens feedback</p>
                   <p id="smileyfaces">
-                    <label for="ledsen" onmouseover="sad()" onmouseout="resetSmileys()"><img src="../img/sadDis.png" id="ledsenSmiley"><input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="ledsen" value="ledsen"></label>
-                    <label for="neutral" onmouseover="neutral()" onmouseout="resetSmileys()"><img src="../img/confusedDIs.png" id="neutralSmiley"><input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="neutral" value="neutral"></label>
-                    <label for="glad" onmouseover="happy()" onmouseout="resetSmileys()"><img src="../img/happyyDis.png" id="happySmiley"><input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="glad" value="glad"></label>
+                    <label for="ledsen" onmouseover="sad()" onmouseout="resetSmileys()">
+                      <img src="../img/sadDis.png" id="ledsenSmiley">
+                      <input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="ledsen" value="ledsen">
+                    </label>
+                    <label for="neutral" onmouseover="neutral()" onmouseout="resetSmileys()">
+                      <img src="../img/confusedDIs.png" id="neutralSmiley">
+                      <input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="neutral" value="neutral">
+                    </label>
+                    <label for="glad" onmouseover="happy()" onmouseout="resetSmileys()">
+                      <img src="../img/happyyDis.png" id="happySmiley">
+                      <input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="glad" value="glad">
+                    </label>
                   </p>
                 </div>
                 <div class="bottomsection">
@@ -205,7 +214,9 @@
             <div class="card-body">
               <h3>Student nyheter</h3>
               <h4>VÄLKOMMEN TILL NYA WEBBPLATSEN</h4>
-              <p>Nu är den äntligen här. Vår nya webb där du mycket enklare kan se vilka utbildningar vi har och hitta rätt utbildning för dig! Du vet väl att vi har ansökningen till utbildningarna öppen ändra fram till 5 juni i år?
+              <p>Nu är den äntligen här. Vår nya webb där du mycket enklare kan se vilka utbildningar vi har och hitta rätt
+                utbildning för dig! Du vet väl att vi har ansökningen till utbildningarna öppen ändra fram till 5 juni i
+                år?
               </p>
             </div>
             <div class="card-bottom">
