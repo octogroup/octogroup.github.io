@@ -2,76 +2,74 @@
 <html lang="en">
 
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Open Sans' rel="stylesheet">
-  <link rel="shortcut icon" href="../img/octo.png">
-  <link rel="stylesheet" href="../style/loginstyle.css">
-  <link rel="stylesheet" href="../style/hamburger.css">
-  <link rel="stylesheet" href="../style/mainstyle.css">
-  <link rel="stylesheet" href="../style/completedcourse.css">
-	<link rel="stylesheet" href="../style/studentstyle.css">
-  <link rel="stylesheet" href="../style/colorThemeStudentpage.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Open Sans' rel="stylesheet">
+	<link rel="shortcut icon" href="../img/octo.png">
+	<link rel="stylesheet" href="../style/loginstyle.css">
+	<link rel="stylesheet" href="../style/mainstyle.css">
+	<link rel="stylesheet" href="../style/completedcourse.css">
+	<link rel="stylesheet" href="../style/colorThemeStudentpage.css">
 	<link rel="stylesheet" href="../style/cardstyle.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="UTF-8">
-  <title>Betyg</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Betyg</title>
 </head>
 
 <body>
-  <div class="content">
-    <header>
-			<header onclick="dropclose()">
-	      <a href="studentpage.html">
+	<div class="content">
+		<header onclick="dropclose()">
+			<a href="studentpage.html">
 	          <img src="../img/octoedu.png" alt="">
 	          <h1>Octo : KYH</h1>
 	        </a>
-	      <nav id="navigation">
-	        <div id="loginalign">
-	          <button class="loginbutton" type="button" name="logout" onclick=logOut()>logga ut</button>
-	        </div>
-	      </nav>
-	    </header>
-    </header>
-    <div id="container"></div>
-    <main>
-      <div id="container">
-        <table id="completed_table">
-          <h2 class="text-center">Avslutade kurser</h2>
-          <tr>
-            <th><h4>Kurs/Uppgift</h4></th>
-            <th><h4>Betyg</h4></th>
-          </tr>
-          <tr class="kurs">
-            <td>Javascript</td>
-            <td>VG</td>
+			<nav id="navigation">
+				<div id="loginalign">
+					<button class="loginbutton" type="button" name="logout" onclick=logOut()>logga ut</button>
+				</div>
+			</nav>
+		</header>
+		<div id="container"></div>
+		<main>
+			<div id="container">
+				<table id="completed_table">
+					<h2 class="text-center">Avslutade kurser</h2>
+					<tr>
+						<th>
+							<h4>Kurs/Uppgift</h4></th>
+						<th>
+							<h4>Betyg</h4></th>
+					</tr>
+					<tr class="kurs">
+						<td>Javascript</td>
+						<td>VG</td>
 						<td class="td3"><a href="feedback.html"><button type="button" name="button" class="cardbutton">Feedback</button></a></td>
-          </tr>
-          <tr>
-            <td>Tenta</td>
-            <td>MVG</td>
-          </tr>
-          <tr>
-            <td>Inlämning 1</td>
-            <td>VG</td>
-          </tr>
-          <tr class="kurs">
-            <td>HTML</td>
-            <td>MVG</td>
+					</tr>
+					<tr>
+						<td>Tenta</td>
+						<td>MVG</td>
+					</tr>
+					<tr>
+						<td class="lastcell">Inlämning 1</td>
+						<td>VG</td>
+					</tr>
+					<tr class="kurs">
+						<td>HTML</td>
+						<td>MVG</td>
 						<td class="td3"><a href="feedback.html"><button type="button" name="button" class="cardbutton">Feedback</button></td></a>
-          </tr>
-          <tr>
-            <td>Inlämning 1</td>
-            <td>VG</td>
-          </tr>
-        </table>
-      </div>
-    </main>
-  </div>
-  <footer class="footer">
-    <p>&copy;2017</p>
-  </footer>
-  <script type="text/javascript" src="../javascript/openmenu.js"></script>
-  <script type="text/javascript" src="../javascript/login.js"></script>
+					</tr>
+					<tr>
+						<td>Inlämning 1</td>
+						<td class="lastcell">VG</td>
+					</tr>
+				</table>
+			</div>
+		</main>
+	</div>
+	<footer class="footer">
+		<p>&copy;2017</p>
+	</footer>
+	<script type="text/javascript" src="../javascript/openmenu.js"></script>
+	<script type="text/javascript" src="../javascript/login.js"></script>
 </body>
 
 </html>

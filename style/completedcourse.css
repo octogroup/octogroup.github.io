@@ -10,7 +10,6 @@
 
 #completed_table>td, th {
   text-align: left;
-  border: 1px solid black;
 }
 
 .uppgift {
@@ -28,5 +27,9 @@
 
 .td3 {
 	width: 40px;
-	height: 35px;
+	height: auto;
+}
+
+.lastcell {
+	padding-bottom: 50px;
 }
