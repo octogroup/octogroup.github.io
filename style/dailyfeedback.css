@@ -1,95 +1,18 @@
-html {
-  height: 100%
-}
-
-#dfbbutton {
-  justify-content: center;
-}
-
-::-webkit-input-placeholder {
-  text-align: center;
-  vertical-align: middle;
-  padding-top: 30px;
-}
-
-#dfbbox {
-  display: none;
-}
-
-#answerOnSend {
-  display: none;
-}
-
-#feedbacktext {
-  font-size: 20px;
-  vertical-align: middle;
-  font-family: 'Pacifico', 'Open Sans', sans-serif;
-}
-
 #smileyfaces {
-  word-spacing: 60px;
+  display: flex;
+  justify-content: space-between;
   width: 270px;
+  height: 70px;
+  margin-top: 10px;
+  transition: height 1s;
+  transition-delay: 0.6s;
+  overflow: hidden;
 }
 
-.boxstyle {
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  width: 100%;
-  height: 100%;
-  transform: translate(-50%, -50%);
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 2;
+#smileyfaces>label:hover {
+  cursor: pointer;
 }
 
-.dfbform {
-  display: flex;
-  flex-direction: column;
-  background-color: #fefefe;
-  margin: auto;
-  border: 1px solid #888;
+#smileyfaces input {
+  visibility: hidden;
 }
-
-.inputcontainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.inputcontainer>label {
-  font-family: 'Pacifico', 'Open Sans', sans-serif;
-}
-
-.inputcontainer>p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
-  margin: 15px;
-}
-
-.inputcontainer img {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 20px;
-}
-
-.dailyfeedbacbradio {
-  margin-left: -36px;
-}
-
-.bottomsection {
-  display: flex;
-  flex-direction: column;
-  margin: 8px;
-  align-items: center;
-}
-
-/*.submitdfb {
-  justify-content: center;
-  font-size: 15px;
-  margin: 8px;
-  background-color: #D3D3D3;
-  padding: 5px 20px 5px 20px;
-}*/
