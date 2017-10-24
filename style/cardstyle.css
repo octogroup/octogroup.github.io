@@ -121,7 +121,7 @@
 /*  ------------------- card 2 -----------------------------  */
 
 
-/*  ---------------- card 2 ------------------------ */
+/*  ---------------- card 3 ------------------------ */
 
 #card-top-3 {
   background: #1B5E20;
@@ -144,7 +144,7 @@
   color: #fff;
 }
 
-#nav-link-3 {
+/* #nav-link-3 {
   color:#fff;
 }
 #nav-link-3:hover {
@@ -153,9 +153,82 @@
   border: 2px solid #f1c40f;
   border-radius: 7px;
   transition-duration: 0.8s;
-}
+} */
 
 /*  ------------------- card 3 -----------------------------  */
+
+/*  ---------------- card 4 ------------------------ */
+
+#card-top-4 {
+  background: #FF8A65;
+}
+#card-body-4 {
+  background: #FF5722;
+}
+/* used for padding and margin the text element   */
+#card-container-4 {
+  padding: 15px;
+}
+
+#card-img-4 {
+  width: 100px; 
+  height: 100px; 
+  padding: 10px;
+}
+
+#card-heading-4 {
+  color: #fff;
+}
+
+/* #nav-link-4 {
+  color:#fff;
+}
+#nav-link-4:hover {
+  color:#f1c40f;
+  padding: 4px;
+  border: 2px solid #f1c40f;
+  border-radius: 7px;
+  transition-duration: 0.8s;
+} */
+
+/*  ------------------- card 4 -----------------------------  */
+
+
+/*  ---------------- card 5 ------------------------ */
+
+#card-top-5 {
+  background: #9FA8DA;
+}
+#card-body-5 {
+  background: #3F51B5;
+}
+/* used for padding and margin the text element   */
+#card-container-5 {
+  padding: 15px;
+}
+
+#card-img-5 {
+  width: 100px; 
+  height: 100px; 
+  padding: 10px;
+}
+
+#card-heading-5 {
+  color: #fff;
+}
+
+/* #nav-link-5 {
+  color:#fff;
+}
+#nav-link-5:hover {
+  color:#f1c40f;
+  padding: 4px;
+  border: 2px solid #f1c40f;
+  border-radius: 7px;
+  transition-duration: 0.8s;
+} */
+
+/*  ------------------- card 5 -----------------------------  */
 
 
 /* warning icon on närvaro */
