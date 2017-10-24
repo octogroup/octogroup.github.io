@@ -47,6 +47,26 @@
   width: 350px;
 }
 
+/*---------- manipulate card ---------------------- */
+
+
+#card-body {
+  background: #111111;
+}
+
+#card-img {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+}
+
+#card-heading-1 {
+  color: #fff;
+}
+
+
+/*  ----------------card end ---------------------*/
+
 /*---------- manipulate card 1---------------------- */
 
 #card-top-1 {
