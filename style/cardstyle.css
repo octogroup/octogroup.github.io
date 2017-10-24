@@ -201,6 +201,10 @@
   transform-origin: 50% 50%;
 }
 
+.cardbutton:hover {
+  background-color: ##8e0000;
+}
+
 /* remove blue outline on the button after you clicked */
 .cardbutton:focus {
   outline: none;
