@@ -2,8 +2,8 @@
 .box {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  max-width: 1280px;
+  justify-content: space-between;
+  max-width: 100%;
   margin: 0 auto;
 	align-items: baseline;
 }
@@ -45,8 +45,7 @@
   width: auto;
   height: auto;
   flex-direction: column;
-  min-width: 280px;
-  max-width: 350px;
+  width: 350px;
 }
 
 /*---------- manipulate card 1---------------------- */
@@ -62,8 +61,8 @@
 }
 
 #card-img-1 {
-  width: 100px; 
-  height: 100px; 
+  width: 100px;
+  height: 100px;
   padding: 10px;
 }
 
@@ -98,8 +97,8 @@
 }
 
 #card-img-2 {
-  width: 100px; 
-  height: 100px; 
+  width: 100px;
+  height: 100px;
   padding: 10px;
 }
 
@@ -135,8 +134,8 @@
 }
 
 #card-img-3 {
-  width: 100px; 
-  height: 100px; 
+  width: 100px;
+  height: 100px;
   padding: 10px;
 }
 
@@ -171,8 +170,8 @@
 }
 
 #card-img-4 {
-  width: 100px; 
-  height: 100px; 
+  width: 100px;
+  height: 100px;
   padding: 10px;
 }
 
@@ -208,8 +207,8 @@
 }
 
 #card-img-5 {
-  width: 100px; 
-  height: 100px; 
+  width: 100px;
+  height: 100px;
   padding: 10px;
 }
 
@@ -244,8 +243,8 @@
 }
 
 #card-img-6 {
-  width: 100px; 
-  height: 100px; 
+  width: 100px;
+  height: 100px;
   padding: 10px;
 }
 
@@ -447,30 +446,30 @@
 * { box-sizing:border-box; }
 
 /* basic stylings ------------------------------------------ */
-.container 		{ 
+.container 		{
   font-family:'Roboto';
-  width:600px; 
-  margin:30px auto 0; 
-  display:block; 
+  width:600px;
+  margin:30px auto 0;
+  display:block;
   background:#FFF;
   padding:10px 50px 50px;
 }
-h2 		 { 
-  text-align:center; 
-  margin-bottom:50px; 
+h2 		 {
+  text-align:center;
+  margin-bottom:50px;
 }
-h2 small { 
-  font-weight:normal; 
-  color:#888; 
-  display:block; 
+h2 small {
+  font-weight:normal;
+  color:#888;
+  display:block;
 }
 .footer 	{ text-align:center; }
 .footer a  { color:#53B2C8; }
 
 /* form starting stylings ------------------------------- */
-.group 			  { 
-  position:relative; 
-  margin-bottom:45px; 
+.group 			  {
+  position:relative;
+  margin-bottom:45px;
 }
 
 /* Input styling related to närvaro add [type=text] avoid conflicts */
@@ -486,21 +485,21 @@ input[type=text] 				{
 input[type=text]::-webkit-input-placeholder {
   text-align: left;
 }
-input[type=text]:focus { 
+input[type=text]:focus {
     outline:none;
 }
 
 /* LABEL ======================================= */
 /* label 				 {
-  color:#999; 
+  color:#999;
   font-size:18px;
   font-weight:normal;
   position:absolute;
   pointer-events:none;
   left:5px;
   top:10px;
-  transition:0.2s ease all; 
-  -moz-transition:0.2s ease all; 
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
   -webkit-transition:0.2s ease all;
 } */
 
@@ -515,20 +514,20 @@ input[type=text]:focus ~ label, input:valid ~ label 		{
 .bar 	{ position:relative; display:block; width:300px; }
 .bar:before, .bar:after 	{
   content:'';
-  height:2px; 
+  height:2px;
   width:0;
-  bottom:1px; 
+  bottom:1px;
   position:absolute;
-  background:#5264AE; 
-  transition:0.2s ease all; 
-  -moz-transition:0.2s ease all; 
+  background:#5264AE;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
   -webkit-transition:0.2s ease all;
 }
 .bar:before {
   left:50%;
 }
 .bar:after {
-  right:50%; 
+  right:50%;
 }
 
 /* active state adding [type=text] so that it doesnt collide with Elink work */
@@ -539,9 +538,9 @@ input[type=text]:focus ~ .bar:before, input[type=text]:focus ~ .bar:after {
 /* HIGHLIGHTER ================================== */
 .highlight {
   position:absolute;
-  height:60%; 
-  width:100px; 
-  top:25%; 
+  height:60%;
+  width:100px;
+  top:25%;
   left:0;
   pointer-events:none;
   opacity:0.5;
