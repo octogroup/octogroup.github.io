@@ -119,3 +119,7 @@
   height: 200px;
   width: 200px;
 }*/
+
+div.flex1 > div:nth-child(2) {
+	padding-right: 35px;
+}

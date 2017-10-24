@@ -71,11 +71,11 @@ header>a>img {
 }
 
 #studentheader {
-	background-color: #c62928;
+  background-color: #c62928;
 }
 
 header>a>h1 {
-  color:#fff;
+  color: #fff;
 }
 
 #navigation {
@@ -147,7 +147,7 @@ header>a>h1 {
   padding: 16px;
 }
 
- #dropdownmenu>li>a {
+#dropdownmenu>li>a {
   text-decoration: none;
   color: #000;
 }
@@ -267,5 +267,14 @@ main {
   }
   #navlist {
     display: none;
+  }
+  div.flex1>div:nth-child(1) {
+    display: none;
+  }
+  div.flex1>div:nth-child(1) {
+    display: none;
+  }
+  .box {
+    justify-content: center;
   }
 }
