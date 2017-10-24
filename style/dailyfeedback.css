@@ -14,16 +14,10 @@
 }
 
 #smileyfaces input {
-  visibility: hidden;
+  display: none;
 }
 
 #dailyFeedback_form {
-	display: flex;
-	margin: 0 auto;
-}
-
-#smileyfaces>label {
-	display: flex;
-	margin: 0 auto;
-	justify-content: center;
+  display: flex;
+  margin: 0 auto;
 }
