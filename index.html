@@ -2,80 +2,110 @@
 <html lang="en">
 
 <head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
   <link rel="shortcut icon" href="img/octo.png">
   <link rel="stylesheet" href="style/loginstyle.css">
-  <link rel="stylesheet" href="style/hamburger.css">
+  <link rel="stylesheet" href="style/currentpageindex.css">
   <link rel="stylesheet" href="style/mainstyle.css">
+  <link rel="stylesheet" href="style/index.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Octo</title>
 </head>
 
 <body>
-	<div class="content">
-		<header>
-			<nav class="longnav">
-				<ul id="nav">
-					<li class="nav"><a href="pages/why.html">Varför KYH?</a></li>
-					<li class="nav"><a href="pages/utbildningar.html">Utbildningar</a></li>
-					<li class="nav"><a href="pages/about.html">Om oss</a></li>
-					<li class="nav"><button type="button" name="loginbutton" onclick=showLogin()>logga in</button></li>
-				</ul>
-			</nav>
-			<nav id="hamburger">
-				<div id="burgerclick">
-					<div id="burgerline1" class="burgericon"></div>
-					<div id="burgerline2" class="burgericon"></div>
-					<div id="burgerline3" class="burgericon"></div>
-					<div id="hamburgerbackground"></div>
-				</div>
-				<div id="hamburgermenu">
-					<ul id="nav2">
-						<li class="nav2"><a href="pages/why.html">Varför KYH?</a></li>
-						<li class="nav2"><a href="pages/utbildningar.html">Utbildningar</a></li>
-						<li class="nav2"><a href="pages/about.html">Om oss</a></li>
-						<li class="nav2"><button type="button" name="loginbutton" onclick=showLogin()>logga in</button></li>
-					</ul>
-				</div>
-			</nav>
-			<a href="index.html">
-				<h1>Octo Group</h1>
-			</a>
-		</header>
-		<div id="container"></div>
-		<main>
-			<!--Loginbox-starts-->
-			<div id="loginbox">
-				<form name="login" action="#" class="modal-content">
-					<div class="inputcontainer">
-						<label><b>Användarnamn</b></label>
-						<img id="userimg" src="img/octoedu.png" alt="">
-						<input id="unameinput" type="text" placeholder="Användarnamn" required>
-						<label><b>Lösenord</b></label>
-						<img id="userimg" src="img/lock.png" alt="">
-						<input id="pswinput" type="password" placeholder="Lösenord" required>
-						<!--button type="button" onclick="document.getElementById('loginbox').style.display='none'" class="cancelbtn">X</button-->
-					</div>
-					<div class="lgcontainer">
-						<button id="loginbutton" type="submit" onclick="accesslevel(this.form); return false;">Logga in</button>
-						<p id="errortxt">Fel lösenord eller <br> användarnamn.
-						</p>
-					</div>
-				</form>
-			</div>
-			<!--Loginbox-ends-->
-			<h2>Om portalen</h2>
-			<p>Välkommen till KYHs LMS portal.</p>
-			<p>Här kan du se nyheter, information om kurser och betyg.</p>
-		</main>
-	</div>
-	<footer class="footer">
-		<p>&copy;2017</p>
-	</footer>
-	<script type="text/javascript" src="javascript/openmenu.js"></script>
-	<script type="text/javascript" src="javascript/login.js"></script>
+  <div class="content">
+    <header onclick="dropclose()">
+      <a href="index.html">
+        <img src="img/octoedu.png" alt="">
+        <h1>Octo</h1>
+      </a>
+      <nav id="navigation">
+        <div id="loginalign">
+          <button class="loginbutton" type="button" name="loginbutton" onclick=showLogin()>logga in</button>
+        </div>
+        <ul id="navlist">
+          <li>
+            <a href="index.html">Hem</a>
+          </li>
+          <li>
+            <a href="pages/why.html">Varför Octo?</a>
+          </li>
+          <li>
+            <a href="pages/pricing.html">Priser</a>
+          </li>
+        </ul>
+
+      </nav>
+    </header>
+    <div id="container">
+      <div onclick="dropopen()" id="dropbutton">Meny &#x25BE</div>
+      <div id="dropdown">
+        <ul id="dropdownmenu">
+          <li>
+            <a href="index.html">Hem</a>
+          </li>
+          <li>
+            <a href="pages/why.html">Varför Octo?</a>
+          </li>
+          <li>
+            <a href="pages/pricing.html">Priser</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <main onclick="dropclose()">
+
+      <!--Loginbox-starts-->
+      <div id="loginbox">
+        <form name="login" action="#" class="modal-content">
+          <div class="inputcontainer">
+            <label>
+              <b>Användarnamn</b>
+            </label>
+            <img id="userimg" src="img/octoedu.png" alt="">
+            <input id="unameinput" type="text" placeholder="Användarnamn" required>
+            <label>
+              <b>Lösenord</b>
+            </label>
+            <img id="userimg" src="img/lock.png" alt="">
+            <input id="pswinput" type="password" placeholder="Lösenord" required>
+          </div>
+          <div class="lgcontainer">
+            <button class="loginbutton" type="submit" onclick="accesslevel(this.form); return false;">Logga in</button>
+            <p id="errortxt">Fel lösenord eller
+              <br> användarnamn.
+            </p>
+          </div>
+        </form>
+      </div>
+      <!--Loginbox-ends-->
+
+      <div id="indcont">
+
+        <h2>Välkommen till Octo</h2>
+        <div class="indbox">
+          <p>Vår utbildningsplattform ger den bästa webbaserade studiesmiljön skapad för de bästa förutsättningarna för smidigt
+            och roligt lärande.
+          </p>
+        </div>
+        <div class="indbox">
+          <a href="pages/why.html">
+            <img src="img/demo.png">
+          </a>
+        </div>
+      </div>
+  </div>
+
+  </main>
+  </div>
+  <footer class="footer">
+    <p2>octopusgruppen@gmail.com</p2>
+    <p>&copy;2017 Octo Group</p>
+  </footer>
+  <script type="text/javascript" src="javascript/login.js"></script>
+  <script type="text/javascript" src="javascript/dropmenu.js"></script>
 </body>
 
 </html>

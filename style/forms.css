@@ -1,0 +1,54 @@
+.formcontent {
+  display: flex;
+  font-family: 'Kalam';
+  font-size: 18px;
+}
+
+.forms {
+  margin: 0 auto;
+  position: relative;
+}
+
+#close {
+  display: none;
+  background: #ff0000;
+  color: white;
+  border: 0;
+  border-radius: 2px;
+  position: absolute;
+  top: 2px;
+  right: 0;
+}
+
+#close:hover {
+  box-shadow: 2px 2px 2px #888888;
+  background: #d50000;
+}
+
+#submit {
+  background: #4CAF50;
+  border: 0;
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  display: none;
+  border-radius: 20px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+#submit:hover {
+  box-shadow: 2px 2px 2px #888888;
+  background: #46a24a;
+}
+
+#form > input {
+  display: none;
+}
+
+#form > textarea {
+  resize: none;
+  display: none;
+  border-radius: 5px;
+}

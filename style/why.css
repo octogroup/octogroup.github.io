@@ -1,17 +1,35 @@
+#container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+}
+
 .about {
   text-align: center;
   margin: inherit;
 }
 
-.description {
-  margin: 10px;
-}
-
-.flex {
+.flex1 {
   display: flex;
+  flex-direction: row;
+  /*flex-wrap: nowrap;*/
+  justify-content: center;
+  align-items: stretch;
+  align-content: flex-start;
 }
 
-#testbild1 {
-  max-width: 800px;
-  margin: 10px;
+.column {
+  float: right;
+  width: 50%;
+}
+
+.column>h2 {
+  font-weight: bold;
+}
+
+.column>h3 {
+  color: #43a047;
 }

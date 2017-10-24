@@ -3,15 +3,15 @@
 }
 
 #feedback_form {
-  display: flex;
-  flex-direction: row;
+  /*display: flex;*/
+  /*flex-direction: row;*/
   /*   justify-content: space-between; */
-  margin-top: 25px;
+  /*margin-top: 25px;*/
 }
 
 #feedback_form>label {
   padding-right: 10px;
-  font-size: 20px;
+  /*font-size: 20px;*/
 }
 
 .title {

@@ -1,0 +1,21 @@
+#indcont {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+  max-width: 100%;
+}
+
+#indcont>h2 {
+  text-align: center;
+}
+
+.indbox {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+#indcont > div:nth-child(3) > a > img{
+  max-width: 768px;
+  width: 100%;
+}
