@@ -196,10 +196,6 @@ main {
   position: relative;
 }
 
-#studentfooter {
-	background-color: #ff5f52;
-}
-
 .footer>p {
   position: absolute;
   bottom: 0;

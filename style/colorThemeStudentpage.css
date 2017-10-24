@@ -1,30 +1,9 @@
-header, .longnav {
-  background-color: #c62828;
-  color: black;
-}
-
-header>a>h1 {
-  color: black;
-}
-
-header>a>h1:hover {
-  color: white;
-}
-
 .nav>a {
   color: black;
 }
 
 .nav>a:hover {
   color: white;
-}
-
-.footer {
-  background-color: #ff5f52;
-}
-
-.footer>p {
-  color: black;
 }
 
 button {
