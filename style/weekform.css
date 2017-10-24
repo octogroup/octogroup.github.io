@@ -30,3 +30,185 @@
 .formheadline {
 	padding-bottom: 30px;
 }
+
+/* To move button to the left side of screen */
+.move-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+
+/*----------------------- styling the input range slider-------------------------------- */
+
+ input[type=range] {
+  position: relative;
+  -webkit-appearance: none;
+  width: 100%;
+  background: none;
+}
+ input[type=range]::-webkit-slider-runnable-track {
+  height: 2px;
+  background: #f3f3f3;
+  border-bottom: 1px solid #9c27b0;
+}
+ input[type=range]::-webkit-slider-runnable-track:before {
+  content: '';
+  background: white;
+  width: 2px;
+  height: 15px;
+  position: absolute;
+  top: -7px;
+  border-left: 1px solid #9c27b0;
+}
+ input[type=range]::-webkit-slider-runnable-track:after {
+  content: '';
+  background: white;
+  width: 2px;
+  height: 15px;
+  position: absolute;
+  top: -7px;
+  right: 0;
+  border-right: 1px solid #9c27b0;
+}
+ input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 3px solid #9c27b0;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  margin-top: -9px;
+  position: relative;
+  z-index: 1;
+}
+ input[type=range]:focus {
+  outline: none;
+}
+
+/* ---------------------------- slider end */
+
+/*----------------------------BUTTON---------------------------------------*/
+
+.cardbutton {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 2px;
+  font-size: 14px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+  background: #ff5f52;
+  text-transform: uppercase;
+}
+
+.cardbutton:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: rgba(255, 255, 255, .5);
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(1, 1) translate(-50%);
+  transform-origin: 50% 50%;
+}
+
+/* remove blue outline on the button after you clicked */
+.cardbutton:focus {
+  outline: none;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 1;
+  }
+  20% {
+    transform: scale(25, 25);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(40, 40);
+  }
+}
+
+.cardbutton:focus:not(:active)::after {
+  animation: ripple 1s ease-out;
+}
+
+/*-----------------------Button-ends-----------------------------------*/
+
+
+/* ------------------ input-field ------------------------------*/
+
+/* Input styling related to närvaro add [type=text] avoid conflicts */
+input[type=text] 				{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  background: none;
+/*   border-bottom:1px solid #757575; */
+}
+input[type=text]::-webkit-input-placeholder {
+  text-align: left;
+}
+input[type=text]:focus { 
+    outline:none;
+}
+
+/* LABEL ======================================= */
+/* label 				 {
+  color:#999; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+} */
+
+/* active state */
+input[type=text]:focus ~ label, input:valid ~ label 		{
+  top:-20px;
+  font-size:14px;
+  color:#5264AE;
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:100%; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#5264AE; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state adding [type=text] so that it doesnt collide with Elink work */
+input[type=text]:focus ~ .bar:before, input[type=text]:focus ~ .bar:after {
+  width:50%;
+}
+
+/*  ---------------------- input-field end------------------------------------------------ */
