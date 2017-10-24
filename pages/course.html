@@ -17,39 +17,20 @@
 </head>
 
 <body>
-  <div class="content">
-    <header>
-      <nav class="longnav">
-        <ul id="nav">
-          <li class="nav"><a href="why.html">Varför KYH?</a></li>
-          <li class="nav"><a href="utbildningar.html">Utbildningar</a></li>
-          <li class="nav"><a href="about.html">Om oss</a></li>
-          <li class="nav"><button type="button" name="loginbutton" onclick="logOut()">logga ut</button></li>
-        </ul>
-      </nav>
-      <nav id="hamburger">
-        <div id="burgerclick">
-          <div id="burgerline1" class="burgericon"></div>
-          <div id="burgerline2" class="burgericon"></div>
-          <div id="burgerline3" class="burgericon"></div>
-          <div id="hamburgerbackground"></div>
-        </div>
-        <div id="hamburgermenu">
-          <ul id="nav2">
-            <li class="nav2"><a href="why.html">Varför KYH?</a></li>
-            <li class="nav2"><a href="utbildningar.html">Utbildningar</a></li>
-            <li class="nav2"><a href="about.html">Om oss</a></li>
-            <li class="nav2"><button type="button" name="logout" onclick="logOut()">logga ut</button></li>
-          </ul>
+	<div class="content">
+    <header onclick="dropclose()">
+      <a href="../index.html">
+          <img src="../img/octoedu.png" alt="">
+          <h1>Octo : KYH</h1>
+        </a>
+      <nav id="navigation">
+        <div id="loginalign">
+          <button class="loginbutton" type="button" name="logout" onclick=logOut()>logga ut</button>
         </div>
       </nav>
-      <a href="index.html">
-        <h1>Octo Group</h1>
-      </a>
     </header>
     <div id="container"></div>
-    <main>
-
+    <main onclick="dropclose()">
       <div id="containercourse">
         <div class="box">
           <h1>Kursplan</h1>

@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="../style/dailyfeedback.css">
   <link rel="stylesheet" href="../style/attendance.css">
   <link rel="stylesheet" href="../style/loginstyle.css">
+	<link rel="stylesheet" href="../style/mainstyle.css">
   <link rel="stylesheet" href="../style/studentstyle.css">
   <link rel="stylesheet" href="../style/cardstyle.css">
   <link rel="stylesheet" href="../style/colorThemeStudentpage.css">
@@ -20,7 +21,7 @@
 <body>
   <div class="content">
     <header onclick="dropclose()">
-      <a href="../index.html">
+      <a href="studentpage.html">
         <img src="../img/octoedu.png" alt="">
         <h1>Octo : KYH</h1>
       </a>
@@ -65,19 +66,19 @@
       <!--Cardlayout-->
       <div class="box">
         <div class="card">
-          <div class="cardcontainer">
-            <div class="card-header">
-              <img src="../img/octo.png" alt="" class="card-img-top">
+          <div style="background: #6A1B9A" class="cardcontainer">
+            <div style="background: #8E24AA" class="card-header">
+              <img src="../img/notebook.svg" alt="" class="card-img-top" style="width: 100px; height: 100px; padding: 10px;">
             </div>
-            <div class="card-body">
+            <div style="padding: 15px"  class="card-body">
 
-              <h3>Pågående kurser</h3>
+              <h3 style="color: #fff">Pågående kurser</h3>
               <ul class="card-list">
                 <li>
-                  <a href="course.html">Arbetsmetodik</a>
+                  <a  style="color: #fff"href="course.html">Arbetsmetodik</a>
                 </li>
                 <li>
-                  <a href="course.html">Javascript</a>
+                  <a style="color: #fff" href="course.html">JavaScript</a>
                 </li>
                 <div class="expand" id="expand1" style="display: none;">
                   <li>
@@ -129,16 +130,10 @@
               <img src="../img/octo.png" alt="" class="card-img-top">
             </div>
             <div class="card-body">
-              <h3>Avslutade kurser</a>
-              </h3>
-              <ul class="card-list">
-                <li>
-                  <a href="feedback.html">Feedback länk(?)</a>
-                </li>
-                <li>
-                  <a href="grades.html">Du har inga avslutade kurser</a>
-                </li>
-              </ul>
+              <h3>Avslutade kurser</h3>
+            </div>
+						<div class="card-bottom">
+          		<a href="grades.html"><button type="button" name="button" class="cardbutton">Öppna</button></a>
             </div>
           </div>
         </div>
@@ -197,12 +192,10 @@
               <img src="../img/octo.png" alt="" class="card-img-top">
             </div>
             <div class="card-body">
-              <h3>
-                <a href="weekeval.html">Weekeval</a>
-              </h3>
+              <h3>Veckorapport</h3>
             </div>
             <div class="card-bottom">
-              <button type="button" name="button" class="cardbutton">Öppna</button>
+              <a href="weekeval.html"><button type="button" name="button" class="cardbutton">Öppna</button><a>
             </div>
           </div>
         </div>
@@ -220,7 +213,7 @@
               </p>
             </div>
             <div class="card-bottom">
-              <button type="button" name="button" class="cardbutton">Öppna</button>
+              <a href="news.html"><button type="button" name="button" class="cardbutton">Öppna</button></a>  
             </div>
           </div>
         </div>

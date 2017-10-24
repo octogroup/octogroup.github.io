@@ -55,7 +55,7 @@ header {
   background-color: #111;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 4px;
+  /*padding-bottom: 4px;*/
   position: relative;
   box-shadow: 0px 2px 2px #888888;
 }
@@ -103,7 +103,7 @@ header>a>h1 {
 }
 
 #navlist li:hover {
-  border-bottom: solid 4px #43a047; 
+  border-bottom: solid 4px #43a047;
   color: #fff;
 }
 
