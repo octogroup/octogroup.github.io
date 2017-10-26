@@ -59,7 +59,7 @@
   background: #111111;
 }
 
-#card-img {
+#card-img, #form-img-1 {
   width: 100px;
   height: 100px;
   padding: 10px;

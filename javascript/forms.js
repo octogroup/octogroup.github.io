@@ -21,7 +21,9 @@ let i5 = document.getElementById('i5')
 let sB = document.getElementById('submit')
 let cB = document.getElementById('close')
 let form = document.getElementById('form')
+let formc = document.getElementsByClassName('formcontent')[0]
 let border = document.getElementById('transborder')
+let formimg = document.getElementById('form-img-1')
 
 // Reset function for the close button and for use on the first line of each form function
 let reset = function () {
@@ -39,6 +41,8 @@ let reset = function () {
     cB.style.display = 'none'
     form.style.display = 'none'
     border.style.width = '0'
+    formc.style.height = '0'
+    formimg.style.display = 'none'
   }
 }
 
@@ -55,7 +59,9 @@ document.getElementById('close').onclick = function () {
 // After this line comes all the form functions
 let feedback = function () {
   reset()
-  form.style.height = 'inherit'
+  formimg.style.display = 'inherit'
+  formc.style.height = '370px'
+  form.style.display = 'inherit'
   cB.style.display = 'inherit'
   p1.innerHTML = 'Vad har varit bra/dåligt under dagen?'
   t1.style.display = 'inherit'
@@ -69,6 +75,8 @@ let feedback = function () {
 
 let news = function () {
   reset()
+  formimg.style.display = 'inherit'
+  formc.style.height = '350px'
   form.style.display = 'inherit'
   cB.style.display = 'inherit'
   p1.innerHTML = 'Rubrik:'
@@ -83,6 +91,8 @@ let news = function () {
 
 let weekeval = function () {
   reset()
+  formimg.style.display = 'inherit'
+  formc.style.height = '520px'
   form.style.display = 'inherit'
   cB.style.display = 'inherit'
   p1.innerHTML = 'Ditt namn (frivilligt):'
