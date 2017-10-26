@@ -1,3 +1,7 @@
+/* eslint no-undef: 0 */
+/* eslint no-unused-vars: 0 */
+/* eslint-env browser */
+
 // Set variebles for each id
 let p1 = document.getElementById('p1')
 let p2 = document.getElementById('p2')
