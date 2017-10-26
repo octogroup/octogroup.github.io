@@ -66,11 +66,15 @@ let feedback = function () {
 let news = function () {
   reset()
   cB.style.display = 'inherit'
-  p1.innerHTML = 'Dagens nyheter är:'
+  p1.innerHTML = 'Rubrik:'
   t1.style.display = 'inherit'
-  t1.style.height = '200px'
   t1.style.width = '350px'
   t1.required = true
+  p2.innerHTML = 'Nyhets innehåll:'
+  t2.style.display = 'inherit'
+  t2.style.height = '200px'
+  t2.style.width = '350px'
+  t2.required = true
   sB.style.display = 'inherit'
 }
 

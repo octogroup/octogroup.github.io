@@ -54,3 +54,7 @@
   display: none;
   border-radius: 2px;
 }
+
+form>p {
+  font-size: 20px;
+}
