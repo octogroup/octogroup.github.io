@@ -56,6 +56,19 @@ document.getElementById('news').onclick = function() {
   sB.style.display = "inherit";
 };
 
+document.getElementById('homework').onclick = function() {
+  reset();
+  cB.style.display = "inherit";
+  p1.innerHTML = "Rubrik:";
+  t1.style.display = "inherit";
+  t1.style.width = "200px";
+  p4.innerHTML = "Instruktioner:";
+  t4.style.display = "inherit";
+  t4.style.height = "150px";
+  t4.style.width = "350px";
+  sB.style.display = "inherit";
+};
+
 document.getElementById('feedback').onclick = function() {
   reset();
   cB.style.display = "inherit";
