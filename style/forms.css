@@ -1,3 +1,15 @@
+.editbuttons {
+  border: none;
+  cursor: pointer;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 2px;
+  font-size: 14px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+  background: #ff5f52;
+  text-transform: uppercase;
+}
+
 .formcontent {
   display: flex;
   font-family: 'Kalam';
@@ -20,27 +32,17 @@
   right: 0;
 }
 
-#close:hover {
-  box-shadow: 2px 2px 2px #888888;
-  background: #d50000;
-}
-
 #submit {
-  background: #4CAF50;
-  border: 0;
-  color: white;
-  padding: 10px 24px;
-  text-align: center;
-  font-size: 16px;
+  border: none;
   cursor: pointer;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 2px;
+  font-size: 14px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+  background: #ff5f52;
+  text-transform: uppercase;
   display: none;
-  border-radius: 20px;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-}
-
-#submit:hover {
-  box-shadow: 2px 2px 2px #888888;
-  background: #46a24a;
 }
 
 #form > input {
@@ -50,5 +52,5 @@
 #form > textarea {
   resize: none;
   display: none;
-  border-radius: 5px;
+  border-radius: 2px;
 }
