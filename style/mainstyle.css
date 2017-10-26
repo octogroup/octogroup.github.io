@@ -68,6 +68,7 @@ header>a {
 
 header>a>img {
   height: 7em;
+	margin-right: 10px;
 }
 
 #studentheader {
