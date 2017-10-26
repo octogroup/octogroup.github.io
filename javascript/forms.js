@@ -55,7 +55,7 @@ document.getElementById('close').onclick = function () {
 // After this line comes all the form functions
 let feedback = function () {
   reset()
-  form.style.display = 'inherit'
+  form.style.height = 'inherit'
   cB.style.display = 'inherit'
   p1.innerHTML = 'Vad har varit bra/dåligt under dagen?'
   t1.style.display = 'inherit'
