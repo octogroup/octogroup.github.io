@@ -35,3 +35,33 @@ button {
   background-color: #8e0000;
 }
 
+header {
+  width: 100%;
+  list-style-type: none;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 4px;
+  position: relative;
+  box-shadow: 0 2px 2px #888888;
+}
+
+.footer {
+  background-color: #fff;
+  padding-top: 60px;
+  position: relative;
+}
+
+.footer>p {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  color: #111111;
+}
+
+.footer>p2 {
+  position: absolute;
+  bottom: 25px;
+  right: 10px;
+  color: #111111;
+}
