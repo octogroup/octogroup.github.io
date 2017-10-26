@@ -12,8 +12,9 @@
 
 .formcontent {
   display: flex;
-  font-family: 'Kalam';
   font-size: 18px;
+  transition: height 0.5s;
+  flex-direction: column;
 }
 
 .forms {
@@ -21,18 +22,34 @@
   position: relative;
 }
 
+#form {
+  width: 350px;
+  padding: 10px;
+  display: none;
+}
+#form>*{
+  margin: 10px 0;
+}
+
 #close {
   display: none;
-  background: #ff0000;
+  background: #ff5f52;
   color: white;
   border: 0;
   border-radius: 2px;
   position: absolute;
-  top: 2px;
+  top: -2px;
   right: 0;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+  padding: 1px 5px 2px 6px;
 }
 
-#submit {
+#form > input {
+  display: none;
+  width: 100%;
+}
+
+#form>#submit {
   border: none;
   cursor: pointer;
   color: white;
@@ -43,18 +60,27 @@
   background: #ff5f52;
   text-transform: uppercase;
   display: none;
-}
-
-#form > input {
-  display: none;
-}
-
-#form > textarea {
-  resize: none;
-  display: none;
-  border-radius: 2px;
+  width: 85px;
+  margin-bottom: 50px;
 }
 
 form>p {
   font-size: 20px;
+}
+
+.textareaElement {
+  min-height: 17px;
+  border-bottom: 1px solid #ccc;
+  max-width: 500px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: none;
+  outline:none;
+}
+
+#transborder {
+  width: 0;
+  border-bottom: 1px solid #9c27b0;
+  transition: width 0.5s;
+  margin: 0 auto;
 }

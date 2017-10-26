@@ -20,6 +20,8 @@ let i4 = document.getElementById('i4')
 let i5 = document.getElementById('i5')
 let sB = document.getElementById('submit')
 let cB = document.getElementById('close')
+let form = document.getElementById('form')
+let border = document.getElementById('transborder')
 
 // Reset function for the close button and for use on the first line of each form function
 let reset = function () {
@@ -28,13 +30,15 @@ let reset = function () {
     this['t' + i].style.display = 'none'
     this['t' + i].style.height = 'auto'
     this['t' + i].style.width = 'auto'
-    this['t' + i].value = ''
+    this['t' + i].innerHTML = ''
     this['t' + i].required = false
     this['i' + i].style.display = 'none'
     this['i' + i].style.type = 'text'
     this['i' + i].required = false
     sB.style.display = 'none'
     cB.style.display = 'none'
+    form.style.display = 'none'
+    border.style.width = '0'
   }
 }
 
@@ -51,50 +55,46 @@ document.getElementById('close').onclick = function () {
 // After this line comes all the form functions
 let feedback = function () {
   reset()
+  form.style.display = 'inherit'
   cB.style.display = 'inherit'
   p1.innerHTML = 'Vad har varit bra/dåligt under dagen?'
   t1.style.display = 'inherit'
-  t1.style.width = '350px'
   t1.required = true
   p2.innerHTML = 'Hur har klimatet i klassen varit?'
   t2.style.display = 'inherit'
-  t2.style.width = '350px'
   t2.required = true
   sB.style.display = 'inherit'
+  border.style.width = '100%'
 }
 
 let news = function () {
   reset()
+  form.style.display = 'inherit'
   cB.style.display = 'inherit'
   p1.innerHTML = 'Rubrik:'
   t1.style.display = 'inherit'
-  t1.style.width = '350px'
   t1.required = true
   p2.innerHTML = 'Nyhets innehåll:'
   t2.style.display = 'inherit'
-  t2.style.height = '200px'
-  t2.style.width = '350px'
   t2.required = true
   sB.style.display = 'inherit'
+  border.style.width = '100%'
 }
 
 let weekeval = function () {
   reset()
+  form.style.display = 'inherit'
   cB.style.display = 'inherit'
   p1.innerHTML = 'Ditt namn (frivilligt):'
   t1.style.display = 'inherit'
-  t1.style.width = '200px'
   p2.innerHTML = 'Hur upplever du arbetsmiljön?'
   i2.style.display = 'inherit'
   i2.type = 'range'
-  i2.style.width = '350px'
   p3.innerHTML = 'Hur upplever du just nu tempot i utbildningen?'
   i3.style.display = 'inherit'
   i3.type = 'range'
-  i3.style.width = '350px'
   p4.innerHTML = 'Förslag på förbättringar:'
   t4.style.display = 'inherit'
-  t4.style.height = '150px'
-  t4.style.width = '350px'
   sB.style.display = 'inherit'
+  border.style.width = '100%'
 }

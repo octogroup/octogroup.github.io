@@ -8,10 +8,10 @@
   <link rel="stylesheet" href="../style/dailyfeedback.css">
   <link rel="stylesheet" href="../style/attendance.css">
   <link rel="stylesheet" href="../style/loginstyle.css">
-	<link rel="stylesheet" href="../style/mainstyle.css">
+  <link rel="stylesheet" href="../style/mainstyle.css">
   <link rel="stylesheet" href="../style/cardstyle.css">
   <link rel="stylesheet" href="../style/colorThemeStudentpage.css">
-	<link rel="stylesheet" href="../style/forms.css">
+  <link rel="stylesheet" href="../style/forms.css">
   <link rel="stylesheet" href="../style/teacher.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
@@ -42,27 +42,27 @@
     </div>
     <main>
 
-			  <div class="formcontent">
-			    <div class="forms">
-			      <button id="close">&#10005;</button>
-			      <form id="form" onsubmit="sent()">
-			        <p id="p1"></p>
-			        <input id="i1" type="text" min="1" max="7" step="1" list="tickmarks">
-			        <textarea id="t1" type="text"></textarea>
-			        <p id="p2"></p>
-			        <input id="i2" type="text" min="1" max="7" step="1" list="tickmarks">
-			        <textarea id="t2" type="text"></textarea>
-			        <p id="p3"></p>
-			        <input id="i3" type="text" min="1" max="7" step="1" list="tickmarks">
-			        <textarea id="t3" type="text"></textarea>
-			        <p id="p4"></p>
-			        <input id="i4" type="text" min="1" max="7" step="1" list="tickmarks">
-			        <textarea id="t4" type="text"></textarea>
-			        <p id="p5"></p>
-			        <input id="i5" type="text" min="1" max="7" step="1" list="tickmarks">
-			        <textarea id="t5" type="text"></textarea>
-			        <input id="submit" type="submit">
-			        <datalist id="tickmarks">
+      <div class="formcontent">
+        <div class="forms">
+          <button id="close">&#10005;</button>
+          <form id="form" onsubmit="sent()">
+            <p id="p1"></p>
+            <input id="i1" type="text" min="1" max="7" step="1" list="tickmarks">
+            <div id="t1" class="textareaElement" contenteditable></div>
+            <p id="p2"></p>
+            <input id="i2" type="text" min="1" max="7" step="1" list="tickmarks">
+            <div id="t2" class="textareaElement" contenteditable></div>
+            <p id="p3"></p>
+            <input id="i3" type="text" min="1" max="7" step="1" list="tickmarks">
+            <div id="t3" class="textareaElement" contenteditable></div>
+            <p id="p4"></p>
+            <input id="i4" type="text" min="1" max="7" step="1" list="tickmarks">
+            <div id="t4" class="textareaElement" contenteditable></div>
+            <p id="p5"></p>
+            <input id="i5" type="text" min="1" max="7" step="1" list="tickmarks">
+            <div id="t5" class="textareaElement" contenteditable></div>
+            <input id="submit" type="submit">
+            <datalist id="tickmarks">
 			          <option value="1"/>
 			          <option value="2"/>
 			          <option value="3"/>
@@ -71,13 +71,14 @@
 			          <option value="6"/>
 			          <option value="7"/>
 			        </datalist>
-			      </form>
-			    </div>
-			  </div>
+          </form>
+        </div>
+        <span id="transborder"></span>
 
-			<!--Cardlayout-->
-			<div class="box">
-				<div class="card">
+      </div>
+      <!--Cardlayout-->
+      <div class="box">
+        <div class="card">
           <div id="card-top-1" class="cardcontainer">
             <div id="card-body-1" class="card-header">
               <img id="card-img-1" src="../img/notebook.svg" alt="">
@@ -106,7 +107,8 @@
               <button type="button" name="button" class="cardbutton" onclick="toggleExpand('expand1')">Läs Mer</button>
             </div>
           </div>
-        </div><div class="card">
+        </div>
+        <div class="card">
           <div id="card-top-2" class="cardcontainer">
             <div id="card-body-2" class="card-header">
               <img id="card-img-2" src="../img/calendar.svg" alt="" class="card-img-top">
@@ -149,17 +151,16 @@
           </div>
         </div>
     </main>
-  </div>
-  <footer class="footer" id="studentfooter">
-    <p>&copy;2017</p>
-  </footer>
-	<script src="../javascript/forms.js"></script>
-  <script type="text/javascript" src="../javascript/attendance.js"></script>
-  <script type="text/javascript" src="../javascript/dailyfeedback.js"></script>
-  <script type="text/javascript" src="../javascript/openmenu.js"></script>
-  <script type="text/javascript" src="../javascript/login.js"></script>
-  <script type="text/javascript" src="../javascript/sent.js"></script>
-  <script type="text/javascript" src="../javascript/togglediv.js"></script>
+    </div>
+    <footer class="footer" id="studentfooter">
+      <p>&copy;2017</p>
+    </footer>
+    <script src="../javascript/forms.js"></script>
+    <script type="text/javascript" src="../javascript/attendance.js"></script>
+    <script type="text/javascript" src="../javascript/dailyfeedback.js"></script>
+    <script type="text/javascript" src="../javascript/openmenu.js"></script>
+    <script type="text/javascript" src="../javascript/login.js"></script>
+    <script type="text/javascript" src="../javascript/togglediv.js"></script>
 </body>
 
 </html>
