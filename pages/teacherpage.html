@@ -28,14 +28,14 @@
       </a>
       <nav id="navigation">
         <div id="loginalign">
-          <button class="loginbutton cardbutton" type="button" name="logout" onclick=logOut()>logga ut</button>
+          <button class="loginbutton" type="button" name="logout" onclick=logOut()>logga ut</button>
         </div>
       </nav>
 
     </header>
     <aside class="editnav">
       <div class="asidebarbox">
-        <button class="editbuttons" id="news">Skapa nyhet</button>
+        <button class="cardbutton" id="news">Skapa nyhet</button>
       </div>
     </aside>
     <div id="container">
@@ -78,79 +78,76 @@
 			<!--Cardlayout-->
 			<div class="box">
 				<div class="card">
-					<div class="cardcontainer">
-						<div class="card-header">
-							<img src="../img/octo.png" alt="" class="card-img-top">
-						</div>
-						<div class="card-body">
-							<h3>Avslutade kurser</h3>
-						</div>
-						<div class="card-bottom">
-							<a href="grades.html"><button type="button" name="button" class="cardbutton">Öppna</button></a>
-						</div>
-					</div>
-				</div>
+          <div id="card-top-1" class="cardcontainer">
+            <div id="card-body-1" class="card-header">
+              <img id="card-img-1" src="../img/notebook.svg" alt="">
+            </div>
+            <div id="card-container-1" class="card-body">
 
-				<div class="card">
-					<div class="cardcontainer">
-						<div class="card-header">
-							<img src="../img/octo.png" alt="" class="card-img-top">
-						</div>
-						<div class="card-body">
-							<h3>Kommande kurser</h3>
-							<ul class="card-list">
-								<li>
-									<a href="course.html">Bootstrap</a>
-								</li>
-								<li>
-									<a href="course.html">Angular</a>
-								</li>
-								<div class="expand" id="expand2" style="display: none;">
-									<li>
-										<a href="course.html">React</a>
-									</li>
-									<li>
-										<a href="course.html">Vue.js</a>
-									</li>
-								</div>
-							</ul>
-						</div>
-						<div class="card-bottom">
-							<button type="button" name="button" class="cardbutton" onclick="toggleExpand('expand2')">Läs Mer</button>
-						</div>
-					</div>
-				</div>
-				<div class="card">
-					<div style="background: #6A1B9A" class="cardcontainer">
-						<div style="background: #8E24AA" class="card-header">
-							<img src="../img/notebook.svg" alt="" class="card-img-top" style="width: 100px; height: 100px; padding: 10px;">
-						</div>
-						<div style="padding: 15px"  class="card-body">
-
-							<h3 style="color: #fff">Pågående kurser</h3>
-							<ul class="card-list">
-								<li>
-									<a  style="color: #fff"href="course.html">Arbetsmetodik</a>
-								</li>
-								<li>
-									<a style="color: #fff" href="course.html">JavaScript</a>
-								</li>
-								<div class="expand" id="expand1" style="display: none;">
-									<li>
-										<a href="course.html">HTML</a>
-									</li>
-									<li>
-										<a href="course.html">CSS</a>
-									</li>
-								</div>
-							</ul>
-						</div>
-						<div class="card-bottom">
-							<button type="button" name="button" class="cardbutton" onclick="toggleExpand('expand1')">Läs Mer</button>
-						</div>
-					</div>
-				</div>
-			</div>
+              <h3 id="card-heading-1">Pågående kurser</h3>
+              <ul class="card-list">
+                <li>
+                  <a id="nav-link-1" href="course.html">Arbetsmetodik</a>
+                </li>
+                <li>
+                  <a id="nav-link-1" href="course.html">JavaScript</a>
+                </li>
+                <div class="expand" id="expand1" style="display: none;">
+                  <li>
+                    <a id="nav-link-1" href="course.html">HTML</a>
+                  </li>
+                  <li>
+                    <a id="nav-link-1" href="course.html">CSS</a>
+                  </li>
+                </div>
+              </ul>
+            </div>
+            <div class="card-bottom">
+              <button type="button" name="button" class="cardbutton" onclick="toggleExpand('expand1')">Läs Mer</button>
+            </div>
+          </div>
+        </div><div class="card">
+          <div id="card-top-2" class="cardcontainer">
+            <div id="card-body-2" class="card-header">
+              <img id="card-img-2" src="../img/calendar.svg" alt="" class="card-img-top">
+            </div>
+            <div id="card-container-2" class="card-body">
+              <h3 id="card-heading-2">Kommande kurser</h3>
+              <ul class="card-list">
+                <li>
+                  <a id="nav-link-2" href="course.html">Bootstrap</a>
+                </li>
+                <li>
+                  <a id="nav-link-2" href="course.html">Angular</a>
+                </li>
+                <div class="expand" id="expand2" style="display: none;">
+                  <li>
+                    <a id="nav-link-2" href="course.html">React</a>
+                  </li>
+                  <li>
+                    <a id="nav-link-2" href="course.html">Vue.js</a>
+                  </li>
+                </div>
+              </ul>
+            </div>
+            <div class="card-bottom">
+              <button type="button" name="button" class="cardbutton" onclick="toggleExpand('expand2')">Läs Mer</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div id="card-top-3" class="cardcontainer">
+            <div id="card-body-3" class="card-header">
+              <img id="card-img-3" src="../img/trophy.svg" alt="" class="card-img-top">
+            </div>
+            <div id="card-container-3" class="card-body">
+              <h3 id="card-heading-3">Avslutade kurser</h3>
+            </div>
+            <div class="card-bottom">
+              <a href="grades.html"><button type="button" name="button" class="cardbutton">Öppna</button></a>
+            </div>
+          </div>
+        </div>  
     </main>
   </div>
   <footer class="footer" id="studentfooter">
