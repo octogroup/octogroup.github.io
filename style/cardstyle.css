@@ -1,20 +1,11 @@
-/* A note from the teacher remove unnecessary margins */
 
 .box {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   max-width: 100%;
   margin: 0 auto;
   align-items: baseline;
-}
-
-@media (max-width: 1920px) {}
-
-}
-
-@media (max-width: 1280px) {}
-
 }
 
 @media screen and (max-width: 450px) {
@@ -25,6 +16,11 @@
     justify-content: flex-end;
     flex-direction: column;
   }
+}
+
+@media (min-width: 1921px)
+	h3 {
+    font-size: 3em;
 }
 
 .card {
@@ -47,6 +43,15 @@
   width: 350px;
 }
 
+.backgroundpic1 {
+	background-image: url(http://communitytimes.me/wp-content/uploads/2016/10/yourstory-education.jpg);
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /*---------- manipulate card ---------------------- */
 
 
@@ -54,7 +59,7 @@
   background: #111111;
 }
 
-#card-img {
+#card-img, #form-img-1 {
   width: 100px;
   height: 100px;
   padding: 10px;
@@ -357,32 +362,12 @@
   margin: 10px;
   justify-content: flex-end;
   flex-direction: column;
-  /*flex-grow: 1;*/
   align-items: flex-start;
 }
 
-/*.expand {
-	-webkit-transition: height 300ms linear;
-	 -moz-transition: height 300ms linear;
-	 -o-transition: height 300ms linear;
-	 transition: height 300ms linear;
+.expand {
+	flex-direction: column;
 }
-
-
-.cardtable {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	vertical-align: middle;
-
-}
-
-.tabledata {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	flex-direction: row;
-}*/
 
 #expand1 #expand2 #expand3 {
   display: none;
@@ -392,6 +377,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+#attcard {
+	background-color: #fff;
 }
 
 #att-bottom {
