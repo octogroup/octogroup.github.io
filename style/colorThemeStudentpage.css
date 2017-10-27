@@ -1,34 +1,7 @@
-.nav>a {
-  color: black;
-}
-
-.nav>a:hover {
-  color: white;
-}
-
-button {
-  background-color: #8e0000;
-  color: white;
-}
-
-.nav>button {
-  background-color: #8e0000;
-}
 
 .loginbutton {
-  min-width: 64px;
-  height: 36px;
-  font-family: 'Roboto';
-  font-size: 14px;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: #fff;
-  padding: 0 16px;
   background-color: #c62828;
-  border-radius: 2px;
   border: solid 1px #8e0000;
-  margin-top: 5px;
-  margin-right: 5px;
 }
 
 .loginbutton:hover {
@@ -36,14 +9,7 @@ button {
 }
 
 header {
-  width: 100%;
-  list-style-type: none;
   background-color: #fff;
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 4px;
-  position: relative;
-  box-shadow: 0 2px 2px #888888;
 }
 
 .footer {

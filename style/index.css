@@ -19,3 +19,11 @@
   max-width: 768px;
   width: 100%;
 }
+
+#navlist>li:nth-child(1) {
+  border-bottom: solid 4px #43a047;
+}
+
+#navlist>li:nth-child(1)>a {
+  color: #fff;
+}

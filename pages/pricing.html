@@ -6,10 +6,8 @@
   <link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet">
   <link rel="shortcut icon" href="../img/octo.png">
   <link rel="stylesheet" href="../style/loginstyle.css">
-  <link rel="stylesheet" href="../style/currentpagepricing.css">
   <link rel="stylesheet" href="../style/mainstyle.css">
   <link rel="stylesheet" href="../style/price.css">
-  <link rel="stylesheet" href="../style/why.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>Octo</title>
@@ -24,7 +22,7 @@
       </a>
       <nav id="navigation">
         <div id="loginalign">
-          <button class="loginbutton" type="button" name="loginbutton" onclick=showLogin()>logga in</button>
+          <button class="loginbutton" type="button" name="loginbutton" onclick="showLogin()">logga in</button>
         </div>
         <ul id="navlist">
           <li>
@@ -67,7 +65,6 @@
             <label><b>Lösenord</b></label>
             <img id="userimg" src="../img/lock.png" alt="">
             <input id="pswinput" type="password" placeholder="Lösenord" required>
-            <!--button type="button" onclick="document.getElementById('loginbox').style.display='none'" class="cancelbtn">X</button-->
           </div>
           <div class="lgcontainer">
             <button class="loginbutton" type="submit" onclick="accesslevelroot(this.form); return false;">Logga in</button>

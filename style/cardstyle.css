@@ -3,9 +3,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 100%;
-  margin: 0 auto;
-  align-items: baseline;
 }
 
 .card {
@@ -318,71 +315,6 @@
   color: #F5F5F5
 } the red cross button */
 
-/*----------------------------BUTTON---------------------------------------*/
-
-.cardbutton {
-  position: relative;
-  overflow: hidden;
-  border: none;
-  cursor: pointer;
-  color: white;
-  padding: 8px 14px;
-  border-radius: 2px;
-  font-size: 14px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
-  background: #ff5f52;
-  text-transform: uppercase;
-}
-
-.cardbutton:after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 5px;
-  height: 5px;
-  background: rgba(255, 255, 255, .5);
-  opacity: 0;
-  border-radius: 100%;
-  transform: scale(1, 1) translate(-50%);
-  transform-origin: 50% 50%;
-}
-
-.cardbutton:hover {
-  background-color: ##8e0000;
-}
-
-/* remove blue outline on the button after you clicked */
-
-.cardbutton:focus {
-  outline: none;
-}
-
-@keyframes ripple {
-  0% {
-    transform: scale(0, 0);
-    opacity: 1;
-  }
-  20% {
-    transform: scale(25, 25);
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: scale(40, 40);
-  }
-}
-
-.cardbutton:focus:not(:active)::after {
-  animation: ripple 1s ease-out;
-}
-
-/*-----------------------Button-ends-----------------------------------*/
-
-* {
-  box-sizing: border-box;
-}
-
 /* basic stylings ------------------------------------------ */
 
 .container {
@@ -426,10 +358,10 @@ input[type=text] {
   font-size: 18px;
   padding: 10px 10px 10px 5px;
   display: block;
-  width: 300px;
+  width: 100%;
   border: none;
   background: none;
-  /*   border-bottom:1px solid #757575; */
+  border-bottom:1px solid #757575;
 }
 
 input[type=text]::-webkit-input-placeholder {
@@ -558,3 +490,20 @@ input[type="radio"]:after {
   width: 15px;
   z-index: 0;
 }
+
+/*Teacherstyle*/
+.editnav {
+	display: flex;
+}
+
+.asidebarbox {
+	margin: 0 auto;
+}
+
+#form-img-1 {
+  width: 100px;
+  height: 100px;
+  padding: 10px 0 10px 10px;
+	margin-left: 40px;
+}
+/*----*/
