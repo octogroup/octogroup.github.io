@@ -1,15 +1,11 @@
-.teachernav {
-
-}
-
-.teachercard {
-
-}
-
 .editnav {
 	display: flex;
 }
 
 .asidebarbox {
 	margin: 0 auto;
+}
+
+.cardbutton {
+  margin-top: 5px;
 }
