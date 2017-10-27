@@ -9,3 +9,10 @@
 .cardbutton {
   margin-top: 5px;
 }
+
+#form-img-1 {
+  width: 100px;
+  height: 100px;
+  padding: 10px 0 10px 10px;
+	margin-left: 40px;
+}

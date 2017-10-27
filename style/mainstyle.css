@@ -49,6 +49,15 @@ body {
   flex: 1 0 auto;
 }
 
+.backgroundpic1 {
+	background-image: url(http://communitytimes.me/wp-content/uploads/2016/10/yourstory-education.jpg);
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 header {
   width: 100%;
   list-style-type: none;

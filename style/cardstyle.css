@@ -8,21 +8,6 @@
   align-items: baseline;
 }
 
-@media screen and (max-width: 450px) {
-  .card-bottom {
-    display: flex;
-    height: auto;
-    margin: 10px;
-    justify-content: flex-end;
-    flex-direction: column;
-  }
-}
-
-@media (min-width: 1921px)
-	h3 {
-    font-size: 3em;
-}
-
 .card {
   display: flex;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
@@ -32,7 +17,6 @@
   margin: 20px;
   border-radius: 2px;
   flex-wrap: wrap;
-  /*border: solid 0.5px grey;*/
 }
 
 .cardcontainer {
@@ -43,15 +27,6 @@
   width: 350px;
 }
 
-.backgroundpic1 {
-	background-image: url(http://communitytimes.me/wp-content/uploads/2016/10/yourstory-education.jpg);
-  min-height: 500px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 /*---------- manipulate card ---------------------- */
 
 
@@ -59,18 +34,6 @@
 	display: inline-flex;
   background: #111111;
 }
-
-#card-img, #form-img-1 {
-  width: 100px;
-  height: 100px;
-  padding: 10px 0 10px 10px;
-	margin-left: 40px;
-}
-
-#card-heading-1 {
-  color: #fff;
-}
-
 
 /*  ----------------card end ---------------------*/
 
@@ -86,25 +49,12 @@
 
 /* used for padding and margin the text element   */
 
-#card-img-1 {
-  width: 100px;
-  height: 100px;
-  padding: 10px;
-}
-
-#card-heading-1 {
+.nav-link {
   color: #fff;
 }
 
-#nav-link-1 {
-  color: #fff;
-}
-
-#nav-link-1:hover {
-  color: #2ecc71;
+.nav-link:hover {
   padding: 4px;
-  border: 2px solid #2ecc71;
-  border-radius: 7px;
   transition-duration: 0.8s;
 }
 
@@ -120,28 +70,6 @@
   background: #880E4F;
 }
 
-#card-img-2 {
-  width: 100px;
-  height: 100px;
-  padding: 10px;
-}
-
-#card-heading-2 {
-  color: #fff;
-}
-
-#nav-link-2 {
-  color: #fff;
-}
-
-#nav-link-2:hover {
-  color: #f1c40f;
-  padding: 4px;
-  border: 2px solid #f1c40f;
-  border-radius: 7px;
-  transition-duration: 0.8s;
-}
-
 /*  ------------------- card 2 -----------------------------  */
 
 /*  ---------------- card 3 ------------------------ */
@@ -153,27 +81,6 @@
 #card-body-3 {
   background: #8BC34A;
 }
-
-#card-img-3 {
-  width: 100px;
-  height: 100px;
-  padding: 10px;
-}
-
-#card-heading-3 {
-  color: #fff;
-}
-
-/* #nav-link-3 {
-  color:#fff;
-}
-#nav-link-3:hover {
-  color:#f1c40f;
-  padding: 4px;
-  border: 2px solid #f1c40f;
-  border-radius: 7px;
-  transition-duration: 0.8s;
-} */
 
 /*  ------------------- card 3 -----------------------------  */
 
@@ -187,27 +94,6 @@
   background: #FF5722;
 }
 
-#card-img-4 {
-  width: 100px;
-  height: 100px;
-  padding: 10px;
-}
-
-#card-heading-4 {
-  color: #fff;
-}
-
-/* #nav-link-4 {
-  color:#fff;
-}
-#nav-link-4:hover {
-  color:#f1c40f;
-  padding: 4px;
-  border: 2px solid #f1c40f;
-  border-radius: 7px;
-  transition-duration: 0.8s;
-} */
-
 /*  ------------------- card 4 -----------------------------  */
 
 /*  ---------------- card 5 ------------------------ */
@@ -220,27 +106,6 @@
   background: #3F51B5;
 }
 
-#card-img-5 {
-  width: 100px;
-  height: 100px;
-  padding: 10px;
-}
-
-#card-heading-5 {
-  color: #fff;
-}
-
-/* #nav-link-5 {
-  color:#fff;
-}
-#nav-link-5:hover {
-  color:#f1c40f;
-  padding: 4px;
-  border: 2px solid #f1c40f;
-  border-radius: 7px;
-  transition-duration: 0.8s;
-} */
-
 /*  ------------------- card 5 -----------------------------  */
 
 /*  ---------------- card 6 ------------------------ */
@@ -252,27 +117,6 @@
 #card-body-6 {
   background: #455A64;
 }
-
-#card-img-6 {
-  width: 100px;
-  height: 100px;
-  padding: 10px;
-}
-
-#card-heading-6 {
-  color: #fff;
-}
-
-/* #nav-link-5 {
-  color:#fff;
-}
-#nav-link-5:hover {
-  color:#f1c40f;
-  padding: 4px;
-  border: 2px solid #f1c40f;
-  border-radius: 7px;
-  transition-duration: 0.8s;
-} */
 
 /*  ------------------- card 6 -----------------------------  */
 /*  ---------------- card 7 ------------------------ */
@@ -296,15 +140,6 @@
 }
 
 /*  ------------------- card 7 -----------------------------  */
-
-/* warning icon on närvaro */
-
-.card-img-top {
-  width: 100px;
-  height: 100px;
-	padding: 10px;
-}
-/* does it do anything? */
 
 .box>.card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -381,7 +216,6 @@
 
 #att-box {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
