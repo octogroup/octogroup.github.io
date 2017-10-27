@@ -30,6 +30,7 @@
 #card-body {
 	display: inline-flex;
   background: #111111;
+	max-height: 120px;
 }
 
 /*  ----------------card end ---------------------*/
@@ -201,14 +202,38 @@
 }
 
 .attendancetitle {
+	flex-grow: 1;
 	color: #fff;
 	text-align: center;
 	margin: 10px;
-	padding: 15px;
+	margin: 35px 0 10px 0;
+}
+
+#att-card-img1 {
+	flex-grow: 1;
+  width: 100px;
+  height: 100px;
+	display: block;
+}
+
+#att-card-img2 {
+	flex-grow: 1;
+  width: 100px;
+  height: 100px;
+	display: none;
 }
 
 #hidebody {
 	display: block;
+	position: relative;
+	max-height: 350px;
+	height: auto;
+	overflow: hidden;
+	transition:max-height 0.4s ease-out;
+}
+
+#hidebody > div.card-body {
+	height: 70px;
 }
 
 #att-box {
@@ -229,9 +254,54 @@
   align-items: center;
 }
 
+/*-----------------------------Countdown--------------------------------*/
+
 #timer {
-	float: right;
+	position: absolute;
+	top: 10px;
+	width: 100%;
+	text-align: center;
+	margin-top: 10px;
 }
+
+.countdown {
+  position: relative;
+  margin: auto;
+  margin-top: 10px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+.countdown > svg {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  transform: rotate(-90deg);
+}
+
+.countdown > svg > circle {
+  stroke-dasharray: 219px;
+  stroke-dashoffset: 0px;
+  /*stroke-linecap: round;*/
+  stroke-width: 10px;
+  stroke: #ff5f52;
+  fill: transparent;
+  animation: countdown 900s linear;
+}
+
+@keyframes countdown {
+  from {
+    stroke-dashoffset: 0px;
+  }
+  to {
+    stroke-dashoffset: 113px;
+  }
+}
+
+/*-------------------------Countdown-ends-------------------------------*/
 
 #codeInput {
   margin-bottom: 10px;

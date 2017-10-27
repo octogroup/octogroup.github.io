@@ -36,11 +36,17 @@
 					<div class="cardcontainer">
 						<div id="card-body">
 							<h3 class="attendancetitle">Närvaro</h3>
-							<img src="../img/warning.svg" alt="" class="card-img">
+							<img src="../img/warning.svg" alt="" id="att-card-img1">
+							<img src="../img/check.svg" alt="" id="att-card-img2">
 						</div>
 						<div id="hidebody">
 							<div class="card-body">
-								<p>Närvaro kod: asdf <span id="timer">15 : 00</span></p>
+								<div class="countdown">
+  								<div id="timer">15 : 00</div>
+  								<svg>
+    								<circle r="35" cx="50" cy="50"></circle>
+  								</svg>
+								</div>
 							</div>
 							<div id="att-bottom">
 								<input id="codeInput" type="text" placeholder="Skriv in koden">
@@ -48,7 +54,7 @@
 								<span class="bar"></span>
 								<p id="errortxt">Koden är fel. Vänligen försök igen.</p>
 								<br>
-								<button type="button" name="button" class="cardbutton" id="attsbutton" onclick="codePromp()">Skicka</button>
+								<button type="button" name="button" class="cardbutton" id="attsbutton" onclick="checkAttendance()">Skicka</button>
 							</div>
 							<div id="attOnSend" class="boxstyle">
 								<div class="dfbform">
