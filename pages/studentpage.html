@@ -22,58 +22,60 @@
         <img src="../img/KYH-logo.png" alt="">
         <!-- <h1>Octo : KYH</h1> -->
       </a>
-      <nav id="navigation">
-        <div id="loginalign">
-          <button class="loginbutton" type="button" name="logout" onclick="logOut()">logga ut</button>
-        </div>
-      </nav>
-    </header>
-    <div id="container">
-    </div>
-    <!-- Main-content -->
-    <main>
-      <!-- Attendance Card -->
-      <div id="att-box">
-        <div class="card" id="attcard">
-          <div class="cardcontainer">
-            <div id="card-body" class="card-header">
-              <img id="card-img" src="../img/warning.svg" alt="" class="card-img-top">
-            </div>
-            <div class="card-body">
-              <h3>Närvaro</h3>
-            </div>
-            <div id="att-bottom">
-              <input id="codeInput" type="text" placeholder="Skriv in koden">
-              <span class="highlight"></span>
-              <span class="bar"></span>
-              <p id="errortxt">Koden är fel. Vänligen försök igen.</p>
-              <br>
-              <button type="button" name="button" class="cardbutton" id="attsbutton" onclick="codePromp()">Skicka</button>
-            </div>
-            <div id="attOnSend" class="boxstyle">
-              <div class="dfbform">
-                <div class="inputcontainer">
-                  <p id="feedbacktext">Din närvaro har blivit registrerad!</p>
-                </div>
-                <div class="bottomsection">
-                  <button type="button" class="submitdfb cardbutton" id="attcbutton" onclick="hideAttOnSend();  hideAttBox()">Stäng</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--Cardlayout-->
-      <div class="box">
-        <!-- First Column -->
-        <section class="firstcardcolumn">
-          <!-- First Card -->
-          <div class="card">
-            <div id="card-top-1" class="cardcontainer">
-              <div id="card-body-1" class="card-header">
-                <img id="card-img-1" src="../img/notebook.svg" alt="">
-              </div>
-              <div id="card-container-1" class="card-body">
+			<nav id="navigation">
+				<div id="loginalign">
+					<button class="loginbutton" type="button" name="logout" onclick="logOut()">logga ut</button>
+				</div>
+			</nav>
+		</header>
+		<div id="container">
+		</div>
+		<!-- Main-content -->
+		<main>
+			<div id="att-box">
+				<div class="card" id="attcard">
+					<div class="cardcontainer">
+						<div id="card-body">
+							<h3 class="attendancetitle">Närvaro</h3>
+							<img id="card-img" src="../img/warning.svg" alt="" class="card-img-top">
+						</div>
+						<div id="hidebody">
+						<div class="card-body">
+							<p>Närvaro kod: asdf <span id="timer">15 : 00</span></p>
+						</div>
+						<div id="att-bottom">
+							<input id="codeInput" type="text" placeholder="Skriv in koden">
+							<span class="highlight"></span>
+							<span class="bar"></span>
+							<p id="errortxt">Koden är fel. Vänligen försök igen.</p>
+							<br>
+							<button type="button" name="button" class="cardbutton" id="attsbutton" onclick="codePromp()">Skicka</button>
+						</div>
+						<div id="attOnSend" class="boxstyle">
+							<div class="dfbform">
+								<div class="inputcontainer">
+									<p id="feedbacktext">Din närvaro har blivit registrerad!</p>
+								</div>
+								<div class="bottomsection">
+									<button type="button" class="submitdfb cardbutton" id="attcbutton" onclick="hideAttOnSend();  hideAttBox()">Stäng</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+			<!--Cardlayout-->
+			<div class="box">
+				<!-- First Column -->
+				<section class="firstcardcolumn">
+					<!-- First Card -->
+					<div class="card">
+						<div id="card-top-1" class="cardcontainer">
+							<div id="card-body-1" class="card-header">
+								<img id="card-img-1" src="../img/notebook.svg" alt="">
+							</div>
+							<div id="card-container-1" class="card-body">
 
                 <h3 id="card-heading-1">Pågående kurser</h3>
                 <ul class="card-list">
