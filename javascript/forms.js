@@ -31,6 +31,8 @@ let reset = function() {
     this["i" + i].style.display = "none";
     this["i" + i].style.type = "text";
     this["i" + i].required = false;
+    d1.style.display = "none";
+    c1.style.display = "none";
     sB.style.display = "none";
     cB.style.display = "none";
   }
