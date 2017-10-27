@@ -3,9 +3,8 @@
   float: right;
 }
 
-.namn {}
-
 #news_main {
+	margin: 30px;
   display: flex;
   justify-content: space-between;
 }

@@ -1,23 +1,25 @@
 
-var divs = ["expand1", "expand2", "expand3", "expand4"];
-var visibleDivId = false;
-function toggleExpand(divId) {
+let divs = ["expand1", "expand2", "expand3", "expand4"]
+let visibleDivId = false
+
+function toggleExpand (divId) {
   if(visibleDivId === divId) {
-    visibleDivId = null;
+    visibleDivId = null
   } else {
-    visibleDivId = divId;
+    visibleDivId = divId
   }
-  hideNonVisibleDivs();
+  hideNonVisibleDivs()
 }
+
 function hideNonVisibleDivs() {
-  var i, divId, div;
+  let i, divId, div
   for(i = 0; i < divs.length; i++) {
-    divId = divs[i];
-    div = document.getElementById(divId);
+    divId = divs[i]
+    div = document.getElementById(divId)
     if(visibleDivId === divId) {
-      div.style.display = "flex";
+      div.style.display = "flex"
     } else {
-      div.style.display = "none";
+      div.style.display = "none"
     }
   }
 }

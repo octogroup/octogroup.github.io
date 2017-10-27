@@ -15,7 +15,6 @@
 .flex1 {
   display: flex;
   flex-direction: row;
-  /*flex-wrap: nowrap;*/
   justify-content: center;
   align-items: stretch;
   align-content: flex-start;
@@ -33,4 +32,12 @@
 
 .column>h3 {
   color: #43a047;
+}
+
+#navlist>li:nth-child(2) {
+  border-bottom: solid 4px #43a047;
+}
+
+#navlist>li:nth-child(2)>a {
+  color: #fff;
 }

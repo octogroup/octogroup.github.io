@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet">
+  <link rel="shortcut icon" href="../img/octo.png">
+  <link rel="stylesheet" href="../style/dailyfeedback.css">
+  <link rel="stylesheet" href="../style/loginstyle.css">
+  <link rel="stylesheet" href="../style/cardstyle.css">
+  <link rel="stylesheet" href="../style/mainstyle.css">
+  <link rel="stylesheet" href="../style/colorThemeStudentpage.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Uppgifter</title>
+</head>
+
+<body>
+  <div class="content backgroundpic1">
+    <header>
+      <a href="studentpage.html">
+        <img src="../img/KYH-logo.png" alt="">
+      </a>
+      <nav id="navigation">
+        <div id="loginalign">
+          <button class="loginbutton" type="button" name="logout" onclick="logOut()">logga ut</button>
+        </div>
+      </nav>
+    </header>
+    <div id="container">
+    </div>
+    <main>
+      <div class="box">
+        <!-- First Column -->
+        <section class="firstcardcolumn">
+          <div class="card">
+            <div id="card-top-4" class="cardcontainer">
+              <div id="card-body-4" class="card-header">
+                <img id="card-img-4" src="../img/service.svg" alt="" class="card-img-top">
+              </div>
+              <div id="card-container-4" class="card-body">
+                <h3 id="card-heading-4">Dagens feedback</h3>
+                <form name="dailyFeedback" id="dailyFeedback_form" action="" method="POST">
+                  <p id="smileyfaces">
+                    <label for="ledsen" onmouseover="hoverSadSmiley()" onmouseout="checkSmileyStatus()" onclick="checkSmileyStatus()">
+                      <img src="../img/sadDis.png" id="ledsenSmiley">
+                      <input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="ledsen" value="ledsen">
+                    </label>
+                    <label for="neutral" onmouseover="hoverNeutralSmiley()" onmouseout="checkSmileyStatus()" onclick="checkSmileyStatus()">
+                      <img src="../img/confusedDis.png" id="neutralSmiley">
+                      <input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="neutral" value="neutral">
+                    </label>
+                    <label for="glad" onmouseover="hoverHappySmiley()" onmouseout="checkSmileyStatus()" onclick="checkSmileyStatus()">
+                      <img src="../img/happyyDis.png" id="happySmiley">
+                      <input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="glad" value="glad">
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <footer class="footer">
+    <p2>octopusgruppen@gmail.com</p2>
+    <p>&copy;2017</p>
+  </footer>
+  <script type="text/javascript" src="../javascript/dailyfeedback.js"></script>
+  <script type="text/javascript" src="../javascript/login.js"></script>
+</body>
+
+</html>
