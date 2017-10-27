@@ -65,3 +65,6 @@ function showAnswerOnSend() {
 function hideAnswerOnSend() {
   document.getElementById('answerOnSend').style.display = 'none';
 }
+
+// används dfbbox i något?
+

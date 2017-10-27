@@ -2,212 +2,261 @@
 <html lang="en">
 
 <head>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet">
-	<link rel="shortcut icon" href="../img/octo.png">
-	<link rel="stylesheet" href="../style/dailyfeedback.css">
-	<link rel="stylesheet" href="../style/loginstyle.css">
-	<link rel="stylesheet" href="../style/cardstyle.css">
-	<link rel="stylesheet" href="../style/mainstyle.css">
-	<link rel="stylesheet" href="../style/colorThemeStudentpage.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta charset="UTF-8">
-	<title>Min profil</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet">
+  <link rel="shortcut icon" href="../img/octo.png">
+  <link rel="stylesheet" href="../style/dailyfeedback.css">
+  <link rel="stylesheet" href="../style/loginstyle.css">
+  <link rel="stylesheet" href="../style/cardstyle.css">
+  <link rel="stylesheet" href="../style/mainstyle.css">
+  <link rel="stylesheet" href="../style/colorThemeStudentpage.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Min profil</title>
 </head>
 
 <body>
-	<div class="content backgroundpic1">
-		<header onclick="dropclose()">
-			<a href="studentpage.html">
+  <div class="content backgroundpic1">
+    <header onclick="dropclose()">
+      <a href="studentpage.html">
         <img src="../img/KYH-logo.png" alt="">
         <!-- <h1>Octo : KYH</h1> -->
       </a>
-			<nav id="navigation">
-				<div id="loginalign">
-					<button class="loginbutton" type="button" name="logout" onclick="logOut()">logga ut</button>
-				</div>
-			</nav>
-		</header>
-		<div id="container">
-		</div>
-		<!-- Main-content -->
-		<main>
-			<div id="att-box">
-				<div class="card" id="attcard">
-					<div class="cardcontainer">
-						<div id="card-body" class="card-header">
-							<img id="card-img" src="../img/warning.svg" alt="" class="card-img-top">
-						</div>
-						<div class="card-body">
-							<h3>Närvaro</h3>
-						</div>
-						<div id="att-bottom">
-							<input id="codeInput" type="text" placeholder="Skriv in koden">
-							<span class="highlight"></span>
-							<span class="bar"></span>
-							<p id="errortxt">Koden är fel. Vänligen försök igen.</p>
-							<br>
-							<button type="button" name="button" class="cardbutton" id="attsbutton" onclick="codePromp()">Skicka</button>
-						</div>
-						<div id="attOnSend" class="boxstyle">
-							<div class="dfbform">
-								<div class="inputcontainer">
-									<p id="feedbacktext">Din närvaro har blivit registrerad!</p>
-								</div>
-								<div class="bottomsection">
-									<button type="button" class="submitdfb cardbutton" id="attcbutton" onclick="hideAttOnSend();  hideAttBox()">Stäng</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--Cardlayout-->
-			<div class="box">
-				<!-- First Column -->
-				<section class="firstcardcolumn">
-					<!-- First Card -->
-					<div class="card">
-						<div id="card-top-1" class="cardcontainer">
-							<div id="card-body-1" class="card-header">
-								<img id="card-img-1" src="../img/notebook.svg" alt="">
-							</div>
-							<div id="card-container-1" class="card-body">
+      <nav id="navigation">
+        <div id="loginalign">
+          <button class="loginbutton" type="button" name="logout" onclick="logOut()">logga ut</button>
+        </div>
+      </nav>
+    </header>
+    <div id="container">
+    </div>
+    <!-- Main-content -->
+    <main>
+      <!-- Attendance Card -->
+      <div id="att-box">
+        <div class="card" id="attcard">
+          <div class="cardcontainer">
+            <div id="card-body" class="card-header">
+              <img id="card-img" src="../img/warning.svg" alt="" class="card-img-top">
+            </div>
+            <div class="card-body">
+              <h3>Närvaro</h3>
+            </div>
+            <div id="att-bottom">
+              <input id="codeInput" type="text" placeholder="Skriv in koden">
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <p id="errortxt">Koden är fel. Vänligen försök igen.</p>
+              <br>
+              <button type="button" name="button" class="cardbutton" id="attsbutton" onclick="codePromp()">Skicka</button>
+            </div>
+            <div id="attOnSend" class="boxstyle">
+              <div class="dfbform">
+                <div class="inputcontainer">
+                  <p id="feedbacktext">Din närvaro har blivit registrerad!</p>
+                </div>
+                <div class="bottomsection">
+                  <button type="button" class="submitdfb cardbutton" id="attcbutton" onclick="hideAttOnSend();  hideAttBox()">Stäng</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Cardlayout-->
+      <div class="box">
+        <!-- First Column -->
+        <section class="firstcardcolumn">
+          <!-- First Card -->
+          <div class="card">
+            <div id="card-top-1" class="cardcontainer">
+              <div id="card-body-1" class="card-header">
+                <img id="card-img-1" src="../img/notebook.svg" alt="">
+              </div>
+              <div id="card-container-1" class="card-body">
 
-								<h3 id="card-heading-1">Pågående kurser</h3>
-								<ul class="card-list">
-									<li>
-										<a id="nav-link-1" href="course.html">Arbetsmetodik</a>
-									</li>
-									<li>
-										<a id="nav-link-1" href="course.html">JavaScript</a>
-									</li>
-									<div class="expand" id="expand1" style="display: none;">
-										<li>
-											<a id="nav-link-1" href="course.html">HTML</a>
-										</li>
-										<li>
-											<a id="nav-link-1" href="course.html">CSS</a>
-										</li>
-									</div>
-								</ul>
-							</div>
-							<div class="card-bottom">
-								<button type="button" name="button" class="cardbutton" onclick="toggleExpand('expand1')">Läs Mer</button>
-							</div>
-						</div>
-					</div>
-					<!-- Second Card -->
-					<div class="card">
-						<div id="card-top-4" class="cardcontainer">
-							<div id="card-body-4" class="card-header">
-								<img id="card-img-4" src="../img/service.svg" alt="" class="card-img-top">
-							</div>
-							<div id="card-container-4" class="card-body">
-								<h3 id="card-heading-4">Dagens feedback</h3>
-								<form name="dailyFeedback" id="dailyFeedback_form" action="" method="POST">
-									<p id="smileyfaces">
-										<label for="ledsen" onmouseover="hoverSadSmiley()" onmouseout="checkSmileyStatus()" onclick="checkSmileyStatus()"><img src="../img/sadDis.png" id="ledsenSmiley"><input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="ledsen" value="ledsen" ></label>
-										<label for="neutral" onmouseover="hoverNeutralSmiley()" onmouseout="checkSmileyStatus()" onclick="checkSmileyStatus()"><img src="../img/confusedDis.png" id="neutralSmiley"><input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="neutral" value="neutral"></label>
-										<label for="glad" onmouseover="hoverHappySmiley()" onmouseout="checkSmileyStatus()" onclick="checkSmileyStatus()"><img src="../img/happyyDis.png" id="happySmiley"><input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="glad" value="glad"></label>
-									</p>
-								</form>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!-- Second Card Column -->
-				<section class="secondcardcolumn">
-					<!-- Third Card -->
-					<div class="card">
-						<div id="card-top-2" class="cardcontainer">
-							<div id="card-body-2" class="card-header">
-								<img id="card-img-2" src="../img/calendar.svg" alt="" class="card-img-top">
-							</div>
-							<div id="card-container-2" class="card-body">
-								<h3 id="card-heading-2">Kommande kurser</h3>
-								<ul class="card-list">
-									<li>
-										<a id="nav-link-2" href="course.html">Bootstrap</a>
-									</li>
-									<li>
-										<a id="nav-link-2" href="course.html">Angular</a>
-									</li>
-									<div class="expand" id="expand2" style="display: none;">
-										<li>
-											<a id="nav-link-2" href="course.html">React</a>
-										</li>
-										<li>
-											<a id="nav-link-2" href="course.html">Vue.js</a>
-										</li>
-									</div>
-								</ul>
-							</div>
-							<div class="card-bottom">
-								<button type="button" name="button" class="cardbutton" onclick="toggleExpand('expand2')">Läs Mer</button>
-							</div>
-						</div>
-					</div>
-					<!-- Forth Card -->
-					<div class="card">
-						<div id="card-top-5" class="cardcontainer">
-							<div id="card-body-5" class="card-header">
-								<img id="card-img-5" src="../img/mail.svg" alt="" class="card-img-top">
-							</div>
-							<div id="card-container-5" class="card-body">
-								<h3 id="card-heading-5">Veckorapport</h3>
-							</div>
-							<div class="card-bottom">
-								<a href="weekeval.html"><button type="button" name="button" class="cardbutton">Öppna</button></a>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!-- Second Card Column -->
-				<section class="thirdcardcolumn">
-					<!-- Fifth Card -->
-					<div class="card">
-						<div id="card-top-3" class="cardcontainer">
-							<div id="card-body-3" class="card-header">
-								<img id="card-img-3" src="../img/trophy.svg" alt="" class="card-img-top">
-							</div>
-							<div id="card-container-3" class="card-body">
-								<h3 id="card-heading-3">Avslutade kurser</h3>
-							</div>
-							<div class="card-bottom">
-								<a href="grades.html"><button type="button" name="button" class="cardbutton">Öppna</button></a>
-							</div>
-						</div>
-					</div>
-					<!-- Sixth Card -->
-					<div class="card">
-						<div id="card-top-6" class="cardcontainer">
-							<div id="card-body-6" class="card-header">
-								<img id="card-img-6" src="../img/newspaper.svg" alt="" class="card-img-top">
-							</div>
-							<div id="card-container-5" class="card-body">
-								<h3 id="card-heading-5">Student nyheter</h3>
-								<h4 id="card-heading-5">VÄLKOMMEN TILL NYA WEBBPLATSEN</h4>
-								<p id="card-heading-5">Nu är den äntligen här. Vår nya webb där du mycket enklare kan se vilka utbildningar vi har och hitta rätt utbildning för dig! Du vet väl att vi har ansökningen till utbildningarna öppen ändra fram till 5 juni i år?
-								</p>
-							</div>
-							<div class="card-bottom">
-								<a href="news.html"><button type="button" name="button" class="cardbutton">Öppna</button></a>
-							</div>
-						</div>
-					</div>
-				</section>
-			</div>
-		</main>
-	</div>
-	<footer class="footer">
-		<p>&copy;2017</p>
-	</footer>
-	<script type="text/javascript" src="../javascript/attendance.js"></script>
-	<script type="text/javascript" src="../javascript/dailyfeedback.js"></script>
-	<script type="text/javascript" src="../javascript/login.js"></script>
-	<script type="text/javascript" src="../javascript/sent.js"></script>
-	<script type="text/javascript" src="../javascript/togglediv.js"></script>
+                <h3 id="card-heading-1">Pågående kurser</h3>
+                <ul class="card-list">
+                  <li>
+                    <a id="nav-link-1" href="assignments.html">Arbetsmetodik</a>
+                  </li>
+                  <li>
+                    <a id="nav-link-1" href="assignments.html">JavaScript</a>
+                  </li>
+                  <div class="expand" id="expand1" style="display: none;">
+                    <li>
+                      <a id="nav-link-1" href="assignments.html">HTML</a>
+                    </li>
+                    <li>
+                      <a id="nav-link-1" href="assignments.html">CSS</a>
+                    </li>
+                  </div>
+                </ul>
+              </div>
+              <div class="card-bottom">
+                <button type="button" name="button" class="cardbutton" onclick="toggleExpand('expand1')">Läs Mer</button>
+              </div>
+            </div>
+          </div>
+          <!-- Second Card -->
+          <div class="card">
+            <div id="card-top-4" class="cardcontainer">
+              <div id="card-body-4" class="card-header">
+                <img id="card-img-4" src="../img/service.svg" alt="" class="card-img-top">
+              </div>
+              <div id="card-container-4" class="card-body">
+                <h3 id="card-heading-4">Dagens feedback</h3>
+                <form name="dailyFeedback" id="dailyFeedback_form" action="" method="POST">
+                  <p id="smileyfaces">
+                    <label for="ledsen" onmouseover="hoverSadSmiley()" onmouseout="checkSmileyStatus()" onclick="checkSmileyStatus()">
+                      <img src="../img/sadDis.png" id="ledsenSmiley">
+                      <input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="ledsen" value="ledsen">
+                    </label>
+                    <label for="neutral" onmouseover="hoverNeutralSmiley()" onmouseout="checkSmileyStatus()" onclick="checkSmileyStatus()">
+                      <img src="../img/confusedDis.png" id="neutralSmiley">
+                      <input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="neutral" value="neutral">
+                    </label>
+                    <label for="glad" onmouseover="hoverHappySmiley()" onmouseout="checkSmileyStatus()" onclick="checkSmileyStatus()">
+                      <img src="../img/happyyDis.png" id="happySmiley">
+                      <input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="glad" value="glad">
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- Seventh Card -->
+          <div class="card">
+            <div id="card-top-7" class="cardcontainer">
+              <div id="card-body-7" class="card-header">
+                <img class="card-img" src="../img/calendar.svg" alt="">
+              </div>
+              <div class="card-body">
+                <h3 class="card-heading">Examinationer</h3>
+                <ul class="card-list">
+                  <li>
+                    <a href="assignments.html">22/10 Bootstrap: Inlämmning 1</a>
+                  </li>
+                  <li>
+                    <a href="assignments.html">25/10 Angular: Tenta</a>
+                  </li>
+                  <div class="expand" id="expand3" style="display: none;">
+                    <li>
+                      <a href="assignments.html">01/11 React: Inlämning 3</a>
+                    </li>
+                    <li>
+                      <a href="assignments.html">02/11 Vue.js: Hemtenta</a>
+                    </li>
+                  </div>
+                </ul>
+              </div>
+              <div class="card-bottom">
+                <button type="button" name="button" class="cardbutton" onclick="toggleExpand('expand3')">Läs Mer</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Second Card Column -->
+        <section class="secondcardcolumn">
+          <!-- Third Card -->
+          <div class="card">
+            <div id="card-top-2" class="cardcontainer">
+              <div id="card-body-2" class="card-header">
+                <img id="card-img-2" src="../img/calendar.svg" alt="" class="card-img-top">
+              </div>
+              <div id="card-container-2" class="card-body">
+                <h3 id="card-heading-2">Kommande kurser</h3>
+                <ul class="card-list">
+                  <li>
+                    <a id="nav-link-2" href="assignments.html">Bootstrap</a>
+                  </li>
+                  <li>
+                    <a id="nav-link-2" href="assignments.html">Angular</a>
+                  </li>
+                  <div class="expand" id="expand2" style="display: none;">
+                    <li>
+                      <a id="nav-link-2" href="assignments.html">React</a>
+                    </li>
+                    <li>
+                      <a id="nav-link-2" href="assignments.html">Vue.js</a>
+                    </li>
+                  </div>
+                </ul>
+              </div>
+              <div class="card-bottom">
+                <button type="button" name="button" class="cardbutton" onclick="toggleExpand('expand2')">Läs Mer</button>
+              </div>
+            </div>
+          </div>
+          <!-- Forth Card -->
+          <div class="card">
+            <div id="card-top-5" class="cardcontainer">
+              <div id="card-body-5" class="card-header">
+                <img id="card-img-5" src="../img/mail.svg" alt="" class="card-img-top">
+              </div>
+              <div id="card-container-5" class="card-body">
+                <h3 id="card-heading-5">Veckorapport</h3>
+              </div>
+              <div class="card-bottom">
+                <a href="weekeval.html">
+                  <button type="button" name="button" class="cardbutton">Öppna</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Third Card Column -->
+        <section class="thirdcardcolumn">
+          <!-- Fifth Card -->
+          <div class="card">
+            <div id="card-top-3" class="cardcontainer">
+              <div id="card-body-3" class="card-header">
+                <img id="card-img-3" src="../img/trophy.svg" alt="" class="card-img-top">
+              </div>
+              <div id="card-container-3" class="card-body">
+                <h3 id="card-heading-3">Avslutade kurser</h3>
+              </div>
+              <div class="card-bottom">
+                <a href="grades.html">
+                  <button type="button" name="button" class="cardbutton">Öppna</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Sixth Card -->
+          <div class="card">
+            <div id="card-top-6" class="cardcontainer">
+              <div id="card-body-6" class="card-header">
+                <img id="card-img-6" src="../img/newspaper.svg" alt="" class="card-img-top">
+              </div>
+              <div id="card-container-5" class="card-body">
+                <h3 id="card-heading-5">Student nyheter</h3>
+                <h4 id="card-heading-5">VÄLKOMMEN TILL NYA WEBBPLATSEN</h4>
+                <p id="card-heading-5">Nu är den äntligen här. Vår nya webb där du mycket enklare kan se vilka utbildningar vi har och hitta rätt
+                  utbildning för dig! Du vet väl att vi har ansökningen till utbildningarna öppen ändra fram till 5 juni
+                  i år?
+                </p>
+              </div>
+              <div class="card-bottom">
+                <a href="news.html">
+                  <button type="button" name="button" class="cardbutton">Öppna</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <footer class="footer">
+    <p2>octopusgruppen@gmail.com</p2>
+    <p>&copy;2017</p>
+  </footer>
+  <script type="text/javascript" src="../javascript/attendance.js"></script>
+  <script type="text/javascript" src="../javascript/dailyfeedback.js"></script>
+  <script type="text/javascript" src="../javascript/login.js"></script>
+  <script type="text/javascript" src="../javascript/sent.js"></script>
+  <script type="text/javascript" src="../javascript/togglediv.js"></script>
 </body>
 
 </html>
