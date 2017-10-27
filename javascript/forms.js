@@ -14,6 +14,8 @@ let i2 = document.getElementById("i2");
 let i3 = document.getElementById("i3");
 let i4 = document.getElementById("i4");
 let i5 = document.getElementById("i5");
+let d1 = document.getElementById("d1"); //date input
+let c1 = document.getElementById("tickm"); //datalist input
 let sB = document.getElementById("submit");
 let cB = document.getElementById("close");
 
@@ -58,15 +60,21 @@ document.getElementById('news').onclick = function() {
 
 document.getElementById('homework').onclick = function() {
   reset();
-  cB.style.display = "inherit";
-  p1.innerHTML = "Rubrik:";
-  t1.style.display = "inherit";
-  t1.style.width = "200px";
+  d1.style.display = "inherit";
+  d1.style.width ="200px";
+  p1.innerHTML = "Kurs:";
+  c1.style.display = "inherit";
+  c1.style.width = "200px";
+  p2.innerHTML = "Deadline:";
+  t3.style.display = "inherit";
+  t3.style.width = "200px";
+  p3.innerHTML = "Rubrik:";
   p4.innerHTML = "Instruktioner:";
   t4.style.display = "inherit";
   t4.style.height = "150px";
   t4.style.width = "350px";
   sB.style.display = "inherit";
+    cB.style.display = "inherit";
 };
 
 document.getElementById('feedback').onclick = function() {
