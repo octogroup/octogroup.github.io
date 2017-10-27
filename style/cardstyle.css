@@ -56,13 +56,15 @@
 
 
 #card-body {
+	display: inline-flex;
   background: #111111;
 }
 
 #card-img {
   width: 100px;
   height: 100px;
-  padding: 10px;
+  padding: 10px 0 10px 10px;
+	margin-left: 40px;
 }
 
 #card-heading-1 {
@@ -83,10 +85,6 @@
 }
 
 /* used for padding and margin the text element   */
-
-#card-container-1 {
-  padding: 15px;
-}
 
 #card-img-1 {
   width: 100px;
@@ -120,12 +118,6 @@
 
 #card-body-2 {
   background: #880E4F;
-}
-
-/* used for padding and margin the text element   */
-
-#card-container-2 {
-  padding: 15px;
 }
 
 #card-img-2 {
@@ -162,12 +154,6 @@
   background: #8BC34A;
 }
 
-/* used for padding and margin the text element   */
-
-#card-container-3 {
-  padding: 15px;
-}
-
 #card-img-3 {
   width: 100px;
   height: 100px;
@@ -199,12 +185,6 @@
 
 #card-body-4 {
   background: #FF5722;
-}
-
-/* used for padding and margin the text element   */
-
-#card-container-4 {
-  padding: 15px;
 }
 
 #card-img-4 {
@@ -240,12 +220,6 @@
   background: #3F51B5;
 }
 
-/* used for padding and margin the text element   */
-
-#card-container-5 {
-  padding: 15px;
-}
-
 #card-img-5 {
   width: 100px;
   height: 100px;
@@ -279,12 +253,6 @@
   background: #455A64;
 }
 
-/* used for padding and margin the text element   */
-
-#card-container-6 {
-  padding: 15px;
-}
-
 #card-img-6 {
   width: 100px;
   height: 100px;
@@ -311,8 +279,9 @@
 /* warning icon on närvaro */
 
 .card-img-top {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
+	padding: 10px;
 }
 
 .box>.card:hover {
@@ -332,7 +301,7 @@
 }
 
 .card-body>p {
-  margin: 5px;
+  padding: 10px 10px 0 10px;
 }
 
 .card-header {
@@ -346,9 +315,8 @@
   width: auto;
   height: auto;
   margin: 10px;
+	padding: 15px;
   display: flex;
-  /* justify-content: center; */
-  /*   align-items: center; */
   flex-direction: column;
 }
 
@@ -373,6 +341,17 @@
   display: none;
 }
 
+.attendancetitle {
+	color: #fff;
+	text-align: center;
+	margin: 10px;
+	padding: 15px;
+}
+
+#hidebody {
+	display: block;
+}
+
 #att-box {
   display: flex;
   flex-wrap: wrap;
@@ -390,6 +369,10 @@
   justify-content: flex-end;
   flex-direction: column;
   align-items: center;
+}
+
+#timer {
+	float: right;
 }
 
 #codeInput {
