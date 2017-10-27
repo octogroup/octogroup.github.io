@@ -344,3 +344,14 @@ main {
 }
 
 /*-----------------------Button-ends-----------------------------------*/
+
+/*----------------------->Zoom-animation-------------------------------*/
+
+.zoom {
+    animation: animatezoom 0.6s
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
