@@ -24,108 +24,6 @@
   width: 350px;
 }
 
-/*---------- manipulate card ---------------------- */
-
-
-#card-body {
-	display: inline-flex;
-  background: #111111;
-}
-
-/*  ----------------card end ---------------------*/
-
-/*---------- manipulate card 1---------------------- */
-
-#card-top-1 {
-  background: #6A1B9A;
-}
-
-#card-body-1 {
-  background: #8E24AA;
-}
-
-/* used for padding and margin the text element   */
-
-.nav-link {
-  color: #fff;
-}
-
-.nav-link:hover {
-  padding: 4px;
-  transition-duration: 0.8s;
-}
-
-/*  ----------------card -1 ---------------------*/
-
-/*  ---------------- card 2 ------------------------ */
-
-#card-top-2 {
-  background: #C51162;
-}
-
-#card-body-2 {
-  background: #880E4F;
-}
-
-/*  ------------------- card 2 -----------------------------  */
-
-/*  ---------------- card 3 ------------------------ */
-
-#card-top-3 {
-  background: #1B5E20;
-}
-
-#card-body-3 {
-  background: #8BC34A;
-}
-
-/*  ------------------- card 3 -----------------------------  */
-
-/*  ---------------- card 4 ------------------------ */
-
-#card-top-4 {
-  background: #FF8A65;
-}
-
-#card-body-4 {
-  background: #FF5722;
-}
-
-/*  ------------------- card 4 -----------------------------  */
-
-/*  ---------------- card 5 ------------------------ */
-
-#card-top-5 {
-  background: #9FA8DA;
-}
-
-#card-body-5 {
-  background: #3F51B5;
-}
-
-/*  ------------------- card 5 -----------------------------  */
-
-/*  ---------------- card 6 ------------------------ */
-
-#card-top-6 {
-  background: #90A4AE;
-}
-
-#card-body-6 {
-  background: #455A64;
-}
-
-/*  ------------------- card 6 -----------------------------  */
-/*  ---------------- card 7 ------------------------ */
-
-#card-top-7 {
-  background: rgb(236, 20, 200);
-}
-
-#card-body-7 {
-  background: rgb(146, 19, 127);
-}
-
 .card-img {
   width: 100px;
   height: 100px;
@@ -136,7 +34,126 @@
   color: #fff;
 }
 
-/*  ------------------- card 7 -----------------------------  */
+.nav-link {
+  color: #fff;
+}
+
+.nav-link:hover {
+  padding: 4px;
+  transition-duration: 0.8s;
+}
+
+
+
+/*--------------------  card 0 närvaro  ---------------------- */
+
+
+        #card-body {
+          display: inline-flex;
+          background: #111111;
+        }
+
+/*  ----------------  card 0 -end ------------------------*/
+
+
+
+
+/*----------------  card 1  ---------------------- */
+
+      #card-top-1 {
+        background: #6A1B9A;
+      }
+
+      #card-body-1 {
+        background: #8E24AA;
+      }
+
+/*  --------------  card 1 -end ---------------------*/
+
+
+
+/*  ---------------- card 2 ------------------------ */
+
+    #card-top-2 {
+      background: #C51162;
+    }
+
+    #card-body-2 {
+      background: #880E4F;
+    }
+
+/*  ------------------- card 2 -end -----------------------------  */
+
+
+
+/*  ---------------- card 3 ------------------------ */
+
+    #card-top-3 {
+      background: #1B5E20;
+    }
+
+    #card-body-3 {
+      background: #8BC34A;
+    }
+
+/*  ------------------- card 3 -end  -----------------------------  */
+
+
+
+/*  ---------------- card 4 ------------------------ */
+
+    #card-top-4 {
+      background: #FF8A65;
+    }
+
+    #card-body-4 {
+      background: #FF5722;
+    }
+
+/*  ------------------- card 4 -end -----------------------------  */
+
+
+
+/*  ---------------- card 5 ------------------------ */
+
+    #card-top-5 {
+      background: #9FA8DA;
+    }
+
+    #card-body-5 {
+      background: #3F51B5;
+    }
+
+/*  ------------------- card 5 -end -----------------------------  */
+
+
+
+/*  ---------------- card 6 ------------------------ */
+
+    #card-top-6 {
+      background: #90A4AE;
+    }
+
+    #card-body-6 {
+      background: #455A64;
+    }
+
+/*  ------------------- card 6 -end -----------------------------  */
+
+
+/*  ---------------- card 7 ------------------------ */
+
+    #card-top-7 {
+      background: rgb(236, 20, 200);
+    }
+
+    #card-body-7 {
+      background: rgb(146, 19, 127);
+    }
+
+/*  ------------------- card 7 -end -----------------------------  */
+
+
 
 .box>.card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
