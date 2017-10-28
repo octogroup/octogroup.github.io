@@ -280,11 +280,11 @@
   right: 0;
   width: 100px;
   height: 100px;
-  transform: rotate(-90deg);
+  transform: rotateY(-180deg) rotateZ(-90deg);
 }
 
 .countdown > svg > circle {
-  stroke-dasharray: 219px;
+  stroke-dasharray: 220px;
   stroke-dashoffset: 0px;
   /*stroke-linecap: round;*/
   stroke-width: 10px;
@@ -298,7 +298,7 @@
     stroke-dashoffset: 0px;
   }
   to {
-    stroke-dashoffset: 113px;
+    stroke-dashoffset: 220px;
   }
 }
 
