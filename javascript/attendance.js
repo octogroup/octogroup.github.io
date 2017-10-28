@@ -81,5 +81,6 @@ function checkAttendance() {
 		document.getElementById('att-card-img2').style.display = 'block'
   } else {
     document.getElementById('errortxt').style.display = 'flex'
+    document.getElementById('codeInput').value = ''
   }
 }

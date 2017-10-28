@@ -254,7 +254,7 @@
 #attsbutton {
   position: absolute;
   top: 195px;
-  left: 10px;
+  right: 38%;
 }
 
 /*-----------------------------Countdown--------------------------------*/
@@ -308,7 +308,7 @@
 /*-------------------------Countdown-ends-------------------------------*/
 
 #codeInput {
-  /*margin-bottom: 10px;*/
+  width: 86%;
 }
 
 #attOnSend {
