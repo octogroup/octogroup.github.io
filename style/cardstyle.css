@@ -227,13 +227,10 @@
 	display: block;
 	position: relative;
 	max-height: 350px;
-	height: auto;
+	height: 236px;
 	overflow: hidden;
-	transition:max-height 0.4s ease-out;
-}
-
-#hidebody > div.card-body {
-	height: 70px;
+  transition: height 1s;
+  transition-delay: 0.6s;
 }
 
 #att-box {
@@ -254,6 +251,12 @@
   align-items: center;
 }
 
+#attsbutton {
+  position: absolute;
+  top: 195px;
+  left: 10px;
+}
+
 /*-----------------------------Countdown--------------------------------*/
 
 #timer {
@@ -269,7 +272,7 @@
   position: relative;
   margin: auto;
   margin-top: 10px;
-  height: 100px;
+  height: 50px;
   width: 100px;
   text-align: center;
 }
@@ -305,7 +308,7 @@
 /*-------------------------Countdown-ends-------------------------------*/
 
 #codeInput {
-  margin-bottom: 10px;
+  /*margin-bottom: 10px;*/
 }
 
 #attOnSend {

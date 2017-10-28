@@ -76,7 +76,7 @@ myTimer.start()
 function checkAttendance() {
   let myTextField = document.getElementById("codeInput")
   if (myTextField.value === 'asdf') {
-    document.getElementById('hidebody').style.height = '0'
+    document.getElementById('hidebody').style.height = '0px'
 		document.getElementById('att-card-img1').style.display = 'none'
 		document.getElementById('att-card-img2').style.display = 'block'
   } else {
