@@ -25,7 +25,7 @@ function checkSmileyStatus () {
   if (sadOptionIsChecked) {
     document.getElementById('ledsenSmiley').src = '../img/sad.png'
     document.getElementById('smileyfaces').style.height = '0px'
-    document.getElementById('dailyFeedback_form').subtmit()
+    document.getElementById('dailyFeedback_form').submit()
   } else {
     document.getElementById('ledsenSmiley').src = '../img/sadDis.png'
   }
@@ -33,7 +33,7 @@ function checkSmileyStatus () {
   if (neutralOptionIsChecked) {
     document.getElementById('neutralSmiley').src = '../img/confused.png'
     document.getElementById('smileyfaces').style.height = '0px'
-    document.getElementById('dailyFeedback_form').subtmit()
+    document.getElementById('dailyFeedback_form').submit()
   } else {
     document.getElementById('neutralSmiley').src = '../img/confusedDis.png'
   }
@@ -41,7 +41,7 @@ function checkSmileyStatus () {
   if (happyOptionIsChecked) {
     document.getElementById('happySmiley').src = '../img/happyy.png'
     document.getElementById('smileyfaces').style.height = '0px'
-    document.getElementById('dailyFeedback_form').subtmit()
+    document.getElementById('dailyFeedback_form').submit()
   } else {
     document.getElementById('happySmiley').src = '../img/happyyDis.png'
   }
