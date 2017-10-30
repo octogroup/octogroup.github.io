@@ -44,7 +44,7 @@ let Timer = function (opts) {
     clearInterval(self.interval)
   }
 
-  function countDown() {
+  function countDown () {
     self.seconds--
       if (self.minutes === 0 && self.seconds === 0) {
         self.stop()

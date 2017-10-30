@@ -189,6 +189,13 @@ header>a>h1 {
   position: relative;
 }
 
+#pushdown {
+	height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
 main {
   max-width: 1600px;
   margin: 40px auto 40px auto;
@@ -208,7 +215,7 @@ main {
   color: #fff;
 }
 
-.footer>p2 {
+.footer>.moveparleft {
   position: absolute;
   bottom: 25px;
   right: 10px;
@@ -354,4 +361,15 @@ main {
 @keyframes animatezoom {
     from {transform: scale(0)}
     to {transform: scale(1)}
+}
+
+
+/*----------Standard-alligners-----------*/
+
+.marginbottom {
+	margin-bottom: 15px;
+}
+
+.margintop {
+	margin-top: 15px;
 }

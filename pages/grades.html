@@ -3,7 +3,7 @@
 
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link rel="shortcut icon" href="../img/octo.png">
 	<link rel="stylesheet" href="../style/loginstyle.css">
 	<link rel="stylesheet" href="../style/mainstyle.css">
@@ -18,7 +18,7 @@
 	<div class="content">
 		<header onclick="dropclose()">
 			<a href="studentpage.html">
-	      <img src="../img/KYH-logo.png">
+	      <img src="../img/KYH-logo.png" alt="logo">
 	    </a>
 			<nav id="navigation">
 				<div id="loginalign">
@@ -26,16 +26,14 @@
 				</div>
 			</nav>
 		</header>
-		<div id="container"></div>
+		<div id="pusdown"></div>
 		<main>
 			<div id="container">
+				<h2 class="text-center">Avslutade kurser</h2>
 				<table id="completed_table">
-					<h2 class="text-center">Avslutade kurser</h2>
 					<tr>
-						<th>
-							<h4>Kurs/Uppgift</h4></th>
-						<th>
-							<h4>Betyg</h4></th>
+						<th><h4>Kurs/Uppgift</h4></th>
+						<th><h4>Betyg</h4></th>
 					</tr>
 					<tr class="kurs">
 						<td>Javascript</td>
@@ -43,20 +41,20 @@
 						<td class="td3"><a href="feedback.html"><button type="button" name="button" class="cardbutton">Feedback</button></a></td>
 					</tr>
 					<tr>
-						<td>Tenta</td>
+						<td class="indent">Tenta</td>
 						<td>MVG</td>
 					</tr>
 					<tr>
-						<td class="lastcell">Inlämning 1</td>
+						<td class="lastcell indent">Inlämning 1</td>
 						<td>VG</td>
 					</tr>
 					<tr class="kurs">
 						<td>HTML</td>
 						<td>MVG</td>
-						<td class="td3"><a href="feedback.html"><button type="button" name="button" class="cardbutton">Feedback</button></td></a>
+						<td class="td3"><a href="feedback.html"><button type="button" name="button" class="cardbutton">Feedback</button></a></td>
 					</tr>
 					<tr>
-						<td>Inlämning 1</td>
+						<td class="indent">Inlämning 1</td>
 						<td class="lastcell">VG</td>
 					</tr>
 				</table>

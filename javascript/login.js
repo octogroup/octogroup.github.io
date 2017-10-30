@@ -15,6 +15,7 @@ function hideLogin() {
   document.getElementById('loginbox').style.display = 'none'
 }
 
+// Login-function from index
 function accesslevel(form) {
   console.log(form.unameinput.value);
   switch (true) {
@@ -30,6 +31,7 @@ function accesslevel(form) {
   }
 }
 
+// Login-function from sub-page
 function accesslevelroot(form) {
   console.log(form.unameinput.value);
   switch (true) {
