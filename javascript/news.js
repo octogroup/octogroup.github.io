@@ -6,7 +6,7 @@ function addLikes() {
 }
 
 function likeFunction() {
-  document.getElementById("likesNumber").innerHTML = addLikes();
+  document.getElementById("likesNumber1").innerHTML = addLikes();
 }
 
 function addDislikes() {
@@ -14,5 +14,5 @@ function addDislikes() {
 }
 
 function dislikeFunction() {
-  document.getElementById("dislikesNumber").innerHTML = addDislikes();
+  document.getElementById("dislikesNumber1").innerHTML = addDislikes();
 }
