@@ -22,8 +22,21 @@ let sB = document.getElementById('submit')
 let cB = document.getElementById('close')
 let form = document.getElementById('form')
 let formc = document.getElementsByClassName('formcontent')[0]
-let border = document.getElementById('transborder')
 let formimg = document.getElementById('form-img-1')
+
+// Make sleep function for setting height to auto after transition is finshed
+function sleep (miliseconds) {
+  let currentTime = new Date().getTime()
+  while (currentTime + miliseconds >= new Date().getTime()) {
+  }
+}
+
+// Set height to auto after 1 second
+let heightAuto = function () {
+  sleep(2000)
+  formc.style.height = 'auto'
+  console.log('height set to auto');
+}
 
 // Reset function for the close button and for use on the first line of each form function
 let reset = function () {
@@ -40,7 +53,6 @@ let reset = function () {
     sB.style.display = 'none'
     cB.style.display = 'none'
     form.style.display = 'none'
-    border.style.width = '0'
     formc.style.height = '0'
     formimg.style.display = 'none'
   }
@@ -70,10 +82,10 @@ let feedback = function () {
   t2.style.display = 'inherit'
   t2.required = true
   sB.style.display = 'inherit'
-  border.style.width = '100%'
 }
 
-let news = function () {
+let news = function (callback) {
+  console.log('doing function news')
   reset()
   formimg.style.display = 'inherit'
   formc.style.height = '350px'
@@ -86,7 +98,7 @@ let news = function () {
   t2.style.display = 'inherit'
   t2.required = true
   sB.style.display = 'inherit'
-  border.style.width = '100%'
+  callback()
 }
 
 let weekeval = function () {
@@ -106,5 +118,4 @@ let weekeval = function () {
   p4.innerHTML = 'Förslag på förbättringar:'
   t4.style.display = 'inherit'
   sB.style.display = 'inherit'
-  border.style.width = '100%'
 }

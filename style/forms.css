@@ -83,13 +83,6 @@ form>p {
   color: white;
 }
 
-#transborder {
-  width: 0;
-  border-bottom: 1px solid #9c27b0;
-  transition: width 0.5s;
-  margin: 15px auto 0 auto;
-}
-
 .card-header {
     margin: 0;
 }

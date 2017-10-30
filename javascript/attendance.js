@@ -78,4 +78,3 @@ function checkAttendance() {
     document.getElementById('hidebody').style.display = 'none';
   }
 }
-height 0
