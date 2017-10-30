@@ -3,8 +3,8 @@
 
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-	<link href='https://fonts.googleapis.com/css?family=Open Sans' rel="stylesheet">
-	<link rel="shortcut icon" href="..img/octo.png">
+	<link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet">
+	<link rel="shortcut icon" href="../img/octo.png">
 	<link rel="stylesheet" href="../style/loginstyle.css">
 	<link rel="stylesheet" href="../style/mainstyle.css">
 	<link rel="stylesheet" href="../style/news.css">
@@ -35,16 +35,26 @@
 					<h2>Nyheter</h2>
 					<br>
 					<h4>Ny scrum master pin</h4>
-					<p><span>Upplagd 2017-10-23<span></p>
+					<p><span>Upplagd 2017-10-23</span></p>
         <br>
         <p>I helgen besökte Victor scifiworld i Älvsjö. Det är en mässa för personer som är intresserade utav scifi fantasy grejer.
           Där fyndade han en väldrigt stilig och glamorös pin som scrum master ska bära under sin vecka.</p>
         <br>
         <hr>
+        <div class="likes">
+          <button class="cardbutton" type="button" onclick="likeFunction()">
+            <img src="../img/up.png">
+          </button>
+          <p id="likesNumber">0</p>
+          <button class="cardbutton" type="button" onclick="dislikeFunction()">
+            <img src="../img/down.png">
+          </button>
+          <p id="dislikesNumber">0</p>
+        </div>
       <br>
       <br>
       <h4>Nytt rekord i Octogroup</h4>
-      <p><span>Upplagd 2017-10-11<span></p>
+      <p><span>Upplagd 2017-10-11</span></p>
       <br>
       <p>Nytt rekord i bläckfiskgruppen! Gruppen samlades till det dagliga mötet, och plötsligt
       hände det ofattbara. Mötet varade endast i 3 timmar. Alla i gruppen lämnade skolan
@@ -55,7 +65,7 @@
     <br>
     <br>
       <h4>Fick tvångstankar efter bilolycka – ersättningen drogs in</h4>
-      <p><span>Upplagd 2017-09-11<span></p>
+      <p><span>Upplagd 2017-09-11</span></p>
       <br>
       <p>Tommy Larsson utvecklade svåra tvångstankar efter en allvarlig trafikolycka.
         Men trots att hans läkare kopplar tvångsbeteendet till olyckan valde försäkringsbolaget
@@ -66,7 +76,7 @@
     <br>
     <br>
     <h4>Välkommen till nya webbplatsen</h4>
-    <p><span>Upplagd 2017-08-10<span></p>
+    <p><span>Upplagd 2017-08-10</span></p>
     <br>
     <p>Nu är den äntligen här. Vår nya webb där du mycket enklare kan se vilka utbildningar
       vi har och hitta rätt utbildning för dig! Du vet väl att vi har ansökningen till
@@ -81,7 +91,6 @@
           <input type="text" id="myText" placeholder="Sök nyhet">
           <br>
           <br>
-          <li>
             <h4>Senaste nyheterna</h4>
             <li><a href=".html">Ny scrum master pin</a></li>
             <li><a href=".html">Nytt rekord i Octogroup</a></li>
@@ -90,11 +99,10 @@
         </ul>
         <br>
         <ul class="namn">
-          <li>
             <h4>Arkiv</h4>
             <li id="current_tab"><a href="news.html">Oktober 2017</a></li>
-            <li><a href="news.html">September 2016</a></li>
-            <li><a href="news.html">Agusti 2016</a></li>
+            <li><a href="news.html">September 2017</a></li>
+            <li><a href="news.html">Agusti 2017</a></li>
         	</ul>
       </div>
 			</div>
@@ -104,6 +112,7 @@
     <p>&copy;2017</p>
   </footer>
   <script type="text/javascript" src="../javascript/login.js"></script>
+  <script type="text/javascript" src="../javascript/news.js"></script>
 </body>
 
 </html>
