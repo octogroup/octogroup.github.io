@@ -24,18 +24,10 @@ let form = document.getElementById('form')
 let formc = document.getElementsByClassName('formcontent')[0]
 let formimg = document.getElementById('form-img-1')
 
-// Make sleep function for setting height to auto after transition is finshed
-function sleep (miliseconds) {
-  let currentTime = new Date().getTime()
-  while (currentTime + miliseconds >= new Date().getTime()) {
-  }
-}
-
-// Set height to auto after 1 second
-let heightAuto = function () {
-  sleep(2000)
+// Set height to auto and add more height to textfields
+function autoGrow (element) {
+  element.style.height = (element.scrollHeight) + 2 + 'px'
   formc.style.height = 'auto'
-  console.log('height set to auto');
 }
 
 // Reset function for the close button and for use on the first line of each form function
@@ -45,7 +37,8 @@ let reset = function () {
     this['t' + i].style.display = 'none'
     this['t' + i].style.height = 'auto'
     this['t' + i].style.width = 'auto'
-    this['t' + i].innerHTML = ''
+    this['t' + i].value = ''
+    this['t' + i].rows = '1'
     this['t' + i].required = false
     this['i' + i].style.display = 'none'
     this['i' + i].style.type = 'text'
@@ -84,11 +77,10 @@ let feedback = function () {
   sB.style.display = 'inherit'
 }
 
-let news = function (callback) {
-  console.log('doing function news')
+let news = function () {
   reset()
   formimg.style.display = 'inherit'
-  formc.style.height = '350px'
+  formc.style.height = '305px'
   form.style.display = 'inherit'
   cB.style.display = 'inherit'
   p1.innerHTML = 'Rubrik:'
@@ -98,7 +90,6 @@ let news = function (callback) {
   t2.style.display = 'inherit'
   t2.required = true
   sB.style.display = 'inherit'
-  callback()
 }
 
 let weekeval = function () {

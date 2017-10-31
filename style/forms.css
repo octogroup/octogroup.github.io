@@ -35,6 +35,16 @@
   margin: 10px 0;
 }
 
+#form>textarea {
+  resize: none;
+  background-color: rgba(0, 0, 0, .0);
+  border: 2px #5264AE;
+  border-style: none none solid none;
+  color: white;
+  outline: 0;
+  overflow: hidden;
+}
+
 #close {
   display: none;
   background: #ff5f52;
@@ -69,17 +79,6 @@
 
 form>p {
   font-size: 20px;
-  color: white;
-}
-
-.textareaElement {
-  min-height: 17px;
-  border-bottom: 1px solid #9c27b0;
-  max-width: 500px;
-  overflow-x: hidden;
-  overflow-y: auto;
-  display: none;
-  outline:none;
   color: white;
 }
 

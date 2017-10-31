@@ -34,7 +34,7 @@
     </header>
     <aside class="editnav">
       <div class="asidebarbox">
-        <button class="editbuttons" onclick="news(heightAuto)">Skapa nyhet</button>
+        <button class="editbuttons" onclick="news()">Skapa nyhet</button>
       </div>
     </aside>
     <div id="container">
@@ -50,19 +50,19 @@
           <form id="form" onsubmit="sent()">
             <p id="p1"></p>
             <input id="i1" type="text" min="1" max="7" step="1" list="tickmarks">
-            <div id="t1" class="textareaElement" contenteditable></div>
+            <textarea id="t1" rows="1" cols="52" onkeyup="autoGrow(this)"></textarea>
             <p id="p2"></p>
             <input id="i2" type="text" min="1" max="7" step="1" list="tickmarks">
-            <div id="t2" class="textareaElement" contenteditable></div>
+            <textarea id="t2" rows="1" cols="52" onkeyup="autoGrow(this)"></textarea>
             <p id="p3"></p>
             <input id="i3" type="text" min="1" max="7" step="1" list="tickmarks">
-            <div id="t3" class="textareaElement" contenteditable></div>
+            <textarea id="t3" rows="1" cols="52" onkeyup="autoGrow(this)"></textarea>
             <p id="p4"></p>
             <input id="i4" type="text" min="1" max="7" step="1" list="tickmarks">
-            <div id="t4" class="textareaElement" contenteditable></div>
+            <textarea id="t4" rows="1" cols="52" onkeyup="autoGrow(this)"></textarea>
             <p id="p5"></p>
             <input id="i5" type="text" min="1" max="7" step="1" list="tickmarks">
-            <div id="t5" class="textareaElement" contenteditable></div>
+            <textarea id="t5" rows="1" cols="52" onkeyup="autoGrow(this)"></textarea>
             <input id="submit" type="submit">
             <datalist id="tickmarks">
 			          <option value="1"/>
