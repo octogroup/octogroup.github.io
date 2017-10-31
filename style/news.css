@@ -42,7 +42,7 @@ p>span {
 .cardbutton {
   background-image: url("../img/up.png");
   background-repeat: no-repeat;
-  background-position: 10%;
+  background-position: 5px;
   width: 70px;
   height: 40px;
   color: black;
@@ -54,6 +54,4 @@ p>span {
 
 .dislikebutt {
   background-image: url("../img/down.png");
-  /* text-align: left;
-  background-position: 90%; */
 }
