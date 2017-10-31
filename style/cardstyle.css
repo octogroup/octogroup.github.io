@@ -544,11 +544,12 @@ input[type="radio"]:after {
   /* text-transform: uppercase; */
 }
 
-.inputfile {
+/* .inputfile {
 	width: 0.1px;
 	height: 0.1px;
 	opacity: 0;
-	overflow: hidden;
+  overflow: hidden;
+  text-align: right;
 	position: absolute;
   z-index: -1;
   color: white;
@@ -566,4 +567,22 @@ input[type="radio"]:after {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
   text-transform: uppercase;
   background-color: #ff5f52;
+}
+
+.inputfile + label:visited {
+  color: #fff;
+} */
+
+::-webkit-file-upload-button {
+  cursor: pointer;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 2px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+  text-transform: uppercase;
+  background-color: #ff5f52;
+  border: none;
 }
