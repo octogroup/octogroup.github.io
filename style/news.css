@@ -37,21 +37,18 @@ p>span {
   color: #c62828;
 }
 
-.cardbutton>img{
-  width: 25px;
-}
+/*--------------------------likes--------------------------*/
 
 .cardbutton{
-  padding: 5px 5px 2px 5px;
-}
-
-.likes {
-  display: flex;
-}
-
-.likes>p {
-	font-weight: bold;
-	width: 30px;
-	text-align: center;
-	margin-top: 8px;
+  background-image: url("../img/up.png");
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-position: 10%;
+  width: 80px;
+  height: 40px;
+  color: black;
+  font-weight: bold;
+  text-align: right;
+  margin-right: 20px;
+  margin-bottom: 10px;
 }
