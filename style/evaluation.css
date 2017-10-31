@@ -1,78 +1,107 @@
-.wbild{
+.wbild {
   height: 500px;
-  width: 700px;
+  width: auto;
   display: flex;
   margin: 0 auto;
 }
 
 .graphfcont {
   display: flex;
-
-}
-#chartContainer1{
-width: 45%;
-height: 300px;
-display: flex;
+	justify-content: center;
 }
 
-#chartContainer2{
-width: 45%;
-height: 300px;
-display: flex;
-}
-
-.answerNav{
-display: flex;
-margin-top: 30px;
-margin-bottom: 30px;
-justify-content: center;
-}
-
-.showAnswer{
+#chartContainer1 {
+  width: 45%;
+  height: 300px;
   display: flex;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
-#showTempot{
-  display: none;
-  overflow: hidden;
-  width: 50%;
-  padding: 50px 0;
-  text-align: center;
-  margin-top: 50px;
+#chartContainer2 {
+  width: 45%;
+  height: 300px;
+  display: flex;
 }
 
-#showEngagerad{
-  display: none;
-  overflow: hidden;
-  width: 50%;
-  padding: 50px 0;
-  text-align: center;
-  margin-top: 50px;
+.answerNav {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  justify-content: center;
 }
 
-#showStämningen{
+.showAnswer {
+  display: flex;
+	justify-content: space-around;
+  margin: 20px;
+	flex-wrap: wrap;
+}
+
+#showTempot {
   display: none;
-  overflow: hidden;
-  width: 50%;
-  padding: 50px 0;
-  text-align: center;
-  margin-top: 50px;
+	flex-direction: column;
+}
+
+#showEngagerad {
+  display: none;
+	flex-direction: column;
+}
+
+#showStämningen {
+  display: none;
+	flex-direction: column;
+}
+
+div.scroll {
+  background-color: white;
+  width: 500px;
+  height: 400px;
+  overflow: scroll;
+  align-self: center;
+  margin: 0 auto;
+}
+
+.weekAnswerList {
+	padding-left: 20px;
+}
+
+.canvasjs-chart-credit {
+	display: none;
+}
+
+.answerSection {
+	display: flex;
+	flex-direction: column;
+	max-width: 350px;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+
+/*-----ta bort vid merge-------*/
+.marginbottom {
+	margin-bottom: 15px;
 }
 
 .text-center {
-  /*Borde finnas på main?*/
   text-align: center;
   margin-bottom: 40px;
   margin-top: 40px;
 }
+/*-------------------------*/
 
-div.scroll {
-    background-color: white;
-    width: 500px;
-    height: 400px;
-    overflow: scroll;
-    align-self: center;
-    margin: 0 auto;
+.answerSection > ol > li {
+	border-bottom: 1px solid black;
+	padding: 10px;
+}
+
+ol > span > li {
+	border-bottom: 1px solid black;
+	padding: 10px;
+}
+
+.bottomSection {
+	margin-top: 20px;
+}
+
+#buttonSwap1 {
+
 }

@@ -1,4 +1,4 @@
-  var chart1 = new CanvasJS.Chart("chartContainer1",{
+  let chart1 = new CanvasJS.Chart("chartContainer1",{
   animationEnabled: true,
 	title:{
 		text: "Veckoutvärdering"
@@ -68,9 +68,9 @@ chart1.render();
 
 
 
-var chart2 = new CanvasJS.Chart("chartContainer2",{
+let chart2 = new CanvasJS.Chart("chartContainer2",{
     title :{
-	text: "Antal svar varje vecka"
+	text: "Antal slet letje vecka"
     },
     data: [{
       			type: "column",
@@ -88,29 +88,29 @@ chart2.render();
 
 
 // Knappar
-function expand1() {
+function expand1 () {
     let x = document.getElementById("showTempot");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
+    if (x.style.display === "flex") {
         x.style.display = "none";
+    } else {
+        x.style.display = "flex";
     }
 }
 
-function expand2() {
+function expand2 () {
     let x = document.getElementById("showEngagerad");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
+    if (x.style.display === "flex") {
         x.style.display = "none";
+    } else {
+        x.style.display = "flex";
     }
 }
 
-function expand3() {
+function expand3 () {
     let x = document.getElementById("showStämningen");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
+    if (x.style.display === "flex") {
         x.style.display = "none";
+    } else {
+        x.style.display = "flex";
     }
 }

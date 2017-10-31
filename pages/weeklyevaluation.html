@@ -3,13 +3,13 @@
 
 <head>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Open Sans' rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="shortcut icon" href="..img/octo.png">
   <link rel="stylesheet" href="../style/loginstyle.css">
   <link rel="stylesheet" href="../style/mainstyle.css">
-  <link rel="stylesheet" href="../style/studentstyle.css">
-  <link rel="stylesheet" href="../style/news.css">
   <link rel="stylesheet" href="../style/evaluation.css">
+	<link rel="stylesheet" href="../style/cardstyle.css">
+	<!-- ta bort cardstyle-link efter merge  -->
   <link rel="stylesheet" href="../style/colorThemeStudentpage.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
@@ -20,12 +20,12 @@
   <div class="content">
     <header>
       <a href="studentpage.html">
-        <img src="../img/octoedu.png" alt="">
+        <img src="../img/octoedu.png" alt="logo">
         <h1>Octo : KYH</h1>
       </a>
       <nav id="navigation">
         <div id="loginalign">
-          <button class="loginbutton" type="button" name="logout" onclick=logOut()>logga ut</button>
+          <button class="loginbutton" type="button" name="logout" onclick="logOut()">logga ut</button>
         </div>
       </nav>
     </header>
@@ -42,32 +42,65 @@
 
       <h3 class="text-center">Summering av fritext</h3>
       <div class="answerNav">
-        <button type="button" name="Tempot" onclick="expand1()">Tempot</button>
-        <button type="button" name="Engagerad" onclick="expand2()">Engagerad</button>
-        <button type="button" name="Stämningen" onclick="expand3()">Stämningen</button>
       </div>
       <div class="showAnswer">
-        <div id="showTempot">
-          <ul>
-            <li>Här är svaren från hur eleverna upplever Tempot i utbildningen </li>
-            <li>Här är svaren från hur eleverna upplever Tempot i utbildningen</li>
-            <li>Här är svaren från hur eleverna upplever Tempot i utbildningen </li>
-          </ul>
-        </div>
-        <div id="showEngagerad">
-          <ul>
+				<section class="answerSection">
+					<h3 class="marginbottom">Tempo</h3>
+					<ol class="weekAnswerList">
+						<li>Här är svaren från hur eleverna upplever Tempot i utbildningen </li>
+						<li>Här är svaren från hur eleverna upplever Tempot i utbildningen</li>
+						<li>Här är svaren från hur eleverna upplever Tempot i utbildningen </li>
+						<span id="showTempot">
+							<li>Här är svaren från hur eleverna upplever Tempot i utbildningen</li>
+							<li>Här är svaren från hur eleverna upplever Tempot i utbildningen</li>
+							<li>Här är svaren från hur eleverna upplever Tempot i utbildningen</li>
+							<li>Här är svaren från hur eleverna upplever Tempot i utbildningen</li>
+							<li>Här är svaren från hur eleverna upplever Tempot i utbildningen</li>
+							<li>Här är svaren från hur eleverna upplever Tempot i utbildningen</li>
+						</span>
+					</ol>
+					<div class="bottomSection">
+						<button type="button" name="Tempot" id="buttonSwap1" data-text-swap="visa mindre" class="cardbutton" onclick="expand1()">visa mer</button>
+					</div>
+				</section>
+				<section class="answerSection">
+					<h3 class="marginbottom">Engagemang</h3>
+          <ol class="weekAnswerList">
             <li>Här är svaren från eleverna hur engagerade dem anser sig vara </li>
             <li>Här är svaren från eleverna hur engagerade dem anser sig vara </li>
             <li>Här är svaren från eleverna hur engagerade dem anser sig vara </li>
-          </ul>
-        </div>
-        <div id="showStämningen">
-          <ul>
+						<span id="showEngagerad">
+							<li>Här är svaren från hur eleverna upplever Tempot i utbildningen</li>
+							<li>Här är svaren från hur eleverna upplever Tempot i utbildningen</li>
+							<li>Här är svaren från hur eleverna upplever Tempot i utbildningen</li>
+							<li>Här är svaren från hur eleverna upplever Tempot i utbildningen</li>
+							<li>Här är svaren från hur eleverna upplever Tempot i utbildningen</li>
+							<li>Här är svaren från hur eleverna upplever Tempot i utbildningen</li>
+						</span>
+          </ol>
+					<div class="bottomSection">
+						<button type="button" name="Engagerad" class="cardbutton" onclick="expand2()">visa mer</button>
+					</div>
+				</section>
+				<section class="answerSection">
+					<h3 class="marginbottom">Stämning</h3>
+          <ol class="weekAnswerList">
             <li>Här är svaren från eleverna om hur dem upplever stämningen i klassen </li>
             <li>Här är svaren från eleverna om hur dem upplever stämningen i klassen </li>
             <li>Här är svaren från eleverna om hur dem upplever stämningen i klassen </li>
-          </ul>
-        </div>
+						<span id="showStämningen">
+							<li>Här är svaren från hur eleverna upplever Tempot i utbildningen</li>
+							<li>Här är svaren från hur eleverna upplever Tempot i utbildningen</li>
+							<li>Här är svaren från hur eleverna upplever Tempot i utbildningen</li>
+							<li>Här är svaren från hur eleverna upplever Tempot i utbildningen</li>
+							<li>Här är svaren från hur eleverna upplever Tempot i utbildningen</li>
+							<li>Här är svaren från hur eleverna upplever Tempot i utbildningen</li>
+						</span>
+          </ol>
+					<div class="bottomSection">
+						<button type="button" name="Stämningen" class="cardbutton" onclick="expand3()">visa mer</button>
+					</div>
+				</section>
       </div>
 
     </main>
@@ -87,3 +120,6 @@
   <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
   <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
   <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+</body>
+</html>
