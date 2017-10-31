@@ -71,7 +71,7 @@ div.scroll {
 .answerSection {
 	display: flex;
 	flex-direction: column;
-	max-width: 350px;
+	width: 350px;
 	flex-wrap: wrap;
 	margin-bottom: 20px;
 }
