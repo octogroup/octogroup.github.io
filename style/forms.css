@@ -1,7 +1,22 @@
+.editbuttons {
+  border: none;
+  cursor: pointer;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 2px;
+  font-size: 14px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+  background: #ff5f52;
+  text-transform: uppercase;
+}
+
 .formcontent {
   display: flex;
-  font-family: 'Kalam';
   font-size: 18px;
+  transition: height 0.5s;
+  flex-direction: column;
+  height: 0;
+  overflow: hidden;
 }
 
 .forms {
@@ -9,46 +24,76 @@
   position: relative;
 }
 
+#form {
+  width: 350px;
+  padding: 10px;
+  display: none;
+  background-color: #6A1B9A;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+#form>*{
+  margin: 10px 0;
+}
+
 #close {
   display: none;
-  background: #ff0000;
+  background: #ff5f52;
   color: white;
   border: 0;
   border-radius: 2px;
   position: absolute;
-  top: 2px;
-  right: 0;
-}
-
-#close:hover {
-  box-shadow: 2px 2px 2px #888888;
-  background: #d50000;
-}
-
-#submit {
-  background: #4CAF50;
-  border: 0;
-  color: white;
-  padding: 10px 24px;
-  text-align: center;
-  font-size: 16px;
-  cursor: pointer;
-  display: none;
-  border-radius: 20px;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-}
-
-#submit:hover {
-  box-shadow: 2px 2px 2px #888888;
-  background: #46a24a;
+  top: 1px;
+  right: 2px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+  padding: 1px 5px 2px 6px;
 }
 
 #form > input {
   display: none;
+  width: 100%;
 }
 
-#form > textarea {
-  resize: none;
+#form>#submit {
+  border: none;
+  cursor: pointer;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 2px;
+  font-size: 14px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+  background: #ff5f52;
+  text-transform: uppercase;
   display: none;
-  border-radius: 5px;
+  width: 85px;
+}
+
+form>p {
+  font-size: 20px;
+  color: white;
+}
+
+.textareaElement {
+  min-height: 17px;
+  border-bottom: 1px solid #9c27b0;
+  max-width: 500px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: none;
+  outline:none;
+  color: white;
+}
+
+#transborder {
+  width: 0;
+  border-bottom: 1px solid #9c27b0;
+  transition: width 0.5s;
+  margin: 15px auto 0 auto;
+}
+
+.card-header {
+    margin: 0;
+}
+
+#form-img-1 {
+  display: none;
 }
