@@ -9,11 +9,11 @@
   <link rel="stylesheet" href="../style/mainstyle.css">
   <link rel="stylesheet" href="../style/studentstyle.css">
   <link rel="stylesheet" href="../style/news.css">
+  <link rel="stylesheet" href="../style/evaluation.css">
   <link rel="stylesheet" href="../style/colorThemeStudentpage.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>Veckoutvärdering</title>
-
 </head>
 
 <body>
@@ -32,20 +32,58 @@
     <div id="container">
     </div>
     <main>
-<h2> Veckoutvärdering</h2>
+      <img class="wbild" src="../img/wbild.png">
 
+      <div class="graphfcont">
+        <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+        <div id="chartContainer1"></div>
+        <div id="chartContainer2"></div>
+      </div>
+
+      <h3 class="text-center">Summering av fritext</h3>
+      <div class="answerNav">
+        <button type="button" name="Tempot" onclick="expand1()">Tempot</button>
+        <button type="button" name="Engagerad" onclick="expand2()">Engagerad</button>
+        <button type="button" name="Stämningen" onclick="expand3()">Stämningen</button>
+      </div>
+      <div class="showAnswer">
+        <div id="showTempot">
+          <ul>
+            <li>Här är svaren från hur eleverna upplever Tempot i utbildningen </li>
+            <li>Här är svaren från hur eleverna upplever Tempot i utbildningen</li>
+            <li>Här är svaren från hur eleverna upplever Tempot i utbildningen </li>
+          </ul>
+        </div>
+        <div id="showEngagerad">
+          <ul>
+            <li>Här är svaren från eleverna hur engagerade dem anser sig vara </li>
+            <li>Här är svaren från eleverna hur engagerade dem anser sig vara </li>
+            <li>Här är svaren från eleverna hur engagerade dem anser sig vara </li>
+          </ul>
+        </div>
+        <div id="showStämningen">
+          <ul>
+            <li>Här är svaren från eleverna om hur dem upplever stämningen i klassen </li>
+            <li>Här är svaren från eleverna om hur dem upplever stämningen i klassen </li>
+            <li>Här är svaren från eleverna om hur dem upplever stämningen i klassen </li>
+          </ul>
+        </div>
+      </div>
 
     </main>
   </div>
   <footer class="footer" id="studentfooter">
     <p>&copy;2017</p>
   </footer>
+  <script type="text/javascript" src="../javascript/weeklyevaluation.js"></script>
   <script type="text/javascript" src="../javascript/attendance.js"></script>
   <script type="text/javascript" src="../javascript/dailyfeedback.js"></script>
   <script type="text/javascript" src="../javascript/openmenu.js"></script>
   <script type="text/javascript" src="../javascript/login.js"></script>
   <script type="text/javascript" src="../javascript/sent.js"></script>
   <script type="text/javascript" src="../javascript/togglediv.js"></script>
-</body>
 
-</html>
+  <!-- Canvas  -->
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
