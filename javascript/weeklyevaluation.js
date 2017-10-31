@@ -70,7 +70,7 @@ chart1.render();
 
 let chart2 = new CanvasJS.Chart("chartContainer2",{
     title :{
-	text: "Antal slet letje vecka"
+	text: "Antal svar varje vecka"
     },
     data: [{
       			type: "column",
@@ -89,7 +89,7 @@ chart2.render();
 
 // Knappar
 function expand1 () {
-    let x = document.getElementById("showTempot");
+    let x = document.getElementById("q5");
     if (x.style.display === "flex") {
         x.style.display = "none";
     } else {
@@ -98,7 +98,7 @@ function expand1 () {
 }
 
 function expand2 () {
-    let x = document.getElementById("showEngagerad");
+    let x = document.getElementById("q6");
     if (x.style.display === "flex") {
         x.style.display = "none";
     } else {
@@ -107,10 +107,40 @@ function expand2 () {
 }
 
 function expand3 () {
-    let x = document.getElementById("showStämningen");
+    let x = document.getElementById("q7");
     if (x.style.display === "flex") {
         x.style.display = "none";
     } else {
         x.style.display = "flex";
     }
 }
+
+let button1 = document.getElementById('buttonSwap1')
+	button1.addEventListener('click', function() {
+  if (button1.getAttribute('data-text-swap') == button1.innerHTML) {
+    button1.innerHTML = button1.getAttribute('data-text-original')
+  } else {
+    button1.setAttribute('data-text-original', button1.innerHTML)
+    button1.innerHTML = button1.getAttribute('data-text-swap')
+  }
+}, false)
+
+let button2 = document.getElementById('buttonSwap2')
+	button2.addEventListener('click', function() {
+  if (button2.getAttribute('data-text-swap') == button2.innerHTML) {
+    button2.innerHTML = button2.getAttribute('data-text-original')
+  } else {
+    button2.setAttribute('data-text-original', button2.innerHTML)
+    button2.innerHTML = button2.getAttribute('data-text-swap')
+  }
+}, false)
+
+let button3 = document.getElementById('buttonSwap3')
+	button3.addEventListener('click', function() {
+  if (button3.getAttribute('data-text-swap') == button3.innerHTML) {
+    button3.innerHTML = button3.getAttribute('data-text-original')
+  } else {
+    button3.setAttribute('data-text-original', button3.innerHTML)
+    button3.innerHTML = button3.getAttribute('data-text-swap')
+  }
+}, false)

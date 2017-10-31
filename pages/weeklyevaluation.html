@@ -32,7 +32,7 @@
     <div id="container">
     </div>
     <main>
-      <img class="wbild" src="../img/wbild.png">
+      <img class="wbild" src="../img/weeklypic.png">
 
       <div class="graphfcont">
         <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
@@ -40,23 +40,26 @@
         <div id="chartContainer2"></div>
       </div>
 
+			<hr class="margintop">
+
       <h3 class="text-center">Summering av fritext</h3>
       <div class="answerNav">
       </div>
       <div class="showAnswer">
 				<section class="answerSection">
-					<h3 class="marginbottom">Tempo</h3>
+					<h3 class="marginbottom">Fråga 5</h3>
+					<h4 class="marginbottom">- Är det något specifikt moment i utbildningen du upplever att du behöver mer stöd i?</h4>
 					<ol class="weekAnswerList">
-						<li>Här är svaren från hur eleverna upplever Tempot i utbildningen </li>
-						<li>Här är svaren från hur eleverna upplever Tempot i utbildningen</li>
-						<li>Här är svaren från hur eleverna upplever Tempot i utbildningen </li>
-						<span id="showTempot">
-							<li>Här är svaren från hur eleverna upplever Tempot i utbildningen</li>
-							<li>Här är svaren från hur eleverna upplever Tempot i utbildningen</li>
-							<li>Här är svaren från hur eleverna upplever Tempot i utbildningen</li>
-							<li>Här är svaren från hur eleverna upplever Tempot i utbildningen</li>
-							<li>Här är svaren från hur eleverna upplever Tempot i utbildningen</li>
-							<li>Här är svaren från hur eleverna upplever Tempot i utbildningen</li>
+						<li>javascript</li>
+						<li>JS</li>
+						<li>Git Javascript</li>
+						<span id="q5">
+							<li>javaScript är det jag fortfarande känner mig osäker på men antar att det kommer</li>
+							<li>Allt</li>
+							<li>Lite osäker på JS</li>
+							<li>Inte direkt</li>
+							<li>Skulle vilja lära mig mer om flex</li>
+							<li>javascript</li>
 						</span>
 					</ol>
 					<div class="bottomSection">
@@ -64,41 +67,43 @@
 					</div>
 				</section>
 				<section class="answerSection">
-					<h3 class="marginbottom">Engagemang</h3>
+					<h3 class="marginbottom">Fråga 6</h3>
+					<h4 class="marginbottom">- Vad har varit bra?</h4>
           <ol class="weekAnswerList">
-            <li>Här är svaren från eleverna hur engagerade dem anser sig vara </li>
-            <li>Här är svaren från eleverna hur engagerade dem anser sig vara </li>
-            <li>Här är svaren från eleverna hur engagerade dem anser sig vara </li>
-						<span id="showEngagerad">
-							<li>Här är svaren från hur eleverna upplever Tempot i utbildningen</li>
-							<li>Här är svaren från hur eleverna upplever Tempot i utbildningen</li>
-							<li>Här är svaren från hur eleverna upplever Tempot i utbildningen</li>
-							<li>Här är svaren från hur eleverna upplever Tempot i utbildningen</li>
-							<li>Här är svaren från hur eleverna upplever Tempot i utbildningen</li>
-							<li>Här är svaren från hur eleverna upplever Tempot i utbildningen</li>
+            <li>Christian & Tobias </li>
+            <li>Christian! en härlig rackare</li>
+            <li>Grupparbetet</li>
+						<span id="q6">
+							<li>Flexibilitet, föreläsningarna.</li>
+							<li>Kristian är duktig på att hjälpa till.</li>
+							<li>Klassen</li>
+							<li>Våra lärare är mycket pedagogiska!</li>
+							<li>Diagnosen</li>
+							<li>Tobias har varit mycket hjälpsam</li>
 						</span>
           </ol>
 					<div class="bottomSection">
-						<button type="button" name="Engagerad" class="cardbutton" onclick="expand2()">visa mer</button>
+						<button type="button" name="Engagerad" id="buttonSwap2" data-text-swap="visa mindre" class="cardbutton" onclick="expand2()">visa mer</button>
 					</div>
 				</section>
 				<section class="answerSection">
-					<h3 class="marginbottom">Stämning</h3>
+					<h3 class="marginbottom">Fråga 7</h3>
+					<h4 class="marginbottom">- Förslag på förbättringar</h4>
           <ol class="weekAnswerList">
-            <li>Här är svaren från eleverna om hur dem upplever stämningen i klassen </li>
-            <li>Här är svaren från eleverna om hur dem upplever stämningen i klassen </li>
-            <li>Här är svaren från eleverna om hur dem upplever stämningen i klassen </li>
-						<span id="showStämningen">
-							<li>Här är svaren från hur eleverna upplever Tempot i utbildningen</li>
-							<li>Här är svaren från hur eleverna upplever Tempot i utbildningen</li>
-							<li>Här är svaren från hur eleverna upplever Tempot i utbildningen</li>
-							<li>Här är svaren från hur eleverna upplever Tempot i utbildningen</li>
-							<li>Här är svaren från hur eleverna upplever Tempot i utbildningen</li>
-							<li>Här är svaren från hur eleverna upplever Tempot i utbildningen</li>
+            <li>Bättre och tydligare info. Om ni skickar meddelande i slack - skriv @everyone, så att alla
+								säkert får notis</li>
+            <li>Behov utav riktiga föreläsningar så att man lär sig något på dessa.</li>
+            <li>Mer livecode!</li>
+						<span id="q7">
+							<li>Mera specificerat, detaljerad förklaringar på föreläsningen.</li>
+							<li>Jobbigt med dessa otydligheter i schemat.</li>
+							<li>Tydligare schema</li>
+							<li>Jag vill ha bättre framförhållning när vi ska ha lektioner.</li>
+							<li>Tydligare information om vad som ska göras på lektionerna.</li>
 						</span>
           </ol>
 					<div class="bottomSection">
-						<button type="button" name="Stämningen" class="cardbutton" onclick="expand3()">visa mer</button>
+						<button type="button" name="Stämningen" class="cardbutton" id="buttonSwap3" data-text-swap="visa mindre" onclick="expand3()">visa mer</button>
 					</div>
 				</section>
       </div>

@@ -36,17 +36,17 @@
 	flex-wrap: wrap;
 }
 
-#showTempot {
+#q5 {
   display: none;
 	flex-direction: column;
 }
 
-#showEngagerad {
+#q6 {
   display: none;
 	flex-direction: column;
 }
 
-#showStämningen {
+#q7 {
   display: none;
 	flex-direction: column;
 }
@@ -100,8 +100,4 @@ ol > span > li {
 
 .bottomSection {
 	margin-top: 20px;
-}
-
-#buttonSwap1 {
-
 }
