@@ -39,16 +39,21 @@ p>span {
 
 /*--------------------------likes--------------------------*/
 
-.cardbutton{
+.cardbutton {
   background-image: url("../img/up.png");
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
   background-position: 10%;
-  width: 80px;
+  width: 70px;
   height: 40px;
   color: black;
   font-weight: bold;
   text-align: right;
-  margin-right: 20px;
+  margin-right: 15px;
   margin-bottom: 10px;
+}
+
+.dislikebutt {
+  background-image: url("../img/down.png");
+  /* text-align: left;
+  background-position: 90%; */
 }
