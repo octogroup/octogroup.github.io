@@ -123,3 +123,16 @@ ol > span > li {
 	margin: 10px;
 	padding: 10px 30px 10px 30px;
 }
+
+
+.feedbackcenter {
+	display: flex;
+	max-width: 650px;
+	margin: 0 auto;
+	justify-content: center;
+}
+
+.arrowsize {
+	height: 45px;
+	width: auto;
+}
