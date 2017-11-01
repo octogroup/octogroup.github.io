@@ -21,22 +21,17 @@ html, body, h2, h3, h4, h5, h6 {
 html, body {
   height: 100%;
 }
-
 h1 {
-  font-size: 7em;
-  font-family: "Roboto";
+  font-size: 3.5em;
 }
-
 h2 {
-  font-size: 5.3em;
+  font-size: 2.8em;
 }
-
 h3 {
-  font-size: 4em;
+  font-size: 2.5em;
 }
-
 h4 {
-  font-size: 3.1em;
+  font-size: 1.4em;
 }
 
 body {
@@ -76,7 +71,7 @@ header>a {
 }
 
 header>a>img {
-  height: 7em;
+  height: 3.5em;
 	margin-right: 10px;
 }
 
