@@ -1,6 +1,6 @@
 .wbild {
-  height: 500px;
-  width: auto;
+  max-height: 500px;
+  max-width: 100%;
   display: flex;
   margin: 0 auto;
 }
@@ -8,18 +8,22 @@
 .graphfcont {
   display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 
 #chartContainer1 {
   width: 45%;
   height: 300px;
   display: flex;
+	min-width: 350px;
+	margin-bottom: 20px;
 }
 
 #chartContainer2 {
   width: 45%;
   height: 300px;
   display: flex;
+	min-width: 350px;
 }
 
 .answerNav {
@@ -75,18 +79,6 @@ div.scroll {
 	flex-wrap: wrap;
 	margin-bottom: 20px;
 }
-
-/*-----ta bort vid merge-------*/
-.marginbottom {
-	margin-bottom: 15px;
-}
-
-.text-center {
-  text-align: center;
-  margin-bottom: 40px;
-  margin-top: 40px;
-}
-/*-------------------------*/
 
 .answerSection > ol > li {
 	border-bottom: 1px solid black;
