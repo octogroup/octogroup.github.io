@@ -3,35 +3,31 @@
 
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<link href='https://fonts.googleapis.com/css?family=Open Sans' rel="stylesheet">
-	<link rel="shortcut icon" href="../octo.png">
-	<link rel="stylesheet" href="../style/loginstyle.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="shortcut icon" href="../img/octo.png">
 	<link rel="stylesheet" href="../style/mainstyle.css">
-	<link rel="stylesheet" href="../style/feedback.css">
-	<link rel="stylesheet" href="../style/studentstyle.css">
 	<link rel="stylesheet" href="../style/weekform.css">
 	<link rel="stylesheet" href="../style/colorThemeStudentpage.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Feedback</title>
 </head>
 
 <body>
 	<div class="content">
-		<header onclick="dropclose()">
+		<header>
 			<a href="studentpage.html">
-          <img src="../img/octoedu.png" alt="none">
-          <h1>Octo : KYH</h1>
+          <img src="../img/KYH-logo.png" alt="none">
         </a>
 			<nav id="navigation">
 				<div id="loginalign">
-					<button class="loginbutton" type="button" name="logout" onclick=logOut()>logga ut</button>
+					<button class="loginbutton" type="button" name="logout" onclick="logOut()">logga ut</button>
 				</div>
 			</nav>
 		</header>
 		<div id="container"></div>
 
-		<main onclick="dropclose()">
+		<main>
 			<div class="formholder">
 				<form id="weekeval" name="weekeval" onsubmit="return sent()">
 					<h2 class="formheadline">Feedback för avslutad kurs</h2>
@@ -64,13 +60,13 @@
 					<input class="textinput" type="text" placeholder="Ditt svar" name="answer7" required>
 					<button type="submit" name="button" class="cardbutton">Submit</button>
 					<datalist id="tickmarks">
-          <option value="1">
-            <option value="2">
-              <option value="3">
-                <option value="4">
-                  <option value="5">
-                    <option value="6">
-                      <option value="7">
+          	<option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+            <option value="6"></option>
+            <option value="7"></option>
         	</datalist>
 				</form>
 			</div>
@@ -79,7 +75,6 @@
 	<footer class="footer">
 		<p>&copy;2017</p>
 	</footer>
-	<script type="text/javascript" src="../javascript/openmenu.js"></script>
 	<script type="text/javascript" src="../javascript/login.js"></script>
 	<script type="text/javascript" src="../javascript/sent.js"></script>
 </body>

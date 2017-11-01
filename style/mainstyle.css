@@ -49,6 +49,15 @@ body {
   flex: 1 0 auto;
 }
 
+.backgroundpic1 {
+	background-image: url(http://communitytimes.me/wp-content/uploads/2016/10/yourstory-education.jpg);
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 header {
   width: 100%;
   list-style-type: none;
@@ -68,10 +77,7 @@ header>a {
 
 header>a>img {
   height: 7em;
-}
-
-#studentheader {
-  background-color: #c62928;
+	margin-right: 10px;
 }
 
 header>a>h1 {
@@ -87,7 +93,6 @@ header>a>h1 {
 #navlist>li {
   display: inline;
   min-width: 88px;
-  /* height: 36px; */
 }
 
 #navlist:last-child {
@@ -184,6 +189,13 @@ header>a>h1 {
   position: relative;
 }
 
+#pushdown {
+	height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
 main {
   max-width: 1600px;
   margin: 40px auto 40px auto;
@@ -198,12 +210,12 @@ main {
 
 .footer>p {
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
   right: 10px;
   color: #fff;
 }
 
-.footer>p2 {
+.footer>.moveparleft {
   position: absolute;
   bottom: 25px;
   right: 10px;
@@ -277,4 +289,93 @@ main {
   .box {
     justify-content: center;
   }
+}
+
+/*----------------------------BUTTON---------------------------------------*/
+
+.cardbutton {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 2px;
+  font-size: 14px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+  background: #ff5f52;
+  text-transform: uppercase;
+}
+
+.cardbutton:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: rgba(255, 255, 255, .5);
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(1, 1) translate(-50%);
+  transform-origin: 50% 50%;
+}
+
+.cardbutton:hover {
+  background-color: ##8e0000;
+}
+
+/* remove blue outline on the button after you clicked */
+
+.cardbutton:focus {
+  outline: none;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 1;
+  }
+  20% {
+    transform: scale(25, 25);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(40, 40);
+  }
+}
+
+.cardbutton:focus:not(:active)::after {
+  animation: ripple 1s ease-out;
+}
+
+/*-----------------------Button-ends-----------------------------------*/
+
+/*----------------------->Zoom-animation-------------------------------*/
+
+.zoom {
+    animation: animatezoom 0.6s
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+
+/*----------Standard-alligners-----------*/
+
+.marginbottom {
+	margin-bottom: 15px;
+}
+
+.margintop {
+	margin-top: 15px;
+}
+
+.text-center {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
 }

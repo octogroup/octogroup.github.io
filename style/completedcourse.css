@@ -20,11 +20,6 @@
   background-color: #d3d3d3;
 }
 
-.text-center {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
 .td3 {
 	width: 40px;
 	height: auto;
@@ -32,4 +27,8 @@
 
 .lastcell {
 	padding-bottom: 50px;
+}
+
+.indent {
+	padding-left: 20px;
 }

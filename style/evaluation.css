@@ -1,25 +1,46 @@
 .wbild {
-  height: 500px;
-  width: auto;
+  max-height: 500px;
+  max-width: 100%;
   display: flex;
   margin: 0 auto;
 }
 
 .graphfcont {
   display: flex;
-	justify-content: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 #chartContainer1 {
   width: 45%;
-  height: 300px;
+  height: 400px;
   display: flex;
+	min-width: 350px;
+	margin-bottom: 20px;
 }
 
 #chartContainer2 {
   width: 45%;
-  height: 300px;
+  height: 400px;
   display: flex;
+	min-width: 350px;
+	margin-bottom: 20px;
+}
+
+#chartContainer3 {
+  width: 45%;
+  height: 400px;
+  display: flex;
+	min-width: 350px;
+	margin-bottom: 20px;
+}
+
+#chartContainer4 {
+  width: 45%;
+  height: 400px;
+  display: flex;
+	min-width: 350px;
+	margin-bottom: 20px;
 }
 
 .answerNav {
@@ -71,22 +92,10 @@ div.scroll {
 .answerSection {
 	display: flex;
 	flex-direction: column;
-	max-width: 350px;
+	width: 350px;
 	flex-wrap: wrap;
 	margin-bottom: 20px;
 }
-
-/*-----ta bort vid merge-------*/
-.marginbottom {
-	margin-bottom: 15px;
-}
-
-.text-center {
-  text-align: center;
-  margin-bottom: 40px;
-  margin-top: 40px;
-}
-/*-------------------------*/
 
 .answerSection > ol > li {
 	border-bottom: 1px solid black;
@@ -102,4 +111,15 @@ ol > span > li {
 	margin-top: 20px;
 }
 
-/*courseevaluation css*/
+.feedbacknav {
+	max-width: 350px;
+	display: flex;
+	margin: 50px auto 300px;
+	justify-content: center;
+
+}
+
+.navspace {
+	margin: 10px;
+	padding: 10px 30px 10px 30px;
+}

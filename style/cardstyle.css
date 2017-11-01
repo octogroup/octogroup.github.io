@@ -1,30 +1,8 @@
-/* A note from the teacher remove unnecessary margins */
 
 .box {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 100%;
-  margin: 0 auto;
-  align-items: baseline;
-}
-
-@media (max-width: 1920px) {}
-
-}
-
-@media (max-width: 1280px) {}
-
-}
-
-@media screen and (max-width: 450px) {
-  .card-bottom {
-    display: flex;
-    height: auto;
-    margin: 10px;
-    justify-content: flex-end;
-    flex-direction: column;
-  }
+  justify-content: center;
 }
 
 .card {
@@ -36,7 +14,6 @@
   margin: 20px;
   border-radius: 2px;
   flex-wrap: wrap;
-  /*border: solid 0.5px grey;*/
 }
 
 .cardcontainer {
@@ -51,19 +28,10 @@
 
 
 #card-body {
+	display: inline-flex;
   background: #111111;
+	max-height: 120px;
 }
-
-#card-img {
-  width: 100px;
-  height: 100px;
-  padding: 10px;
-}
-
-#card-heading-1 {
-  color: #fff;
-}
-
 
 /*  ----------------card end ---------------------*/
 
@@ -79,29 +47,12 @@
 
 /* used for padding and margin the text element   */
 
-#card-container-1 {
-  padding: 15px;
-}
-
-#card-img-1 {
-  width: 100px;
-  height: 100px;
-  padding: 10px;
-}
-
-#card-heading-1 {
+.nav-link {
   color: #fff;
 }
 
-#nav-link-1 {
-  color: #fff;
-}
-
-#nav-link-1:hover {
-  color: #2ecc71;
+.nav-link:hover {
   padding: 4px;
-  border: 2px solid #2ecc71;
-  border-radius: 7px;
   transition-duration: 0.8s;
 }
 
@@ -117,34 +68,6 @@
   background: #880E4F;
 }
 
-/* used for padding and margin the text element   */
-
-#card-container-2 {
-  padding: 15px;
-}
-
-#card-img-2 {
-  width: 100px;
-  height: 100px;
-  padding: 10px;
-}
-
-#card-heading-2 {
-  color: #fff;
-}
-
-#nav-link-2 {
-  color: #fff;
-}
-
-#nav-link-2:hover {
-  color: #f1c40f;
-  padding: 4px;
-  border: 2px solid #f1c40f;
-  border-radius: 7px;
-  transition-duration: 0.8s;
-}
-
 /*  ------------------- card 2 -----------------------------  */
 
 /*  ---------------- card 3 ------------------------ */
@@ -156,33 +79,6 @@
 #card-body-3 {
   background: #8BC34A;
 }
-
-/* used for padding and margin the text element   */
-
-#card-container-3 {
-  padding: 15px;
-}
-
-#card-img-3 {
-  width: 100px;
-  height: 100px;
-  padding: 10px;
-}
-
-#card-heading-3 {
-  color: #fff;
-}
-
-/* #nav-link-3 {
-  color:#fff;
-}
-#nav-link-3:hover {
-  color:#f1c40f;
-  padding: 4px;
-  border: 2px solid #f1c40f;
-  border-radius: 7px;
-  transition-duration: 0.8s;
-} */
 
 /*  ------------------- card 3 -----------------------------  */
 
@@ -196,33 +92,6 @@
   background: #FF5722;
 }
 
-/* used for padding and margin the text element   */
-
-#card-container-4 {
-  padding: 15px;
-}
-
-#card-img-4 {
-  width: 100px;
-  height: 100px;
-  padding: 10px;
-}
-
-#card-heading-4 {
-  color: #fff;
-}
-
-/* #nav-link-4 {
-  color:#fff;
-}
-#nav-link-4:hover {
-  color:#f1c40f;
-  padding: 4px;
-  border: 2px solid #f1c40f;
-  border-radius: 7px;
-  transition-duration: 0.8s;
-} */
-
 /*  ------------------- card 4 -----------------------------  */
 
 /*  ---------------- card 5 ------------------------ */
@@ -234,33 +103,6 @@
 #card-body-5 {
   background: #3F51B5;
 }
-
-/* used for padding and margin the text element   */
-
-#card-container-5 {
-  padding: 15px;
-}
-
-#card-img-5 {
-  width: 100px;
-  height: 100px;
-  padding: 10px;
-}
-
-#card-heading-5 {
-  color: #fff;
-}
-
-/* #nav-link-5 {
-  color:#fff;
-}
-#nav-link-5:hover {
-  color:#f1c40f;
-  padding: 4px;
-  border: 2px solid #f1c40f;
-  border-radius: 7px;
-  transition-duration: 0.8s;
-} */
 
 /*  ------------------- card 5 -----------------------------  */
 
@@ -274,41 +116,28 @@
   background: #455A64;
 }
 
-/* used for padding and margin the text element   */
+/*  ------------------- card 6 -----------------------------  */
+/*  ---------------- card 7 ------------------------ */
 
-#card-container-6 {
-  padding: 15px;
+#card-top-7 {
+  background: rgb(236, 20, 200);
 }
 
-#card-img-6 {
+#card-body-7 {
+  background: rgb(146, 19, 127);
+}
+
+.card-img {
   width: 100px;
   height: 100px;
   padding: 10px;
 }
 
-#card-heading-6 {
+.card-heading {
   color: #fff;
 }
 
-/* #nav-link-5 {
-  color:#fff;
-}
-#nav-link-5:hover {
-  color:#f1c40f;
-  padding: 4px;
-  border: 2px solid #f1c40f;
-  border-radius: 7px;
-  transition-duration: 0.8s;
-} */
-
-/*  ------------------- card 6 -----------------------------  */
-
-/* warning icon on närvaro */
-
-.card-img-top {
-  width: 50px;
-  height: 50px;
-}
+/*  ------------------- card 7 -----------------------------  */
 
 .box>.card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -327,7 +156,7 @@
 }
 
 .card-body>p {
-  margin: 5px;
+  padding: 10px 10px 0 10px;
 }
 
 .card-header {
@@ -341,10 +170,14 @@
   width: auto;
   height: auto;
   margin: 10px;
+	padding: 15px;
   display: flex;
-  /* justify-content: center; */
-  /*   align-items: center; */
   flex-direction: column;
+  padding: 15px;
+}
+
+.card-body>h3 {
+  text-align: center;
 }
 
 .card-body-text {
@@ -357,41 +190,56 @@
   margin: 10px;
   justify-content: flex-end;
   flex-direction: column;
-  /*flex-grow: 1;*/
   align-items: flex-start;
 }
 
-/*.expand {
-	-webkit-transition: height 300ms linear;
-	 -moz-transition: height 300ms linear;
-	 -o-transition: height 300ms linear;
-	 transition: height 300ms linear;
+.expand {
+	flex-direction: column;
 }
-
-
-.cardtable {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	vertical-align: middle;
-
-}
-
-.tabledata {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	flex-direction: row;
-}*/
 
 #expand1 #expand2 #expand3 {
   display: none;
 }
 
+.attendancetitle {
+	flex-grow: 1;
+	color: #fff;
+	text-align: center;
+	margin: 10px;
+	margin: 35px 0 10px 0;
+}
+
+#att-card-img1 {
+	flex-grow: 1;
+  width: 100px;
+  height: 100px;
+	display: block;
+}
+
+#att-card-img2 {
+	flex-grow: 1;
+  width: 100px;
+  height: 100px;
+	display: none;
+}
+
+#hidebody {
+	display: block;
+	position: relative;
+	max-height: 350px;
+	height: 236px;
+	overflow: hidden;
+  transition: height 1s;
+  transition-delay: 0.6s;
+}
+
 #att-box {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+}
+
+#attcard {
+	background-color: #fff;
 }
 
 #att-bottom {
@@ -403,8 +251,64 @@
   align-items: center;
 }
 
+#attsbutton {
+  position: absolute;
+  top: 195px;
+  right: 38%;
+}
+
+/*-----------------------------Countdown--------------------------------*/
+
+#timer {
+	font-weight: bold;
+	position: absolute;
+	top: 10px;
+	width: 100%;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.countdown {
+  position: relative;
+  margin: auto;
+  margin-top: 10px;
+  height: 50px;
+  width: 100px;
+  text-align: center;
+}
+
+.countdown > svg {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  transform: rotateY(-180deg) rotateZ(-90deg);
+}
+
+.countdown > svg > circle {
+  stroke-dasharray: 220px;
+  stroke-dashoffset: 0px;
+  /*stroke-linecap: round;*/
+  stroke-width: 10px;
+  stroke: #ff5f52;
+  fill: transparent;
+  animation: countdown 900s linear;
+}
+
+@keyframes countdown {
+  from {
+    stroke-dashoffset: 0px;
+  }
+  to {
+    stroke-dashoffset: 220px;
+  }
+}
+
+/*-------------------------Countdown-ends-------------------------------*/
+
 #codeInput {
-  margin-bottom: 10px;
+  width: 86%;
 }
 
 #attOnSend {
@@ -485,71 +389,6 @@
   color: #F5F5F5
 } the red cross button */
 
-/*----------------------------BUTTON---------------------------------------*/
-
-.cardbutton {
-  position: relative;
-  overflow: hidden;
-  border: none;
-  cursor: pointer;
-  color: white;
-  padding: 8px 14px;
-  border-radius: 2px;
-  font-size: 14px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
-  background: #ff5f52;
-  text-transform: uppercase;
-}
-
-.cardbutton:after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 5px;
-  height: 5px;
-  background: rgba(255, 255, 255, .5);
-  opacity: 0;
-  border-radius: 100%;
-  transform: scale(1, 1) translate(-50%);
-  transform-origin: 50% 50%;
-}
-
-.cardbutton:hover {
-  background-color: ##8e0000;
-}
-
-/* remove blue outline on the button after you clicked */
-
-.cardbutton:focus {
-  outline: none;
-}
-
-@keyframes ripple {
-  0% {
-    transform: scale(0, 0);
-    opacity: 1;
-  }
-  20% {
-    transform: scale(25, 25);
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: scale(40, 40);
-  }
-}
-
-.cardbutton:focus:not(:active)::after {
-  animation: ripple 1s ease-out;
-}
-
-/*-----------------------Button-ends-----------------------------------*/
-
-* {
-  box-sizing: border-box;
-}
-
 /* basic stylings ------------------------------------------ */
 
 .container {
@@ -593,10 +432,10 @@ input[type=text] {
   font-size: 18px;
   padding: 10px 10px 10px 5px;
   display: block;
-  width: 300px;
+  width: 100%;
   border: none;
   background: none;
-  /*   border-bottom:1px solid #757575; */
+  border-bottom:1px solid #757575;
 }
 
 input[type=text]::-webkit-input-placeholder {
@@ -725,3 +564,20 @@ input[type="radio"]:after {
   width: 15px;
   z-index: 0;
 }
+
+/*Teacherstyle*/
+.editnav {
+	display: flex;
+}
+
+.asidebarbox {
+	margin: 0 auto;
+}
+
+#form-img-1 {
+  width: 100px;
+  height: 100px;
+  padding: 10px 0 10px 10px;
+	margin-left: 40px;
+}
+/*----*/
