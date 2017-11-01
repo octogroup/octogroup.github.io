@@ -7,13 +7,13 @@
 
 .graphfcont {
   display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	flex-wrap: wrap;
 }
 
 #chartContainer1 {
   width: 45%;
-  height: 300px;
+  height: 400px;
   display: flex;
 	min-width: 350px;
 	margin-bottom: 20px;
@@ -21,9 +21,26 @@
 
 #chartContainer2 {
   width: 45%;
-  height: 300px;
+  height: 400px;
   display: flex;
 	min-width: 350px;
+	margin-bottom: 20px;
+}
+
+#chartContainer3 {
+  width: 45%;
+  height: 400px;
+  display: flex;
+	min-width: 350px;
+	margin-bottom: 20px;
+}
+
+#chartContainer4 {
+  width: 45%;
+  height: 400px;
+  display: flex;
+	min-width: 350px;
+	margin-bottom: 20px;
 }
 
 .answerNav {
@@ -92,4 +109,17 @@ ol > span > li {
 
 .bottomSection {
 	margin-top: 20px;
+}
+
+.feedbacknav {
+	max-width: 350px;
+	display: flex;
+	margin: 50px auto 300px;
+	justify-content: center;
+
+}
+
+.navspace {
+	margin: 10px;
+	padding: 10px 30px 10px 30px;
 }

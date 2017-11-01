@@ -20,7 +20,7 @@ header {
 
 .footer>p {
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
   right: 10px;
   color: #111111;
 }
