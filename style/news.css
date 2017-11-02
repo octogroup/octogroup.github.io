@@ -2,6 +2,7 @@
 	margin: 30px;
   display: flex;
   justify-content: space-between;
+	flex-wrap:wrap;
 }
 
 #news_feed {
