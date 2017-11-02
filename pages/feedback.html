@@ -31,8 +31,12 @@
 			<div class="formholder">
 				<form id="weekeval" name="weekeval" onsubmit="return sent()">
 					<h2 class="formheadline">Feedback för avslutad kurs</h2>
-					<p>Ditt namn (frivilligt)</p>
-					<input class="textinput" type="text" placeholder="Namn" name="yourname">
+					<div class="group">
+						<p>Ditt namn (frivilligt)</p>
+						<input class="textinput" type="text" placeholder="Namn" name="yourname">
+						<span class="highlight"></span>
+						<span class="bar"></span>
+					</div>
 					<p>Hur tycker du kurser har varit?</p>
 					<div class="aroundrange">
 						<p>Dålig</p>
@@ -52,12 +56,24 @@
 						<p>Bra</p>
 					</div>
 
-					<p>Är det något specifikt moment i utbildningen du upplever att du behöver mer stöd i?</p>
-					<input class="textinput" type="text" placeholder="Ditt svar" name="answer5" required>
-					<p>Vad har varit bra/mindre bra?</p>
-					<input class="textinput" type="text" placeholder="Ditt svar" name="answer6" required>
-					<p>Förslag på förbättringar</p>
-					<input class="textinput" type="text" placeholder="Ditt svar" name="answer7" required>
+					<div class="group">
+						<p>Är det något specifikt moment i utbildningen du upplever att du behöver mer stöd i?</p>
+						<input class="textinput" type="text" placeholder="Ditt svar" name="answer5" required>
+						<span class="highlight"></span>
+						<span class="bar"></span>
+					</div>
+					<div class="group">
+						<p>Vad har varit bra/mindre bra?</p>
+						<input class="textinput" type="text" placeholder="Ditt svar" name="answer6" required>
+						<span class="highlight"></span>
+						<span class="bar"></span>
+					</div>
+					<div class="group">
+						<p>Förslag på förbättringar</p>
+						<input class="textinput" type="text" placeholder="Ditt svar" name="answer7" required>
+						<span class="highlight"></span>
+						<span class="bar"></span>
+					</div>
 					<button type="submit" name="button" class="cardbutton">Submit</button>
 					<datalist id="tickmarks">
           	<option value="1"></option>
