@@ -34,6 +34,12 @@
   color: #fff;
 }
 
+.card6-heading {
+  color: #fff;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
 .nav-link {
   color: #fff;
 }
@@ -523,3 +529,65 @@ input[type="radio"]:after {
 	margin-left: 40px;
 }
 /*----*/
+#assign {
+  list-style-type: none;
+}
+#assign>li {
+  display: inline;
+}
+
+#assignments {
+  margin: 10px 0;
+  padding: 5px;
+  background-color: #fafafa;
+  border: none;
+  border-radius: 2px;
+  width: 255px;
+  border-radius: 2px;
+  font-size: 14px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+  /* text-transform: uppercase; */
+}
+
+/* .inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+  overflow: hidden;
+  text-align: right;
+	position: absolute;
+  z-index: -1;
+  color: white;
+}
+
+.inputfile + label {
+  cursor: pointer;
+  margin-top: 100px;
+  font-family: 'Roboto';
+  font-size: 1.25em;
+  font-weight: 500;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 2px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+  text-transform: uppercase;
+  background-color: #ff5f52;
+}
+
+.inputfile + label:visited {
+  color: #fff;
+} */
+
+::-webkit-file-upload-button {
+  cursor: pointer;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 2px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+  text-transform: uppercase;
+  background-color: #ff5f52;
+  border: none;
+}
