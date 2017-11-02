@@ -21,12 +21,12 @@ header {
 
 .footer>p {
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
   right: 10px;
   color: #111111;
 }
 
-.footer>p2 {
+.footer>.moveparleft {
   position: absolute;
   bottom: 25px;
   right: 10px;

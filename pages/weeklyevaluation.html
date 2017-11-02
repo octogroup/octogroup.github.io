@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="shortcut icon" href="../img/octo.png">
+  <link rel="stylesheet" href="../style/loginstyle.css">
+  <link rel="stylesheet" href="../style/mainstyle.css">
+  <link rel="stylesheet" href="../style/evaluation.css">
+  <link rel="stylesheet" href="../style/colorThemeStudentpage.css">
+	<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Veckoutvärdering</title>
+</head>
+
+<body>
+  <div class="content">
+    <header>
+      <a href="teacherpage.html">
+        <img src="../img/KYH-logo.png" alt="logo">
+      </a>
+      <nav id="navigation">
+        <div id="loginalign">
+          <button class="loginbutton" type="button" name="logout" onclick="logOut()">logga ut</button>
+        </div>
+      </nav>
+    </header>
+    <div id="container">
+    </div>
+    <main>
+      <img class="wbild" src="../img/weeklypic.png" alt="weeklyevaluation">
+
+      <div class="graphfcont">
+        <div id="chartContainer1"></div>
+        <div id="chartContainer2"></div>
+      </div>
+			<hr class="margintop">
+
+      <h2 class="text-center">Summering av fritext</h2>
+      <div class="answerNav">
+      </div>
+      <div class="showAnswer">
+				<section class="answerSection">
+					<h3 class="marginbottom">Fråga 5</h3>
+					<h4 class="marginbottom">- Är det något specifikt moment i utbildningen du upplever att du behöver mer stöd i?</h4>
+					<ol class="weekAnswerList">
+						<li>javascript</li>
+						<li>JS</li>
+						<li>Git Javascript</li>
+						<span id="q5">
+							<li>javaScript är det jag fortfarande känner mig osäker på men antar att det kommer</li>
+							<li>Allt</li>
+							<li>Lite osäker på JS</li>
+							<li>Inte direkt</li>
+							<li>Skulle vilja lära mig mer om flex</li>
+							<li>javascript</li>
+						</span>
+					</ol>
+					<div class="bottomSection">
+						<button type="button" name="Tempot" id="buttonSwap1" data-text-swap="visa mindre" class="cardbutton" onclick="expand1()">visa mer</button>
+					</div>
+				</section>
+				<section class="answerSection">
+					<h3 class="marginbottom">Fråga 6</h3>
+					<h4 class="marginbottom">- Vad har varit bra?</h4>
+          <ol class="weekAnswerList">
+            <li>Christian & Tobias </li>
+            <li>Christian! en härlig rackare</li>
+            <li>Våra lärare är mycket pedagogiska!</li>
+						<span id="q6">
+							<li>Flexibilitet, föreläsningarna.</li>
+							<li>Kristian är duktig på att hjälpa till.</li>
+							<li>Klassen</li>
+							<li>Grupparbetet</li>
+							<li>Diagnosen</li>
+							<li>Tobias har varit mycket hjälpsam</li>
+						</span>
+          </ol>
+					<div class="bottomSection">
+						<button type="button" name="Engagerad" id="buttonSwap2" data-text-swap="visa mindre" class="cardbutton" onclick="expand2()">visa mer</button>
+					</div>
+				</section>
+				<section class="answerSection">
+					<h3 class="marginbottom">Fråga 7</h3>
+					<h4 class="marginbottom">- Förslag på förbättringar</h4>
+          <ol class="weekAnswerList">
+            <li>Bättre och tydligare info. Om ni skickar meddelande i slack - skriv @everyone, så att alla
+								säkert får notis</li>
+            <li>Behov utav riktiga föreläsningar så att man lär sig något på dessa.</li>
+            <li>Mer livecode!</li>
+						<span id="q7">
+							<li>Mera specificerat, detaljerad förklaringar på föreläsningen.</li>
+							<li>Jobbigt med dessa otydligheter i schemat.</li>
+							<li>Tydligare schema</li>
+							<li>Jag vill ha bättre framförhållning när vi ska ha lektioner.</li>
+							<li>Tydligare information om vad som ska göras på lektionerna.</li>
+						</span>
+          </ol>
+					<div class="bottomSection">
+						<button type="button" name="Stämningen" class="cardbutton" id="buttonSwap3" data-text-swap="visa mindre" onclick="expand3()">visa mer</button>
+					</div>
+				</section>
+      </div>
+    </main>
+  </div>
+  <footer class="footer">
+    <p>&copy;2017</p>
+  </footer>
+  <script type="text/javascript" src="../javascript/weeklyevaluation.js"></script>
+  <script type="text/javascript" src="../javascript/login.js"></script>
+	<script type="text/javascript" src="../javascript/togglediv.js"></script>
+
+</body>
+</html>

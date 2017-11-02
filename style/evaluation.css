@@ -1,0 +1,138 @@
+.wbild {
+  max-height: 500px;
+  max-width: 100%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.graphfcont {
+  display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+#chartContainer1 {
+  width: 45%;
+  height: 400px;
+  display: flex;
+	min-width: 350px;
+	margin-bottom: 20px;
+}
+
+#chartContainer2 {
+  width: 45%;
+  height: 400px;
+  display: flex;
+	min-width: 350px;
+	margin-bottom: 20px;
+}
+
+#chartContainer3 {
+  width: 45%;
+  height: 400px;
+  display: flex;
+	min-width: 350px;
+	margin-bottom: 20px;
+}
+
+#chartContainer4 {
+  width: 45%;
+  height: 400px;
+  display: flex;
+	min-width: 350px;
+	margin-bottom: 20px;
+}
+
+.answerNav {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.showAnswer {
+  display: flex;
+	justify-content: space-around;
+  margin: 20px;
+	flex-wrap: wrap;
+}
+
+#q5 {
+  display: none;
+	flex-direction: column;
+}
+
+#q6 {
+  display: none;
+	flex-direction: column;
+}
+
+#q7 {
+  display: none;
+	flex-direction: column;
+}
+
+div.scroll {
+  background-color: white;
+  width: 500px;
+  height: 400px;
+  overflow: scroll;
+  align-self: center;
+  margin: 0 auto;
+}
+
+.weekAnswerList {
+	padding-left: 20px;
+}
+
+.canvasjs-chart-credit {
+	display: none;
+}
+
+.answerSection {
+	display: flex;
+	flex-direction: column;
+	width: 350px;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+
+.answerSection > ol > li {
+	border-bottom: 1px solid black;
+	padding: 10px;
+}
+
+ol > span > li {
+	border-bottom: 1px solid black;
+	padding: 10px;
+}
+
+.bottomSection {
+	margin-top: 20px;
+}
+
+.feedbacknav {
+	max-width: 350px;
+	display: flex;
+	margin: 50px auto 300px;
+	justify-content: center;
+
+}
+
+.navspace {
+	margin: 10px;
+	padding: 10px 30px 10px 30px;
+}
+
+
+.feedbackcenter {
+	display: flex;
+	max-width: 650px;
+	margin: 0 auto;
+	justify-content: center;
+}
+
+.arrowsize {
+	height: 45px;
+	width: auto;
+}

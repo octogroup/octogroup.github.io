@@ -2,123 +2,122 @@
 <html lang="en">
 
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet">
-  <link rel="shortcut icon" href="../img/octo.png">
-  <link rel="stylesheet" href="../style/loginstyle.css">
-  <link rel="stylesheet" href="../style/mainstyle.css">
-  <link rel="stylesheet" href="../style/price.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="UTF-8">
-  <title>Octo</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="shortcut icon" href="../img/octo.png">
+	<link rel="stylesheet" href="../style/loginstyle.css">
+	<link rel="stylesheet" href="../style/mainstyle.css">
+	<link rel="stylesheet" href="../style/price.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Priser</title>
 </head>
 
 <body>
-  <div class="content">
-    <header onclick="dropclose()">
-      <a href="../index.html">
-        <img src="../img/octoedu.png" alt="">
+	<div class="content">
+		<header onclick="dropclose()">
+			<a href="../index.html">
+        <img src="../img/octoedu.png" alt="logo">
         <h1>Octo</h1>
       </a>
-      <nav id="navigation">
-        <div id="loginalign">
-          <button class="loginbutton" type="submit" name="loginbutton" onclick="showLogin()">logga in</button>
-        </div>
-        <ul id="navlist">
-          <li>
-            <a href="../index.html">Hem</a>
-          </li>
-          <li>
-            <a href="why.html">Varför Octo?</a>
-          </li>
-          <li>
-            <a href="pricing.html">Priser</a>
-          </li>
-        </ul>
+			<nav id="navigation">
+				<div id="loginalign">
+					<button class="loginbutton" type="submit" name="loginbutton" onclick="showLogin()">logga in</button>
+				</div>
+				<ul id="navlist">
+					<li>
+						<a href="../index.html">Hem</a>
+					</li>
+					<li>
+						<a href="why.html">Varför Octo?</a>
+					</li>
+					<li>
+						<a href="pricing.html">Priser</a>
+					</li>
+				</ul>
 
-      </nav>
-    </header>
-    <div id="container">
-      <div onclick="dropopen()" id="dropbutton">Meny &#x25BE</div>
-      <div id="dropdown">
-        <ul id="dropdownmenu">
-          <li>
-            <a href="../index.html">Hem</a>
-          </li>
-          <li>
-            <a href="why.html">Varför Octo?</a>
-          </li>
-          <li>
-            <a href="pricing.html">Priser</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <main onclick="dropclose()">
-      <!--Loginbox-starts-->
-      <div id="loginbox">
-        <form name="login" action="#" class="modal-content zoom">
-          <div class="inputcontainer">
-            <label><b>Användarnamn</b></label>
-            <img id="userimg" src="../img/octoedu.png" alt="">
-            <input id="unameinput" type="text" placeholder="Användarnamn" autofocus required>
-            <label><b>Lösenord</b></label>
-            <img id="userimg" src="../img/lock.png" alt="">
-            <input id="pswinput" type="password" placeholder="Lösenord" required>
-          </div>
-          <div class="lgcontainer">
-            <button class="loginbutton" type="submit" onclick="accesslevelroot(this.form); return false;">Logga in</button>
-            <p id="errortxt">Fel lösenord eller
-              <br> användarnamn.
-            </p>
-          </div>
-        </form>
-      </div>
-      <!--Loginbox-ends-->
-      <h1 class="about">Prisguide</h1>
-      <div id="pricecontent">
-        <div class="pricebox">
-          <p class="pricetitle">Bas</p>
-          <h2>0 kr</h2>
-            <button class="loginbutton">Skaffa nu</button>
-            <ul class="features">
-              <li class="priceitem">Bas Layout - Bestäm mellan 2 färdiga alternativ</li>
-              <li class="priceitem">5 GB fillagring</li>
-              <li class="priceitem">Standard support</li>
-            </ul>
-        </div>
-        <div class="pricebox">
-          <p class="pricetitle">Standard</p>
-          <h2>10 kr</h2>
-          <p class="priceinfo">per månad/användare</p>
-            <button class="loginbutton">Skaffa nu</button>
-            <ul class="features">
-              <li class="priceitem">Standard Layout - Tillgång till att bestämma eget färgschema</li>
-              <li class="priceitem">10 GB fillagring</li>
-              <li class="priceitem">Prioriterad support</li>
-            </ul>
-        </div>
-        <div class="pricebox">
-          <p class="pricetitle">Plus</p>
-          <h2>20 kr</h2>
-          <p class="priceinfo">per månad/användare</p>
-            <button class="loginbutton">Skaffa nu</button>
-            <ul class="features">
-              <li class="priceitem">Plus Layout - Skräddarsy sidan till dina behov</li>
-              <li class="priceitem">20 GB fillagring</li>
-              <li class="priceitem">24/7 support med 2 timmars responstid</li>
-            </ul>
-        </div>
-      </div>
-  </div>
-  </div>
-    </main>
-  </div>
-  <footer class="footer">
-    <p>&copy;2017</p>
-  </footer>
-  <script type="text/javascript" src="../javascript/dropmenu.js"></script>
-  <script type="text/javascript" src="../javascript/login.js"></script>
+			</nav>
+		</header>
+		<div id="container">
+			<div onclick="dropopen()" id="dropbutton">Meny &#x25BE;</div>
+			<div id="dropdown">
+				<ul id="dropdownmenu">
+					<li>
+						<a href="../index.html">Hem</a>
+					</li>
+					<li>
+						<a href="why.html">Varför Octo?</a>
+					</li>
+					<li>
+						<a href="pricing.html">Priser</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<main onclick="dropclose()">
+			<!--Loginbox-starts-->
+			<div id="loginbox">
+				<form name="login" action="#" class="modal-content zoom">
+					<div class="inputcontainer">
+						<label><b>Användarnamn</b></label>
+						<img id="userimg" src="../img/octoedu.png" alt="användarnamn">
+						<input id="unameinput" type="text" placeholder="Användarnamn" autofocus required>
+						<label><b>Lösenord</b></label>
+						<img id="pswimg" src="../img/lock.png" alt="lösenord">
+						<input id="pswinput" type="password" placeholder="Lösenord" required>
+					</div>
+					<div class="lgcontainer">
+						<button class="loginbutton" type="submit" onclick="accesslevelroot(this.form); return false;">Logga in</button>
+						<p id="errortxt">Fel lösenord eller
+							<br> användarnamn.
+						</p>
+					</div>
+				</form>
+			</div>
+			<!--Loginbox-ends-->
+			<h1 class="about">Prisguide</h1>
+			<div id="pricecontent">
+				<div class="pricebox">
+					<p class="pricetitle">Bas</p>
+					<h2>0 kr</h2>
+					<button class="loginbutton">Skaffa nu</button>
+					<ul class="features">
+						<li class="priceitem">Bas Layout - Bestäm mellan 2 färdiga alternativ</li>
+						<li class="priceitem">5 GB fillagring</li>
+						<li class="priceitem">Standard support</li>
+					</ul>
+				</div>
+				<div class="pricebox">
+					<p class="pricetitle">Standard</p>
+					<h2>10 kr</h2>
+					<p class="priceinfo">per månad/användare</p>
+					<button class="loginbutton">Skaffa nu</button>
+					<ul class="features">
+						<li class="priceitem">Standard Layout - Tillgång till att bestämma eget färgschema</li>
+						<li class="priceitem">10 GB fillagring</li>
+						<li class="priceitem">Prioriterad support</li>
+					</ul>
+				</div>
+				<div class="pricebox">
+					<p class="pricetitle">Plus</p>
+					<h2>20 kr</h2>
+					<p class="priceinfo">per månad/användare</p>
+					<button class="loginbutton">Skaffa nu</button>
+					<ul class="features">
+						<li class="priceitem">Plus Layout - Skräddarsy sidan till dina behov</li>
+						<li class="priceitem">20 GB fillagring</li>
+						<li class="priceitem">24/7 support med 2 timmars responstid</li>
+					</ul>
+				</div>
+			</div>
+		</main>
+	</div>
+	<footer class="footer">
+		<p class="moveparleft">octopusgruppen@gmail.com</p>
+		<p>&copy;2017</p>
+	</footer>
+	<script type="text/javascript" src="../javascript/dropmenu.js"></script>
+	<script type="text/javascript" src="../javascript/login.js"></script>
 </body>
 
 </html>

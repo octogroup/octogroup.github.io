@@ -3,7 +3,7 @@
 
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link rel="shortcut icon" href="../img/octo.png">
 	<link rel="stylesheet" href="../style/mainstyle.css">
 	<link rel="stylesheet" href="../style/colorThemeStudentpage.css">
@@ -36,8 +36,8 @@
 					<div class="cardcontainer">
 						<div id="card-body">
 							<h3 class="attendancetitle">Närvaro</h3>
-							<img src="../img/warning.svg" alt="" id="att-card-img1">
-							<img src="../img/check.svg" alt="" id="att-card-img2">
+							<img src="../img/warning.svg" alt="warning" id="att-card-img1">
+							<img src="../img/check.svg" alt="check" id="att-card-img2">
 						</div>
 						<div id="hidebody">
 							<div class="card-body">
@@ -78,7 +78,7 @@
 					<div class="card">
 						<div id="card-top-1" class="cardcontainer">
 							<div id="card-body-1" class="card-header">
-								<img src="../img/notebook.svg" class="card-img">
+								<img src="../img/notebook.svg" alt="notebook" class="card-img">
 							</div>
 							<div id="card-container-1" class="card-body">
 
@@ -109,11 +109,11 @@
 					<div class="card">
 						<div id="card-top-4" class="cardcontainer">
 							<div id="card-body-4" class="card-header">
-								<img src="../img/service.svg" class="card-img">
+								<img src="../img/service.svg" alt="service" class="card-img">
 							</div>
 							<div id="card-container-4" class="card-body">
 								<h3 class="card-heading">Dagens feedback</h3>
-								<form name="dailyFeedback" id="dailyFeedback_form" action="" method="POST">
+								<form name="dailyFeedback" id="dailyFeedback_form" action="#" method="POST">
 									<p id="smileyfaces">
 										<label for="ledsen" onclick="submitForm(this.id)" onmouseover="makeYellow(this.id)" onmouseout="makeGrey(this.id)" id="ledsenLabel">
                       <img src="../img/sadDis.png" id="ledsenSmiley">
@@ -136,11 +136,11 @@
 					<div class="card">
 						<div id="card-top-7" class="cardcontainer">
 							<div id="card-body-7" class="card-header">
-								<img class="card-img" src="../img/calendar.svg" alt="">
+								<img class="card-img" src="../img/calendar.svg" alt="calendar">
 							</div>
 							<div class="card-body">
-                <h3 class="card-heading">Examinationer</h3> 
-                <ul class="card-list">         
+                <h3 class="card-heading">Examinationer</h3>
+                <ul class="card-list">
 									<li>
 										<a class="nav-link" href="assignments.html">22/10 Bootstrap: Inlämmning 1</a>
 									</li>
@@ -155,7 +155,7 @@
                     </li>
                   </ul>
                     <div class="expand" id="expand3" style="display: none;">
-                        <ul class="card-list">  
+                        <ul class="card-list">
                       <form>
                         <p class="card-heading">Kurs:</p>
                         <select id="assignments">
@@ -181,7 +181,7 @@
 					<div class="card">
 						<div id="card-top-2" class="cardcontainer">
 							<div id="card-body-2" class="card-header">
-								<img src="../img/calendar.svg" class="card-img">
+								<img src="../img/calendar.svg" alt="calendar" class="card-img">
 							</div>
 							<div id="card-container-2" class="card-body">
 								<h3 class="card-heading">Kommande kurser</h3>
@@ -211,9 +211,9 @@
 					<div class="card">
 						<div id="card-top-5" class="cardcontainer">
 							<div id="card-body-5" class="card-header">
-								<img src="../img/mail.svg" class="card-img">
+								<img src="../img/mail.svg" alt="mail" class="card-img">
 							</div>
-							<div id="card-container-5" class="card-body">
+							<div class="card-body">
 								<h3 class="card-heading">Veckorapport</h3>
 							</div>
 							<div class="card-bottom">
@@ -230,7 +230,7 @@
 					<div class="card">
 						<div id="card-top-3" class="cardcontainer">
 							<div id="card-body-3" class="card-header">
-								<img src="../img/trophy.svg" class="card-img">
+								<img src="../img/trophy.svg" alt="trophy" class="card-img">
 							</div>
 							<div id="card-container-3" class="card-body">
 								<h3 class="card-heading">Avslutade kurser</h3>
@@ -246,7 +246,7 @@
 					<div class="card">
 						<div id="card-top-6" class="cardcontainer">
 							<div id="card-body-6" class="card-header">
-								<img src="../img/newspaper.svg" class="card-img">
+								<img src="../img/newspaper.svg" alt="newspaper" class="card-img">
 							</div>
 							<div id="card-container-5" class="card-body">
 								<h3 class="card-heading">Student nyheter</h3>
@@ -266,7 +266,6 @@
 		</main>
 	</div>
 	<footer class="footer">
-		<p2>octopusgruppen@gmail.com</p2>
 		<p>&copy;2017</p>
 	</footer>
 	<script type="text/javascript" src="../javascript/attendance.js"></script>

@@ -1,23 +1,22 @@
 .about {
-    text-align: center;
-    margin: inherit;
+  text-align: center;
+  margin: inherit;
 }
-  
+
 .description {
-    margin: 10px;
+  margin: 10px;
 }
-  
+
 .flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    flex-direction: row;
-    max-width: 890px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+  max-width: 890px;
 }
-  
+
 #testbild2 {
-    max-width: 400px;
-    max-height: 400px;
-    margin: 10px;
-    
+  max-width: 400px;
+  max-height: 400px;
+  margin: 10px;
 }

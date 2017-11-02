@@ -3,7 +3,7 @@
 
 <head>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Open Sans' rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="shortcut icon" href="../img/octo.png">
   <link rel="stylesheet" href="../style/dailyfeedback.css">
   <link rel="stylesheet" href="../style/attendance.css">
@@ -81,24 +81,24 @@
         <div class="card">
           <div id="card-top-1" class="cardcontainer">
             <div id="card-body-1" class="card-header">
-              <img class="card-img" src="../img/notebook.svg" alt="">
+              <img class="card-img" src="../img/notebook.svg" alt="notebook">
             </div>
             <div id="card-container-1" class="card-body">
 
               <h3 class="card-heading">Pågående kurser</h3>
               <ul class="card-list">
                 <li>
-                  <a id="nav-link-1" href="course.html">Arbetsmetodik</a>
+                  <a class="nav-link" href="course.html">Arbetsmetodik</a>
                 </li>
                 <li>
-                  <a id="nav-link-1" href="course.html">JavaScript</a>
+                  <a class="nav-link" href="course.html">JavaScript</a>
                 </li>
                 <div class="expand" id="expand1" style="display: none;">
                   <li>
-                    <a id="nav-link-1" href="course.html">HTML</a>
+                    <a class="nav-link" href="course.html">HTML</a>
                   </li>
                   <li>
-                    <a id="nav-link-1" href="course.html">CSS</a>
+                    <a class="nav-link" href="course.html">CSS</a>
                   </li>
                 </div>
               </ul>
@@ -111,23 +111,23 @@
         <div class="card">
           <div id="card-top-2" class="cardcontainer">
             <div id="card-body-2" class="card-header">
-              <img src="../img/calendar.svg"class="card-img">
+              <img src="../img/calendar.svg" class="card-img" alt="calendar">
             </div>
             <div id="card-container-2" class="card-body">
               <h3 class="card-heading">Inlämnade uppgifter</h3>
               <ul class="card-list">
                 <li>
-                  <a id="nav-link-2" href="grade-assignments.html">22/10 Namn på uppgift</a>
+                  <a class="nav-link" href="grade-assignments.html">22/10 Namn på uppgift</a>
                 </li>
                 <li>
-                  <a id="nav-link-2" href="grade-assignments.html">22/10 Namn på uppgift</a>
+                  <a class="nav-link" href="grade-assignments.html">22/10 Namn på uppgift</a>
                 </li>
                 <div class="expand" id="expand2" style="display: none;">
                   <li>
-                    <a id="nav-link-2" href="grade-assignments.html">22/10 Namn på uppgift</a>
+                    <a class="nav-link" href="grade-assignments.html">22/10 Namn på uppgift</a>
                   </li>
                   <li>
-                    <a id="nav-link-2" href="grade-assignments.html">22/10 Namn på uppgift</a>
+                    <a class="nav-link" href="grade-assignments.html">22/10 Namn på uppgift</a>
                   </li>
                 </div>
               </ul>
@@ -140,7 +140,7 @@
         <div class="card">
           <div id="card-top-3" class="cardcontainer">
             <div id="card-body-3" class="card-header">
-              <img src="../img/trophy.svg" class="card-img">
+              <img src="../img/trophy.svg" class="card-img" alt="trophy">
             </div>
             <div id="card-container-3" class="card-body">
               <h3 class="card-heading">Avslutade kurser</h3>
@@ -150,15 +150,27 @@
             </div>
           </div>
         </div>
+				<div class="card">
+          <div id="card-top-5" class="cardcontainer">
+            <div id="card-body-5" class="card-header">
+              <img src="../img/mail.svg" alt="mail" class="card-img">
+            </div>
+            <div id="card-container-5" class="card-body">
+              <h3 class="card-heading">Utvärderingar</h3>
+            </div>
+            <div class="card-bottom">
+              <a href="weeklyevaluation.html"><button type="button" name="button" class="cardbutton">Öppna</button></a>
+            </div>
+          </div>
+        </div>
+			</div>
     </main>
-    </div>
-    <footer class="footer" id="studentfooter">
+    <footer class="footer">
       <p>&copy;2017</p>
     </footer>
     <script src="../javascript/forms.js"></script>
     <script type="text/javascript" src="../javascript/attendance.js"></script>
     <script type="text/javascript" src="../javascript/dailyfeedback.js"></script>
-    <script type="text/javascript" src="../javascript/openmenu.js"></script>
     <script type="text/javascript" src="../javascript/login.js"></script>
     <script type="text/javascript" src="../javascript/togglediv.js"></script>
 </body>
