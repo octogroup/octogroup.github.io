@@ -28,7 +28,7 @@ function makeGrey (id){
 
 //gör den klickade smileyn gul, rulla bort paragrafen som innehåller smailisarna, submitta formen
 function submitForm (id) {
-  makeYellow(id);
+  makeYellow(id)
   document.getElementById('smileyfaces').style.height = '0px'
   //document.getElementById("dailyFeedback_form").submit();
 }

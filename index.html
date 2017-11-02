@@ -22,7 +22,7 @@
       </a>
       <nav id="navigation">
         <div id="loginalign">
-          <button class="loginbutton" type="button" name="loginbutton" onclick="showLogin()">logga in</button>
+          <button class="loginbutton" type="submit" name="loginbutton" onclick="showLogin()">logga in</button>
         </div>
         <ul id="navlist">
           <li>
@@ -58,17 +58,17 @@
 
       <!--Loginbox-starts-->
       <div id="loginbox">
-        <form name="login" action="#" class="modal-content">
+        <form name="login" action="#" class="modal-content zoom">
           <div class="inputcontainer">
             <label>
               <b>Användarnamn</b>
             </label>
-            <img id="userimg" src="img/octoedu.png" alt="">
-            <input id="unameinput" type="text" placeholder="Användarnamn" required>
+            <img id="userimg" src="img/octoedu.png">
+            <input id="unameinput" type="text" placeholder="Användarnamn" autofocus required>
             <label>
               <b>Lösenord</b>
             </label>
-            <img id="userimg" src="img/lock.png" alt="">
+            <img id="pswimg" src="img/lock.png">
             <input id="pswinput" type="password" placeholder="Lösenord" required>
           </div>
           <div class="lgcontainer">
@@ -95,9 +95,7 @@
           </a>
         </div>
       </div>
-  </div>
-
-  </main>
+  	</main>
   </div>
   <footer class="footer">
     <p2>octopusgruppen@gmail.com</p2>
