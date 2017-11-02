@@ -92,6 +92,18 @@ let news = function () {
   sB.style.display = 'inherit'
 }
 
+let assignment = function () {
+  reset()
+  formimg.style.display = 'inherit'
+  formc.style.height = '500px'
+  form.style.display = 'inherit'
+  cB.style.display = 'inherit'
+  sB.style.display = 'inherit'
+  p1.innerHTML = 'Kurs:'
+  i1.style.display = "inherit"
+
+}
+
 let weekeval = function () {
   reset()
   formimg.style.display = 'inherit'
