@@ -101,14 +101,18 @@ let assignment = function () {
   sB.style.display = 'inherit'
   p1.innerHTML = 'Kurs:'
   i1.style.display = "inherit"
+  i1.required = "true"
   p2.innerHTML = "Deadline:"
   i2.style.display = "inherit"
   i2.type = "date"
   i2.list = ""
+  i2.required = "true"
   p3.innerHTML = "Rubrik:"
   t3.style.display = "inherit"
+  t3.required = "true"
   p4.innerHTML = "Instruktioner:"
   t4.style.display = "inherit"
+  t4.required = "true"
 }
 
 let weekeval = function () {
