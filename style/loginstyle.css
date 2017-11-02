@@ -20,12 +20,10 @@
   display: none;
   height: auto;
   width: 50px;
-  display: flex;
 }
 
 .inputcontainer>label {
   display: flex;
-  font-family: 'Pacifico', 'Open Sans', sans-serif;
 }
 
 @media only screen and (max-width: 500px) {
@@ -33,7 +31,6 @@
     display: none;
   }
   #userimg {
-    src: url(octo.png);
     display: flex;
   }
   #pswimg {
@@ -89,7 +86,6 @@
   color: red;
   font-family: 'Open Sans', sans-serif;
   margin: 8px auto 12px auto;
-  font-size: 12px;
   align-items: center;
   text-align: center;
 }

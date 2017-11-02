@@ -1,7 +1,0 @@
-#navlist>li:nth-child(2) {
-  border-bottom: solid 4px #43a047;
-}
-
-#navlist>li:nth-child(2)>a {
-  color: #fff;
-}

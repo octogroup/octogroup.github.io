@@ -15,14 +15,8 @@
 
 .btg {
   list-style-type: none;
-} 
+}
 
 .left > li {
   margin-left: 35px;
-}
-
-@media screen and (max-width: 900px){
- .box {
-      width: 290px;
-  } 
 }
