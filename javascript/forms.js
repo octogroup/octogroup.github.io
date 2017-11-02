@@ -105,7 +105,8 @@ let assignment = function () {
   i2.style.display = "inherit"
   i2.type = "date"
   i2.list = ""
-
+  p3.innerHTML = "Rubrik:"
+  t3.style.display = "inherit"
 }
 
 let weekeval = function () {
