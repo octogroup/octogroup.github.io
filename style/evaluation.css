@@ -27,22 +27,6 @@
 	margin-bottom: 20px;
 }
 
-#chartContainer3 {
-  width: 45%;
-  height: 400px;
-  display: flex;
-	min-width: 350px;
-	margin-bottom: 20px;
-}
-
-#chartContainer4 {
-  width: 45%;
-  height: 400px;
-  display: flex;
-	min-width: 350px;
-	margin-bottom: 20px;
-}
-
 .answerNav {
   display: flex;
   margin-top: 30px;

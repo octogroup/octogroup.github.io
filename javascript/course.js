@@ -14,13 +14,13 @@ let chart = new CanvasJS.Chart("chartContainer1", {
 		itemclick : toggleDataSeries
 	},
 	toolTip: {
-		shared: true,
+		enable: false,
 	},
 	data: [{
 		type: "bar",
 		showInLegend: true,
 		name: "Hur tycker du kurser har varit?",
-		color: "gold",
+		color: "#FF8A65",
 		dataPoints: [
 			{ y: 1, label: "1" },
 			{ y: 3, label: "2" },
@@ -35,7 +35,7 @@ let chart = new CanvasJS.Chart("chartContainer1", {
 		type: "bar",
 		showInLegend: true,
 		name: "Hur har du upplevt tempot i kursen?",
-		color: "silver",
+		color: "#8E24AA",
 		dataPoints: [
 			{ y: 2, label: "1" },
 			{ y: 5, label: "2" },
@@ -50,7 +50,7 @@ let chart = new CanvasJS.Chart("chartContainer1", {
 		type: "bar",
 		showInLegend: true,
 		name: "Hur har lokalerna och lokalbokningen varit under kursens gång?",
-		color: "#A57164",
+		color: "#8BC34A",
 		dataPoints: [
 			{ y: 3, label: "1" },
 			{ y: 2, label: "2" },
@@ -64,20 +64,20 @@ let chart = new CanvasJS.Chart("chartContainer1", {
 });
 chart.render();
 
-function toolTipFormatter(e) {
-	var str = "";
-	var total = 0 ;
-	var str3;
-	var str2 ;
-	for (var i = 0; i < e.entries.length; i++){
-		var str1 = "<span style= \"color:"+e.entries[i].dataSeries.color + "\">" + e.entries[i].dataSeries.name + "</span>: <strong>"+  e.entries[i].dataPoint.y + "</strong> <br/>" ;
-		total = e.entries[i].dataPoint.y + total;
-		str = str.concat(str1);
-	}
-	str2 = "<strong>" + e.entries[0].dataPoint.label + "</strong> <br/>";
-	str3 = "<span style = \"color:Tomato\">Total: </span><strong>" + total + "</strong><br/>";
-	return (str2.concat(str)).concat(str3);
-}
+// function toolTipFormatter(e) {
+// 	var str = "";
+// 	var total = 0 ;
+// 	var str3;
+// 	var str2 ;
+// 	for (var i = 0; i < e.entries.length; i++){
+// 		var str1 = "<span style= \"color:"+e.entries[i].dataSeries.color + "\">" + e.entries[i].dataSeries.name + "</span>: <strong>"+  e.entries[i].dataPoint.y + "</strong> <br/>" ;
+// 		total = e.entries[i].dataPoint.y + total;
+// 		str = str.concat(str1);
+// 	}
+// 	str2 = "<strong>" + e.entries[0].dataPoint.label + "</strong> <br/>";
+// 	str3 = "<span style = \"color:Tomato\">Total: </span><strong>" + total + "</strong><br/>";
+// 	return (str2.concat(str)).concat(str3);
+// }
 
 function toggleDataSeries(e) {
 	if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
