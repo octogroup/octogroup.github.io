@@ -1,32 +1,14 @@
 
-let divs = ["expand1", "expand2", "expand3", "expand4"]
-let visibleDivId = false
-
-function toggleExpand (divId) {
-  if(visibleDivId === divId) {
-    visibleDivId = null
-  } else {
-    visibleDivId = divId
-  }
-  hideNonVisibleDivs()
+function toggleExpand (self) {
+	let div = self.parentNode.parentNode.getElementsByClassName('expand')[0]
+	let disp = div.style.display
+	if (!disp || disp === 'none') return div.style.display = 'flex'
+	console.log(div)
+	return div.style.display = 'none'
 }
-
-function hideNonVisibleDivs() {
-  let i, divId, div
-  for(i = 0; i < divs.length; i++) {
-    divId = divs[i]
-    div = document.getElementById(divId)
-    if(visibleDivId === divId) {
-      div.style.display = "flex"
-    } else {
-      div.style.display = "none"
-    }
-  }
-}
-
 
 let button1 = document.getElementById('buttonSwap1')
-	button1.addEventListener('click', function() {
+	button1.addEventListener('click', () => {
   if (button1.getAttribute('data-text-swap') == button1.innerHTML) {
     button1.innerHTML = button1.getAttribute('data-text-original')
   } else {

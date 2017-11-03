@@ -219,10 +219,6 @@
 	flex-direction: column;
 }
 
-#expand1 #expand2 #expand3 {
-  display: none;
-}
-
 .attendancetitle {
 	flex-grow: 1;
 	color: #fff;
