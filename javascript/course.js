@@ -1,4 +1,4 @@
-let chart = new CanvasJS.Chart("chartContainer1", {
+let chart = new CanvasJS.Chart("chartContainer5", {
 	animationEnabled: true,
 	title:{
 		text: "Feedback för avslutad kurs"

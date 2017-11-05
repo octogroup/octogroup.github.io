@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="../style/mainstyle.css">
   <link rel="stylesheet" href="../style/evaluation.css">
   <link rel="stylesheet" href="../style/colorThemeStudentpage.css">
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>Kursutvärdering</title>
@@ -22,23 +23,20 @@
       </a>
       <nav id="navigation">
         <div id="loginalign">
-          <button class="loginbutton" type="button" name="logout" onclick="logOut()">logga ut</button>
         </div>
+        <button class="loginbutton" type="button" name="logout" onclick="logOut()">logga ut</button>
       </nav>
     </header>
     <div id="container">
     </div>
-  </div>
-  <main>
-    <img class="wbild" src="../img/courspic.png">
+    <main>
+      <img class="wbild" src="../img/courspic.png">
 
-    <div class="graphfcont">
-      <div id="chartContainer1"></div>
-      <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-    </div>
-    <hr class="margintop">
+      <div class="graphfcont">
+        <div id="chartContainer5"></div>
+      </div>
 
-    <h2 class="text-center">Summering av fritext</h2>
+      <h2 class="text-center">Summering av fritext</h2>
       <div class="showAnswer">
         <section class="answerSection">
           <h3 class="marginbottom">Fråga</h3>
@@ -101,18 +99,14 @@
         </section>
       </div>
 
-  </main>
-  <footer class="footer">
-    <p>&copy;2017</p>
-  </footer>
-  <script type="text/javascript" src="../javascript/attendance.js"></script>
-  <script type="text/javascript" src="../javascript/dailyfeedback.js"></script>
-  <script type="text/javascript" src="../javascript/login.js"></script>
-  <script type="text/javascript" src="../javascript/sent.js"></script>
-  <script type="text/javascript" src="../javascript/togglediv.js"></script>
-
-  <!-- Canvas  -->
-  <script type="text/javascript" src="../javascript/course.js"></script>
+    </main>
+  </div>
+    <footer class="footer">
+      <p>&copy;2017</p>
+    </footer>
+    <script type="text/javascript" src="../javascript/course.js"></script>
+    <script type="text/javascript" src="../javascript/login.js"></script>
+    <script type="text/javascript" src="../javascript/togglediv.js"></script>
 
 </body>
 
