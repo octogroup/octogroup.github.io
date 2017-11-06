@@ -1,0 +1,16 @@
+main{
+display: flex;
+flex-direction: column;
+}
+main>div{
+  width: 910px;
+  background-color: red;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+main>div:first-child{
+  height: 200px;
+}
+main>div:last-child{
+  height: auto;
+}
