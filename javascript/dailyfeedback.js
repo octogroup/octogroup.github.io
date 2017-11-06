@@ -2,44 +2,46 @@
 /* eslint no-unused-vars: 0 */
 /* eslint-env browser */
 
-// byt smileybild från grå till gul onmouseover
-function hoverSadSmiley () {
-  document.getElementById('ledsenSmiley').src = '../img/sad.png'
+//byt smileybild från grå till gul sålänge ingen av de 3 radioknapparna är icheckad
+function makeYellow (id) {
+  if(!anyRadioButtonIsChecked()){
+    if(id === "ledsenLabel")
+      document.getElementById('ledsenSmiley').src = '../img/sad.png';
+    else if (id === "neutralLabel")
+      document.getElementById('neutralSmiley').src = '../img/confused.png';
+    else
+      document.getElementById('happySmiley').src = '../img/happyy.png';
+  }
 }
 
-function hoverNeutralSmiley () {
-  document.getElementById('neutralSmiley').src = '../img/confused.png'
+//byt smileybild från gul till grå sålänge ingen av de 3 radioknapparna är icheckade
+function makeGrey (id){
+  if(!anyRadioButtonIsChecked()){
+    if(id === "ledsenLabel")
+      document.getElementById('ledsenSmiley').src = '../img/sadDis.png';
+    else if (id === "neutralLabel")
+      document.getElementById('neutralSmiley').src = '../img/confusedDis.png';
+    else
+      document.getElementById('happySmiley').src = '../img/happyyDis.png';
+  }
 }
 
-function hoverHappySmiley () {
-  document.getElementById('happySmiley').src = '../img/happyy.png'
+//gör den klickade smileyn gul, rulla bort paragrafen som innehåller smailisarna, submitta formen
+function submitForm (id) {
+  makeYellow(id)
+  document.getElementById('smileyfaces').style.height = '0px'
+  //document.getElementById("dailyFeedback_form").submit();
 }
 
-// onmouseout. kollar om någon av smileysirna/radiobuttons är icheckade. Är de icheckade? byt bild från grå till gul(annars ska bilden bli grå), gör höjden på id='smileyfaces' 0px och submitta formen
-// på vanligt klick så kommer en smiley/radiobutton bli icheckad och funktionen kommer att köras igen
-function checkSmileyStatus () {
-  let sadOptionIsChecked = document.getElementById('ledsen').checked
-  let neutralOptionIsChecked = document.getElementById('neutral').checked
-  let happyOptionIsChecked = document.getElementById('glad').checked
+//kollar radioknapps-status på en enskild radioknapp, alltså om den är icheckad eller ej
+function radioButtonIsChecked (id) {
+  return document.getElementById(id).checked;
+}
 
-  if (sadOptionIsChecked) {
-    document.getElementById('ledsenSmiley').src = '../img/sad.png'
-    document.getElementById('smileyfaces').style.height = '0px'
-  } else {
-    document.getElementById('ledsenSmiley').src = '../img/sadDis.png'
-  }
-
-  if (neutralOptionIsChecked) {
-    document.getElementById('neutralSmiley').src = '../img/confused.png'
-    document.getElementById('smileyfaces').style.height = '0px'
-  } else {
-    document.getElementById('neutralSmiley').src = '../img/confusedDis.png'
-  }
-
-  if (happyOptionIsChecked) {
-    document.getElementById('happySmiley').src = '../img/happyy.png'
-    document.getElementById('smileyfaces').style.height = '0px'
-  } else {
-    document.getElementById('happySmiley').src = '../img/happyyDis.png'
-  }
+//kollar om någon av alla 3 radioknappar är icheckad
+function anyRadioButtonIsChecked () {
+  if(radioButtonIsChecked("ledsen") || radioButtonIsChecked("neutral") || radioButtonIsChecked("glad"))
+    return true;
+  else
+    return false;
 }

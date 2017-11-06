@@ -90,7 +90,7 @@
 									<li>
 										<a class="nav-link" href="assignments.html">JavaScript</a>
 									</li>
-									<div class="expand" id="expand1" style="display: none;">
+									<div class="expand" style="display: none;">
 										<li>
 											<a class="nav-link" href="assignments.html">HTML</a>
 										</li>
@@ -101,7 +101,7 @@
 								</ul>
 							</div>
 							<div class="card-bottom">
-								<button type="button" name="button" class="cardbutton" onclick="toggleExpand('expand1')">Läs Mer</button>
+								<button type="button" name="button" class="cardbutton" onclick="toggleExpand(this)">Läs Mer</button>
 							</div>
 						</div>
 					</div>
@@ -115,16 +115,16 @@
 								<h3 class="card-heading">Dagens feedback</h3>
 								<form name="dailyFeedback" id="dailyFeedback_form" action="#" method="POST">
 									<p id="smileyfaces">
-										<label for="ledsen" onmouseover="hoverSadSmiley()" onmouseout="checkSmileyStatus()" onclick="checkSmileyStatus()">
-                      <img src="../img/sadDis.png" alt="sad" id="ledsenSmiley">
+										<label for="ledsen" onclick="submitForm(this.id)" onmouseover="makeYellow(this.id)" onmouseout="makeGrey(this.id)" id="ledsenLabel">
+                      <img src="../img/sadDis.png" id="ledsenSmiley">
                       <input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="ledsen" value="ledsen">
                     </label>
-										<label for="neutral" onmouseover="hoverNeutralSmiley()" onmouseout="checkSmileyStatus()" onclick="checkSmileyStatus()">
-                      <img src="../img/confusedDis.png" alt="confused" id="neutralSmiley">
+										<label for="neutral" onclick="submitForm(this.id)" onmouseover="makeYellow(this.id)" onmouseout="makeGrey(this.id)" id="neutralLabel">
+                      <img src="../img/confusedDis.png" id="neutralSmiley">
                       <input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="neutral" value="neutral">
                     </label>
-										<label for="glad" onmouseover="hoverHappySmiley()" onmouseout="checkSmileyStatus()" onclick="checkSmileyStatus()">
-                      <img src="../img/happyyDis.png" alt="happy" id="happySmiley">
+										<label for="glad" onclick="submitForm(this.id)" onmouseover="makeYellow(this.id)" onmouseout="makeGrey(this.id)" id="gladLabel">
+                      <img src="../img/happyyDis.png" id="happySmiley">
                       <input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="glad" value="glad">
                     </label>
 									</p>
@@ -139,26 +139,38 @@
 								<img class="card-img" src="../img/calendar.svg" alt="calendar">
 							</div>
 							<div class="card-body">
-								<h3 class="card-heading">Examinationer</h3>
-								<ul class="card-list">
+                <h3 class="card-heading">Examinationer</h3>
+                <ul class="card-list">
 									<li>
 										<a class="nav-link" href="assignments.html">22/10 Bootstrap: Inlämmning 1</a>
 									</li>
 									<li>
 										<a class="nav-link" href="assignments.html">25/10 Angular: Tenta</a>
 									</li>
-									<div class="expand" id="expand3" style="display: none;">
 										<li>
 											<a class="nav-link" href="assignments.html">01/11 React: Inlämning 3</a>
 										</li>
 										<li>
 											<a class="nav-link" href="assignments.html">02/11 Vue.js: Hemtenta</a>
-										</li>
+                    </li>
+                  </ul>
+                    <div class="expand" style="display: none;">
+                        <ul class="card-list">
+                      <form>
+                        <p class="card-heading">Kurs:</p>
+                        <select id="assignments">
+                          <option value="arbetsmetodik">Arbetsmetodik</option>
+                          <option value="javascript">JavaScript</option>
+                          <option value="html">HTML</option>
+                          <option value="css">CSS</option>
+                        </select>
+                      </form>
+                      <input type="file">
+                      </ul>
 									</div>
-								</ul>
 							</div>
 							<div class="card-bottom">
-								<button type="button" name="button" class="cardbutton" onclick="toggleExpand('expand3')">Läs Mer</button>
+								<button type="button" name="button" class="cardbutton" onclick="toggleExpand(this)">Lämna in</button>
 							</div>
 						</div>
 					</div>
@@ -180,7 +192,7 @@
 									<li>
 										<a class="nav-link" href="assignments.html">Angular</a>
 									</li>
-									<div class="expand" id="expand2" style="display: none;">
+									<div class="expand" style="display: none;">
 										<li>
 											<a class="nav-link" href="assignments.html">React</a>
 										</li>
@@ -191,7 +203,7 @@
 								</ul>
 							</div>
 							<div class="card-bottom">
-								<button type="button" name="button" class="cardbutton" onclick="toggleExpand('expand2')">Läs Mer</button>
+								<button type="button" name="button" class="cardbutton" onclick="toggleExpand(this)">Läs Mer</button>
 							</div>
 						</div>
 					</div>
@@ -210,7 +222,7 @@
                 </a>
 							</div>
 						</div>
-					</div>
+          </div>
 				</section>
 				<!-- Third Card Column -->
 				<section class="thirdcardcolumn">
@@ -238,7 +250,7 @@
 							</div>
 							<div id="card-container-5" class="card-body">
 								<h3 class="card-heading">Student nyheter</h3>
-								<h4 class="card-heading">VÄLKOMMEN TILL NYA WEBBPLATSEN</h4>
+								<h4 class="card6-heading">VÄLKOMMEN TILL NYA WEBBPLATSEN</h4>
 								<p class="card-heading">Nu är den äntligen här. Vår nya webb där du mycket enklare kan se vilka utbildningar vi har och hitta rätt utbildning för dig! Du vet väl att vi har ansökningen till utbildningarna öppen ändra fram till 5 juni i år?
 								</p>
 							</div>
@@ -259,7 +271,7 @@
 	<script type="text/javascript" src="../javascript/attendance.js"></script>
 	<script type="text/javascript" src="../javascript/dailyfeedback.js"></script>
 	<script type="text/javascript" src="../javascript/login.js"></script>
-	<script type="text/javascript" src="../javascript/togglediv.js"></script>
+  <script type="text/javascript" src="../javascript/togglediv.js"></script>
 </body>
 
 </html>

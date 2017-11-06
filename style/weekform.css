@@ -36,13 +36,13 @@
 	font-weight: bold;
 }
 
-/* To move button to the left side of screen */
-.move-left {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+#weekeval > div:nth-child(11) > span.bar {
+	margin-bottom: 40px;
 }
 
+#weekeval > div:nth-child(16) > span.bar {
+	margin-bottom: 40px;
+}
 
 /*----------------------- styling the input range slider-------------------------------- */
 

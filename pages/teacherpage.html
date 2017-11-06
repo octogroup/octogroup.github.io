@@ -35,47 +35,44 @@
     <aside class="editnav">
       <div class="asidebarbox">
         <button class="editbuttons" onclick="news()">Skapa nyhet</button>
+        <button class="editbuttons" onclick="assignment()">Skapa inlämningsuppgift</button>
       </div>
     </aside>
     <div id="container">
     </div>
     <main>
 
-    <div class="formcontent">
-      <div class="forms">
-        <div id="card-body-1" class="card-header">
-          <img id="form-img-1" src="../img/notebook.svg" alt="notebook">
+      <div class="formcontent">
+        <div class="forms">
+          <div id="card-body-1" class="card-header">
+            <img id="form-img-1" src="../img/notebook.svg">
+          </div>
+          <button id="close">&#10005;</button>
+          <form id="form" onsubmit="sent()">
+            <p id="p1"></p>
+            <input id="i1" type="text" min="1" max="7" step="1" list="tickmarks">
+            <textarea id="t1" rows="1" cols="52" onkeyup="autoGrow(this)"></textarea>
+            <p id="p2"></p>
+            <input id="i2" type="text" min="1" max="7" step="1" list="tickmarks">
+            <textarea id="t2" rows="1" cols="52" onkeyup="autoGrow(this)"></textarea>
+            <p id="p3"></p>
+            <input id="i3" type="text" min="1" max="7" step="1" list="tickmarks">
+            <textarea id="t3" rows="1" cols="52" onkeyup="autoGrow(this)"></textarea>
+            <p id="p4"></p>
+            <input id="i4" type="text" min="1" max="7" step="1" list="tickmarks">
+            <textarea id="t4" rows="1" cols="52" onkeyup="autoGrow(this)"></textarea>
+            <p id="p5"></p>
+            <input id="i5" type="text" min="1" max="7" step="1" list="tickmarks">
+            <textarea id="t5" rows="1" cols="52" onkeyup="autoGrow(this)"></textarea>
+            <input id="submit" type="submit">
+            <datalist id="tickmarks">
+			          <option value="CSS"/>
+			          <option value="HTML"/>
+			          <option value="Javascript"/>
+			        </datalist>
+          </form>
         </div>
-        <button id="close">&#10005;</button>
-        <form id="form" onsubmit="sent()">
-          <p id="p1"></p>
-          <input id="i1" type="text" min="1" max="7" step="1" list="tickmarks">
-          <div id="t1" class="textareaElement" contenteditable></div>
-          <p id="p2"></p>
-          <input id="i2" type="text" min="1" max="7" step="1" list="tickmarks">
-          <div id="t2" class="textareaElement" contenteditable></div>
-          <p id="p3"></p>
-          <input id="i3" type="text" min="1" max="7" step="1" list="tickmarks">
-          <div id="t3" class="textareaElement" contenteditable></div>
-          <p id="p4"></p>
-          <input id="i4" type="text" min="1" max="7" step="1" list="tickmarks">
-          <div id="t4" class="textareaElement" contenteditable></div>
-          <p id="p5"></p>
-          <input id="i5" type="text" min="1" max="7" step="1" list="tickmarks">
-          <div id="t5" class="textareaElement" contenteditable></div>
-          <input id="submit" type="submit">
-          <datalist id="tickmarks">
-		          <option value="1"></option>
-		          <option value="2"></option>
-		          <option value="3"></option>
-		          <option value="4"></option>
-		          <option value="5"></option>
-		          <option value="6"></option>
-		          <option value="7"></option>
-		        </datalist>
-		    </form>
-		  </div>
-		</div>
+      </div>
       <!--Cardlayout-->
       <div class="box">
         <div class="card">
@@ -93,7 +90,7 @@
                 <li>
                   <a class="nav-link" href="course.html">JavaScript</a>
                 </li>
-                <div class="expand" id="expand1" style="display: none;">
+                <div class="expand" style="display: none;">
                   <li>
                     <a class="nav-link" href="course.html">HTML</a>
                   </li>
@@ -104,7 +101,7 @@
               </ul>
             </div>
             <div class="card-bottom">
-              <button type="button" name="button" class="cardbutton" onclick="toggleExpand('expand1')">Läs Mer</button>
+              <button type="button" name="button" class="cardbutton" onclick="toggleExpand('this')">Läs Mer</button>
             </div>
           </div>
         </div>
@@ -114,26 +111,26 @@
               <img src="../img/calendar.svg" class="card-img" alt="calendar">
             </div>
             <div id="card-container-2" class="card-body">
-              <h3 class="card-heading">Kommande kurser</h3>
+              <h3 class="card-heading">Inlämnade uppgifter</h3>
               <ul class="card-list">
                 <li>
-                  <a class="nav-link" href="course.html">Bootstrap</a>
+                  <a class="nav-link" href="grade-assignments.html">22/10 Namn på uppgift</a>
                 </li>
                 <li>
-                  <a class="nav-link" href="course.html">Angular</a>
+                  <a class="nav-link" href="grade-assignments.html">22/10 Namn på uppgift</a>
                 </li>
-                <div class="expand" id="expand2" style="display: none;">
+                <div class="expand" style="display: none;">
                   <li>
-                    <a class="nav-link" href="course.html">React</a>
+                    <a class="nav-link" href="grade-assignments.html">22/10 Namn på uppgift</a>
                   </li>
                   <li>
-                    <a class="nav-link" href="course.html">Vue.js</a>
+                    <a class="nav-link" href="grade-assignments.html">22/10 Namn på uppgift</a>
                   </li>
                 </div>
               </ul>
             </div>
             <div class="card-bottom">
-              <button type="button" name="button" class="cardbutton" onclick="toggleExpand('expand2')">Läs Mer</button>
+              <button type="button" name="button" class="cardbutton" onclick="toggleExpand('this')">Läs Mer</button>
             </div>
           </div>
         </div>
@@ -198,6 +195,7 @@
 
 			</div>
     </main>
+	</div>
     <footer class="footer">
       <p>&copy;2017</p>
     </footer>
