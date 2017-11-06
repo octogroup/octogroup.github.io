@@ -24,6 +24,7 @@ main{
 #msg{
   color: red;
   width: 183px;
+  margin-bottom: 10px;
 }
 
 .subject{
