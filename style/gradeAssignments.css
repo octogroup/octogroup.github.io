@@ -1,16 +1,87 @@
 main{
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
-main>div{
+
+.boxContainer{
   width: 910px;
-  background-color: red;
+  border: 1px solid black;
   margin: 0 auto;
   margin-bottom: 20px;
+  background-color: white;
 }
+
 main>div:first-child{
   height: 200px;
+  display: flex;
+  flex-direction: column;
 }
 main>div:last-child{
   height: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.subject{
+  width: 602px;
+  height: 70px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.assignemntInfoBox{
+  width: 602px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.assignmentInfo{
+  width: auto;
+  margin-right: 40px;
+}
+
+.gradeBox{
+  width: 300px;
+  border-left: 1px solid black;
+}
+
+.fill{
+  height: 70px;
+  width: 100%;
+}
+.gradeContent{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.gradeInput{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 7px;
+}
+.gradeInput>P{
+  margin-right: 119px;
+}
+.gradeContent button{
+  width: 40px;
+  background-color: #c62828;
+  border: solid 1px #8e0000;
+  min-width: 64px;
+  height: 36px;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0 16px;
+  border-radius: 2px;
+  align-self: flex-end;
+  margin-right: 44px;
+  margin-top: 21px;
+  margin-bottom: 21px;
+}
+h3{
+  align-self: center;
 }
