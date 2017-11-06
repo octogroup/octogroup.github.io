@@ -1,6 +1,6 @@
 // Weeklyevaluation-graphfs
 
-let chart1 = new CanvasJS.Chart('chartContainer1', {
+let chart1 = new CanvasJS.Chart('chartContainerLeft', {
   animationEnabled: true,
   title: {
     text: 'Veckoutvärdering'
@@ -106,7 +106,7 @@ function toggleDataSeries (e) {
   chart1.render()
 }
 
-let chart2 = new CanvasJS.Chart('chartContainer2', {
+let chart2 = new CanvasJS.Chart('chartContainerRight', {
   title: {
     text: 'Antal svar varje vecka'
   },

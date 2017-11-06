@@ -1,5 +1,5 @@
 
-let chart3 = new CanvasJS.Chart('chartContainer3', {
+let chart3 = new CanvasJS.Chart('chartContainerRight', {
   animationEnabled: true,
   title: {text: 'Denna Vecka'},
   axisX: {valueFormatString: 'DD/MM/YY'},
@@ -50,7 +50,7 @@ function toggleDataSeries (e) {
 
 // ----piechart-----
 
-let chart4 = new CanvasJS.Chart("chartContainer4", {
+let chart4 = new CanvasJS.Chart("chartContainerLeft", {
     animationEnabled: true,
     title:{
         text: "Idag"
