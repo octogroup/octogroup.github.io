@@ -27,3 +27,8 @@ if (performance.navigation.type == 1) {
   document.getElementById("boxContainer").style.visibility = "hidden";
     document.getElementById("boxContainer").style.height = "0px";
 }
+
+function closeBox(){
+  document.getElementById("boxContainer").style.visibility = "hidden";
+  document.getElementById("boxContainer").style.height = "0px";
+}
