@@ -19,7 +19,7 @@
 <body>
   <div class="content">
     <header onclick="dropclose()">
-      <a href="studentpage.html">
+      <a href="teacherpage.html">
         <img src="../img/KYH-logo.png" alt="">
         <!-- <h1>Octo : KYH</h1> -->
       </a>
@@ -32,13 +32,13 @@
     <div id="container">
     </div>
     <main>
-        <div class="boxContainer">
+        <div id="boxContainer">
           <div class="assignmentContainer">
-            <div class="subject"><h2>Namn på uppgift</h2></div>
+            <div class="subject"><h3>Induviduellt projekt 1</h3></div>
               <div class="assignemntInfoBox">
-              <div class="assignmentInfo"><h3>Inlämnad av</h3><p>Elin Kviberg</p></div>
-              <div class="assignmentInfo"><h3>Inlämnad</h3><p>2017-05-05</p></div>
-              <div class="assignmentInfo"><h3>Fil(er)</h3><p>fil1</p><p>fil 2</p></div>
+              <div class="assignmentInfo"><h4>Inlämnad av</h4><p>Elin Kviberg</p></div>
+              <div class="assignmentInfo"><h4>Inlämnad</h4><p>2017-05-05</p></div>
+              <div class="assignmentInfo"><h4>Fil(er)</h4><p>fil1</p><p>fil 2</p></div>
             </div>
           </div>
           <div class="gradeBox">
@@ -46,7 +46,7 @@
             </div>
             <div class="gradeContent">
               <div class="grade">
-              <h3>Betygssättning</h3>
+              <h4>Betygssättning</h4>
               <div class="gradeInput">
                 <p>Betyg:</p>
                 <form action="#" method="post">
@@ -56,7 +56,7 @@
                     <option value="VG">VG</option>
                   </select>
               </div>
-              <button type="button" name="button">OK</button>
+              <button type="button" name="button" onclick="submitGrade()">OK</button>
             </form>
           </div>
             </div>
@@ -65,12 +65,8 @@
         <div class="assignmentsList">
           <h3>Obedömda inlämningar</h3>
           <ul>
-            <li><a href="#">Elin Kviberg <span>Induviduellt projekt 1 </span></a></li>
-            <li><a href="#">Elin Kviberg <span>Grupp projekt 1</span></a></li>
-            <li><a href="#">Elin Kviberg <span>Induviduellt projekt 1</span></a></li>
-            <li><a href="#">Elin Kviberg <span>Grupp projekt 1</span></a></li>
-            <li><a href="#">Elin Kviberg <span>Induviduellt projekt 1</span></a></li>
-            <li><a href="#">Elin Kviberg <span>Grupp projekt 1</span></a></li>
+            <li id="li_1"><a href="#" onclick="openAssignmentBox()">Elin Kviberg <span>Induviduellt projekt 1 </span></a></li>
+            <li id="li_2"><a href="#" onclick="openAssignmentBox()">Elin Kviberg <span>Induviduellt projekt 1</span></a></li>
           </ul>
         </div>
     </main>
@@ -82,6 +78,29 @@
   <script type="text/javascript" src="../javascript/dailyfeedback.js"></script>
   <script type="text/javascript" src="../javascript/login.js"></script>
   <script type="text/javascript" src="../javascript/togglediv.js"></script>
+
+  <script type="text/javascript">
+    function openAssignmentBox () {
+      document.getElementById("boxContainer").style.visibility = "inherit";
+      document.getElementById("boxContainer").style.height = "auto";
+    }
+    function submitGrade () {
+      alert("Betyget har nu blivit satt");
+      document.getElementById("boxContainer").style.visibility = "hidden";
+      document.getElementById("boxContainer").style.height = "0px";
+
+      if(document.getElementById("li_1").style.display != "none"){
+        document.getElementById("li_1").style.display = "none";
+      }else if(document.getElementById("li_1").style.display == "none"){
+        document.getElementById("li_2").style.display = "none";
+      }
+    }
+
+    if (performance.navigation.type == 1) {
+      document.getElementById("boxContainer").style.visibility = "hidden";
+        document.getElementById("boxContainer").style.height = "0px";
+    }
+  </script>
 </body>
 
 </html>

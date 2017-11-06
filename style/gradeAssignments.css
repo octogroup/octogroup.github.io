@@ -3,8 +3,8 @@ main{
   flex-direction: column;
 }
 
-.boxContainer{
-  max-width: 910px;
+#boxContainer{
+  width: 830px;
   border: 1px solid black;
   margin: 0 auto;
   margin-bottom: 20px;
@@ -12,6 +12,13 @@ main{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  height: auto;
+  visibility: inherit;
+
+}
+
+.assignmentContainer{
+  width: 512px;
 }
 
 .subject{
@@ -34,7 +41,7 @@ main{
 }
 
 .gradeBox{
-  width: 300px;
+  flex-grow: 1;
   border-left: 1px solid black;
 }
 
@@ -80,7 +87,7 @@ h3{
 }
 
 .assignmentsList{
-  width: 910px;
+  width: 830px;
   align-self:center;
 }
 
@@ -106,7 +113,7 @@ h3{
     justify-content: center;
     width: 100%;
   }
-  .boxContainer{
+  #boxContainer{
     width: 95%;
     justify-content: space-between;
     flex-direction: column;
@@ -121,5 +128,8 @@ h3{
   }
   .assignmentInfo{
     margin-bottom: 20px;
+  }
+  .assignmentsList{
+    width: 94%;
   }
 }
