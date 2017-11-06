@@ -5,6 +5,7 @@ function openAssignmentBox () {
 function submitGrade () {
 
   if(document.getElementById("selectGrade").value == "IG" || document.getElementById("selectGrade").value == "G" ||document.getElementById("selectGrade").value == "VG"){
+    document.getElementById("msg").style.visibility = "hidden";
     alert("Betyget har nu blivit satt");
     document.getElementById("boxContainer").style.visibility = "hidden";
     document.getElementById("boxContainer").style.height = "0px";
@@ -15,8 +16,10 @@ function submitGrade () {
       document.getElementById("li_2").style.display = "none";
     }
   }else{
+    document.getElementById("msg").style.visibility = "inherit";
     document.getElementById("msg").innerHTML = "Du måste ange ett betyg";
   }
+
 }
 
 if (performance.navigation.type == 1) {
