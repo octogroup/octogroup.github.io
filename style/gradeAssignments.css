@@ -4,7 +4,7 @@ main{
 }
 
 .boxContainer{
-  width: 910px;
+  max-width: 910px;
   border: 1px solid black;
   margin: 0 auto;
   margin-bottom: 20px;
@@ -20,6 +20,7 @@ main>div:last-child{
   height: auto;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .subject{
@@ -50,19 +51,18 @@ main>div:last-child{
   width: 100%;
 }
 .gradeContent{
+  width: 100%;
   display: flex;
   justify-content: center;
-  flex-direction: column;
 }
-
+.grade{
+  width: 177px;
+}
 .gradeInput{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 7px;
-}
-.gradeInput>P{
-  margin-right: 119px;
 }
 .gradeContent button{
   width: 40px;
@@ -77,11 +77,32 @@ main>div:last-child{
   color: #fff;
   padding: 0 16px;
   border-radius: 2px;
-  align-self: flex-end;
-  margin-right: 44px;
   margin-top: 21px;
   margin-bottom: 21px;
 }
 h3{
   align-self: center;
+}
+
+@media (max-width:906px){
+  .assignemntInfoBox{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .boxContainer{
+    width: 95%;
+    justify-content: space-between;
+  }
+  .gradeBox{
+    border-left: none;
+    border-top: 1px solid black;
+    width: 100%;
+  }
+  .fill{
+    height: 10px;
+  }
+  .assignmentInfo{
+    margin-bottom: 20px;
+  }
+
 }
