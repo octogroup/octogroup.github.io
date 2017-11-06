@@ -86,3 +86,23 @@ function explodePie (e) {
     chart4.render();
 
 }
+
+let week = 39;
+
+function incWeek () {
+  if (week < 39) {
+    week++
+  } else if (week === 39) {
+    week = 35
+  }
+  document.getElementById('weekCount').innerHTML = 'Vecka' + ' ' + week
+}
+
+function decWeek () {
+  if (week > 35) {
+    --week
+  } else if (week === 35) {
+    week = 39
+  }
+  document.getElementById('weekCount').innerHTML = 'Vecka' + ' ' + week
+}

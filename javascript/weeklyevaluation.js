@@ -169,7 +169,7 @@ function toggleExpandGraphs1 () {
 	let div1 = document.getElementById('chartContainerMiddleFe16')
 	let div2 = document.getElementById('chartContainerMiddleFe17')
 	if (div1.style.display === 'none') {
-		div1.style.display = 'inline-block'
+		div1.style.display = 'flex'
 		div2.style.display = 'none'
 	} else {
 		div1.style.display = 'none'
@@ -180,29 +180,9 @@ function toggleExpandGraphs2 () {
 	let div1 = document.getElementById('chartContainerMiddleFe16')
 	let div2 = document.getElementById('chartContainerMiddleFe17')
 	if (div2.style.display === 'none') {
-		div2.style.display = 'inline-block'
+		div2.style.display = 'flex'
 		div1.style.display = 'none'
 	} else {
 		div2.style.display = 'none'
 	}
-}
-
-let i = 39;
-
-function incWeek () {
-  if (i < 39) {
-    i++
-  } else if (i === 39) {
-    i = 35
-  }
-  document.getElementById('weekCount').innerHTML = 'Vecka' + ' ' + i
-}
-
-function decWeek () {
-  if (i > 35) {
-    --i
-  } else if (i === 35) {
-    i = 39
-  }
-  document.getElementById('weekCount').innerHTML = 'Vecka' + ' ' + i
 }

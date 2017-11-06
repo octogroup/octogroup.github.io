@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="../style/mainstyle.css">
   <link rel="stylesheet" href="../style/evaluation.css">
   <link rel="stylesheet" href="../style/colorThemeStudentpage.css">
-  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>Kursutvärdering</title>
@@ -18,7 +17,7 @@
 <body>
   <div class="content">
     <header>
-      <a href="studentpage.html">
+      <a href="teacherpage.html">
         <img src="../img/KYH-logo.png" alt="logo">
       </a>
       <nav id="navigation">
@@ -37,6 +36,8 @@
 				<button type="button" name="fe16" class="cardbutton navspace" onclick="toggleExpandGraphs1()">FE16</button>
 				<button type="button" name="fe17" class="cardbutton navspace" onclick="toggleExpandGraphs2()">FE17</button>
 			</div>
+
+			<h3 class="feedbackheader">Senaste avslutade kurser</h3>
 
       <div class="graphfcont">
         <div id="chartContainerMiddleFe16"></div>
@@ -111,6 +112,7 @@
     <footer class="footer">
       <p>&copy;2017</p>
     </footer>
+		<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <script type="text/javascript" src="../javascript/course.js"></script>
     <script type="text/javascript" src="../javascript/login.js"></script>
     <script type="text/javascript" src="../javascript/togglediv.js"></script>
