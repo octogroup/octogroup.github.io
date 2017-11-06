@@ -187,13 +187,22 @@ function toggleExpandGraphs2 () {
 	}
 }
 
-function plus () {
-	currentWeek = document.getElementById('weekCount').innerHTMl = '39'
-	prevWeek = currentWeek - 1
-	specWeek = prevWeek
-    document.getElementById('weekCount').innerHTML = 'Vecka' + ' ' + prevWeek
+let i = 39;
+
+function incWeek () {
+  if (i < 39) {
+    i++
+  } else if (i === 39) {
+    i = 35
+  }
+  document.getElementById('weekCount').innerHTML = 'Vecka' + ' ' + i
 }
 
-function minus () {
-
+function decWeek () {
+  if (i > 35) {
+    --i
+  } else if (i === 35) {
+    i = 39
+  }
+  document.getElementById('weekCount').innerHTML = 'Vecka' + ' ' + i
 }
