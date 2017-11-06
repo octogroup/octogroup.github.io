@@ -6,6 +6,7 @@ function submitGrade () {
 
   if(document.getElementById("selectGrade").value == "IG" || document.getElementById("selectGrade").value == "G" ||document.getElementById("selectGrade").value == "VG"){
     document.getElementById("msg").style.visibility = "hidden";
+    document.getElementById("selectGrade").value  = "";
     alert("Betyget har nu blivit satt");
     document.getElementById("boxContainer").style.visibility = "hidden";
     document.getElementById("boxContainer").style.height = "0px";
