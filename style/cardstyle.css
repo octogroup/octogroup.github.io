@@ -216,7 +216,7 @@
 }
 
 .expand {
-	flex-direction: column;
+	/*flex-direction: column;*/
 }
 
 .attendancetitle {

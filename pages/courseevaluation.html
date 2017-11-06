@@ -4,7 +4,7 @@
 <head>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link rel="shortcut icon" href="..img/octo.png">
+  <link rel="shortcut icon" href="../img/octo.png">
   <link rel="stylesheet" href="../style/loginstyle.css">
   <link rel="stylesheet" href="../style/mainstyle.css">
   <link rel="stylesheet" href="../style/evaluation.css">
@@ -30,10 +30,17 @@
     <div id="container">
     </div>
     <main>
+
       <img class="wbild" src="../img/courspic.png">
 
+			<div class="feedbacknav">
+				<button type="button" name="fe16" class="cardbutton navspace" onclick="toggleExpandGraphs1()">FE16</button>
+				<button type="button" name="fe17" class="cardbutton navspace" onclick="toggleExpandGraphs2()">FE17</button>
+			</div>
+
       <div class="graphfcont">
-        <div id="chartContainer5"></div>
+        <div id="chartContainerMiddleFe16"></div>
+				<div id="chartContainerMiddleFe17"></div>
       </div>
 
       <h2 class="text-center">Summering av fritext</h2>
