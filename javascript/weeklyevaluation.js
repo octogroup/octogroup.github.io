@@ -17,7 +17,7 @@ let chart1 = new CanvasJS.Chart('chartContainerLeft', {
     itemclick: toggleDataSeries
   },
   toolTip: {
-    shared: true
+    enable: false
   },
   data: [{
     name: 'Hur upplever du just nu tempot i utbildningen?',
@@ -108,7 +108,7 @@ function toggleDataSeries (e) {
 
 let chart2 = new CanvasJS.Chart('chartContainerRight', {
   title: {
-    text: 'Antal svar varje vecka'
+    text: 'Antal svar'
   },
   data: [{
     type: 'column',
@@ -163,4 +163,37 @@ function expand3 () {
   } else {
     x.style.display = 'flex'
   }
+}
+
+function toggleExpandGraphs1 () {
+	let div1 = document.getElementById('chartContainerMiddleFe16')
+	let div2 = document.getElementById('chartContainerMiddleFe17')
+	if (div1.style.display === 'none') {
+		div1.style.display = 'inline-block'
+		div2.style.display = 'none'
+	} else {
+		div1.style.display = 'none'
+	}
+}
+
+function toggleExpandGraphs2 () {
+	let div1 = document.getElementById('chartContainerMiddleFe16')
+	let div2 = document.getElementById('chartContainerMiddleFe17')
+	if (div2.style.display === 'none') {
+		div2.style.display = 'inline-block'
+		div1.style.display = 'none'
+	} else {
+		div2.style.display = 'none'
+	}
+}
+
+function plus () {
+	currentWeek = document.getElementById('weekCount').innerHTMl = '39'
+	prevWeek = currentWeek - 1
+	specWeek = prevWeek
+    document.getElementById('weekCount').innerHTML = 'Vecka' + ' ' + prevWeek
+}
+
+function minus () {
+
 }

@@ -163,3 +163,13 @@ ol > span > li {
 .weeknumber {
 	margin: 20px;
 }
+
+.canvasjs-chart-tooltip {
+	display: none !important;
+}
+
+#qty {
+	text-decoration: none;
+	font-size: 30px;
+
+}
