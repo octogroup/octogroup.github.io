@@ -49,15 +49,15 @@
               <h4>Betygssättning</h4>
               <div class="gradeInput">
                 <p>Betyg:</p>
-                <form action="#" method="post">
-                  <select>
+                  <select required id="selectGrade">
+                    <option value=""></option>
                     <option value="VG">IG</option>
                     <option value="VG">G</option>
                     <option value="VG">VG</option>
                   </select>
               </div>
               <button type="button" name="button" onclick="submitGrade()">OK</button>
-            </form>
+              <div id="msg"></div>
           </div>
             </div>
           </div>

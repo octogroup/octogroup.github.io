@@ -21,6 +21,11 @@ main{
   width: 512px;
 }
 
+#msg{
+  color: red;
+  width: 183px;
+}
+
 .subject{
   max-width: 602px;
   height: 70px;
