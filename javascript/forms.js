@@ -106,6 +106,7 @@ let assignment = function () {
   p1.innerHTML = 'Kurs:'
   i1.style.display = "inherit"
   i1.required = "true"
+  i1.setAttribute('list', 'tickmarks');
   p2.innerHTML = "Deadline:"
   i2.style.display = "inherit"
   i2.type = "date"
