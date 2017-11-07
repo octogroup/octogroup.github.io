@@ -29,6 +29,8 @@ if (performance.navigation.type == 1) {
 }
 
 function closeBox(){
+  document.getElementById("msg").style.visibility = "hidden";
+  document.getElementById("msg").value  = "";
   document.getElementById("boxContainer").style.visibility = "hidden";
   document.getElementById("boxContainer").style.height = "0px";
 }
