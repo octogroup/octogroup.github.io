@@ -52,7 +52,7 @@
 /*--------------------  card 0 närvaro  ---------------------- */
 
 
-        #card-body {
+        .card-top-att {
           display: inline-flex;
           background: #111111;
         }
@@ -64,11 +64,11 @@
 
 /*----------------  card 1  ---------------------- */
 
-      #card-top-1 {
+      .card-top-1 {
         background: #6A1B9A;
       }
 
-      #card-body-1 {
+      .card-body-1 {
         background: #8E24AA;
       }
 
@@ -78,11 +78,11 @@
 
 /*  ---------------- card 2 ------------------------ */
 
-    #card-top-2 {
+    .card-top-2 {
       background: #C51162;
     }
 
-    #card-body-2 {
+    .card-body-2 {
       background: #880E4F;
     }
 
@@ -92,11 +92,11 @@
 
 /*  ---------------- card 3 ------------------------ */
 
-    #card-top-3 {
+    .card-top-3 {
       background: #1B5E20;
     }
 
-    #card-body-3 {
+    .card-body-3 {
       background: #8BC34A;
     }
 
@@ -106,11 +106,11 @@
 
 /*  ---------------- card 4 ------------------------ */
 
-    #card-top-4 {
+    .card-top-4 {
       background: #FF8A65;
     }
 
-    #card-body-4 {
+    .card-body-4 {
       background: #FF5722;
     }
 
@@ -120,11 +120,11 @@
 
 /*  ---------------- card 5 ------------------------ */
 
-    #card-top-5 {
+    .card-top-5 {
       background: #9FA8DA;
     }
 
-    #card-body-5 {
+    .card-body-5 {
       background: #3F51B5;
     }
 
@@ -134,11 +134,11 @@
 
 /*  ---------------- card 6 ------------------------ */
 
-    #card-top-6 {
+    .card-top-6 {
       background: #90A4AE;
     }
 
-    #card-body-6 {
+    .card-body-6 {
       background: #455A64;
     }
 
@@ -147,11 +147,11 @@
 
 /*  ---------------- card 7 ------------------------ */
 
-    #card-top-7 {
+    .card-top-7 {
       background: rgb(236, 20, 200);
     }
 
-    #card-body-7 {
+    .card-body-7 {
       background: rgb(146, 19, 127);
     }
 
@@ -182,7 +182,6 @@
 .card-header {
   display: flex;
   justify-content: center;
-  background-color: #c62828;
   margin: 0 0 10px 0;
 }
 
