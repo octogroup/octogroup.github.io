@@ -24,3 +24,12 @@ function close2() {
   x[4].style.display = 'flex';
   x[5].style.display = 'none';
 }
+
+function change (element) {
+  if (element.innerHTML = "Läs mer"){
+    element.innerHTML = "Läs mindre"
+  }
+  else if (element.innerHTML = "Läs mindre"){
+    element.innerHTML = "Läs mer"
+  }
+  }
