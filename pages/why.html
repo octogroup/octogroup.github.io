@@ -3,7 +3,7 @@
 
 <head>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="shortcut icon" href="../img/octo.png">
   <link rel="stylesheet" href="../style/loginstyle.css">
   <link rel="stylesheet" href="../style/mainstyle.css">
@@ -17,12 +17,12 @@
   <div class="content">
     <header onclick="dropclose()">
       <a href="../index.html">
-            <img src="../img/octoedu.png">
+            <img src="../img/octoedu.png" alt="logo">
             <h1>Octo</h1>
           </a>
       <nav id="navigation">
         <div id="loginalign">
-          <button class="loginbutton" type="button" name="loginbutton" onclick="showLogin()">logga in</button>
+          <button class="loginbutton" type="submit" name="loginbutton" onclick="showLogin()">logga in</button>
         </div>
         <ul id="navlist">
           <li>
@@ -39,7 +39,7 @@
       </nav>
     </header>
     <div id="container">
-      <div onclick="dropopen()" id="dropbutton">Meny &#x25BE</div>
+      <div onclick="dropopen()" id="dropbutton">Meny &#x25BE;</div>
       <div id="dropdown">
         <ul id="dropdownmenu">
           <li>
@@ -58,13 +58,13 @@
     <main onclick="dropclose()">
       <!--Loginbox-starts-->
       <div id="loginbox">
-        <form name="login" action="#" class="modal-content">
+        <form name="login" action="#" class="modal-content zoom">
           <div class="inputcontainer">
             <label><b>Användarnamn</b></label>
             <img id="userimg" src="../img/octoedu.png" alt="">
-            <input id="unameinput" type="text" placeholder="Användarnamn" required>
+            <input id="unameinput" type="text" placeholder="Användarnamn" autofocus required>
             <label><b>Lösenord</b></label>
-            <img id="userimg" src="../img/lock.png" alt="">
+            <img id="pswimg" src="../img/lock.png" alt="">
             <input id="pswinput" type="password" placeholder="Lösenord" required>
           </div>
           <div class="lgcontainer">
@@ -75,11 +75,10 @@
         </form>
       </div>
       <!--Loginbox-ends-->
-      <div id="container"></div>
 
       <h1 class="about">Varför du ska välja Octo</h1>
       <div class="flex1">
-        <div class="column"><img src="../img/school.svg"/>
+        <div class="column"><img src="../img/school.svg" alt="logo"/>
 				</div>
         <div class="column">
 					<br>
@@ -97,12 +96,13 @@
       </div>
       <hr>
     </main>
+	</div>
     <footer class="footer">
+			<p class="moveparleft">octopusgruppen@gmail.com</p>
       <p>&copy;2017</p>
     </footer>
     <script type="text/javascript" src="../javascript/login.js"></script>
     <script type="text/javascript" src="../javascript/dropmenu.js"></script>
-		</div>
 </body>
 
 </html>

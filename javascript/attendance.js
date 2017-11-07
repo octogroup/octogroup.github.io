@@ -46,7 +46,7 @@ let Timer = function (opts) {
     clearInterval(self.interval)
   }
 
-  function countDown() {
+  function countDown () {
     self.seconds--
       if (self.minutes === 0 && self.seconds === 0) {
         self.stop()
@@ -74,10 +74,15 @@ myTimer.start()
 
 // ----------timer-ends------------
 
+// ---------------- Hide body & show check--------------------
 function checkAttendance() {
   let myTextField = document.getElementById("codeInput")
   if (myTextField.value === 'asdf') {
-    document.getElementById('hidebody').style.display = 'none';
+    document.getElementById('hidebody').style.height = '0px'
+		document.getElementById('att-card-img1').style.display = 'none'
+		document.getElementById('att-card-img2').style.display = 'block'
+  } else {
+    document.getElementById('errortxt').style.display = 'flex'
+    document.getElementById('codeInput').value = ''
   }
 }
-height 0

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="shortcut icon" href="../img/octo.png">
+  <link rel="stylesheet" href="../style/loginstyle.css">
+  <link rel="stylesheet" href="../style/mainstyle.css">
+  <link rel="stylesheet" href="../style/evaluation.css">
+  <link rel="stylesheet" href="../style/colorThemeStudentpage.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Dagliga utvärderingar</title>
+</head>
+
+<body>
+  <div class="content">
+    <header>
+      <a href="teacherpage.html">
+        <img src="../img/KYH-logo.png" alt="logo">
+      </a>
+      <nav id="navigation">
+        <div id="loginalign">
+          <button class="loginbutton" type="button" name="logout" onclick="logOut()">logga ut</button>
+        </div>
+      </nav>
+    </header>
+    <main>
+			<img class="wbild" src="../img/dailyfeedbackimg.png" alt="dailyfeedbackimg">
+
+			<div class="feedbacknav">
+				<button type="button" name="fe16" class="cardbutton navspace">FE16</button>
+				<button type="button" name="fe17" class="cardbutton navspace">FE17</button>
+			</div>
+
+			<div class="feedbacknav">
+				<img onclick="decWeek()" src="../img/keyboard-left-arrow-button.png" class="arrowsize" alt="">
+				<h3 class="weeknumber" id="weekCount">Vecka 39</h3>
+				<img onclick="incWeek()" src="../img/keyboard-right-arrow-button.png" class="arrowsize" alt="">
+			</div>
+
+			<div class="graphfcont">
+        <div id="chartContainerLeft"></div>
+				<div id="chartContainerRight"></div>
+			</div>
+
+    </main>
+  </div>
+  <footer class="footer">
+    <p>&copy;2017</p>
+  </footer>
+	<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <script type="text/javascript" src="../javascript/dailyevaluation.js"></script>
+  <script type="text/javascript" src="../javascript/login.js"></script>
+
+</body>
+</html>

@@ -22,8 +22,13 @@ let sB = document.getElementById('submit')
 let cB = document.getElementById('close')
 let form = document.getElementById('form')
 let formc = document.getElementsByClassName('formcontent')[0]
-let border = document.getElementById('transborder')
 let formimg = document.getElementById('form-img-1')
+
+// Set height to auto and add more height to textfields
+function autoGrow (element) {
+  element.style.height = (element.scrollHeight) + 2 + 'px'
+  formc.style.height = 'auto'
+}
 
 // Reset function for the close button and for use on the first line of each form function
 let reset = function () {
@@ -32,7 +37,8 @@ let reset = function () {
     this['t' + i].style.display = 'none'
     this['t' + i].style.height = 'auto'
     this['t' + i].style.width = 'auto'
-    this['t' + i].innerHTML = ''
+    this['t' + i].value = ''
+    this['t' + i].rows = '1'
     this['t' + i].required = false
     this['i' + i].style.display = 'none'
     this['i' + i].style.type = 'text'
@@ -40,7 +46,6 @@ let reset = function () {
     sB.style.display = 'none'
     cB.style.display = 'none'
     form.style.display = 'none'
-    border.style.width = '0'
     formc.style.height = '0'
     formimg.style.display = 'none'
   }
@@ -70,13 +75,12 @@ let feedback = function () {
   t2.style.display = 'inherit'
   t2.required = true
   sB.style.display = 'inherit'
-  border.style.width = '100%'
 }
 
 let news = function () {
   reset()
   formimg.style.display = 'inherit'
-  formc.style.height = '350px'
+  formc.style.height = '325px'
   form.style.display = 'inherit'
   cB.style.display = 'inherit'
   p1.innerHTML = 'Rubrik:'
@@ -86,7 +90,29 @@ let news = function () {
   t2.style.display = 'inherit'
   t2.required = true
   sB.style.display = 'inherit'
-  border.style.width = '100%'
+}
+
+let assignment = function () {
+  reset()
+  formimg.style.display = 'inherit'
+  formc.style.height = '500px'
+  form.style.display = 'inherit'
+  cB.style.display = 'inherit'
+  sB.style.display = 'inherit'
+  p1.innerHTML = 'Kurs:'
+  i1.style.display = "inherit"
+  i1.required = "true"
+  p2.innerHTML = "Deadline:"
+  i2.style.display = "inherit"
+  i2.type = "date"
+  i2.list = ""
+  i2.required = "true"
+  p3.innerHTML = "Rubrik:"
+  t3.style.display = "inherit"
+  t3.required = "true"
+  p4.innerHTML = "Instruktioner:"
+  t4.style.display = "inherit"
+  t4.required = "true"
 }
 
 let weekeval = function () {
@@ -106,5 +132,4 @@ let weekeval = function () {
   p4.innerHTML = 'Förslag på förbättringar:'
   t4.style.display = 'inherit'
   sB.style.display = 'inherit'
-  border.style.width = '100%'
 }

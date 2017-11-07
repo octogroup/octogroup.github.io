@@ -1,0 +1,170 @@
+.wbild {
+  max-height: 500px;
+  max-width: 100%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.graphfcont {
+	background-color: white;
+  display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	box-shadow: 0px 2px 2px #888888;
+}
+
+#chartContainerLeft {
+  display: flex;
+  width: 45%;
+  height: 400px;
+	min-width: 350px;
+	margin: 30px 0 30px 0;
+}
+
+#chartContainerRight {
+	display: flex;
+  width: 45%;
+  height: 400px;
+	min-width: 350px;
+	margin: 30px 0 30px 0;
+}
+
+#chartContainerMiddleFe17 {
+  width: 75%;
+  height: 400px;
+	min-width: 350px;
+	margin: 30px 0 30px 0;
+}
+
+#chartContainerMiddleFe16 {
+  width: 75%;
+  height: 400px;
+	min-width: 350px;
+	margin: 30px 0 30px 0;
+}
+
+/*text-align: BORT 4 & 5*/
+/*#chartContainer4 {
+  width: 45%;
+  height: 400px;
+  display: flex;
+	min-width: 350px;
+	margin: 30px 0 30px 0;
+}
+
+#chartContainer5 {
+  width: 90%;
+  height: 400px;
+  display: flex;
+	min-width: 350px;
+	margin: 30px 0 30px 0;
+}*/
+
+.answerNav {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.showAnswer {
+  display: flex;
+	justify-content: space-around;
+  margin: 20px;
+	flex-wrap: wrap;
+}
+
+#q5 {
+  display: none;
+	flex-direction: column;
+}
+
+#q6 {
+  display: none;
+	flex-direction: column;
+}
+
+#q7 {
+  display: none;
+	flex-direction: column;
+}
+
+div.scroll {
+  background-color: white;
+  width: 500px;
+  height: 400px;
+  overflow: scroll;
+  align-self: center;
+  margin: 0 auto;
+}
+
+.weekAnswerList {
+	padding-left: 20px;
+}
+
+.canvasjs-chart-credit {
+	display: none;
+}
+
+.answerSection {
+	display: flex;
+	flex-direction: column;
+	width: 350px;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+
+.answerSection > ol > li {
+	border-bottom: 1px solid black;
+	padding: 10px;
+}
+
+ol > span > li {
+	border-bottom: 1px solid black;
+	padding: 10px;
+}
+
+.bottomSection {
+	margin-top: 20px;
+}
+
+.feedbacknav {
+	max-width: 350px;
+	display: flex;
+	margin: 50px auto 50px;
+	justify-content: center;
+
+}
+
+.navspace {
+	margin: 10px;
+	padding: 10px 30px 10px 30px;
+}
+
+
+.feedbackcenter {
+	display: flex;
+	max-width: 650px;
+	margin: 0 auto;
+	justify-content: center;
+}
+
+.feedbackheader {
+	display: flex;
+	margin: 50px auto 50px;
+	justify-content: center;
+}
+
+.arrowsize {
+	height: 45px;
+	width: auto;
+	margin-top: 20px;
+}
+
+.weeknumber {
+	margin: 20px;
+}
+
+.canvasjs-chart-tooltip {
+	display: none !important;
+}

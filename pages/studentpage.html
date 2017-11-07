@@ -3,7 +3,7 @@
 
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link rel="shortcut icon" href="../img/octo.png">
 	<link rel="stylesheet" href="../style/mainstyle.css">
 	<link rel="stylesheet" href="../style/colorThemeStudentpage.css">
@@ -36,11 +36,17 @@
 					<div class="cardcontainer">
 						<div id="card-body">
 							<h3 class="attendancetitle">Närvaro</h3>
-							<img src="../img/warning.svg" alt="" class="card-img">
+							<img src="../img/warning.svg" alt="warning" id="att-card-img1">
+							<img src="../img/check.svg" alt="check" id="att-card-img2">
 						</div>
 						<div id="hidebody">
 							<div class="card-body">
-								<p>Närvaro kod: asdf <span id="timer">15 : 00</span></p>
+								<div class="countdown">
+  								<div id="timer">15 : 00</div>
+  								<svg>
+    								<circle r="35" cx="50" cy="50"></circle>
+  								</svg>
+								</div>
 							</div>
 							<div id="att-bottom">
 								<input id="codeInput" type="text" placeholder="Skriv in koden">
@@ -48,7 +54,7 @@
 								<span class="bar"></span>
 								<p id="errortxt">Koden är fel. Vänligen försök igen.</p>
 								<br>
-								<button type="button" name="button" class="cardbutton" id="attsbutton" onclick="codePromp()">Skicka</button>
+								<button type="button" name="button" class="cardbutton" id="attsbutton" onclick="checkAttendance()">Skicka</button>
 							</div>
 							<div id="attOnSend" class="boxstyle">
 								<div class="dfbform">
@@ -72,7 +78,7 @@
 					<div class="card">
 						<div id="card-top-1" class="cardcontainer">
 							<div id="card-body-1" class="card-header">
-								<img src="../img/notebook.svg" class="card-img">
+								<img src="../img/notebook.svg" alt="notebook" class="card-img">
 							</div>
 							<div id="card-container-1" class="card-body">
 
@@ -84,7 +90,7 @@
 									<li>
 										<a class="nav-link" href="assignments.html">JavaScript</a>
 									</li>
-									<div class="expand" id="expand1" style="display: none;">
+									<div class="expand" style="display: none;">
 										<li>
 											<a class="nav-link" href="assignments.html">HTML</a>
 										</li>
@@ -95,7 +101,7 @@
 								</ul>
 							</div>
 							<div class="card-bottom">
-								<button type="button" name="button" class="cardbutton" onclick="toggleExpand('expand1')">Läs Mer</button>
+								<button type="button" name="button" class="cardbutton" onclick="toggleExpand(this)">Läs Mer</button>
 							</div>
 						</div>
 					</div>
@@ -103,21 +109,21 @@
 					<div class="card">
 						<div id="card-top-4" class="cardcontainer">
 							<div id="card-body-4" class="card-header">
-								<img src="../img/service.svg" class="card-img">
+								<img src="../img/service.svg" alt="service" class="card-img">
 							</div>
 							<div id="card-container-4" class="card-body">
 								<h3 class="card-heading">Dagens feedback</h3>
-								<form name="dailyFeedback" id="dailyFeedback_form" action="" method="POST">
+								<form name="dailyFeedback" id="dailyFeedback_form" action="#" method="POST">
 									<p id="smileyfaces">
-										<label for="ledsen" onmouseover="hoverSadSmiley()" onmouseout="checkSmileyStatus()" onclick="checkSmileyStatus()">
+										<label for="ledsen" onclick="submitForm(this.id)" onmouseover="makeYellow(this.id)" onmouseout="makeGrey(this.id)" id="ledsenLabel">
                       <img src="../img/sadDis.png" id="ledsenSmiley">
                       <input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="ledsen" value="ledsen">
                     </label>
-										<label for="neutral" onmouseover="hoverNeutralSmiley()" onmouseout="checkSmileyStatus()" onclick="checkSmileyStatus()">
+										<label for="neutral" onclick="submitForm(this.id)" onmouseover="makeYellow(this.id)" onmouseout="makeGrey(this.id)" id="neutralLabel">
                       <img src="../img/confusedDis.png" id="neutralSmiley">
                       <input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="neutral" value="neutral">
                     </label>
-										<label for="glad" onmouseover="hoverHappySmiley()" onmouseout="checkSmileyStatus()" onclick="checkSmileyStatus()">
+										<label for="glad" onclick="submitForm(this.id)" onmouseover="makeYellow(this.id)" onmouseout="makeGrey(this.id)" id="gladLabel">
                       <img src="../img/happyyDis.png" id="happySmiley">
                       <input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="glad" value="glad">
                     </label>
@@ -130,29 +136,41 @@
 					<div class="card">
 						<div id="card-top-7" class="cardcontainer">
 							<div id="card-body-7" class="card-header">
-								<img class="card-img" src="../img/calendar.svg" alt="">
+								<img class="card-img" src="../img/calendar.svg" alt="calendar">
 							</div>
 							<div class="card-body">
-								<h3 class="card-heading">Examinationer</h3>
-								<ul class="card-list">
+                <h3 class="card-heading">Examinationer</h3>
+                <ul class="card-list">
 									<li>
 										<a class="nav-link" href="assignments.html">22/10 Bootstrap: Inlämmning 1</a>
 									</li>
 									<li>
 										<a class="nav-link" href="assignments.html">25/10 Angular: Tenta</a>
 									</li>
-									<div class="expand" id="expand3" style="display: none;">
 										<li>
 											<a class="nav-link" href="assignments.html">01/11 React: Inlämning 3</a>
 										</li>
 										<li>
 											<a class="nav-link" href="assignments.html">02/11 Vue.js: Hemtenta</a>
-										</li>
+                    </li>
+                  </ul>
+                    <div class="expand" style="display: none;">
+                        <ul class="card-list">
+                      <form>
+                        <p class="card-heading">Kurs:</p>
+                        <select id="assignments">
+                          <option value="arbetsmetodik">Arbetsmetodik</option>
+                          <option value="javascript">JavaScript</option>
+                          <option value="html">HTML</option>
+                          <option value="css">CSS</option>
+                        </select>
+                      </form>
+                      <input type="file">
+                      </ul>
 									</div>
-								</ul>
 							</div>
 							<div class="card-bottom">
-								<button type="button" name="button" class="cardbutton" onclick="toggleExpand('expand3')">Läs Mer</button>
+								<button type="button" name="button" class="cardbutton" onclick="toggleExpand(this)">Lämna in</button>
 							</div>
 						</div>
 					</div>
@@ -163,7 +181,7 @@
 					<div class="card">
 						<div id="card-top-2" class="cardcontainer">
 							<div id="card-body-2" class="card-header">
-								<img src="../img/calendar.svg" class="card-img">
+								<img src="../img/calendar.svg" alt="calendar" class="card-img">
 							</div>
 							<div id="card-container-2" class="card-body">
 								<h3 class="card-heading">Kommande kurser</h3>
@@ -174,7 +192,7 @@
 									<li>
 										<a class="nav-link" href="assignments.html">Angular</a>
 									</li>
-									<div class="expand" id="expand2" style="display: none;">
+									<div class="expand" style="display: none;">
 										<li>
 											<a class="nav-link" href="assignments.html">React</a>
 										</li>
@@ -185,7 +203,7 @@
 								</ul>
 							</div>
 							<div class="card-bottom">
-								<button type="button" name="button" class="cardbutton" onclick="toggleExpand('expand2')">Läs Mer</button>
+								<button type="button" name="button" class="cardbutton" onclick="toggleExpand(this)">Läs Mer</button>
 							</div>
 						</div>
 					</div>
@@ -193,9 +211,9 @@
 					<div class="card">
 						<div id="card-top-5" class="cardcontainer">
 							<div id="card-body-5" class="card-header">
-								<img src="../img/mail.svg" class="card-img">
+								<img src="../img/mail.svg" alt="mail" class="card-img">
 							</div>
-							<div id="card-container-5" class="card-body">
+							<div class="card-body">
 								<h3 class="card-heading">Veckorapport</h3>
 							</div>
 							<div class="card-bottom">
@@ -204,7 +222,7 @@
                 </a>
 							</div>
 						</div>
-					</div>
+          </div>
 				</section>
 				<!-- Third Card Column -->
 				<section class="thirdcardcolumn">
@@ -212,7 +230,7 @@
 					<div class="card">
 						<div id="card-top-3" class="cardcontainer">
 							<div id="card-body-3" class="card-header">
-								<img src="../img/trophy.svg" class="card-img">
+								<img src="../img/trophy.svg" alt="trophy" class="card-img">
 							</div>
 							<div id="card-container-3" class="card-body">
 								<h3 class="card-heading">Avslutade kurser</h3>
@@ -228,11 +246,11 @@
 					<div class="card">
 						<div id="card-top-6" class="cardcontainer">
 							<div id="card-body-6" class="card-header">
-								<img src="../img/newspaper.svg" class="card-img">
+								<img src="../img/newspaper.svg" alt="newspaper" class="card-img">
 							</div>
 							<div id="card-container-5" class="card-body">
 								<h3 class="card-heading">Student nyheter</h3>
-								<h4 class="card-heading">VÄLKOMMEN TILL NYA WEBBPLATSEN</h4>
+								<h4 class="card6-heading">VÄLKOMMEN TILL NYA WEBBPLATSEN</h4>
 								<p class="card-heading">Nu är den äntligen här. Vår nya webb där du mycket enklare kan se vilka utbildningar vi har och hitta rätt utbildning för dig! Du vet väl att vi har ansökningen till utbildningarna öppen ändra fram till 5 juni i år?
 								</p>
 							</div>
@@ -248,13 +266,12 @@
 		</main>
 	</div>
 	<footer class="footer">
-		<p2>octopusgruppen@gmail.com</p2>
 		<p>&copy;2017</p>
 	</footer>
 	<script type="text/javascript" src="../javascript/attendance.js"></script>
 	<script type="text/javascript" src="../javascript/dailyfeedback.js"></script>
 	<script type="text/javascript" src="../javascript/login.js"></script>
-	<script type="text/javascript" src="../javascript/togglediv.js"></script>
+  <script type="text/javascript" src="../javascript/togglediv.js"></script>
 </body>
 
 </html>

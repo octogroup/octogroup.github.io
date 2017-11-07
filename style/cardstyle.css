@@ -34,6 +34,12 @@
   color: #fff;
 }
 
+.card6-heading {
+  color: #fff;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
 .nav-link {
   color: #fff;
 }
@@ -208,22 +214,39 @@
 }
 
 .expand {
-	flex-direction: column;
-}
-
-#expand1 #expand2 #expand3 {
-  display: none;
+	/*flex-direction: column;*/
 }
 
 .attendancetitle {
+	flex-grow: 1;
 	color: #fff;
 	text-align: center;
 	margin: 10px;
-	padding: 15px;
+	margin: 35px 0 10px 0;
+}
+
+#att-card-img1 {
+	flex-grow: 1;
+  width: 100px;
+  height: 100px;
+	display: block;
+}
+
+#att-card-img2 {
+	flex-grow: 1;
+  width: 100px;
+  height: 100px;
+	display: none;
 }
 
 #hidebody {
 	display: block;
+	position: relative;
+	max-height: 350px;
+	height: 236px;
+	overflow: hidden;
+  transition: height 1s;
+  transition-delay: 0.6s;
 }
 
 #att-box {
@@ -244,12 +267,64 @@
   align-items: center;
 }
 
-#timer {
-	float: right;
+#attsbutton {
+  position: absolute;
+  top: 195px;
+  right: 38%;
 }
 
+/*-----------------------------Countdown--------------------------------*/
+
+#timer {
+	font-weight: bold;
+	position: absolute;
+	top: 10px;
+	width: 100%;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.countdown {
+  position: relative;
+  margin: auto;
+  margin-top: 10px;
+  height: 50px;
+  width: 100px;
+  text-align: center;
+}
+
+.countdown > svg {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  transform: rotateY(-180deg) rotateZ(-90deg);
+}
+
+.countdown > svg > circle {
+  stroke-dasharray: 220px;
+  stroke-dashoffset: 0px;
+  /*stroke-linecap: round;*/
+  stroke-width: 10px;
+  stroke: #ff5f52;
+  fill: transparent;
+  animation: countdown 900s linear;
+}
+
+@keyframes countdown {
+  from {
+    stroke-dashoffset: 0px;
+  }
+  to {
+    stroke-dashoffset: 220px;
+  }
+}
+
+/*-------------------------Countdown-ends-------------------------------*/
+
 #codeInput {
-  margin-bottom: 10px;
+  width: 86%;
 }
 
 #attOnSend {
@@ -332,14 +407,14 @@
 
 /* basic stylings ------------------------------------------ */
 
-.container {
+/*.container {
   font-family: 'Roboto';
   width: 600px;
   margin: 30px auto 0;
   display: block;
   background: #FFF;
   padding: 10px 50px 50px;
-}
+}*/
 
 h2 {
   text-align: center;
@@ -521,3 +596,65 @@ input[type="radio"]:after {
 	margin-left: 40px;
 }
 /*----*/
+#assign {
+  list-style-type: none;
+}
+#assign>li {
+  display: inline;
+}
+
+#assignments {
+  margin: 10px 0;
+  padding: 5px;
+  background-color: #fafafa;
+  border: none;
+  border-radius: 2px;
+  width: 255px;
+  border-radius: 2px;
+  font-size: 14px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+  /* text-transform: uppercase; */
+}
+
+/* .inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+  overflow: hidden;
+  text-align: right;
+	position: absolute;
+  z-index: -1;
+  color: white;
+}
+
+.inputfile + label {
+  cursor: pointer;
+  margin-top: 100px;
+  font-family: 'Roboto';
+  font-size: 1.25em;
+  font-weight: 500;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 2px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+  text-transform: uppercase;
+  background-color: #ff5f52;
+}
+
+.inputfile + label:visited {
+  color: #fff;
+} */
+
+::-webkit-file-upload-button {
+  cursor: pointer;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 2px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+  text-transform: uppercase;
+  background-color: #ff5f52;
+  border: none;
+}
