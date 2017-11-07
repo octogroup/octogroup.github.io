@@ -19,6 +19,8 @@ function hideAttBox() {
   document.getElementById('att-box').style.display = 'none';
 }
 
+// behövs båda?
+
 document.getElementById('codeInput').addEventListener('keyup', function (event) {
   event.preventDefault()
   if (event.keyCode == 13) {
