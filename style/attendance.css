@@ -1,0 +1,72 @@
+.att-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.attendance {
+  display: flex;
+  justify-content: space-around;
+}
+
+.att-header {
+  background: black;
+  width: 100%;
+  padding: 15px 0;
+}
+
+.att-header a {
+  color: white;
+  padding: 0 15px;
+  font-size: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: 'Roboto';
+}
+
+.att-header a:hover {
+  border-bottom: solid 3px red;
+}
+
+.att-header > a:first-child {
+  border-bottom: solid 3px red;
+}
+
+.att-header > a:last-child {
+  color: grey;
+}
+
+.att-header > a:last-child:hover {
+  color: white;
+}
+
+.att-row>div {
+  padding: 15px 0;
+  border-left: solid 1px grey;
+  border-bottom: solid 1px grey;
+  text-align: center;
+  font-size: 18px;
+}
+.att-row>div:nth-child(odd) {
+  background-color: #e8e8e8;
+}
+
+.att-row {
+  width: 100%;
+}
+.attendance>.att-row>.att-footer {
+  align-content: flex-start;
+  background: black;
+  height: 30px;
+  width: 100%;
+  color: white;
+}
+
+.att-names>div {
+  text-align: left;
+}
+
+@media (max-width: 600px) {
+  .att-row>div {
+    font-size: 12px;
+  }
+}
