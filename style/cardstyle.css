@@ -44,10 +44,10 @@
   color: #fff;
 }
 
-.nav-link:hover {
+/*.nav-link:hover {
   padding: 4px;
   transition-duration: 0.8s;
-}
+}*/
 
 /*--------------------  card 0 närvaro  ---------------------- */
 
@@ -214,7 +214,7 @@
 }
 
 .expand {
-	/*flex-direction: column;*/
+	flex-direction: column;
 }
 
 .attendancetitle {
