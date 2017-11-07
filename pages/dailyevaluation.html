@@ -8,9 +8,7 @@
   <link rel="stylesheet" href="../style/loginstyle.css">
   <link rel="stylesheet" href="../style/mainstyle.css">
   <link rel="stylesheet" href="../style/evaluation.css">
-	<link rel="stylesheet" href="../style/weekform.css">
   <link rel="stylesheet" href="../style/colorThemeStudentpage.css">
-	<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>Dagliga utvärderingar</title>
@@ -31,19 +29,20 @@
     <main>
 			<img class="wbild" src="../img/dailyfeedbackimg.png" alt="dailyfeedbackimg">
 
-			<div class="graphfcont">
-				<div id="chartContainer3"></div>
-				<!-- <div id="chartContainer4"></div> -->
-			</div>
-			<div class="aroundrange feedbackcenter">
-				<img src="../img/keyboard-left-arrow-button.png" class="arrowsize" alt="leftarrow">
-				<input class="range" type="range" min="1" max="5" step="1" list="tickmarks" name="answer1">
-				<img src="../img/keyboard-right-arrow-button.png" class="arrowsize" alt="rightarrow">
-			</div>
-
 			<div class="feedbacknav">
 				<button type="button" name="fe16" class="cardbutton navspace">FE16</button>
 				<button type="button" name="fe17" class="cardbutton navspace">FE17</button>
+			</div>
+
+			<div class="feedbacknav">
+				<img onclick="decWeek()" src="../img/keyboard-left-arrow-button.png" class="arrowsize" alt="">
+				<h3 class="weeknumber" id="weekCount">Vecka 39</h3>
+				<img onclick="incWeek()" src="../img/keyboard-right-arrow-button.png" class="arrowsize" alt="">
+			</div>
+
+			<div class="graphfcont">
+        <div id="chartContainerLeft"></div>
+				<div id="chartContainerRight"></div>
 			</div>
 
     </main>
@@ -52,7 +51,6 @@
     <p>&copy;2017</p>
   </footer>
 	<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-
   <script type="text/javascript" src="../javascript/dailyevaluation.js"></script>
   <script type="text/javascript" src="../javascript/login.js"></script>
 

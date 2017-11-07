@@ -18,7 +18,7 @@ let button1 = document.getElementById('buttonSwap1')
 }, false)
 
 let button2 = document.getElementById('buttonSwap2')
-	button2.addEventListener('click', function() {
+	button2.addEventListener('click', function () {
   if (button2.getAttribute('data-text-swap') == button2.innerHTML) {
     button2.innerHTML = button2.getAttribute('data-text-original')
   } else {
@@ -28,7 +28,7 @@ let button2 = document.getElementById('buttonSwap2')
 }, false)
 
 let button3 = document.getElementById('buttonSwap3')
-	button3.addEventListener('click', function() {
+	button3.addEventListener('click', function () {
   if (button3.getAttribute('data-text-swap') == button3.innerHTML) {
     button3.innerHTML = button3.getAttribute('data-text-original')
   } else {
@@ -36,3 +36,23 @@ let button3 = document.getElementById('buttonSwap3')
     button3.innerHTML = button3.getAttribute('data-text-swap')
   }
 }, false)
+
+let week = 39;
+
+function incWeek () {
+  if (week < 39) {
+    week++
+  } else if (week === 39) {
+    week = 35
+  }
+  document.getElementById('weekCount').innerHTML = 'Vecka' + ' ' + week
+}
+
+function decWeek () {
+  if (week > 35) {
+    --week
+  } else if (week === 35) {
+    week = 39
+  }
+  document.getElementById('weekCount').innerHTML = 'Vecka' + ' ' + week
+}

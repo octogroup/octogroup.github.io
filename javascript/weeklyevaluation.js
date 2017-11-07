@@ -1,6 +1,6 @@
 // Weeklyevaluation-graphfs
 
-let chart1 = new CanvasJS.Chart('chartContainer1', {
+let chart1 = new CanvasJS.Chart('chartContainerLeft', {
   animationEnabled: true,
   title: {
     text: 'Veckoutvärdering'
@@ -17,7 +17,7 @@ let chart1 = new CanvasJS.Chart('chartContainer1', {
     itemclick: toggleDataSeries
   },
   toolTip: {
-    shared: true
+    enable: false
   },
   data: [{
     name: 'Hur upplever du just nu tempot i utbildningen?',
@@ -106,9 +106,9 @@ function toggleDataSeries (e) {
   chart1.render()
 }
 
-let chart2 = new CanvasJS.Chart('chartContainer2', {
+let chart2 = new CanvasJS.Chart('chartContainerRight', {
   title: {
-    text: 'Antal svar varje vecka'
+    text: 'Antal svar'
   },
   data: [{
     type: 'column',
@@ -163,4 +163,26 @@ function expand3 () {
   } else {
     x.style.display = 'flex'
   }
+}
+
+function toggleExpandGraphs1 () {
+	let div1 = document.getElementById('chartContainerMiddleFe16')
+	let div2 = document.getElementById('chartContainerMiddleFe17')
+	if (div1.style.display === 'none') {
+		div1.style.display = 'flex'
+		div2.style.display = 'none'
+	} else {
+		div1.style.display = 'none'
+	}
+}
+
+function toggleExpandGraphs2 () {
+	let div1 = document.getElementById('chartContainerMiddleFe16')
+	let div2 = document.getElementById('chartContainerMiddleFe17')
+	if (div2.style.display === 'none') {
+		div2.style.display = 'flex'
+		div1.style.display = 'none'
+	} else {
+		div2.style.display = 'none'
+	}
 }

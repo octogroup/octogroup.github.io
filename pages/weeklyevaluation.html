@@ -32,15 +32,23 @@
     <main>
       <img class="wbild" src="../img/weeklypic.png" alt="weeklyevaluation">
 
+			<div class="feedbacknav">
+				<button type="button" name="fe16" class="cardbutton navspace">FE16</button>
+				<button type="button" name="fe17" class="cardbutton navspace">FE17</button>
+			</div>
+
+			<div class="feedbacknav">
+				<img onclick="decWeek()" src="../img/keyboard-left-arrow-button.png" class="arrowsize" alt="">
+				<h3 class="weeknumber" id="weekCount">Vecka 39</h3>
+				<img onclick="incWeek()" src="../img/keyboard-right-arrow-button.png" class="arrowsize" alt="">
+			</div>
+
       <div class="graphfcont">
-        <div id="chartContainer1"></div>
-        <div id="chartContainer2"></div>
+        <div id="chartContainerLeft"></div>
+        <div id="chartContainerRight"></div>
       </div>
-			<hr class="margintop">
 
       <h2 class="text-center">Summering av fritext</h2>
-      <div class="answerNav">
-      </div>
       <div class="showAnswer">
 				<section class="answerSection">
 					<h3 class="marginbottom">Fråga 5</h3>
