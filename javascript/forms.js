@@ -80,16 +80,20 @@ let feedback = function () {
 let news = function () {
   reset()
   formimg.style.display = 'inherit'
-  formc.style.height = '325px'
+  formc.style.height = '417px'
   form.style.display = 'inherit'
   cB.style.display = 'inherit'
-  p1.innerHTML = 'Rubrik:'
-  t1.style.display = 'inherit'
-  t1.required = true
-  p2.innerHTML = 'Nyhets innehåll:'
-  t2.style.display = 'inherit'
-  t2.required = true
   sB.style.display = 'inherit'
+  p1.innerHTML = 'Visa nyheten för:'
+  i1.style.display = "inherit"
+  i1.setAttribute('list', 'datalist2');
+  i1.required = "true"
+  p2.innerHTML = "Rubrik:"
+  t2.style.display = "inherit"
+  t2.required = "true"
+  p3.innerHTML = "Nyhetens innehåll:"
+  t3.style.display = "inherit"
+  t3.required = "true"
 }
 
 let assignment = function () {
