@@ -80,7 +80,7 @@ let feedback = function () {
 let news = function () {
   reset()
   formimg.style.display = 'inherit'
-  formc.style.height = '417px'
+  formc.style.height = '416px'
   form.style.display = 'inherit'
   cB.style.display = 'inherit'
   sB.style.display = 'inherit'
@@ -99,7 +99,7 @@ let news = function () {
 let assignment = function () {
   reset()
   formimg.style.display = 'inherit'
-  formc.style.height = '488px'
+  formc.style.height = '487px'
   form.style.display = 'inherit'
   cB.style.display = 'inherit'
   sB.style.display = 'inherit'
