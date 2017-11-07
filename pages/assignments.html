@@ -10,9 +10,10 @@
   <link rel="stylesheet" href="../style/dailyfeedback.css">
   <link rel="stylesheet" href="../style/loginstyle.css">
   <link rel="stylesheet" href="../style/cardstyle.css">
+  <link rel="stylesheet" href="../style/assignments.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
-  <title>Mina uppgifter</title>
+  <title>Frontend Utveckling</title>
 </head>
 
 <body>
@@ -31,35 +32,35 @@
     </div>
     <!-- Main-content -->
     <main>
+      <h2>Frontend Utveckling</h2>
       <div class="box">
         <!-- First Column -->
         <section class="firstcardcolumn">
           <div class="card">
-            <div id="card-top-1" class="cardcontainer">
-              <div id="card-body-1" class="card-header">
-                <img src="../img/notebook.svg" class="card-img">
+            <div id="card-top-2" class="cardcontainer">
+              <div id="card-body-2" class="card-header">
+                <h3 class="title">Kommande examinationer</h3>
+                <img src="../img/calendar.svg" class="card-img">
               </div>
-              <div class="card-body card-img">
-                <h3 class="card-heading">Pågående kurser</h3>
+              <div class="hiddenCard">
                 <ul class="card-list">
                   <li>
-                    <a class="nav-link" href="assignments.html">Arbetsmetodik</a>
+                    <a class="nav-link" href="assignments.html">22/10 - Javascript: Inlämning 3</a>
                   </li>
                   <li>
-                    <a class="nav-link" href="assignments.html">JavaScript</a>
+                    <a class="nav-link" href="assignments.html">25/10 - HTML: Tenta</a>
                   </li>
-                  <div class="expand" id="expand1" style="display: none;">
-                    <li>
-                      <a class="nav-link" href="assignments.html">HTML</a>
-                    </li>
-                    <li>
-                      <a class="nav-link" href="assignments.html">CSS</a>
-                    </li>
-                  </div>
+                  <li>
+                    <a class="nav-link" href="assignments.html">01/11 - Javascript: Inlämning 4</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="assignments.html">04/11 - HTML & CSS: Hemtenta</a>
+                  </li>
                 </ul>
               </div>
               <div class="card-bottom">
-                <button type="button" name="button" class="cardbutton" onclick="toggleExpand('expand1')">Läs Mer</button>
+                <button type="button" name="button" class="cardbutton" onclick="open1()">Läs Mer</button>
+                <button type="button" name="button" class="hiddenBut" onclick="close1()">Läs Mindre</button>
               </div>
             </div>
           </div>
@@ -67,31 +68,27 @@
         <!-- Second Column -->
         <section class="secondcardcolumn">
           <div class="card">
-            <div id="card-top-2" class="cardcontainer">
-              <div id="card-body-2" class="card-header">
-                <img src="../img/calendar.svg" class="card-img">
+            <div id="card-top-3" class="cardcontainer">
+              <div id="card-body-3" class="card-header">
+                <h3 class="title">Avslutade Examinationer</h3>
+                <img src="../img/trophy.svg" class="card-img">
               </div>
-              <div class="hiddenCard card-body">
-                <h3 class="card-heading">Kommande kurser</h3>
+              <div class="hiddenCard">
                 <ul class="card-list">
                   <li>
-                    <a class="nav-link" href="assignments.html">Bootstrap</a>
+                    <a class="nav-link" href="assignments.html">Javascript: Inlämning 1 - VG</a>
                   </li>
                   <li>
-                    <a class="nav-link" href="assignments.html">Angular</a>
+                    <a class="nav-link" href="assignments.html">Javascript: Inlämning 2 - VG</a>
                   </li>
-                  <div class="expand" id="expand2" style="display: none;">
-                    <li>
-                      <a class="nav-link" href="assignments.html">React</a>
-                    </li>
-                    <li>
-                      <a class="nav-link" href="assignments.html">Vue.js</a>
-                    </li>
-                  </div>
+                  <li>
+                    <a class="nav-link" href="assignments.html">HTML: Inlämning 1 - G</a>
+                  </li>
                 </ul>
               </div>
               <div class="card-bottom">
-                <button type="button" name="button" class="cardbutton" onclick="toggleExpand('expand2')">Läs Mer</button>
+                <button type="button" name="button" class="cardbutton" onclick="open2()">Läs Mer</button>
+                <button type="button" name="button" class="hiddenBut" onclick="close2()">Läs Mindre</button>
               </div>
             </div>
           </div>
@@ -99,31 +96,15 @@
         <!-- Third Column -->
         <section class="thirdcardcolumn">
           <div class="card">
-            <div id="card-top-3" class="cardcontainer">
-              <div id="card-body-3" class="card-header">
-                <img src="../img/calendar.svg" class="card-img">
-              </div>
-              <div id="cardC" class="card-body">
-                <h3 class="card-heading">Examinationer</h3>
-                <ul class="card-list">
-                  <li>
-                    <a class="nav-link" href="assignments.html">22/10 Bootstrap: Inlämmning 1</a>
-                  </li>
-                  <li>
-                    <a class="nav-link" href="assignments.html">25/10 Angular: Tenta</a>
-                  </li>
-                  <div class="expand" id="expand3" style="display: none;">
-                    <li>
-                      <a class="nav-link" href="assignments.html">01/11 React: Inlämning 3</a>
-                    </li>
-                    <li>
-                      <a class="nav-link" href="assignments.html">02/11 Vue.js: Hemtenta</a>
-                    </li>
-                  </div>
-                </ul>
+            <div id="card-top-1" class="cardcontainer">
+              <div id="card-body-1" class="card-header">
+                <h3 class="title2">Kursplan</h3>
+                <img src="../img/notebook.svg" class="card-img">
               </div>
               <div class="card-bottom">
-                <button type="button" name="button" class="cardbutton" onclick="show()">Läs Mer</button>
+                <a href="course.html">
+                  <button type="button" name="button" class="cardbutton">Öppna</button>
+                </a>
               </div>
             </div>
           </div>
