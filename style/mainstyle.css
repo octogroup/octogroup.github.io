@@ -358,6 +358,10 @@ main {
 	margin-bottom: 15px;
 }
 
+.more-margin-bottom {
+	margin-bottom: 250px;
+}
+
 .margintop {
 	margin-top: 15px;
 }
