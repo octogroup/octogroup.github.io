@@ -99,7 +99,7 @@ let news = function () {
 let assignment = function () {
   reset()
   formimg.style.display = 'inherit'
-  formc.style.height = '488px'
+  formc.style.height = '488.6px'
   form.style.display = 'inherit'
   cB.style.display = 'inherit'
   sB.style.display = 'inherit'
