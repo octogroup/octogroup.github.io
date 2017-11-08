@@ -1,3 +1,9 @@
+#navlist a {
+color: black;
+}
+#navlist > li:last-child {
+    border-bottom: solid 4px #43a047;
+}
 
 .loginbutton {
   background-color: #c62828;

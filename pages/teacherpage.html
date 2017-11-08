@@ -2,177 +2,219 @@
 <html lang="en">
 
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link rel="shortcut icon" href="../img/octo.png">
-  <link rel="stylesheet" href="../style/dailyfeedback.css">
-  <link rel="stylesheet" href="../style/attendance.css">
-  <link rel="stylesheet" href="../style/loginstyle.css">
-  <link rel="stylesheet" href="../style/mainstyle.css">
-  <link rel="stylesheet" href="../style/cardstyle.css">
-  <link rel="stylesheet" href="../style/colorThemeStudentpage.css">
-  <link rel="stylesheet" href="../style/forms.css">
-  <link rel="stylesheet" href="../style/teacher.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="UTF-8">
-  <title>Min profil</title>
-
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="shortcut icon" href="../img/octo.png">
+	<link rel="stylesheet" href="../style/dailyfeedback.css">
+	<link rel="stylesheet" href="../style/loginstyle.css">
+	<link rel="stylesheet" href="../style/mainstyle.css">
+	<link rel="stylesheet" href="../style/cardstyle.css">
+	<link rel="stylesheet" href="../style/colorThemeStudentpage.css">
+	<link rel="stylesheet" href="../style/forms.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Min profil</title>
 </head>
 
 <body>
-  <div class="content backgroundpic1">
-    <header>
-      <a href="studentpage.html">
+	<div class="content backgroundpic1">
+		<header>
+			<a href="#">
         <img src="../img/KYH-logo.png" alt="">
       </a>
-      <nav id="navigation">
-        <div id="loginalign">
-          <button class="loginbutton" type="button" name="logout" onclick="logOut()">logga ut</button>
-        </div>
-      </nav>
-
-    </header>
-    <aside class="editnav">
-      <div class="asidebarbox">
-        <button class="editbuttons" onclick="news()">Skapa nyhet</button>
-      </div>
-    </aside>
-    <div id="container">
-    </div>
-    <main>
-
-      <div class="formcontent">
-        <div class="forms">
-          <div id="card-body-1" class="card-header">
-            <img id="form-img-1" src="../img/notebook.svg">
-          </div>
-          <button id="close">&#10005;</button>
-          <form id="form" onsubmit="sent()">
-            <p id="p1"></p>
-            <input id="i1" type="text" min="1" max="7" step="1" list="tickmarks">
-            <textarea id="t1" rows="1" cols="52" onkeyup="autoGrow(this)"></textarea>
-            <p id="p2"></p>
-            <input id="i2" type="text" min="1" max="7" step="1" list="tickmarks">
-            <textarea id="t2" rows="1" cols="52" onkeyup="autoGrow(this)"></textarea>
-            <p id="p3"></p>
-            <input id="i3" type="text" min="1" max="7" step="1" list="tickmarks">
-            <textarea id="t3" rows="1" cols="52" onkeyup="autoGrow(this)"></textarea>
-            <p id="p4"></p>
-            <input id="i4" type="text" min="1" max="7" step="1" list="tickmarks">
-            <textarea id="t4" rows="1" cols="52" onkeyup="autoGrow(this)"></textarea>
-            <p id="p5"></p>
-            <input id="i5" type="text" min="1" max="7" step="1" list="tickmarks">
-            <textarea id="t5" rows="1" cols="52" onkeyup="autoGrow(this)"></textarea>
-            <input id="submit" type="submit">
-            <datalist id="tickmarks">
-			          <option value="1"/>
-			          <option value="2"/>
-			          <option value="3"/>
-			          <option value="4"/>
-			          <option value="5"/>
-			          <option value="6"/>
-			          <option value="7"/>
-			        </datalist>
-          </form>
-        </div>
-      </div>
-      <!--Cardlayout-->
-      <div class="box">
-        <div class="card">
-          <div id="card-top-1" class="cardcontainer">
-            <div id="card-body-1" class="card-header">
-              <img class="card-img" src="../img/notebook.svg" alt="notebook">
-            </div>
-            <div id="card-container-1" class="card-body">
-
-              <h3 class="card-heading">Pågående kurser</h3>
-              <ul class="card-list">
-                <li>
-                  <a class="nav-link" href="course.html">Arbetsmetodik</a>
-                </li>
-                <li>
-                  <a class="nav-link" href="course.html">JavaScript</a>
-                </li>
-                <div class="expand" id="expand1" style="display: none;">
-                  <li>
-                    <a class="nav-link" href="course.html">HTML</a>
-                  </li>
-                  <li>
-                    <a class="nav-link" href="course.html">CSS</a>
-                  </li>
-                </div>
-              </ul>
-            </div>
-            <div class="card-bottom">
-              <button type="button" name="button" class="cardbutton" onclick="toggleExpand('expand1')">Läs Mer</button>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div id="card-top-2" class="cardcontainer">
-            <div id="card-body-2" class="card-header">
-              <img src="../img/calendar.svg" class="card-img" alt="calendar">
-            </div>
-            <div id="card-container-2" class="card-body">
-              <h3 class="card-heading">Inlämnade uppgifter</h3>
-              <ul class="card-list">
-                <li>
-                  <a class="nav-link" href="grade-assignments.html">22/10 Namn på uppgift</a>
-                </li>
-                <li>
-                  <a class="nav-link" href="grade-assignments.html">22/10 Namn på uppgift</a>
-                </li>
-                <div class="expand" id="expand2" style="display: none;">
-                  <li>
-                    <a class="nav-link" href="grade-assignments.html">22/10 Namn på uppgift</a>
-                  </li>
-                  <li>
-                    <a class="nav-link" href="grade-assignments.html">22/10 Namn på uppgift</a>
-                  </li>
-                </div>
-              </ul>
-            </div>
-            <div class="card-bottom">
-              <button type="button" name="button" class="cardbutton" onclick="toggleExpand('expand2')">Läs Mer</button>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div id="card-top-3" class="cardcontainer">
-            <div id="card-body-3" class="card-header">
-              <img src="../img/trophy.svg" class="card-img" alt="trophy">
-            </div>
-            <div id="card-container-3" class="card-body">
-              <h3 class="card-heading">Avslutade kurser</h3>
-            </div>
-            <div class="card-bottom">
-              <a href="grades.html"><button type="button" name="button" class="cardbutton">Öppna</button></a>
-            </div>
-          </div>
-        </div>
-				<div class="card">
-          <div id="card-top-5" class="cardcontainer">
-            <div id="card-body-5" class="card-header">
-              <img src="../img/mail.svg" alt="mail" class="card-img">
-            </div>
-            <div id="card-container-5" class="card-body">
-              <h3 class="card-heading">Utvärderingar</h3>
-            </div>
-            <div class="card-bottom">
-              <a href="weeklyevaluation.html"><button type="button" name="button" class="cardbutton">Öppna</button></a>
-            </div>
-          </div>
-        </div>
+			<nav id="navigation">
+				<div id="loginalign">
+					<button class="loginbutton" type="button" name="logout" onclick="logOut()">logga ut</button>
+				</div>
+			</nav>
+		</header>
+		<aside class="editnav">
+			<div class="asidebarbox">
+				<button class="editbuttons" onclick="news()">Skapa nyhet</button>
+				<button class="editbuttons" onclick="assignment()">Skapa inlämningsuppgift</button>
 			</div>
-    </main>
-    <footer class="footer">
-      <p>&copy;2017</p>
-    </footer>
-    <script src="../javascript/forms.js"></script>
-    <script type="text/javascript" src="../javascript/attendance.js"></script>
-    <script type="text/javascript" src="../javascript/dailyfeedback.js"></script>
-    <script type="text/javascript" src="../javascript/login.js"></script>
-    <script type="text/javascript" src="../javascript/togglediv.js"></script>
+		</aside>
+		<div id="container">
+		</div>
+		<!-- Main-Content -->
+		<main>
+			<!-- JS-Cards -->
+			<div class="formcontent">
+				<div class="forms">
+					<div class="card-header card-body-1">
+						<img id="form-img-1" src="../img/notebook.svg">
+					</div>
+					<button id="close">&#10005;</button>
+					<form id="form" onsubmit="sent()">
+						<p id="p1"></p>
+						<input id="i1" type="text" min="1" max="7" step="1" list="tickmarks">
+						<textarea id="t1" rows="1" cols="52" onkeyup="autoGrow(this)"></textarea>
+						<p id="p2"></p>
+						<input id="i2" type="text" min="1" max="7" step="1" list="tickmarks">
+						<textarea id="t2" rows="1" cols="52" onkeyup="autoGrow(this)"></textarea>
+						<p id="p3"></p>
+						<input id="i3" type="text" min="1" max="7" step="1" list="tickmarks">
+						<textarea id="t3" rows="1" cols="52" onkeyup="autoGrow(this)"></textarea>
+						<p id="p4"></p>
+						<input id="i4" type="text" min="1" max="7" step="1" list="tickmarks">
+						<textarea id="t4" rows="1" cols="52" onkeyup="autoGrow(this)"></textarea>
+						<p id="p5"></p>
+						<input id="i5" type="text" min="1" max="7" step="1" list="tickmarks">
+						<textarea id="t5" rows="1" cols="52" onkeyup="autoGrow(this)"></textarea>
+						<input id="submit" type="submit">
+						<datalist id="tickmarks">
+		          <option value="CSS"/>
+		          <option value="HTML"/>
+		          <option value="Javascript"/>
+						</datalist>
+            <datalist id="datalist2">
+			        <option value="Alla"/>
+			        <option value="FE17"/>
+			        <option value="FE18"/>
+			      </datalist>
+					</form>
+				</div>
+			</div>
+			<!--Cardlayout-->
+			<div class="box">
+				<!-- First Column -->
+				<section class="firstcardcolumn">
+					<!-- Card -->
+					<div class="card">
+						<div class="cardcontainer card-top-1">
+							<div class="card-header card-body-1">
+								<img class="card-img" src="../img/notebook.svg" alt="notebook">
+							</div>
+							<div class="card-body">
+
+								<h3 class="card-heading">Pågående kurser</h3>
+								<ul class="card-list">
+									<li>
+										<a class="nav-link" href="course.html">Arbetsmetodik för front-end-utveckling</a>
+									</li>
+									<li>
+										<a class="nav-link" href="course.html">JavaScript</a>
+									</li>
+									<div class="expand" style="display: none;">
+										<li>
+											<a class="nav-link" href="course.html">HTML</a>
+										</li>
+										<li>
+											<a class="nav-link" href="course.html">CSS</a>
+										</li>
+									</div>
+								</ul>
+							</div>
+							<div class="card-bottom">
+								<button type="button" name="button" class="cardbutton" onclick="toggleExpand(this)">Läs Mer</button>
+							</div>
+						</div>
+					</div>
+					<!-- Card -->
+					<div class="card">
+						<div class="cardcontainer card-top-5">
+							<div class="card-header card-body-5">
+								<img src="../img/mail.svg" alt="mail" class="card-img">
+							</div>
+							<div class="card-body">
+								<h3 class="card-heading">Veckoutvärdering</h3>
+							</div>
+							<div class="card-bottom">
+								<a href="weeklyevaluation.html"><button type="button" name="button" class="cardbutton">Öppna</button></a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- Second Card Column -->
+				<section class="secondcardcolumn">
+					<!-- Card -->
+					<div class="card">
+						<div class="cardcontainer card-top-2">
+							<div class="card-header card-body-2">
+								<img src="../img/calendar.svg" class="card-img" alt="calendar">
+							</div>
+							<div class="card-body">
+								<h3 class="card-heading">Obedömda inlämningar</h3>
+								<ul class="card-list">
+									<li>
+										<a class="nav-link" href="grade-assignments.html">Anna Induviduellt projekt 1</a>
+									</li>
+									<li>
+										<a class="nav-link" href="grade-assignments.html">Anna Induviduellt projekt 1</a>
+									</li>
+									<div class="expand" style="display: none;">
+										<li>
+											<a class="nav-link" href="grade-assignments.html">Anna Induviduellt projekt 1</a>
+										</li>
+										<li>
+											<a class="nav-link" href="grade-assignments.html">Anna Induviduellt projekt 1</a>
+										</li>
+									</div>
+								</ul>
+							</div>
+							<div class="card-bottom">
+								<button type="button" name="button" class="cardbutton" onclick="toggleExpand(this)">Läs Mer</button>
+							</div>
+						</div>
+					</div>
+					<!-- Card -->
+					<div class="card">
+						<div class="cardcontainer card-top-5">
+							<div class="card-header card-body-5">
+								<img src="../img/mail.svg" alt="mail" class="card-img">
+							</div>
+							<div class="card-body">
+								<h3 class="card-heading">Dagliga utvärderingar</h3>
+							</div>
+							<div class="card-bottom">
+								<a href="dailyevaluation.html"><button type="button" name="button" class="cardbutton">Öppna</button></a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- Third Card Column -->
+				<section class="thirdcardcolumn">
+					<!-- Card -->
+					<div class="card">
+						<div class="cardcontainer card-top-3">
+							<div class="card-header card-body-3">
+								<img src="../img/trophy.svg" class="card-img" alt="trophy">
+							</div>
+							<div class="card-body">
+								<h3 class="card-heading">Avslutade kurser</h3>
+							</div>
+							<div class="card-bottom">
+								<a href="grades.html"><button type="button" name="button" class="cardbutton">Öppna</button></a>
+							</div>
+						</div>
+					</div>
+					<!-- Card -->
+					<div class="card">
+						<div class="cardcontainer card-top-5">
+							<div class="card-header card-body-5">
+								<img src="../img/mail.svg" alt="mail" class="card-img">
+							</div>
+							<div class="card-body">
+								<h3 class="card-heading">Kursutvärdering</h3>
+							</div>
+							<div class="card-bottom">
+								<a href="courseevaluation.html">
+									<button type="button" name="button" class="cardbutton">Öppna</button>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+	</div>
+	<footer class="footer">
+		<p>&copy;2017</p>
+	</footer>
+	<script src="../javascript/forms.js"></script>
+	<script type="text/javascript" src="../javascript/dailyfeedback.js"></script>
+	<script type="text/javascript" src="../javascript/login.js"></script>
+	<script type="text/javascript" src="../javascript/togglediv.js"></script>
 </body>
 
 </html>

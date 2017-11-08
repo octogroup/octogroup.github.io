@@ -184,13 +184,6 @@ header>a>h1 {
   position: relative;
 }
 
-#pushdown {
-	height: 100%;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
 main {
   max-width: 1600px;
   margin: 40px auto 40px auto;
@@ -363,6 +356,10 @@ main {
 
 .marginbottom {
 	margin-bottom: 15px;
+}
+
+.more-margin-bottom {
+	margin-bottom: 250px;
 }
 
 .margintop {

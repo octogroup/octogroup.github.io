@@ -10,15 +10,16 @@
   <link rel="stylesheet" href="../style/cardstyle.css">
   <link rel="stylesheet" href="../style/mainstyle.css">
   <link rel="stylesheet" href="../style/colorThemeStudentpage.css">
+  <link rel="stylesheet" href="../style/gradeAssignments.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>Uppgifter</title>
 </head>
 
 <body>
-  <div class="content backgroundpic1">
+  <div class="content">
     <header onclick="dropclose()">
-      <a href="studentpage.html">
+      <a href="teacherpage.html">
         <img src="../img/KYH-logo.png" alt="">
         <!-- <h1>Octo : KYH</h1> -->
       </a>
@@ -26,42 +27,60 @@
         <div id="loginalign">
           <button class="loginbutton" type="button" name="logout" onclick="logOut()">logga ut</button>
         </div>
+        <ul id="navlist">
+          <li>
+            <a href="../pages/teacherpage.html">Profil</a>
+          </li>
+          <li>
+            <a href="../pages/grade-assignments.html">Inlämningar</a>
+          </li>
+          <!-- <li>
+            <a href="../pages/grade-assignments.html#">Du är här</a>
+          </li> -->
+        </ul>
       </nav>
     </header>
     <div id="container">
     </div>
     <main>
-      <div class="box">
-        <!-- First Column -->
-        <section class="firstcardcolumn">
-          <div class="card">
-            <div id="card-top-4" class="cardcontainer">
-              <div id="card-body-4" class="card-header">
-                <img id="card-img-4" src="../img/service.svg" alt="" class="card-img-top">
-              </div>
-              <div id="card-container-4" class="card-body">
-                <h3 id="card-heading-4">Dagens feedback</h3>
-                <form name="dailyFeedback" id="dailyFeedback_form" action="" method="POST">
-                  <p id="smileyfaces">
-                    <label for="ledsen" onmouseover="hoverSadSmiley()" onmouseout="checkSmileyStatus()" onclick="checkSmileyStatus()">
-                      <img src="../img/sadDis.png" id="ledsenSmiley">
-                      <input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="ledsen" value="ledsen">
-                    </label>
-                    <label for="neutral" onmouseover="hoverNeutralSmiley()" onmouseout="checkSmileyStatus()" onclick="checkSmileyStatus()">
-                      <img src="../img/confusedDis.png" id="neutralSmiley">
-                      <input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="neutral" value="neutral">
-                    </label>
-                    <label for="glad" onmouseover="hoverHappySmiley()" onmouseout="checkSmileyStatus()" onclick="checkSmileyStatus()">
-                      <img src="../img/happyyDis.png" id="happySmiley">
-                      <input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="glad" value="glad">
-                    </label>
-                  </p>
-                </form>
-              </div>
+        <div id="boxContainer">
+          <div class="assignmentContainer">
+            <div class="subject"><h3>Induviduellt projekt 1</h3></div>
+              <div class="assignemntInfoBox">
+              <div class="assignmentInfo"><h4>Inlämnad av</h4><p>Anna Johansson</p></div>
+              <div class="assignmentInfo"><h4>Inlämnad</h4><p>2017-05-05</p></div>
+              <div class="assignmentInfo"><h4>Fil(er)</h4><p><img src="../img/pdf.png" alt=""> <a href="../files/octoPDF.pdf" download>inlamning</a></p><p><img src="../img/doc.png" alt=""> <a href="../files/octoDOC.odt" download>fil 2</a></p></div>
             </div>
           </div>
-        </section>
-      </div>
+          <div class="gradeBox">
+            <div class="fill">
+                <button onclick="closeBox()">✕</button>
+            </div>
+            <div class="gradeContent">
+              <div class="grade">
+              <h4>Betygssättning</h4>
+              <div class="gradeInput">
+                <p>Betyg:</p>
+                  <select required id="selectGrade">
+                    <option value="" label="-"></option>
+                    <option value="VG">IG</option>
+                    <option value="VG">G</option>
+                    <option value="VG">VG</option>
+                  </select>
+              </div>
+              <button type="button" name="button" onclick="submitGrade()">OK</button>
+              <div id="msg"></div>
+          </div>
+            </div>
+          </div>
+        </div>
+        <div class="assignmentsList">
+          <h3>Obedömda inlämningar</h3>
+          <ul>
+            <li id="li_1"><a href="#" onclick="openAssignmentBox()">Anna Johansson <span>Induviduellt projekt 1 </span></a></li>
+            <li id="li_2"><a href="#" onclick="openAssignmentBox()">Anna Johansson <span>Induviduellt projekt 1</span></a></li>
+          </ul>
+        </div>
     </main>
   </div>
   <footer class="footer">
@@ -71,6 +90,7 @@
   <script type="text/javascript" src="../javascript/dailyfeedback.js"></script>
   <script type="text/javascript" src="../javascript/login.js"></script>
   <script type="text/javascript" src="../javascript/togglediv.js"></script>
+  <script type="text/javascript" src="../javascript/gradeAssignments.js"></script>
 </body>
 
 </html>

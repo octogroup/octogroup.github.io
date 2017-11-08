@@ -1,3 +1,7 @@
+#form>textarea {
+  box-sizing: border-box;
+}
+
 .editbuttons {
   border: none;
   cursor: pointer;

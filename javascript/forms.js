@@ -80,16 +80,44 @@ let feedback = function () {
 let news = function () {
   reset()
   formimg.style.display = 'inherit'
-  formc.style.height = '305px'
+  formc.style.height = '417.4px'
   form.style.display = 'inherit'
   cB.style.display = 'inherit'
-  p1.innerHTML = 'Rubrik:'
-  t1.style.display = 'inherit'
-  t1.required = true
-  p2.innerHTML = 'Nyhets innehåll:'
-  t2.style.display = 'inherit'
-  t2.required = true
   sB.style.display = 'inherit'
+  p1.innerHTML = 'Visa nyheten för:'
+  i1.style.display = "inherit"
+  i1.setAttribute('list', 'datalist2');
+  i1.required = "true"
+  p2.innerHTML = "Rubrik:"
+  t2.style.display = "inherit"
+  t2.required = "true"
+  p3.innerHTML = "Nyhetens innehåll:"
+  t3.style.display = "inherit"
+  t3.required = "true"
+}
+
+let assignment = function () {
+  reset()
+  formimg.style.display = 'inherit'
+  formc.style.height = '488.6px'
+  form.style.display = 'inherit'
+  cB.style.display = 'inherit'
+  sB.style.display = 'inherit'
+  p1.innerHTML = 'Kurs:'
+  i1.style.display = "inherit"
+  i1.required = "true"
+  i1.setAttribute('list', 'tickmarks');
+  p2.innerHTML = "Deadline:"
+  i2.style.display = "inherit"
+  i2.type = "date"
+  i2.list = ""
+  i2.required = "true"
+  p3.innerHTML = "Rubrik:"
+  t3.style.display = "inherit"
+  t3.required = "true"
+  p4.innerHTML = "Instruktioner:"
+  t4.style.display = "inherit"
+  t4.required = "true"
 }
 
 let weekeval = function () {

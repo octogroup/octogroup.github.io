@@ -6,42 +6,59 @@
 }
 
 .graphfcont {
+	background-color: white;
   display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
+	box-shadow: 0px 2px 2px #888888;
 }
 
-#chartContainer1 {
+#chartContainerLeft {
+  display: flex;
+  width: 45%;
+  height: 400px;
+	min-width: 350px;
+	margin: 30px 0 30px 0;
+}
+
+#chartContainerRight {
+	display: flex;
+  width: 45%;
+  height: 400px;
+	min-width: 350px;
+	margin: 30px 0 30px 0;
+}
+
+#chartContainerMiddleFe17 {
+  width: 75%;
+  height: 400px;
+	min-width: 350px;
+	margin: 30px 0 30px 0;
+}
+
+#chartContainerMiddleFe16 {
+  width: 75%;
+  height: 400px;
+	min-width: 350px;
+	margin: 30px 0 30px 0;
+}
+
+/*text-align: BORT 4 & 5*/
+/*#chartContainer4 {
   width: 45%;
   height: 400px;
   display: flex;
 	min-width: 350px;
-	margin-bottom: 20px;
+	margin: 30px 0 30px 0;
 }
 
-#chartContainer2 {
-  width: 45%;
+#chartContainer5 {
+  width: 90%;
   height: 400px;
   display: flex;
 	min-width: 350px;
-	margin-bottom: 20px;
-}
-
-#chartContainer3 {
-  width: 45%;
-  height: 400px;
-  display: flex;
-	min-width: 350px;
-	margin-bottom: 20px;
-}
-
-#chartContainer4 {
-  width: 45%;
-  height: 400px;
-  display: flex;
-	min-width: 350px;
-	margin-bottom: 20px;
-}
+	margin: 30px 0 30px 0;
+}*/
 
 .answerNav {
   display: flex;
@@ -114,7 +131,7 @@ ol > span > li {
 .feedbacknav {
 	max-width: 350px;
 	display: flex;
-	margin: 50px auto 300px;
+	margin: 50px auto 50px;
 	justify-content: center;
 
 }
@@ -132,7 +149,22 @@ ol > span > li {
 	justify-content: center;
 }
 
+.feedbackheader {
+	display: flex;
+	margin: 50px auto 50px;
+	justify-content: center;
+}
+
 .arrowsize {
 	height: 45px;
 	width: auto;
+	margin-top: 20px;
+}
+
+.weeknumber {
+	margin: 20px;
+}
+
+.canvasjs-chart-tooltip {
+	display: none !important;
 }

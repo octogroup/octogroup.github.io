@@ -1,0 +1,173 @@
+main{
+  display: flex;
+  flex-direction: column;
+}
+
+#boxContainer{
+  width: 830px;
+  border: 1px solid black;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: auto;
+  visibility: inherit;
+
+}
+
+.assignmentContainer{
+  width: 512px;
+}
+
+#msg{
+  color: red;
+  width: 183px;
+  margin-bottom: 10px;
+  height: 22px;
+  visibility: hidden;
+}
+
+.assignemntInfoBox img{
+  width: 32px;
+}
+.assignemntInfoBox a{
+color: black;
+text-decoration: none;
+}
+.assignemntInfoBox a:hover{
+  text-decoration: underline;
+}
+.subject{
+  max-width: 602px;
+  height: 70px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.assignemntInfoBox{
+  max-width: 602px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+.assignmentInfo{
+  width: auto;
+  margin-right: 40px;
+}
+
+.gradeBox{
+  flex-grow: 1;
+  border-left: 1px solid black;
+}
+
+.grade{
+  display: flex;
+  flex-direction: column;
+}
+
+.fill{
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.fill>button{
+  height: 22px;
+  background: #ff5f52;
+    color: white;
+    border: 0;
+    border-radius: 2px;
+    top: 1px;
+    right: 2px;
+    padding: 1px 5px 2px 6px;
+    margin-top: 1px;
+    margin-right: 1px;
+}
+.gradeContent{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.gradeInput{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 7px;
+}
+.gradeContent button{
+  width: 40px;
+  background-color: #c62828;
+  border: solid 1px #8e0000;
+  min-width: 64px;
+  height: 36px;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0 16px;
+  border-radius: 2px;
+  margin-top: 21px;
+  margin-bottom: 4px;
+  align-self: flex-end;
+}
+h3{
+  align-self: center;
+}
+
+.assignmentsList{
+  width: 830px;
+  align-self:center;
+}
+
+.assignmentsList>ul{
+  list-style-type:none;
+  padding: 0;
+  margin: 0;
+}
+.assignmentsList>ul>li>a{
+  color: black;
+  text-decoration: none;
+}
+.assignmentsList>ul>li>a:hover{
+  background-color: #e3e3e3;
+}
+.assignmentsList>ul>li>a>span{
+  font-style: italic;
+}
+
+@media (max-width:906px){
+  .assignemntInfoBox{
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  #boxContainer{
+    width: 95%;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .gradeBox{
+    border-left: none;
+    border-top: 1px solid black;
+    width: 100%;
+  }
+  .fill{
+    height: 10px;
+  }
+  .assignmentInfo{
+    margin-bottom: 20px;
+  }
+  .assignmentsList{
+    width: 94%;
+  }
+  .fill>button{
+    position: absolute;
+    top: 109px;
+    right: 9px;
+  }
+}
