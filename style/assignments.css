@@ -2,10 +2,9 @@
 .hiddenCard {
   width: auto;
   height: auto;
-  margin: 10px;
+  margin: 0 10px;
   flex-direction: column;
-  padding: 15px;
-  display: none;
+	padding: 0 15px;
 }
 
 .hiddenCard>h3 {

@@ -192,7 +192,6 @@
 	padding: 15px;
   display: flex;
   flex-direction: column;
-  padding: 15px;
 }
 
 .card-body>h3 {
@@ -214,6 +213,7 @@
 
 .expand {
 	flex-direction: column;
+	display: none;
 }
 
 .attendancetitle {
