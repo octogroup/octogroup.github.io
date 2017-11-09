@@ -37,10 +37,6 @@
   font-size: 14px;
 }
 
-#pricecontent > div:nth-child(1) button {
-  margin-top: 24px;
-}
-
 .priceitem {
   font-weight: 400;
   font-family: 'Roboto';

@@ -87,7 +87,9 @@ function explodePie (e) {
 
 }
 
-let week = 39;
+// -------- WeekCounter -----------
+
+let week = 39
 
 function incWeek () {
   if (week < 39) {
@@ -106,3 +108,5 @@ function decWeek () {
   }
   document.getElementById('weekCount').innerHTML = 'Vecka' + ' ' + week
 }
+
+// -------------------------------

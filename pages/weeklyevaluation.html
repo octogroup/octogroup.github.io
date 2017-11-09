@@ -25,6 +25,17 @@
         <div id="loginalign">
           <button class="loginbutton" type="button" name="logout" onclick="logOut()">logga ut</button>
         </div>
+        <ul id="navlist">
+          <!-- <li>
+            <a href="../page/studentpage.html">Hem</a>
+          </li> -->
+          <li>
+            <a href="../pages/teacher.html">Profil</a>
+          </li>
+          <li>
+            <a href="../pages/weeklyevaluation.html">Veckoutvärdering</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <div id="container">
@@ -67,7 +78,7 @@
 						</span>
 					</ol>
 					<div class="bottomSection">
-						<button type="button" name="Tempot" id="buttonSwap1" data-text-swap="visa mindre" class="cardbutton" onclick="expand1()">visa mer</button>
+						<button type="button" name="Tempot" class="cardbutton toggleText" onclick="expand1(); toggleText(this)">visa mer</button>
 					</div>
 				</section>
 				<section class="answerSection">
@@ -87,7 +98,7 @@
 						</span>
           </ol>
 					<div class="bottomSection">
-						<button type="button" name="Engagerad" id="buttonSwap2" data-text-swap="visa mindre" class="cardbutton" onclick="expand2()">visa mer</button>
+						<button type="button" name="Engagerad" class="cardbutton toggleText" onclick="expand2(); toggleText(this)">visa mer</button>
 					</div>
 				</section>
 				<section class="answerSection">
@@ -107,7 +118,7 @@
 						</span>
           </ol>
 					<div class="bottomSection">
-						<button type="button" name="Stämningen" class="cardbutton" id="buttonSwap3" data-text-swap="visa mindre" onclick="expand3()">visa mer</button>
+						<button type="button" name="Stämningen" class="cardbutton toggleText" onclick="expand3(); toggleText(this)">visa mer</button>
 					</div>
 				</section>
       </div>
