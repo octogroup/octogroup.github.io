@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="../style/loginstyle.css">
 	<link rel="stylesheet" href="../style/mainstyle.css">
 	<link rel="stylesheet" href="../style/weekform.css">
+	<link rel="stylesheet" href="../style/cardstyle.css">
 	<link rel="stylesheet" href="../style/colorThemeStudentpage.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
@@ -42,7 +43,7 @@
 
 		<main>
 			<div class="formholder">
-				<form id="weekeval" name="weekeval" onsubmit="return sent()">
+				<form id="weekeval" name="weekeval" action="#" onsubmit="return toggleAlertbox('studentpage.html');">
 					<h2 class="formheadline">Veckorapport</h2>
 					<h4 class="questionstyle">Ditt namn (frivilligt)</h4>
 					<input class="textinput" type="text" placeholder="Namn" name="yourname">
@@ -92,7 +93,7 @@
 						<span class="highlight"></span>
 						<span class="bar"></span>
 					</div>
-						<button type="submit" name="button" class="cardbutton">Submit</button>
+						<button type="submit" name="button" class="cardbutton">Lämna in</button>
 					<datalist id="tickmarks">
           	<option value="1"></option>
             <option value="2"></option>
@@ -104,12 +105,21 @@
         	</datalist>
 				</form>
 			</div>
+
+			<div id="alertbox-modulus">
+				<div class="alertbox-content">
+					<img src="../img/service.svg" alt="service" class="card-img alert-img">
+					<h2 class="alertbox-header">Inskickat</h2>
+					<p class="alertbox-subheader">Tack för din feedback!</p>
+				</div>
+			</div>
+
 		</main>
 	</div>
 	<footer class="footer">
 		<p>&copy;2017</p>
 	</footer>
-	<script type="text/javascript" src="../javascript/login.js"></script>
+	<!-- <script type="text/javascript" src="../javascript/login.js"></script> -->
 	<script type="text/javascript" src="../javascript/sent.js"></script>
 </body>
 
