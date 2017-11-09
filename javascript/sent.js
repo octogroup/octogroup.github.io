@@ -1,7 +1,3 @@
-// function sent() {
-//   alert("Inskickat!");
-//   return true;
-// }
 
 //Modal-alertbox
 window.onclick = function (event) {

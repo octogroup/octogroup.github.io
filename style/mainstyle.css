@@ -375,7 +375,7 @@ main {
 /*----------Modulus-alertbox-----------*/
 
 #alertbox-modulus {
-	display: flex;
+	display: none;
   position: fixed;
   left: 50%;
   top: 50%;
@@ -395,13 +395,14 @@ main {
   border: 1px solid #888;
   width: 80%;
   max-height: 400px;
-	max-width: 350px;
+	max-width: 330px;
 	border-radius: 1%;
 	box-shadow: 0px 2px 2px #888888;
 }
 
 .alertbox-header {
 	text-align: center;
+	margin: 0 10px;
 }
 
 .alertbox-subheader {

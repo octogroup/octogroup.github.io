@@ -45,7 +45,7 @@
 						<img id="form-img-1" src="../img/notebook.svg">
 					</div>
 					<button id="close">&#10005;</button>
-					<form id="form" onsubmit="sent()">
+					<form id="form" onsubmit="return toggleAlertbox('teacherpage.html');">
 						<p id="p1"></p>
 						<input id="i1" type="text" min="1" max="7" step="1" list="tickmarks">
 						<textarea id="t1" rows="1" cols="52" onkeyup="autoGrow(this)"></textarea>
@@ -206,6 +206,15 @@
 					</div>
 				</section>
 			</div>
+			<!-- Alertbox -->
+			<div id="alertbox-modulus">
+				<div class="alertbox-content zoom">
+					<img src="../img/check.svg" alt="check" class="card-img alert-img">
+					<h2 class="alertbox-header">Innehållet är uppdaterat</h2>
+					<p class="alertbox-subheader"></p>
+				</div>
+			</div>
+			<!-- Alertbox-ends -->
 		</main>
 	</div>
 	<footer class="footer">
@@ -215,6 +224,7 @@
 	<script type="text/javascript" src="../javascript/dailyfeedback.js"></script>
 	<script type="text/javascript" src="../javascript/login.js"></script>
 	<script type="text/javascript" src="../javascript/togglediv.js"></script>
+	<script type="text/javascript" src="../javascript/sent.js"></script>
 </body>
 
 </html>
