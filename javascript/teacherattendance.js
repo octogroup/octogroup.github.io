@@ -1,6 +1,8 @@
 let changeColor = function (element) {
-  element.style.backgroundColor = 'green'
-  if (element.style.backgroundColor === 'green') {
-    element.style.backgroundColor = 'red'
+  if (element.style.backgroundColor == 'rgb(67, 160, 71)') {
+    element.style.backgroundColor = 'rgb(198, 40, 40)'
+  }
+  else {
+    element.style.backgroundColor = 'rgb(67, 160, 71)'
   }
 }
