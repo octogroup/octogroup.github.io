@@ -43,25 +43,36 @@
     <div id="container">
     </div>
     <main>
-        <div id="boxContainer">
-          <div class="assignmentContainer">
-            <div class="subject"><h3>Induviduellt projekt 1</h3></div>
-              <div class="assignemntInfoBox">
-              <div class="assignmentInfo"><h4>Inlämnad av</h4><p>Anna Johansson</p></div>
-              <div class="assignmentInfo"><h4>Inlämnad</h4><p>2017-05-05</p></div>
-              <div class="assignmentInfo"><h4>Fil(er)</h4><p><img src="../img/pdf.png" alt=""> <a href="../files/octoPDF.pdf" download>inlamning</a></p><p><img src="../img/doc.png" alt=""> <a href="../files/octoDOC.odt" download>fil 2</a></p></div>
+      <div id="boxContainer">
+        <div class="assignmentContainer">
+          <div class="subject">
+            <h3>Induviduellt projekt 1</h3></div>
+          <div class="assignemntInfoBox">
+            <div class="assignmentInfo">
+              <h4>Inlämnad av</h4>
+              <p>Anna Johansson</p>
+            </div>
+            <div class="assignmentInfo">
+              <h4>Inlämnad</h4>
+              <p>2017-05-05</p>
+            </div>
+            <div class="assignmentInfo">
+              <h4>Fil(er)</h4>
+              <p><img src="../img/pdf.png" alt=""> <a href="../files/octoPDF.pdf" download>inlamning</a></p>
+              <p><img src="../img/doc.png" alt=""> <a href="../files/octoDOC.odt" download>fil 2</a></p>
             </div>
           </div>
-          <div class="gradeBox">
-            <div class="fill">
-                <button onclick="closeBox()">✕</button>
-            </div>
-            <div class="gradeContent">
-              <div class="grade">
+        </div>
+        <div class="gradeBox">
+          <div class="fill">
+            <button onclick="closeBox()">✕</button>
+          </div>
+          <div class="gradeContent">
+            <div class="grade">
               <h4>Betygssättning</h4>
               <div class="gradeInput">
                 <p>Betyg:</p>
-                  <select required id="selectGrade">
+                <select required id="selectGrade">
                     <option value="" label="-"></option>
                     <option value="VG">IG</option>
                     <option value="VG">G</option>
@@ -70,17 +81,25 @@
               </div>
               <button type="button" name="button" onclick="submitGrade()">OK</button>
               <div id="msg"></div>
-          </div>
             </div>
           </div>
         </div>
-        <div class="assignmentsList">
-          <h3>Obedömda inlämningar</h3>
-          <ul>
-            <li id="li_1"><a href="#" onclick="openAssignmentBox()">Anna Johansson <span>Induviduellt projekt 1 </span></a></li>
-            <li id="li_2"><a href="#" onclick="openAssignmentBox()">Anna Johansson <span>Induviduellt projekt 1</span></a></li>
-          </ul>
-        </div>
+      </div>
+      <div class="assignmentsList">
+        <h3>Obedömda inlämningar</h3>
+        <ul>
+          <li id="li_1"><a href="#" onclick="openAssignmentBox()">Anna Johansson <span>Induviduellt projekt 1 </span></a></li>
+          <li id="li_2"><a href="#" onclick="openAssignmentBox()">Anna Johansson <span>Induviduellt projekt 1</span></a></li>
+        </ul>
+      </div>
+
+      <div class="assignmentsList">
+        <h3>Bedömda inlämningar</h3>
+        <ul>
+          <li id="li_1"><a href="#" onclick="openAssignmentBox()">Anna Johansson <span>Induviduellt projekt 1 </span></a></li>
+          <li id="li_2"><a href="#" onclick="openAssignmentBox()">Anna Johansson <span>Induviduellt projekt 1</span></a></li>
+        </ul>
+      </div>
     </main>
   </div>
   <footer class="footer">
