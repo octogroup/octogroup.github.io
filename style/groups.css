@@ -1,0 +1,31 @@
+.studentBox {
+  /*display: flex;*/
+  justify-content: center;
+  text-align: left;
+}
+
+.cardcontainer {
+  width: 250px;
+}
+
+.box {
+  justify-content: space-around;
+
+}
+
+.firstcolumn{
+  width: 40%;
+  display: flex;
+}
+
+ul {
+  list-style: none;
+}
+
+.klasser {
+  text-align: end;
+}
+
+.klass {
+
+}

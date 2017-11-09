@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="shortcut icon" href="../img/octo.png">
+  <link rel="stylesheet" href="../style/loginstyle.css">
+  <link rel="stylesheet" href="../style/mainstyle.css">
+  <link rel="stylesheet" href="../style/colorThemeStudentpage.css">
+  <link rel="stylesheet" href="../style/cardstyle.css">
+  <link rel="stylesheet" href="../style/groups.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Gruppindelningar</title>
+</head>
+
+<body>
+  <div class="content">
+    <header>
+      <a href="teacherpage.html">
+        <img src="../img/KYH-logo.png" alt="logo">
+      </a>
+      <nav id="navigation">
+        <div id="loginalign">
+          <button class="loginbutton" type="button" name="logout" onclick="logOut()">logga ut</button>
+        </div>
+        <ul id="navlist">
+          <li>
+            <a href="../pages/teacher.html">Profil</a>
+          </li>
+          <li>
+            <a href="../pages/groups.html">Grupper</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+
+      <div class="box">
+        <section class="firstcolumn">
+
+          <div class="studentBox">
+            <h3>Elevlista</h3>
+            <ol data-draggable="target">
+              <li class="drag" draggable="true" ondragstart="drag(event)">Namn Namnsson</li>
+              <li class="drag" draggable="true" ondragstart="drag(event)">Namn Namnsson</li>
+              <li class="drag" draggable="true" ondragstart="drag(event)">Namn Namnsson</li>
+              <li class="drag" draggable="true" ondragstart="drag(event)">Namn Namnsson</li>
+              <li class="drag" draggable="true" ondragstart="drag(event)">Namn Namnsson</li>
+              <li class="drag" draggable="true" ondragstart="drag(event)">Namn Namnsson</li>
+              <li class="drag" draggable="true" ondragstart="drag(event)">Namn Namnsson</li>
+              <li class="drag" draggable="true" ondragstart="drag(event)">Namn Namnsson</li>
+              <li class="drag" draggable="true" ondragstart="drag(event)">Namn Namnsson</li>
+              <li class="drag" draggable="true" ondragstart="drag(event)">Namn Namnsson</li>
+              <li class="drag" draggable="true" ondragstart="drag(event)">Namn Namnsson</li>
+              <li class="drag" draggable="true" ondragstart="drag(event)">Namn Namnsson</li>
+              <li class="drag" draggable="true" ondragstart="drag(event)">Namn Namnsson</li>
+              <li class="drag" draggable="true" ondragstart="drag(event)">Namn Namnsson</li>
+              <li class="drag" draggable="true" ondragstart="drag(event)">Namn Namnsson</li>
+              <li class="drag" draggable="true" ondragstart="drag(event)">Namn Namnsson</li>
+            </ol>
+          </div>
+          <div class="klasser">
+            <h3>Välj klass</h3>
+            <form>
+              <p>klasser:</p>
+              <select class="klass">
+                <option value="FE17">FE17</option>
+                <option value="FE16">FE16</option>
+
+              </select>
+
+            </form>
+
+          </div>
+
+        </section>
+        <!-- First Column -->
+        <section class="seconcolumn">
+          <!-- Card -->
+          <div class="card">
+            <div class="cardcontainer card-top-1">
+              <div class="card-header card-body-1">
+                <h3 class="card-heading">Grupp 1</h3>
+              </div>
+              <div class="card-body" ondrop="drop(event)" ondragover="allowDrop(event)">
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="card">
+            <div class="cardcontainer card-top-1">
+              <div class="card-header card-body-1">
+                <h3 class="card-heading">Grupp 2</h3>
+              </div>
+              <div class="card-body" ondrop="drop(event)" ondragover="allowDrop(event)">
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Second Card Column -->
+        <section class="thirdcolumn">
+          <!-- Card -->
+          <div class="card">
+            <div class="cardcontainer card-top-1">
+              <div class="card-header card-body-1">
+                <h3 class="card-heading">Grupp 3</h3>
+              </div>
+              <div class="card-body" ondrop="drop(event)" ondragover="allowDrop(event)">
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="card">
+            <div class="cardcontainer card-top-1">
+              <div class="card-header card-body-1">
+                <h3 class="card-heading">Grupp 4</h3>
+              </div>
+              <div class="card-body" ondrop="drop(event)" ondragover="allowDrop(event)">
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+    </main>
+  </div>
+  <footer class="footer">
+    <p>&copy;2017</p>
+  </footer>
+  <script type="text/javascript" src="../javascript/groups.js"></script>
+  <script type="text/javascript" src="../javascript/login.js"></script>
+  <script type="text/javascript" src="../javascript/togglediv.js"></script>
+
+</body>
+
+</html>
