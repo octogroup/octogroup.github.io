@@ -150,6 +150,81 @@ h3 {
   font-style: italic;
 }
 
+.table {
+  margin: 0 auto;
+  width: 830px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.row-1 {
+  width: 100%;
+  background-color: black;
+  height: 25px;
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+
+.row-2 {
+  width: 100%;
+  background-color: white;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  color: black;
+  align-items: center;
+}
+
+.text-1 {
+  width: 204px;
+  border-right: 2px solid grey;
+  height: 100%;
+}
+
+.text-2 {
+  width: 204px;
+  border-right: 2px solid grey;
+  height: 100%;
+  padding-left: 5px;
+}
+
+.text-3 {
+  flex-grow: 1;
+  padding-left: 5px;
+  height: 100%;
+}
+
+.purple {
+  background-color: purple;
+  color: #fff;
+}
+
+.white-back {
+  background-color: #fff;
+  color: #0000;
+}
+
+.left-padding {
+  position: relative;
+  top: 11px;
+}
+
+.table p {
+  position: relative;
+  top: 11px;
+  left: 5px;
+}
+
+.active:hover {
+  cursor: pointer;
+}
+
+.rest {
+  border-top: 2px solid grey;
+}
+
 @media (max-width:906px) {
   .assignemntInfoBox {
     flex-direction: column;
