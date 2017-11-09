@@ -13,31 +13,36 @@
   text-overflow: ellipsis;
 }
 
+
+.att-square {
+  width: 20px;
+  height: 25px;
+  margin: 0 auto;
+  background-color: #c62828;
+  border: solid 2px #979797;
+  border-radius: 2px;
+}
+
 .att-row>div {
   padding: 15px 0;
-  border-left: solid 1px grey;
-  border-bottom: solid 1px grey;
+  border-bottom: solid 1px #e8e8e8;
   text-align: center;
-  font-size: 18px;
+  font-size: 22px;
+}
+
+.attendance:first-child {
+  border-left: solid 1px #e8e8e8;
 }
 
 .attendance:last-child {
-  border-right: solid 1px grey;
+  border-right: solid 1px #e8e8e8;
 }
 
 .att-row>div:nth-child(even) {
-  background-color: rgb(142, 0, 0);
-}
-
-.att-row>div:nth-child(odd) {
-  background-color: rgb(198, 40, 40);
-}
-
-.att-names>div:nth-child(even) {
   background-color: #e8e8e8;
 }
 
-.att-names>div:nth-child(odd) {
+.att-row>div:nth-child(odd) {
   background-color: #fafafa;
 }
 
@@ -52,6 +57,7 @@
 .att-names {
   width: 150%;
 }
+
 
 .attendance>.att-row>.att-header {
   color: white;
