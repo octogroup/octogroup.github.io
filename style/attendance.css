@@ -23,6 +23,7 @@
   background-color: #c62828;
   border: solid 2px #979797;
   border-radius: 2px;
+  cursor: pointer;
 }
 
 .att-row>div {
