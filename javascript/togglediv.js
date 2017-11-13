@@ -8,12 +8,22 @@ function toggleExpand (self) {
 	return div.style.display = 'none'
 }
 
-function toggleBetygsattning(){
-	const showDiv = document.querySelector('.betygsatt').style.height = '100px';
+function toggleBetygsattning() {
+	// diven som åker upp och ner
+	const div = document.querySelector('.betygsatt');
+
+	if (div.style.height == "0px") {
+		div.style.height = '100px';
+		const buttonDiv = document.querySelector('#knapp').innerHTML = "&#10005";
+	} else {
+		document.querySelector('#knapp').innerHTML = "betygsätt";
+		closeBetygsattning();
+	}
 }
 
 function closeBetygsattning () {
-	document.querySelector('.betygsatt').style.height = '0px';
+	// diven stängs
+	const divClose = document.querySelector('.betygsatt').style.height = '0px';
 }
 
 // -------- Button-Txt-Toggle -----
