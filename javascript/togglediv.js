@@ -11,6 +11,7 @@ function toggleExpand (self) {
 function toggleBetygsattning() {
 	// diven som åker upp och ner
 	const div = document.querySelector('.betygsatt');
+	div.style.height = '0px';
 
 	if (div.style.height == "0px") {
 		div.style.height = '100px';
