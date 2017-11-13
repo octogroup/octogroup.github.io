@@ -20,9 +20,8 @@ function toggleText (self) {
 	return btn.innerHTML = 'visa mindre'
 	}
 
-	function toggleBetygsattning (){
-		let div = self.parentNode.parentNode.getElementsByClassName("betygsatt");
-		var div = document.getElementById("betygsatt").style.height = "50px;";
+	function toggleBetygsattning(){
+    const showDiv = document.querySelector('.betygsatt').style.height = '100px';
 	}
 
 // -------- WeekCounter -----------
