@@ -65,6 +65,19 @@
   width: 100%;
   padding: 15px 0;
 }
+.attendancenav {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+}
+
+.arrowsize {
+  height:50%;
+}
+
+.weeknumber {
+  font-size: 20px;
+}
 
 @media (max-width: 900px) {
   .att-row>div {

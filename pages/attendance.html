@@ -6,7 +6,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,700" rel="stylesheet">
 	<link rel="shortcut icon" href="../img/octo.png">
 	<link rel="stylesheet" href="../style/loginstyle.css">
-	<link rel="stylesheet" href="../style/mainstyle.css">
+  <link rel="stylesheet" href="../style/mainstyle.css">
+  <link rel="stylesheet" href="../style/evaluation.css">
 	<link rel="stylesheet" href="../style/colorThemeStudentpage.css">
 	<link rel="stylesheet" href="../style/attendance.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,6 +41,13 @@
 		<div id="container"></div>
 
 		<main>
+        <div class="attendancenav">
+            <button type="button" name="fe16" class="cardbutton navspace">FE16</button>
+            <button type="button" name="fe17" class="cardbutton navspace">FE17</button>
+            <img onclick="decWeek()" src="../img/keyboard-left-arrow-button.png" class="arrowsize" alt="">
+            <h3 class="weeknumber" id="weekCount">Vecka 39</h3>
+            <img onclick="incWeek()" src="../img/keyboard-right-arrow-button.png" class="arrowsize" alt="">
+          </div>
 			<div class="att-container">
 				<div class="attendance">
 					<div class="att-row att-names">
@@ -162,7 +170,8 @@
 	</div>
 	<footer class="footer">
 		<p>&copy;2017</p>
-	</footer>
+  </footer>
+  <script type="text/javascript" src="../javascript/togglediv.js"></script>
 	<script type="text/javascript" src="../javascript/teacherattendance.js"></script>
 	<script type="text/javascript" src="../javascript/login.js"></script>
 	<script type="text/javascript" src="../javascript/sent.js"></script>
