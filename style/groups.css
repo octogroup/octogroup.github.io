@@ -4,28 +4,61 @@
   text-align: left;
 }
 
-.cardcontainer {
+.group-card-body li {
+  color: white;
+  align-items: center;
+}
+
+.group-card-body {
+  background-repeat: no-repeat;
+  background-image: url(../img/bakbild1.jpg);
+  padding-top: 50px;
+  height: auto;
+  background: pink;
+}
+.group-card{
+  width: 250px;
+  height: auto;
+}
+
+.group-card-body1 {
+  background-repeat: no-repeat;
+  background-image: url(../img/bakbild.jpg);
+  padding-top: 50px;
+}
+
+.group-cardcontainer {
   width: 250px;
 }
 
-.box {
-  justify-content: space-around;
-
+.group-cardcontainer>p {
+  text-align: center;
+  color: white;
 }
 
-.firstcolumn{
+.box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.firstcolumn {
   width: 40%;
   display: flex;
 }
 
-ul {
-  list-style: none;
+.seconcolumn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 60%;
 }
 
 .klasser {
   text-align: end;
 }
 
-.klass {
-
+#studentlist li {
+  width: 230px;
+  color: black;
+  margin-left: 20px;
 }
