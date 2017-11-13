@@ -1,13 +1,14 @@
 .att-container {
-  width: 60%;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .attendance {
   display: flex;
   justify-content: space-around;
-  border-radius: 2px;
   margin-right: 0;
+  width: 60%;
 }
 
 .attendance p{
@@ -76,7 +77,7 @@
     width: 8px;
     height: 13px;
   }
-  .att-container {
+  .attendance {
     width: 100%;
   }
 }
