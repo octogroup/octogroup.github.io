@@ -1,12 +1,12 @@
 .att-container {
-  width: 100%;
+  width: 60%;
   overflow: hidden;
 }
 
 .attendance {
   display: flex;
   justify-content: space-around;
-  border: solid 1px #e8e8e8;
+  border-radius: 2px;
   margin-right: 0;
 }
 
@@ -20,8 +20,9 @@
   width: 14px;
   height: 18px;
   margin: 0 auto;
+  padding: 1px;
   background-color: #c62828;
-  border: solid 2px #979797;
+  border: solid 1px #818181;
   border-radius: 2px;
   cursor: pointer;
 }
@@ -74,4 +75,8 @@
   .att-square {
     width: 8px;
     height: 13px;
+  }
+  .att-container {
+    width: 100%;
+  }
 }
