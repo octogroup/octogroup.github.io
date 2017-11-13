@@ -321,6 +321,11 @@ body>div>main>div:nth-child(3)>div.kurser>ul>li:nth-child(3) {
   left: 5px;
 }
 
+
+.text-2.white-back > p {
+  color: #000;
+}
+
 .active:hover {
   cursor: pointer;
 }
@@ -360,3 +365,4 @@ body>div>main>div:nth-child(3)>div.kurser>ul>li:nth-child(3) {
     right: 9px;
   }
 }
+
