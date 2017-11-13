@@ -51,11 +51,6 @@ let reset = function () {
   }
 }
 
-// Alert to be sent on submit
-let sent = function () {
-  alert('Inskickat!')
-}
-
 // Close button
 document.getElementById('close').onclick = function () {
   reset()
