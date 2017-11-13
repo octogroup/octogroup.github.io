@@ -179,10 +179,10 @@ div.kurser > ul > li:first-child {
   border-bottom: 3px solid red;
 }
 
-div.kurser > ul > li:hover {
+/* div.kurser > ul > li:hover {
   border-bottom: 3px solid rgba(255, 0, 0, 0.3);
   color: rgba(255, 255, 255, 0.46);
-}
+} */
 
 /* ------------------ muted color on the li items-------------------------  */
 
@@ -197,11 +197,13 @@ div.kurser > ul > li:hover {
 /* ---------------- --- hover ----------------------------------  */
 
   body > div > main > div:nth-child(3) > div.kurser > ul > li:nth-child(2) > a:hover {
-    color: rgba(255, 255, 255, 0.94);
+    color: rgba(255, 255, 255, 0.85);
+    border-bottom: 3px solid rgba(255, 0, 0, 0.3);
   }
 
   body > div > main > div:nth-child(3) > div.kurser > ul > li:nth-child(3) > a:hover {
-    color: rgba(255, 255, 255, 0.94);
+    color: rgba(255, 255, 255, 0.85);
+    border-bottom: 3px solid rgba(255, 0, 0, 0.3);
   }
 
 
