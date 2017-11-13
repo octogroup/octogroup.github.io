@@ -239,8 +239,6 @@ body>div>main>div:nth-child(3)>div.kurser>ul>li:nth-child(3) {
   width: 107%;
 }
 
-
-
 .betygsatt span {
   font-weight: bold;
 }
@@ -268,6 +266,11 @@ body>div>main>div:nth-child(3)>div.kurser>ul>li:nth-child(3) {
 .grading {
   display: flex;
   flex-direction: column;
+}
+
+.button-betygsatt {
+  position: absolute;
+  right: 0px;
 }
 
 .row-1 {
@@ -308,6 +311,10 @@ body>div>main>div:nth-child(3)>div.kurser>ul>li:nth-child(3) {
   height: 100%;
 }
 
+.text-3 p {
+  width: 97%;
+}
+
 .purple {
   background-color: purple;
   color: #fff;
@@ -329,8 +336,7 @@ body>div>main>div:nth-child(3)>div.kurser>ul>li:nth-child(3) {
   left: 5px;
 }
 
-
-.text-2.white-back > p {
+.text-2.white-back>p {
   color: #000;
 }
 
@@ -373,4 +379,3 @@ body>div>main>div:nth-child(3)>div.kurser>ul>li:nth-child(3) {
     right: 9px;
   }
 }
-
