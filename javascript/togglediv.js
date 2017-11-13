@@ -8,6 +8,14 @@ function toggleExpand (self) {
 	return div.style.display = 'none'
 }
 
+function toggleBetygsattning(){
+	const showDiv = document.querySelector('.betygsatt').style.height = '100px';
+}
+
+function closeBetygsattning () {
+	document.querySelector('.betygsatt').style.height = '0px';
+}
+
 // -------- Button-Txt-Toggle -----
 // Assign class toggleText to button
 // Add onclick function toggleText(this)
@@ -18,10 +26,6 @@ function toggleText (self) {
 	if (txt === 'visa mindre') return btn.innerHTML = 'visa mer'
 	console.log(btn)
 	return btn.innerHTML = 'visa mindre'
-	}
-
-	function toggleBetygsattning(){
-    const showDiv = document.querySelector('.betygsatt').style.height = '100px';
 	}
 
 // -------- WeekCounter -----------
