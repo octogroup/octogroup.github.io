@@ -231,25 +231,19 @@ body>div>main>div:nth-child(3)>div.kurser>ul>li:nth-child(3) {
   background-color: #bababa;
   border-left: 1px solid black;
   border-right: 1px solid black;
-}
-
-.betygsatt>ul {
-  list-style-type: none;
   display: flex;
   justify-content: row;
 }
 
-.betygsatt>ul>li {
-  margin-right: 200px;
-}
-
-.betygsatt>ul>li>img {
-  width: 25px;
-}
+.grading {}
 
 .files {
-  display: flex;
-  justify-content: column;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.files img {
+  width: 25px;
 }
 
 .row-1 {
