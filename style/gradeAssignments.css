@@ -248,6 +248,11 @@ body>div>main>div:nth-child(3)>div.kurser>ul>li:nth-child(3) {
   width: 25px;
 }
 
+.files a {
+  color: black;
+  text-decoration: none;
+}
+
 .row-1 {
   width: 100%;
   background-color: black;
