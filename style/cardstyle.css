@@ -187,7 +187,6 @@
 
 .card-body {
   width: auto;
-  height: auto;
   margin: 10px;
 	padding: 10px;
   display: flex;
@@ -213,7 +212,10 @@
 
 .expand {
 	flex-direction: column;
-	display: none;
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.3s;
+
 }
 
 .attendancetitle {

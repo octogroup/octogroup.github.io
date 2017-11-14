@@ -343,7 +343,7 @@ main {
 /*----------------------->Zoom-animation-------------------------------*/
 
 .zoom {
-    animation: animatezoom 0.6s
+    animation: animatezoom 0.4s
 }
 
 @keyframes animatezoom {
@@ -351,8 +351,13 @@ main {
     to {transform: scale(1)}
 }
 
+/*----------------------->animation-helpers-------------------------------*/
 
-/*----------Standard-alligners-----------*/
+.zeroheight {
+  height: 0px;
+}
+
+/*---------------------->Standard-alligners-----------*/
 
 .marginbottom {
 	margin-bottom: 15px;

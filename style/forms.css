@@ -29,7 +29,7 @@
 }
 
 #form {
-  width: 350px;
+  max-width: 350px;
   padding: 10px;
   display: none;
   background-color: #6A1B9A;

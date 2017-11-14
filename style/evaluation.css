@@ -74,21 +74,6 @@
 	flex-wrap: wrap;
 }
 
-#q5 {
-  display: none;
-	flex-direction: column;
-}
-
-#q6 {
-  display: none;
-	flex-direction: column;
-}
-
-#q7 {
-  display: none;
-	flex-direction: column;
-}
-
 div.scroll {
   background-color: white;
   width: 500px;
@@ -100,6 +85,8 @@ div.scroll {
 
 .weekAnswerList {
 	padding-left: 20px;
+  overflow: hidden;
+  transition: height 0.5s;
 }
 
 .canvasjs-chart-credit {
@@ -115,11 +102,6 @@ div.scroll {
 }
 
 .answerSection > ol > li {
-	border-bottom: 1px solid black;
-	padding: 10px;
-}
-
-ol > span > li {
 	border-bottom: 1px solid black;
 	padding: 10px;
 }
