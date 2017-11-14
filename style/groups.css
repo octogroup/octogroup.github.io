@@ -3,55 +3,33 @@
   text-align: left;
 }
 
-/*hela kortet runt om*/
-.group-card{
-  width: auto;
-  height: auto;
-  margin: 20px;
-  border-radius: 2px;
-  flex-wrap: wrap;
-  text-align: center;
-  color: blue;
-}
-
-/*färg på texten i headern?*/
-.group-cardcontainer{
-  display: flex;
-  width: auto;
-  height: auto;
-  flex-direction: column;
-  width: 350px;
-  width: 250px;
-  color: pink;
-}
 /*"Släpp elev här funktion"*/
-.group-card-body {
+.drop-name {
   background-repeat: no-repeat;
   background-image: url(../img/bakbild1.jpg);
   padding-top: 50px;
   height: auto;
 }
 
-/*Färgen innanför*/
-/*.group-card-top-1{
-  background: #6A1B9A;
-}*/
-
-.box {
+.box-group {
   display: flex;
   justify-content: space-around;
 }
 
 .firstcolumn {
-  width: 40%;
+  min-width: 350px;
+  max-width: 500px;
+  width: 100%;
   display: flex;
 }
 
 .seconcolumn {
+  min-width: 350px;
+  max-width: 1100px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 60%;
 }
 
 .klasser {
@@ -64,8 +42,16 @@
   margin-left: 20px;
 }
 
-/*över elevlistan*/
-.group-card-body1 {
+#studentlist > li:nth-child(even){
+  background-color: #fafafa;
+}
+
+#studentlist > li:nth-child(odd){
+  background-color: #e8e8e8;
+}
+
+/*ALLTID HÖGRE PRIO ÄN "DROP-NAME"över elevlistan*/
+#studentlist {
   background-repeat: no-repeat;
   background-image: url(../img/bakbild.jpg);
   padding-top: 50px;
@@ -73,7 +59,7 @@
 
 .card {
   width: 350px;
-  margin: 0;
+  margin: 20px;
   padding: 0;
 }
 
@@ -96,4 +82,20 @@
 
 .dark-purple {
   background: #610061;
+}
+
+.firstcolumn>button{
+  height: 20px;
+}
+.box-mobile {
+  display: none;
+}
+
+@media (max-width: 600px){
+  .box-group {
+    display: none;
+  }
+  .box-mobile {
+    display: block;
+  }
 }

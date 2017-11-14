@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="../style/loginstyle.css">
   <link rel="stylesheet" href="../style/mainstyle.css">
   <link rel="stylesheet" href="../style/colorThemeStudentpage.css">
-  <link rel="stylesheet" href="../style/group-cardstyle.css">
   <link rel="stylesheet" href="../style/groups.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
@@ -36,13 +35,16 @@
       </nav>
     </header>
     <main>
-
-      <div class="box">
+<div class="box-mobile">
+  <p>Inte tillgängligt i mobil</p>
+  <img src="../img/octo.png" alt="en beskrivning">
+</div>
+      <div class="box-group">
         <section class="firstcolumn">
 
           <div class="studentBox">
             <h3>Elevlista</h3>
-            <ol data-draggable="target" class="group-card-body1" id="studentlist" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <ol data-draggable="target" class="drop-name" id="studentlist" ondrop="drop(event)" ondragover="allowDrop(event)">
               <li class="drag1" draggable="true" ondragstart="drag(event)">Elsa Karlsson</li>
               <li class="drag2" draggable="true" ondragstart="drag(event)">Gunnar Frid</li>
               <li class="drag3" draggable="true" ondragstart="drag(event)">Kajsa Hellström</li>
@@ -73,72 +75,40 @@
                 <option value="FE17">FE17</option>
                 <option value="FE16">FE16</option>
 
+
               </select>
 
             </form>
 
           </div>
+          <button type="button" name="button" onclick="addGroup()">Lägg till grupp</button>
 
         </section>
 
 
         <!-- First Column -->
         <section class="seconcolumn">
-<!-- Testa card -->
-<div class="card">
-<div class="dark-purple"><h3>Header</h3></div>
-<div class="purple">
-  <ol class="group-card-body" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <!-- Testa card -->
+          <div class="card">
+            <div class="dark-purple">
+              <h3>Grupp 1</h3></div>
+            <div class="purple">
+              <ol class="drop-name" ondrop="drop(event)" ondragover="allowDrop(event)">
 
-  </ol>
-</div>
-</div>
-
-
-
-
-          <!-- group-card -->
-          <div class="group-card">
-            <div class="group-cardcontainer">
-                <h3>Grupp 1</h3>
-              </div>
-              <ol class="group-card-body" ondrop="drop(event)" ondragover="allowDrop(event)">
-              </ol>
-            </div>
-
-          <!-- group-card -->
-          <div class="group-card">
-            <div class="group-cardcontainer group-card-top-1">
-              <div class="group-card-header group-card-body-1">
-                <h3 class="group-card-heading">Grupp 2</h3>
-              </div>
-              <ol class="group-card-body" ondrop="drop(event)" ondragover="allowDrop(event)">
               </ol>
             </div>
           </div>
-        <!-- </section> -->
-        <!-- Second group-card Column -->
-        <!-- <section class="thirdcolumn"> -->
-          <!-- group-card -->
-          <div class="group-card">
-            <div class="group-cardcontainer group-card-top-1">
-              <div class="group-card-header group-card-body-1">
-                <h3 class="group-card-heading">Grupp 3</h3>
-              </div>
-              <ol class="group-card-body" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+          <!-- andra kortet -->
+          <div class="card">
+            <div class="dark-purple">
+              <h3>Grupp 2</h3></div>
+            <div class="purple">
+              <ol class="drop-name" ondrop="drop(event)" ondragover="allowDrop(event)">
               </ol>
             </div>
           </div>
-          <!-- group-card -->
-          <div class="group-card">
-            <div class="group-cardcontainer group-card-top-1">
-              <div class="group-card-header group-card-body-1">
-                <h3 class="group-card-heading">Grupp 4</h3>
-              </div>
-              <ol class="group-card-body" ondrop="drop(event)" ondragover="allowDrop(event)">
-              </ol>
-            </div>
-          </div>
+
         </section>
       </div>
 

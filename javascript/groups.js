@@ -9,16 +9,16 @@ function drag(ev) {
 function drop(ev) {
     ev.preventDefault();
     var data = ev.dataTransfer.getData("key");
-    if (ev.path["0"].className == 'group-card-body' || 'group-card-body1')
+    if (ev.path["0"].className == 'drop-name')
     {
     ev.target.append(document.getElementsByClassName(data)[0]);
   }
 }
 
 // skapa ny grupp
-let nummer = 1
+let number = 3
 
 function addGroup() {
-  document.getElementsByClassName('seconcolumn')[0].innerHTML += '<div class="group-card"><div class="group-cardcontainer group-card-top-1"><div class="group-card-header group-card-body-1"><h3 class="group-card-heading">Grupp ' + nummer + '</h3></div><ol class="group-card-body" ondrop="drop(event)" ondragover="allowDrop(event)"></ol></div></div>'
-  nummer += 1
+  document.getElementsByClassName('seconcolumn')[0].innerHTML += '<div class="card"><div class="dark-purple"><h3>Grupp ' + number + '</h3></div><div class="purple"><ol class="drop-name" ondrop="drop(event)" ondragover="allowDrop(event)"></ol></div></div>'
+  number += 1
 }
