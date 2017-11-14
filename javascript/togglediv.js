@@ -37,7 +37,7 @@ console.log(selectBox);
 function printBetyg() {
 
 	 skrivColumn.innerhtml === selectBox.value
-	console.log(selectBox.value)
+		console.log(selectBox.value);
 }
 
 skrivBetyg.addEventListener('click', printBetyg);
