@@ -27,6 +27,22 @@ function closeBetygsattning () {
 	const divClose = document.querySelector('.betygsatt').style.height = '0px';
 }
 
+
+const skrivBetyg = document.querySelector('#knappbetyg') // knappen
+const skrivColumn = document.querySelector('#column-white') // vita kolumnen där texten ska hamna
+const selectBox = document.querySelector('#select-input')
+
+console.log(selectBox);
+
+function printBetyg() {
+
+	 skrivColumn.innerhtml === selectBox.value
+	console.log(selectBox.value)
+}
+
+skrivBetyg.addEventListener('click', printBetyg);
+
+ 
 // -------- Button-Txt-Toggle -----
 // Assign class toggleText to button
 // Add onclick function toggleText(this)

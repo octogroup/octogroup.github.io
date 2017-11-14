@@ -72,7 +72,7 @@
               <h4>Betygssättning</h4>
               <div class="gradeInput">
                 <p>Betyg:</p>
-                <select class="select" required id="selectGrade">
+                <select id="select-input" class="select" required id="selectGrade">
                     <option value="" label="Välj betyg"></option>
                     <option value="VG">IG</option>
                     <option value="VG">G</option>
@@ -107,7 +107,7 @@
           <div class="text-1 purple">
             <p onclick="openAssignmentBox()">Elin kviberg</p>
           </div>
-          <div class="text-2 white-back">
+          <div id="column-white" class="text-2 white-back">
             <p></p>
           </div>
           <div class="text-3 white-back">
@@ -130,7 +130,7 @@
               <option value="VG">VG</option>
             </select>
             </p>
-            <p><button type="button" name="button" class="cardbutton small" onclick="closeBetygsattning()">ok</button></p>
+            <p><button id="knappbetyg" type="button" name="button" class="cardbutton small" onclick="closeBetygsattning()">ok</button></p>
           </div>
 
         </div>
