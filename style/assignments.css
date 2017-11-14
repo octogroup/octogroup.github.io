@@ -98,3 +98,17 @@ div > main > h2 {
 }
 
 /*-----------------------Button-ends-----------------------------------*/
+
+::-webkit-input[type='submit'] {
+  cursor: pointer;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 2px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+  text-transform: uppercase;
+  background-color: #ff5f52;
+  border: none;
+}
