@@ -1,40 +1,41 @@
 .studentBox {
-  /*display: flex;*/
   justify-content: center;
   text-align: left;
 }
 
-.group-card-body li {
-  color: white;
-  align-items: center;
+/*hela kortet runt om*/
+.group-card{
+  width: auto;
+  height: auto;
+  margin: 20px;
+  border-radius: 2px;
+  flex-wrap: wrap;
+  text-align: center;
+  color: blue;
 }
 
+/*färg på texten i headern?*/
+.group-cardcontainer{
+  display: flex;
+  width: auto;
+  height: auto;
+  flex-direction: column;
+  width: 350px;
+  width: 250px;
+  color: pink;
+}
+/*"Släpp elev här funktion"*/
 .group-card-body {
   background-repeat: no-repeat;
   background-image: url(../img/bakbild1.jpg);
   padding-top: 50px;
   height: auto;
-  background: pink;
-}
-.group-card{
-  width: 250px;
-  height: auto;
 }
 
-.group-card-body1 {
-  background-repeat: no-repeat;
-  background-image: url(../img/bakbild.jpg);
-  padding-top: 50px;
-}
-
-.group-cardcontainer {
-  width: 250px;
-}
-
-.group-cardcontainer>p {
-  text-align: center;
-  color: white;
-}
+/*Färgen innanför*/
+/*.group-card-top-1{
+  background: #6A1B9A;
+}*/
 
 .box {
   display: flex;
@@ -61,4 +62,11 @@
   width: 230px;
   color: black;
   margin-left: 20px;
+}
+
+/*över elevlistan*/
+.group-card-body1 {
+  background-repeat: no-repeat;
+  background-image: url(../img/bakbild.jpg);
+  padding-top: 50px;
 }

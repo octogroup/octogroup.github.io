@@ -3,18 +3,19 @@ function allowDrop(ev) {
 }
 
 function drag(ev) {
-    ev.dataTransfer.setData("hejsanhoppsan", ev.target.className);
+    ev.dataTransfer.setData("key", ev.target.className);
 }
 
 function drop(ev) {
     ev.preventDefault();
-    var data = ev.dataTransfer.getData("hejsanhoppsan");
+    var data = ev.dataTransfer.getData("key");
     if (ev.path["0"].className == 'group-card-body' || 'group-card-body1')
     {
     ev.target.append(document.getElementsByClassName(data)[0]);
   }
 }
 
+// skapa ny grupp
 let nummer = 1
 
 function addGroup() {
