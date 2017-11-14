@@ -32,12 +32,11 @@ const skrivBetyg = document.querySelector('#knappbetyg') // knappen
 const skrivColumn = document.querySelector('#column-white') // vita kolumnen där texten ska hamna
 const selectBox = document.querySelector('#select-input')
 
-console.log(selectBox);
+console.log(skrivColumn);
 
 function printBetyg() {
-
-	 skrivColumn.innerhtml === selectBox.value
-		console.log(selectBox.value);
+skrivColumn.style.color = 'black';
+skrivColumn.innerHTML = selectBox.value;
 }
 
 skrivBetyg.addEventListener('click', printBetyg);
