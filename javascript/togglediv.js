@@ -11,12 +11,13 @@ function toggleExpand (self) {
 function toggleBetygsattning() {
 	// diven som åker upp och ner
 	const div = document.querySelector('.betygsatt');
-	div.style.height = '0px';
+	let height = div.style.height;
 
-	if (div.style.height == "0px") {
+	if(height == "0px" || height == ""){
 		div.style.height = '100px';
 		const buttonDiv = document.querySelector('#knapp').innerHTML = "&#10005";
-	} else {
+	}
+	else{
 		document.querySelector('#knapp').innerHTML = "betygsätt";
 		closeBetygsattning();
 	}
@@ -28,21 +29,26 @@ function closeBetygsattning () {
 }
 
 
-const skrivBetyg = document.querySelector('#knappbetyg') // knappen
-const skrivColumn = document.querySelector('#column-white') // vita kolumnen där texten ska hamna
-const selectBox = document.querySelector('#select-input')
+const skrivBetyg = document.querySelector('#knappbetyg'); // knappen
+const skrivColumn = document.querySelector('#column-white'); // vita kolumnen där texten ska hamna. paragrafen
+const selectBox = document.querySelector('#select-input');
 
 console.log(selectBox);
 
 function printBetyg() {
 
-	 skrivColumn.innerhtml === selectBox.value
-		console.log(selectBox.value);
+	let grade = selectBox.value;
+	skrivColumn.innerHTML = grade;
+	closeBetygsattning();
+	removeButton();
 }
-
 skrivBetyg.addEventListener('click', printBetyg);
 
- 
+function removeButton () {
+	let knapp = document.querySelector('#knapp');
+	knapp.style.display = "none";
+}
+
 // -------- Button-Txt-Toggle -----
 // Assign class toggleText to button
 // Add onclick function toggleText(this)

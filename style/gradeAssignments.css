@@ -152,7 +152,7 @@ h3 {
 
 .table {
   margin: 0 auto;
-  width: 830px;
+  width: 79%;
   display: flex;
   flex-direction: column;
   margin-bottom: 25px;
@@ -300,7 +300,7 @@ body>div>main>div:nth-child(3)>div.kurser>ul>li:nth-child(3) {
 }
 
 .text-2 {
-  width: 204px;
+  width: 68px;
   border-right: 2px solid grey;
   height: 100%;
   padding-left: 5px;
@@ -310,6 +310,7 @@ body>div>main>div:nth-child(3)>div.kurser>ul>li:nth-child(3) {
   flex-grow: 1;
   padding-left: 5px;
   height: 100%;
+  min-width: 115px;
 }
 
 .text-3 p {
@@ -378,5 +379,11 @@ body>div>main>div:nth-child(3)>div.kurser>ul>li:nth-child(3) {
     position: absolute;
     top: 109px;
     right: 9px;
+  }
+  .table {
+    width: 98%;
+  }
+  .text-1 {
+    width: 128px;
   }
 }
