@@ -153,7 +153,7 @@ h3 {
 
 .table {
   margin: 0 auto;
-  width: 79%;
+  width: 56%;
   display: flex;
   flex-direction: column;
   margin-bottom: 25px;
@@ -389,21 +389,15 @@ body>div>main>div:nth-child(3)>div.kurser>ul>li:nth-child(3) {
   }
 }
 
+@media (max-width: 1920px) {}
 
-@media (max-width: 1920px) {
-
-}
-
-@media (max-width: 1280px) {
-
-}
+@media (max-width: 1280px) {}
 
 @media (max-width: 600px) {
   .cardbutton {
     padding: 4px 7px;
   }
-
-  body > div > main > div.table > div.kurser > ul > li> a {
+  body>div>main>div.table>div.kurser>ul>li>a {
     font-size: 22px;
   }
 }
