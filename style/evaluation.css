@@ -90,7 +90,7 @@ div.scroll {
 }
 
 .canvasjs-chart-credit {
-	display: none;
+	display: none !important;
 }
 
 .answerSection {
@@ -113,9 +113,13 @@ div.scroll {
 .feedbacknav {
 	max-width: 350px;
 	display: flex;
-	margin: 50px auto 50px;
+	margin: 20px auto;
 	justify-content: center;
 
+}
+
+.whichcourse {
+  margin: 50px auto 15px;
 }
 
 .navspace {
@@ -133,7 +137,7 @@ div.scroll {
 
 .feedbackheader {
 	display: flex;
-	margin: 50px auto 50px;
+	margin: 50px auto 20px;
 	justify-content: center;
 }
 
@@ -149,4 +153,8 @@ div.scroll {
 
 .canvasjs-chart-tooltip {
 	display: none !important;
+}
+
+.inputform {
+  margin: 20px 50px;
 }

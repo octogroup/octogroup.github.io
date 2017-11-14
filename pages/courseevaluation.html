@@ -42,16 +42,33 @@
     <main>
 
       <img class="wbild" src="../img/courspic.png">
+      <h4 class="feedbackheader">Välj vilken kurs och klass som ska visas</h3>
 
 			<div class="feedbacknav">
-				<button type="button" name="fe16" class="cardbutton navspace" onclick="toggleExpandGraphs1()">FE16</button>
-				<button type="button" name="fe17" class="cardbutton navspace" onclick="toggleExpandGraphs2()">FE17</button>
+        <form class="inputform">
+          <p class="card-heading">Klass:</p>
+          <select id="classassign" class="cardbutton" onchange="changeFirst(this)">
+            <option value=""></option>
+            <option value="FE16">FE16</option>
+            <option value="FE17">FE17</option>
+          </select>
+        </form>
+        <form class="inputform">
+          <p class="card-heading">Kurs:</p>
+          <select id="courseassign" class="cardbutton" onchange="changeSecond(this)">
+            <option value=""></option>
+            <option value="Arbetsmetodik">Arbetsmetodik</option>
+            <option value="Javascript">JavaScript</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+          </select>
+        </form>
 			</div>
 
-			<h3 class="feedbackheader">Senaste avslutade kurser</h3>
+      <h2 class="center margintop"><span id="partone">FE16</span> - <span id="parttwo">Arbetsmetodik</span></h2>
 
       <div class="graphfcont">
-        <div id="chartContainerMiddleFe16"></div>
+        <!-- <div id="chartContainerMiddleFe16"></div> -->
 				<div id="chartContainerMiddleFe17"></div>
       </div>
 
@@ -59,7 +76,7 @@
       <div class="showAnswer">
         <section class="answerSection">
           <!-- <h3 class="marginbottom">Fråga</h3> -->
-          <h4 class="marginbottom">Är det något specifikt moment i utbildningen du upplever att du behöver mer stöd i?</h4>
+            <h4 class="marginbottom">Är det något specifikt moment i utbildningen du upplever att du behöver mer stöd i?</h4>
           <ol class="weekAnswerList">
             <li>javascript</li>
             <li>JS</li>

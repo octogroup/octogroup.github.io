@@ -1,6 +1,11 @@
 
 let chart3 = new CanvasJS.Chart('chartContainerRight', {
   animationEnabled: true,
+  title:{
+	},
+	axisY: {
+		title: "Antal"
+	},
   title: {text: 'Denna Vecka'},
   axisX: {valueFormatString: 'DD/MM/YY'},
   legend: {cursor: 'pointer', fontSize: 16, itemclick: toggleDataSeries},
