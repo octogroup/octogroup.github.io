@@ -70,3 +70,30 @@
   background-image: url(../img/bakbild.jpg);
   padding-top: 50px;
 }
+
+.card {
+  width: 350px;
+  margin: 0;
+  padding: 0;
+}
+
+.card:first-child {
+  min-height: 120px;
+}
+
+.card h3 {
+  color: pink;
+}
+
+.card > div:nth-child(2) {
+  min-height: 50px;
+  width: 100%;
+}
+
+.purple {
+  background: purple;
+}
+
+.dark-purple {
+  background: #610061;
+}
