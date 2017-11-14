@@ -33,7 +33,6 @@ const skrivBetyg = document.querySelector('#knappbetyg'); // knappen
 const skrivColumn = document.querySelector('#column-white'); // vita kolumnen där texten ska hamna. paragrafen
 const selectBox = document.querySelector('#select-input');
 
-console.log(selectBox);
 
 function printBetyg() {
 
