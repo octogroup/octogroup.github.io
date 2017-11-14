@@ -201,6 +201,10 @@
   text-align: left;
 }
 
+.card-body a:hover { 
+  border-bottom: 2px solid white;
+  }
+
 .card-bottom {
   display: flex;
   height: auto;
