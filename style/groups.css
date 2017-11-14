@@ -1,13 +1,10 @@
-.studentBox {
-  justify-content: center;
-  text-align: left;
+.editnav {
+  display: flex;
 }
 
-/*"Släpp elev här funktion"*/
 .drop-name {
-  background-repeat: no-repeat;
-  background-image: url(../img/bakbild1.jpg);
-  padding-top: 50px;
+  background: url(../img/bakbild.png) no-repeat;
+  padding-top: 56px;
   height: auto;
 }
 
@@ -18,22 +15,23 @@
 
 .firstcolumn {
   min-width: 350px;
-  max-width: 500px;
+  max-width: 650px;
   width: 100%;
   display: flex;
 }
 
 .seconcolumn {
   min-width: 350px;
-  max-width: 1100px;
+  max-width: 950px;
   width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.klasser {
-  text-align: end;
+.classes {
+  color: white;
+  padding-top: 20px;
 }
 
 #studentlist li {
@@ -42,19 +40,12 @@
   margin-left: 20px;
 }
 
-#studentlist > li:nth-child(even){
+#studentlist>li:nth-child(even) {
   background-color: #fafafa;
 }
 
-#studentlist > li:nth-child(odd){
+#studentlist>li:nth-child(odd) {
   background-color: #e8e8e8;
-}
-
-/*ALLTID HÖGRE PRIO ÄN "DROP-NAME"över elevlistan*/
-#studentlist {
-  background-repeat: no-repeat;
-  background-image: url(../img/bakbild.jpg);
-  padding-top: 50px;
 }
 
 .card {
@@ -63,39 +54,78 @@
   padding: 0;
 }
 
-.card:first-child {
-  min-height: 120px;
+.card > div:first-child {
+  height: 90px;
+}
+
+.card ol>li:nth-child(odd) {
+  background: #af005d;
+}
+
+.card li {
+  color: white;
+  margin: 0 35px;
+}
+
+.custom-card {
+  margin: 0 auto 40px 0;
+}
+
+.custom-list {
+  margin: 0 auto 40px auto;
 }
 
 .card h3 {
-  color: pink;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
 }
 
-.card > div:nth-child(2) {
+.card>div:nth-child(2) {
   min-height: 50px;
   width: 100%;
 }
 
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.width-style {
+  width: 500px;
+}
+
 .purple {
-  background: purple;
+  background: #c51261;
 }
 
 .dark-purple {
-  background: #610061;
+  background: #880e4f;
 }
 
-.firstcolumn>button{
-  height: 20px;
+.firstcolumn button {
+  height: 36px;
 }
+
 .box-mobile {
   display: none;
 }
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
   .box-group {
     display: none;
   }
   .box-mobile {
     display: block;
   }
+}
+
+.asidebarbox {
+  margin: 0 auto;
 }

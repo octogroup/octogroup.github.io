@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <div class="content">
+  <div class="content backgroundpic1">
     <header>
       <a href="teacherpage.html">
         <img src="../img/KYH-logo.png" alt="logo">
@@ -34,62 +34,63 @@
         </ul>
       </nav>
     </header>
+    <aside class="editnav">
+      <div class="asidebarbox">
+        <button class="cardbutton" type="button" name="button" onclick="addGroup()">Lägg till grupp</button>
+        <button class="cardbutton" type="button" name="button" onclick="window.location.reload()">Återställ</button>
+      </div>
+    </aside>
+
     <main>
-<div class="box-mobile">
-  <p>Inte tillgängligt i mobil</p>
-  <img src="../img/octo.png" alt="en beskrivning">
-</div>
+      <div class="box-mobile">
+        <p>Inte tillgängligt i mobil</p>
+        <img src="../img/octo.png" alt="en beskrivning">
+      </div>
       <div class="box-group">
         <section class="firstcolumn">
+          <div class="card custom-list">
+              <div class="dark-purple">
+                <div class="flex-row">
+                  <h3>Elevlista</h3>
+                  <form>
+                    <p class="classes">klasser:</p>
+                    <select>
+                  <option value="FE17">FE17</option>
+                  <option value="FE16">FE16</option>
+                </select>
+                  </form>
+                </div>
+            </div>
 
-          <div class="studentBox">
-            <h3>Elevlista</h3>
-            <ol data-draggable="target" class="drop-name" id="studentlist" ondrop="drop(event)" ondragover="allowDrop(event)">
-              <li class="drag1" draggable="true" ondragstart="drag(event)">Elsa Karlsson</li>
-              <li class="drag2" draggable="true" ondragstart="drag(event)">Gunnar Frid</li>
-              <li class="drag3" draggable="true" ondragstart="drag(event)">Kajsa Hellström</li>
-              <li class="drag4" draggable="true" ondragstart="drag(event)">Svante Hjälm</li>
-              <li class="drag5" draggable="true" ondragstart="drag(event)">Ingvar Loop</li>
-              <li class="drag6" draggable="true" ondragstart="drag(event)">Ulla Uggla</li>
-              <li class="drag7" draggable="true" ondragstart="drag(event)">Elon Elektronik</li>
-              <li class="drag8" draggable="true" ondragstart="drag(event)">Stina Clark</li>
-              <li class="drag9" draggable="true" ondragstart="drag(event)">Olov Kanel</li>
-              <li class="drag10" draggable="true" ondragstart="drag(event)">Vivi Viol</li>
-              <li class="drag11" draggable="true" ondragstart="drag(event)">Sten Björklöf</li>
-              <li class="drag12" draggable="true" ondragstart="drag(event)">Anna-Karin Dubbelnamn</li>
-              <li class="drag13" draggable="true" ondragstart="drag(event)">Bo Strömmberget</li>
-              <li class="drag14" draggable="true" ondragstart="drag(event)">Anja Vilse</li>
-              <li class="drag15" draggable="true" ondragstart="drag(event)">Ejnar Guldsko</li>
-              <li class="drag16" draggable="true" ondragstart="drag(event)">Lisa Vinnarskalle</li>
-            </ol>
+            <div class="purple">
+
+              <ol data-draggable="target" class="drop-name" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <li class="drag1" draggable="true" ondragstart="drag(event)">Elsa Karlsson</li>
+                <li class="drag2" draggable="true" ondragstart="drag(event)">Gunnar Frid</li>
+                <li class="drag3" draggable="true" ondragstart="drag(event)">Kajsa Hellström</li>
+                <li class="drag4" draggable="true" ondragstart="drag(event)">Svante Hjälm</li>
+                <li class="drag5" draggable="true" ondragstart="drag(event)">Ingvar Loop</li>
+                <li class="drag6" draggable="true" ondragstart="drag(event)">Ulla Uggla</li>
+                <li class="drag7" draggable="true" ondragstart="drag(event)">Elon Elektronik</li>
+                <li class="drag8" draggable="true" ondragstart="drag(event)">Stina Clark</li>
+                <li class="drag9" draggable="true" ondragstart="drag(event)">Olov Kanel</li>
+                <li class="drag10" draggable="true" ondragstart="drag(event)">Vivi Viol</li>
+                <li class="drag11" draggable="true" ondragstart="drag(event)">Sten Björklöf</li>
+                <li class="drag12" draggable="true" ondragstart="drag(event)">Anna-Karin Dubbelnamn</li>
+                <li class="drag13" draggable="true" ondragstart="drag(event)">Bo Strömmberget</li>
+                <li class="drag14" draggable="true" ondragstart="drag(event)">Anja Vilse</li>
+                <li class="drag15" draggable="true" ondragstart="drag(event)">Ejnar Guldsko</li>
+                <li class="drag16" draggable="true" ondragstart="drag(event)">Lisa Vinnarskalle</li>
+              </ol>
+            </div>
           </div>
-          <!-- <div class="addStudent">
-            <h3>Lägg till elev</h3>
-
-          </div> -->
-          <div class="klasser">
-            <h3>Välj klass</h3>
-            <form>
-              <p>klasser:</p>
-              <select class="klass">
-                <option value="FE17">FE17</option>
-                <option value="FE16">FE16</option>
-
-
-              </select>
-
-            </form>
-
-          </div>
-          <button type="button" name="button" onclick="addGroup()">Lägg till grupp</button>
-
         </section>
 
 
         <!-- First Column -->
         <section class="seconcolumn">
           <!-- Testa card -->
-          <div class="card">
+          <div class="card custom-card">
             <div class="dark-purple">
               <h3>Grupp 1</h3></div>
             <div class="purple">
@@ -100,8 +101,8 @@
           </div>
 
           <!-- andra kortet -->
-          <div class="card">
-            <div class="dark-purple">
+          <div class="card custom-card">
+            <div class="dark-purple flex-column">
               <h3>Grupp 2</h3></div>
             <div class="purple">
               <ol class="drop-name" ondrop="drop(event)" ondragover="allowDrop(event)">
