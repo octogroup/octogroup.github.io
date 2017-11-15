@@ -2,6 +2,8 @@
 /* eslint no-unused-vars: 0 */
 /* eslint-env browser */
 
+// currently working on adding something that will use maxNumber to only allow a centrain amount in eatch group, row 62
+
 function allowDrop (ev) {
   ev.preventDefault()
 }
@@ -12,18 +14,21 @@ function drag (ev) {
 
 function drop (ev) {
   ev.preventDefault()
-  var data = ev.dataTransfer.getData('key')
+  let data = ev.dataTransfer.getData('key')
   if (ev.path['0'].className === 'drop-name') {
     ev.target.append(document.getElementsByClassName(data)[0])
   }
 }
 
-// Create new group
+// Shows in the card)
 let number = 3
 
+// Create new group, matching array, add to number and calculate new maxNumber
 function addGroup () {
   document.getElementsByClassName('seconcolumn')[0].innerHTML += '<div class="card custom-card"><div class="dark-purple"><h3>Grupp ' + number + '</h3></div><div class="purple"><ol class="drop-name" ondrop="drop(event)" ondragover="allowDrop(event)"></ol></div></div>'
   number += 1
+  maxNumber = Math.floor(namesArray.length / (number - 1))
+  groups.push([])
 }
 
 let namesArray = [
@@ -45,17 +50,35 @@ let namesArray = [
   '<li class="drag16" draggable="true" ondragstart="drag(event)">Lisa Vinnarskalle</li>'
 ]
 
-let currentName
+let groups = [
+  [],
+  []
+]
 
+let currentName
+let r
+
+// Calculates max allowed peaple in one group
+let maxNumber = Math.floor(namesArray.length / (number - 1))
+
+// Takes the last name out of namesArray and places into a random array in the groups array.
 let randomArray = function () {
-  for (var i = namesArray.length; i > 0; i--) {
-    r = Math.floor(Math.random() * (number - 1)) + 1
+  for (let i = namesArray.length; i > 0; i--) {
+    r = Math.floor(Math.random() * (number - 1))
     currentName = namesArray.pop()
-    document.getElementsByClassName('drop-name')[r].innerHTML += currentName
+    groups[r].push(currentName)
   }
+  // Translates the array groups into html groups
+  for (var a = 0; a < groups.length; a++) {
+    for (var b = 0; b < groups[a].length; b++) {
+      document.getElementsByClassName('drop-name')[a + 1].innerHTML += groups[a][b]
+    }
+  }
+  // Clears the namelist "Elevlista"
   document.getElementsByClassName('drop-name')[0].innerHTML = null
 }
 
-for (var i = 0; i < namesArray.length; i++) {
+// Translates namesArray into the namelist "Elevlista"
+for (let i = 0; i < namesArray.length; i++) {
   document.getElementsByClassName('drop-name')[0].innerHTML += namesArray[i]
 }
