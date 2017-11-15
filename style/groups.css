@@ -54,7 +54,7 @@
   padding: 0;
 }
 
-.card > div:first-child {
+.card>div:first-child {
   height: 90px;
 }
 
@@ -124,6 +124,21 @@
   .box-mobile {
     display: block;
   }
+}
+
+.mobil-pos {
+  text-align: center;
+}
+
+.mobil-pic {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .asidebarbox {
