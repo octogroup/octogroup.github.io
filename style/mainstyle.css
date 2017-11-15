@@ -276,6 +276,11 @@ main {
   }
   .box {
     justify-content: center;
+    padding: 10px;
+    margin: 0px;
+  }
+  .titleColor {
+    text-align: center;
   }
 }
 
@@ -377,6 +382,10 @@ main {
 
 .marginleft {
   margin-left: 15px;
+}
+
+.paddingleft {
+  padding-left: 10px;
 }
 
 .text-center {

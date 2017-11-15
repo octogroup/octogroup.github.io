@@ -1,4 +1,4 @@
-#containercourse {
+.containercourse {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,7 +8,6 @@
 .box {
   display: flex;
   flex-direction: column;
-  width: 100%;
   padding: 50px;
   margin: 30px;
   border-radius: 2px;
@@ -33,4 +32,10 @@
 .titleColor {
   background-color: #eee;
   padding-left: 10px;
+}
+
+.courseIcon {
+  height: 25px;
+  width: 25px;
+  z-index: 10;
 }
