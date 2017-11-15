@@ -76,6 +76,9 @@ let randomArray = function () {
   }
   // Clears the namelist "Elevlista"
   document.getElementsByClassName('drop-name')[0].innerHTML = null
+
+  // Disable button after use
+  document.getElementById('random').disabled = true
 }
 
 // Translates namesArray into the namelist "Elevlista"
