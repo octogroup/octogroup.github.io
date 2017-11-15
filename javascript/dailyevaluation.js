@@ -53,9 +53,9 @@ let chart4 = new CanvasJS.Chart("chartContainerLeft", {
         toolTipContent: "{name}: <strong>{y}%</strong>",
         indexLabel: "{name} - {y}%",
         dataPoints: [
-            { y: 26, name: "Glad", exploded: true },
-            { y: 20, name: "Ledsen" },
-            { y: 5, name: "Neutral" },
+            { y: 26, name: "Glad", exploded: true, color: "#8BC34A" },
+            { y: 20, name: "Ledsen", color: "#ff5f52" },
+            { y: 5, name: "Neutral", color: "#8E24AA" },
         ]
     }]
 });
