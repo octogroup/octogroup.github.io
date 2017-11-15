@@ -3,10 +3,10 @@
   justify-content: space-between;
   width: 270px;
   height: 70px;
-  margin-top: 10px;
   transition: height 1s;
   transition-delay: 0.6s;
   overflow: hidden;
+  padding-top: 10px;
 }
 
 #smileyfaces>label:hover {

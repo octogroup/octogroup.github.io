@@ -1,40 +1,24 @@
 
 let chart3 = new CanvasJS.Chart('chartContainerRight', {
   animationEnabled: true,
+  title:{
+	},
+	axisY: {
+		title: "Antal"
+	},
   title: {text: 'Denna Vecka'},
   axisX: {valueFormatString: 'DD/MM/YY'},
-  axisY: {includeZero: false},
   legend: {cursor: 'pointer', fontSize: 16, itemclick: toggleDataSeries},
   toolTip: {enabled: false},
   data: [{
-    name: 'Glad',
-    type: 'spline',
-    showInLegend: true,
-    dataPoints: [{x: new Date(2017, 9, 1), y: 35},
-								 {x: new Date(2017, 9, 2), y: 30},
-								 {x: new Date(2017, 9, 3), y: 32},
-								 {x: new Date(2017, 9, 4), y: 27},
-								 {x: new Date(2017, 9, 5), y: 30}]
-		},
-		{
-    name: 'Neutral',
-    type: 'spline',
-    showInLegend: true,
-    dataPoints: [{x: new Date(2017, 9, 1), y: 25},
-								 {x: new Date(2017, 9, 2), y: 30},
-								 {x: new Date(2017, 9, 3), y: 27},
-								 {x: new Date(2017, 9, 4), y: 25},
-    				 		 {x: new Date(2017, 9, 5), y: 23}]
-		},
-  	{
-    name: 'Ledsen',
+    name: 'Genomsnittligt humör',
     type: 'spline',
     showInLegend: true,
     dataPoints: [{x: new Date(2017, 9, 1), y: 30},
-								 {x: new Date(2017, 9, 2), y: 32},
-    				 		 {x: new Date(2017, 9, 3), y: 27},
-								 {x: new Date(2017, 9, 4), y: 32},
-    				 		 {x: new Date(2017, 9, 5), y: 29}]
+								 {x: new Date(2017, 9, 2), y: 20},
+								 {x: new Date(2017, 9, 3), y: 23},
+								 {x: new Date(2017, 9, 4), y: 27},
+								 {x: new Date(2017, 9, 5), y: 35}]
 	}]
 })
 chart3.render()

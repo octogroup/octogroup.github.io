@@ -55,7 +55,7 @@
 								<span class="bar"></span>
 								<p id="errortxt">Koden är fel. Vänligen försök igen.</p>
 								<br>
-								<button type="button" name="button" class="cardbutton" id="attsbutton" onclick="checkAttendance()">Skicka</button>
+								<button type="button" name="button" class="cardbutton" id="attsbutton" onclick="checkAttendance()">Anmäl närvaro</button>
 							</div>
 							<div id="attOnSend" class="boxstyle">
 								<div class="dfbform">
@@ -79,10 +79,10 @@
 					<div class="card">
 						<div class="cardcontainer card-top-1">
 							<div class="card-header card-body-1">
+								<h3 class="card-heading">Pågående kurser</h3>
 								<img src="../img/notebook.svg" alt="notebook" class="card-img">
 							</div>
 							<div class="card-body">
-								<h3 class="card-heading">Pågående kurser</h3>
 								<ul class="card-list">
 									<li>
 										<a class="nav-link" href="assignments.html">Arbetsmetodik för front-end-utveckling</a>
@@ -90,7 +90,7 @@
 									<li>
 										<a class="nav-link" href="assignments.html">JavaScript</a>
 									</li>
-									<div class="expand" style="display: none;">
+									<div class="expand">
 										<li>
 											<a class="nav-link" href="assignments.html">HTML</a>
 										</li>
@@ -101,7 +101,7 @@
 								</ul>
 							</div>
 							<div class="card-bottom">
-								<button type="button" name="button" class="cardbutton" onclick="toggleExpand(this)">Läs Mer</button>
+								<button type="button" name="button" class="cardbutton toggleText" onclick="toggleExpand(this, '50px'); toggleText(this)">Läs Mer</button>
 							</div>
 						</div>
 					</div>
@@ -109,10 +109,10 @@
 					<div class="card">
 						<div class="cardcontainer card-top-4">
 							<div class="card-header card-body-4">
+								<h3 class="card-heading">Dagens feedback</h3>
 								<img src="../img/service.svg" alt="service" class="card-img">
 							</div>
-							<div class="card-body">
-								<h3 class="card-heading">Dagens feedback</h3>
+							<div id="feedbackbody">
 								<form name="dailyFeedback" id="dailyFeedback_form" action="#" method="POST">
 									<p id="smileyfaces">
 										<label for="ledsen" onclick="submitForm(this.id)" onmouseover="makeYellow(this.id)" onmouseout="makeGrey(this.id)" id="ledsenLabel">
@@ -135,11 +135,11 @@
 					<!-- Card -->
 					<div class="card">
 						<div class="cardcontainer card-top-7">
-							<div class="card-header card-body-7">
+							<div class="card-header card-body-2">
+								<h3 class="card-heading">Examinationer</h3>
 								<img class="card-img" src="../img/calendar.svg" alt="calendar">
 							</div>
 							<div class="card-body">
-								<h3 class="card-heading">Examinationer</h3>
 								<ul class="card-list">
 									<li>
 										<a class="nav-link" href="assignments.html">22/10 Bootstrap: Inlämmning 1</a>
@@ -154,7 +154,7 @@
 										<a class="nav-link" href="assignments.html">02/11 Vue.js: Hemtenta</a>
 									</li>
 								</ul>
-								<div class="expand" style="display: none;">
+								<div class="expand">
 									<ul class="card-list">
 										<form>
 											<p class="card-heading">Kurs:</p>
@@ -170,7 +170,7 @@
 								</div>
 							</div>
 							<div class="card-bottom">
-								<button type="button" name="button" class="cardbutton" onclick="toggleExpand(this)">Lämna in</button>
+								<button type="button" name="button" class="cardbutton" onclick="toggleExpand(this, '120px')">Lämna in</button>
 							</div>
 						</div>
 					</div>
@@ -181,10 +181,10 @@
 					<div class="card">
 						<div class="cardcontainer card-top-2">
 							<div class="card-header card-body-2">
+								<h3 class="card-heading">Kommande kurser</h3>
 								<img src="../img/calendar.svg" alt="calendar" class="card-img">
 							</div>
 							<div class="card-body">
-								<h3 class="card-heading">Kommande kurser</h3>
 								<ul class="card-list">
 									<li>
 										<a class="nav-link" href="assignments.html">Bootstrap</a>
@@ -192,7 +192,7 @@
 									<li>
 										<a class="nav-link" href="assignments.html">Angular</a>
 									</li>
-									<div class="expand" style="display: none;">
+									<div class="expand">
 										<li>
 											<a class="nav-link" href="assignments.html">React</a>
 										</li>
@@ -203,7 +203,7 @@
 								</ul>
 							</div>
 							<div class="card-bottom">
-								<button type="button" name="button" class="cardbutton" onclick="toggleExpand(this)">Läs Mer</button>
+								<button type="button" name="button" class="cardbutton toggleText" onclick="toggleExpand(this, '50px'); toggleText(this)">Läs Mer</button>
 							</div>
 						</div>
 					</div>
@@ -211,11 +211,11 @@
 					<div class="card">
 						<div class="cardcontainer card-top-5">
 							<div class="card-header card-body-5">
+								<h3 class="card-heading">Veckorapport</h3>
 								<img src="../img/mail.svg" alt="mail" class="card-img">
 							</div>
-							<div class="card-body">
-								<h3 class="card-heading">Veckorapport</h3>
-							</div>
+							<!-- <div class="card-body">
+							</div> -->
 							<div class="card-bottom">
 								<a href="weekeval.html">
                   <button type="button" name="button" class="cardbutton">Öppna</button>
@@ -230,11 +230,11 @@
 					<div class="card">
 						<div class="cardcontainer card-top-3">
 							<div class="card-header card-body-3">
+								<h3 class="card-heading">Avslutade kurser</h3>
 								<img src="../img/trophy.svg" alt="trophy" class="card-img">
 							</div>
-							<div class="card-body">
-								<h3 class="card-heading">Avslutade kurser</h3>
-							</div>
+							<!-- <div class="card-body">
+							</div> -->
 							<div class="card-bottom">
 								<a href="grades.html">
                   <button type="button" name="button" class="cardbutton">Öppna</button>
@@ -246,10 +246,10 @@
 					<div class="card">
 						<div class="cardcontainer card-top-6">
 							<div class="card-header card-body-6">
+								<h3 class="card-heading">Student nyheter</h3>
 								<img src="../img/newspaper.svg" alt="newspaper" class="card-img">
 							</div>
 							<div class="card-body">
-								<h3 class="card-heading">Student nyheter</h3>
 								<h4 class="card6-heading">VÄLKOMMEN TILL NYA WEBBPLATSEN</h4>
 								<p class="card-heading">Nu är den äntligen här. Vår nya webb där du mycket enklare kan se vilka utbildningar vi har och hitta rätt utbildning för dig! Du vet väl att vi har ansökningen till utbildningarna öppen ändra fram till 5 juni i år?
 								</p>
