@@ -26,7 +26,6 @@ function addGroup () {
   number += 1
 }
 
-// Randomize function
 let namesArray = [
   '<li class="drag1" draggable="true" ondragstart="drag(event)">Elsa Karlsson</li>',
   '<li class="drag2" draggable="true" ondragstart="drag(event)">Gunnar Frid</li>',
@@ -46,6 +45,16 @@ let namesArray = [
   '<li class="drag16" draggable="true" ondragstart="drag(event)">Lisa Vinnarskalle</li>'
 ]
 
+let currentName
+
+let randomArray = function () {
+  for (var i = namesArray.length; i > 0; i--) {
+    r = Math.floor(Math.random() * (number - 1)) + 1
+    currentName = namesArray.pop()
+    document.getElementsByClassName('drop-name')[r].innerHTML += currentName
+  }
+  document.getElementsByClassName('drop-name')[0].innerHTML = null
+}
 
 for (var i = 0; i < namesArray.length; i++) {
   document.getElementsByClassName('drop-name')[0].innerHTML += namesArray[i]
