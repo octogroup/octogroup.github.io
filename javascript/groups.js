@@ -2,7 +2,7 @@
 /* eslint no-unused-vars: 0 */
 /* eslint-env browser */
 
-// currently working on adding something that will use maxNumber to only allow a centrain amount in eatch group, row 62
+// currently trying to solve why maxNumber needs to be +1 when the number of groups are odd (chrome hangs whitout it)
 
 function allowDrop (ev) {
   ev.preventDefault()
@@ -61,12 +61,34 @@ let r
 // Calculates max allowed peaple in one group
 let maxNumber = Math.floor(namesArray.length / (number - 1))
 
+// See if the number of groups is even or odd
+function isEven (value) {
+  if (value % 2 === 0) {
+    return true
+  } else return false
+}
+
 // Takes the last name out of namesArray and places into a random array in the groups array.
 let randomArray = function () {
   for (let i = namesArray.length; i > 0; i--) {
     r = Math.floor(Math.random() * (number - 1))
-    currentName = namesArray.pop()
-    groups[r].push(currentName)
+    // Run if even
+    if (isEven(groups.length)) {
+      if (groups[r].length < maxNumber) {
+        currentName = namesArray.pop()
+        groups[r].push(currentName)
+      } else {
+        i++
+      }
+      // Run if odd (chrome freezes without +1 if number of groups is odd)
+    } else {
+      if (groups[r].length < maxNumber + 1) {
+        currentName = namesArray.pop()
+        groups[r].push(currentName)
+      } else {
+        i++
+      }
+    }
   }
   // Translates the array groups into html groups
   for (var a = 0; a < groups.length; a++) {
