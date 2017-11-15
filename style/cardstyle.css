@@ -169,6 +169,8 @@
   /*margin: 10px;*/
   list-style-position: inside;
   list-style: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-list>li>a, h3>a, .expand>li>a {
@@ -409,6 +411,41 @@
   flex-direction: column;
   margin: 8px;
   align-items: center;
+}
+
+section.firstcardcolumn > div:nth-child(3) > div > div.card-body {
+  margin: 0;
+}
+
+.card-body > table,
+.examfirstrow > th,
+.card-body > table > tbody > tr > td
+{
+    border:2px inset transparent;
+    border-collapse:collapse;
+}
+
+.examfirstrow {
+  font-weight: bold;
+}
+
+.examtr > td, th {
+  text-align: left;
+  padding-right: 15px;
+  color: white;
+}
+
+.examtr {
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+}
+
+.examtr:hover {
+  border-bottom: 2px solid white;
+}
+
+tr> td:nth-child(4) {
+  text-align: center;
 }
 
 /* #attendance {

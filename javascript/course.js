@@ -20,7 +20,7 @@ let chart1 = new CanvasJS.Chart("chartContainerMiddleFe17", {
 		type: "bar",
 		showInLegend: true,
 		name: "Hur tycker du kurser har varit?",
-		color: "#FF8A65",
+		color: "#ff5f52",
 		dataPoints: [
 			{ y: 1, label: "1" },
 			{ y: 3, label: "2" },
@@ -35,7 +35,7 @@ let chart1 = new CanvasJS.Chart("chartContainerMiddleFe17", {
 		type: "bar",
 		showInLegend: true,
 		name: "Hur har du upplevt tempot i kursen?",
-		color: "#8E24AA",
+		color: "#8BC34A",
 		dataPoints: [
 			{ y: 2, label: "1" },
 			{ y: 5, label: "2" },
@@ -50,7 +50,7 @@ let chart1 = new CanvasJS.Chart("chartContainerMiddleFe17", {
 		type: "bar",
 		showInLegend: true,
 		name: "Hur har lokalerna och lokalbokningen varit under kursens gång?",
-		color: "#8BC34A",
+		color: "#8E24AA",
 		dataPoints: [
 			{ y: 3, label: "1" },
 			{ y: 2, label: "2" },
