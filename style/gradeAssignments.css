@@ -5,7 +5,7 @@ main {
 
 #boxContainer {
   width: 830px;
-/*   border: 1px solid black; */
+  /*   border: 1px solid black; */
   margin: 0 auto;
   margin-bottom: 20px;
   background-color: #6A1B9A;
@@ -319,7 +319,7 @@ body>div>main>div:nth-child(3)>div.kurser>ul>li:nth-child(3) {
 }
 
 .purple {
-  background-color: purple;
+  background-color: #fb6400;
   color: #fff;
 }
 
