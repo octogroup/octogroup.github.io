@@ -54,24 +54,42 @@
                 <h3 class="title">Kommande examinationer</h3>
                 <img src="../img/calendar.svg" class="card-img">
               </div>
-              <div class="hiddenCard">
-                <ul class="card-list expand">
-                  <li class="margintop">
-                    <a class="nav-link" href="assignments.html">22/10 - Javascript: Inlämning 3</a>
-                  </li>
-                  <li>
-                    <a class="nav-link" href="assignments.html">25/10 - HTML: Tenta</a>
-                  </li>
-                  <li>
-                    <a class="nav-link" href="assignments.html">01/11 - Javascript: Inlämning 4</a>
-                  </li>
-                  <li>
-                    <a class="nav-link" href="assignments.html">04/11 - HTML & CSS: Hemtenta</a>
-                  </li>
-                </ul>
+              <div class="hiddenCard expand">
+                <table class="paddingall">
+                  <tr class="examfirstrow">
+                    <th>Datum</th>
+                    <th>Kurs</th>
+                    <th>Uppgift</th>
+                    <th>Status</th>
+                  </tr>
+                  <tr class="examtr" onclick="window.location='assignments.html'";>
+                    <td name="date">22/10</td>
+                    <td name="course">Bootstrap</td>
+                    <td name="assignment"> Inlämning</td>
+                    <td name"status">✓</td>
+                  </tr>
+                  <tr class="examtr" onclick="window.location='assignments.html'";>
+                    <td name="date">25/10</td>
+                    <td name="course">Angular</td>
+                    <td name="assignment">Tenta</td>
+                    <td name"status">✓</td>
+                  </tr>
+                  <tr class="examtr" onclick="window.location='assignments.html'";>
+                    <td name="date">01/11</td>
+                    <td name="course">React</td>
+                    <td name="assignment">Inlämning</td>
+                    <td name"status"></td>
+                  </tr>
+                  <tr class="examtr" onclick="window.location='assignments.html'";>
+                    <td name="date">02/11</td>
+                    <td name="course">Vue.js</td>
+                    <td name="assignment">Hemtenta</td>
+                    <td name"status"></td>
+                  </tr>
+                </table>
               </div>
               <div class="card-bottom">
-                <button type="button" name="button" class="cardbutton toggleText" onclick="toggleExpand(this, '110px'); toggleText(this)">Visa Mer</button>
+                <button type="button" name="button" class="cardbutton toggleText" onclick="toggleExpand(this, '140px'); toggleText(this)">Visa Mer</button>
               </div>
             </div>
           </div>
@@ -84,21 +102,42 @@
                 <h3 class="title">Avslutade Examinationer</h3>
                 <img src="../img/trophy.svg" class="card-img">
               </div>
-              <div class="hiddenCard">
-                <ul class="card-list expand">
-                  <li class="margintop">
-                    <a class="nav-link" href="assignments.html">Javascript: Inlämning 1 - VG</a>
-                  </li>
-                  <li>
-                    <a class="nav-link" href="assignments.html">Javascript: Inlämning 2 - VG</a>
-                  </li>
-                  <li>
-                    <a class="nav-link" href="assignments.html">HTML: Inlämning 1 - G</a>
-                  </li>
-                </ul>
+              <div class="hiddenCard expand">
+                <table class="paddingall">
+                  <tr class="examfirstrow">
+                    <th>Datum</th>
+                    <th>Kurs</th>
+                    <th>Uppgift</th>
+                    <th>Status</th>
+                  </tr>
+                  <tr class="examtr" onclick="window.location='assignments.html'";>
+                    <td name="date">22/10</td>
+                    <td name="course">Bootstrap</td>
+                    <td name="assignment"> Inlämning</td>
+                    <td name"status">✓</td>
+                  </tr>
+                  <tr class="examtr" onclick="window.location='assignments.html'";>
+                    <td name="date">25/10</td>
+                    <td name="course">Angular</td>
+                    <td name="assignment">Tenta</td>
+                    <td name"status">✓</td>
+                  </tr>
+                  <tr class="examtr" onclick="window.location='assignments.html'";>
+                    <td name="date">01/11</td>
+                    <td name="course">React</td>
+                    <td name="assignment">Inlämning</td>
+                    <td name"status">✕</td>
+                  </tr>
+                  <tr class="examtr" onclick="window.location='assignments.html'";>
+                    <td name="date">02/11</td>
+                    <td name="course">Vue.js</td>
+                    <td name="assignment">Hemtenta</td>
+                    <td name"status">✓</td>
+                  </tr>
+                </table>
               </div>
               <div class="card-bottom">
-								<button type="button" name="button" class="cardbutton toggleText" onclick="toggleExpand(this, '90px'); toggleText(this)">Visa Mer</button>              </div>
+								<button type="button" name="button" class="cardbutton toggleText" onclick="toggleExpand(this, '140px'); toggleText(this)">Visa Mer</button>              </div>
             </div>
           </div>
         </section>
