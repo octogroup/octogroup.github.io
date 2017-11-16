@@ -66,6 +66,35 @@ function isEven (value) {
   } else return false
 }
 
+let array = [
+  'Elsa Karlsson',
+  'Gunnar Frid',
+  'Kajsa Hellström',
+  'Svante Hjälm',
+  'Ingvar Loop',
+  'Ulla Uggla',
+  'Elon Elektronik',
+  'Stina Clark',
+  'Olov Kanel',
+  'Vivi Viol',
+  'Sten Björklöf',
+  'Anna-Karin Dubbelnamn',
+  'Bo Strömmberget',
+  'Anja Vilse',
+  'Ejnar Guldsko',
+  'Lisa Vinnarskall'
+]
+
+let sliceArray = function () {
+  let j
+  let temparray
+  let chunk = maxNumber
+  for (let i = 0, j = array.length; i < j; i += chunk) {
+    temparray = array.slice(i, i + chunk)
+    console.log(temparray)
+  }
+}
+
 // Takes the last name out of namesArray and places into a random array in the groups array.
 let randomArray = function () {
   for (let i = namesArray.length; i > 0; i--) {
