@@ -351,6 +351,12 @@ body>div>main>div:nth-child(3)>div.kurser>ul>li:nth-child(3) {
   border-top: 2px solid grey;
 }
 
+@media (max-width:906px) {
+  .assignemntInfoBox {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
   #boxContainer {
     width: 95%;
     justify-content: space-between;
@@ -386,13 +392,6 @@ body>div>main>div:nth-child(3)>div.kurser>ul>li:nth-child(3) {
 @media (max-width: 1920px) {}
 
 @media (max-width: 1280px) {}
-
-@media (max-width:906px) {
-  .assignemntInfoBox {
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-  }
 
 @media (max-width: 600px) {
   .cardbutton {
