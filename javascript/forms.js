@@ -159,3 +159,19 @@ let adminNews = function () {
   t4.style.display = "inherit"
   t4.required = "true"
 }
+
+let createAccount = function () {
+  reset()
+  formimg.style.display = 'inherit'
+  formc.style.height = '370px'
+  form.style.display = 'inherit'
+  cB.style.display = 'inherit'
+  sB.style.display = 'inherit'
+  p1.innerHTML = 'Välj kontotyp:'
+  i1.style.display = "inherit"
+  i1.setAttribute('list', 'accounts');
+  i1.required = "true"
+  p2.innerHTML = "Mail:"
+  t2.style.display = "inherit"
+  t2.required = "true"
+}
