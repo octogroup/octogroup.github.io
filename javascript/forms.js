@@ -43,6 +43,8 @@ let reset = function () {
     this['i' + i].style.display = 'none'
     this['i' + i].style.type = 'text'
     this['i' + i].required = false
+    this['i' + i].setAttribute('list', '')
+
     sB.style.display = 'none'
     cB.style.display = 'none'
     form.style.display = 'none'
@@ -138,14 +140,14 @@ let weekeval = function () {
 let adminNews = function () {
   reset()
   formimg.style.display = 'inherit'
-  formc.style.height = '417.4px'
+  formc.style.height = '500.4px'
   form.style.display = 'inherit'
   cB.style.display = 'inherit'
   sB.style.display = 'inherit'
   p1.innerHTML = 'Välj målgrupp:'
   i1.style.display = "inherit"
   i1.setAttribute('list', 'datalist3');
-  i2.required = "true"
+  i1.required = "true"
   p2.innerHTML = 'Välj klass:'
   i2.style.display = "inherit"
   i2.setAttribute('list', 'datalist4');
