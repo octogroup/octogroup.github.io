@@ -2,8 +2,6 @@
 /* eslint no-unused-vars: 0 */
 /* eslint-env browser */
 
-// currently trying to solve why maxNumber needs to be +1 when the number of groups are odd (chrome hangs whitout it)
-
 function allowDrop (ev) {
   ev.preventDefault()
 }
@@ -80,11 +78,14 @@ let randomArray = function () {
       } else {
         i++
       }
-      // Run if odd (chrome freezes without +1 if number of groups is odd)
+      // Run if odd
     } else {
-      if (groups[r].length < maxNumber + 1) {
+      if (groups[r].length < maxNumber) {
         currentName = namesArray.pop()
         groups[r].push(currentName)
+      } else if (i === 1) {
+        currentName = namesArray.pop()
+        break
       } else {
         i++
       }
@@ -96,6 +97,10 @@ let randomArray = function () {
       document.getElementsByClassName('drop-name')[a + 1].innerHTML += groups[a][b]
     }
   }
+  if (!isEven(groups.length)) {
+    document.getElementsByClassName('drop-name')[groups.length].innerHTML += currentName
+  }
+
   // Clears the namelist "Elevlista"
   document.getElementsByClassName('drop-name')[0].innerHTML = null
 
