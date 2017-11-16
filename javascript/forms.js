@@ -140,7 +140,7 @@ let weekeval = function () {
 let adminNews = function () {
   reset()
   formimg.style.display = 'inherit'
-  formc.style.height = '500.4px'
+  formc.style.height = '530px'
   form.style.display = 'inherit'
   cB.style.display = 'inherit'
   sB.style.display = 'inherit'
@@ -199,3 +199,21 @@ let formAdmin = function () {
   t5.style.display = "inherit"
   t5.required = "true"
 }
+
+let createClass = function () {
+  reset()
+  formimg.style.display = 'inherit'
+  formc.style.height = '420px'
+  form.style.display = 'inherit'
+  cB.style.display = 'inherit'
+  sB.style.display = 'inherit'
+  p1.innerHTML = "Namnge kursen:"
+  t1.style.display = "inherit"
+  t1.required = "true"
+  p2.innerHTML = "Lägg till lärare:"
+  t2.style.display = "inherit"
+  t2.required = "true"
+  p3.innerHTML = "Lägg till fler lärare:"
+  t3.style.display = "inherit"
+}
+
