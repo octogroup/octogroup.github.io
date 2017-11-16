@@ -86,13 +86,17 @@ let array = [
 ]
 
 let sliceArray = function () {
+  let a = 0
   let j
   let temparray
   let chunk = maxNumber
   for (let i = 0, j = array.length; i < j; i += chunk) {
     temparray = array.slice(i, i + chunk)
     console.log(temparray)
+    groups[a].push(temparray)
+    a++
   }
+  console.log(groups)
 }
 
 // Takes the last name out of namesArray and places into a random array in the groups array.
