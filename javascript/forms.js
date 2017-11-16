@@ -133,3 +133,19 @@ let weekeval = function () {
   t4.style.display = 'inherit'
   sB.style.display = 'inherit'
 }
+
+
+let adminNews = function () {
+  reset()
+  formimg.style.display = 'inherit'
+  formc.style.height = '370px'
+  form.style.display = 'inherit'
+  cB.style.display = 'inherit'
+  p1.innerHTML = 'Vad har varit bra/dåligt under dagen?'
+  t1.style.display = 'inherit'
+  t1.required = true
+  p2.innerHTML = 'Hur har klimatet i klassen varit?'
+  t2.style.display = 'inherit'
+  t2.required = true
+  sB.style.display = 'inherit'
+}
