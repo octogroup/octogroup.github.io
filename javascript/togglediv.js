@@ -7,13 +7,11 @@ function toggleExpand (self, divHeight) {
 	if (div.style.height == divHeight) {
 		div.style.height = '0px'
 	console.log(div)
-} else {
+} else if (!div.style.height || div.style.height !== divHeight) {
 		div.style.height = divHeight
 	console.log(div)
 	}
 }
-
-
 
 // -------- Button-Txt-Toggle -----
 // Assign class toggleText to button
