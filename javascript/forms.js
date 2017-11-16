@@ -175,3 +175,27 @@ let createAccount = function () {
   t2.style.display = "inherit"
   t2.required = "true"
 }
+
+let formAdmin = function () {
+  reset()
+  formimg.style.display = 'inherit'
+  formc.style.height = '600px'
+  form.style.display = 'inherit'
+  cB.style.display = 'inherit'
+  sB.style.display = 'inherit'
+  p1.innerHTML = 'Välj utvärdering:'
+  i1.style.display = "inherit"
+  i1.setAttribute('list', 'adminForms');
+  i1.required = "true"
+  p2.innerHTML = "Namnge/ändra namn på utvärderingen"
+  t2.style.display = "inherit"
+  p3.innerHTML = "Första frågan"
+  t3.style.display = "inherit"
+  t3.required = "true"
+  p4.innerHTML = "Andra frågan"
+  t4.style.display = "inherit"
+  t4.required = "true"
+  p5.innerHTML = "Tredje frågan"
+  t5.style.display = "inherit"
+  t5.required = "true"
+}
