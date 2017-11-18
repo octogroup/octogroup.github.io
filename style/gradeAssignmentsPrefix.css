@@ -1,0 +1,492 @@
+main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  
+  #boxContainer {
+    width: 830px;
+    /*   border: 1px solid black; */
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: #6A1B9A;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: auto;
+    visibility: inherit;
+    color: white;
+  }
+  
+  .assignmentContainer {
+    width: 512px;
+    padding-left: 10px;
+  }
+  
+  #msg {
+    color: red;
+    width: 183px;
+    margin-bottom: 10px;
+    height: 22px;
+    visibility: hidden;
+  }
+  
+  .assignemntInfoBox img {
+    width: 32px;
+  }
+  
+  .assignemntInfoBox a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .assignemntInfoBox a:hover {
+    text-decoration: underline;
+  }
+  
+  .subject {
+    max-width: 602px;
+    height: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  
+  .assignemntInfoBox {
+    max-width: 602px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  
+  .assignmentInfo {
+    width: auto;
+    margin-right: 40px;
+  }
+  
+  .assignemntInfoBox>div:nth-child(3)>p>a {
+    color: white;
+  }
+  
+  .gradeBox {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    border-left: 1px solid black;
+  }
+  
+  .gradeContent>div>div:nth-child(4) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  
+  .grade {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  
+  .fill {
+    height: 70px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  
+  .fill>button {
+    height: 22px;
+    background: #ff5f52;
+    color: white;
+    border: 0;
+    border-radius: 2px;
+    top: 1px;
+    right: 2px;
+    padding: 1px 5px 2px 6px;
+    margin-top: 1px;
+    margin-right: 1px;
+  }
+  
+  .gradeContent {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  .select {
+    background: #68efad;
+    border: 0;
+    padding: 5px 5px 5px 1px;
+    border: 2px;
+    color: purple;
+    outline: none;
+  }
+  
+  .gradeInput {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 7px;
+  }
+  
+  h3 {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  
+  .assignmentsList {
+    width: 830px;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  
+  .assignmentsList>ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .assignmentsList>ul>li>a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .assignmentsList>ul>li>a:hover {
+    background-color: #e3e3e3;
+  }
+  
+  .assignmentsList>ul>li>a>span {
+    font-style: italic;
+  }
+  
+  .table {
+    margin: 0 auto;
+    width: 56%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 25px;
+  }
+  
+  .kurser {
+    width: 100%;
+    height: 50px;
+    background: black;
+  }
+  
+  .uppgift {
+    width: 100%;
+    height: 50px;
+    background: grey;
+  }
+  
+  div.kurser>ul>li>a {
+    color: #fff;
+    font-size: 28px;
+  }
+  
+  div.kurser>ul>li:first-child {
+    border-bottom: 3px solid red;
+  }
+  
+  /* div.kurser > ul > li:hover {
+    border-bottom: 3px solid rgba(255, 0, 0, 0.3);
+    color: rgba(255, 255, 255, 0.46);
+  } */
+  
+  /* ------------------ muted color on the li items-------------------------  */
+  
+  body>div>main>div:nth-child(3)>div.kurser>ul>li:nth-child(2)>a {
+    color: rgba(255, 255, 255, 0.49);
+  }
+  
+  body>div>main>div:nth-child(3)>div.kurser>ul>li:nth-child(3)>a {
+    color: rgba(255, 255, 255, 0.49);
+  }
+  
+  /* ---------------- --- hover ----------------------------------  */
+  
+  body>div>main>div:nth-child(3)>div.kurser>ul>li:nth-child(2)>a:hover {
+    color: rgba(255, 255, 255, 0.85);
+    border-bottom: 3px solid rgba(255, 0, 0, 0.3);
+  }
+  
+  body>div>main>div:nth-child(3)>div.kurser>ul>li:nth-child(3)>a:hover {
+    color: rgba(255, 255, 255, 0.85);
+    border-bottom: 3px solid rgba(255, 0, 0, 0.3);
+  }
+  
+  body>div>main>div:nth-child(3)>div.kurser>ul>li:nth-child(3)>a:hover {
+    color: rgba(255, 255, 255, 0.94);
+  }
+  
+  /* ------------- end muted colors ---------------------------------- */
+  
+  .kurser ul>li {
+    list-style-type: none;
+    display: inline-block;
+  }
+  
+  body>div>main>div:nth-child(3)>div.kurser>ul>li:nth-child(2) {
+    margin-left: 20px;
+  }
+  
+  body>div>main>div:nth-child(3)>div.kurser>ul>li:nth-child(3) {
+    margin-left: 20px;
+  }
+  
+  .betygsatt-1, .betygsatt-2 {
+    height: 0px;
+    overflow: hidden;
+    width: 100%;
+    background-color: grey;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-transition-duration: 0.9s;
+         -o-transition-duration: 0.9s;
+            transition-duration: 0.9s;
+  }
+  
+  .small {
+    margin-top: 4px;
+    width: 107%;
+  }
+  
+  .betygsatt span {
+    font-weight: bold;
+  }
+  
+  .choose {
+    position: relative;
+    left: 5px;
+    margin-top: 3px;
+  }
+  
+  .files {
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .files img {
+    width: 25px;
+  }
+  
+  .files a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .grading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  
+  .button-betygsatt {
+    position: absolute;
+    right: 0px;
+  }
+  
+  .row-1 {
+    width: 100%;
+    background-color: black;
+    height: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    color: white;
+  }
+  
+  .row-2 {
+    width: 100%;
+    background-color: white;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    color: black;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .text-1 {
+    width: 204px;
+    border-right: 2px solid grey;
+    height: 100%;
+  }
+  
+  .text-2 {
+    width: 68px;
+    border-right: 2px solid grey;
+    height: 100%;
+    padding-left: 5px;
+  }
+  
+  .text-3 {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    padding-left: 5px;
+    height: 100%;
+    min-width: 115px;
+  }
+  
+  .text-3 p {
+    width: 97%;
+  }
+  
+  .orange {
+    background-color: #fb6400;
+    color: #fff;
+  }
+  
+  .white-back {
+    background-color: #fff;
+    color: #0000;
+  }
+  
+  .left-padding {
+    position: relative;
+    top: 11px;
+  }
+  
+  .table p {
+    position: relative;
+    top: 11px;
+    left: 5px;
+  }
+  
+  .text-2.white-back>p {
+    color: #000;
+  }
+  
+  .active:hover {
+    cursor: pointer;
+  }
+  
+  .rest {
+    border-top: 2px solid grey;
+  }
+  
+  @media (max-width:906px) {
+    .assignemntInfoBox {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      width: 100%;
+    }
+    #boxContainer {
+      width: 95%;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+    .gradeBox {
+      border-left: none;
+      border-top: 1px solid black;
+      width: 100%;
+    }
+    .fill {
+      height: 10px;
+    }
+    .assignmentInfo {
+      margin-bottom: 20px;
+    }
+    .assignmentsList {
+      width: 94%;
+    }
+    .fill>button {
+      position: absolute;
+      top: 109px;
+      right: 9px;
+    }
+    .table {
+      width: 98%;
+    }
+    .text-1 {
+      width: 128px;
+    }
+  }
+  
+  @media (max-width: 1920px) {}
+  
+  @media (max-width: 1280px) {}
+  
+  @media (max-width: 600px) {
+    .cardbutton {
+      padding: 4px 7px;
+    }
+    body>div>main>div.table>div.kurser>ul>li>a {
+      font-size: 22px;
+    }
+  }
