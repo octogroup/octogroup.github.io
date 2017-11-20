@@ -1,7 +1,6 @@
 let chart1 = new CanvasJS.Chart("chartContainerMiddleFe17", {
 	animationEnabled: true,
 	title:{
-		// text: "Kurs: HTML/CSS       Klass: FE17"
 	},
 	axisY: {
 		title: "Antal"
@@ -73,87 +72,6 @@ function toggleDataSeries1 (e) {
 	}
 	chart1.render()
 }
-
-
-// --------FE16-------
-
-// let chart2 = new CanvasJS.Chart("chartContainerMiddleFe16", {
-// 	animationEnabled: true,
-// 	title:{
-// 		// text: "Kurs: Vue.js       Klass: FE16"
-// 	},
-// 	axisY: {
-// 		title: "Antal"
-// 	},
-// 	axisX: {
-// 		title: "Skala (1-7)"
-// 	},
-// 	legend: {
-// 		cursor:"pointer",
-// 		itemclick : toggleDataSeries2
-// 	},
-// 	toolTip: {
-// 		enable: false,
-// 	},
-// 	data: [{
-// 		type: "bar",
-// 		showInLegend: true,
-// 		name: "Hur tycker du kurser har varit?",
-// 		color: "#FF8A65",
-// 		dataPoints: [
-// 			{ y: 1, label: "1" },
-// 			{ y: 3, label: "2" },
-// 			{ y: 5, label: "3" },
-// 			{ y: 7, label: "4" },
-// 			{ y: 10, label: "5" },
-// 			{ y: 8, label: "6" },
-// 			{ y: 1, label: "7" }
-// 		]
-// 	},
-// 	{
-// 		type: "bar",
-// 		showInLegend: true,
-// 		name: "Hur har du upplevt tempot i kursen?",
-// 		color: "#8E24AA",
-// 		dataPoints: [
-// 			{ y: 2, label: "1" },
-// 			{ y: 5, label: "2" },
-// 			{ y: 1, label: "3" },
-// 			{ y: 5, label: "4" },
-// 			{ y: 15, label: "5" },
-// 			{ y: 4, label: "6" },
-// 			{ y: 3, label: "7" }
-// 		]
-// 	},
-// 	{
-// 		type: "bar",
-// 		showInLegend: true,
-// 		name: "Hur har lokalerna och lokalbokningen varit under kursens gång?",
-// 		color: "#8BC34A",
-// 		dataPoints: [
-// 			{ y: 3, label: "1" },
-// 			{ y: 2, label: "2" },
-// 			{ y: 8, label: "3" },
-// 			{ y: 7, label: "4" },
-// 			{ y: 10, label: "5" },
-// 			{ y: 3, label: "6" },
-// 			{ y: 1, label: "7" }
-// 		]
-// 	}]
-// });
-// chart2.render();
-//
-// function toggleDataSeries2(e) {
-// 	if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
-// 		e.dataSeries.visible = false;
-// 	}
-// 	else {
-// 		e.dataSeries.visible = true;
-// 	}
-// 	chart2.render();
-// }
-
-// ------------
 
 // Knappar
 function expand1 () {
