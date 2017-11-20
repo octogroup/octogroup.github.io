@@ -203,17 +203,32 @@ let formAdmin = function () {
 let createClass = function () {
   reset()
   formimg.style.display = 'inherit'
-  formc.style.height = '420px'
+  formc.style.height = '500px'
   form.style.display = 'inherit'
   cB.style.display = 'inherit'
   sB.style.display = 'inherit'
-  p1.innerHTML = "Namnge kursen:"
-  t1.style.display = "inherit"
-  t1.required = "true"
-  p2.innerHTML = "Lägg till lärare:"
+  p1.innerHTML = 'Välj utbildning:'
+  i1.style.display = "inherit"
+  i1.setAttribute('list', 'adminEdu');
+  i1.required = "true"
+  p2.innerHTML = "Namnge kursen:"
   t2.style.display = "inherit"
   t2.required = "true"
-  p3.innerHTML = "Lägg till fler lärare:"
+  p3.innerHTML = "Lägg till lärare:"
   t3.style.display = "inherit"
+  t3.required = "true"
+  p4.innerHTML = "Lägg till fler lärare:"
+  t4.style.display = "inherit"
 }
 
+let createEducation = function () {
+  reset()
+  formimg.style.display = 'inherit'
+  formc.style.height = '270px'
+  form.style.display = 'inherit'
+  cB.style.display = 'inherit'
+  sB.style.display = 'inherit'
+  p1.innerHTML = "Namnge utbilningen:"
+  t1.style.display = "inherit"
+  t1.required = "true"
+}
