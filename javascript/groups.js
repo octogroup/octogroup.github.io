@@ -1,5 +1,5 @@
 /* eslint no-undef: 0 */
-/* eslint no-unused-vars: 0 */
+/* eslint no-unused-lets: 0 */
 /* eslint-env browser */
 
 function allowDrop (ev) {
@@ -23,10 +23,14 @@ let number = 3
 
 // Create new group, matching array, add to number and calculate new maxNumber
 function addGroup () {
-  document.getElementsByClassName('seconcolumn')[0].innerHTML += '<div class="card custom-card"><div class="dark-purple"><h3>Grupp ' + number + '</h3></div><div class="purple"><ol class="drop-name" ondrop="drop(event)" ondragover="allowDrop(event)"></ol></div></div>'
-  number += 1
-  maxNumber = Math.floor(namesArray.length / (number - 1))
-  // groups.push([])
+  if (namesArray.length > document.getElementsByClassName('drop-name').length - 1) {
+    document.getElementsByClassName('seconcolumn')[0].innerHTML += '<div class="card custom-card"><div class="dark-purple"><h3>Grupp ' + number + '</h3></div><div class="purple"><ol class="drop-name" ondrop="drop(event)" ondragover="allowDrop(event)"></ol></div></div>'
+    number += 1
+    maxNumber = Math.floor(namesArray.length / (number - 1))
+  } else {
+    alert('Too many groups!')
+    window.location.reload()
+  }
 }
 
 let namesArray = [
@@ -34,7 +38,7 @@ let namesArray = [
   '<li class="drag2" draggable="true" ondragstart="drag(event)">Gunnar Frid</li>',
   '<li class="drag3" draggable="true" ondragstart="drag(event)">Kajsa Hellström</li>',
   '<li class="drag4" draggable="true" ondragstart="drag(event)">Svante Hjälm</li>',
-  '<li class="drag5" draggable="true" ondragstart="drag(event)">Ingvar Loop</li>',
+  '<li class="drag5" draggable="true" ondragstart="drag(event)">Inglet Loop</li>',
   '<li class="drag6" draggable="true" ondragstart="drag(event)">Ulla Uggla</li>',
   '<li class="drag7" draggable="true" ondragstart="drag(event)">Elon Elektronik</li>',
   '<li class="drag8" draggable="true" ondragstart="drag(event)">Stina Clark</li>',
@@ -63,85 +67,56 @@ function isEven (value) {
   } else return false
 }
 
-let array = [
-  'Elsa Karlsson',
-  'Gunnar Frid',
-  'Kajsa Hellström',
-  'Svante Hjälm',
-  'Ingvar Loop',
-  'Ulla Uggla',
-  'Elon Elektronik',
-  'Stina Clark',
-  'Olov Kanel',
-  'Vivi Viol',
-  'Sten Björklöf',
-  'Anna-Karin Dubbelnamn',
-  'Bo Strömmberget',
-  'Anja Vilse',
-  'Ejnar Guldsko',
-  'Lisa Vinnarskall'
-]
 
+// Translates the array groups into html groups
+let group = 1
 let translateToHtml = function () {
-  for (var a = 0; a < groups.length; a++) {
-    for (var b = 0; b < groups[a].length; b++) {
-      document.getElementsByClassName('drop-name')[a + 1].innerHTML = groups[a][b]
+  for (let a = 0; a < document.getElementsByClassName('drop-name').length - 1; a++) {
+    for (let b = 0; b < maxNumber; b++) {
+      document.getElementsByClassName('drop-name')[a + 1].innerHTML += groups[a][0][b]
+    }
+  } if (document.getElementsByClassName('drop-name').length - 1 < groups.length) {
+    for (let c = document.getElementsByClassName('drop-name').length - 1; c < groups.length; c++) {
+      for (let d = 0; d < groups[c][0].length; d++) {
+        document.getElementsByClassName('drop-name')[group].innerHTML += groups[c][0][d]
+        group++
+      }
     }
   }
 }
 
+function shuffle (array) {
+  let counter = array.length
+  // While there are elements in the array
+  while (counter > 0) {
+    // Pick a random index
+    let index = Math.floor(Math.random() * counter)
+    // Decrease counter by 1
+    counter--
+    // And swap the last element with it
+    let temp = array[counter]
+    array[counter] = array[index]
+    array[index] = temp
+  }
+  return array
+}
+
+// Slices namesArray into smaller arrays
 let sliceArray = function () {
+  shuffle(namesArray)
   let a = 0
   let j
-  let temparray
-  for (let i = 0, j = array.length; i < j; i += maxNumber) {
-    temparray = array.slice(i, i + maxNumber)
+  let temparrays
+  document.getElementsByClassName('drop-name')[0].innerHTML = null
+  for (let i = 0, j = namesArray.length; i < j; i += maxNumber) {
+    temparray = namesArray.slice(i, i + maxNumber)
     console.log(temparray)
     groups.push([])
     groups[a].push(temparray)
     a++
   }
   console.log(groups)
-}
-
-// Takes the last name out of namesArray and places into a random array in the groups array.
-let randomArray = function () {
-  for (let i = namesArray.length; i > 0; i--) {
-    r = Math.floor(Math.random() * (number - 1))
-    // Run if even
-    if (isEven(groups.length)) {
-      if (groups[r].length < maxNumber) {
-        currentName = namesArray.pop()
-        groups[r].push(currentName)
-      } else {
-        i++
-      }
-      // Run if odd
-    } else {
-      if (groups[r].length < maxNumber) {
-        currentName = namesArray.pop()
-        groups[r].push(currentName)
-      } else if (i === 1) {
-        currentName = namesArray.pop()
-        break
-      } else {
-        i++
-      }
-    }
-  }
-  // Translates the array groups into html groups
-  for (var a = 0; a < groups.length; a++) {
-    for (var b = 0; b < groups[a].length; b++) {
-      document.getElementsByClassName('drop-name')[a + 1].innerHTML += groups[a][b]
-    }
-  }
-  if (!isEven(groups.length)) {
-    document.getElementsByClassName('drop-name')[groups.length].innerHTML += currentName
-  }
-
-  // Clears the namelist "Elevlista"
-  document.getElementsByClassName('drop-name')[0].innerHTML = null
-
+  translateToHtml()
   // Disable button after use
   document.getElementById('random').disabled = true
 }
