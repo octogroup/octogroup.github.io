@@ -85,7 +85,7 @@ let array = [
 let translateToHtml = function () {
   for (var a = 0; a < groups.length; a++) {
     for (var b = 0; b < groups[a].length; b++) {
-      document.getElementsByClassName('drop-name')[a + 1].innerHTML += groups[a][b]
+      document.getElementsByClassName('drop-name')[a + 1].innerHTML = groups[a][b]
     }
   }
 }
