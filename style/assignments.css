@@ -1,5 +1,6 @@
 
 .hiddenCard {
+  margin: 5px auto;
   width: auto;
   height: 0px;
   flex-direction: column;
@@ -9,23 +10,22 @@
   padding: 10px;
 }
 
-.title {
-	color: #fff;
-	margin: 10px 0 10px 10px;
-	padding: 15px 0 15px 0;
-}
-
-.title2 {
-	color: #fff;
-	text-align: center;
-	margin: 20px 10px 10px 10px;
-	padding: 15px;
-}
-
 div > main > h2 {
 	text-align: center;
   font-weight: bold;
   color: #fff;
   text-shadow: 1px 1px black;
 	margin-bottom: 50px;
+}
+
+.hiddenCard > table,
+.examfirstrow > th,
+.hiddenCard > table > tbody > tr > td {
+    border:2px inset transparent;
+    border-collapse:collapse;
+}
+
+.firstcardcolumn > div > div > div.card-bottom,
+.secondcardcolumn > div > div > div.card-bottom {
+  margin-top: 0;
 }

@@ -414,15 +414,14 @@
 }
 
 section.firstcardcolumn > div:nth-child(3) > div > div.card-body {
-  margin: 0;
+  margin: auto;
 }
 
 .card-body > table,
 .examfirstrow > th,
-.card-body > table > tbody > tr > td
-{
-    border:2px inset transparent;
-    border-collapse:collapse;
+.card-body > table > tbody > tr > td {
+  border:2px inset transparent;
+  border-collapse:collapse;
 }
 
 .examfirstrow {
@@ -436,7 +435,6 @@ section.firstcardcolumn > div:nth-child(3) > div > div.card-body {
 }
 
 .examtr {
-  border-bottom: 2px solid transparent;
   cursor: pointer;
 }
 
@@ -446,6 +444,10 @@ section.firstcardcolumn > div:nth-child(3) > div > div.card-body {
 
 tr> td:nth-child(4) {
   text-align: center;
+}
+
+tbody > .examtr:hover {
+  border-bottom: 2px solid white;
 }
 
 .footer a {
