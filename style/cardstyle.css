@@ -224,6 +224,10 @@
 
 }
 
+#hidebody > .card-body {
+  height: 90px;
+}
+
 .attendancetitle {
 	flex-grow: 1;
 	color: #fff;
@@ -331,7 +335,8 @@
 /*-------------------------Countdown-ends-------------------------------*/
 
 #codeInput {
-  width: 86%;
+  width: 100%%;
+  text-align: center;
 }
 
 #attOnSend {
@@ -472,9 +477,9 @@ input[type=text] {
   background: none;
 }
 
-input[type=text]::-webkit-input-placeholder {
+/*input[type=text]::-webkit-input-placeholder {
   text-align: left;
-}
+}*/
 
 input[type=text]:focus {
   outline: none;
