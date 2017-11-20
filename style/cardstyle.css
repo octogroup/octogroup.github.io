@@ -465,7 +465,7 @@ tbody > .examtr:hover {
 
 input[type=text] {
   font-size: 18px;
-  padding: 10px 10px 10px 5px;
+  padding: 10px auto;
   display: block;
   width: 86%;
   border: none;
@@ -612,7 +612,7 @@ input[type="radio"]:after {
   width: 100px;
   height: 100px;
   padding: 10px 0 10px 10px;
-	margin-left: 40px;
+  margin: 0 auto;
 }
 /*----*/
 #assign {
