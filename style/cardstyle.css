@@ -337,6 +337,7 @@
 #codeInput {
   width: 100%%;
   text-align: center;
+  text-transform: uppercase;
 }
 
 #attOnSend {
@@ -477,9 +478,9 @@ input[type=text] {
   background: none;
 }
 
-/*input[type=text]::-webkit-input-placeholder {
-  text-align: left;
-}*/
+input[type=text]::-webkit-input-placeholder {
+  text-transform: capitalize;
+}
 
 input[type=text]:focus {
   outline: none;
