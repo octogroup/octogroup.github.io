@@ -34,12 +34,8 @@ h3 {
   width: 100%;
   height: 50px;
   background: grey;
+  display: flex;
 }
-
-/* div.kurser > ul > li:hover {
-  border-bottom: 3px solid rgba(255, 0, 0, 0.3);
-  color: rgba(255, 255, 255, 0.46);
-} */
 
 /* ---------------- --- hover ----------------------------------  */
 
