@@ -26,7 +26,7 @@ function addGroup () {
   document.getElementsByClassName('seconcolumn')[0].innerHTML += '<div class="card custom-card"><div class="dark-purple"><h3>Grupp ' + number + '</h3></div><div class="purple"><ol class="drop-name" ondrop="drop(event)" ondragover="allowDrop(event)"></ol></div></div>'
   number += 1
   maxNumber = Math.floor(namesArray.length / (number - 1))
-  groups.push([])
+  // groups.push([])
 }
 
 let namesArray = [
@@ -48,10 +48,7 @@ let namesArray = [
   '<li class="drag16" draggable="true" ondragstart="drag(event)">Lisa Vinnarskalle</li>'
 ]
 
-let groups = [
-  [],
-  []
-]
+let groups = []
 
 let currentName
 let r
@@ -85,14 +82,22 @@ let array = [
   'Lisa Vinnarskall'
 ]
 
+let translateToHtml = function () {
+  for (var a = 0; a < groups.length; a++) {
+    for (var b = 0; b < groups[a].length; b++) {
+      document.getElementsByClassName('drop-name')[a + 1].innerHTML += groups[a][b]
+    }
+  }
+}
+
 let sliceArray = function () {
   let a = 0
   let j
   let temparray
-  let chunk = maxNumber
-  for (let i = 0, j = array.length; i < j; i += chunk) {
-    temparray = array.slice(i, i + chunk)
+  for (let i = 0, j = array.length; i < j; i += maxNumber) {
+    temparray = array.slice(i, i + maxNumber)
     console.log(temparray)
+    groups.push([])
     groups[a].push(temparray)
     a++
   }
