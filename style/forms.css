@@ -67,6 +67,12 @@
   display: none;
   width: 100%;
   color: white;
+  max-width: 350px;
+  background-color: rgba(0, 0, 0, .0);
+  border: 2px #5264AE;
+  border-style: none none solid none;
+  outline: 0;
+  overflow: hidden;
 }
 
 #form>#submit {

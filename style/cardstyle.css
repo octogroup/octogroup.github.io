@@ -480,6 +480,15 @@ input[type=text]:focus {
   outline: none;
 }
 
+input[type=date] {
+  font-size: 18px;
+  padding: 10px auto;
+  display: block;
+  width: 86%;
+  border: none;
+  background: none;
+}
+
 /* LABEL ======================================= */
 
 /* label 				 {
