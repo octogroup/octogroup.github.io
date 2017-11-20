@@ -448,32 +448,6 @@ tr> td:nth-child(4) {
   text-align: center;
 }
 
-/* #attendance {
-  background-color: #FF4D32;
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  font-size: 20px;
-  font-weight: bold;
-  border: 0;
-  color: #F5F5F5
-} the red cross button */
-
-/* basic stylings ------------------------------------------ */
-
-/*.container {
-  font-family: 'Roboto';
-  width: 600px;
-  margin: 30px auto 0;
-  display: block;
-  background: #FFF;
-  padding: 10px 50px 50px;
-}*/
-
-.footer {
-  text-align: center;
-}
-
 .footer a {
   color: #53B2C8;
 }

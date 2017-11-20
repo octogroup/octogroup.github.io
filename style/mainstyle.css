@@ -45,7 +45,7 @@ body {
 }
 
 .backgroundpic1 {
-	background-image: url(http://communitytimes.me/wp-content/uploads/2016/10/yourstory-education.jpg);
+	background-image: url('../img/background.jpg');
   min-height: 500px;
   background-attachment: fixed;
   background-position: center;
@@ -208,6 +208,12 @@ main {
   bottom: 25px;
   right: 10px;
   color: #fff;
+}
+
+@media (min-width: 1921px) {
+  h3 {
+    font-size: 2em;
+  }
 }
 
 @media (max-width: 1920px) {
