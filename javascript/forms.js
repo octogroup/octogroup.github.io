@@ -44,6 +44,8 @@ let reset = function () {
     this['i' + i].style.type = 'text'
     this['i' + i].required = false
     this['i' + i].setAttribute('list', '')
+    this['i' + i].value = ""
+
 
     sB.style.display = 'none'
     cB.style.display = 'none'
