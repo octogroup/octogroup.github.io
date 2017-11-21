@@ -1,0 +1,125 @@
+.attendancenav {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+}
+
+.navbuttons {
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.arrowsize {
+  height:50%;
+}
+
+.weeknumber {
+  font-size: 20px;
+}
+
+.att-container {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.attendance {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 0;
+  width: 60%;
+}
+
+.attendance p{
+  padding-left: 5px;
+  text-overflow: ellipsis;
+}
+
+.att-square {
+  width: 14px;
+  height: 18px;
+  margin: 0 auto;
+  padding: 1px;
+  background-color: #c62828;
+  border: solid 1px #818181;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.att-row>div {
+  padding: 15px 0;
+  text-align: center;
+  font-size: 16px;
+}
+
+.att-row>div:nth-child(even) {
+  background-color: #e8e8e8;
+}
+
+.att-row>div:nth-child(odd) {
+  background-color: #fafafa;
+}
+
+.att-row {
+  width: 100%;
+}
+
+.att-names>div {
+  text-align: left;
+}
+
+.att-names {
+  width: 150%;
+}
+
+.attendance>.att-row>.att-header {
+  color: white;
+  padding: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: 'Roboto';
+  background: black;
+  width: 100%;
+  padding: 15px 0;
+}
+
+@media (max-width: 900px) {
+  .att-row>div {
+    font-size: 12px;
+  }
+
+  .att-names {
+    width: 300%;
+  }
+
+  .att-square {
+    width: 8px;
+    height: 13px;
+  }
+
+  .attendance {
+    width: 100%;
+  }
+
+  .attendancenav {
+    flex-wrap: wrap;
+    justify-content: column;
+    position: relative;
+    top: -50px;
+  }
+
+  .arrowsize {
+    height: 35%;
+  }
+
+  .weeknumber {
+    font-size: 20px;
+  }
+
+  .navbuttons {
+    width: 400px;
+    padding-top: 5px;
+    padding-left: 70px;
+    margin: 0;
+  }
+}

@@ -1,173 +1,212 @@
-main{
+main {
   display: flex;
   flex-direction: column;
 }
 
-#boxContainer{
-  width: 830px;
-  border: 1px solid black;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  background-color: white;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  height: auto;
-  visibility: inherit;
-
-}
-
-.assignmentContainer{
-  width: 512px;
-}
-
-#msg{
-  color: red;
-  width: 183px;
-  margin-bottom: 10px;
-  height: 22px;
-  visibility: hidden;
-}
-
-.assignemntInfoBox img{
-  width: 32px;
-}
-.assignemntInfoBox a{
-color: black;
-text-decoration: none;
-}
-.assignemntInfoBox a:hover{
-  text-decoration: underline;
-}
-.subject{
-  max-width: 602px;
-  height: 70px;
-  display: flex;
-  justify-content: flex-start;
-}
-
-.assignemntInfoBox{
-  max-width: 602px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-}
-.assignmentInfo{
-  width: auto;
-  margin-right: 40px;
-}
-
-.gradeBox{
-  flex-grow: 1;
-  border-left: 1px solid black;
-}
-
-.grade{
-  display: flex;
-  flex-direction: column;
-}
-
-.fill{
-  height: 70px;
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.fill>button{
-  height: 22px;
+.select {
   background: #ff5f52;
-    color: white;
-    border: 0;
-    border-radius: 2px;
-    top: 1px;
-    right: 2px;
-    padding: 1px 5px 2px 6px;
-    margin-top: 1px;
-    margin-right: 1px;
+  border: 0;
+  padding: 5px 5px 5px 1px;
+  border: 2px;
+  color: #fafafa;
+  outline: none;
 }
-.gradeContent{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.gradeInput{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 7px;
-}
-.gradeContent button{
-  width: 40px;
-  background-color: #c62828;
-  border: solid 1px #8e0000;
-  min-width: 64px;
-  height: 36px;
-  font-family: 'Roboto';
-  font-size: 14px;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: #fff;
-  padding: 0 16px;
-  border-radius: 2px;
-  margin-top: 21px;
-  margin-bottom: 4px;
-  align-self: flex-end;
-}
-h3{
+
+h2 {
   align-self: center;
 }
 
-.assignmentsList{
-  width: 830px;
-  align-self:center;
+.table {
+  margin: 0 auto;
+  width: 56%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
 }
 
-.assignmentsList>ul{
-  list-style-type:none;
-  padding: 0;
-  margin: 0;
+.kurser {
+  width: 100%;
+  height: 50px;
+  background: black;
 }
-.assignmentsList>ul>li>a{
+
+.uppgift {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  color: #fafafa;
+}
+
+/* ---------------- --- hover ----------------------------------  */
+
+.LiTab a:hover {
+  color: #fafafa;
+  border-bottom: 3px solid rgba(255, 0, 0, 0.3);
+}
+
+/* ------------- end muted colors ---------------------------------- */
+
+.betygsatt-1, .betygsatt-2 {
+  height: 0px;
+  overflow: hidden;
+  width: 100%;
+  background-color: grey;
+  display: flex;
+  justify-content: space-around;
+  transition-duration: 0.9s;
+}
+
+.LiTab {
+  margin-right: 20px;
+  color: rgba(255, 255, 255, 0.49);
+  font-size: 28px;
+  list-style-type: none;
+  display: inline-block;
+}
+
+.LiTab:first-child {
+  color: #fafafa;
+  border-bottom: 3px solid red;
+}
+
+.small {
+  margin-top: 4px;
+  width: 107%;
+}
+
+.betygsatt span {
+  font-weight: bold;
+}
+
+.choose {
+  position: relative;
+  left: 5px;
+  margin-top: 3px;
+}
+
+.files {
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.files img {
+  width: 25px;
+}
+
+.files a {
   color: black;
   text-decoration: none;
 }
-.assignmentsList>ul>li>a:hover{
-  background-color: #e3e3e3;
-}
-.assignmentsList>ul>li>a>span{
-  font-style: italic;
+
+.grading {
+  display: flex;
+  flex-direction: column;
 }
 
-@media (max-width:906px){
-  .assignemntInfoBox{
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
+.button-betygsatt {
+  position: absolute;
+  right: 0px;
+}
+
+.row-1 {
+  width: 100%;
+  background-color: black;
+  height: 25px;
+  display: flex;
+  flex-direction: row;
+  color: #fafafa;
+}
+
+.row-2 {
+  width: 100%;
+  background-color: #fafafa;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  color: black;
+  align-items: center;
+}
+
+.text-1 {
+  width: 204px;
+  height: 100%;
+}
+
+.text-2 {
+  width: 68px;
+  height: 100%;
+  padding-left: 5px;
+}
+
+.text-3 {
+  flex-grow: 1;
+  padding-left: 5px;
+  height: 100%;
+  min-width: 115px;
+}
+
+.text-3 p {
+  width: 97%;
+}
+
+.orange {
+  background-color: #fb6400;
+  color: #fff;
+}
+
+.left-padding {
+  position: relative;
+  top: 11px;
+}
+
+.table p {
+  position: relative;
+  top: 11px;
+  left: 5px;
+}
+
+.text-2.#fafafa-back>p {
+  color: #000;
+}
+
+.active:hover {
+  cursor: pointer;
+}
+
+.table>div:nth-child(odd) {
+  background-color: #e8e8e8;
+}
+
+.table>div:nth-child(1), .table>div:nth-child(2), .table>div:nth-child(3), .table>div:nth-child(22), .table>div:nth-child(23) {
+  background-color: black;
+}
+
+.table>div.betygsatt-1, .table>div.betygsatt-2 {
+  background-color: #fafafa;
+}
+
+.table>div:nth-child(6) {
+  background-color: #e8e8e8;
+}
+
+.table>div:nth-child(7) {
+  background-color: #fafafa;
+}
+
+@media (max-width:906px) {
+  .table {
+    width: 98%;
   }
-  #boxContainer{
-    width: 95%;
-    justify-content: space-between;
-    flex-direction: column;
+  .text-1 {
+    width: 128px;
   }
-  .gradeBox{
-    border-left: none;
-    border-top: 1px solid black;
-    width: 100%;
+}
+
+@media (max-width: 600px) {
+  .cardbutton {
+    padding: 4px 7px;
   }
-  .fill{
-    height: 10px;
-  }
-  .assignmentInfo{
-    margin-bottom: 20px;
-  }
-  .assignmentsList{
-    width: 94%;
-  }
-  .fill>button{
-    position: absolute;
-    top: 109px;
-    right: 9px;
+  .LiTab a {
+    font-size: 22px;
   }
 }

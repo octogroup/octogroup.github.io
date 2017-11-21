@@ -19,7 +19,7 @@
 	<div class="content backgroundpic1">
 		<header>
 			<a href="studentpage.html">
-        <img src="../img/KYH-logo.png" alt="logo">
+        <img src="../img/KYH-logo.png" alt="KYH">
       </a>
 			<nav id="navigation">
 				<div id="loginalign">
@@ -101,7 +101,7 @@
 								</ul>
 							</div>
 							<div class="card-bottom">
-								<button type="button" name="button" class="cardbutton toggleText" onclick="toggleExpand(this); toggleText(this)">Läs Mer</button>
+								<button type="button" name="button" class="cardbutton toggleText" onclick="toggleExpand(this, '50px'); toggleText(this)">Läs Mer</button>
 							</div>
 						</div>
 					</div>
@@ -140,25 +140,55 @@
 								<img class="card-img" src="../img/calendar.svg" alt="calendar">
 							</div>
 							<div class="card-body">
-								<ul class="card-list">
-									<li>
-										<a class="nav-link" href="assignments.html">22/10 Bootstrap: Inlämmning 1</a>
-									</li>
-									<li>
-										<a class="nav-link" href="assignments.html">25/10 Angular: Tenta</a>
-									</li>
-									<li>
-										<a class="nav-link" href="assignments.html">01/11 React: Inlämning 3</a>
-									</li>
-									<li>
-										<a class="nav-link" href="assignments.html">02/11 Vue.js: Hemtenta</a>
-									</li>
-								</ul>
+								<table>
+									<tr class="examfirstrow">
+								    <th>Datum</th>
+								    <th>Kurs</th>
+								    <th>Uppgift</th>
+										<th>Status</th>
+								  </tr>
+								  <tr class="examtr" onclick="window.location='assignments.html'";>
+								    <td name="date">22/10</td>
+								    <td name="course">Bootstrap</td>
+								    <td name="assignment"> Inlämning</td>
+										<td name"status">✓</td>
+									</tr>
+								  <tr class="examtr" onclick="window.location='assignments.html'";>
+										<td name="date">25/10</td>
+								    <td name="course">Angular</td>
+								    <td name="assignment">Tenta</td>
+										<td name"status">✓</td>
+								  </tr>
+								  <tr class="examtr" onclick="window.location='assignments.html'";>
+										<td name="date">01/11</td>
+								    <td name="course">React</td>
+								    <td name="assignment">Inlämning</td>
+										<td name"status"></td>
+								  </tr>
+									<tr class="examtr" onclick="window.location='assignments.html'";>
+										<td name="date">02/11</td>
+								    <td name="course">Vue.js</td>
+								    <td name="assignment">Hemtenta</td>
+										<td name"status"></td>
+								  </tr>
+								</table>
 								<div class="expand">
+									<ul class="card-list">
+										<form class="margintop">
+											<select id="assignments">
+												<option value="option">- Välj kurs - </option>
+                        <option value="arbetsmetodik">Arbetsmetodik</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                      </select>
+										</form>
+										<input type="file">
+									</ul>
 								</div>
 							</div>
 							<div class="card-bottom">
-								<button type="button" name="button" class="cardbutton" onclick="toggleExpand(this)">Lämna in</button>
+								<button type="button" name="button" class="cardbutton" onclick="toggleExpand(this, '120px')">Lämna in</button>
 							</div>
 						</div>
 					</div>
@@ -191,7 +221,7 @@
 								</ul>
 							</div>
 							<div class="card-bottom">
-								<button type="button" name="button" class="cardbutton toggleText" onclick="toggleExpand(this); toggleText(this)">Läs Mer</button>
+								<button type="button" name="button" class="cardbutton toggleText" onclick="toggleExpand(this, '50px'); toggleText(this)">Läs Mer</button>
 							</div>
 						</div>
 					</div>
@@ -234,12 +264,12 @@
 					<div class="card">
 						<div class="cardcontainer card-top-6">
 							<div class="card-header card-body-6">
-								<h3 class="card-heading">Student nyheter</h3>
+								<h3 class="card-heading">Nyheter</h3>
 								<img src="../img/newspaper.svg" alt="newspaper" class="card-img">
 							</div>
 							<div class="card-body">
-								<h4 class="card6-heading">VÄLKOMMEN TILL NYA WEBBPLATSEN</h4>
-								<p class="card-heading">Nu är den äntligen här. Vår nya webb där du mycket enklare kan se vilka utbildningar vi har och hitta rätt utbildning för dig! Du vet väl att vi har ansökningen till utbildningarna öppen ändra fram till 5 juni i år?
+								<h4 class="card6-heading">Ny scrum master pin</h4>
+								<p class="card-heading">I helgen besökte Victor scifiworld i Älvsjö. Det är en mässa för personer som är intresserade utav scifi fantasy grejer. Där fyndade han...
 								</p>
 							</div>
 							<div class="card-bottom">

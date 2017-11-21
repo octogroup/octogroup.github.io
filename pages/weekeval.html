@@ -20,16 +20,13 @@
 	<div class="content">
 		<header>
 			<a href="studentpage.html">
-        <img src="../img/KYH-logo.png" alt="">
+        <img src="../img/KYH-logo.png" alt="KYH">
       </a>
 			<nav id="navigation">
 				<div id="loginalign">
 					<button class="loginbutton" type="button" name="logout" onclick="logOut()">logga ut</button>
 				</div>
 				<ul id="navlist">
-					<!-- <li>
-						<a href="../index.html">Hem</a>
-					</li> -->
 					<li>
 						<a href="../pages/studentpage.html">Profil</a>
 					</li>
@@ -43,7 +40,7 @@
 
 		<main>
 			<div class="formholder">
-				<form id="weekeval" name="weekeval" action="#" onsubmit="return toggleAlertbox('studentpage.html');">
+				<form id="weekeval" autocomplete="off" name="weekeval" action="#" onsubmit="return toggleAlertbox('studentpage.html');">
 					<h2 class="formheadline">Veckorapport</h2>
 					<h4 class="questionstyle">Ditt namn (frivilligt)</h4>
 					<input class="textinput" type="text" placeholder="Namn" name="yourname">
