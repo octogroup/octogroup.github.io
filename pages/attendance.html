@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link rel="shortcut icon" href="../img/octo.png">
 	<link rel="stylesheet" href="../style/loginstyle.css">
-  <link rel="stylesheet" href="../style/mainstyle.css">
-  <link rel="stylesheet" href="../style/evaluation.css">
+	<link rel="stylesheet" href="../style/mainstyle.css">
+	<link rel="stylesheet" href="../style/evaluation.css">
 	<link rel="stylesheet" href="../style/colorThemeStudentpage.css">
 	<link rel="stylesheet" href="../style/attendance.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,130 +38,324 @@
 		<div id="container"></div>
 
 		<main>
-        <div class="attendancenav">
-          <div class="navbuttons">
-            <button type="button" name="fe16" class="cardbutton navspace">FE16</button>
-            <button type="button" name="fe17" class="cardbutton navspace">FE17</button>
-          </div>
-            <img onclick="decWeek()" src="../img/keyboard-left-arrow-button.png" class="arrowsize" alt="">
-            <h3 class="weeknumber" id="weekCount">Vecka 39</h3>
-            <img onclick="incWeek()" src="../img/keyboard-right-arrow-button.png" class="arrowsize" alt="">
-        </div>
+			<div class="attendancenav">
+				<div class="navbuttons">
+					<button type="button" name="fe16" class="cardbutton navspace">FE16</button>
+					<button type="button" name="fe17" class="cardbutton navspace">FE17</button>
+				</div>
+				<img onclick="decWeek()" src="../img/keyboard-left-arrow-button.png" class="arrowsize" alt="">
+				<h3 class="weeknumber" id="weekCount">Vecka 39</h3>
+				<img onclick="incWeek()" src="../img/keyboard-right-arrow-button.png" class="arrowsize" alt="">
+			</div>
 			<div class="att-container">
 				<div class="attendance">
 					<div class="att-row att-names">
-						<div class="att-header"><p>Namn:</p></div>
-            <div><p>Lucas Andersson</p></div>
-            <div><p>Linnea Bengtsson</p></div>
-            <div><p>Elias Berg</p></div>
-            <div><p>Alice Bergström</p></div>
-            <div><p>Oliver Eriksson</p></div>
-            <div><p>Maja Forsberg</p></div>
-            <div><p>Charlie Hansson</p></div>
-            <div><p>Elsa Johansson</p></div>
-            <div><p>Ebba Jonsson</p></div>						
-            <div><p>William Lind</p></div>
-            <div><p>Ludvig Lindberg</p></div>
-            <div><p>Agnes Lindqvist</p></div>
-            <div><p>Vincent Lundberg</p></div>
-						<div><p>Liam Olsson</p></div>
-						<div><p>Lilly Persson</p></div>						
-						<div><p>Julia Pettersson</p></div>
+						<div class="att-header">
+							<p>Namn:</p>
+						</div>
+						<div>
+							<p>Lucas Andersson</p>
+						</div>
+						<div>
+							<p>Linnea Bengtsson</p>
+						</div>
+						<div>
+							<p>Elias Berg</p>
+						</div>
+						<div>
+							<p>Alice Bergström</p>
+						</div>
+						<div>
+							<p>Oliver Eriksson</p>
+						</div>
+						<div>
+							<p>Maja Forsberg</p>
+						</div>
+						<div>
+							<p>Charlie Hansson</p>
+						</div>
+						<div>
+							<p>Elsa Johansson</p>
+						</div>
+						<div>
+							<p>Ebba Jonsson</p>
+						</div>
+						<div>
+							<p>William Lind</p>
+						</div>
+						<div>
+							<p>Ludvig Lindberg</p>
+						</div>
+						<div>
+							<p>Agnes Lindqvist</p>
+						</div>
+						<div>
+							<p>Vincent Lundberg</p>
+						</div>
+						<div>
+							<p>Liam Olsson</p>
+						</div>
+						<div>
+							<p>Lilly Persson</p>
+						</div>
+						<div>
+							<p>Julia Pettersson</p>
+						</div>
 					</div>
 					<div class="att-row">
 						<div class="att-header">9/11</div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
 					</div>
 					<div class="att-row">
 						<div class="att-header">10/11</div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
 					</div>
 					<div class="att-row">
 						<div class="att-header">11/11</div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
 					</div>
 					<div class="att-row">
 						<div class="att-header">12/11</div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
 					</div>
 					<div class="att-row">
 						<div class="att-header">13/11</div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
-						<div><p onclick="changeColor(this)" class="att-square"></p></div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
+						<div>
+							<p onclick="changeColor(this)" class="att-square"></p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -169,8 +363,8 @@
 	</div>
 	<footer class="footer">
 		<p>&copy;2017</p>
-  </footer>
-  <script type="text/javascript" src="../javascript/togglediv.js"></script>
+	</footer>
+	<script type="text/javascript" src="../javascript/togglediv.js"></script>
 	<script type="text/javascript" src="../javascript/teacherattendance.js"></script>
 	<script type="text/javascript" src="../javascript/login.js"></script>
 	<script type="text/javascript" src="../javascript/sent.js"></script>
