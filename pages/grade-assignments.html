@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 
 <head>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <div class="content">
+  <div class="content backgroundpic1">
     <header onclick="dropclose()">
       <a href="teacherpage.html">
         <img src="../img/KYH-logo.png" alt="KYH">
@@ -39,59 +39,528 @@
     <div id="container">
     </div>
     <main>
-      <div id="boxContainer">
-        <div class="assignmentContainer">
-          <div class="subject">
-            <h3>Induviduellt projekt 1</h3></div>
-          <div class="assignemntInfoBox">
-            <div class="assignmentInfo">
-              <h4>Inlämnad av</h4>
-              <p>Anna Johansson</p>
-            </div>
-            <div class="assignmentInfo">
-              <h4>Inlämnad</h4>
-              <p>2017-05-05</p>
-            </div>
-            <div class="assignmentInfo">
-              <h4>Fil(er)</h4>
-              <p><img src="../img/pdf.png" alt=""> <a href="../files/octoPDF.pdf" download>inlamning</a></p>
-              <p><img src="../img/doc.png" alt=""> <a href="../files/octoDOC.odt" download>fil 2</a></p>
-            </div>
+      <!-- måste finnas för att kurs-menyn ska funka -->
+      <div id="boxContainer"></div>
+
+      <!--            Rubrik          -->
+      <h2 class="textShadow">Obedömda inlämningar</h2>
+      <div class="table">
+
+        <!-- UnderRubrik => kursmenu -->
+        <div class="kurser">
+          <ul>
+            <li class="LiTab"><a>CSS</a></li>
+            <li class="LiTab"><a>JavaScript</a></li>
+            <li class="LiTab"><a>PHP</a></li>
+          </ul>
+        </div>
+        <!-- Kursmenu slutar slutar -->
+
+        <!-- uppgift 1 -->
+        <div class="uppgift">
+          <h3>Uppgift 1</h3>
+        </div>
+        <!-- uppgift 1 slutar -->
+
+        <!-- rad 1 -->
+        <div class="row-1">
+          <div class="text-1">Namn</div>
+          <div class="text-2">Betyg</div>
+          <div class="text-3"></div>
+        </div>
+
+        <!-- rad 2 -->
+        <div class="row-2">
+          <div class="text-1 ">
+            <p onclick="openAssignmentBox()">Elsa Karlsson</p>
+          </div>
+          <div class="text-2">
+            <p id="column-white-1"></p>
+          </div>
+          <div class="text-3">
+            <p><button id="knapp-1" class="button-betygsatt cardbutton" onclick="toggleBetygsattning(this.id)">Betygsätt</button></p>
           </div>
         </div>
-        <div class="gradeBox">
-          <div class="fill">
-            <button onclick="closeBox()">✕</button>
+
+        <!-- diven som åker ner för betygsätt-knappen nr 1 -->
+        <div class="betygsatt-1">
+          <div class="files">
+            <p><span>Fil(er)</span></p>
+            <p> <img src="../img/pdf.png" alt=""><a href="../files/octoPDF.pdf" download>fil 1</a></p>
+            <p> <img src="../img/doc.png" alt=""><a href="../files/octoDOC.odt" download>filnamn</a></p>
           </div>
-          <div class="gradeContent">
-            <div class="grade">
-              <h4>Betygssättning</h4>
-              <div class="gradeInput">
-                <p>Betyg:</p>
-                <select required id="selectGrade">
-                    <option value="" label="-"></option>
-                    <option value="VG">IG</option>
-                    <option value="VG">G</option>
-                    <option value="VG">VG</option>
-                  </select>
-              </div>
-              <button type="button" name="button" onclick="submitGrade()">OK</button>
-              <div id="msg"></div>
-            </div>
+          <div class="grading">
+
+
+            <form onsubmit="printBetyg('knappbetyg-1'); return false;">
+              <p><span>Betygsätt</span></p>
+              <p>
+                Betyg:
+                <select id="select-input-1" class="choose select" required>
+                  <option value="">-</option>
+                  <option value="U">U</option>
+                  <option value="G">G</option>
+                  <option value="VG">VG</option>
+                </select>
+              </p>
+              <p><button id="knappbetyg-1" type="submit" name="button" class="cardbutton small">ok</button></p>
+
+            </form>
+          </div>
+
+        </div>
+        <!-- diven som åker ner nr 1 slutar-->
+
+        <!-- rad 3  -->
+        <div class="row-2">
+          <div class="text-1">
+            <p>Gunnar Frid</p>
+          </div>
+          <div class="text-2">
+            <p>VG</p>
+          </div>
+          <div class="text-3">
+            <p></p>
           </div>
         </div>
-      </div>
-      <div class="assignmentsList">
-        <h3>Obedömda inlämningar</h3>
-        <ul>
-          <li id="li_1"><a href="#" onclick="openAssignmentBox()">Anna Johansson <span>Induviduellt projekt 1 </span></a></li>
-          <li id="li_2"><a href="#" onclick="openAssignmentBox()">Anna Johansson <span>Induviduellt projekt 1</span></a></li>
-        </ul>
+
+        <!-- rad 4 -->
+        <div class="row-2">
+          <div class="text-1">
+            <p>Kajsa Hellström</p>
+          </div>
+          <div class="text-2">
+            <p id="column-white-2"></p>
+          </div>
+          <div class="text-3">
+            <p><button id="knapp-2" class="button-betygsatt cardbutton" onclick="toggleBetygsattning(this.id)">Betygsätt</button></p>
+          </div>
+        </div>
+
+        <!-- diven som åker ner för betygsätt-knappen nr 2 -->
+        <div class="betygsatt-2">
+          <div class="files">
+            <p><span>Fil(er)</span></p>
+            <p> <img src="../img/pdf.png" alt=""><a href="../files/octoPDF.pdf" download>fil 1</a></p>
+            <p> <img src="../img/doc.png" alt=""><a href="../files/octoDOC.odt" download>filnamn</a></p>
+          </div>
+          <div class="grading">
+
+            <form onsubmit="printBetyg('knappbetyg-2'); return false;">
+              <p><span>Betygsätt</span></p>
+              <p>
+                Betyg:
+                <select id="select-input-2" class="choose select" required>
+                  <option value="">-</option>
+                  <option value="U">U</option>
+                  <option value="G">G</option>
+                  <option value="VG">VG</option>
+                </select>
+              </p>
+              <p><button id="knappbetyg-2" type="submit" name="button" class="cardbutton small">ok</button></p>
+            </form>
+          </div>
+
+        </div>
+        <!-- diven som åker ner för betygsätt-knappen nr 2 slutar -->
+
+
+        <!-- rad 5 -->
+        <div class="row-2">
+          <div class="text-1">
+            <p>Ingvar Loop</p>
+          </div>
+          <div class="text-2">
+            <p>U</p>
+          </div>
+          <div class="text-3">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- rad 6 -->
+        <div class="row-2">
+          <div class="text-1">
+            <p>Ulla Uggla</p>
+          </div>
+          <div class="text-2">
+            <p>VG</p>
+          </div>
+          <div class="text-3">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- rad 7 -->
+        <div class="row-2">
+          <div class="text-1">
+            <p>Elon Elektronik</p>
+          </div>
+          <div class="text-2">
+            <p>G</p>
+          </div>
+          <div class="text-3">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- rad 8 -->
+        <div class="row-2">
+          <div class="text-1">
+            <p>Stina Clark</p>
+          </div>
+          <div class="text-2">
+            <p>G</p>
+          </div>
+          <div class="text-3">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- rad 9 -->
+        <div class="row-2">
+          <div class="text-1">
+            <p>Olov Kanel</p>
+          </div>
+          <div class="text-2">
+            <p>U</p>
+          </div>
+          <div class="text-3">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- rad 10 -->
+        <div class="row-2">
+          <div class="text-1">
+            <p>Vivi Viol</p>
+          </div>
+          <div class="text-2">
+            <p>G</p>
+          </div>
+          <div class="text-3">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- rad 11 -->
+        <div class="row-2">
+          <div class="text-1">
+            <p>Sten Björklöf</p>
+          </div>
+          <div class="text-2">
+            <p>G</p>
+          </div>
+          <div class="text-3">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- rad 12 -->
+        <div class="row-2">
+          <div class="text-1">
+            <p>Anna-Karin Dubbelnamn</p>
+          </div>
+          <div class="text-2">
+            <p>VG</p>
+          </div>
+          <div class="text-3">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- rad 13 -->
+        <div class="row-2">
+          <div class="text-1">
+            <p>Bo Strömmberget</p>
+          </div>
+          <div class="text-2">
+            <p>VG</p>
+          </div>
+          <div class="text-3">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- rad 14 -->
+        <div class="row-2">
+          <div class="text-1">
+            <p>Anja Vilse</p>
+          </div>
+          <div class="text-2">
+            <p>G</p>
+          </div>
+          <div class="text-3">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- rad 15 -->
+        <div class="row-2">
+          <div class="text-1">
+            <p>Ejnar Guldsko</p>
+          </div>
+          <div class="text-2">
+            <p>G</p>
+          </div>
+          <div class="text-3">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- rad 16 -->
+        <div class="row-2">
+          <div class="text-1">
+            <p>Lisa Vinnarskalle</p>
+          </div>
+          <div class="text-2">
+            <p>G</p>
+          </div>
+          <div class="text-3">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- rad 17 -->
+        <div class="row-2">
+          <div class="text-1">
+            <p>Svante Hjälm</p>
+          </div>
+          <div class="text-2">
+            <p>VG</p>
+          </div>
+          <div class="text-3">
+            <p></p>
+          </div>
+        </div>
+
+
+
+
+        <div class="uppgift">
+          <h3>Uppgift 2</h3>
+        </div>
+
+
+        <!-- rad 1 -->
+        <div class="row-1">
+          <div class="text-1">Namn</div>
+          <div class="text-2">Betyg</div>
+          <div class="text-3"></div>
+        </div>
+
+        <!-- rad 2 -->
+        <div class="row-2">
+          <div class="text-1">
+            <p>Elsa Karlsson</p>
+          </div>
+          <div class="text-2">
+            <p>G</p>
+          </div>
+          <div class="text-3">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- rad 3 -->
+        <div class="row-2">
+          <div class="text-1">
+            <p>Gunnar Frid</p>
+          </div>
+          <div class="text-2">
+            <p>VG</p>
+          </div>
+          <div class="text-3">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- rad 4 -->
+        <div class="row-2">
+          <div class="text-1">
+            <p>Kajsa Hellström</p>
+          </div>
+          <div class="text-2">
+            <p>G</p>
+          </div>
+          <div class="text-3">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- rad 5 -->
+        <div class="row-2">
+          <div class="text-1">
+            <p>Ingvar Loop</p>
+          </div>
+          <div class="text-2">
+            <p>G</p>
+          </div>
+          <div class="text-3">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- rad 6 -->
+        <div class="row-2">
+          <div class="text-1">
+            <p>Ulla Uggla</p>
+          </div>
+          <div class="text-2">
+            <p>G</p>
+          </div>
+          <div class="text-3">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- rad 7 -->
+        <div class="row-2">
+          <div class="text-1">
+            <p>Elon Elektronik</p>
+          </div>
+          <div class="text-2">
+            <p>U</p>
+          </div>
+          <div class="text-3">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- rad 8 -->
+        <div class="row-2">
+          <div class="text-1">
+            <p>Stina Clark</p>
+          </div>
+          <div class="text-2">
+            <p>G</p>
+          </div>
+          <div class="text-3">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- rad 9 -->
+        <div class="row-2">
+          <div class="text-1">
+            <p>Olov Kanel</p>
+          </div>
+          <div class="text-2">
+            <p>G</p>
+          </div>
+          <div class="text-3">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- rad 10 -->
+        <div class="row-2">
+          <div class="text-1">
+            <p>Vivi Viol</p>
+          </div>
+          <div class="text-2">
+            <p>VG</p>
+          </div>
+          <div class="text-3">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- rad 11 -->
+        <div class="row-2">
+          <div class="text-1">
+            <p>Sten Björklöf</p>
+          </div>
+          <div class="text-2">
+            <p>G</p>
+          </div>
+          <div class="text-3">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- rad 12 -->
+        <div class="row-2">
+          <div class="text-1">
+            <p>Anna-Karin Dubbelnamn</p>
+          </div>
+          <div class="text-2">
+            <p>VG</p>
+          </div>
+          <div class="text-3">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- rad 13 -->
+        <div class="row-2">
+          <div class="text-1">
+            <p>Bo Strömmberget</p>
+          </div>
+          <div class="text-2">
+            <p>G</p>
+          </div>
+          <div class="text-3">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- rad 14 -->
+        <div class="row-2">
+          <div class="text-1">
+            <p>Anja Vilse</p>
+          </div>
+          <div class="text-2">
+            <p>G</p>
+          </div>
+          <div class="text-3">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- rad 15 -->
+        <div class="row-2">
+          <div class="text-1">
+            <p>Ejnar Guldsko</p>
+          </div>
+          <div class="text-2">
+            <p>U</p>
+          </div>
+          <div class="text-3">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- rad 16 -->
+        <div class="row-2">
+          <div class="text-1">
+            <p>Lisa Vinnarskalle</p>
+          </div>
+          <div class="text-2">
+            <p>G</p>
+          </div>
+          <div class="text-3">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- rad 17 -->
+        <div class="row-2">
+          <div class="text-1">
+            <p>Svante Hjälm</p>
+          </div>
+          <div class="text-2">
+            <p>G</p>
+          </div>
+          <div class="text-3">
+            <p></p>
+          </div>
+        </div>
       </div>
     </main>
   </div>
   <footer class="footer">
-    <p2>octopusgruppen@gmail.com</p2>
+    <h5>octopusgruppen@gmail.com</h5>
     <p>&copy;2017</p>
   </footer>
   <script type="text/javascript" src="../javascript/dailyfeedback.js"></script>
