@@ -434,7 +434,8 @@ section.firstcardcolumn > div:nth-child(3) > div > div.card-body {
   font-weight: bold;
 }
 
-.examtr > td, th {
+.examtr > td,
+.card-body th {
   text-align: left;
   padding-right: 15px;
   color: white;
