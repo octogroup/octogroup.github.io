@@ -37,68 +37,6 @@ div > main > h2 {
 	margin-bottom: 50px;
 }
 
-/*----------------------------BUTTON---------------------------------------*/
-
-.hiddenBut {
-  position: relative;
-  overflow: hidden;
-  border: none;
-  cursor: pointer;
-  color: white;
-  padding: 8px 14px;
-  border-radius: 2px;
-  font-size: 14px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
-  background: #ff5f52;
-  text-transform: uppercase;
-  display: none;
-}
-
-.hiddenBut:after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 5px;
-  height: 5px;
-  background: rgba(255, 255, 255, .5);
-  opacity: 0;
-  border-radius: 100%;
-  transform: scale(1, 1) translate(-50%);
-  transform-origin: 50% 50%;
-}
-
-.hiddenBut:hover {
-  background-color: ##8e0000;
-}
-
-/* remove blue outline on the button after you clicked */
-
-.hiddenBut:focus {
-  outline: none;
-}
-
-@keyframes ripple {
-  0% {
-    transform: scale(0, 0);
-    opacity: 1;
-  }
-  20% {
-    transform: scale(25, 25);
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: scale(40, 40);
-  }
-}
-
-.hiddenBut:focus:not(:active)::after {
-  animation: ripple 1s ease-out;
-}
-
-/*-----------------------Button-ends-----------------------------------*/
-
 #assignments {
   margin: 10px 0;
   padding: 5px;
