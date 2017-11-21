@@ -45,7 +45,7 @@
 						<img id="form-img-1" src="../img/notebook.svg">
 					</div>
 					<button id="close">&#10005;</button>
-					<form id="form" autocomplete="off" onsubmit="return toggleAlertbox('teacherpage.html');">
+					<form id="form" autocomplete="off">
 						<p id="p1"></p>
 						<input id="i1" type="text" min="1" max="7" step="1" list="tickmarks">
 						<textarea id="t1" rows="1" cols="52" onkeyup="autoGrow(this)"></textarea>
@@ -111,42 +111,20 @@
 					</div>
 					<!-- Card -->
 					<div class="card">
-						<div class="cardcontainer card-top-5">
-							<div class="card-header card-body-5">
-								<h3 class="card-heading">Vecko-utvärdering</h3>
-								<img src="../img/mail.svg" alt="mail" class="card-img">
+						<div class="cardcontainer card-top-3">
+							<div class="card-header card-body-3">
+								<h3 class="card-heading">Verktyg</h3>
+								<img src="../img/trophy.svg" class="card-img" alt="trophy">
 							</div>
-							<div class="card-bottom">
-								<a href="weeklyevaluation.html"><button type="button" name="button" class="cardbutton">Öppna</button></a>
-							</div>
-						</div>
-					</div>
-					<!-- Card -->
-					<div class="card">
-						<div class="cardcontainer card-top-5">
-							<div class="card-header card-body-5">
-								<h3 class="card-heading">Grupp-indelning</h3>
-								<img src="../img/mail.svg" alt="mail" class="card-img">
-							</div>
-							<!-- <div class="card-body">
-							</div> -->
-							<div class="card-bottom">
-								<a href="groups.html"><button type="button" name="button" class="cardbutton">Öppna</button></a>
-							</div>
-						</div>
-					</div>
-					<!-- Card -->
-					<div class="card">
-						<div class="cardcontainer card-top-2">
-							<div class="card-header card-body-2">
-								<h3 class="card-heading">Närvaro</h3>
-								<img src="../img/calendar.svg" alt="mail" class="card-img">
-							</div>
-							<!--
 							<div class="card-body">
-							</div> -->
-							<div class="card-bottom">
-								<a href="attendance.html"><button type="button" name="button" class="cardbutton">Öppna</button></a>
+								<ul class="card-list">
+									<li>
+										<a class="nav-link" href="groups.html">Gruppindelning</a>
+									</li>
+									<li>
+										<a class="nav-link" href="attendance.html">Närvaro</a>
+									</li>
+								</ul>
 							</div>
 						</div>
 					</div>
@@ -163,17 +141,17 @@
 							<div class="card-body">
 								<ul class="card-list">
 									<li>
-										<a class="nav-link" href="grade-assignments.html">Anna Induviduellt projekt 1</a>
+										<a class="nav-link" href="grade-assignments.html">CSS (2 nya)</a>
 									</li>
 									<li>
-										<a class="nav-link" href="grade-assignments.html">Anna Induviduellt projekt 1</a>
+										<a class="nav-link" href="grade-assignments.html">HTML (0 nya)</a>
 									</li>
 									<div class="expand">
 										<li>
-											<a class="nav-link" href="grade-assignments.html">Anna Induviduellt projekt 1</a>
+											<a class="nav-link" href="grade-assignments.html">Javascript (0 nya)</a>
 										</li>
 										<li>
-											<a class="nav-link" href="grade-assignments.html">Anna Induviduellt projekt 1</a>
+											<a class="nav-link" href="grade-assignments.html">Bootstrap (0 nya)</a>
 										</li>
 									</div>
 								</ul>
@@ -187,31 +165,27 @@
 					<div class="card">
 						<div class="cardcontainer card-top-5">
 							<div class="card-header card-body-5">
-								<h3 class="card-heading">Dagliga utvärderingar</h3>
+								<h3 class="card-heading">Utvärderingar</h3>
 								<img src="../img/mail.svg" alt="mail" class="card-img">
 							</div>
-							<div class="card-bottom">
-								<a href="dailyevaluation.html"><button type="button" name="button" class="cardbutton">Öppna</button></a>
+							<div class="card-body">
+								<ul class="card-list">
+									<li>
+										<a class="nav-link" href="courseevaluation.html">Kurs utvärdering</a>
+									</li>
+									<li>
+										<a class="nav-link" href="weeklyevaluation.html">Veckoutvärdering</a>
+									</li>
+									<li>
+										<a class="nav-link" href="dailyevaluation.html">Dagliga utvärderingar</a>
+									</li>
+								</ul>
 							</div>
 						</div>
 					</div>
 				</section>
 				<!-- Third Card Column -->
 				<section class="thirdcardcolumn">
-					<!-- Card -->
-					<div class="card">
-						<div class="cardcontainer card-top-5">
-							<div class="card-header card-body-5">
-								<h3 class="card-heading">Kurs-utvärdering</h3>
-								<img src="../img/mail.svg" alt="mail" class="card-img">
-							</div>
-							<div class="card-bottom">
-								<a href="courseevaluation.html">
-									<button type="button" name="button" class="cardbutton">Öppna</button>
-								</a>
-							</div>
-						</div>
-					</div>
 					<!-- Card -->
 					<div class="card">
 						<div class="cardcontainer card-top-6">
@@ -233,15 +207,6 @@
 					</div>
 				</section>
 			</div>
-			<!-- Alertbox -->
-			<div id="alertbox-modulus">
-				<div class="alertbox-content zoom">
-					<img src="../img/check.svg" alt="check" class="card-img alert-img">
-					<h2 class="alertbox-header">Innehållet är uppdaterat</h2>
-					<p class="alertbox-subheader"></p>
-				</div>
-			</div>
-			<!-- Alertbox-ends -->
 		</main>
 	</div>
 	<footer class="footer">

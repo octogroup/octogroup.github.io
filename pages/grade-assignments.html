@@ -90,22 +90,17 @@
             <p> <img src="../img/doc.png" alt=""><a href="../files/octoDOC.odt" download>filnamn</a></p>
           </div>
           <div class="grading">
+            <p><span>Betygsätt</span></p>
+            <p>Betyg:
 
-
-            <form onsubmit="printBetyg('knappbetyg-1'); return false;">
-              <p><span>Betygsätt</span></p>
-              <p>
-                Betyg:
-                <select id="select-input-1" class="choose select" required>
-                  <option value="">-</option>
-                  <option value="U">U</option>
-                  <option value="G">G</option>
-                  <option value="VG">VG</option>
-                </select>
-              </p>
-              <p><button id="knappbetyg-1" type="submit" name="button" class="cardbutton small">ok</button></p>
-
-            </form>
+              <select id="select-input-1" class="choose select">
+              <option value="">-</option>
+              <option value="U">U</option>
+              <option value="G">G</option>
+              <option value="VG">VG</option>
+            </select>
+            </p>
+            <p><button id="knappbetyg-1" type="button" name="button" class="cardbutton small" onclick="printBetyg(this.id)">ok</button></p>
           </div>
 
         </div>
@@ -145,20 +140,17 @@
             <p> <img src="../img/doc.png" alt=""><a href="../files/octoDOC.odt" download>filnamn</a></p>
           </div>
           <div class="grading">
+            <p><span>Betygsätt</span></p>
+            <p>Betyg:
 
-            <form onsubmit="printBetyg('knappbetyg-2'); return false;">
-              <p><span>Betygsätt</span></p>
-              <p>
-                Betyg:
-                <select id="select-input-2" class="choose select" required>
-                  <option value="">-</option>
-                  <option value="U">U</option>
-                  <option value="G">G</option>
-                  <option value="VG">VG</option>
-                </select>
-              </p>
-              <p><button id="knappbetyg-2" type="submit" name="button" class="cardbutton small">ok</button></p>
-            </form>
+              <select id="select-input-2" class="choose select">
+              <option value="">-</option>
+              <option value="U">U</option>
+              <option value="G">G</option>
+              <option value="VG">VG</option>
+            </select>
+            </p>
+            <p><button id="knappbetyg-2" type="button" name="button" class="cardbutton small" onclick="printBetyg(this.id)">ok</button></p>
           </div>
 
         </div>
