@@ -19,6 +19,6 @@ function drop(ev) {
 let number = 2
 
 function addGroup() {
-document.getElementsByClassName('seconcolumn')[0].innerHTML += '<div class="card custom-card"><div class="dark-blue"><h3>Klass ' + number + '</h3></div><div class="blue"><ol class="drop-name" ondrop="drop(event)" ondragover="allowDrop(event)"></ol></div></div>'
+document.getElementsByClassName('seconcolumn')[0].innerHTML += '<div class="card custom-card"><div class="dark-purple"><h3>Klass ' + number + '</h3></div><div class="purple"><ol class="drop-name" ondrop="drop(event)" ondragover="allowDrop(event)"></ol></div></div>'
 number += 1
 }
