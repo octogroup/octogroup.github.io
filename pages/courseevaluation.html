@@ -18,16 +18,13 @@
   <div class="content">
     <header>
       <a href="teacherpage.html">
-        <img src="../img/KYH-logo.png" alt="logo">
+        <img src="../img/KYH-logo.png" alt="KYH">
       </a>
       <nav id="navigation">
         <div id="loginalign">
         	<button class="loginbutton" type="button" name="logout" onclick="logOut()">logga ut</button>
 				</div>
         <ul id="navlist">
-          <!-- <li>
-            <a href="../page/studentpage.html">Hem</a>
-          </li> -->
           <li>
             <a href="../pages/teacherpage.html">Profil</a>
           </li>
@@ -42,78 +39,91 @@
     <main>
 
       <img class="wbild" src="../img/courspic.png">
+      <h4 class="feedbackheader">Välj vilken kurs och klass som ska visas</h3>
 
 			<div class="feedbacknav">
-				<button type="button" name="fe16" class="cardbutton navspace" onclick="toggleExpandGraphs1()">FE16</button>
-				<button type="button" name="fe17" class="cardbutton navspace" onclick="toggleExpandGraphs2()">FE17</button>
+        <form class="inputform">
+          <p class="card-heading">Klass:</p>
+          <select id="classassign" class="cardbutton" onchange="changeFirst(this)">
+            <option value=""></option>
+            <option value="FE16">FE16</option>
+            <option value="FE17">FE17</option>
+          </select>
+        </form>
+        <form class="inputform">
+          <p class="card-heading">Kurs:</p>
+          <select id="courseassign" class="cardbutton" onchange="changeSecond(this)">
+            <option value=""></option>
+            <option value="Arbetsmetodik">Arbetsmetodik</option>
+            <option value="Javascript">JavaScript</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+          </select>
+        </form>
 			</div>
 
-			<h3 class="feedbackheader">Senaste avslutade kurser</h3>
+      <h2 class="center margintop"><span id="partone">FE16</span> - <span id="parttwo">Arbetsmetodik</span></h2>
 
       <div class="graphfcont">
-        <div id="chartContainerMiddleFe16"></div>
 				<div id="chartContainerMiddleFe17"></div>
       </div>
 
       <h2 class="text-center">Summering av fritext</h2>
       <div class="showAnswer">
         <section class="answerSection">
-          <!-- <h3 class="marginbottom">Fråga</h3> -->
-          <h4 class="marginbottom">- Är det något specifikt moment i utbildningen du upplever att du behöver mer stöd i?</h4>
+            <h4 class="marginbottom">Är det något specifikt moment i utbildningen du upplever att du behöver mer stöd i?</h4>
           <ol class="weekAnswerList">
             <li>javascript</li>
             <li>JS</li>
             <li>Git Javascript</li>
-            <span id="q5">
-        <li>javaScript är det jag fortfarande känner mig osäker på men antar att det kommer</li>
-        <li>Allt</li>
-        <li>Lite osäker på JS</li>
-        <li>Inte direkt</li>
-        <li>Skulle vilja lära mig mer om flex</li>
-        <li>javascript</li>
-      </span>
+          </ol>
+          <ol start="4" class="weekAnswerList zeroheight expand">
+            <li>javaScript är det jag fortfarande känner mig osäker på men antar att det kommer</li>
+            <li>Allt</li>
+            <li>Lite osäker på JS</li>
+            <li>Inte direkt</li>
+            <li>Skulle vilja lära mig mer om flex</li>
+            <li>javascript</li>
           </ol>
           <div class="bottomSection">
-            <button type="button" name="Tempot" class="cardbutton toggleText" onclick="expand1(); toggleText(this)">visa mer</button>
+            <button type="button" name="Tempot" class="cardbutton toggleText" onclick="toggleExpand(this, '280px'); toggleText(this)">visa mer</button>
           </div>
         </section>
         <section class="answerSection">
-          <!-- <h3 class="marginbottom">Fråga</h3> -->
-          <h4 class="marginbottom">- Vad har varit bra/mindre bra?</h4>
+          <h4 class="marginbottom">Vad har varit bra/mindre bra?</h4>
           <ol class="weekAnswerList">
             <li>Christian & Tobias </li>
             <li>Christian! en härlig rackare</li>
             <li>Våra lärare är mycket pedagogiska!</li>
-            <span id="q6">
-        <li>Flexibilitet, föreläsningarna.</li>
-        <li>Kristian är duktig på att hjälpa till.</li>
-        <li>Klassen</li>
-        <li>Grupparbetet</li>
-        <li>Diagnosen</li>
-        <li>Tobias har varit mycket hjälpsam</li>
-      </span>
+          </ol>
+          <ol start="4" class="weekAnswerList zeroheight expand">
+            <li>Flexibilitet, föreläsningarna.</li>
+            <li>Kristian är duktig på att hjälpa till.</li>
+            <li>Klassen</li>
+            <li>Grupparbetet</li>
+            <li>Diagnosen</li>
+            <li>Tobias har varit mycket hjälpsam</li>
           </ol>
           <div class="bottomSection">
-            <button type="button" name="Engagerad" class="cardbutton toggleText" onclick="expand2(); toggleText(this)">visa mer</button>
+            <button type="button" name="Engagerad" class="cardbutton toggleText" onclick="toggleExpand(this, '260px'); toggleText(this)">visa mer</button>
           </div>
         </section>
         <section class="answerSection">
-          <!-- <h3 class="marginbottom">Förslag</h3> -->
-          <h4 class="marginbottom">- Förslag på förbättringar</h4>
+          <h4 class="marginbottom">Förslag på förbättringar</h4>
           <ol class="weekAnswerList">
             <li>Bättre och tydligare info. Om ni skickar meddelande i slack - skriv @everyone, så att alla säkert får notis</li>
             <li>Behov utav riktiga föreläsningar så att man lär sig något på dessa.</li>
             <li>Mer livecode!</li>
-            <span id="q7">
-        <li>Mera specificerat, detaljerad förklaringar på föreläsningen.</li>
-        <li>Jobbigt med dessa otydligheter i schemat.</li>
-        <li>Tydligare schema</li>
-        <li>Jag vill ha bättre framförhållning när vi ska ha lektioner.</li>
-        <li>Tydligare information om vad som ska göras på lektionerna.</li>
-      </span>
+          </ol>
+          <ol start="4" class="weekAnswerList zeroheight expand">
+            <li>Mera specificerat, detaljerad förklaringar på föreläsningen.</li>
+            <li>Jobbigt med dessa otydligheter i schemat.</li>
+            <li>Tydligare schema</li>
+            <li>Jag vill ha bättre framförhållning när vi ska ha lektioner.</li>
+            <li>Tydligare information om vad som ska göras på lektionerna.</li>
           </ol>
           <div class="bottomSection">
-            <button type="button" name="Stämningen" class="cardbutton toggleText" onclick="expand3(); toggleText(this)">visa mer</button>
+            <button type="button" name="Stämningen" class="cardbutton toggleText" onclick="toggleExpand(this, '305px'); toggleText(this)">visa mer</button>
           </div>
         </section>
       </div>

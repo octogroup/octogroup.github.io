@@ -1,3 +1,4 @@
+
 function codePromp() {
   let myTextField = document.getElementById("codeInput");
   if (myTextField.value === 'asdf') {
@@ -27,7 +28,6 @@ document.getElementById('codeInput').addEventListener('keyup', function (event) 
     document.getElementById("attsbutton").click()
   }
 })
-
 
 // ---------Timer-----------
 let Timer = function (opts) {
