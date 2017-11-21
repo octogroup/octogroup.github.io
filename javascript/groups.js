@@ -60,14 +60,6 @@ let r
 // Calculates max allowed peaple in one group
 let maxNumber = Math.floor(namesArray.length / (number - 1))
 
-// See if the number of groups is even or odd
-function isEven (value) {
-  if (value % 2 === 0) {
-    return true
-  } else return false
-}
-
-
 // Translates the array groups into html groups
 let group = 1
 let translateToHtml = function () {
@@ -86,6 +78,8 @@ let translateToHtml = function () {
 }
 
 function shuffle (array) {
+  for (let a = 0; a < document.getElementsByClassName('drop-name').length; a++) {
+  document.getElementsByClassName('drop-name')[a].innerHTML = null }
   let counter = array.length
   // While there are elements in the array
   while (counter > 0) {
@@ -107,7 +101,6 @@ let sliceArray = function () {
   let a = 0
   let j
   let temparrays
-  document.getElementsByClassName('drop-name')[0].innerHTML = null
   for (let i = 0, j = namesArray.length; i < j; i += maxNumber) {
     temparray = namesArray.slice(i, i + maxNumber)
     console.log(temparray)
