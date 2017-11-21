@@ -55,8 +55,8 @@
                 <img src="../img/calendar.svg" class="card-img">
               </div>
               <div class="hiddenCard">
-                <ul class="card-list">
-                  <li>
+                <ul class="card-list expand">
+                  <li class="margintop">
                     <a class="nav-link" href="assignments.html">22/10 - Javascript: Inlämning 3</a>
                   </li>
                   <li>
@@ -71,9 +71,7 @@
                 </ul>
               </div>
               <div class="card-bottom">
-                <button type="button" name="button" class="cardbutton" onclick="open1()">Läs Mer</button>
-                <button type="button" name="button" class="hiddenBut" onclick="close1()">Läs Mindre</button>
-                <!-- <button class="cardbutton" type="button" onclick="change(this)">Läs mer</button> -->
+                <button type="button" name="button" class="cardbutton toggleText" onclick="toggleExpand(this, '110px'); toggleText(this)">Visa Mer</button>
               </div>
             </div>
           </div>
@@ -87,8 +85,8 @@
                 <img src="../img/trophy.svg" class="card-img">
               </div>
               <div class="hiddenCard">
-                <ul class="card-list">
-                  <li>
+                <ul class="card-list expand">
+                  <li class="margintop">
                     <a class="nav-link" href="assignments.html">Javascript: Inlämning 1 - VG</a>
                   </li>
                   <li>
@@ -100,10 +98,7 @@
                 </ul>
               </div>
               <div class="card-bottom">
-                <button type="button" name="button" class="cardbutton" onclick="open2()">Läs Mer</button>
-                <button type="button" name="button" class="hiddenBut" onclick="close2()">Läs Mindre</button>
-                <!-- <button class="cardbutton" type="button" onclick="change(this)">Läs mer</button> -->
-              </div>
+								<button type="button" name="button" class="cardbutton toggleText" onclick="toggleExpand(this, '90px'); toggleText(this)">Visa Mer</button>              </div>
             </div>
           </div>
         </section>
