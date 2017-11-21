@@ -4,11 +4,11 @@ main {
 }
 
 .select {
-  background: #68efad;
+  background: #ff5f52;
   border: 0;
   padding: 5px 5px 5px 1px;
   border: 2px;
-  color: purple;
+  color: #fafafa;
   outline: none;
 }
 
@@ -33,14 +33,14 @@ h3 {
 .uppgift {
   width: 100%;
   height: 50px;
-  background: grey;
   display: flex;
+  color: #fafafa;
 }
 
 /* ---------------- --- hover ----------------------------------  */
 
 .LiTab a:hover {
-  color: white;
+  color: #fafafa;
   border-bottom: 3px solid rgba(255, 0, 0, 0.3);
 }
 
@@ -65,7 +65,7 @@ h3 {
 }
 
 .LiTab:first-child {
-  color: white;
+  color: #fafafa;
   border-bottom: 3px solid red;
 }
 
@@ -114,12 +114,12 @@ h3 {
   height: 25px;
   display: flex;
   flex-direction: row;
-  color: white;
+  color: #fafafa;
 }
 
 .row-2 {
   width: 100%;
-  background-color: white;
+  background-color: #fafafa;
   height: 50px;
   display: flex;
   flex-direction: row;
@@ -129,13 +129,13 @@ h3 {
 
 .text-1 {
   width: 204px;
-  border-right: 2px solid grey;
+  border-right: 2px solid #b6b6b6;
   height: 100%;
 }
 
 .text-2 {
   width: 68px;
-  border-right: 2px solid grey;
+  border-right: 2px solid #b6b6b6;
   height: 100%;
   padding-left: 5px;
 }
@@ -156,11 +156,6 @@ h3 {
   color: #fff;
 }
 
-.white-back {
-  background-color: #fff;
-  color: #0000;
-}
-
 .left-padding {
   position: relative;
   top: 11px;
@@ -172,7 +167,7 @@ h3 {
   left: 5px;
 }
 
-.text-2.white-back>p {
+.text-2.#fafafa-back>p {
   color: #000;
 }
 
@@ -180,8 +175,24 @@ h3 {
   cursor: pointer;
 }
 
-.rest {
-  border-top: 2px solid grey;
+.table>div:nth-child(odd) {
+  background-color: #e8e8e8;
+}
+
+.table>div:nth-child(1), .table>div:nth-child(2), .table>div:nth-child(3), .table>div:nth-child(22), .table>div:nth-child(23) {
+  background-color: black;
+}
+
+.table>div.betygsatt-1, .table>div.betygsatt-2 {
+  background-color: #fafafa;
+}
+
+.table>div:nth-child(6) {
+  background-color: #e8e8e8;
+}
+
+.table>div:nth-child(7) {
+  background-color: #fafafa;
 }
 
 @media (max-width:906px) {
