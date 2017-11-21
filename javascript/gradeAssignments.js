@@ -10,9 +10,9 @@ function toggleBetygsattning(id) {
     var betygsattButton = document.querySelector('#knapp-2');
   }
 
-  let height = betygsattningDiv.style.height;
+  let betygsattningsDivHeight = betygsattningDiv.style.height;
 
-	if(height == "0px" || height == ""){
+	if(betygsattningsDivHeight == "0px" || betygsattningsDivHeight == ""){
 		betygsattningDiv.style.height = '100px';
 		betygsattButton.innerHTML = "&#10005";
 	}
@@ -24,14 +24,13 @@ function toggleBetygsattning(id) {
 
 //Stänger "betygsättnings-diven"
 function closeBetygsattning (id) {
-	// diven stängs
+
   if(id == "knapp-1"){
     document.querySelector('.betygsatt-1').style.height = '0px';
   }else if (id == "knapp-2") {
     document.querySelector('.betygsatt-2').style.height = '0px';
   }
 }
-
 
 //Skriver det angivna betyget till den tomma betyg-columnen
 function printBetyg(id) {
