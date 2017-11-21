@@ -63,9 +63,20 @@
 }
 
 @media (max-width: 600px) {
-.priceitem {
-  font-size:14px;
+  .priceitem {
+    font-size:14px;
   }
+
+  .pricebox {
+    max-width: 100%;
+  }
+
+  #pricecontent {
+    flex-direction: column;
+    align-items: center
+  }
+}
+
 .priceitem::before {
   width: 10px;
   height: 10px;

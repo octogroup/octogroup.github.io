@@ -2,11 +2,12 @@
 <html lang="en">
 
 <head>
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link rel="shortcut icon" href="../img/octo.png">
 	<link rel="stylesheet" href="../style/mainstyle.css">
 	<link rel="stylesheet" href="../style/weekform.css">
+	<link rel="stylesheet" href="../style/cardstyle.css">
 	<link rel="stylesheet" href="../style/colorThemeStudentpage.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
@@ -17,7 +18,7 @@
 	<div class="content">
 		<header>
 			<a href="studentpage.html">
-          <img src="../img/KYH-logo.png" alt="none">
+          <img src="../img/KYH-logo.png" alt="KYH">
         </a>
 			<nav id="navigation">
 				<div id="loginalign">
@@ -40,27 +41,27 @@
 
 		<main>
 			<div class="formholder">
-				<form id="weekeval" name="weekeval" onsubmit="return sent()">
+				<form id="weekeval" name="weekeval" onsubmit="return toggleAlertbox('studentpage.html');">
 					<h2 class="formheadline">Feedback för avslutad kurs</h2>
 					<div class="group">
-						<p>Ditt namn (frivilligt)</p>
+						<h4 class="questionstyle">Ditt namn (frivilligt)</h4>
 						<input class="textinput" type="text" placeholder="Namn" name="yourname">
 						<span class="highlight"></span>
 						<span class="bar"></span>
 					</div>
-					<p>Hur tycker du kurser har varit?</p>
+					<h4 class="questionstyle">Hur tycker du kurser har varit?</h4>
 					<div class="aroundrange">
 						<p>Dålig</p>
 						<input class="range" type="range" min="1" max="7" step="1" list="tickmarks" name="answer1">
 						<p>Bra</p>
 					</div>
-					<p>Hur har du upplevt tempot i kursen?</p>
+					<h4 class="questionstyle">Hur har du upplevt tempot i kursen?</h4>
 					<div class="aroundrange">
 						<p>Dåligt</p>
 						<input class="range" type="range" min="1" max="7" step="1" list="tickmarks" name="answer2">
 						<p>Bra</p>
 					</div>
-					<p>Hur har lokalerna och lokalbokningen varit under kursens gång?</p>
+					<h4 class="questionstyle">Hur har lokalerna och lokalbokningen varit under kursens gång?</h4>
 					<div class="aroundrange">
 						<p>Dåligt</p>
 						<input class="range" type="range" min="1" max="7" step="1" list="tickmarks" name="answer3">
@@ -68,24 +69,24 @@
 					</div>
 
 					<div class="group">
-						<p>Är det något specifikt moment i utbildningen du upplever att du behöver mer stöd i?</p>
+						<h4 class="questionstyle">Är det något specifikt moment i utbildningen du upplever att du behöver mer stöd i?</h4>
 						<input class="textinput" type="text" placeholder="Ditt svar" name="answer5" required>
 						<span class="highlight"></span>
 						<span class="bar"></span>
 					</div>
 					<div class="group">
-						<p>Vad har varit bra/mindre bra?</p>
+						<h4 class="questionstyle">Vad har varit bra/mindre bra?</h4>
 						<input class="textinput" type="text" placeholder="Ditt svar" name="answer6" required>
 						<span class="highlight"></span>
 						<span class="bar"></span>
 					</div>
 					<div class="group">
-						<p>Förslag på förbättringar</p>
+						<h4 class="questionstyle">Förslag på förbättringar</h4>
 						<input class="textinput" type="text" placeholder="Ditt svar" name="answer7" required>
 						<span class="highlight"></span>
 						<span class="bar"></span>
 					</div>
-					<button type="submit" name="button" class="cardbutton">Submit</button>
+					<button type="submit" name="button" class="cardbutton">Lämna in</button>
 					<datalist id="tickmarks">
           	<option value="1"></option>
             <option value="2"></option>
@@ -97,6 +98,15 @@
         	</datalist>
 				</form>
 			</div>
+			<!-- Alertbox -->
+			<div id="alertbox-modulus">
+				<div class="alertbox-content zoom">
+					<img src="../img/check.svg" alt="check" class="card-img alert-img">
+					<h2 class="alertbox-header">Inskickat</h2>
+					<p class="alertbox-subheader">Tack för din feedback!</p>
+				</div>
+			</div>
+			<!-- Alertbox-ends -->
 		</main>
 	</div>
 	<footer class="footer">

@@ -45,7 +45,7 @@ body {
 }
 
 .backgroundpic1 {
-	background-image: url(http://communitytimes.me/wp-content/uploads/2016/10/yourstory-education.jpg);
+	background-image: url('../img/background.jpg');
   min-height: 500px;
   background-attachment: fixed;
   background-position: center;
@@ -210,6 +210,12 @@ main {
   color: #fff;
 }
 
+@media (min-width: 1921px) {
+  h3 {
+    font-size: 2em;
+  }
+}
+
 @media (max-width: 1920px) {
   h1 {
     font-size: 3.5em;
@@ -276,7 +282,20 @@ main {
   }
   .box {
     justify-content: center;
+    padding: 10px;
+    margin: 0px;
   }
+  .titleColor {
+    text-align: center;
+  }
+}
+
+.textShadow {
+	text-align: center;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px black;
+	margin-bottom: 50px;
 }
 
 /*----------------------------BUTTON---------------------------------------*/
@@ -343,7 +362,7 @@ main {
 /*----------------------->Zoom-animation-------------------------------*/
 
 .zoom {
-    animation: animatezoom 0.6s
+    animation: animatezoom 0.4s
 }
 
 @keyframes animatezoom {
@@ -351,8 +370,13 @@ main {
     to {transform: scale(1)}
 }
 
+/*----------------------->animation-helpers-------------------------------*/
 
-/*----------Standard-alligners-----------*/
+.zeroheight {
+  height: 0px;
+}
+
+/*---------------------->Standard-alligners-----------*/
 
 .marginbottom {
 	margin-bottom: 15px;
@@ -366,8 +390,76 @@ main {
 	margin-top: 15px;
 }
 
+.margintb {
+  margin: 15px 0;
+}
+
+.marginleft {
+  margin-left: 15px;
+}
+
+.paddingleft {
+  padding-left: 10px;
+}
+
+.paddingall {
+  padding: 10px;
+}
+
 .text-center {
   text-align: center;
   margin-bottom: 40px;
   margin-top: 40px;
+}
+
+.center {
+  text-align: center;
+  align-self: center;
+}
+
+/*----------Modulus-alertbox-----------*/
+
+#alertbox-modulus {
+	display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+	z-index: 100
+}
+
+.alertbox-content {
+	display: flex;
+  flex-direction: column;
+  background-color: #fefefe;
+  margin: auto;
+  border: 1px solid #888;
+  width: 80%;
+  max-height: 400px;
+	max-width: 330px;
+	border-radius: 1%;
+	box-shadow: 0px 2px 2px #888888;
+}
+
+.alertbox-header {
+	text-align: center;
+	margin: 0 10px;
+}
+
+.alertbox-subheader {
+	text-align: center;
+	margin: 20px;
+}
+
+.alertbox-button {
+	margin: 18px;
+}
+
+.alert-img {
+	display: flex;
+	align-self: center;
 }

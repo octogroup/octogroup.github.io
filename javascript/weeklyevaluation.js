@@ -23,6 +23,7 @@ let chart1 = new CanvasJS.Chart('chartContainerLeft', {
     name: 'Hur upplever du just nu tempot i utbildningen?',
     type: 'spline',
     showInLegend: true,
+    color: "#ff5f52",
     dataPoints: [{
       x: new Date(2017, 8, 28),
       y: 6
@@ -48,6 +49,7 @@ let chart1 = new CanvasJS.Chart('chartContainerLeft', {
     name: 'Hur engagerad anser du själv att du är i dina studier',
     type: 'spline',
     showInLegend: true,
+    color: "#8BC34A",
     dataPoints: [{
       x: new Date(2017, 8, 28),
       y: 6
@@ -73,6 +75,7 @@ let chart1 = new CanvasJS.Chart('chartContainerLeft', {
     name: 'Hur upplever du stämningen i klassen?',
     type: 'spline',
     showInLegend: true,
+    color: "#8E24AA",
     dataPoints: [{
       x: new Date(2017, 8, 28),
       y: 3
@@ -113,23 +116,23 @@ let chart2 = new CanvasJS.Chart('chartContainerRight', {
   data: [{
     type: 'column',
     dataPoints: [{
-      label: 'Vecka 35',
+      label: 'Vecka 35', color: "#8BC34A",
       y: 22
     },
     {
-      label: 'Vecka 36',
+      label: 'Vecka 36', color: "#ff5f52",
       y: 16
     },
     {
-      label: 'Vecka 37',
+      label: 'Vecka 37', color: "#8E24AA",
       y: 25
     },
     {
-      label: 'Vecka 38',
+      label: 'Vecka 38', color: "#3F51B5", 
       y: 30
     },
     {
-      label: 'Vecka 39',
+      label: 'Vecka 39', color: "#880E4F",
       y: 28
     }]
   }]

@@ -1,0 +1,148 @@
+.editnav {
+  display: flex;
+}
+
+.drop-name {
+  background: url(../img/bakbild.png) no-repeat;
+  padding-top: 56px;
+  height: auto;
+}
+
+.box-group {
+  display: flex;
+  justify-content: space-around;
+}
+
+.firstcolumn {
+  min-width: 350px;
+  max-width: 650px;
+  width: 100%;
+  display: flex;
+}
+
+.seconcolumn {
+  min-width: 350px;
+  max-width: 950px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.classes {
+  color: white;
+  padding-top: 20px;
+}
+
+#studentlist li {
+  width: 230px;
+  color: black;
+  margin-left: 20px;
+}
+
+#studentlist>li:nth-child(even) {
+  background-color: #fafafa;
+}
+
+#studentlist>li:nth-child(odd) {
+  background-color: #e8e8e8;
+}
+
+.card {
+  width: 350px;
+  margin: 20px;
+  padding: 0;
+}
+
+.card>div:first-child {
+  height: 90px;
+}
+
+.card ol>li:nth-child(odd) {
+  background: #af005d;
+}
+
+.card li {
+  color: white;
+  margin: 0 35px;
+}
+
+.custom-card {
+  margin: 0 auto 40px 0;
+}
+
+.custom-list {
+  margin: 0 auto 40px auto;
+}
+
+.card h3 {
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.card>div:nth-child(2) {
+  min-height: 50px;
+  width: 100%;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.width-style {
+  width: 500px;
+}
+
+.purple {
+  background: #c51261;
+}
+
+.dark-purple {
+  background: #880e4f;
+}
+
+.firstcolumn button {
+  height: 36px;
+}
+
+.box-mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .box-group {
+    display: none;
+  }
+  .box-mobile {
+    display: block;
+  }
+}
+
+.mobil-pos {
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+.mobil-pic {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.asidebarbox {
+  margin: 0 auto;
+}

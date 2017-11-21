@@ -1,0 +1,22 @@
+
+.drop>div:first-child {
+  height: 160px;
+}
+
+.adminClass {
+  color: white;
+  padding: 5px 0 10px 0;
+  text-align: center;
+}
+
+.dark-blue {
+  background: #6A1B9A;
+}
+
+.blue {
+  background: #8E24AA;
+}
+
+.card ol>li:nth-child(odd) {
+  background: #7c1f94;
+}

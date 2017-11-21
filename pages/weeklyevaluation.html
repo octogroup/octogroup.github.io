@@ -19,16 +19,13 @@
   <div class="content">
     <header>
       <a href="teacherpage.html">
-        <img src="../img/KYH-logo.png" alt="logo">
+        <img src="../img/KYH-logo.png" alt="KYH">
       </a>
       <nav id="navigation">
         <div id="loginalign">
           <button class="loginbutton" type="button" name="logout" onclick="logOut()">logga ut</button>
         </div>
         <ul id="navlist">
-          <!-- <li>
-            <a href="../page/studentpage.html">Hem</a>
-          </li> -->
           <li>
             <a href="../pages/teacher.html">Profil</a>
           </li>
@@ -68,17 +65,17 @@
 						<li>javascript</li>
 						<li>JS</li>
 						<li>Git Javascript</li>
-						<span id="q5">
-							<li>javaScript är det jag fortfarande känner mig osäker på men antar att det kommer</li>
-							<li>Allt</li>
-							<li>Lite osäker på JS</li>
-							<li>Inte direkt</li>
-							<li>Skulle vilja lära mig mer om flex</li>
-							<li>javascript</li>
-						</span>
 					</ol>
+          <ol start="4" class="weekAnswerList expand">
+            <li>javaScript är det jag fortfarande känner mig osäker på men antar att det kommer</li>
+            <li>Allt</li>
+            <li>Lite osäker på JS</li>
+            <li>Inte direkt</li>
+            <li>Skulle vilja lära mig mer om flex</li>
+            <li>javascript</li>
+          </ol>
 					<div class="bottomSection">
-						<button type="button" name="Tempot" class="cardbutton toggleText" onclick="expand1(); toggleText(this)">visa mer</button>
+						<button type="button" name="Tempot" class="cardbutton toggleText" onclick="toggleExpand(this, '280px'); toggleText(this)">visa mer</button>
 					</div>
 				</section>
 				<section class="answerSection">
@@ -88,17 +85,17 @@
             <li>Christian & Tobias </li>
             <li>Christian! en härlig rackare</li>
             <li>Våra lärare är mycket pedagogiska!</li>
-						<span id="q6">
-							<li>Flexibilitet, föreläsningarna.</li>
-							<li>Kristian är duktig på att hjälpa till.</li>
-							<li>Klassen</li>
-							<li>Grupparbetet</li>
-							<li>Diagnosen</li>
-							<li>Tobias har varit mycket hjälpsam</li>
-						</span>
+          </ol>
+					<ol start="4" class="weekAnswerList expand">
+						<li>Flexibilitet, föreläsningarna.</li>
+						<li>Kristian är duktig på att hjälpa till.</li>
+						<li>Klassen</li>
+						<li>Grupparbetet</li>
+						<li>Diagnosen</li>
+						<li>Tobias har varit mycket hjälpsam</li>
           </ol>
 					<div class="bottomSection">
-						<button type="button" name="Engagerad" class="cardbutton toggleText" onclick="expand2(); toggleText(this)">visa mer</button>
+						<button type="button" name="Engagerad" class="cardbutton toggleText" onclick="toggleExpand(this, '260px'); toggleText(this)">visa mer</button>
 					</div>
 				</section>
 				<section class="answerSection">
@@ -109,16 +106,16 @@
 								säkert får notis</li>
             <li>Behov utav riktiga föreläsningar så att man lär sig något på dessa.</li>
             <li>Mer livecode!</li>
-						<span id="q7">
-							<li>Mera specificerat, detaljerad förklaringar på föreläsningen.</li>
-							<li>Jobbigt med dessa otydligheter i schemat.</li>
-							<li>Tydligare schema</li>
-							<li>Jag vill ha bättre framförhållning när vi ska ha lektioner.</li>
-							<li>Tydligare information om vad som ska göras på lektionerna.</li>
-						</span>
+          </ol>
+					<ol start="4" class="weekAnswerList expand">
+						<li>Mera specificerat, detaljerad förklaringar på föreläsningen.</li>
+						<li>Jobbigt med dessa otydligheter i schemat.</li>
+						<li>Tydligare schema</li>
+						<li>Jag vill ha bättre framförhållning när vi ska ha lektioner.</li>
+						<li>Tydligare information om vad som ska göras på lektionerna.</li>
           </ol>
 					<div class="bottomSection">
-						<button type="button" name="Stämningen" class="cardbutton toggleText" onclick="expand3(); toggleText(this)">visa mer</button>
+						<button type="button" name="Stämningen" class="cardbutton toggleText" onclick="toggleExpand(this, '305px'); toggleText(this)">visa mer</button>
 					</div>
 				</section>
       </div>
