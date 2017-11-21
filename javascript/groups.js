@@ -28,7 +28,7 @@ function addGroup () {
     number += 1
     maxNumber = Math.floor(namesArray.length / (number - 1))
   } else {
-    alert('Too many groups!')
+    alert('För många grupper!')
     window.location.reload()
   }
 }
