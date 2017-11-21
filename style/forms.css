@@ -35,11 +35,12 @@
   background-color: #6A1B9A;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
 }
-#form>*{
+#form>* {
   margin: 10px 0;
 }
 
 #form>textarea {
+  max-width: 350px;
   resize: none;
   background-color: rgba(0, 0, 0, .0);
   border: 2px #5264AE;
@@ -65,6 +66,13 @@
 #form > input {
   display: none;
   width: 100%;
+  color: white;
+  max-width: 350px;
+  background-color: rgba(0, 0, 0, .0);
+  border: 2px #5264AE;
+  border-style: none none solid none;
+  outline: 0;
+  overflow: hidden;
 }
 
 #form>#submit {

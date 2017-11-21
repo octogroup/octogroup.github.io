@@ -224,6 +224,10 @@
 
 }
 
+#hidebody > .card-body {
+  height: 90px;
+}
+
 .attendancetitle {
 	flex-grow: 1;
 	color: #fff;
@@ -331,7 +335,9 @@
 /*-------------------------Countdown-ends-------------------------------*/
 
 #codeInput {
-  width: 86%;
+  width: 100%%;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 #attOnSend {
@@ -414,15 +420,14 @@
 }
 
 section.firstcardcolumn > div:nth-child(3) > div > div.card-body {
-  margin: 0;
+  margin: auto;
 }
 
 .card-body > table,
 .examfirstrow > th,
-.card-body > table > tbody > tr > td
-{
-    border:2px inset transparent;
-    border-collapse:collapse;
+.card-body > table > tbody > tr > td {
+  border:2px inset transparent;
+  border-collapse:collapse;
 }
 
 .examfirstrow {
@@ -436,7 +441,6 @@ section.firstcardcolumn > div:nth-child(3) > div > div.card-body {
 }
 
 .examtr {
-  border-bottom: 2px solid transparent;
   cursor: pointer;
 }
 
@@ -448,30 +452,8 @@ tr> td:nth-child(4) {
   text-align: center;
 }
 
-/* #attendance {
-  background-color: #FF4D32;
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  font-size: 20px;
-  font-weight: bold;
-  border: 0;
-  color: #F5F5F5
-} the red cross button */
-
-/* basic stylings ------------------------------------------ */
-
-/*.container {
-  font-family: 'Roboto';
-  width: 600px;
-  margin: 30px auto 0;
-  display: block;
-  background: #FFF;
-  padding: 10px 50px 50px;
-}*/
-
-.footer {
-  text-align: center;
+tbody > .examtr:hover {
+  border-bottom: 2px solid white;
 }
 
 .footer a {
@@ -489,7 +471,7 @@ tr> td:nth-child(4) {
 
 input[type=text] {
   font-size: 18px;
-  padding: 10px 10px 10px 5px;
+  padding: 10px auto;
   display: block;
   width: 86%;
   border: none;
@@ -497,11 +479,20 @@ input[type=text] {
 }
 
 input[type=text]::-webkit-input-placeholder {
-  text-align: left;
+  text-transform: capitalize;
 }
 
 input[type=text]:focus {
   outline: none;
+}
+
+input[type=date] {
+  font-size: 18px;
+  padding: 10px auto;
+  display: block;
+  width: 86%;
+  border: none;
+  background: none;
 }
 
 /* LABEL ======================================= */
@@ -636,7 +627,7 @@ input[type="radio"]:after {
   width: 100px;
   height: 100px;
   padding: 10px 0 10px 10px;
-	margin-left: 40px;
+  margin: 0 auto;
 }
 /*----*/
 #assign {

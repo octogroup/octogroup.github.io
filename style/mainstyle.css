@@ -45,7 +45,7 @@ body {
 }
 
 .backgroundpic1 {
-	background-image: url(http://communitytimes.me/wp-content/uploads/2016/10/yourstory-education.jpg);
+	background-image: url('../img/background.jpg');
   min-height: 500px;
   background-attachment: fixed;
   background-position: center;
@@ -210,6 +210,12 @@ main {
   color: #fff;
 }
 
+@media (min-width: 1921px) {
+  h3 {
+    font-size: 2em;
+  }
+}
+
 @media (max-width: 1920px) {
   h1 {
     font-size: 3.5em;
@@ -276,6 +282,11 @@ main {
   }
   .box {
     justify-content: center;
+    padding: 10px;
+    margin: 0px;
+  }
+  .titleColor {
+    text-align: center;
   }
 }
 
@@ -377,6 +388,14 @@ main {
 
 .marginleft {
   margin-left: 15px;
+}
+
+.paddingleft {
+  padding-left: 10px;
+}
+
+.paddingall {
+  padding: 10px;
 }
 
 .text-center {
