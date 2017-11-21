@@ -36,8 +36,9 @@
     </header>
     <aside class="editnav">
       <div class="asidebarbox">
-        <button class="cardbutton" type="button" name="button" onclick="addGroup()">Lägg till grupp</button>
         <button class="cardbutton" type="button" name="button" onclick="window.location.reload()">Återställ</button>
+        <button class="cardbutton" id="random" type="button" name="button" onclick="sliceArray()">Slumpa</button>
+        <button class="cardbutton" type="button" name="button" onclick="addGroup()">Lägg till grupp</button>
       </div>
     </aside>
 
@@ -65,7 +66,7 @@
             <div class="purple">
 
               <ol data-draggable="target" class="drop-name" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <li class="drag1" draggable="true" ondragstart="drag(event)">Elsa Karlsson</li>
+                <!-- <li class="drag1" draggable="true" ondragstart="drag(event)">Elsa Karlsson</li>
                 <li class="drag2" draggable="true" ondragstart="drag(event)">Gunnar Frid</li>
                 <li class="drag3" draggable="true" ondragstart="drag(event)">Kajsa Hellström</li>
                 <li class="drag4" draggable="true" ondragstart="drag(event)">Svante Hjälm</li>
@@ -80,7 +81,7 @@
                 <li class="drag13" draggable="true" ondragstart="drag(event)">Bo Strömmberget</li>
                 <li class="drag14" draggable="true" ondragstart="drag(event)">Anja Vilse</li>
                 <li class="drag15" draggable="true" ondragstart="drag(event)">Ejnar Guldsko</li>
-                <li class="drag16" draggable="true" ondragstart="drag(event)">Lisa Vinnarskalle</li>
+                <li class="drag16" draggable="true" ondragstart="drag(event)">Lisa Vinnarskalle</li> -->
               </ol>
             </div>
           </div>
@@ -95,7 +96,6 @@
               <h3>Grupp 1</h3></div>
             <div class="purple">
               <ol class="drop-name" ondrop="drop(event)" ondragover="allowDrop(event)">
-
               </ol>
             </div>
           </div>
