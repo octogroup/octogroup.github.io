@@ -74,7 +74,6 @@ let feedback = function () {
   t2.style.display = 'inherit'
   t2.required = true
   sB.style.display = 'inherit'
-
 }
 
 let news = function () {
@@ -94,7 +93,10 @@ let news = function () {
   p3.innerHTML = "Nyhetens innehåll:"
   t3.style.display = "inherit"
   t3.required = "true"
-  form.onsubmit = toggleAlertbox('teacherpage.html', 'Nyhet skapad')
+  //Alert
+  form.addEventListener('submit', (dontSub) => {dontSub.preventDefault ()
+    toggleAlertbox (dontSub, 'teacherpage.html', 'Nyhet skapad')
+  })
 }
 
 let assignment = function () {
@@ -119,7 +121,9 @@ let assignment = function () {
   p4.innerHTML = "Instruktioner:"
   t4.style.display = "inherit"
   t4.required = "true"
-  form.onsubmit = toggleAlertbox('teacherpage.html', 'Examination inlagd')
+  form.addEventListener('submit', (dontSub) => {dontSub.preventDefault ()
+    toggleAlertbox (dontSub, 'teacherpage.html', 'Examination inlagd')
+  })
 }
 
 let weekeval = function () {
@@ -139,7 +143,6 @@ let weekeval = function () {
   p4.innerHTML = 'Förslag på förbättringar:'
   t4.style.display = 'inherit'
   sB.style.display = 'inherit'
-  form.onsubmit = toggleAlertbox('teacherpage.html', 'Tack för din feedback!')
 }
 
 
@@ -164,6 +167,9 @@ let adminNews = function () {
   p4.innerHTML = "Nyhetens innehåll:"
   t4.style.display = "inherit"
   t4.required = "true"
+  form.addEventListener('submit', (dontSub) => {dontSub.preventDefault ()
+    toggleAlertbox (dontSub, 'adminpage.html', 'Nyhet skapad')
+  })
 }
 
 let createAccount = function () {
@@ -180,6 +186,9 @@ let createAccount = function () {
   p2.innerHTML = "Mail:"
   t2.style.display = "inherit"
   t2.required = "true"
+  form.addEventListener('submit', (dontSub) => {dontSub.preventDefault ()
+    toggleAlertbox (dontSub, 'adminpage.html', 'Ny användare skapad')
+  })
 }
 
 let formAdmin = function () {
@@ -204,6 +213,9 @@ let formAdmin = function () {
   p5.innerHTML = "Tredje frågan"
   t5.style.display = "inherit"
   t5.required = "true"
+  form.addEventListener('submit', (dontSub) => {dontSub.preventDefault ()
+    toggleAlertbox (dontSub, 'adminpage.html', 'Utvärdering uppdaterad')
+  })
 }
 
 let createClass = function () {
@@ -225,6 +237,9 @@ let createClass = function () {
   t3.required = "true"
   p4.innerHTML = "Lägg till fler lärare:"
   t4.style.display = "inherit"
+  form.addEventListener('submit', (dontSub) => {dontSub.preventDefault ()
+    toggleAlertbox (dontSub, 'adminpage.html', 'Kurs skapad')
+  })
 }
 
 let createEducation = function () {
@@ -237,4 +252,7 @@ let createEducation = function () {
   p1.innerHTML = "Namnge utbilningen:"
   t1.style.display = "inherit"
   t1.required = "true"
+  form.addEventListener('submit', (dontSub) => {dontSub.preventDefault ()
+    toggleAlertbox (dontSub, 'adminpage.html', 'Utbildning skapad')
+  })
 }
