@@ -43,6 +43,8 @@ let reset = function () {
     this['i' + i].style.display = 'none'
     this['i' + i].style.type = 'text'
     this['i' + i].required = false
+    this['i' + i].setAttribute('list', '')
+
     sB.style.display = 'none'
     cB.style.display = 'none'
     form.style.display = 'none'
@@ -101,7 +103,7 @@ let assignment = function () {
   p1.innerHTML = 'Kurs:'
   i1.style.display = "inherit"
   i1.required = "true"
-  i1.setAttribute('list', 'tickmarks');
+  i1.setAttribute('list', 'tickmarks')
   p2.innerHTML = "Deadline:"
   i2.style.display = "inherit"
   i2.type = "date"
@@ -132,4 +134,101 @@ let weekeval = function () {
   p4.innerHTML = 'Förslag på förbättringar:'
   t4.style.display = 'inherit'
   sB.style.display = 'inherit'
+}
+
+
+let adminNews = function () {
+  reset()
+  formimg.style.display = 'inherit'
+  formc.style.height = '530px'
+  form.style.display = 'inherit'
+  cB.style.display = 'inherit'
+  sB.style.display = 'inherit'
+  p1.innerHTML = 'Välj målgrupp:'
+  i1.style.display = "inherit"
+  i1.setAttribute('list', 'datalist3');
+  i1.required = "true"
+  p2.innerHTML = 'Välj klass:'
+  i2.style.display = "inherit"
+  i2.setAttribute('list', 'datalist4');
+  i2.required = "true"
+  p3.innerHTML = "Rubrik:"
+  t3.style.display = "inherit"
+  t3.required = "true"
+  p4.innerHTML = "Nyhetens innehåll:"
+  t4.style.display = "inherit"
+  t4.required = "true"
+}
+
+let createAccount = function () {
+  reset()
+  formimg.style.display = 'inherit'
+  formc.style.height = '370px'
+  form.style.display = 'inherit'
+  cB.style.display = 'inherit'
+  sB.style.display = 'inherit'
+  p1.innerHTML = 'Välj kontotyp:'
+  i1.style.display = "inherit"
+  i1.setAttribute('list', 'accounts');
+  i1.required = "true"
+  p2.innerHTML = "Mail:"
+  t2.style.display = "inherit"
+  t2.required = "true"
+}
+
+let formAdmin = function () {
+  reset()
+  formimg.style.display = 'inherit'
+  formc.style.height = '600px'
+  form.style.display = 'inherit'
+  cB.style.display = 'inherit'
+  sB.style.display = 'inherit'
+  p1.innerHTML = 'Välj utvärdering:'
+  i1.style.display = "inherit"
+  i1.setAttribute('list', 'adminForms');
+  i1.required = "true"
+  p2.innerHTML = "Namnge/ändra namn på utvärderingen"
+  t2.style.display = "inherit"
+  p3.innerHTML = "Första frågan"
+  t3.style.display = "inherit"
+  t3.required = "true"
+  p4.innerHTML = "Andra frågan"
+  t4.style.display = "inherit"
+  t4.required = "true"
+  p5.innerHTML = "Tredje frågan"
+  t5.style.display = "inherit"
+  t5.required = "true"
+}
+
+let createClass = function () {
+  reset()
+  formimg.style.display = 'inherit'
+  formc.style.height = '500px'
+  form.style.display = 'inherit'
+  cB.style.display = 'inherit'
+  sB.style.display = 'inherit'
+  p1.innerHTML = 'Välj utbildning:'
+  i1.style.display = "inherit"
+  i1.setAttribute('list', 'adminEdu');
+  i1.required = "true"
+  p2.innerHTML = "Namnge kursen:"
+  t2.style.display = "inherit"
+  t2.required = "true"
+  p3.innerHTML = "Lägg till lärare:"
+  t3.style.display = "inherit"
+  t3.required = "true"
+  p4.innerHTML = "Lägg till fler lärare:"
+  t4.style.display = "inherit"
+}
+
+let createEducation = function () {
+  reset()
+  formimg.style.display = 'inherit'
+  formc.style.height = '270px'
+  form.style.display = 'inherit'
+  cB.style.display = 'inherit'
+  sB.style.display = 'inherit'
+  p1.innerHTML = "Namnge utbilningen:"
+  t1.style.display = "inherit"
+  t1.required = "true"
 }

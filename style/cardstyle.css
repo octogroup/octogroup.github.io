@@ -169,6 +169,8 @@
   /*margin: 10px;*/
   list-style-position: inside;
   list-style: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-list>li>a, h3>a, .expand>li>a {
@@ -187,7 +189,6 @@
 
 .card-body {
   width: auto;
-  height: auto;
   margin: 10px;
 	padding: 10px;
   display: flex;
@@ -202,6 +203,10 @@
   text-align: left;
 }
 
+.card-body a:hover {
+  border-bottom: 2px solid white;
+  }
+
 .card-bottom {
   display: flex;
   height: auto;
@@ -213,7 +218,14 @@
 
 .expand {
 	flex-direction: column;
-	display: none;
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.3s;
+
+}
+
+#hidebody > .card-body {
+  height: 90px;
 }
 
 .attendancetitle {
@@ -323,7 +335,9 @@
 /*-------------------------Countdown-ends-------------------------------*/
 
 #codeInput {
-  width: 86%;
+  width: 100%%;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 #attOnSend {
@@ -405,30 +419,41 @@
   align-items: center;
 }
 
-/* #attendance {
-  background-color: #FF4D32;
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  font-size: 20px;
+section.firstcardcolumn > div:nth-child(3) > div > div.card-body {
+  margin: auto;
+}
+
+.card-body > table,
+.examfirstrow > th,
+.card-body > table > tbody > tr > td {
+  border:2px inset transparent;
+  border-collapse:collapse;
+}
+
+.examfirstrow {
   font-weight: bold;
-  border: 0;
-  color: #F5F5F5
-} the red cross button */
+}
 
-/* basic stylings ------------------------------------------ */
+.examtr > td, th {
+  text-align: left;
+  padding-right: 15px;
+  color: white;
+}
 
-/*.container {
-  font-family: 'Roboto';
-  width: 600px;
-  margin: 30px auto 0;
-  display: block;
-  background: #FFF;
-  padding: 10px 50px 50px;
-}*/
+.examtr {
+  cursor: pointer;
+}
 
-.footer {
+.examtr:hover {
+  border-bottom: 2px solid white;
+}
+
+tr> td:nth-child(4) {
   text-align: center;
+}
+
+tbody > .examtr:hover {
+  border-bottom: 2px solid white;
 }
 
 .footer a {
@@ -446,7 +471,7 @@
 
 input[type=text] {
   font-size: 18px;
-  padding: 10px 10px 10px 5px;
+  padding: 10px auto;
   display: block;
   width: 86%;
   border: none;
@@ -454,11 +479,20 @@ input[type=text] {
 }
 
 input[type=text]::-webkit-input-placeholder {
-  text-align: left;
+  text-transform: capitalize;
 }
 
 input[type=text]:focus {
   outline: none;
+}
+
+input[type=date] {
+  font-size: 18px;
+  padding: 10px auto;
+  display: block;
+  width: 86%;
+  border: none;
+  background: none;
 }
 
 /* LABEL ======================================= */
@@ -593,7 +627,7 @@ input[type="radio"]:after {
   width: 100px;
   height: 100px;
   padding: 10px 0 10px 10px;
-	margin-left: 40px;
+  margin: 0 auto;
 }
 /*----*/
 #assign {

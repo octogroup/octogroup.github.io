@@ -1,11 +1,16 @@
 // -------- Div-Toggle ------------
+//You need to place two divs around the btn for the correct selection.
+//Set toggleExpand (self, 'some px') as parameter.
 
-function toggleExpand (self) {
+function toggleExpand (self, divHeight) {
 	let div = self.parentNode.parentNode.getElementsByClassName('expand')[0]
-	let disp = div.style.display
-	if (!disp || disp === 'none') return div.style.display = 'flex'
+	if (div.style.height == divHeight) {
+		div.style.height = '0px'
 	console.log(div)
-	return div.style.display = 'none'
+} else if (!div.style.height || div.style.height !== divHeight) {
+		div.style.height = divHeight
+	console.log(div)
+	}
 }
 
 // -------- Button-Txt-Toggle -----

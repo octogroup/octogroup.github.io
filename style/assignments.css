@@ -1,32 +1,13 @@
 
 .hiddenCard {
+  margin: 5px auto;
   width: auto;
-  height: auto;
-  margin: 0 10px;
+  height: 0px;
   flex-direction: column;
-	padding: 0 15px;
-}
-
-.hiddenCard>h3 {
-  text-align: center;
 }
 
 .hiddenCard>p {
-  padding: 10px 10px 0 10px;
-}
-
-.title {
-	color: #fff;
-	text-align: center;
-	margin: 10px 0 10px 10px;
-	padding: 15px 0 15px 0;
-}
-
-.title2 {
-	color: #fff;
-	text-align: center;
-	margin: 20px 10px 10px 10px;
-	padding: 15px;
+  padding: 10px;
 }
 
 div > main > h2 {
@@ -37,6 +18,21 @@ div > main > h2 {
 	margin-bottom: 50px;
 }
 
+<<<<<<< HEAD
+=======
+.hiddenCard > table,
+.examfirstrow > th,
+.hiddenCard > table > tbody > tr > td {
+    border:2px inset transparent;
+    border-collapse:collapse;
+}
+
+.firstcardcolumn > div > div > div.card-bottom,
+.secondcardcolumn > div > div > div.card-bottom {
+  margin-top: 0;
+}
+
+>>>>>>> 06f2b90762e164d9a1d55c63d5b976bdc31435f6
 #assignments {
   margin: 10px 0;
   padding: 5px;

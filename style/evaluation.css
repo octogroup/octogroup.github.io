@@ -43,23 +43,6 @@
 	margin: 30px 0 30px 0;
 }
 
-/*text-align: BORT 4 & 5*/
-/*#chartContainer4 {
-  width: 45%;
-  height: 400px;
-  display: flex;
-	min-width: 350px;
-	margin: 30px 0 30px 0;
-}
-
-#chartContainer5 {
-  width: 90%;
-  height: 400px;
-  display: flex;
-	min-width: 350px;
-	margin: 30px 0 30px 0;
-}*/
-
 .answerNav {
   display: flex;
   margin-top: 30px;
@@ -74,21 +57,6 @@
 	flex-wrap: wrap;
 }
 
-#q5 {
-  display: none;
-	flex-direction: column;
-}
-
-#q6 {
-  display: none;
-	flex-direction: column;
-}
-
-#q7 {
-  display: none;
-	flex-direction: column;
-}
-
 div.scroll {
   background-color: white;
   width: 500px;
@@ -100,10 +68,12 @@ div.scroll {
 
 .weekAnswerList {
 	padding-left: 20px;
+  overflow: hidden;
+  transition: height 0.5s;
 }
 
 .canvasjs-chart-credit {
-	display: none;
+	display: none !important;
 }
 
 .answerSection {
@@ -119,11 +89,6 @@ div.scroll {
 	padding: 10px;
 }
 
-ol > span > li {
-	border-bottom: 1px solid black;
-	padding: 10px;
-}
-
 .bottomSection {
 	margin-top: 20px;
 }
@@ -131,9 +96,13 @@ ol > span > li {
 .feedbacknav {
 	max-width: 350px;
 	display: flex;
-	margin: 50px auto 50px;
+	margin: 20px auto;
 	justify-content: center;
 
+}
+
+.whichcourse {
+  margin: 50px auto 15px;
 }
 
 .navspace {
@@ -151,7 +120,7 @@ ol > span > li {
 
 .feedbackheader {
 	display: flex;
-	margin: 50px auto 50px;
+	margin: 50px auto 20px;
 	justify-content: center;
 }
 
@@ -167,4 +136,12 @@ ol > span > li {
 
 .canvasjs-chart-tooltip {
 	display: none !important;
+}
+
+.inputform {
+  margin: 20px 50px;
+}
+
+ol.weekAnswerList.expand {
+  height: 0px;
 }
