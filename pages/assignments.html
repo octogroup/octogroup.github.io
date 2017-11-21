@@ -58,29 +58,29 @@
                     <th>Uppgift</th>
                     <th>Status</th>
                   </tr>
-                  <tr class="examtr" onclick="window.location='assignments.html'";>
+                  <tr class="examtr" onclick="window.location='assignments.html'" ;>
                     <td name="date">22/10</td>
                     <td name="course">Bootstrap</td>
                     <td name="assignment"> Inlämning</td>
-                    <td name"status">✓</td>
+                    <td name "status">✓</td>
                   </tr>
-                  <tr class="examtr" onclick="window.location='assignments.html'";>
+                  <tr class="examtr" onclick="window.location='assignments.html'" ;>
                     <td name="date">25/10</td>
                     <td name="course">Angular</td>
                     <td name="assignment">Tenta</td>
-                    <td name"status">✓</td>
+                    <td name "status">✓</td>
                   </tr>
-                  <tr class="examtr" onclick="window.location='assignments.html'";>
+                  <tr class="examtr" onclick="window.location='assignments.html'" ;>
                     <td name="date">01/11</td>
                     <td name="course">React</td>
                     <td name="assignment">Inlämning</td>
-                    <td name"status"></td>
+                    <td name "status"></td>
                   </tr>
-                  <tr class="examtr" onclick="window.location='assignments.html'";>
+                  <tr class="examtr" onclick="window.location='assignments.html'" ;>
                     <td name="date">02/11</td>
                     <td name="course">Vue.js</td>
                     <td name="assignment">Hemtenta</td>
-                    <td name"status"></td>
+                    <td name "status"></td>
                   </tr>
                 </table>
               </div>
@@ -106,34 +106,35 @@
                     <th>Uppgift</th>
                     <th>Status</th>
                   </tr>
-                  <tr class="examtr" onclick="window.location='assignments.html'";>
+                  <tr class="examtr" onclick="window.location='assignments.html'" ;>
                     <td name="date">22/10</td>
                     <td name="course">Bootstrap</td>
                     <td name="assignment"> Inlämning</td>
-                    <td name"status">✓</td>
+                    <td name "status">✓</td>
                   </tr>
-                  <tr class="examtr" onclick="window.location='assignments.html'";>
+                  <tr class="examtr" onclick="window.location='assignments.html'" ;>
                     <td name="date">25/10</td>
                     <td name="course">Angular</td>
                     <td name="assignment">Tenta</td>
-                    <td name"status">✓</td>
+                    <td name "status">✓</td>
                   </tr>
-                  <tr class="examtr" onclick="window.location='assignments.html'";>
+                  <tr class="examtr" onclick="window.location='assignments.html'" ;>
                     <td name="date">01/11</td>
                     <td name="course">React</td>
                     <td name="assignment">Inlämning</td>
-                    <td name"status">✕</td>
+                    <td name "status">✕</td>
                   </tr>
-                  <tr class="examtr" onclick="window.location='assignments.html'";>
+                  <tr class="examtr" onclick="window.location='assignments.html'" ;>
                     <td name="date">02/11</td>
                     <td name="course">Vue.js</td>
                     <td name="assignment">Hemtenta</td>
-                    <td name"status">✓</td>
+                    <td name "status">✓</td>
                   </tr>
                 </table>
               </div>
               <div class="card-bottom">
-								<button type="button" name="button" class="cardbutton toggleText" onclick="toggleExpand(this, '140px'); toggleText(this)">Visa Mer</button>              </div>
+                <button type="button" name="button" class="cardbutton toggleText" onclick="toggleExpand(this, '140px'); toggleText(this)">Visa Mer</button>
+              </div>
             </div>
           </div>
         </section>
@@ -152,13 +153,44 @@
               </div>
             </div>
           </div>
-        </section>
+          <!-- Fourth Column -->
+          <div class="card">
+            <div class="cardcontainer card-top-5">
+              <div class="card-header card-body-5">
+                <h3 class="card-heading">Uppgifter</h3>
+                <img src="../img/mail.svg" class="card-img">
+              </div>
+              <div class="card-bottom">
+                <ul class="card-list">
+                  <form>
+                    <select class="assignments">
+                      <option>Frontend: inlämning 1</option>
+                      <option>Frontend: inlämning 2</option>
+                      <option>Frontend: inlämning 3</option>
+                      <option>Frontend: inlämning 4</option>
+                    </select>
+                  </form>
+                  <div class="activate-flex">
+                    <input type="file">
+                    <button type="submit" class="cardbutton" onclick="toggleAlertbox('assignments.html', 'Filen uppladdad')">Skicka</button>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
       </div>
     </main>
   </div>
   <footer class="footer">
     <p>&copy;2017</p>
   </footer>
+  <script type="text/javascript" src="../javascript/sent.js"></script>
   <script type="text/javascript" src="../javascript/assignments.js"></script>
   <script type="text/javascript" src="../javascript/login.js"></script>
   <script type="text/javascript" src="../javascript/togglediv.js"></script>
