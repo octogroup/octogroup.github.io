@@ -290,6 +290,14 @@ main {
   }
 }
 
+.textShadow {
+	text-align: center;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px black;
+	margin-bottom: 50px;
+}
+
 /*----------------------------BUTTON---------------------------------------*/
 
 .cardbutton {

@@ -10,14 +10,6 @@
   padding: 10px;
 }
 
-div > main > h2 {
-	text-align: center;
-  font-weight: bold;
-  color: #fff;
-  text-shadow: 1px 1px black;
-	margin-bottom: 50px;
-}
-
 .hiddenCard > table,
 .examfirstrow > th,
 .hiddenCard > table > tbody > tr > td {
