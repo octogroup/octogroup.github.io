@@ -24,6 +24,7 @@
 }
 
 .forms {
+  max-width: 350px;
   margin: 0 auto;
   position: relative;
 }

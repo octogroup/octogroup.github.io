@@ -48,7 +48,7 @@
             <img id="form-img-1" src="../img/notebook.svg">
           </div>
           <button id="close">&#10005;</button>
-          <form id="form" onsubmit="return toggleAlertbox('adminpage.html');">
+          <form id="form" autocomplete="off">
             <p id="p1"></p>
             <input id="i1" type="text" min="1" max="7" step="1" list="tickmarks">
             <textarea id="t1" rows="1" cols="52" onkeyup="autoGrow(this)"></textarea>
@@ -116,8 +116,6 @@
                 <h3 class="card-heading">Klassindelning</h3>
                 <img src="../img/mail.svg" alt="mail" class="card-img">
               </div>
-              <!-- <div class="card-body">
-							</div> -->
               <div class="card-bottom">
                 <a href="adminsort.html">
                   <button type="button" name="button" class="cardbutton">Öppna</button>
@@ -135,21 +133,12 @@
           <!-- Card -->
         </section>
       </div>
-      <!-- Alertbox -->
-      <div id="alertbox-modulus">
-        <div class="alertbox-content zoom">
-          <img src="../img/check.svg" alt="check" class="card-img alert-img">
-          <h2 class="alertbox-header">Innehållet är uppdaterat</h2>
-          <p class="alertbox-subheader"></p>
-        </div>
-      </div>
-      <!-- Alertbox-ends -->
     </main>
   </div>
   <footer class="footer">
     <p>&copy;2017</p>
   </footer>
-  <script src="../javascript/forms.js"></script>
+  <script type="text/javascript" src="../javascript/forms.js"></script>
   <script type="text/javascript" src="../javascript/dailyfeedback.js"></script>
   <script type="text/javascript" src="../javascript/login.js"></script>
   <script type="text/javascript" src="../javascript/togglediv.js"></script>
