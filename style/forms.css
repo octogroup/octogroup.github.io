@@ -102,3 +102,7 @@ form>p {
 #form-img-1 {
   display: none;
 }
+
+.card-body a {
+  cursor: pointer;
+}
