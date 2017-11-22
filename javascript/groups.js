@@ -54,9 +54,6 @@ let namesArray = [
 
 let groups = []
 
-let currentName
-let r
-
 // Calculates max allowed peaple in one group
 let maxNumber = Math.floor(namesArray.length / (number - 1))
 
@@ -99,9 +96,8 @@ function shuffle (array) {
 let sliceArray = function () {
   shuffle(namesArray)
   let a = 0
-  let j
   let temparrays
-  for (let i = 0, j = namesArray.length; i < j; i += maxNumber) {
+  for (let i = 0; i < namesArray.length; i += maxNumber) {
     temparray = namesArray.slice(i, i + maxNumber)
     console.log(temparray)
     groups.push([])
