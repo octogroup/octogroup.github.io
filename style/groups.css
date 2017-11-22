@@ -11,6 +11,7 @@
 .box-group {
   display: flex;
   justify-content: space-around;
+  align-items: baseline;
 }
 
 .firstcolumn {

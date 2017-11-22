@@ -16,7 +16,12 @@
     border:2px inset transparent;
     border-collapse:collapse;
   
-}
+}/* 
+
+.examfirstrow {
+  font-weight: bold;
+  color: white;
+} */
     
 div > main > h2 {
 	text-align: center;
