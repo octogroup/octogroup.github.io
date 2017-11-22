@@ -432,6 +432,8 @@ section.firstcardcolumn > div:nth-child(3) > div > div.card-body {
 
 .examfirstrow {
   font-weight: bold;
+  text-align: left;
+  color: white;
 }
 
 .examtr > td,
