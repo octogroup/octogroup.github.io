@@ -41,7 +41,7 @@
 }
 
 #form>textarea {
-  max-width: 350px;
+  max-width: 100%;
   resize: none;
   background-color: rgba(0, 0, 0, .0);
   border: 2px #5264AE;
