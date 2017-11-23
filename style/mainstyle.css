@@ -1,9 +1,10 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q,
+s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd,
+ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead,
+tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -12,8 +13,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline;
 }
 
-/* CSS Reset ends here */
-
 html, body, h2, h3, h4, h5, h6 {
   font-family: "Open Sans";
 }
@@ -21,15 +20,19 @@ html, body, h2, h3, h4, h5, h6 {
 html, body {
   height: 100%;
 }
+
 h1 {
   font-size: 3.5em;
 }
+
 h2 {
   font-size: 2.8em;
 }
+
 h3 {
   font-size: 2.5em;
 }
+
 h4 {
   font-size: 1.4em;
 }
@@ -45,7 +48,7 @@ body {
 }
 
 .backgroundpic1 {
-	background-image: url('../img/background.jpg');
+  background-image: url('../img/background.jpg');
   min-height: 500px;
   background-attachment: fixed;
   background-position: center;
@@ -72,7 +75,7 @@ header>a {
 
 header>a>img {
   height: 3.5em;
-	margin-right: 10px;
+  margin-right: 10px;
 }
 
 header>a>h1 {
@@ -127,7 +130,7 @@ header>a>h1 {
 
 #dropdownmenu {
   height: 0px;
-  transition: height 0.5s;
+  transition: height .5s;
 }
 
 #dropbutton {
@@ -210,6 +213,176 @@ main {
   color: #fff;
 }
 
+.textShadow {
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px black;
+  margin-bottom: 50px;
+}
+
+.tableh3 {
+  font-size: 2.5em;
+}
+
+.cardbutton {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 2px;
+  font-size: 14px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+  background: #ff5f52;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.cardbutton:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: rgba(255, 255, 255, .5);
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(1, 1) translate(-50%);
+  transform-origin: 50% 50%;
+}
+
+.cardbutton:hover {
+  background-color: #8e0000;
+}
+
+.cardbutton:focus {
+  outline: none;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 1;
+  }
+  20% {
+    transform: scale(25, 25);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(40, 40);
+  }
+}
+
+.cardbutton:focus:not(:active)::after {
+  animation: ripple 1s ease-out;
+}
+
+.zoom {
+  animation: animatezoom .4s
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
+}
+
+.zeroheight {
+  height: 0px;
+}
+
+.marginbottom {
+  margin-bottom: 15px;
+}
+
+.more-margin-bottom {
+  margin-bottom: 250px;
+}
+
+.margintop {
+  margin-top: 15px;
+}
+
+.margintb {
+  margin: 15px 0;
+}
+
+.marginleft {
+  margin-left: 15px;
+}
+
+.paddingleft {
+  padding-left: 10px;
+}
+
+.paddingall {
+  padding: 10px;
+}
+
+.text-center {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.center {
+  text-align: center;
+  align-self: center;
+}
+
+#alertbox-modulus {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 100
+}
+
+.alertbox-content {
+  display: flex;
+  flex-direction: column;
+  background-color: #fefefe;
+  margin: auto;
+  border: 1px solid #888;
+  width: 80%;
+  max-height: 400px;
+  max-width: 330px;
+  border-radius: 1%;
+  box-shadow: 0px 2px 2px #888888;
+}
+
+.alertbox-header {
+  text-align: center;
+  margin: 0 10px;
+}
+
+.alertbox-subheader {
+  text-align: center;
+  margin: 20px;
+}
+
+.alertbox-button {
+  margin: 18px;
+}
+
+.alert-img {
+  height: 100px;
+  display: flex;
+  align-self: center;
+}
+
 @media (min-width: 1921px) {
   h3 {
     font-size: 2em;
@@ -288,184 +461,4 @@ main {
   .titleColor {
     text-align: center;
   }
-}
-
-.textShadow {
-	text-align: center;
-  font-weight: bold;
-  color: #fff;
-  text-shadow: 1px 1px black;
-	margin-bottom: 50px;
-}
-
-.tableh3 {
-  font-size: 2.5em;
-}
-
-/*----------------------------BUTTON---------------------------------------*/
-
-.cardbutton {
-  position: relative;
-  overflow: hidden;
-  border: none;
-  cursor: pointer;
-  color: white;
-  padding: 8px 14px;
-  border-radius: 2px;
-  font-size: 14px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
-  background: #ff5f52;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.cardbutton:after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 5px;
-  height: 5px;
-  background: rgba(255, 255, 255, .5);
-  opacity: 0;
-  border-radius: 100%;
-  transform: scale(1, 1) translate(-50%);
-  transform-origin: 50% 50%;
-}
-
-.cardbutton:hover {
-  background-color: #8e0000;
-}
-
-/* remove blue outline on the button after you clicked */
-
-.cardbutton:focus {
-  outline: none;
-}
-
-@keyframes ripple {
-  0% {
-    transform: scale(0, 0);
-    opacity: 1;
-  }
-  20% {
-    transform: scale(25, 25);
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: scale(40, 40);
-  }
-}
-
-.cardbutton:focus:not(:active)::after {
-  animation: ripple 1s ease-out;
-}
-
-/*-----------------------Button-ends-----------------------------------*/
-
-/*----------------------->Zoom-animation-------------------------------*/
-
-.zoom {
-    animation: animatezoom 0.4s
-}
-
-@keyframes animatezoom {
-    from {transform: scale(0)}
-    to {transform: scale(1)}
-}
-
-/*----------------------->animation-helpers-------------------------------*/
-
-.zeroheight {
-  height: 0px;
-}
-
-/*---------------------->Standard-alligners-----------*/
-
-.marginbottom {
-	margin-bottom: 15px;
-}
-
-.more-margin-bottom {
-	margin-bottom: 250px;
-}
-
-.margintop {
-	margin-top: 15px;
-}
-
-.margintb {
-  margin: 15px 0;
-}
-
-.marginleft {
-  margin-left: 15px;
-}
-
-.paddingleft {
-  padding-left: 10px;
-}
-
-.paddingall {
-  padding: 10px;
-}
-
-.text-center {
-  text-align: center;
-  margin-bottom: 40px;
-  margin-top: 40px;
-}
-
-.center {
-  text-align: center;
-  align-self: center;
-}
-
-/*----------Modulus-alertbox-----------*/
-
-#alertbox-modulus {
-	display: none;
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  height: 100%;
-  width: 100%;
-  transform: translate(-50%, -50%);
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
-	z-index: 100
-}
-
-.alertbox-content {
-	display: flex;
-  flex-direction: column;
-  background-color: #fefefe;
-  margin: auto;
-  border: 1px solid #888;
-  width: 80%;
-  max-height: 400px;
-	max-width: 330px;
-	border-radius: 1%;
-	box-shadow: 0px 2px 2px #888888;
-}
-
-.alertbox-header {
-	text-align: center;
-	margin: 0 10px;
-}
-
-.alertbox-subheader {
-	text-align: center;
-	margin: 20px;
-}
-
-.alertbox-button {
-	margin: 18px;
-}
-
-.alert-img {
-  height: 100px;
-	display: flex;
-	align-self: center;
 }
