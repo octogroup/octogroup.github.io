@@ -22,8 +22,8 @@
 
 .column {
   float: right;
-  width: 50%;
-	padding-right: 10px;
+  width: 100%;
+  padding: 30px;
 }
 
 .column>h2 {
