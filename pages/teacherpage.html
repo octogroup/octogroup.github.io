@@ -19,9 +19,7 @@
 <body>
 	<div class="content backgroundpic1">
 		<header>
-			<a href="#">
-        <img src="../img/KYH-logo.png" alt="KYH">
-      </a>
+			<a href="#"><img src="../img/KYH-logo.png" alt="KYH"></a>
 			<nav id="navigation">
 				<div id="loginalign">
 					<button class="loginbutton" type="button" name="logout" onclick="logOut()">logga ut</button>
@@ -34,15 +32,12 @@
 				<button class="editbuttons" onclick="assignment()">Skapa inlämningsuppgift</button>
 			</div>
 		</aside>
-		<div id="container">
-		</div>
-		<!-- Main-Content -->
+
 		<main>
-			<!-- JS-Cards -->
 			<div class="formcontent">
 				<div class="forms">
 					<div class="card-header card-body-1">
-						<img id="form-img-1" src="../img/notebook.svg">
+						<img id="form-img-1" src="../img/notebook.svg" alt="notebook image">
 					</div>
 					<button id="close">&#10005;</button>
 					<form id="form" autocomplete="off">
@@ -63,23 +58,20 @@
 						<textarea id="t5" rows="1" cols="52" onkeyup="autoGrow(this)"></textarea>
 						<input id="submit" type="submit">
 						<datalist id="tickmarks">
-		          <option value="CSS"/>
-		          <option value="HTML"/>
-		          <option value="Javascript"/>
+		          <option value="CSS"></option>
+		          <option value="HTML"></option>
+		          <option value="Javascript"></option>
 						</datalist>
 						<datalist id="datalist2">
-			        <option value="Alla"/>
-			        <option value="FE17"/>
-			        <option value="FE18"/>
+			        <option value="Alla"></option>
+			        <option value="FE17"></option>
+			        <option value="FE18"></option>
 			      </datalist>
 					</form>
 				</div>
 			</div>
-			<!--Cardlayout-->
 			<div class="box">
-				<!-- First Column -->
 				<section class="firstcardcolumn">
-          <!-- Card -->
 					<div class="card">
 						<div class="cardcontainer card-top-3">
 							<div class="card-header card-body-3">
@@ -99,9 +91,7 @@
 						</div>
 					</div>
 				</section>
-				<!-- Second Card Column -->
 				<section class="secondcardcolumn">
-					<!-- Card -->
 					<div class="card">
 						<div class="cardcontainer card-top-2">
 							<div class="card-header card-body-2">
@@ -116,7 +106,7 @@
 									<li>
 										<a class="nav-link" href="grade-assignments.html">HTML (0 nya)</a>
 									</li>
-									</ul>
+								</ul>
 								<ul class="expand">
 									<li>
 										<a class="nav-link" href="grade-assignments.html">Javascript (0 nya)</a>
@@ -131,7 +121,6 @@
 							</div>
 						</div>
 					</div>
-					<!-- Card -->
 					<div class="card">
 						<div class="cardcontainer card-top-5">
 							<div class="card-header card-body-5">
@@ -154,9 +143,7 @@
 						</div>
 					</div>
 				</section>
-				<!-- Third Card Column -->
 				<section class="thirdcardcolumn">
-					<!-- Card -->
 					<div class="card">
 						<div class="cardcontainer card-top-6">
 							<div class="card-header card-body-6">
@@ -165,23 +152,23 @@
 							</div>
 							<div class="card-body">
 								<h4 class="card6-heading">VÄLKOMMEN TILL NYA WEBBPLATSEN</h4>
-								<p class="card-heading">Nu är den äntligen här. Vår nya webb där du mycket enklare kan se vilka utbildningar vi har och hitta rätt utbildning för..
-								</p>
+								<p class="card-heading">Nu är den äntligen här. Vår nya webb där du mycket
+									enklare kan se vilka utbildningar vi har och hitta rätt utbildning för..</p>
 							</div>
 							<div class="card-bottom">
-								<a href="news.html">
-									<button type="button" name="button" class="cardbutton">Öppna</button>
-								</a>
+								<button type="button" name="button" class="cardbutton" onclick="window.location = 'news.html'">Öppna</button>
 							</div>
 						</div>
 					</div>
 				</section>
 			</div>
 		</main>
+
 	</div>
 	<footer class="footer">
 		<p>&copy;2017</p>
 	</footer>
+	
 	<script src="../javascript/forms.js"></script>
 	<script type="text/javascript" src="../javascript/dailyfeedback.js"></script>
 	<script type="text/javascript" src="../javascript/login.js"></script>
