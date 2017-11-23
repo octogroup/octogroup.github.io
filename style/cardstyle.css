@@ -17,10 +17,9 @@
 
 .cardcontainer {
   display: flex;
-  width: auto;
+  width: 350px;
   height: auto;
   flex-direction: column;
-  width: 350px;
 }
 
 .card-img {
@@ -57,89 +56,53 @@
   background: #8E24AA;
 }
 
+.card-top-2 {
+  background: #C51162;
+}
 
-/*  ---------------- card 2 ------------------------ */
+.card-body-2 {
+  background: #880E4F;
+}
 
-    .card-top-2 {
-      background: #C51162;
-    }
+.card-top-3 {
+  background: #1B5E20;
+}
 
-    .card-body-2 {
-      background: #880E4F;
-    }
+.card-body-3 {
+  background: #8BC34A;
+}
 
-/*  ------------------- card 2 -end -----------------------------  */
+.card-top-4 {
+  background: #FF8A65;
+}
 
+.card-body-4 {
+  background: #FF5722;
+}
 
+.card-top-5 {
+  background: #9FA8DA;
+}
 
-/*  ---------------- card 3 ------------------------ */
+.card-body-5 {
+  background: #3F51B5;
+}
 
-    .card-top-3 {
-      background: #1B5E20;
-    }
+.card-top-6 {
+  background: #90A4AE;
+}
 
-    .card-body-3 {
-      background: #8BC34A;
-    }
+.card-body-6 {
+  background: #455A64;
+}
 
-/*  ------------------- card 3 -end  -----------------------------  */
+.card-top-7 {
+  background: rgb(236, 20, 200);
+}
 
-
-
-/*  ---------------- card 4 ------------------------ */
-
-    .card-top-4 {
-      background: #FF8A65;
-    }
-
-    .card-body-4 {
-      background: #FF5722;
-    }
-
-/*  ------------------- card 4 -end -----------------------------  */
-
-
-
-/*  ---------------- card 5 ------------------------ */
-
-    .card-top-5 {
-      background: #9FA8DA;
-    }
-
-    .card-body-5 {
-      background: #3F51B5;
-    }
-
-/*  ------------------- card 5 -end -----------------------------  */
-
-
-
-/*  ---------------- card 6 ------------------------ */
-
-    .card-top-6 {
-      background: #90A4AE;
-    }
-
-    .card-body-6 {
-      background: #455A64;
-    }
-
-/*  ------------------- card 6 -end -----------------------------  */
-
-
-/*  ---------------- card 7 ------------------------ */
-
-    .card-top-7 {
-      background: rgb(236, 20, 200);
-    }
-
-    .card-body-7 {
-      background: rgb(146, 19, 127);
-    }
-
-/*  ------------------- card 7 -end -----------------------------  */
-
-
+.card-body-7 {
+  background: rgb(146, 19, 127);
+}
 
 .box>.card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -153,9 +116,7 @@
   flex-direction: column;
 }
 
-.card-list>li>a,
-h3>a,
-.expand>li>a {
+.card-list>li>a, h3>a, .expand>li>a {
   color: white;
   text-decoration: none;
 }
@@ -172,7 +133,7 @@ h3>a,
 .card-body {
   width: auto;
   margin: 10px;
-	padding: 10px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
 }
@@ -187,7 +148,7 @@ h3>a,
 
 .card-body a:hover {
   border-bottom: 2px solid white;
-  }
+}
 
 .card-bottom {
   display: flex;
@@ -199,7 +160,7 @@ h3>a,
 }
 
 .expand {
-	flex-direction: column;
+  flex-direction: column;
   height: 0px;
   overflow: hidden;
   transition: height 0.3s;
@@ -210,33 +171,33 @@ h3>a,
 }
 
 .attendancetitle {
-	flex-grow: 1;
-	color: #fff;
-	text-align: center;
-	margin: 10px;
-	margin: 35px 0 10px 0;
+  flex-grow: 1;
+  color: #fff;
+  text-align: center;
+  margin: 10px;
+  margin: 35px 0 10px 0;
 }
 
 #att-card-img1 {
-	flex-grow: 1;
+  flex-grow: 1;
   width: 100px;
   height: 100px;
-	display: block;
+  display: block;
 }
 
 #att-card-img2 {
-	flex-grow: 1;
+  flex-grow: 1;
   width: 100px;
   height: 100px;
-	display: none;
+  display: none;
 }
 
 #hidebody {
-	display: block;
-	position: relative;
-	max-height: 350px;
-	height: 236px;
-	overflow: hidden;
+  display: block;
+  position: relative;
+  max-height: 350px;
+  height: 236px;
+  overflow: hidden;
   transition: height 1s;
   transition-delay: 0.6s;
 }
@@ -247,7 +208,7 @@ h3>a,
 }
 
 #attcard {
-	background-color: #fff;
+  background-color: #fff;
 }
 
 #att-bottom {
@@ -266,12 +227,12 @@ h3>a,
 }
 
 #timer {
-	font-weight: bold;
-	position: absolute;
-	top: 10px;
-	width: 100%;
-	text-align: center;
-	margin-top: 10px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .countdown {
@@ -283,7 +244,7 @@ h3>a,
   text-align: center;
 }
 
-.countdown > svg {
+.countdown>svg {
   position: absolute;
   top: -20px;
   right: 0;
@@ -292,10 +253,9 @@ h3>a,
   transform: rotateY(-180deg) rotateZ(-90deg);
 }
 
-.countdown > svg > circle {
+.countdown>svg>circle {
   stroke-dasharray: 220px;
   stroke-dashoffset: 0px;
-  /*stroke-linecap: round;*/
   stroke-width: 10px;
   stroke: #ff5f52;
   fill: transparent;
@@ -396,13 +356,11 @@ h3>a,
   align-items: center;
 }
 
-section.firstcardcolumn > div:nth-child(3) > div > div.card-body {
+.firstcardcolumn>div:nth-child(3)>div>div.card-body {
   margin: auto;
 }
 
-.card-body > table,
-.examfirstrow > th,
-.card-body > table > tbody > tr > td {
+.card-body>table, .examfirstrow>th, .card-body>table>tbody>tr>td {
   border: 2px inset transparent;
   border-collapse: collapse;
 }
@@ -413,8 +371,7 @@ section.firstcardcolumn > div:nth-child(3) > div > div.card-body {
   color: white;
 }
 
-.examtr > td,
-.card-body th {
+.examtr>td, .card-body th {
   text-align: left;
   padding-right: 15px;
   color: white;
@@ -428,11 +385,11 @@ section.firstcardcolumn > div:nth-child(3) > div > div.card-body {
   border-bottom: 2px solid white;
 }
 
-tr> td:nth-child(4) {
+tr>td:nth-child(4) {
   text-align: center;
 }
 
-tbody > .examtr:hover {
+tbody>.examtr:hover {
   border-bottom: 2px solid white;
 }
 
@@ -440,18 +397,15 @@ tbody > .examtr:hover {
   color: #53B2C8;
 }
 
-/* form starting stylings ------------------------------- */
-
 .group {
   position: relative;
   margin-bottom: 45px;
 }
 
-/* Input styling related to närvaro add [type=text] avoid conflicts */
-
 input[type=text] {
   font-size: 18px;
-  padding: 10px auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: block;
   width: 86%;
   border: none;
@@ -468,29 +422,13 @@ input[type=text]:focus {
 
 input[type=date] {
   font-size: 18px;
-  padding: 10px auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: block;
   width: 86%;
   border: none;
   background: none;
 }
-
-/* LABEL ======================================= */
-
-/* label 				 {
-  color:#999;
-  font-size:18px;
-  font-weight:normal;
-  position:absolute;
-  pointer-events:none;
-  left:5px;
-  top:10px;
-  transition:0.2s ease all;
-  -moz-transition:0.2s ease all;
-  -webkit-transition:0.2s ease all;
-} */
-
-/* active state */
 
 input[type=text]:focus~label, input:valid~label {
   top: -20px;
@@ -498,13 +436,11 @@ input[type=text]:focus~label, input:valid~label {
   color: #5264AE;
 }
 
-/* BOTTOM BARS ================================= */
-
 .bar {
   position: relative;
   display: block;
   width: 100%;
-  border-bottom:1px solid #757575;
+  border-bottom: 1px solid #757575;
 }
 
 .bar:before, .bar:after {
@@ -526,13 +462,9 @@ input[type=text]:focus~label, input:valid~label {
   right: 50%;
 }
 
-/* active state adding [type=text] so that it doesnt collide with Elink work */
-
 input[type=text]:focus~.bar:before, input[type=text]:focus~.bar:after {
   width: 50%;
 }
-
-/* HIGHLIGHTER ================================== */
 
 .highlight {
   position: absolute;
@@ -544,15 +476,11 @@ input[type=text]:focus~.bar:before, input[type=text]:focus~.bar:after {
   opacity: 0.5;
 }
 
-/* active state */
-
 input:focus~.highlight {
   -webkit-animation: inputHighlighter 0.3s ease;
   -moz-animation: inputHighlighter 0.3s ease;
   animation: inputHighlighter 0.3s ease;
 }
-
-/* ---------- styling for the radio buttons dagens feedback modal */
 
 input[type=radio] {
   position: relative;
@@ -594,13 +522,12 @@ input[type="radio"]:after {
   z-index: 0;
 }
 
-/*Teacherstyle*/
 .editnav {
-	display: flex;
+  display: flex;
 }
 
 .asidebarbox {
-	margin: 0 auto;
+  margin: 0 auto;
 }
 
 #form-img-1 {
@@ -609,10 +536,11 @@ input[type="radio"]:after {
   padding: 10px 0 10px 10px;
   margin: 0 auto;
 }
-/*----*/
+
 #assign {
   list-style-type: none;
 }
+
 #assign>li {
   display: inline;
 }
