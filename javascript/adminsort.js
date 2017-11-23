@@ -1,18 +1,18 @@
 function allowDrop(ev) {
-  ev.preventDefault();
+  ev.preventDefault()
 }
 
 function drag(ev) {
-  ev.dataTransfer.setData("key", ev.target.className);
+  ev.dataTransfer.setData('key', ev.target.className)
 }
 
+let data
 function drop(ev) {
-  ev.preventDefault();
-  var data = ev.dataTransfer.getData("key");
-  if (ev.path["0"].className == 'drop-name')
-  {
-  ev.target.append(document.getElementsByClassName(data)[0]);
-}
+  ev.preventDefault()
+  data = ev.dataTransfer.getData('key')
+  if (ev.path['0'].className == 'drop-name'){
+    ev.target.append(document.getElementsByClassName(data)[0])
+  }
 }
 
 // skapa ny grupp
