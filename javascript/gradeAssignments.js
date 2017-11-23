@@ -1,12 +1,14 @@
+let betygsattningDiv
+let betygsattButton
 
 // Öppnar "betygsättnings-diven"
 function toggleBetygsattning(id) {
   if(id == 'knapp-1'){
-  	let betygsattningDiv = document.querySelector('.betygsatt-1')
-    let betygsattButton = document.querySelector('#knapp-1')
+  	betygsattningDiv = document.querySelector('.betygsatt-1')
+    betygsattButton = document.querySelector('#knapp-1')
   }else if (id == 'knapp-2'){
-    let betygsattningDiv = document.querySelector('.betygsatt-2')
-    let betygsattButton = document.querySelector('#knapp-2')
+    betygsattningDiv = document.querySelector('.betygsatt-2')
+    betygsattButton = document.querySelector('#knapp-2')
   }
 
   let betygsattningsDivHeight = betygsattningDiv.style.height
