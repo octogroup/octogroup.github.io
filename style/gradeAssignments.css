@@ -37,17 +37,14 @@ h2 {
   color: #fafafa;
 }
 
-/* ---------------- --- hover ----------------------------------  */
-
 .LiTab a:hover {
   color: #fafafa;
   border-bottom: 3px solid rgba(255, 0, 0, 0.3);
 }
 
-/* ------------- end muted colors ---------------------------------- */
-
-.betygsatt-1, .betygsatt-2 {
-  height: 0px;
+.betygsatt-1,
+.betygsatt-2 {
+  height: 0;
   overflow: hidden;
   width: 100%;
   background-color: grey;
@@ -105,7 +102,7 @@ h2 {
 
 .button-betygsatt {
   position: absolute;
-  right: 0px;
+  right: 0;
 }
 
 .row-1 {
@@ -165,10 +162,6 @@ h2 {
   left: 5px;
 }
 
-.text-2.#fafafa-back>p {
-  color: #000;
-}
-
 .active:hover {
   cursor: pointer;
 }
@@ -177,11 +170,16 @@ h2 {
   background-color: #e8e8e8;
 }
 
-.table>div:nth-child(1), .table>div:nth-child(2), .table>div:nth-child(3), .table>div:nth-child(22), .table>div:nth-child(23) {
+.table>div:nth-child(1),
+.table>div:nth-child(2),
+.table>div:nth-child(3),
+.table>div:nth-child(22),
+.table>div:nth-child(23) {
   background-color: black;
 }
 
-.table>div.betygsatt-1, .table>div.betygsatt-2 {
+.table>div.betygsatt-1,
+.table>div.betygsatt-2 {
   background-color: #fafafa;
 }
 
