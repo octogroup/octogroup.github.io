@@ -89,14 +89,14 @@
 									<li>
 										<a class="nav-link" href="assignments.html">JavaScript</a>
 									</li>
-									<div class="expand">
-										<li>
-											<a class="nav-link" href="assignments.html">HTML</a>
-										</li>
-										<li>
-											<a class="nav-link" href="assignments.html">CSS</a>
-										</li>
-									</div>
+								</ul>
+									<ul class="expand">
+									<li>
+										<a class="nav-link" href="assignments.html">HTML</a>
+									</li>
+									<li>
+										<a class="nav-link" href="assignments.html">CSS</a>
+									</li>
 								</ul>
 							</div>
 							<div class="card-bottom">
@@ -115,15 +115,15 @@
 								<form name="dailyFeedback" id="dailyFeedback_form" action="#" method="POST">
 									<div id="smileyfaces">
 										<label for="ledsen" onclick="submitForm(this.id)" onmouseover="makeYellow(this.id)" onmouseout="makeGrey(this.id)" id="ledsenLabel">
-                      <img src="../img/sadDis.png" id="ledsenSmiley">
+                      <img src="../img/sadDis.png" id="ledsenSmiley" alt="sad smiley">
                       <input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="ledsen" value="ledsen">
                     </label>
 										<label for="neutral" onclick="submitForm(this.id)" onmouseover="makeYellow(this.id)" onmouseout="makeGrey(this.id)" id="neutralLabel">
-                      <img src="../img/confusedDis.png" id="neutralSmiley">
+                      <img src="../img/confusedDis.png" id="neutralSmiley" alt="neutral smiley">
                       <input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="neutral" value="neutral">
                     </label>
 										<label for="glad" onclick="submitForm(this.id)" onmouseover="makeYellow(this.id)" onmouseout="makeGrey(this.id)" id="gladLabel">
-                      <img src="../img/happyyDis.png" id="happySmiley">
+                      <img src="../img/happyyDis.png" id="happySmiley" alt="happy smiley">
                       <input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="glad" value="glad">
                     </label>
 									</div>
@@ -146,33 +146,34 @@
 										<th>Uppgift</th>
 										<th>Status</th>
 									</tr>
-									<tr class="examtr" onclick="window.location='assignments.html'" ;>
-										<td name="date">22/10</td>
-										<td name="course">Bootstrap</td>
-										<td name="assignment"> Inlämning</td>
-										<td name "status">✓</td>
+									<tr class="examtr" onclick="window.location='assignments.html'">
+										<td>22/10</td>
+										<td>Bootstrap</td>
+										<td> Inlämning</td>
+										<td>✓</td>
 									</tr>
-									<tr class="examtr" onclick="window.location='assignments.html'" ;>
-										<td name="date">25/10</td>
-										<td name="course">Angular</td>
-										<td name="assignment">Tenta</td>
-										<td name "status">✓</td>
+									<tr class="examtr" onclick="window.location='assignments.html'">
+										<td>25/10</td>
+										<td>Angular</td>
+										<td>Tenta</td>
+										<td>✓</td>
 									</tr>
-									<tr class="examtr" onclick="window.location='assignments.html'" ;>
-										<td name="date">01/11</td>
-										<td name="course">React</td>
-										<td name="assignment">Inlämning</td>
-										<td name "status"></td>
+									<tr class="examtr" onclick="window.location='assignments.html'">
+										<td>01/11</td>
+										<td>React</td>
+										<td>Inlämning</td>
+										<td></td>
 									</tr>
-									<tr class="examtr" onclick="window.location='assignments.html'" ;>
-										<td name="date">02/11</td>
-										<td name="course">Vue.js</td>
-										<td name="assignment">Hemtenta</td>
-										<td name "status"></td>
+									<tr class="examtr" onclick="window.location='assignments.html'">
+										<td>02/11</td>
+										<td>Vue.js</td>
+										<td>Hemtenta</td>
+										<td></td>
 									</tr>
 								</table>
 						</div>
 					</div>
+				</div>
 				</section>
 				<!-- Second Card Column -->
 				<section class="secondcardcolumn">
@@ -191,14 +192,14 @@
 									<li>
 										<a class="nav-link" href="assignments.html">Angular</a>
 									</li>
-									<div class="expand">
-										<li>
-											<a class="nav-link" href="assignments.html">React</a>
-										</li>
-										<li>
-											<a class="nav-link" href="assignments.html">Vue.js</a>
-										</li>
-									</div>
+								</ul>
+								<ul class="expand">
+									<li>
+										<a class="nav-link" href="assignments.html">React</a>
+									</li>
+									<li>
+										<a class="nav-link" href="assignments.html">Vue.js</a>
+									</li>
 								</ul>
 							</div>
 							<div class="card-bottom">
@@ -216,7 +217,7 @@
 							<!-- <div class="card-body">
 							</div> -->
 							<div class="card-bottom">
-								<a href="weekeval.html"><button type="button" name="button" class="cardbutton">Öppna</button></a>
+								<button type="button" name="button" class="cardbutton" onclick="window.location = 'weekeval.html'">Öppna</button>
 							</div>
 						</div>
 					</div>
@@ -233,7 +234,7 @@
 							<!-- <div class="card-body">
 							</div> -->
 							<div class="card-bottom">
-								<a href="grades.html"><button type="button" name="button" class="cardbutton">Öppna</button></a>
+								<button type="button" name="button" class="cardbutton" onclick="window.location = 'grades.html'">Öppna</button>
 							</div>
 						</div>
 					</div>
@@ -250,7 +251,7 @@
 									som är intresserade utav scifi fantasy grejer. Där fyndade han...</p>
 							</div>
 							<div class="card-bottom">
-								<a href="news.html"><button type="button" name="button" class="cardbutton">Öppna</button></a>
+								<button type="button" name="button" class="cardbutton" onclick="window.location = 'news.html'">Öppna</button>
 							</div>
 						</div>
 					</div>
