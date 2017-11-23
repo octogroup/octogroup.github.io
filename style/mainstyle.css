@@ -316,6 +316,7 @@ main {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
   background: #ff5f52;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .cardbutton:after {

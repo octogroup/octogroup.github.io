@@ -1,4 +1,3 @@
-
 .hiddenCard {
   margin: 5px auto;
   width: auto;
@@ -15,14 +14,8 @@
 .hiddenCard > table > tbody > tr > td {
     border:2px inset transparent;
     border-collapse:collapse;
-  
-}/* 
+}
 
-.examfirstrow {
-  font-weight: bold;
-  color: white;
-} */
-    
 div > main > h2 {
 	text-align: center;
   font-weight: bold;

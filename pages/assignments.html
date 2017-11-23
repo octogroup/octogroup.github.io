@@ -2,39 +2,37 @@
 <html lang="sv">
 
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet">
-  <link rel="shortcut icon" href="../img/octo.png">
-  <link rel="stylesheet" href="../style/mainstyle.css">
-  <link rel="stylesheet" href="../style/colorThemeStudentpage.css">
-  <link rel="stylesheet" href="../style/dailyfeedback.css">
-  <link rel="stylesheet" href="../style/loginstyle.css">
-  <link rel="stylesheet" href="../style/cardstyle.css">
-  <link rel="stylesheet" href="../style/assignments.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/octo.png">
+    <link rel="stylesheet" href="../style/mainstyle.css">
+    <link rel="stylesheet" href="../style/colorThemeStudentpage.css">
+    <link rel="stylesheet" href="../style/dailyfeedback.css">
+    <link rel="stylesheet" href="../style/loginstyle.css">
+    <link rel="stylesheet" href="../style/cardstyle.css">
+    <link rel="stylesheet" href="../style/assignments.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Inlämningar</title>
 </head>
 
 <body>
   <div class="content backgroundpic1">
     <header>
-      <a href="studentpage.html">
-        <img src="../img/KYH-logo.png" alt="KYH">
-      </a>
-      <nav id="navigation">
-        <div id="loginalign">
-          <button class="loginbutton" type="button" name="logout" onclick="logOut()">logga ut</button>
-        </div>
-        <ul id="navlist">
-          <li>
-            <a href="../pages/studentpage.html">Profil</a>
-          </li>
-          <li>
-            <a href="../pages/assignments.html">Examinationer</a>
-          </li>
-        </ul>
-
-      </nav>
+      <a href="studentpage.html"><img src="../img/KYH-logo.png" alt="KYH"></a>
+        <nav id="navigation">
+          <div id="loginalign">
+            <button class="loginbutton" type="button" name="logout" onclick="logOut()">logga ut</button>
+          </div>
+          <ul id="navlist">
+            <li>
+              <a href="../pages/studentpage.html">Profil</a>
+            </li>
+            <li>
+              <a href="../pages/assignments.html">Examinationer</a>
+            </li>
+          </ul>
+        </nav>
     </header>
     <div id="container">
     </div>
@@ -48,7 +46,7 @@
             <div class="cardcontainer card-top-2">
               <div class="card-header card-body-2">
                 <h3 class="card-heading">Kommande examinationer</h3>
-                <img src="../img/calendar.svg" class="card-img">
+                <img src="../img/calendar.svg" alt="Picture on calendar" class="card-img">
               </div>
               <div class="hiddenCard expand">
                 <table class="paddingall">
@@ -58,29 +56,29 @@
                     <th>Uppgift</th>
                     <th>Status</th>
                   </tr>
-                  <tr class="examtr" onclick="window.location='assignments.html'" ;>
-                    <td name="date">22/10</td>
-                    <td name="course">Bootstrap</td>
-                    <td name="assignment"> Inlämning</td>
-                    <td name "status">✓</td>
+                  <tr class="examtr" onclick="window.location='assignments.html'">
+                    <td>22/10</td>
+                    <td>Bootstrap</td>
+                    <td> Inlämning</td>
+                    <td>✓</td>
                   </tr>
-                  <tr class="examtr" onclick="window.location='assignments.html'" ;>
-                    <td name="date">25/10</td>
-                    <td name="course">Angular</td>
-                    <td name="assignment">Tenta</td>
-                    <td name "status">✓</td>
+                  <tr class="examtr" onclick="window.location='assignments.html'">
+                    <td>25/10</td>
+                    <td>Angular</td>
+                    <td>Tenta</td>
+                    <td>✓</td>
                   </tr>
-                  <tr class="examtr" onclick="window.location='assignments.html'" ;>
-                    <td name="date">01/11</td>
-                    <td name="course">React</td>
-                    <td name="assignment">Inlämning</td>
-                    <td name "status"></td>
+                  <tr class="examtr" onclick="window.location='assignments.html'">
+                    <td>01/11</td>
+                    <td>React</td>
+                    <td>Inlämning</td>
+                    <td></td>
                   </tr>
-                  <tr class="examtr" onclick="window.location='assignments.html'" ;>
-                    <td name="date">02/11</td>
-                    <td name="course">Vue.js</td>
-                    <td name="assignment">Hemtenta</td>
-                    <td name "status"></td>
+                  <tr class="examtr" onclick="window.location='assignments.html'">
+                    <td>02/11</td>
+                    <td>Vue.js</td>
+                    <td>Hemtenta</td>
+                    <td></td>
                   </tr>
                 </table>
               </div>
@@ -96,7 +94,7 @@
             <div class="cardcontainer card-top-3">
               <div class="card-header card-body-3">
                 <h3 class="card-heading">Avslutade Examinationer</h3>
-                <img src="../img/trophy.svg" class="card-img">
+                <img src="../img/trophy.svg" alt="An icon on trophy" class="card-img">
               </div>
               <div class="hiddenCard expand">
                 <table class="paddingall">
@@ -106,29 +104,29 @@
                     <th>Uppgift</th>
                     <th>Status</th>
                   </tr>
-                  <tr class="examtr" onclick="window.location='assignments.html'" ;>
-                    <td name="date">22/10</td>
-                    <td name="course">Bootstrap</td>
-                    <td name="assignment"> Inlämning</td>
-                    <td name "status">✓</td>
+                  <tr class="examtr" onclick="window.location='assignments.html'">
+                    <td>22/10</td>
+                    <td>Bootstrap</td>
+                    <td> Inlämning</td>
+                    <td>✓</td>
                   </tr>
-                  <tr class="examtr" onclick="window.location='assignments.html'" ;>
-                    <td name="date">25/10</td>
-                    <td name="course">Angular</td>
-                    <td name="assignment">Tenta</td>
-                    <td name "status">✓</td>
+                  <tr class="examtr" onclick="window.location='assignments.html'">
+                    <td>25/10</td>
+                    <td>Angular</td>
+                    <td>Tenta</td>
+                    <td>✓</td>
                   </tr>
-                  <tr class="examtr" onclick="window.location='assignments.html'" ;>
-                    <td name="date">01/11</td>
-                    <td name="course">React</td>
-                    <td name="assignment">Inlämning</td>
-                    <td name "status">✕</td>
+                  <tr class="examtr" onclick="window.location='assignments.html'">
+                    <td>01/11</td>
+                    <td>React</td>
+                    <td>Inlämning</td>
+                    <td>✕</td>
                   </tr>
-                  <tr class="examtr" onclick="window.location='assignments.html'" ;>
-                    <td name="date">02/11</td>
-                    <td name="course">Vue.js</td>
-                    <td name="assignment">Hemtenta</td>
-                    <td name "status">✓</td>
+                  <tr class="examtr" onclick="window.location='assignments.html'">
+                    <td>02/11</td>
+                    <td>Vue.js</td>
+                    <td>Hemtenta</td>
+                    <td>✓</td>
                   </tr>
                 </table>
               </div>
@@ -138,17 +136,15 @@
           </div>
         </section>
         <!-- Third Column -->
-        <section class="thirdcardcolumn">
+        <article class="thirdcardcolumn">
           <div class="card">
             <div class="cardcontainer card-top-1">
               <div class="card-header card-body-1">
                 <h3 class="card-heading">Kursplan</h3>
-                <img src="../img/notebook.svg" class="card-img">
+                <img src="../img/notebook.svg" alt="An icon on notebook" class="card-img">
               </div>
               <div class="card-bottom">
-                <a href="course.html">
-                  <button type="button" name="button" class="cardbutton">Öppna</button>
-                </a>
+                <a class="cardbutton" href="course.html">Öppna</a>
               </div>
             </div>
           </div>
@@ -157,10 +153,10 @@
             <div class="cardcontainer card-top-5">
               <div class="card-header card-body-5">
                 <h3 class="card-heading">Uppgifter</h3>
-                <img src="../img/mail.svg" class="card-img">
+                <img src="../img/mail.svg" alt="An icon on a mail" class="card-img">
               </div>
               <div class="card-bottom">
-                <ul class="card-list">
+                <div class="card-list">
                   <form>
                     <select class="assignments">
                       <option>Frontend: inlämning 1</option>
@@ -173,7 +169,7 @@
                     <input type="file">
                     <button type="submit" class="cardbutton" onclick="toggleAlert('assignments.html')">Skicka</button>
                   </div>
-                </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -184,6 +180,7 @@
             <p class="alertbox-subheader"></p>
           </div>
         </div>
+      </article>
       </div>
     </main>
   </div>

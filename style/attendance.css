@@ -103,7 +103,7 @@
 
   .attendancenav {
     flex-wrap: wrap;
-    justify-content: column;
+    justify-content: center;
     position: relative;
     top: -50px;
   }
