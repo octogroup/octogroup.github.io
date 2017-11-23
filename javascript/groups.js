@@ -95,12 +95,10 @@ let sliceArray = function () {
   let temparrays
   for (let i = 0; i < namesArray.length; i += maxNumber) {
     temparray = namesArray.slice(i, i + maxNumber)
-    console.log(temparray)
     groups.push([])
     groups[a].push(temparray)
     a++
   }
-  console.log(groups)
   translateToHtml()
   // Disable button after use
   document.getElementById('random').disabled = true

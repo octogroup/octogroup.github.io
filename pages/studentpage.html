@@ -18,9 +18,7 @@
 <body>
 	<div class="content backgroundpic1">
 		<header>
-			<a href="studentpage.html">
-        <img src="../img/KYH-logo.png" alt="KYH">
-      </a>
+			<a href="studentpage.html"><img src="../img/KYH-logo.png" alt="KYH"></a>
 			<nav id="navigation">
 				<div id="loginalign">
 					<button class="loginbutton" type="button" name="logout" onclick="logOut()">logga ut</button>
@@ -43,7 +41,9 @@
 						<div id="hidebody">
 							<div class="card-body">
 								<div class="countdown">
-									<div id="timer">15 : 00</div>
+									<div id="timer">
+										15 : 00
+									</div>
 									<svg>
     								<circle r="35" cx="50" cy="50"></circle>
   								</svg>
@@ -54,7 +54,6 @@
 								<span class="highlight"></span>
 								<span class="bar"></span>
 								<p id="errortxt">Koden är fel. Vänligen försök igen.</p>
-								<br>
 								<button type="button" name="button" class="cardbutton" id="attsbutton" onclick="checkAttendance()">Anmäl närvaro</button>
 							</div>
 							<div id="attOnSend" class="boxstyle">
@@ -114,7 +113,7 @@
 							</div>
 							<div id="feedbackbody">
 								<form name="dailyFeedback" id="dailyFeedback_form" action="#" method="POST">
-									<p id="smileyfaces">
+									<div id="smileyfaces">
 										<label for="ledsen" onclick="submitForm(this.id)" onmouseover="makeYellow(this.id)" onmouseout="makeGrey(this.id)" id="ledsenLabel">
                       <img src="../img/sadDis.png" id="ledsenSmiley">
                       <input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="ledsen" value="ledsen">
@@ -127,7 +126,7 @@
                       <img src="../img/happyyDis.png" id="happySmiley">
                       <input class="dailyfeedbacbradio" type="radio" name="dailyfeedback" id="glad" value="glad">
                     </label>
-									</p>
+									</div>
 								</form>
 							</div>
 						</div>
@@ -217,9 +216,7 @@
 							<!-- <div class="card-body">
 							</div> -->
 							<div class="card-bottom">
-								<a href="weekeval.html">
-                  <button type="button" name="button" class="cardbutton">Öppna</button>
-                </a>
+								<a href="weekeval.html"><button type="button" name="button" class="cardbutton">Öppna</button></a>
 							</div>
 						</div>
 					</div>
@@ -236,9 +233,7 @@
 							<!-- <div class="card-body">
 							</div> -->
 							<div class="card-bottom">
-								<a href="grades.html">
-                  <button type="button" name="button" class="cardbutton">Öppna</button>
-                </a>
+								<a href="grades.html"><button type="button" name="button" class="cardbutton">Öppna</button></a>
 							</div>
 						</div>
 					</div>
@@ -251,13 +246,11 @@
 							</div>
 							<div class="card-body">
 								<h4 class="card6-heading">Ny scrum master pin</h4>
-								<p class="card-heading">I helgen besökte Victor scifiworld i Älvsjö. Det är en mässa för personer som är intresserade utav scifi fantasy grejer. Där fyndade han...
-								</p>
+								<p class="card-heading">I helgen besökte Victor scifiworld i Älvsjö. Det är en mässa för personer
+									som är intresserade utav scifi fantasy grejer. Där fyndade han...</p>
 							</div>
 							<div class="card-bottom">
-								<a href="news.html">
-                  <button type="button" name="button" class="cardbutton">Öppna</button>
-                </a>
+								<a href="news.html"><button type="button" name="button" class="cardbutton">Öppna</button></a>
 							</div>
 						</div>
 					</div>
