@@ -134,6 +134,7 @@ div.scroll {
 	margin: 20px;
 }
 
+/*Important is needed to disable tooltip in canvas*/
 .canvasjs-chart-tooltip {
 	display: none !important;
 }
@@ -142,6 +143,6 @@ div.scroll {
   margin: 20px 50px;
 }
 
-ol.weekAnswerList.expand {
+.weekAnswerList.expand {
   height: 0px;
 }
