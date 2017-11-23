@@ -11,7 +11,8 @@
 	margin: 20px;
 }
 
-.textinput, .range {
+.textinput,
+.range {
   margin-top: 5px;
   margin-bottom: 5px;
   margin-left: 1px;
@@ -22,7 +23,7 @@
   display: flex;
 }
 
-.aroundrange > p {
+.aroundrange>p {
   padding: 20px;
 }
 
@@ -36,11 +37,11 @@
 	font-weight: bold;
 }
 
-#weekeval > div:nth-child(11) > span.bar {
+#weekeval>div:nth-child(11)>span.bar {
 	margin-bottom: 40px;
 }
 
-#weekeval > div:nth-child(16) > span.bar {
+#weekeval>div:nth-child(16)>span.bar {
 	margin-bottom: 40px;
 }
 
@@ -92,20 +93,14 @@
   outline: none;
 }
 
-/* ---------------------------- slider end */
-
-
-/* ------------------ input-field ------------------------------*/
-
 /* Input styling related to närvaro add [type=text] avoid conflicts */
-input[type=text] 				{
+input[type=text] {
   font-size:18px;
   padding:10px 10px 10px 5px;
   display:block;
   width:300px;
   border:none;
   background: none;
-/*   border-bottom:1px solid #757575; */
 }
 input[type=text]::-webkit-input-placeholder {
   text-align: left;
@@ -114,22 +109,9 @@ input[type=text]:focus {
     outline:none;
 }
 
-/* LABEL ======================================= */
-/* label 				 {
-  color:#999;
-  font-size:18px;
-  font-weight:normal;
-  position:absolute;
-  pointer-events:none;
-  left:5px;
-  top:10px;
-  transition:0.2s ease all;
-  -moz-transition:0.2s ease all;
-  -webkit-transition:0.2s ease all;
-} */
-
 /* active state */
-input[type=text]:focus ~ label, input:valid ~ label 		{
+input[type=text]:focus ~ label,
+input:valid ~ label {
   top:-20px;
   font-size:14px;
   color:#5264AE;

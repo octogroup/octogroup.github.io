@@ -16,6 +16,10 @@ h2 {
   align-self: center;
 }
 
+.marginLeft{
+  margin-left: 10px;
+}
+
 .table {
   margin: 0 auto;
   width: 56%;
