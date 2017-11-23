@@ -1,31 +1,31 @@
-
-function codePromp() {
-  let myTextField = document.getElementById("codeInput");
+/* eslint no-undef: 0 */
+/* eslint no-unused-vars: 0 */
+/* eslint-env browser */
+function codePromp () {
+  let myTextField = document.getElementById('codeInput')
   if (myTextField.value === 'asdf') {
     showAttOnSend()
   } else {
-    document.getElementById('errortxt').style.display = 'flex';
+    document.getElementById('errortxt').style.display = 'flex'
   }
 }
 
-function showAttOnSend() {
-  document.getElementById('attOnSend').style.display = 'flex';
+function showAttOnSend () {
+  document.getElementById('attOnSend').style.display = 'flex'
 }
 
-function hideAttOnSend() {
-  document.getElementById('attOnSend').style.display = 'none';
+function hideAttOnSend () {
+  document.getElementById('attOnSend').style.display = 'none'
 }
 
-function hideAttBox() {
-  document.getElementById('att-box').style.display = 'none';
+function hideAttBox () {
+  document.getElementById('att-box').style.display = 'none'
 }
-
-// behövs båda?
 
 document.getElementById('codeInput').addEventListener('keyup', function (event) {
   event.preventDefault()
-  if (event.keyCode == 13) {
-    document.getElementById("attsbutton").click()
+  if (event.keyCode === 13) {
+    document.getElementById('attsbutton').click()
   }
 })
 
@@ -48,9 +48,9 @@ let Timer = function (opts) {
 
   function countDown () {
     self.seconds--
-      if (self.minutes === 0 && self.seconds === 0) {
-        self.stop()
-      }
+    if (self.minutes === 0 && self.seconds === 0) {
+      self.stop()
+    }
 
     else if (self.seconds < 0) {
       self.seconds = 59
@@ -58,9 +58,7 @@ let Timer = function (opts) {
     } else if (self.seconds <= 9) {
       self.seconds = '0' + self.seconds
     }
-
     self.element.textContent = self.minutes + ' : ' + self.seconds
-
   }
 }
 
@@ -71,16 +69,13 @@ let myTimer = new Timer({
 })
 
 myTimer.start()
-
-// ----------timer-ends------------
-
 // ---------------- Hide body & show check--------------------
-function checkAttendance() {
-  let myTextField = document.getElementById("codeInput")
+function checkAttendance () {
+  let myTextField = document.getElementById('codeInput')
   if (myTextField.value === 'asdf') {
     document.getElementById('hidebody').style.height = '0px'
-		document.getElementById('att-card-img1').style.display = 'none'
-		document.getElementById('att-card-img2').style.display = 'block'
+    document.getElementById('att-card-img1').style.display = 'none'
+    document.getElementById('att-card-img2').style.display = 'block'
   } else {
     document.getElementById('errortxt').style.display = 'flex'
     document.getElementById('codeInput').value = ''

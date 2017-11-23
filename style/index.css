@@ -1,7 +1,7 @@
 #indcont {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   max-width: 100%;
 }
 
@@ -15,7 +15,7 @@
   margin: 30px;
 }
 
-#indcont > div:nth-child(3) > a > img{
+#indcont>div:nth-child(3)>a>img {
   max-width: 768px;
   width: 100%;
 }

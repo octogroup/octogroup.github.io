@@ -16,10 +16,7 @@
 <body>
 	<div class="content">
 		<header onclick="dropclose()">
-			<a href="../index.html">
-        <img src="../img/octoedu.png" alt="Octo">
-        <h1>Octo</h1>
-      </a>
+			<a href="../index.html"><img src="../img/octoedu.png" alt="Octo"><h1>Octo</h1></a>
 			<nav id="navigation">
 				<div id="loginalign">
 					<button class="loginbutton" type="submit" name="loginbutton" onclick="showLogin()">logga in</button>
@@ -35,11 +32,12 @@
 						<a href="pricing.html">Priser</a>
 					</li>
 				</ul>
-
 			</nav>
 		</header>
 		<div id="container">
-			<div onclick="dropopen()" id="dropbutton">Meny &#x25BE;</div>
+			<div onclick="dropopen()" id="dropbutton">
+				Meny &#x25BE;
+			</div>
 			<div id="dropdown">
 				<ul id="dropdownmenu">
 					<li>
@@ -68,9 +66,7 @@
 					</div>
 					<div class="lgcontainer">
 						<button class="loginbutton" type="submit" onclick="accesslevelroot(this.form); return false;">Logga in</button>
-						<p id="errortxt">Fel lösenord eller
-							<br> användarnamn.
-						</p>
+						<p id="errortxt">Fel lösenord eller <br> användarnamn.</p>
 					</div>
 				</form>
 			</div>
