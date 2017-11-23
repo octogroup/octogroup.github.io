@@ -118,15 +118,6 @@
   display: none;
 }
 
-@media (max-width: 600px) {
-  .box-group {
-    display: none;
-  }
-  .box-mobile {
-    display: block;
-  }
-}
-
 .mobil-pos {
   text-align: center;
   color: white;
@@ -146,4 +137,13 @@
 
 .asidebarbox {
   margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .box-group {
+    display: none;
+  }
+  .box-mobile {
+    display: block;
+  }
 }
