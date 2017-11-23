@@ -28,15 +28,6 @@
         </div>
       </nav>
     </header>
-    <aside class="editnav">
-      <div class="asidebarbox">
-        <button class="editbuttons" onclick="createAccount()">Skapa nytt konto</button>
-        <button class="editbuttons" onclick="createEducation()">Skapa utbildning</button>
-        <button class="editbuttons" onclick="createClass()">Skapa kurs</button>
-        <button class="editbuttons" onclick="adminNews()">Skapa nyhet</button>
-        <button class="editbuttons" onclick="formAdmin()">Skapa/ändra utvärdering</button>
-      </div>
-    </aside>
     <div id="container">
     </div>
     <!-- Main-Content -->
@@ -111,15 +102,29 @@
         <section class="firstcardcolumn">
           <!-- Card -->
           <div class="card">
-            <div class="cardcontainer card-top-5">
-              <div class="card-header card-body-5">
-                <h3 class="card-heading">Klassindelning</h3>
-                <img src="../img/mail.svg" alt="mail" class="card-img">
+            <div class="cardcontainer card-top-4">
+              <div class="card-header card-body-4">
+                <h3 class="card-heading">Verktyg</h3>
+                <img src="../img/service.svg" alt="service" class="card-img">
               </div>
-              <div class="card-bottom">
-                <a href="adminsort.html">
-                  <button type="button" name="button" class="cardbutton">Öppna</button>
-                </a>
+              <div class="card-body">
+                <ul class="card-list">
+                  <li>
+                    <a onclick="createAccount()">Skapa nytt konto</a>
+                  </li>
+                  <li>
+                    <a onclick="createEducation()">Skapa utbildning</a>
+                  </li>
+                  <li>
+                    <a onclick="createClass()">Skapa kurs</a>
+                  </li>
+                  <li>
+                    <a onclick="adminNews()">Skapa nyhet</a>
+                  </li>
+                  <li>
+                    <a onclick="formAdmin()">Skapa/ändra utvärdering</a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -127,6 +132,19 @@
         <!-- Second Card Column -->
         <section class="secondcardcolumn">
           <!-- Card -->
+          <div class="card">
+            <div class="cardcontainer card-top-5">
+              <div class="card-header card-body-5">
+                <h3 class="card-heading">Klassindelning</h3>
+                <img src="../img/mail.svg" alt="mail" class="card-img">
+              </div>
+              <div class="card-bottom">
+                <a href="adminsort.html">
+                           <button type="button" name="button" class="cardbutton">Öppna</button>
+                         </a>
+              </div>
+            </div>
+          </div>
         </section>
         <!-- Third Card Column -->
         <section class="thirdcardcolumn">
