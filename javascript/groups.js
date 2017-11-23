@@ -76,7 +76,8 @@ let translateToHtml = function () {
 // Shuffle array
 function shuffle (array) {
   for (let a = 0; a < document.getElementsByClassName('drop-name').length; a++) {
-  document.getElementsByClassName('drop-name')[a].innerHTML = null }
+    document.getElementsByClassName('drop-name')[a].innerHTML = null
+  }
   let counter = array.length
   while (counter > 0) {
     let index = Math.floor(Math.random() * counter)

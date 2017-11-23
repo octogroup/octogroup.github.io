@@ -44,9 +44,7 @@ let reset = function () {
     this['i' + i].style.type = 'text'
     this['i' + i].required = false
     this['i' + i].setAttribute('list', '')
-    this['i' + i].value = ""
-
-
+    this['i' + i].value = ''
     sB.style.display = 'none'
     cB.style.display = 'none'
     form.style.display = 'none'
@@ -84,8 +82,8 @@ let news = function () {
   cB.style.display = 'inherit'
   sB.style.display = 'inherit'
   p1.innerHTML = 'Visa nyheten för:'
-  i1.style.display = "inherit"
-  i1.setAttribute('list', 'datalist2');
+  i1.style.display = 'inherit'
+  i1.setAttribute('list', 'datalist2')
   i1.required = "true"
   p2.innerHTML = "Rubrik:"
   t2.style.display = "inherit"
@@ -122,7 +120,7 @@ let assignment = function () {
   t4.style.display = "inherit"
   t4.required = "true"
   form.addEventListener('submit', (dontSub) => {dontSub.preventDefault ()
-    toggleAlertbox (dontSub, 'teacherpage.html', 'Examination inlagd')
+  toggleAlertbox (dontSub, 'teacherpage.html', 'Examination inlagd')
   })
 }
 
@@ -144,7 +142,6 @@ let weekeval = function () {
   t4.style.display = 'inherit'
   sB.style.display = 'inherit'
 }
-
 
 let adminNews = function () {
   reset()

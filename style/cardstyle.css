@@ -1,4 +1,3 @@
-
 .box {
   display: flex;
   flex-wrap: wrap;
@@ -45,36 +44,18 @@
   color: #fff;
 }
 
-/*.nav-link:hover {
-  padding: 4px;
-  transition-duration: 0.8s;
-}*/
+.card-top-att {
+  display: inline-flex;
+  background: #111111;
+}
 
-/*--------------------  card 0 närvaro  ---------------------- */
+.card-top-1 {
+  background: #6A1B9A;
+}
 
-
-        .card-top-att {
-          display: inline-flex;
-          background: #111111;
-        }
-
-/*  ----------------  card 0 -end ------------------------*/
-
-
-
-
-/*----------------  card 1  ---------------------- */
-
-      .card-top-1 {
-        background: #6A1B9A;
-      }
-
-      .card-body-1 {
-        background: #8E24AA;
-      }
-
-/*  --------------  card 1 -end ---------------------*/
-
+.card-body-1 {
+  background: #8E24AA;
+}
 
 
 /*  ---------------- card 2 ------------------------ */
@@ -166,14 +147,15 @@
 
 .card-list {
   text-align: left;
-  /*margin: 10px;*/
   list-style-position: inside;
   list-style: none;
   display: flex;
   flex-direction: column;
 }
 
-.card-list>li>a, h3>a, .expand>li>a {
+.card-list>li>a,
+h3>a,
+.expand>li>a {
   color: white;
   text-decoration: none;
 }
@@ -221,10 +203,9 @@
   height: 0px;
   overflow: hidden;
   transition: height 0.3s;
-
 }
 
-#hidebody > .card-body {
+#hidebody>.card-body {
   height: 90px;
 }
 
@@ -284,8 +265,6 @@
   right: 30%;
 }
 
-/*-----------------------------Countdown--------------------------------*/
-
 #timer {
 	font-weight: bold;
 	position: absolute;
@@ -332,10 +311,8 @@
   }
 }
 
-/*-------------------------Countdown-ends-------------------------------*/
-
 #codeInput {
-  width: 100%%;
+  width: 100%;
   text-align: center;
   text-transform: uppercase;
 }
@@ -426,8 +403,8 @@ section.firstcardcolumn > div:nth-child(3) > div > div.card-body {
 .card-body > table,
 .examfirstrow > th,
 .card-body > table > tbody > tr > td {
-  border:2px inset transparent;
-  border-collapse:collapse;
+  border: 2px inset transparent;
+  border-collapse: collapse;
 }
 
 .examfirstrow {
@@ -639,4 +616,3 @@ input[type="radio"]:after {
 #assign>li {
   display: inline;
 }
-
