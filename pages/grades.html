@@ -2,80 +2,84 @@
 <html lang="sv">
 
 <head>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<link rel="shortcut icon" href="../img/octo.png">
-	<link rel="stylesheet" href="../style/loginstyle.css">
-	<link rel="stylesheet" href="../style/completedcourse.css">
-	<link rel="stylesheet" href="../style/coursestyle.css">
-	<link rel="stylesheet" href="../style/mainstyle.css">
-	<link rel="stylesheet" href="../style/colorThemeStudentpage.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta charset="UTF-8">
-	<title>Betyg</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="shortcut icon" href="../img/octo.png">
+  <link rel="stylesheet" href="../style/loginstyle.css">
+  <link rel="stylesheet" href="../style/completedcourse.css">
+  <link rel="stylesheet" href="../style/coursestyle.css">
+  <link rel="stylesheet" href="../style/mainstyle.css">
+  <link rel="stylesheet" href="../style/colorThemeStudentpage.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Betyg</title>
 </head>
 
 <body>
-	<div class="content backgroundpic1">
-		<header onclick="dropclose()">
-			<a href="studentpage.html">
-	      <img src="../img/KYH-logo.png" alt="KYH">
-	    </a>
-			<nav id="navigation">
-				<div id="loginalign">
-					<button class="loginbutton" type="button" name="logout" onclick="logOut()">logga ut</button>
-				</div>
-				<ul id="navlist">
-					<li>
-						<a href="../pages/studentpage.html">Profil</a>
-					</li>
-					<li>
-						<a href="../pages/grades.html">Avslutade kurser</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
-		<div id="pusdown"></div>
-		<main>
-			<div class="box">
-				<h2 class="courseTitle marginbottom">Avslutade kurser</h2>
-				<table id="completed_table">
-					<tr>
-						<th>
-							<h3 class="marginbottom">Kurs/Uppgift</h3></th>
-						<th>
-							<h3>Betyg</h3></th>
-					</tr>
-					<tr class="kurs">
-						<td class="paddingleft">Javascript</td>
-						<td>VG</td>
-						<td class="td3"><a href="feedback.html"><button type="button" name="button" class="cardbutton">Feedback</button></a></td>
-					</tr>
-					<tr>
-						<td class="indent">Tenta</td>
-						<td>MVG</td>
-					</tr>
-					<tr>
-						<td class="lastcell indent">Inlämning 1</td>
-						<td>VG</td>
-					</tr>
-					<tr class="kurs">
-						<td class="paddingleft">HTML</td>
-						<td>MVG</td>
-						<td class="td3"><a href="feedback.html"><button type="button" name="button" class="cardbutton">Feedback</button></a></td>
-					</tr>
-					<tr>
-						<td class="indent">Inlämning 1</td>
-						<td class="lastcell">VG</td>
-					</tr>
-				</table>
-			</div>
-		</main>
-	</div>
-	<footer class="footer">
-		<p>&copy;2017</p>
-	</footer>
-	<script type="text/javascript" src="../javascript/login.js"></script>
+  <div class="content backgroundpic1">
+    <header onclick="dropclose()">
+      <a href="studentpage.html"><img src="../img/KYH-logo.png" alt="KYH"></a>
+      <nav id="navigation">
+        <div id="loginalign">
+          <button class="loginbutton" type="button" name="logout" onclick="logOut()">logga ut</button>
+        </div>
+        <ul id="navlist">
+          <li>
+            <a href="../pages/studentpage.html">Profil</a>
+          </li>
+          <li>
+            <a href="../pages/grades.html">Avslutade kurser</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div id="pusdown"></div>
+    <main>
+      <div class="box">
+        <h2 class="courseTitle marginbottom">Avslutade kurser</h2>
+        <table id="completed_table">
+          <tr>
+            <th>
+              <p class="marginbottom tableh3">Kurs/Uppgift</p>
+            </th>
+            <th>
+              <p class="tableh3">Betyg</p>
+            </th>
+          </tr>
+          <tr class="kurs">
+            <td class="paddingleft">Javascript</td>
+            <td>VG</td>
+            <td class="td3">
+              <button type="button" name="button" class="cardbutton" onclick="window.location = 'feedback.html'">Feedback</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="indent">Tenta</td>
+            <td>MVG</td>
+          </tr>
+          <tr>
+            <td class="lastcell indent">Inlämning 1</td>
+            <td>VG</td>
+          </tr>
+          <tr class="kurs">
+            <td class="paddingleft">HTML</td>
+            <td>MVG</td>
+            <td class="td3">
+              <button type="button" name="button" class="cardbutton" onclick="window.location = 'feedback.html'">Feedback</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="indent">Inlämning 1</td>
+            <td class="lastcell">VG</td>
+          </tr>
+        </table>
+      </div>
+    </main>
+  </div>
+  <footer class="footer">
+    <p>&copy;2017</p>
+  </footer>
+  <script type="text/javascript" src="../javascript/login.js"></script>
 </body>
 
 </html>
