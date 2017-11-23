@@ -8,7 +8,8 @@
   margin: auto;
 }
 
-#completed_table>td, th {
+#completed_table>td,
+th {
   text-align: left;
 }
 
