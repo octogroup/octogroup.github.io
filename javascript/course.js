@@ -69,8 +69,7 @@ chart1.render()
 function toggleDataSeries1 (e) {
   if (typeof (e.dataSeries.visible) === 'undefined' || e.dataSeries.visible) {
     e.dataSeries.visible = false
-  }
-  else {
+  } else {
     e.dataSeries.visible = true
   }
   chart1.render()
