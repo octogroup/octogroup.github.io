@@ -41,11 +41,6 @@ h2 {
   color: #fafafa;
 }
 
-.LiTab a:hover {
-  color: #fafafa;
-  border-bottom: 3px solid rgba(255, 0, 0, 0.3);
-}
-
 .betygsatt-1,
 .betygsatt-2 {
   height: 0;
@@ -67,7 +62,11 @@ h2 {
 
 .LiTab:first-child {
   color: #fafafa;
-  border-bottom: 3px solid red;
+  border-bottom: solid 4px #43a047;
+}
+
+.hov:hover {
+  color: #cccccc;
 }
 
 .small {
