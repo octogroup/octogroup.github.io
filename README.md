@@ -1,43 +1,42 @@
 # octogroup.github.io
-LMS
+Learning Management System (LMS)
 
-Rules:
+Guidelines:
 
-1.  We use indentation (tab) of 2 spaces (Atom uses this by default, look further down on how to make Visual Code do the same).
+1.  We use indentation (tab) of 2 spaces (Atom uses this by default).
 
 2.  Both Visuals and Atoms (beautify plugin) uses new line after major tags like for example after /head and before body,
     so we have decided to use this as our default standard.
 
-3.  In Css files there should be no indentation at the selector, but at the actual code part there should be 2 spaces,
+3.  In CSS files there should be no indentation at the selector, but at the actual code part there should be 2 spaces,
     like this:
     footer {
       display: none;
     }
+
     This is the default behavior in css when Visual is set to 2 spaces as indentation, in Atom Beautify you need to change
     css "indent size" to 2.
 
-4.  Css should have new line between rules. This is default in Atoms Beautify, Visual does not have any auto format for css.
+4.  CSS should have new line between rules. This is default in Atoms Beautify, Visual does not have any auto format for css.
 
+5.  When creating an issue, please describe the problem as much as possible - what it's about and where the error occurs.
+    If it's a    visual error please feel free to add a snapshot of it.
 
-Tips!
+6.  When you do a pull-request, please validate your code. if you do any major visual changes or redesigns, feel free to add an image.
 
-1.  To get Visual code to behave as explained above press the cogwheel down to the left and select settings,
-    then paste this in the right side, overriding whatever it said previously:
-{
-    "workbench.startupEditor": "newUntitledFile",
-    "editor.tabSize": 2,
-    "editor.detectIndentation": false,
-    "css.lint.float": "warning"
-      }
+7.  When pushing, write informative commit-messages in imperative mood.
 
-2.  Atom also have a auto format all text like Visual Code have, look at the next tip to see how its installed!
+8.  When adding 'standard-css' - please have a look at mainstyle.css for classes. Don't be DRY!
 
-3.  To get Atom to work as explained above, open Atoms preferences then go to install and search for atom-beautify.
-    Press the install button and then when its done press the Settings button on the plugin, scroll down to the css part,
-    open the css part up and change "indent size" to 2.
-    
-    
-Example Linters:
+9.  The website is mainly optimized for Chrome.
+
+Use these Linters:
     htmlhint
     csslint
     js-standard
+
+Development-information:
+Trello - https://trello.com/b/E5xTiPRc/lsm-v1
+Github - https://github.com/octogroup
+
+For any questions or inquiries: Email: octogruppen@gmail.com
