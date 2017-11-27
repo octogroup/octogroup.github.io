@@ -12,9 +12,9 @@ What things you need to install the software and how to install them:
 
 ### Style guidelines in code:
 1. We have written code after Linters to get a consistent and nice code:
-    htmlhint
-    csslint
-    js-standard
+    <br>htmlhint
+    <br>csslint
+    <br>js-standard
 
 2. We use indentation (tab) of 2 spaces (Atom uses this by default).
 
@@ -44,7 +44,7 @@ In main we have used ``font-family: "Roboto"``
 
 When we design our page we follow material design guidelines. See exampel at: https://material.io/guidelines/
 
-### How we work in github
+### How we work in github:
 1.  When creating an issue, please describe the problem as much as possible - what it's about and where the error occurs.
     If it's a visual error please feel free to add a snapshot of it.
 
