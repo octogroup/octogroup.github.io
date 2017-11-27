@@ -1,5 +1,6 @@
 # octogroup.github.io
-Learning Management System (LMS)
+
+##Learning Management System (LMS)
 
 Guidelines:
 
@@ -10,9 +11,9 @@ Guidelines:
 
 3.  In CSS files there should be no indentation at the selector, but at the actual code part there should be 2 spaces,
     like this:<br>
-    footer {
-      display: none;
-    }
+    `footer {
+      display: none;<br>
+    }`
 
     This is the default behavior in css when Visual is set to 2 spaces as indentation, in Atom Beautify you need to change
     css "indent size" to 2.
@@ -28,15 +29,16 @@ Guidelines:
 
 8.  When adding 'standard-css' - please have a look at mainstyle.css for classes. Don't be DRY!
 
-9.  The website is mainly optimized for Chrome.
+9.  The website is mainly optimized for Chrome.<br>
+<hr>
 
 Use these Linters:
     htmlhint
     csslint
     js-standard
 
-Development-information:
+:octopus:Development-information:
 Trello - https://trello.com/b/E5xTiPRc/lsm-v1
 Github - https://github.com/octogroup
 
-For any questions or inquiries: Email: octogruppen@gmail.com
+:octopus:For any questions or inquiries: Email: octogruppen@gmail.com
