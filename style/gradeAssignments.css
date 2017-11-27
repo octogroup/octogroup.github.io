@@ -134,6 +134,7 @@ h2 {
 .text-1 {
   width: 204px;
   height: 100%;
+  margin-left: 10px;
 }
 
 .text-2 {
@@ -173,6 +174,14 @@ h2 {
   cursor: pointer;
 }
 
+div.table>div:nth-child(3)>div.text-1 {
+  margin-left: 15px;
+}
+
+div:nth-child(2)>h3 {
+  margin-left: 15px;
+}
+
 .table>div:nth-child(odd) {
   background-color: #e8e8e8;
 }
@@ -203,7 +212,7 @@ h2 {
     width: 98%;
   }
   .text-1 {
-    width: 128px;
+    width: 150px;
   }
 }
 
