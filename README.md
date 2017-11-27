@@ -37,7 +37,7 @@ What things you need to install the software and how to install them:
 7.  The website is mainly optimized for Chrome.<br>
 
 ### Style guidelines on visual page:
-We want to create a unified platform so we have use two font types.
+We want to create a unified platform so we have use two font types.<br>
 In head we have used ``font-family: "Open Sans"`` <br>
 In main we have used ``font-family: "Roboto"``
 
@@ -55,7 +55,7 @@ When we design our page we follow material design guidelines. See exampel at: ht
 4. When you want to merge, do a pull request and wait for team-members to approve before you push your merge.
 <hr>
 
-Happy coding, over and out.
+**Happy coding, over and out.**
 
 :octopus:Development-information:
 <br> Trello - https://trello.com/b/E5xTiPRc/lsm-v1
