@@ -2,7 +2,7 @@
 We have created an interactive mockup of a new LMS (Learning Management System). The system is intended to target the Higher Education Schools in order to provide better management and quality assurance of education and to facilitate learning and pedagogy in the teaching.
 
 ## Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of our web page and how we work. Down further you can find our guidelines in code and visual appearance. 
 
 ### Prerequisites
 What things you need to install the software and how to install them:
