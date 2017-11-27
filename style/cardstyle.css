@@ -377,6 +377,13 @@
   color: white;
 }
 
+.examtr-noLink>td, .card-body th {
+  text-align: left;
+  padding-right: 15px;
+  color: white;
+  cursor: default;
+}
+
 .examtr {
   cursor: pointer;
 }
