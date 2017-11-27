@@ -9,7 +9,7 @@ Guidelines:
     so we have decided to use this as our default standard.
 
 3.  In CSS files there should be no indentation at the selector, but at the actual code part there should be 2 spaces,
-    like this:
+    like this:<br>
     footer {
       display: none;
     }
