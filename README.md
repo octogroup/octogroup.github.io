@@ -35,16 +35,14 @@ What things you need to install the software and how to install them:
 6.  When adding 'standard-css' - please have a look at mainstyle.css for classes. Don't be DRY!
 
 7.  The website is mainly optimized for Chrome.<br>
-<hr>
 
 ### Style guidelines on visual page:
 We want to create a unified platform so we have use two font types.
-In <head> we have use ``font-family: "Open Sans"``
-In <main> we have use ``font-family: "Roboto"``
+In head we have used ``font-family: "Open Sans"`` <br>
+In main we have used ``font-family: "Roboto"``
 
 
 When we design our page we follow material design guidelines. See exampel at: https://material.io/guidelines/
-<hr>
 
 ### How we work in github
 1.  When creating an issue, please describe the problem as much as possible - what it's about and where the error occurs.
@@ -54,13 +52,13 @@ When we design our page we follow material design guidelines. See exampel at: ht
 
 3.  When pushing, write informative commit-messages in imperative mood.
 
-4. When you want to merge, do a pull request and wait for team-members to approve before you push your merge. 
+4. When you want to merge, do a pull request and wait for team-members to approve before you push your merge.
 <hr>
 
 Happy coding, over and out.
 
 :octopus:Development-information:
-Trello - https://trello.com/b/E5xTiPRc/lsm-v1
-Github - https://github.com/octogroup
+<br> Trello - https://trello.com/b/E5xTiPRc/lsm-v1
+<br> Github - https://github.com/octogroup
 
 :octopus:For any questions or inquiries: Email: octogruppen@gmail.com
