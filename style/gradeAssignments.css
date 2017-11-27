@@ -63,11 +63,15 @@ h2 {
 .LiTab:first-child {
   color: #fafafa;
   border-bottom: solid 4px #43a047;
+  cursor: pointer;
 }
 
 .hov:hover {
   color: #cccccc;
+  border-bottom: solid 4px #43a047;
+  cursor: pointer;
 }
+
 
 .small {
   margin-top: 4px;

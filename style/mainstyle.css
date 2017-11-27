@@ -405,6 +405,9 @@ main {
   header>a>img {
     height: 3.5em;
   }
+  .tableh3 {
+    font-size: 2em;
+  }
 }
 
 @media (max-width: 1280px) {
@@ -422,6 +425,9 @@ main {
   }
   header>a>img {
     height: 2.8em;
+  }
+  .tableh3 {
+    font-size: 1.6em;
   }
 }
 
