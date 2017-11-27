@@ -11,9 +11,9 @@ Guidelines:
 
 3.  In CSS files there should be no indentation at the selector, but at the actual code part there should be 2 spaces,
     like this:<br>
-    `footer {
-      display: none;<br>
-    }`
+    ``footer {
+      display: none;
+    }``
 
     This is the default behavior in css when Visual is set to 2 spaces as indentation, in Atom Beautify you need to change
     css "indent size" to 2.
