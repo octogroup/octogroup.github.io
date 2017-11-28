@@ -19,17 +19,13 @@
 <body>
   <div class="content backgroundpic1">
     <header>
-      <a href="#">
-        <img src="../img/KYH-logo.png" alt="KYH">
-      </a>
+      <a href="#"><img src="../img/KYH-logo.png" alt="KYH"></a>
       <nav id="navigation">
         <div id="loginalign">
           <button class="loginbutton" type="button" name="logout" onclick="logOut()">logga ut</button>
         </div>
       </nav>
     </header>
-    <div id="container">
-    </div>
     <!-- Main-Content -->
     <main>
       <!-- JS-Cards -->
@@ -61,7 +57,7 @@
               <option value="HTML"></option>
               <option value="Javascript"></option>
             </datalist>
-            <datalist id="datalist2"></option>
+            <datalist id="datalist2">
               <option value="Alla"></option>
               <option value="FE17"></option>
               <option value="FE18"></option>
@@ -139,19 +135,14 @@
                 <img src="../img/mail.svg" alt="mail" class="card-img">
               </div>
               <div class="card-bottom">
-                <a href="adminsort.html">
-                           <button type="button" name="button" class="cardbutton">Öppna</button>
-                         </a>
+                <button type="button" name="button" class="cardbutton" onclick="window.location = 'adminsort.html'">Öppna</button>
               </div>
             </div>
           </div>
         </section>
-        <!-- Third Card Column -->
-        <section class="thirdcardcolumn">
-          <!-- Card -->
-        </section>
       </div>
     </main>
+
   </div>
   <footer class="footer">
     <p>&copy;2017</p>

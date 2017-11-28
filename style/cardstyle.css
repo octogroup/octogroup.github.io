@@ -196,7 +196,7 @@
   display: block;
   position: relative;
   max-height: 350px;
-  height: 236px;
+  height: 260px;
   overflow: hidden;
   transition: height 1s;
   transition-delay: 0.6s;
@@ -222,7 +222,7 @@
 
 #attsbutton {
   position: absolute;
-  top: 195px;
+  top: 220px;
   right: 30%;
 }
 
@@ -375,6 +375,13 @@
   text-align: left;
   padding-right: 15px;
   color: white;
+}
+
+.examtr-noLink>td, .card-body th {
+  text-align: left;
+  padding-right: 15px;
+  color: white;
+  cursor: default;
 }
 
 .examtr {

@@ -6,10 +6,8 @@ function toggleExpand (self, divHeight) {
 	let div = self.parentNode.parentNode.getElementsByClassName('expand')[0]
 	if (div.style.height == divHeight) {
 		div.style.height = '0px'
-	console.log(div)
-} else if (!div.style.height || div.style.height !== divHeight) {
+	} else if (!div.style.height || div.style.height !== divHeight) {
 		div.style.height = divHeight
-	console.log(div)
 	}
 }
 
@@ -21,8 +19,7 @@ function toggleText (self) {
 	let btn = self.parentNode.getElementsByClassName('toggleText')[0]
 	let txt = btn.innerHTML
 	if (txt === 'visa mindre') return btn.innerHTML = 'visa mer'
-	console.log(btn)
-	return btn.innerHTML = 'visa mindre'
+		return btn.innerHTML = 'visa mindre'
 	}
 
 // -------- WeekCounter -----------
@@ -46,5 +43,3 @@ function decWeek () {
   }
   document.getElementById('weekCount').innerHTML = 'Vecka' + ' ' + week
 }
-
-// ------------------------------

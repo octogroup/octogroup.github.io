@@ -1,10 +1,6 @@
 /* eslint no-undef: 0 */
 /* eslint no-unused-vars: 0 */
 /* eslint-env browser */
-<<<<<<< HEAD
-
-=======
->>>>>>> elinvali
 function codePromp () {
   let myTextField = document.getElementById('codeInput')
   if (myTextField.value === 'asdf') {
@@ -54,13 +50,7 @@ let Timer = function (opts) {
     self.seconds--
     if (self.minutes === 0 && self.seconds === 0) {
       self.stop()
-<<<<<<< HEAD
     } else if (self.seconds < 0) {
-=======
-    }
-
-    else if (self.seconds < 0) {
->>>>>>> elinvali
       self.seconds = 59
       self.minutes--
     } else if (self.seconds <= 9) {

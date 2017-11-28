@@ -41,11 +41,6 @@ h2 {
   color: #fafafa;
 }
 
-.LiTab a:hover {
-  color: #fafafa;
-  border-bottom: 3px solid rgba(255, 0, 0, 0.3);
-}
-
 .betygsatt-1,
 .betygsatt-2 {
   height: 0;
@@ -67,8 +62,16 @@ h2 {
 
 .LiTab:first-child {
   color: #fafafa;
-  border-bottom: 3px solid red;
+  border-bottom: solid 4px #43a047;
+  cursor: pointer;
 }
+
+.hov:hover {
+  color: #cccccc;
+  border-bottom: solid 4px #43a04791;
+  cursor: pointer;
+}
+
 
 .small {
   margin-top: 4px;
@@ -131,6 +134,7 @@ h2 {
 .text-1 {
   width: 204px;
   height: 100%;
+  margin-left: 10px;
 }
 
 .text-2 {
@@ -170,6 +174,14 @@ h2 {
   cursor: pointer;
 }
 
+div.table>div:nth-child(3)>div.text-1 {
+  margin-left: 15px;
+}
+
+div:nth-child(2)>h3 {
+  margin-left: 15px;
+}
+
 .table>div:nth-child(odd) {
   background-color: #e8e8e8;
 }
@@ -200,7 +212,7 @@ h2 {
     width: 98%;
   }
   .text-1 {
-    width: 128px;
+    width: 150px;
   }
 }
 
