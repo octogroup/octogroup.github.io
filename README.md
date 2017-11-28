@@ -51,13 +51,13 @@ In main we have used ``font-family: "Roboto"``
 When we design our page we follow material design guidelines. See exampel at: https://material.io/guidelines/
 
 
-### Mockups login and passwords
+### Mockups login and passwords:
 
 How to get around:
 
-Username: admin || student || teacher
-Password (for all): pw
-Attendance code: asdf
+Username: admin || student || teacher <br>
+Password (for all): pw <br>
+Attendance code: asdf <br>
 
 ### How we work in github:
 1.  When creating an issue, please describe the problem as much as possible - what it's about and where the error occurs.
