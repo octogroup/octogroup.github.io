@@ -47,6 +47,17 @@
   cursor: pointer;
 }
 
+.att-squareGreen {
+  width: 14px;
+  height: 18px;
+  margin: 0 auto;
+  padding: 1px;
+  background-color: rgb(67, 160, 71);
+  border: solid 1px #818181;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
 .att-row>div {
   padding: 15px 0;
   text-align: center;
