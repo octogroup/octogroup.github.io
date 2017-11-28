@@ -4,7 +4,7 @@ We have created an interactive mockup of a new LMS (Learning Management System).
 ## Getting Started
 These instructions will get you a copy of our web page and how we work. Down further you can find our guidelines in code and visual appearance.
 
-### Prerequisites
+### Tools we've been using
 We have written code after Linters to get a consistent and nice code. These are the plugins that you need to install to your editor software to get the same ones as we have used:
 
 ``apm install atom-beautify`` <br>
@@ -38,7 +38,7 @@ To get Atom to work as explained above, open Atoms preferences then go to instal
 
 4.  CSS should have new line between rules. This is default in Atoms Beautify, Visual does not have any auto format for css.
 
-5.  When adding 'standard-css' - please have a look at mainstyle.css for classes. Don't be DRY!
+5.  When adding 'standard-css' - please have a look at mainstyle.css for classes. Keep it DRY!
 
 6.  The website is mainly optimized for Chrome.<br>
 
@@ -49,6 +49,15 @@ In main we have used ``font-family: "Roboto"``
 
 
 When we design our page we follow material design guidelines. See exampel at: https://material.io/guidelines/
+
+
+### Mockups login and passwords
+
+How to get around:
+
+Username: admin || student || teacher
+Password (for all): pw
+Attendance code: asdf
 
 ### How we work in github:
 1.  When creating an issue, please describe the problem as much as possible - what it's about and where the error occurs.
