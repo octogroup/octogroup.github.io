@@ -101,7 +101,7 @@ let news = function () {
 let assignment = function () {
   reset()
   formimg.style.display = 'inherit'
-  formc.style.height = '488.6px'
+  formc.style.height = '514px'
   form.style.display = 'inherit'
   cB.style.display = 'inherit'
   sB.style.display = 'inherit'
@@ -148,7 +148,7 @@ let weekeval = function () {
 let adminNews = function () {
   reset()
   formimg.style.display = 'inherit'
-  formc.style.height = '474px'
+  formc.style.height = '510px'
   form.style.display = 'inherit'
   cB.style.display = 'inherit'
   sB.style.display = 'inherit'
@@ -175,7 +175,7 @@ let adminNews = function () {
 let createAccount = function () {
   reset()
   formimg.style.display = 'inherit'
-  formc.style.height = '333px'
+  formc.style.height = '350px'
   form.style.display = 'inherit'
   cB.style.display = 'inherit'
   sB.style.display = 'inherit'
@@ -195,7 +195,7 @@ let createAccount = function () {
 let formAdmin = function () {
   reset()
   formimg.style.display = 'inherit'
-  formc.style.height = '565px'
+  formc.style.height = '583px'
   form.style.display = 'inherit'
   cB.style.display = 'inherit'
   sB.style.display = 'inherit'
@@ -223,7 +223,7 @@ let formAdmin = function () {
 let createClass = function () {
   reset()
   formimg.style.display = 'inherit'
-  formc.style.height = '470px'
+  formc.style.height = '487px'
   form.style.display = 'inherit'
   cB.style.display = 'inherit'
   sB.style.display = 'inherit'

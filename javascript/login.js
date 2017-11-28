@@ -21,9 +21,9 @@ function hideLogin () {
 function accesslevel (form) {
   console.log(form.unameinput.value)
   switch (true) {
-    case form.unameinput.value.toLowerCase() === 'student' && form.pswinput.value.toLowerCase() === 'pw':
+    case form.unameinput.value.toLowerCase() === 'hugo' && form.pswinput.value.toLowerCase() === 'pw':
       return window.location.href = 'pages/studentpage.html'
-    case form.unameinput.value.toLowerCase() === 'teacher' && form.pswinput.value.toLowerCase() === 'pw':
+    case form.unameinput.value.toLowerCase() === 'läraremiranda' && form.pswinput.value.toLowerCase() === 'pw':
       return window.location.href = 'pages/teacherpage.html'
     case form.unameinput.value.toLowerCase() === 'admin' && form.pswinput.value.toLowerCase() === 'pw':
       return window.location.href = 'pages/adminpage.html'
