@@ -262,6 +262,10 @@ main {
   outline: none;
 }
 
+.logo {
+  align-self: center;
+}
+
 @keyframes ripple {
   0% {
     transform: scale(0, 0);
