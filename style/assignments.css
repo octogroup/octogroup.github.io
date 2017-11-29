@@ -52,4 +52,8 @@ div > main > h2 {
   color: white;
   border-radius: 2px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
-} 
+}
+
+.paddingRightFix {
+  padding-right: 47px;
+}
