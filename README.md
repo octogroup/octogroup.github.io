@@ -50,6 +50,11 @@ In main we have used ``font-family: "Roboto"``
 
 When we design our page we follow material design guidelines. See exampel at: https://material.io/guidelines/
 
+### Layout on the pages:
+The preferred layout method in this project has been flexbox. Every one in the team has followed this link 
+as guide for developing web pages.
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
 
 ### Mockups login and passwords:
 
