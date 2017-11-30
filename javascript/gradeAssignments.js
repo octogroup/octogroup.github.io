@@ -2,7 +2,7 @@ let betygsattningDiv
 let betygsattButton
 
 // Öppnar "betygsättnings-diven"
-function toggleBetygsattning(id) {
+toggleBetygsattning = (id) => {
   if(id == 'knapp-1'){
   	betygsattningDiv = document.querySelector('.betygsatt-1')
     betygsattButton = document.querySelector('#knapp-1')
@@ -24,7 +24,7 @@ function toggleBetygsattning(id) {
 }
 
 // Stänger "betygsättnings-diven"
-function closeBetygsattning (id) {
+closeBetygsattning = (id) => {
   if(id == 'knapp-1'){
     document.querySelector('.betygsatt-1').style.height = '0px'
   }else if (id == "knapp-2") {
@@ -33,7 +33,7 @@ function closeBetygsattning (id) {
 }
 
 // Skriver det angivna betyget till den tomma betyg-columnen
-function printBetyg(id) {
+ printBetyg = (id) => {
   if(id == 'knappbetyg-1'){
     let gradeColumn = document.querySelector('#column-white-1')
     let grade = document.querySelector('#select-input-1').value
@@ -50,7 +50,7 @@ function printBetyg(id) {
 }
 
 // ta bort betygsätt-knappen när betyget har blivit satt
-function removeButton (button) {
+ removeButton = (button) => {
   if(button == 'btn-1'){
     document.querySelector('#knapp-1').style.display = 'none'
   }else if (button == 'btn-2'){
