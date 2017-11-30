@@ -83,12 +83,12 @@ Attendance code: asdf <br>
 
 :octopus:For any questions or inquiries: Email: octogruppen@gmail.com
 
-###Persons who have participated in the project:
-Elin Gustafsson 
-Elin Kviberg
-Miranda Mutka
-Hugo Rune
-Jonny Svahn
-Victor Pettersson
+### Persons who have participated in the project:
+Elin Gustafsson <br>
+Elin Kviberg <br>
+Miranda Mutka <br>
+Hugo Rune <br>
+Jonny Svahn <br>
+Victor Pettersson <br>
 Guled Ali
 
