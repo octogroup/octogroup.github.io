@@ -82,3 +82,13 @@ Attendance code: asdf <br>
 <br> Github - https://github.com/octogroup
 
 :octopus:For any questions or inquiries: Email: octogruppen@gmail.com
+
+###Persons who have participated in the project:
+Elin Gustafsson 
+Elin Kviberg
+Miranda Mutka
+Hugo Rune
+Jonny Svahn
+Victor Pettersson
+Guled Ali
+
